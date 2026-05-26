@@ -1,0 +1,234 @@
+{
+  "id": "kreis-session-1",
+  "title": "Children's Constitution Club — Session 1",
+  "programme": "KREIS",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    { "id": "introduce",  "label": "Introduce",            "slides": [1, 2, 3] },
+    { "id": "calmers",    "label": "Calmers",              "slides": [4, 5, 6] },
+    { "id": "groups",     "label": "Form Groups",          "slides": [7] },
+    { "id": "group_work", "label": "Group Work",           "slides": [8, 9, 10, 11] },
+    { "id": "cc1",        "label": "Constitution Connect", "slides": [12, 13] },
+    { "id": "rules",      "label": "Co-create Rules",      "slides": [14, 15, 16, 17, 18, 19, 20] },
+    { "id": "inspires",   "label": "Who Inspires Us",      "slides": [21, 22] },
+    { "id": "cc2",        "label": "Constitution Connect", "slides": [23, 24, 25] },
+    { "id": "ripples",    "label": "Ripples of Change",    "slides": [26, 27] },
+    { "id": "preamble",   "label": "Preamble",             "slides": [28] }
+  ],
+  "slides": [
+    { "n": 1, "kind": "title",
+      "title": "Welcome to the Children's Constitution Club!",
+      "subtitle": "KREIS × CMCA",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Play welcome music as students enter. Display logos full-screen." },
+
+    { "n": 2, "kind": "static",
+      "title": "Teacher Intro",
+      "body": ["My name is ____", "I am your CMCA teacher", "Something I like / don't like:"],
+      "tip": "Introduce yourself. Share one thing you like and one you don't — model openness." },
+
+    { "n": 3, "kind": "mc_narration",
+      "title": "Meet Master Change",
+      "video": "/sessions/assets/mc_intro.mp4",
+      "transcript": "Hello junior citizens, Namaskara! I am Master Change. I am here to help teacher and you. Welcome to your Children's Constitution Club! This year, I too am a member of your Club as a CMCA Change Champion. CMCA — the Children's Movement for Civic Awareness — inspires and empowers young people like you and me to be concerned, thinking and active citizens. I am here to be with you and teacher, as a guide and support. Can you all clap for CMCA and for me? Thank you for your warm welcome! Let's start our journey as active junior citizens and members of our Children's Constitution Club, also known as CC Club! Now, let's hear what your teacher has to share with you.",
+      "tip": "Wait for MC video to play to the end. Encourage applause at 'Can you all clap…'." },
+
+    { "n": 4, "kind": "static",
+      "title": "Let's Calm Down",
+      "body": [
+        "Sometimes we get so excited that we can't stop talking or moving around…",
+        "Just like in a game, our Club has a whistle too!"
+      ],
+      "audio": "/sessions/assets/vo_calmer_intro.mp3",
+      "tip": "Play the voiceover. It introduces the idea that the club needs a 'whistle' to calm down — sets up the next slide." },
+
+    { "n": 5, "kind": "video",
+      "title": "1 - 2 Eyes on Me",
+      "body": [
+        "Teacher says: \"1, 2, eyes on me!\"",
+        "Children whisper back: \"Eyes on you.\""
+      ],
+      "video": "/sessions/assets/lips_eyes_on_you_whisper.mp4",
+      "post_video_text": "1-2 EYES ON ME",
+      "tip": "Demonstrate the call-and-response yourself first. After the video ends the cue '1-2 EYES ON ME' appears full-size — use it as the visual prompt every time you want the class to settle." },
+
+    { "n": 6, "kind": "static",
+      "title": "Let's Calm Down AGAIN!",
+      "body": [
+        "Teacher says: \"Flat Tyre!\"",
+        "Children respond: \"Shhhhhhh!\""
+      ],
+      "audio": "/sessions/assets/vo_flat_tyre_shhh.mp3",
+      "image": "/sessions/assets/flat_tyre.jpg",
+      "tip": "Play the flat-tyre 'shhhh' audio. Demonstrate the shhhh yourself before asking children to join." },
+
+    { "n": 7, "kind": "static",
+      "title": "Form Groups",
+      "body": [
+        "In our club, many activities are done in groups.",
+        "Everyone's voice matters."
+      ],
+      "bullets_large": true,
+      "callout": "Form mixed groups of girls and boys. Working together in school prepares us to learn to work together in workplaces and communities.",
+      "tip": "Use the Counting Method to form mixed-gender groups of 5–6 children." },
+
+    { "n": 8, "kind": "group_activity_timer",
+      "title": "Let us get creative!",
+      "brief": "Name your group and design your group logo. Inspiration: KSRTC, KREIS.",
+      "timer_seconds": 480,
+      "reminder_at": 120,
+      "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
+      "tip": "Start the 8-minute timer. A soft chime + visual pulse fires at the 2-min reminder mark." },
+
+    { "n": 9, "kind": "video_question_series",
+      "title": "How did your group work together?",
+      "intro": "Master Change has some questions for you. Watch each clip, then take a quick show of hands.",
+      "items": [
+        { "video": "/sessions/assets/mc_question_1.mp4", "question": "Did everyone in the group SHARE ideas about the group name or how the logo should be?" },
+        { "video": "/sessions/assets/mc_question_2.mp4", "question": "Was it easy to agree as a group? How did you decide whose ideas to choose?" },
+        { "video": "/sessions/assets/mc_question_3.mp4", "question": "Did everyone in the group get a chance to SPEAK about what they felt should be the group name or logo?" },
+        { "video": "/sessions/assets/mc_question_4.mp4", "question": "Did everyone get a chance to DRAW some part of the logo?" },
+        { "video": "/sessions/assets/mc_question_5.mp4", "question": "Did everyone feel that their ideas were counted, and they were HEARD?" }
+      ],
+      "footer": "If you had 2 or more YES responses → high-fives all round! Let's keep this team spirit going.",
+      "tip": "Each clip plays, then the question stays on screen. Click NEXT for the next clip. Keep it brisk — mostly yes/no, don't get into long discussion." },
+
+    { "n": 10, "kind": "reflect_share",
+      "title": "Reflect & Share",
+      "prompt": "What have you learnt from this group activity of naming your groups and creating your logos?",
+      "tip": "Take 3–4 responses. Listen actively; affirm each child." },
+
+    { "n": 11, "kind": "mc_narration",
+      "title": "Master Change wraps the activity",
+      "video": "/sessions/assets/mc_wrap_group_activity.mp4",
+      "transcript": "You've now practiced something very important — it's all on the board! When you listen, share and work together, you are Constitution Champion members throughout your life. Make sure that from now on, everyone participates in group activities. For all Club sessions, sit together in your groups right from the start! Now it's time for the Constitution Connect Quiz Question. Over to you, teacher!",
+      "tip": "Hand-off cue: when MC says 'Over to you teacher', advance to the next slide." },
+
+    { "n": 12, "kind": "mcq",
+      "title": "Constitution Connect",
+      "scenario": "You are working with 8 classmates on a school team project. The words 'We the People' from the Preamble highlight the importance of working together. How does this apply to your project?",
+      "options": [
+        "Try to convince everyone that only your decisions are the best.",
+        "Agree to others' decisions just to keep them happy, without understanding them.",
+        "Think by keeping in mind the interests of all members.",
+        "Argue with each other and work separately."
+      ],
+      "correct_index": 2,
+      "tip": "Read the scenario aloud to the class. Let them guess BEFORE clicking to reveal." },
+
+    { "n": 13, "kind": "mc_narration",
+      "title": "Constitution Connect — debrief",
+      "video": "/sessions/assets/mc_cc1_debrief.mp4",
+      "transcript": "Hey, that was a great try! The words 'We the People' in the Preamble remind us that the government is formed by the people and for the people. In your team project, this means your decisions should take into account the interests of all team members. Just as the government must think for the well-being of all citizens, you too must make decisions for the good of all members of your team. Going forward, Constitution Connect questions will be included in every session, so that you can link learning with constitutional values in your everyday life. Let's move on!",
+      "tip": "Let MC video play to the end before advancing." },
+
+    { "n": 14, "kind": "click_reveal",
+      "title": "Co-creating Rules — Reflect & Share",
+      "intro": "Teacher will listen with you as you answer these 3 questions.",
+      "prompts": [
+        "Imagine you're going to play a super exciting new game. Before you play, what do you need to know?",
+        "What do you need to understand to play the game correctly?",
+        "What happens in a game, if all the players do what they want, don't listen to the umpire or referee?"
+      ],
+      "tip": "Reveal one question at a time. Take 1–2 verbal responses per question before advancing." },
+
+    { "n": 15, "kind": "video",
+      "title": "What is Master Change doing?",
+      "video": "/sessions/assets/mc_raising_hand_loop.mp4",
+      "loop": true,
+      "post_video_text": "He is raising his hand to speak — and waiting his turn!",
+      "reveal_on_click": true,
+      "tip": "Let the animation loop while children watch. Click NEXT (or REVEAL) when ready to show the answer." },
+
+    { "n": 16, "kind": "group_activity_timer",
+      "title": "Write your group rules",
+      "brief": "In your groups, write 2 rules for your group to follow + 1 rule for your teacher to follow.",
+      "bullets_large": true,
+      "timer_seconds": 180,
+      "tip": "Distribute slips / post-its BEFORE starting the timer. Then start the 3-minute timer. Keep it brisk." },
+
+    { "n": 17, "kind": "static",
+      "title": "Sharing rules with each other",
+      "body": ["Each group shares ONE rule — no repeats!"],
+      "tip": "Go group-by-group. If a rule is already shared, the group picks the next one." },
+
+    { "n": 18, "kind": "reflect_share",
+      "title": "Reflect & Share",
+      "prompt": "What do we do if someone is not following the rules? Do we stay silent, or remind them respectfully?",
+      "tip": "Take 2–3 responses." },
+
+    { "n": 19, "kind": "static",
+      "title": "Stick your slips with rules on this Flashcard",
+      "body": ["One member per group will come forward and stick your rule on the flashcard."],
+      "tip": "Show the physical flashcard. Invite one child from each group up." },
+
+    { "n": 20, "kind": "click_reveal",
+      "title": "Teacher Rule",
+      "intro": "After every group has stuck their rule, click to reveal the Teacher Rule.",
+      "prompts": ["Be respectful to everyone."],
+      "tip": "Reveal AFTER all groups have stuck their rules." },
+
+    { "n": 21, "kind": "static",
+      "title": "Who inspires us?",
+      "body": [
+        "Just as our Club has rules, our nation has a Book which has rules — and much more!",
+        "That is a clue — Who inspires us as citizens of India?"
+      ],
+      "tip": "Take a few guesses. Hint: 'the Book' = the Constitution." },
+
+    { "n": 22, "kind": "mc_narration",
+      "title": "Dr. B. R. Ambedkar & the Constituent Assembly",
+      "video": "/sessions/assets/mc_who_inspires.mp4",
+      "image": "/sessions/assets/ambedkar_constituent_assembly.jpg",
+      "transcript": "We are inspired by our Constitution's vision for India — it guides and motivates us. As a mark of respect for the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session by reading our Preamble — as we begin our learning journey in the Constitution Club.",
+      "tip": "Pause briefly on the Ambedkar image. Let MC voiceover finish before advancing." },
+
+    { "n": 23, "kind": "mcq",
+      "title": "Constitution Connect",
+      "scenario": "Why do we have a Children's Constitution Club?",
+      "options": ["To play games only", "To learn about rights, responsibilities, and democracy", "To avoid school work", "To watch movies"],
+      "correct_index": 1,
+      "tip": "Read aloud. Let class guess. Then click to reveal." },
+
+    { "n": 24, "kind": "mcq",
+      "title": "Constitution Connect",
+      "scenario": "What is a campaign in a Children's Constitution Club?",
+      "options": ["A way to spread awareness and bring change on an issue", "A competition to win prizes", "A holiday activity", "A classroom test"],
+      "correct_index": 0,
+      "tip": "Read aloud. Let class guess. Then click to reveal." },
+
+    { "n": 25, "kind": "mcq",
+      "title": "Constitution Connect",
+      "scenario": "Which of these is an important value in a Children's Constitution Club?",
+      "options": ["Ignoring others' ideas", "Respecting everyone's voice", "Always winning arguments", "Working alone"],
+      "correct_index": 1,
+      "tip": "Read aloud. Let class guess. Then click to reveal." },
+
+    { "n": 26, "kind": "static",
+      "title": "Ripples of Change",
+      "body": ["Now you will learn about Asfiya — a young citizen whose small actions created ripples of change in her school, her community, and beyond."],
+      "image": "/sessions/assets/asfiya_intro.jpg",
+      "tip": "Introduce Asfiya warmly. Set expectation: the video is about 3 minutes." },
+
+    { "n": 27, "kind": "video",
+      "title": "Asfiya's Story",
+      "video": "/sessions/assets/asfiya_story.mp4",
+      "duration_seconds": 180,
+      "tip": "Play the video without interruption. Take reactions AFTER it ends." },
+
+    { "n": 28, "kind": "preamble",
+      "title": "Let's recite the Preamble of the Indian Constitution",
+      "body": [
+        "WE, THE PEOPLE OF INDIA,",
+        "having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC",
+        "and to secure to all its citizens:",
+        "JUSTICE, social, economic and political;",
+        "LIBERTY of thought, expression, belief, faith and worship;",
+        "EQUALITY of status and of opportunity;",
+        "and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;",
+        "IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November, 1949,",
+        "do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION."
+      ],
+      "tip": "Stand. Recite together. Slow, clear pace." }
+  ]
+}
