@@ -87,17 +87,61 @@ type SessionEvent =
   | { type: "timer_completed"; slide: number; ts: number }
   | { type: "completion"; ts: number };
 
+type Lang = "en" | "kn";
+
+interface SessionDefinitionWithMeta extends SessionDefinition {
+  // Optional metadata fields. `_translation_status: "pending"` triggers a
+  // banner over the player to flag un-translated content.
+  _language?: Lang;
+  _translation_status?: "pending" | "ready";
+}
+
 interface Props {
-  session: SessionDefinition;
+  // Multi-language sessions. `en` is mandatory; `kn` is optional — when
+  // null, the Kannada toggle is shown disabled with a tooltip.
+  sessions: { en: SessionDefinitionWithMeta; kn?: SessionDefinitionWithMeta | null };
   onEvent?: (e: SessionEvent) => void;
 }
 
 // ─────────────────────────── main component ────────────────────────────────
-export default function SessionRunner({ session, onEvent }: Props) {
+export default function SessionRunner({ sessions, onEvent }: Props) {
   const [idx, setIdx] = useState(0);
   const [navOpen, setNavOpen] = useState(true);
   const [tipOpen, setTipOpen] = useState(true);
   const containerRef = useRef<HTMLDivElement | null>(null);
+
+  // ─────── language state ───────
+  // Resolution order on first paint:
+  //   1. ?lang=kn / ?lang=en in the URL — wins, so shareable Kannada links work
+  //   2. localStorage["cmca-session-lang"] — sticky per-browser choice
+  //   3. "en" default
+  const [lang, setLang] = useState<Lang>("en");
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const url = new URL(window.location.href);
+    const q = url.searchParams.get("lang");
+    const stored = window.localStorage.getItem("cmca-session-lang");
+    const initial: Lang =
+      q === "kn" || q === "en" ? (q as Lang) : stored === "kn" ? "kn" : "en";
+    setLang(initial);
+  }, []);
+  const knAvailable = !!sessions.kn;
+  // If Kannada is unavailable, silently fall back to English regardless of state.
+  const activeLang: Lang = lang === "kn" && knAvailable ? "kn" : "en";
+  const session = sessions[activeLang] ?? sessions.en;
+  const translationPending = session._translation_status === "pending";
+
+  const pickLang = (next: Lang) => {
+    if (next === "kn" && !knAvailable) return;
+    setLang(next);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("cmca-session-lang", next);
+      // Reflect the choice in the URL so refresh / share preserves it.
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", next);
+      window.history.replaceState({}, "", url.toString());
+    }
+  };
 
   // Re-open the tip every time we land on a new slide. Teachers dismiss
   // per-slide when it overlaps controls (e.g. slide 9's "Next question"),
@@ -151,7 +195,7 @@ export default function SessionRunner({ session, onEvent }: Props) {
   };
 
   return (
-    <div ref={containerRef} className="sr-root">
+    <div ref={containerRef} className="sr-root" lang={activeLang}>
       {/* Top bar */}
       <header className="sr-topbar">
         <button className="sr-icon-btn" onClick={() => setNavOpen((v) => !v)} title="Toggle nav (N)">☰</button>
@@ -160,11 +204,38 @@ export default function SessionRunner({ session, onEvent }: Props) {
           <span className="sr-sep">·</span>
           <span>{session.title}</span>
         </div>
+        {/* Language toggle. Kannada half is disabled with a tooltip until
+            the .kn.json file is shipped. */}
+        <div
+          className="sr-lang-toggle"
+          role="group"
+          aria-label="Choose language"
+        >
+          <button
+            className={"sr-lang-btn " + (activeLang === "en" ? "is-active" : "")}
+            onClick={() => pickLang("en")}
+            aria-pressed={activeLang === "en"}
+          >EN</button>
+          <button
+            className={"sr-lang-btn " + (activeLang === "kn" ? "is-active" : "") + (knAvailable ? "" : " is-disabled")}
+            onClick={() => pickLang("kn")}
+            aria-pressed={activeLang === "kn"}
+            disabled={!knAvailable}
+            title={knAvailable ? "ಕನ್ನಡ" : "Kannada coming soon"}
+          >ಕನ್ನಡ</button>
+        </div>
         <div className="sr-progress">
           <div className="sr-progress-bar"><div style={{ width: `${((idx + 1) / session.slides.length) * 100}%` }} /></div>
           <span>{idx + 1} / {session.slides.length}</span>
         </div>
       </header>
+      {/* Translation-pending banner — only shows when a translator has
+          dropped a .kn.json skeleton but not yet filled it in. */}
+      {activeLang === "kn" && translationPending && (
+        <div className="sr-translation-banner">
+          ⚠ Kannada translation is in progress — strings shown are still in English.
+        </div>
+      )}
 
       <div className="sr-body">
         {/* Left nav rail */}
@@ -703,6 +774,12 @@ const styles = `
   .sr-root { position: fixed; inset: 0; z-index: 9000; display: flex; flex-direction: column; height: 100vh; background: ${CREAM}; color: ${INK}; font-family: "Trebuchet MS", "Trebuchet", "Lucida Sans Unicode", "Lucida Sans", sans-serif; }
   .sr-topbar { display: flex; align-items: center; gap: 16px; padding: 10px 16px; background: ${ORANGE}; color: #fff; }
   .sr-topbar-title { flex: 1; font-size: 14px; }
+  .sr-lang-toggle { display: inline-flex; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; overflow: hidden; }
+  .sr-lang-btn { background: transparent; color: #fff; border: none; padding: 4px 12px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; letter-spacing: .02em; }
+  .sr-lang-btn:hover:not(.is-disabled):not(.is-active) { background: rgba(255,255,255,.18); }
+  .sr-lang-btn.is-active { background: #fff; color: ${ORANGE_INK}; cursor: default; }
+  .sr-lang-btn.is-disabled { opacity: .45; cursor: not-allowed; }
+  .sr-translation-banner { background: #FFF3CD; color: #7A5D00; padding: 6px 16px; font-size: 13px; font-weight: 600; border-bottom: 1px solid #F1D77A; text-align: center; }
   .sr-sep { opacity: 0.4; margin: 0 6px; }
   .sr-icon-btn { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.3); padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 16px; }
   .sr-progress { display: flex; align-items: center; gap: 10px; font-size: 12px; min-width: 220px; }

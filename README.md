@@ -24,9 +24,35 @@ No env vars, no build args, nothing else.
 
 ## Adding a new session
 
-1. Drop the JSON definition at `public/sessions/<slug>.json`.
+1. Drop the JSON definition at `public/sessions/<slug>.en.json` (English).
 2. Drop the video / audio / image assets at `public/sessions/assets/`.
 3. Visit `/s/<slug>`.
+
+## Adding a language
+
+The player supports per-session translations via sibling JSON files:
+
+```
+public/sessions/<slug>.en.json   ← English (required)
+public/sessions/<slug>.kn.json   ← Kannada (optional)
+```
+
+To add Kannada to an existing session:
+
+1. Copy `<slug>.en.json` → `<slug>.kn.json`.
+2. Translate every human-readable field (`title`, `body`, `intro`,
+   `tip`, `transcript`, `options`, etc.) in place.
+3. If Kannada gets its own audio/video tracks, replace the asset paths
+   inside the `.kn.json` (English file still points at English assets).
+4. Once the file is filled in, set `"_translation_status": "ready"` at
+   the top (or just delete the field). While it's `"pending"` the player
+   shows a yellow banner over Kannada slides so demo viewers know.
+
+The language toggle in the topbar is automatically disabled (`ಕನ್ನಡ` greyed
+out) when the `.kn.json` file is missing. Drop it in and the toggle goes
+live on next reload — no code change.
+
+Share a Kannada-only link by appending `?lang=kn` to the URL.
 
 ## Updating an existing session
 
