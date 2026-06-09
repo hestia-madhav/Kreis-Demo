@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 280" width="220" height="280">
+  <!-- Cartoon teacher clipart holding a flashcard.
+       Used on slide 19 and any future flashcard slide to visually cue
+       "look up at the teacher holding the flashcard now". CMCA palette. -->
+
+  <!-- Flashcard held above head -->
+  <rect x="34" y="14" width="152" height="86" rx="6"
+        fill="#FFFFFF" stroke="#F39C1F" stroke-width="4"/>
+  <rect x="34" y="14" width="152" height="18" rx="6" fill="#F39C1F"/>
+  <!-- Card text suggestion (just decorative lines) -->
+  <g stroke="#5A3800" stroke-linecap="round" fill="none">
+    <line x1="50" y1="46" x2="170" y2="46" stroke-width="3"/>
+    <line x1="50" y1="60" x2="160" y2="60" stroke-width="3"/>
+    <line x1="50" y1="74" x2="170" y2="74" stroke-width="3"/>
+    <line x1="50" y1="88" x2="140" y2="88" stroke-width="3"/>
+  </g>
+
+  <!-- Hair (back layer) -->
+  <path d="M 76 132 Q 70 110, 90 100 Q 110 90, 130 100 Q 150 110, 144 132 Z"
+        fill="#3a2a1f"/>
+
+  <!-- Head -->
+  <circle cx="110" cy="138" r="26" fill="#f0c39a"/>
+
+  <!-- Hair (front bangs) -->
+  <path d="M 88 122 Q 100 116, 110 120 Q 122 116, 132 122 Q 128 130, 110 128 Q 92 130, 88 122 Z"
+        fill="#3a2a1f"/>
+
+  <!-- Glasses (cute teacher detail) -->
+  <g stroke="#5A3800" stroke-width="2" fill="none">
+    <circle cx="100" cy="140" r="5"/>
+    <circle cx="120" cy="140" r="5"/>
+    <line x1="105" y1="140" x2="115" y2="140"/>
+  </g>
+
+  <!-- Smile -->
+  <path d="M 102 150 Q 110 156, 118 150" stroke="#5A3800" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <rect x="104" y="162" width="12" height="10" fill="#f0c39a"/>
+
+  <!-- Body / shirt (CMCA orange) -->
+  <path d="M 68 174 Q 68 168, 78 168 L 142 168 Q 152 168, 152 174 L 152 230 Q 110 240, 68 230 Z"
+        fill="#F39C1F"/>
+
+  <!-- Collar accent (CMCA teal) -->
+  <path d="M 100 170 L 110 178 L 120 170 L 116 170 L 110 174 L 104 170 Z"
+        fill="#3CB6A6"/>
+
+  <!-- Arms raised holding flashcard -->
+  <!-- Left arm -->
+  <path d="M 70 172 Q 60 130, 50 102 Q 46 96, 38 100 Q 32 106, 36 114 L 56 174 Z"
+        fill="#F39C1F"/>
+  <!-- Right arm -->
+  <path d="M 150 172 Q 160 130, 170 102 Q 174 96, 182 100 Q 188 106, 184 114 L 164 174 Z"
+        fill="#F39C1F"/>
+
+  <!-- Hands gripping flashcard -->
+  <ellipse cx="40" cy="102" rx="8" ry="6" fill="#f0c39a"/>
+  <ellipse cx="180" cy="102" rx="8" ry="6" fill="#f0c39a"/>
+
+  <!-- Skirt / lower body -->
+  <path d="M 68 226 Q 90 240, 110 240 Q 130 240, 152 226 L 158 268 L 62 268 Z"
+        fill="#5A3800"/>
+
+  <!-- Feet -->
+  <ellipse cx="86" cy="272" rx="14" ry="5" fill="#2a1700"/>
+  <ellipse cx="134" cy="272" rx="14" ry="5" fill="#2a1700"/>
+</svg>

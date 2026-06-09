@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Smartboard icon — CMCA brand colours.
+       Used on slide 10 ("Reflect & Share") to cue the teacher to write
+       the children's responses on the classroom smartboard. -->
+  <defs>
+    <linearGradient id="board-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3CB6A6"/>
+      <stop offset="100%" stop-color="#2a8a7d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wall mount bracket -->
+  <rect x="95" y="14" width="10" height="14" rx="2" fill="#5A3800"/>
+
+  <!-- Smartboard frame -->
+  <rect x="14" y="28" width="172" height="118" rx="10" fill="#5A3800"/>
+  <!-- Board surface -->
+  <rect x="22" y="36" width="156" height="102" rx="4" fill="url(#board-fill)"/>
+
+  <!-- Chalk lines (kid handwriting style) -->
+  <g stroke="#FFFFFF" stroke-linecap="round" fill="none">
+    <path d="M 38 60 Q 60 56, 78 62 T 118 62" stroke-width="4"/>
+    <path d="M 38 80 Q 56 76, 76 82 T 110 82" stroke-width="4"/>
+    <path d="M 38 100 L 100 100" stroke-width="4"/>
+    <path d="M 38 118 Q 60 114, 80 120 T 124 120" stroke-width="4"/>
+  </g>
+
+  <!-- Marker tray under board -->
+  <rect x="14" y="146" width="172" height="10" rx="3" fill="#3a2400"/>
+
+  <!-- Markers on tray -->
+  <rect x="48" y="148" width="22" height="6" rx="1.5" fill="#F39C1F"/>
+  <rect x="80" y="148" width="22" height="6" rx="1.5" fill="#FFFFFF"/>
+  <rect x="112" y="148" width="22" height="6" rx="1.5" fill="#5A3800"/>
+
+  <!-- Stand legs -->
+  <line x1="60" y1="156" x2="40" y2="186" stroke="#5A3800" stroke-width="6" stroke-linecap="round"/>
+  <line x1="140" y1="156" x2="160" y2="186" stroke="#5A3800" stroke-width="6" stroke-linecap="round"/>
+</svg>

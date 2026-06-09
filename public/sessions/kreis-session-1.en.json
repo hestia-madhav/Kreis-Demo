@@ -127,7 +127,29 @@
       "title": "Meet Master Change",
       "video": "/sessions/assets/mc_intro.mp4",
       "transcript": "Hello junior citizens, Namaskara! I am Master Change. I am here to help teacher and you. Welcome to your Children's Constitution Club! This year, I too am a member of your Club as a Change Champion. CMCA — the Children's Movement for Civic Awareness — inspires and empowers young people like you and me to be concerned, thinking and active citizens. I am here to be with you and teacher, as a guide and support. Along with CMCA, there are partner organisations who are helping bring the Children's Constitution Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's start our journey as active junior citizens and members of our Children's Constitution Club, also known as CC Club! Now, let's hear what your teacher has to share with you.",
-      "tip": "Wait for MC video to play to the end. Encourage applause at 'Can you all clap…'."
+      "tip": "Wait for MC video to play to the end. Encourage applause at 'Can you all clap…'.",
+      "images": [
+        {
+          "src": "/sessions/assets/partner_gramaantara.jpeg",
+          "alt": "Gramaantara Trust",
+          "caption": "Gramaantara Trust · Chikballapur"
+        },
+        {
+          "src": "/sessions/assets/partner_navu_prathishtana.png",
+          "alt": "Navu Prathishtana",
+          "caption": "Navu Prathishtana · Mysuru, Kodagu, Kalaburgi, Bidar, Yadgir"
+        },
+        {
+          "src": "/sessions/assets/partner_prakruthi.jpeg",
+          "alt": "Prakruthi Foundation",
+          "caption": "Prakruthi Foundation · Tumkur, Hassan, Bangalore Urban & Rural"
+        },
+        {
+          "src": "/sessions/assets/partner_yids.png",
+          "alt": "Young India Development Society (YIDS)",
+          "caption": "YIDS · Kolar, Shivamoga"
+        }
+      ]
     },
     {
       "n": 4,
@@ -221,7 +243,9 @@
       "kind": "reflect_share",
       "title": "Reflect & Share",
       "prompt": "What have you learnt from this group activity of naming your groups and creating your logos?",
-      "tip": "Share 3-4 responses."
+      "tip": "Share 3-4 responses.",
+      "image": "/sessions/assets/smartboard_icon.svg",
+      "callout": "✍ Smartboard — write down the children's responses on the board"
     },
     {
       "n": 11,
@@ -306,7 +330,8 @@
       "body": [
         "One member per group will come forward and stick your rule on the flashcard."
       ],
-      "tip": "Show the physical flashcard. Cover the rules in the flashcard. Invite one child from each group up."
+      "tip": "Show the physical flashcard. Cover the rules in the flashcard. Invite one child from each group up.",
+      "image": "/sessions/assets/rule_flashcard.png"
     },
     {
       "n": 20,
@@ -398,20 +423,11 @@
     },
     {
       "n": 28,
-      "kind": "preamble",
+      "kind": "preamble_pair",
       "title": "Let's recite the Preamble of the Indian Constitution",
-      "body": [
-        "WE, THE PEOPLE OF INDIA,",
-        "having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC",
-        "and to secure to all its citizens:",
-        "JUSTICE, social, economic and political;",
-        "LIBERTY of thought, expression, belief, faith and worship;",
-        "EQUALITY of status and of opportunity;",
-        "and to promote among them all FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;",
-        "IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November, 1949,",
-        "do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION."
-      ],
-      "tip": "Stand. Recite together. Slow, clear pace."
+      "tip": "Stand. Recite together. Slow, clear pace.",
+      "preamble_en": "/sessions/assets/preamble_en.png",
+      "preamble_kn": "/sessions/assets/preamble_kn.png"
     },
     {
       "n": 29,

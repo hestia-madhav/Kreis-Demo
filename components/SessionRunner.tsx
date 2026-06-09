@@ -32,7 +32,8 @@ type SlideKind =
   | "reflect_share"
   | "video"
   | "video_question_series"
-  | "preamble";
+  | "preamble"
+  | "preamble_pair";
 
 interface QuestionItem {
   video: string;
@@ -71,6 +72,8 @@ interface Slide {
   duration_seconds?: number;
   title_kn?: string;   // optional Kannada title for branded title slide (rendered alongside English)
   thank_you?: boolean; // if true, branded title slide renders the "Thank You" closing variant
+  preamble_en?: string; // slide 28 — full English Preamble image (Madhubani border)
+  preamble_kn?: string; // slide 28 — full Kannada Preamble image (Madhubani border)
 }
 
 interface SessionDefinition {
@@ -342,6 +345,7 @@ function SlideBody({
     case "video": return <VideoSlide slide={slide} onEnded={onAdvance} />;
     case "video_question_series": return <VideoQuestionSeriesSlide slide={slide} onEvent={onEvent} />;
     case "preamble": return <PreambleSlide slide={slide} />;
+    case "preamble_pair": return <PreamblePairSlide slide={slide} />;
     default: return <pre>{JSON.stringify(slide, null, 2)}</pre>;
   }
 }
@@ -420,18 +424,38 @@ function StaticSlide({ slide }: { slide: Slide }) {
 
 function McSlide({ slide }: { slide: Slide }) {
   return (
-    <div className="sr-mc-grid">
-      <div className="sr-video-frame">
-        {slide.video ? (
-          <video controls src={slide.video} poster="/sessions/assets/mc_poster.png" />
-        ) : (
-          <div className="sr-video-placeholder">▶ MC video<br /><small>{slide.video || "(no video attached yet)"}</small></div>
-        )}
+    <div>
+      <div className="sr-mc-grid">
+        <div className="sr-video-frame">
+          {slide.video ? (
+            <video controls src={slide.video} poster="/sessions/assets/mc_poster.png" />
+          ) : (
+            <div className="sr-video-placeholder">▶ MC video<br /><small>{slide.video || "(no video attached yet)"}</small></div>
+          )}
+        </div>
+        <div className="sr-transcript">
+          <div className="sr-transcript-label">Transcript (English)</div>
+          <p>{slide.transcript}</p>
+        </div>
       </div>
-      <div className="sr-transcript">
-        <div className="sr-transcript-label">Transcript</div>
-        <p>{slide.transcript}</p>
-      </div>
+      {/* Companion logo strip — used on slide 3 to display the partner
+          orgs Sonu mentioned ("Along with CMCA, there are partner
+          organisations…"). Renders as a row of logo cards under the
+          video / transcript. */}
+      {slide.images && slide.images.length > 0 && (
+        <div className="sr-mc-partners">
+          <div className="sr-mc-partners-label">Partner organisations</div>
+          <div className="sr-static-image-grid">
+            {slide.images.map((im, i) => (
+              <figure key={i} className="sr-image-card">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={im.src} alt={im.alt || ""} />
+                {im.caption && <figcaption>{im.caption}</figcaption>}
+              </figure>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -803,6 +827,38 @@ function PreambleSlide({ slide }: { slide: Slide }) {
   );
 }
 
+function PreamblePairSlide({ slide }: { slide: Slide }) {
+  // Side-by-side EN + KN Preamble images (Sonu CSV slide 28 directive).
+  // Each image is large and clickable for a full-screen lightbox view so
+  // teachers can zoom in on a projector if the body text is small.
+  const [zoom, setZoom] = useState<string | null>(null);
+  return (
+    <div className="sr-preamble-pair">
+      {slide.preamble_en && (
+        <figure className="sr-preamble-card" onClick={() => setZoom(slide.preamble_en!)}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={slide.preamble_en} alt="Preamble (English)" />
+          <figcaption>English</figcaption>
+        </figure>
+      )}
+      {slide.preamble_kn && (
+        <figure className="sr-preamble-card" onClick={() => setZoom(slide.preamble_kn!)}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={slide.preamble_kn} alt="Preamble (Kannada)" />
+          <figcaption>ಕನ್ನಡ</figcaption>
+        </figure>
+      )}
+      {zoom && (
+        <div className="sr-preamble-zoom" onClick={() => setZoom(null)} role="dialog">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={zoom} alt="" />
+          <button className="sr-preamble-close" onClick={(e) => { e.stopPropagation(); setZoom(null); }}>×</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function AudioChip({ src }: { src: string }) {
   // Custom audio player — replaces the native <audio controls> for two reasons:
   // (1) the native control captures keyboard focus, so the right-arrow key
@@ -917,7 +973,21 @@ const SAFFRON = ORANGE;          // bright accent
 const LIGHT_SAFFRON = ORANGE_BG;  // pale tint
 
 const styles = `
-  .sr-root { position: fixed; inset: 0; z-index: 9000; display: flex; flex-direction: column; height: 100vh; background: ${CREAM}; color: ${INK}; font-family: "Trebuchet MS", "Trebuchet", "Lucida Sans Unicode", "Lucida Sans", sans-serif; }
+  .sr-root {
+    position: fixed; inset: 0; z-index: 9000;
+    display: flex; flex-direction: column; height: 100vh;
+    /* Branded wave background applied across the whole runtime UI —
+       same image used on the title slides for visual continuity.
+       The cream colour shows through as a tint behind the wave.
+       Cards (transcript, callout, tip, audio) keep solid backgrounds
+       so text stays legible on top. */
+    background:
+      url('/sessions/assets/branded_bg.jpg') no-repeat center / cover,
+      ${CREAM};
+    background-attachment: fixed;
+    color: ${INK};
+    font-family: "Trebuchet MS", "Trebuchet", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  }
   .sr-topbar { display: flex; align-items: center; gap: 16px; padding: 10px 16px; background: ${ORANGE}; color: #fff; }
   .sr-topbar-title { flex: 1; font-size: 14px; }
   .sr-lang-toggle { display: inline-flex; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; overflow: hidden; }
@@ -943,7 +1013,14 @@ const styles = `
   .sr-nav-item.is-current { background: ${ORANGE}; color: #fff; font-weight: 700; }
   .sr-nav-footer { font-size: 10px; opacity: 0.6; text-align: center; padding-top: 12px; }
 
-  .sr-canvas { flex: 1; padding: 28px 40px 110px; overflow-y: auto; position: relative; }
+  .sr-canvas {
+    flex: 1; padding: 28px 40px 110px; overflow-y: auto; position: relative;
+    /* Light cream tint OVER the wave bg so the brand texture stays
+       visible across the whole canvas while keeping text legible.
+       Lowered from 78–85% → 35–45% opacity per design feedback (the
+       wave was too washed out before). */
+    background: linear-gradient(rgba(255,251,242,0.35), rgba(255,251,242,0.45));
+  }
   /* Projector mode: vertically + horizontally center text-only slides and
      scale up typography so the back row of a classroom can read it. */
   .sr-canvas.is-projector { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100%; }
@@ -1045,6 +1122,64 @@ const styles = `
   .sr-subtitle { font-size: 22px; color: ${SAFFRON}; }
 
   .sr-mc-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
+  /* Partner-org strip under MC narration slides (slide 3). */
+  .sr-mc-partners { margin-top: 28px; }
+  .sr-mc-partners-label { font-size: 12px; font-weight: 800; color: ${ORANGE}; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 10px; }
+  /* ── Preamble pair (slide 28) — two large posters side by side,
+     click to zoom for projector legibility. ── */
+  .sr-preamble-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 8px 0 32px;
+  }
+  .sr-preamble-card {
+    margin: 0;
+    background: #fff;
+    border: 2px solid ${ORANGE};
+    border-radius: 14px;
+    padding: 14px 14px 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    cursor: zoom-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .sr-preamble-card:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0,0,0,0.12); }
+  .sr-preamble-card img {
+    width: 100%; height: auto;
+    max-height: 64vh;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  .sr-preamble-card figcaption {
+    font-size: 14px; font-weight: 800;
+    color: ${ORANGE_INK};
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .sr-preamble-zoom {
+    position: fixed; inset: 0; z-index: 10000;
+    background: rgba(0,0,0,0.86);
+    display: flex; align-items: center; justify-content: center;
+    padding: 40px;
+    cursor: zoom-out;
+  }
+  .sr-preamble-zoom img { max-width: 95vw; max-height: 95vh; object-fit: contain; border-radius: 8px; box-shadow: 0 12px 40px rgba(0,0,0,0.6); }
+  .sr-preamble-close {
+    position: absolute; top: 18px; right: 24px;
+    width: 44px; height: 44px;
+    border-radius: 50%; border: none;
+    background: ${ORANGE}; color: white;
+    font-size: 26px; line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  .sr-preamble-close:hover { background: #d8851a; }
   .sr-video-frame { background: #e5e7eb; border-radius: 12px; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
   .sr-video-frame video { width: 100%; height: 100%; object-fit: contain; background: #000; }
   /* CMCA logo overlay — masks the Veo watermark at bottom-right.
@@ -1142,7 +1277,7 @@ const styles = `
     border: 2px solid ${ORANGE};
     border-radius: 16px;
     padding: 16px 22px;
-    margin-top: 24px;
+    margin: 24px auto 0;     /* centred horizontally so it aligns with text above on static slides */
     max-width: 560px;
     box-shadow: 0 4px 14px rgba(243,156,31,0.18);
   }
@@ -1223,10 +1358,10 @@ const styles = `
   .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
   /* Brief panel on timer slides also supports companion logos beneath
      the brief text — used for slide 8 (KSRTC + KREIS logo inspiration). */
-  .sr-brief-logos { display: flex; gap: 16px; margin-top: 18px; flex-wrap: wrap; }
-  .sr-brief-logo { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px 14px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
-  .sr-brief-logo img { height: 72px; width: auto; object-fit: contain; display: block; }
-  .sr-brief-logo figcaption { font-size: 11px; font-weight: 700; color: ${ORANGE_INK}; letter-spacing: .04em; }
+  .sr-brief-logos { display: flex; gap: 22px; margin-top: 24px; flex-wrap: wrap; align-items: flex-end; }
+  .sr-brief-logo { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px 20px; display: flex; flex-direction: column; align-items: center; gap: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+  .sr-brief-logo img { height: 140px; width: auto; object-fit: contain; display: block; }
+  .sr-brief-logo figcaption { font-size: 14px; font-weight: 800; color: ${ORANGE_INK}; letter-spacing: .04em; }
 
   /* Video slide with post-video reveal — slide 5 (Eyes on Me) + slide 15 (MC raising hand) */
   .sr-video-large-wrap { display: flex; flex-direction: column; gap: 18px; }
