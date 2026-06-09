@@ -51,6 +51,7 @@ interface Slide {
   audio?: string;
   video?: string;
   image?: string;                 // optional companion image (e.g. Ambedkar, flat tyre, asfiya)
+  images?: Array<{ src: string; alt?: string; caption?: string }>; // multiple companion images (logos, reference photos)
   loop?: boolean;                 // loop the video instead of auto-advancing on end
   post_video_text?: string;       // text revealed after the video ends (slide 5/15)
   reveal_on_click?: boolean;      // require teacher click before showing post_video_text
@@ -68,6 +69,8 @@ interface Slide {
   correct_index?: number;
   prompt?: string;
   duration_seconds?: number;
+  title_kn?: string;   // optional Kannada title for branded title slide (rendered alongside English)
+  thank_you?: boolean; // if true, branded title slide renders the "Thank You" closing variant
 }
 
 interface SessionDefinition {
@@ -173,7 +176,9 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
       if ((e.target as HTMLElement)?.tagName === "INPUT") return;
-      if (e.key === "ArrowRight" || e.key === " ") { next(); e.preventDefault(); }
+      // ArrowRight = next slide. Space used to advance too but was removed —
+      // teachers expect Space to play/pause audio/video instead (browser default).
+      if (e.key === "ArrowRight") { next(); e.preventDefault(); }
       else if (e.key === "ArrowLeft") { prev(); }
       else if (e.key.toLowerCase() === "n") { setNavOpen((v) => !v); }
       else if (e.key.toLowerCase() === "f") {
@@ -343,11 +348,31 @@ function SlideBody({
 
 // ─────────────────────────── slide kinds ───────────────────────────────────
 function TitleSlide({ slide }: { slide: Slide }) {
+  // Branded layout mirrors Sonu's "Welcome to the Children's Constitution
+  // Club!" pptx template — wavy white background, KREIS round seal centred
+  // at top, CMCA "spark change" logo top-right, dual-language title centred
+  // below. Used for slide 1 (welcome) and the new closing slide (thank you).
+  //
+  // Two optional fields drive the variants:
+  //   slide.title_kn — Kannada title (rendered in Noto Sans Kannada below
+  //                    the English title)
+  //   slide.thank_you — when true, "Thank You" appears under the title pair
+  //                     (matches the pptx slide 4 layout)
+  const isThanks = !!slide.thank_you;
   return (
-    <div className="sr-title-hero">
-      <h2>{slide.title}</h2>
-      {slide.subtitle && <p className="sr-subtitle">{slide.subtitle}</p>}
-      {slide.audio && <AudioChip src={slide.audio} />}
+    <div className="sr-branded-title">
+      <div className="sr-branded-bg" aria-hidden />
+      <div className="sr-branded-logos">
+        <img className="sr-kreis-seal" src="/sessions/assets/kreis_seal.png" alt="KREIS" />
+        <img className="sr-cmca-mark" src="/sessions/assets/cmca_logo.png" alt="CMCA" />
+      </div>
+      <div className="sr-branded-titles">
+        <h2 className="sr-branded-en">{slide.title}</h2>
+        {slide.title_kn && <h3 className="sr-branded-kn">{slide.title_kn}</h3>}
+        {isThanks && <h2 className="sr-branded-thanks">Thank You</h2>}
+        {slide.subtitle && <p className="sr-subtitle">{slide.subtitle}</p>}
+      </div>
+      {slide.audio && <div className="sr-branded-audio"><AudioChip src={slide.audio} /></div>}
     </div>
   );
 }
@@ -356,8 +381,9 @@ function StaticSlide({ slide }: { slide: Slide }) {
   // bullets_large = render body as a big-font bullet list (per Sonu's feedback
   // on slides 7 "Form Groups" and 16 "Write your rules" — needs visual weight).
   const lineCls = slide.bullets_large ? "sr-line sr-line-lg" : "sr-line";
+  const hasSideArt = !!slide.image || (slide.images && slide.images.length > 0);
   return (
-    <div className={slide.image ? "sr-static-with-image" : ""}>
+    <div className={hasSideArt ? "sr-static-with-image" : ""}>
       <div className="sr-static-text">
         {slide.bullets_large ? (
           <ul className="sr-bullets-lg">
@@ -375,6 +401,17 @@ function StaticSlide({ slide }: { slide: Slide }) {
         <div className="sr-static-image">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={slide.image} alt="" />
+        </div>
+      )}
+      {slide.images && slide.images.length > 0 && (
+        <div className="sr-static-image-grid">
+          {slide.images.map((im, i) => (
+            <figure key={i} className="sr-image-card">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={im.src} alt={im.alt || ""} />
+              {im.caption && <figcaption>{im.caption}</figcaption>}
+            </figure>
+          ))}
         </div>
       )}
     </div>
@@ -452,7 +489,23 @@ function TimerSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEve
 
   return (
     <div className="sr-timer-grid">
-      <div className="sr-brief"><p>{slide.brief}</p></div>
+      <div className="sr-brief">
+        <p>{slide.brief}</p>
+        {/* Companion image strip — e.g. KSRTC + KREIS logos on slide 8.
+            Rendered under the brief so the children see the inspirations
+            without losing focus on the timer. */}
+        {slide.images && slide.images.length > 0 && (
+          <div className="sr-brief-logos">
+            {slide.images.map((im, i) => (
+              <figure key={i} className="sr-brief-logo">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={im.src} alt={im.alt || ""} />
+                {im.caption && <figcaption>{im.caption}</figcaption>}
+              </figure>
+            ))}
+          </div>
+        )}
+      </div>
       <div className={"sr-timer-ring " + (warn ? "is-warn " : "") + (flash ? "is-flash" : "")}>
         <svg viewBox="0 0 120 120">
           <circle cx="60" cy="60" r="52" stroke="#e5e7eb" strokeWidth="10" fill="none" />
@@ -603,8 +656,12 @@ function VideoSlide({ slide, onEnded }: { slide: Slide; onEnded: () => void }) {
       : ended
   );
 
+  // English transcript next to the video (per Sonu's directive:
+  // "transcripts can be in English to support hearing impaired").
+  const hasTranscript = !!slide.transcript;
+
   return (
-    <div className="sr-video-large-wrap">
+    <div className={"sr-video-large-wrap " + (hasTranscript ? "sr-video-with-transcript" : "")}>
       {/* Optional instruction lines rendered ABOVE the video — used for
           calmers ("Teacher says… / Children whisper back…") so the rules of
           the classroom convention are visible on the projector. */}
@@ -615,20 +672,28 @@ function VideoSlide({ slide, onEnded }: { slide: Slide; onEnded: () => void }) {
           ))}
         </div>
       )}
-      <div className="sr-video-large">
-        {slide.video ? (
-          <video
-            controls
-            autoPlay
-            loop={slide.loop ?? false}
-            src={slide.video}
-            onEnded={handleEnded}
-          />
-        ) : (
-          <div className="sr-video-placeholder">
-            ▶ EMBEDDED VIDEO<br />
-            <small>{slide.video || "(video asset not attached yet)"} · {slide.duration_seconds ?? 0}s</small>
-          </div>
+      <div className="sr-video-row">
+        <div className="sr-video-large">
+          {slide.video ? (
+            <video
+              controls
+              autoPlay
+              loop={slide.loop ?? false}
+              src={slide.video}
+              onEnded={handleEnded}
+            />
+          ) : (
+            <div className="sr-video-placeholder">
+              ▶ EMBEDDED VIDEO<br />
+              <small>{slide.video || "(video asset not attached yet)"} · {slide.duration_seconds ?? 0}s</small>
+            </div>
+          )}
+        </div>
+        {hasTranscript && (
+          <aside className="sr-video-transcript">
+            <div className="sr-transcript-label">Transcript (English)</div>
+            <p>{slide.transcript}</p>
+          </aside>
         )}
       </div>
 
@@ -739,10 +804,91 @@ function PreambleSlide({ slide }: { slide: Slide }) {
 }
 
 function AudioChip({ src }: { src: string }) {
+  // Custom audio player — replaces the native <audio controls> for two reasons:
+  // (1) the native control captures keyboard focus, so the right-arrow key
+  //     seeks audio forward instead of advancing to the next slide;
+  // (2) the native pill was tiny on a projector. This player is big enough
+  //     to be visible from the back of a classroom.
+  //
+  // The underlying <audio> element is kept (no controls, tabIndex=-1) so it
+  // never traps focus or keyboard events. Slide-level keyboard navigation
+  // (ArrowRight / Space) keeps working regardless of which control the
+  // teacher clicked last.
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [playing, setPlaying] = useState(false);
+  const [current, setCurrent] = useState(0);
+  const [duration, setDuration] = useState(0);
+
+  useEffect(() => {
+    setPlaying(false);
+    setCurrent(0);
+    setDuration(0);
+  }, [src]);
+
+  const toggle = () => {
+    const el = audioRef.current;
+    if (!el) return;
+    if (el.paused) el.play(); else el.pause();
+    // Blur the play button so focus returns to the slide root → keyboard
+    // navigation keeps working immediately after click.
+    (document.activeElement as HTMLElement | null)?.blur?.();
+  };
+
+  const seek = (e: React.MouseEvent<HTMLDivElement>) => {
+    const el = audioRef.current;
+    if (!el || !duration) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    el.currentTime = ratio * duration;
+    (document.activeElement as HTMLElement | null)?.blur?.();
+  };
+
+  const fmt = (s: number) => {
+    if (!isFinite(s)) return "0:00";
+    const m = Math.floor(s / 60);
+    const r = Math.floor(s % 60);
+    return `${m}:${r.toString().padStart(2, "0")}`;
+  };
+
+  const pct = duration ? (current / duration) * 100 : 0;
+
   return (
-    <div className="sr-audio-chip">
-      <span>🔊</span>
-      <audio controls src={src} preload="none" />
+    <div className="sr-audio-card">
+      <button
+        className="sr-audio-play"
+        onClick={toggle}
+        aria-label={playing ? "Pause audio" : "Play audio"}
+      >
+        {playing ? "⏸" : "▶"}
+      </button>
+      <div className="sr-audio-meta">
+        <div className="sr-audio-label">🔊 Audio</div>
+        <div
+          className="sr-audio-bar"
+          onClick={seek}
+          role="progressbar"
+          aria-valuemin={0}
+          aria-valuemax={duration}
+          aria-valuenow={current}
+        >
+          <div className="sr-audio-bar-fill" style={{ width: `${pct}%` }} />
+        </div>
+        <div className="sr-audio-time">
+          <span>{fmt(current)}</span>
+          <span>{fmt(duration)}</span>
+        </div>
+      </div>
+      <audio
+        ref={audioRef}
+        src={src}
+        preload="metadata"
+        tabIndex={-1}
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+        onEnded={() => setPlaying(false)}
+        onTimeUpdate={(e) => setCurrent((e.target as HTMLAudioElement).currentTime)}
+        onLoadedMetadata={(e) => setDuration((e.target as HTMLAudioElement).duration)}
+      />
     </div>
   );
 }
@@ -819,11 +965,104 @@ const styles = `
 
   .sr-title-hero { text-align: center; padding: 40px 0; }
   .sr-title-hero h2 { font-size: 44px; color: ${NAVY}; margin: 0 0 12px; }
+  /* Branded welcome / thank-you slide — mirrors the comms-team
+     pptx layout (wavy white bg + KREIS round seal + CMCA mark
+     + dual-language title). */
+  .sr-branded-title {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  .sr-branded-bg {
+    position: absolute; inset: 0;
+    background: url('/sessions/assets/branded_bg.jpg') no-repeat center / cover;
+    z-index: 0;
+  }
+  .sr-branded-logos {
+    position: relative; z-index: 2;
+    display: flex; align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 28px;
+  }
+  .sr-kreis-seal {
+    width: 200px; height: 200px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 14px rgba(0,0,0,0.15));
+  }
+  .sr-cmca-mark {
+    width: 100px; height: auto;
+    object-fit: contain;
+    margin-top: 24px;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.12));
+  }
+  .sr-branded-titles { position: relative; z-index: 2; max-width: 900px; }
+  .sr-branded-en {
+    font-size: 56px;
+    line-height: 1.15;
+    color: ${ORANGE_INK};
+    margin: 0 0 18px;
+    font-weight: 800;
+  }
+  .sr-branded-kn {
+    font-size: 44px;
+    line-height: 1.25;
+    color: ${ORANGE};
+    margin: 0;
+    font-weight: 700;
+    font-family: "Noto Sans Kannada", "Noto Serif Kannada", sans-serif;
+  }
+  .sr-branded-thanks {
+    font-size: 64px;
+    color: ${ORANGE};
+    margin: 36px 0 0;
+    font-weight: 800;
+    letter-spacing: .02em;
+  }
+  .sr-branded-title .sr-subtitle {
+    margin-top: 24px;
+    font-size: 22px;
+    color: ${ORANGE_INK};
+    opacity: 0.8;
+    letter-spacing: .08em;
+    font-weight: 600;
+  }
+  /* On the branded title slide, the audio card needs to centre under the
+     title (the parent uses align-items: center but the audio card is a
+     fixed-width block, so we explicitly centre it via flex inside its
+     wrapper). */
+  .sr-branded-audio { position: relative; z-index: 2; margin-top: 36px; width: 100%; display: flex; justify-content: center; }
+  .sr-branded-audio .sr-audio-card { margin-top: 0; }
   .sr-subtitle { font-size: 22px; color: ${SAFFRON}; }
 
   .sr-mc-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
-  .sr-video-frame { background: #e5e7eb; border-radius: 12px; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .sr-video-frame { background: #e5e7eb; border-radius: 12px; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
   .sr-video-frame video { width: 100%; height: 100%; object-fit: contain; background: #000; }
+  /* CMCA logo overlay — masks the Veo watermark at bottom-right.
+     Applied via ::after so we don't need to touch every video element's JSX.
+     pointer-events: none so it never blocks the play/pause controls. */
+  .sr-video-frame::after {
+    content: '';
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    width: 64px;
+    height: 76px;
+    background: url('/sessions/assets/cmca_logo.png') no-repeat center / contain;
+    pointer-events: none;
+    z-index: 5;
+    /* subtle drop shadow so the logo sits cleanly on any frame background */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
+  }
   .sr-video-placeholder { color: ${MUTED}; text-align: center; font-size: 18px; font-weight: 600; }
   .sr-transcript { background: #fff; border: 1px solid #e5e7eb; padding: 16px; border-radius: 10px; max-height: 360px; overflow-y: auto; }
   .sr-transcript-label { color: ${SAFFRON}; font-weight: 700; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; }
@@ -873,14 +1112,77 @@ const styles = `
   .sr-reflect blockquote { font-size: 28px; color: ${NAVY}; line-height: 1.4; margin: 20px 0; border-left: 4px solid ${SAFFRON}; padding-left: 20px; font-style: italic; }
   .sr-reflect-hint { color: ${MUTED}; font-size: 14px; }
 
-  .sr-video-large { background: #000; border-radius: 12px; aspect-ratio: 16 / 9; max-height: 70vh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .sr-video-large { background: #000; border-radius: 12px; aspect-ratio: 16 / 9; max-height: 70vh; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
   .sr-video-large video { width: 100%; height: 100%; object-fit: contain; }
+  /* CMCA logo overlay for the large video player — same masking strategy
+     as .sr-video-frame, scaled up slightly for the bigger frame. */
+  .sr-video-large::after {
+    content: '';
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    width: 88px;
+    height: 104px;
+    background: url('/sessions/assets/cmca_logo.png') no-repeat center / contain;
+    pointer-events: none;
+    z-index: 5;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+  }
 
   .sr-preamble { max-width: 900px; line-height: 1.7; }
   .sr-preamble p { font-size: 18px; margin: 0 0 10px; }
   .sr-preamble p.is-hero { font-size: 24px; font-weight: 700; color: ${NAVY}; margin-bottom: 16px; }
 
   .sr-audio-chip { display: inline-flex; align-items: center; gap: 10px; background: ${CREAM}; border: 1px solid ${SAFFRON}; padding: 8px 14px; border-radius: 999px; margin-top: 20px; font-size: 13px; }
+  /* New custom audio player — bigger, classroom-projector friendly.
+     Replaces the cramped .sr-audio-chip pill. */
+  .sr-audio-card {
+    display: flex; align-items: center; gap: 18px;
+    background: ${CREAM};
+    border: 2px solid ${ORANGE};
+    border-radius: 16px;
+    padding: 16px 22px;
+    margin-top: 24px;
+    max-width: 560px;
+    box-shadow: 0 4px 14px rgba(243,156,31,0.18);
+  }
+  .sr-audio-play {
+    flex: 0 0 auto;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    border: none;
+    background: ${ORANGE};
+    color: white;
+    font-size: 26px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(243,156,31,0.35);
+    transition: transform .08s ease, background .15s ease;
+  }
+  .sr-audio-play:hover { background: #d8851a; transform: scale(1.06); }
+  .sr-audio-play:active { transform: scale(0.96); }
+  .sr-audio-meta { flex: 1 1 auto; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .sr-audio-label { font-size: 13px; font-weight: 700; color: ${ORANGE_INK}; letter-spacing: .04em; text-transform: uppercase; }
+  .sr-audio-bar {
+    height: 10px;
+    background: rgba(243,156,31,0.18);
+    border-radius: 999px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  .sr-audio-bar:hover { background: rgba(243,156,31,0.28); }
+  .sr-audio-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, ${ORANGE}, #ffa940);
+    border-radius: 999px;
+    transition: width .12s linear;
+  }
+  .sr-audio-time {
+    display: flex; justify-content: space-between;
+    font-size: 12px; font-weight: 600; color: ${ORANGE_INK};
+    font-variant-numeric: tabular-nums;
+  }
 
   .sr-tip { position: fixed; bottom: 86px; right: 24px; max-width: 380px; background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; border-radius: 12px; padding: 12px 30px 12px 14px; box-shadow: 0 4px 12px rgba(0,0,0,.08); z-index: 10; }
   .sr-tip-label { color: ${NAVY}; font-size: 11px; font-weight: 800; letter-spacing: 1px; margin-bottom: 4px; }
@@ -913,9 +1215,28 @@ const styles = `
   .sr-static-text { min-width: 0; }
   .sr-static-image { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
   .sr-static-image img { width: 100%; height: auto; display: block; border-radius: 8px; }
+  /* Multi-image strip for slides like 7 (Form Groups reference photos)
+     and 8 (KSRTC + KREIS inspiration logos). Auto-flows in a row. */
+  .sr-static-image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; }
+  .sr-image-card { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.05); display: flex; flex-direction: column; gap: 8px; }
+  .sr-image-card img { width: 100%; height: 120px; object-fit: contain; display: block; }
+  .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
+  /* Brief panel on timer slides also supports companion logos beneath
+     the brief text — used for slide 8 (KSRTC + KREIS logo inspiration). */
+  .sr-brief-logos { display: flex; gap: 16px; margin-top: 18px; flex-wrap: wrap; }
+  .sr-brief-logo { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 10px 14px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .sr-brief-logo img { height: 72px; width: auto; object-fit: contain; display: block; }
+  .sr-brief-logo figcaption { font-size: 11px; font-weight: 700; color: ${ORANGE_INK}; letter-spacing: .04em; }
 
   /* Video slide with post-video reveal — slide 5 (Eyes on Me) + slide 15 (MC raising hand) */
   .sr-video-large-wrap { display: flex; flex-direction: column; gap: 18px; }
+  /* Video row: when a transcript is present, video + transcript sit side
+     by side; otherwise video fills the row. Mirrors the .sr-mc-grid
+     layout used by mc_narration slides for visual consistency. */
+  .sr-video-row { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start; }
+  .sr-video-with-transcript .sr-video-row { grid-template-columns: 1.4fr 1fr; }
+  .sr-video-transcript { background: ${ORANGE_BG}; border: 1px solid ${ORANGE}; border-radius: 12px; padding: 14px 16px; max-height: 70vh; overflow-y: auto; }
+  .sr-video-transcript p { margin: 0; font-size: 15px; line-height: 1.55; color: ${INK}; }
   .sr-post-video { display: flex; justify-content: center; padding: 8px 0; }
   .sr-post-video-text {
     background: ${ORANGE}; color: #fff; font-weight: 800; font-size: 36px;

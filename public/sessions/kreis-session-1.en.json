@@ -91,6 +91,13 @@
       "slides": [
         28
       ]
+    },
+    {
+      "id": "ending",
+      "label": "Thank You",
+      "slides": [
+        29
+      ]
     }
   ],
   "slides": [
@@ -100,7 +107,8 @@
       "title": "Welcome to the Children's Constitution Club!",
       "subtitle": "KREIS × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
-      "tip": "Play welcome music as students enter. Display logos full-screen."
+      "tip": "Play welcome music as children enter. Branded title fills the screen — KREIS seal centred at top, CMCA mark top-right, dual-language title below.",
+      "title_kn": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!"
     },
     {
       "n": 2,
@@ -404,6 +412,14 @@
         "do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION."
       ],
       "tip": "Stand. Recite together. Slow, clear pace."
+    },
+    {
+      "n": 29,
+      "kind": "title",
+      "title": "Children's Constitution Club!",
+      "title_kn": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್",
+      "thank_you": true,
+      "tip": "Thank the children. End of session."
     }
   ]
 }

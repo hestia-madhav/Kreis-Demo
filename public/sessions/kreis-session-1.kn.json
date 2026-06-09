@@ -58,6 +58,7 @@
         17,
         18,
         19,
+        19.5,
         20
       ]
     },
@@ -92,16 +93,24 @@
       "slides": [
         28
       ]
+    },
+    {
+      "id": "ending",
+      "label": "ಧನ್ಯವಾದ",
+      "slides": [
+        29
+      ]
     }
   ],
   "slides": [
     {
       "n": 1,
       "kind": "title",
-      "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "title": "Welcome to the Children's Constitution Club!",
       "subtitle": "KREIS × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
-      "tip": "ಮಕ್ಕಳು ತರಗತಿಗೆ ಬರುತ್ತಿರುವಾಗ ಸ್ವಾಗತ ಸಂಗೀತ ಹಾಕಿ. ಲೋಗೋಗಳನ್ನು ಪೂರ್ಣ ಪರದೆಯ ಮೇಲೆ ತೋರಿಸಿ."
+      "tip": "Play welcome music as children enter. Branded title fills the screen — KREIS seal centred at top, CMCA mark top-right, dual-language title below.",
+      "title_kn": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!"
     },
     {
       "n": 2,
@@ -118,8 +127,8 @@
       "n": 3,
       "kind": "mc_narration",
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್‌ ಅವರ ಪರಿಚಯ",
-      "video": "/sessions/assets/mc_intro.mp4",
-      "transcript": "ನಮಸ್ಕಾರ ಪುಟ್ಟ ನಾಗರಿಕರೇ! ನಾನು ಮಾಸ್ಟರ್ ಚೇಂಜ್. ನಾನು ನಿಮಗೂ ಶಿಕ್ಷಕರಿಗೂ ಸಹಾಯ ಮಾಡಲು ಬಂದಿದ್ದೇನೆ. ನಿಮ್ಮ ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ! ಈ ವರ್ಷ ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಆಗಿ ನಾನೂ ನಿಮ್ಮ ಕ್ಲಬ್‌ನ ಸದಸ್ಯ. CMCA — ಮಕ್ಕಳ ನಾಗರಿಕ ಅರಿವಿನ ಚಳುವಳಿ — ನಿಮ್ಮಂತಹ ಮಕ್ಕಳು ಆಲೋಚನೆ ಮಾಡುವ, ಪ್ರಶ್ನೆ ಕೇಳುವ, ಸಮಾಜಕ್ಕಾಗಿ ಕೆಲಸ ಮಾಡುವ ನಾಗರಿಕರಾಗಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ನಾನು ನಿಮ್ಮೊಂದಿಗೆ ಮತ್ತು ಶಿಕ್ಷಕರ ಜೊತೆ ಇದ್ದು, ದಾರಿ ತೋರಿಸುತ್ತೇನೆ. CMCAಜೊತೆಗೆ, ಈ ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್ ಅನ್ನು ನಿಮ್ಮ ಬಳಿಗೆ ತರಲು ಸಹಾಯ ಮಾಡುತ್ತಿರುವ ಪಾಲುದಾರ ಸಂಸ್ಥೆಗಳೂ ಇವೆ. CMCAಗೆ, ಪಾಲುದಾರ ಸಂಸ್ಥೆಗಳಿಗೆ, ಮತ್ತು ನನಗೆ ಎಲ್ಲರೂ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ? ನಿಮ್ಮ ಬಿಸಿ ಸ್ವಾಗತಕ್ಕೆ ಧನ್ಯವಾದ! ನಮ್ಮ ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ — CC ಕ್ಲಬ್‌ನ — ಸದಸ್ಯರಾಗಿ ನಮ್ಮ ಪ್ರಯಾಣ ಶುರು ಮಾಡೋಣ! ಈಗ, ನಿಮ್ಮ ಶಿಕ್ಷಕರು ನಿಮಗೆ ಏನು ಹೇಳುತ್ತಾರೆ ಎಂದು ಕೇಳೋಣ.",
+      "video": "/sessions/assets/mc_intro.kn.mp4",
+      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Constitution Club! This year, as a Change Champion, I am also a member of your Club. CMCA — the Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide, showing the way. Along with CMCA, there are partner organisations helping bring the Children's Constitution Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Constitution Club — the CC Club! Now, let's hear what your teacher has to say.",
       "tip": "MC ವೀಡಿಯೋವನ್ನು ಪೂರ್ತಿಯಾಗಿ ನೋಡಿ. 'ಎಲ್ಲರೂ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ?' ಎಂದಾಗ ಮಕ್ಕಳನ್ನು ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಪ್ರೋತ್ಸಾಹಿಸಿ."
     },
     {
@@ -130,7 +139,7 @@
         "ಕೆಲವೊಮ್ಮೆ ನಮಗೆ ಎಷ್ಟು ಖುಷಿ ಆಗುತ್ತದೆ ಎಂದರೆ ಮಾತಾಡುವುದು ನಿಲ್ಲಿಸಲು ಆಗಲ್ಲ, ಸುಮ್ಮನೆ ಕೂರಲೂ ಆಗಲ್ಲ…",
         "ಆಟದಲ್ಲಿ ಶಿಳ್ಳೆ ಇರುವಂತೆ, ನಮ್ಮ ಕ್ಲಬ್‌ಗೂ ಒಂದು ಶಿಳ್ಳೆ ಇದೆ!"
       ],
-      "audio": "/sessions/assets/vo_calmer_intro.mp3",
+      "audio": "/sessions/assets/vo_calmer_intro.kn.mp3",
       "tip": "ವೀಡಿಯೋ ನೋಡಿ."
     },
     {
@@ -141,9 +150,10 @@
         "ಶಿಕ್ಷಕರು ಹೇಳುತ್ತಾರೆ: \"1, 2, ನನ್ನ ಕಡೆ ನೋಡಿ!\"",
         "ಮಕ್ಕಳು ಪಿಸುಗುಟ್ಟಿ ಹೇಳುತ್ತಾರೆ: \"ನಿಮ್ಮ ಕಡೆ ನೋಡುತ್ತಿದ್ದೇವೆ.\""
       ],
-      "video": "/sessions/assets/lips_eyes_on_you_whisper.mp4",
+      "video": "/sessions/assets/eyes_on_you_whisper.kn.mp4",
       "post_video_text": "1 - 2 ನನ್ನ ಕಡೆ ನೋಡಿ",
-      "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ — ಈಗ ಮತ್ತು ತರಗತಿಯನ್ನು ಶಾಂತಗೊಳಿಸಬೇಕಾದಾಗ ಪ್ರತಿ ಬಾರಿಯೂ."
+      "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ — ಈಗ ಮತ್ತು ತರಗತಿಯನ್ನು ಶಾಂತಗೊಳಿಸಬೇಕಾದಾಗ ಪ್ರತಿ ಬಾರಿಯೂ.",
+      "transcript": "(whispered) Eyes on you."
     },
     {
       "n": 6,
@@ -167,7 +177,21 @@
       ],
       "bullets_large": true,
       "callout": "ಹುಡುಗಿಯರು ಮತ್ತು ಹುಡುಗರ ಮಿಶ್ರ ಗುಂಪು ಮಾಡಿ. ಶಾಲೆಯಲ್ಲಿ ಜೊತೆಯಾಗಿ ಕೆಲಸ ಮಾಡಿದರೆ ಮುಂದೆ ಕೆಲಸದ ಸ್ಥಳ ಮತ್ತು ಊರಿನಲ್ಲಿ ಜೊತೆಯಾಗಿ ಕೆಲಸ ಮಾಡಲು ಕಲಿಯುತ್ತೇವೆ.",
-      "tip": "ಎಣಿಕೆ ವಿಧಾನ ಬಳಸಿ, 5–6 ಮಕ್ಕಳ ಮಿಶ್ರ-ಲಿಂಗ ಗುಂಪು ಮಾಡಿ."
+      "tip": "ಎಣಿಕೆ ವಿಧಾನ ಬಳಸಿ, 5–6 ಮಕ್ಕಳ ಮಿಶ್ರ-ಲಿಂಗ ಗುಂಪು ಮಾಡಿ.",
+      "images": [
+        {
+          "src": "/sessions/assets/group_work_1.jpg",
+          "alt": "children working in a group"
+        },
+        {
+          "src": "/sessions/assets/group_work_2.jpg",
+          "alt": "children working in a group"
+        },
+        {
+          "src": "/sessions/assets/group_work_3.jpg",
+          "alt": "children working in a group"
+        }
+      ]
     },
     {
       "n": 8,
@@ -177,37 +201,27 @@
       "timer_seconds": 480,
       "reminder_at": 120,
       "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "tip": "8 ನಿಮಿಷ ಟೈಮರ್ ಶುರು ಮಾಡಿ. 2 ನಿಮಿಷ ಬಾಕಿ ಇರುವಾಗ ಮೆಲ್ಲನೆ ಒಂದು ಗಂಟೆ ಶಬ್ದ ಮತ್ತು ಬಣ್ಣದ ಸ್ಪಂದನ ಬರುತ್ತದೆ."
+      "tip": "8 ನಿಮಿಷ ಟೈಮರ್ ಶುರು ಮಾಡಿ. 2 ನಿಮಿಷ ಬಾಕಿ ಇರುವಾಗ ಮೆಲ್ಲನೆ ಒಂದು ಗಂಟೆ ಶಬ್ದ ಮತ್ತು ಬಣ್ಣದ ಸ್ಪಂದನ ಬರುತ್ತದೆ.",
+      "images": [
+        {
+          "src": "/sessions/assets/ksrtc_logo.webp",
+          "alt": "KSRTC",
+          "caption": "KSRTC"
+        },
+        {
+          "src": "/sessions/assets/kreis_logo.png",
+          "alt": "KREIS",
+          "caption": "KREIS"
+        }
+      ]
     },
     {
       "n": 9,
-      "kind": "video_question_series",
+      "kind": "video",
       "title": "ನಿಮ್ಮ ಗುಂಪು ಹೇಗೆ ಜೊತೆಯಾಗಿ ಕೆಲಸ ಮಾಡಿತು?",
-      "intro": "ನಿಮ್ಮ ಗುಂಪಿನಲ್ಲಿ ಸುಮ್ಮನೆ ಯೋಚಿಸಿ, ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಕೇಳುವ ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಿ.",
-      "items": [
-        {
-          "video": "/sessions/assets/mc_question_1.mp4",
-          "question": "ಗುಂಪಿನ ಹೆಸರು ಅಥವಾ ಲೋಗೋ ಬಗ್ಗೆ ಗುಂಪಿನ ಎಲ್ಲರೂ ತಮ್ಮ ಯೋಚನೆ ಹೇಳಿದರಾ?"
-        },
-        {
-          "video": "/sessions/assets/mc_question_2.mp4",
-          "question": "ಗುಂಪಿನಲ್ಲಿ ಒಪ್ಪಿಗೆ ಆಗುವುದು ಸುಲಭ ಆಗಿತ್ತಾ? ಯಾರ ಯೋಚನೆ ಆಯ್ಕೆ ಮಾಡಬೇಕು ಎಂದು ಹೇಗೆ ತೀರ್ಮಾನಿಸಿದಿರಿ?"
-        },
-        {
-          "video": "/sessions/assets/mc_question_3.mp4",
-          "question": "ಗುಂಪಿನ ಹೆಸರು ಅಥವಾ ಲೋಗೋ ಬಗ್ಗೆ ಎಲ್ಲರಿಗೂ ಮಾತಾಡಲು ಅವಕಾಶ ಸಿಕ್ಕಿತ್ತಾ?"
-        },
-        {
-          "video": "/sessions/assets/mc_question_4.mp4",
-          "question": "ಲೋಗೋದ ಯಾವುದಾದರೂ ಒಂದು ಭಾಗ ಚಿತ್ರಿಸಲು ಎಲ್ಲರಿಗೂ ಅವಕಾಶ ಸಿಕ್ಕಿತ್ತಾ?"
-        },
-        {
-          "video": "/sessions/assets/mc_question_5.mp4",
-          "question": "ತಮ್ಮ ಯೋಚನೆಗೆ ಬೆಲೆ ಇದೆ, ತಮ್ಮ ಮಾತು ಕೇಳಿಸಿತು ಎಂದು ಎಲ್ಲರಿಗೂ ಅನಿಸಿತಾ?"
-        }
-      ],
-      "footer": "2 ಅಥವಾ ಹೆಚ್ಚು 'ಹೌದು' ಉತ್ತರ ಇದ್ದರೆ → ಎಲ್ಲರಿಗೂ ಹೈ-ಫೈವ್! ಈ ತಂಡ ಸ್ಫೂರ್ತಿಯನ್ನು ಹೀಗೇ ಮುಂದುವರಿಸೋಣ.",
-      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ಮಕ್ಕಳು ಗುಂಪಿನಲ್ಲಿ ಸುಮ್ಮನೆ ಯೋಚಿಸಲಿ; ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ ಬೇಗನೆ ಕೈ ಎತ್ತಲು ಹೇಳಿ. ಹೈ-ಫೈವ್ ಸಾಲು MC ವೀಡಿಯೋದ ಕೊನೆಗೆ ಬರುತ್ತದೆ."
+      "video": "/sessions/assets/mc_questions_combined.kn.mp4",
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ಮಕ್ಕಳು ಗುಂಪಿನಲ್ಲಿ ಸುಮ್ಮನೆ ಯೋಚಿಸಲಿ; ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ ಬೇಗನೆ ಕೈ ಎತ್ತಲು ಹೇಳಿ. ಹೈ-ಫೈವ್ ಸಾಲು MC ವೀಡಿಯೋದ ಕೊನೆಗೆ ಬರುತ್ತದೆ.",
+      "transcript": "Master Change asks: 1) Did everyone in the group share their ideas about the name and logo? 2) Was it easy to agree as a group? How did you decide? 3) Did everyone get a chance to speak their opinion? 4) Did everyone get a chance to draw part of the logo? 5) Did everyone feel that their voice was heard? — If you had 2 or more YES responses, high-fives all round! Let's keep this team spirit going."
     },
     {
       "n": 10,
@@ -220,8 +234,8 @@
       "n": 11,
       "kind": "mc_narration",
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್‌ ಚಟುವಟಿಕೆಯನ್ನು ಮುಗಿಸುತ್ತಾರೆ",
-      "video": "/sessions/assets/mc_wrap_group_activity.mp4",
-      "transcript": "ನೀವು ಈಗ ತುಂಬಾ ಮುಖ್ಯವಾದದ್ದನ್ನು ಕಲಿತಿದ್ದೀರಿ — ಎಲ್ಲವೂ ಫಲಕದ ಮೇಲಿದೆ! ನೀವು ಕೇಳಿದಾಗ, ಹೇಳಿದಾಗ, ಮತ್ತು ಜೊತೆಯಾಗಿ ಕೆಲಸ ಮಾಡಿದಾಗ, ಜೀವನವಿಡೀ ನೀವು ಸಂವಿಧಾನ ಚಾಂಪಿಯನ್ ಸದಸ್ಯರಾಗಿರುತ್ತೀರಿ. ಇನ್ನು ಮುಂದೆ ಎಲ್ಲರೂ ಗುಂಪು ಚಟುವಟಿಕೆಯಲ್ಲಿ ಭಾಗವಹಿಸಲಿ. ಎಲ್ಲ ಕ್ಲಬ್ ಸತ್ರಗಳಲ್ಲೂ ಆರಂಭದಿಂದಲೇ ನಿಮ್ಮ ಗುಂಪಿನಲ್ಲಿ ಒಟ್ಟಿಗೆ ಕೂರಿ! ಈಗ ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಕ್ವಿಜ್ ಪ್ರಶ್ನೆಗಳ ಸಮಯ. ಶಿಕ್ಷಕರೇ, ನಿಮ್ಮ ಕಡೆ!"
+      "video": "/sessions/assets/mc_wrap_group_activity.kn.mp4",
+      "transcript": "You've now practiced something very important — it's all on the board! When you listen, share, and work together, you become Constitution Champion members for life. From now on, make sure everyone takes part in group activities. For every Club session, sit together in your groups from the start! Now it's time for the Constitution Connect Quiz Questions. Over to you, teacher!"
     },
     {
       "n": 12,
@@ -241,8 +255,8 @@
       "n": 13,
       "kind": "mc_narration",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ",
-      "video": "/sessions/assets/mc_cc1_debrief.mp4",
-      "transcript": "ಒಳ್ಳೆಯ ಪ್ರಯತ್ನ! ಪ್ರಸ್ತಾವನೆಯ 'ನಾವು, ಭಾರತದ ಜನರು' ಎಂಬ ಪದಗಳು — ಸರ್ಕಾರ ಜನರಿಂದ ಮತ್ತು ಜನರಿಗಾಗಿ ಆಗುತ್ತದೆ ಎಂದು ನೆನಪಿಸುತ್ತವೆ. ನಿಮ್ಮ ತಂಡದ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲೂ, ಎಲ್ಲ ಸದಸ್ಯರ ಒಳಿತಿಗಾಗಿ ತೀರ್ಮಾನ ಮಾಡಬೇಕು. ಸರ್ಕಾರ ಎಲ್ಲ ನಾಗರಿಕರ ಒಳಿತಿಗಾಗಿ ಯೋಚಿಸಬೇಕಾದಂತೆ, ನೀವೂ ನಿಮ್ಮ ತಂಡದ ಎಲ್ಲರ ಒಳಿತಿಗಾಗಿ ತೀರ್ಮಾನ ಮಾಡಬೇಕು. ಮುಂದೆ ಪ್ರತಿ ಸತ್ರದಲ್ಲೂ ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆಗಳು ಇರುತ್ತವೆ — ಆಗ ನಿಮ್ಮ ದಿನ ನಿತ್ಯದ ಕಲಿಕೆಯನ್ನು ಸಂವಿಧಾನದ ಮೌಲ್ಯಗಳ ಜೊತೆ ಜೋಡಿಸಬಹುದು. ಮುಂದುವರಿಯೋಣ!",
+      "video": "/sessions/assets/mc_cc1_debrief.kn.mp4",
+      "transcript": "Good try! The words 'We the People' in the Preamble remind us that government is formed by the people and for the people. In your team project, decisions should be made keeping all members' welfare in mind. Just as the government must think for the good of all citizens, you too must decide for the good of all your team members. Going forward, every session will have Constitution Connect questions — so you can link daily life with the values of the Constitution. Let's move on!",
       "tip": "ವೀಡಿಯೋ ನೋಡಿ."
     },
     {
@@ -302,6 +316,14 @@
       "tip": "ಫ್ಲ್ಯಾಶ್‌ಕಾರ್ಡ್ ತೋರಿಸಿ. ಅದರಲ್ಲಿರುವ ನಿಯಮಗಳನ್ನು ಮುಚ್ಚಿ. ಪ್ರತಿ ಗುಂಪಿನಿಂದ ಒಂದು ಮಗುವನ್ನು ಮುಂದೆ ಕರೆಯಿರಿ."
     },
     {
+      "n": 19.5,
+      "kind": "video",
+      "title": "ಚೇಂಜ್ ಚಾಂಪಿಯನ್‌ನ 7 ನಿಯಮಗಳು",
+      "video": "/sessions/assets/mc_change_champion_rules.kn.mp4",
+      "tip": "ವೀಡಿಯೋ ಮುಗಿಯುವವರೆಗೆ ತೋರಿಸಿ. ನಂತರ ಶಿಕ್ಷಕರ ನಿಯಮ ತೋರಿಸಲು ಮುಂದಿನ ಸ್ಲೈಡ್‌ಗೆ ಹೋಗಿ.",
+      "transcript": "There are seven rules to be a Change Champion. ONE — aim to be the change you want to see. TWO — express yourself without fear; share your words. THREE — cooperate and be on time. FOUR — everyone is important. FIVE — open your mind to new ideas. SIX — share your experience. SEVEN — being in a team is always better and more fun!"
+    },
+    {
       "n": 20,
       "kind": "click_reveal",
       "title": "ಶಿಕ್ಷಕರ ನಿಯಮ",
@@ -325,9 +347,9 @@
       "n": 22,
       "kind": "mc_narration",
       "title": "ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಮತ್ತು ಸಂವಿಧಾನ ರಚನಾ ಸಭೆ",
-      "video": "/sessions/assets/mc_who_inspires.mp4",
+      "video": "/sessions/assets/mc_who_inspires.kn.mp4",
       "image": "/sessions/assets/ambedkar_constituent_assembly.jpg",
-      "transcript": "ಭಾರತಕ್ಕಾಗಿ ನಮ್ಮ ಸಂವಿಧಾನ ಕಂಡ ಕನಸಿನಿಂದ ನಾವು ಸ್ಫೂರ್ತಿ ಪಡೆಯುತ್ತೇವೆ — ಅದು ನಮಗೆ ದಾರಿ ತೋರಿಸುತ್ತದೆ, ಪ್ರೇರಣೆ ಕೊಡುತ್ತದೆ. ಸಂವಿಧಾನ, ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್, ಮತ್ತು ಸಂವಿಧಾನ ರಚನಾ ಸಭೆಯ ಸದಸ್ಯರಿಗೆ ಗೌರವದಿಂದ, ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಕಲಿಕೆಯ ಪ್ರಯಾಣ ಶುರು ಆಗುತ್ತಿರುವ ಈ ಸತ್ರವನ್ನು ಪ್ರಸ್ತಾವನೆ ಓದುವ ಮೂಲಕ ಮುಗಿಸುತ್ತೇವೆ."
+      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Constitution Club's learning journey by reading the Preamble together."
     },
     {
       "n": 23,
@@ -387,7 +409,8 @@
       "title": "ಅಸ್ಫಿಯಾಳ ಕಥೆ",
       "video": "/sessions/assets/asfiya_story.mp4",
       "duration_seconds": 180,
-      "tip": "ವೀಡಿಯೋ ಅಡಚಣೆ ಇಲ್ಲದೆ ತೋರಿಸಿ. ಮುಗಿದ ಮೇಲೆ ಮಕ್ಕಳ ಪ್ರತಿಕ್ರಿಯೆ ಕೇಳಿ."
+      "tip": "ವೀಡಿಯೋ ಅಡಚಣೆ ಇಲ್ಲದೆ ತೋರಿಸಿ. ಮುಗಿದ ಮೇಲೆ ಮಕ್ಕಳ ಪ್ರತಿಕ್ರಿಯೆ ಕೇಳಿ.",
+      "transcript": "Asfiya is a young citizen. Her small actions — like ripples in water — started in her classroom, spread through her school, and went all the way to her community. You too can be like Asfiya. Your small action can create ripples too."
     },
     {
       "n": 28,
@@ -405,6 +428,14 @@
         "ಈ ಸಂವಿಧಾನವನ್ನು ಅಂಗೀಕರಿಸಿ, ಶಾಸನಬದ್ಧಗೊಳಿಸಿ ಮತ್ತು ನಮಗೆ ನಾವೇ ಸಮರ್ಪಿಸಿಕೊಳ್ಳುತ್ತೇವೆ."
       ],
       "tip": "ಎದ್ದು ನಿಲ್ಲಿ. ಒಟ್ಟಿಗೆ ಪಠಿಸಿ. ನಿಧಾನವಾಗಿ, ಸ್ಪಷ್ಟವಾಗಿ."
+    },
+    {
+      "n": 29,
+      "kind": "title",
+      "title": "Children's Constitution Club!",
+      "title_kn": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್",
+      "thank_you": true,
+      "tip": "Thank the children. End of session."
     }
   ]
 }
