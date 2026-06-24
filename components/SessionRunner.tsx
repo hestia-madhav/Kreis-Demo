@@ -72,6 +72,8 @@ interface Slide {
   duration_seconds?: number;
   title_kn?: string;   // optional Kannada title for branded title slide (rendered alongside English)
   thank_you?: boolean; // if true, branded title slide renders the "Thank You" closing variant
+  closing_line?: string; // AKG/Savitha 16 Jun: small Kannada closing line under the title — used on each session's final slide
+  centered?: boolean; // hint to the renderer to centre this slide's content (used mainly on title cards)
   preamble_en?: string; // slide 28 — full English Preamble image (Madhubani border)
   preamble_kn?: string; // slide 28 — full Kannada Preamble image (Madhubani border)
 }
@@ -116,6 +118,15 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
   const [tipOpen, setTipOpen] = useState(true);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
+  // Fit-to-viewport — eliminates per-slide scrolling. The canvas is fixed-
+  // height (filling the flex slot between header + footer); the inner
+  // wrapper is whatever size the slide content naturally takes. If the
+  // inner is taller than the canvas, we scale it down with CSS transform
+  // so the whole slide fits the viewport. No scrolling, ever.
+  const canvasRef = useRef<HTMLElement | null>(null);
+  const fitRef = useRef<HTMLDivElement | null>(null);
+  const [fitScale, setFitScale] = useState(1);
+
   // ─────── language state ───────
   // Resolution order on first paint:
   //   1. ?lang=kn / ?lang=en in the URL — wins, so shareable Kannada links work
@@ -153,6 +164,43 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
   // per-slide when it overlaps controls (e.g. slide 9's "Next question"),
   // but should see the next slide's tip by default.
   useEffect(() => { setTipOpen(true); }, [idx]);
+
+  // Fit-to-viewport: measure inner vs canvas after every slide change /
+  // resize, and apply a transform: scale() if content overflows. Runs on
+  // mount, slide change, window resize, and content mutation.
+  useEffect(() => {
+    const canvasEl = canvasRef.current;
+    const fitEl = fitRef.current;
+    if (!canvasEl || !fitEl) return;
+
+    const recompute = () => {
+      // Reset to 1 first so we measure the natural content size, not the
+      // already-scaled size.
+      fitEl.style.transform = "scale(1)";
+      // Force a reflow so the measurement reflects scale=1.
+      void fitEl.offsetHeight;
+      const canvasH = canvasEl.clientHeight;
+      const canvasW = canvasEl.clientWidth;
+      const contentH = fitEl.scrollHeight;
+      const contentW = fitEl.scrollWidth;
+      if (canvasH === 0 || contentH === 0) return;
+      const scaleH = canvasH / contentH;
+      const scaleW = canvasW / contentW;
+      // Pick the smaller — guarantees fit in both dimensions. Never scale up.
+      const next = Math.min(1, scaleH, scaleW);
+      setFitScale(next);
+    };
+
+    recompute();
+    const ro = new ResizeObserver(recompute);
+    ro.observe(canvasEl);
+    ro.observe(fitEl);
+    window.addEventListener("resize", recompute);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", recompute);
+    };
+  }, [idx, activeLang]);
 
   const slide = session.slides[idx];
 
@@ -275,17 +323,26 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
         {/* Main canvas — text-instruction slides are centered for projector
             display; richer kinds (videos, timers, MCQ, sequences) keep their
             existing top-left layout so controls stay reachable. */}
-        <main className={"sr-canvas " + (
-          (slide.kind === "static" || slide.kind === "reflect_share")
-            ? "is-projector"
-            : ""
-        )}>
+        <main
+          ref={canvasRef}
+          className={"sr-canvas " + (
+            (slide.kind === "static" || slide.kind === "reflect_share")
+              ? "is-projector"
+              : ""
+          )}
+        >
+          <div
+            ref={fitRef}
+            className="sr-canvas-fit"
+            style={{ transform: `scale(${fitScale})` }}
+          >
           <div className="sr-section-crumb">{currentSection.label}</div>
           <h1 className="sr-title">{slide.title}</h1>
           <div className="sr-accent" />
 
           <div className="sr-slide-body">
             <SlideBody slide={slide} onEvent={onEvent} onAdvance={next} />
+          </div>
           </div>
 
           {/* Teacher tip — collapsible so it doesn't cover on-slide controls */}
@@ -375,6 +432,10 @@ function TitleSlide({ slide }: { slide: Slide }) {
         {slide.title_kn && <h3 className="sr-branded-kn">{slide.title_kn}</h3>}
         {isThanks && <h2 className="sr-branded-thanks">Thank You</h2>}
         {slide.subtitle && <p className="sr-subtitle">{slide.subtitle}</p>}
+        {/* AKG/Savitha 16 Jun: closing-line on the final slide of every
+            session. Renders below the title (or under "Thank You" on the
+            session-end slide). Same Noto Sans Kannada font + smaller size. */}
+        {slide.closing_line && <p className="sr-branded-closing">{slide.closing_line}</p>}
       </div>
       {slide.audio && <div className="sr-branded-audio"><AudioChip src={slide.audio} /></div>}
     </div>
@@ -879,6 +940,17 @@ function AudioChip({ src }: { src: string }) {
     setPlaying(false);
     setCurrent(0);
     setDuration(0);
+    // Attempt autoplay when the audio source changes (new slide). The
+    // `autoPlay` attribute on the <audio> element handles the initial
+    // mount; this handles slide-to-slide transitions where the same
+    // element is reused with a new `src`. Browsers will reject without
+    // a recent user gesture; the visible play button is the fallback.
+    const el = audioRef.current;
+    if (el) {
+      el.play().catch(() => {
+        // Autoplay blocked — leave the play button visible; no crash.
+      });
+    }
   }, [src]);
 
   const toggle = () => {
@@ -937,7 +1009,8 @@ function AudioChip({ src }: { src: string }) {
       <audio
         ref={audioRef}
         src={src}
-        preload="metadata"
+        preload="auto"
+        autoPlay
         tabIndex={-1}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
@@ -1014,12 +1087,25 @@ const styles = `
   .sr-nav-footer { font-size: 10px; opacity: 0.6; text-align: center; padding-top: 12px; }
 
   .sr-canvas {
-    flex: 1; padding: 28px 40px 110px; overflow-y: auto; position: relative;
+    flex: 1; padding: 28px 40px 110px; overflow: hidden; position: relative;
     /* Light cream tint OVER the wave bg so the brand texture stays
        visible across the whole canvas while keeping text legible.
        Lowered from 78–85% → 35–45% opacity per design feedback (the
        wave was too washed out before). */
     background: linear-gradient(rgba(255,251,242,0.35), rgba(255,251,242,0.45));
+  }
+  /* Fit-to-viewport wrapper: holds the slide's natural content size and
+     gets a CSS transform: scale(N) applied by JS when content overflows
+     the canvas. transform-origin: top center keeps the top of the slide
+     anchored so the section crumb + title don't drift. */
+  .sr-canvas-fit {
+    transform-origin: top center;
+    width: 100%;
+  }
+  .sr-canvas.is-projector .sr-canvas-fit {
+    /* Projector-mode is-projector centers vertically via flex on the
+       canvas; the fit wrapper should still measure as one block. */
+    display: flex; flex-direction: column; align-items: center;
   }
   /* Projector mode: vertically + horizontally center text-only slides and
      scale up typography so the back row of a classroom can read it. */
@@ -1112,6 +1198,18 @@ const styles = `
     opacity: 0.8;
     letter-spacing: .08em;
     font-weight: 600;
+  }
+  /* AKG/Savitha 16 Jun: closing-line under the title on the final slide. */
+  .sr-branded-closing {
+    margin: 28px auto 0;
+    max-width: 720px;
+    font-family: "Noto Sans Kannada", "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: ${INK};
+    opacity: 0.92;
+    text-align: center;
+    font-weight: 500;
   }
   /* On the branded title slide, the audio card needs to centre under the
      title (the parent uses align-items: center but the audio card is a
@@ -1319,12 +1417,29 @@ const styles = `
     font-variant-numeric: tabular-nums;
   }
 
-  .sr-tip { position: fixed; bottom: 86px; right: 24px; max-width: 380px; background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; border-radius: 12px; padding: 12px 30px 12px 14px; box-shadow: 0 4px 12px rgba(0,0,0,.08); z-index: 10; }
-  .sr-tip-label { color: ${NAVY}; font-size: 11px; font-weight: 800; letter-spacing: 1px; margin-bottom: 4px; }
-  .sr-tip-body { color: ${INK}; font-size: 13px; line-height: 1.4; }
-  .sr-tip-close { position: absolute; top: 6px; right: 8px; background: transparent; border: none; color: ${NAVY}; font-size: 20px; font-weight: 700; line-height: 1; cursor: pointer; padding: 2px 6px; border-radius: 6px; }
+  /* Teacher Tip — AKG/Savitha feedback (16 Jun): tip was floating in the
+     bottom-right ABOVE main content on slides where text/imagery extended
+     that far right. New placement: docked into the bottom-LEFT, tucked
+     directly against the footer (bottom: 60px sits just above the 60px-
+     tall .sr-controls bar). Translucent backdrop + smaller width + lower
+     opacity so it never obscures the slide content underneath. */
+  .sr-tip {
+    position: fixed; bottom: 60px; left: 16px;
+    max-width: 320px; max-height: 28vh; overflow-y: auto;
+    background: rgba(254, 243, 199, 0.92);
+    backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+    border: 1px solid ${SAFFRON};
+    border-radius: 10px;
+    padding: 10px 28px 10px 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    z-index: 10;
+    font-size: 12px;
+  }
+  .sr-tip-label { color: ${NAVY}; font-size: 10px; font-weight: 800; letter-spacing: 1px; margin-bottom: 3px; }
+  .sr-tip-body { color: ${INK}; font-size: 12px; line-height: 1.4; }
+  .sr-tip-close { position: absolute; top: 4px; right: 6px; background: transparent; border: none; color: ${NAVY}; font-size: 18px; font-weight: 700; line-height: 1; cursor: pointer; padding: 2px 6px; border-radius: 6px; }
   .sr-tip-close:hover { background: rgba(0,0,0,0.08); }
-  .sr-tip-toggle { position: fixed; bottom: 86px; right: 24px; background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; color: ${NAVY}; border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.08); z-index: 10; }
+  .sr-tip-toggle { position: fixed; bottom: 70px; left: 16px; background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; color: ${NAVY}; border-radius: 999px; padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.08); z-index: 10; }
   .sr-tip-toggle:hover { background: ${SAFFRON}; color: white; }
 
   .sr-controls { position: fixed; bottom: 0; left: 0; right: 0; padding: 14px 24px; display: flex; align-items: center; gap: 16px; background: #fff; border-top: 1px solid #e5e7eb; z-index: 11; }
