@@ -6,7 +6,7 @@ import Link from "next/link";
 // production show a disabled "Coming soon" state with the production
 // stage flagged in the body copy so reviewers know what's pending.
 
-type Status = "live" | "in_production" | "draft";
+type Status = "live" | "in_production" | "in_progress" | "draft";
 
 interface SessionEntry {
   id: string;
@@ -26,7 +26,7 @@ const SESSIONS: SessionEntry[] = [
     number: 1,
     title: "Welcome to the Children's Constitution Club",
     subtitle: "Introductions · Calmers · Group formation · Constitution connect · Club rules",
-    status: "live",
+    status: "in_progress",
     durationMin: 60,
   },
   {
@@ -35,7 +35,7 @@ const SESSIONS: SessionEntry[] = [
     title: "Naming of Club & Launch Campaign",
     subtitle:
       "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
-    status: "live",
+    status: "in_progress",
     durationMin: 60,
     progress: [
       "✅ Source deck (V2)",
@@ -56,7 +56,7 @@ const SESSIONS: SessionEntry[] = [
     title: "Choices, Integrity & the Change Champion Box",
     subtitle:
       "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
-    status: "live",
+    status: "in_progress",
     durationMin: 60,
     progress: [
       "✅ Source deck (V1)",
@@ -77,6 +77,7 @@ const SESSIONS: SessionEntry[] = [
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {
   live: { label: "Live", bg: "#D1FAE5", fg: "#065F46" },
   in_production: { label: "In production", bg: "#FEF3C7", fg: "#92400E" },
+  in_progress: { label: "In progress", bg: "#FEF3C7", fg: "#92400E" },
   draft: { label: "Draft", bg: "#E5E7EB", fg: "#374151" },
 };
 
@@ -158,7 +159,10 @@ export default function HomePage() {
         <div style={{ display: "grid", gap: "1.25rem" }}>
           {SESSIONS.map((s) => {
             const pill = STATUS_PILL[s.status];
-            const isLive = s.status === "live";
+            // Cards are clickable when not strictly "draft" — sessions
+            // marked "in_progress" still link through so reviewers can walk
+            // the latest placeholder build.
+            const isLive = s.status === "live" || s.status === "in_progress";
             const card = (
               <article
                 style={{

@@ -7,18 +7,95 @@
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
-    { "id": "open",              "label": "Intro",                "slides": [1] },
-    { "id": "hospital_stories",  "label": "Hospital Stories",     "slides": [2] },
-    { "id": "groupwork_intro",   "label": "Group Work Intro",     "slides": [3, 4] },
-    { "id": "groupwork_do",      "label": "Group Work",           "slides": [5, 6] },
-    { "id": "groupwork_share",   "label": "Share",                "slides": [7, 8] },
-    { "id": "reflection",        "label": "Reflection",           "slides": [9] },
-    { "id": "choice_intro",      "label": "Introduce Choice",     "slides": [10] },
-    { "id": "hospital_qs",       "label": "Hospital — Questions", "slides": [11, 12] },
-    { "id": "integrity",         "label": "Integrity",            "slides": [13] },
-    { "id": "choices_school",    "label": "School Choices",       "slides": [14] },
-    { "id": "ssc",               "label": "Start · Stop · Continue", "slides": [15] },
-    { "id": "cc_box",            "label": "Change Champion Box",  "slides": [16] }
+    {
+      "id": "open",
+      "label": "Intro",
+      "slides": [
+        1
+      ]
+    },
+    {
+      "id": "hospital_stories",
+      "label": "Hospital Stories",
+      "slides": [
+        2
+      ]
+    },
+    {
+      "id": "groupwork_intro",
+      "label": "Group Work Intro",
+      "slides": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "groupwork_do",
+      "label": "Group Work",
+      "slides": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "groupwork_share",
+      "label": "Share",
+      "slides": [
+        7,
+        8
+      ]
+    },
+    {
+      "id": "reflection",
+      "label": "Reflection",
+      "slides": [
+        9
+      ]
+    },
+    {
+      "id": "choice_intro",
+      "label": "Introduce Choice",
+      "slides": [
+        10
+      ]
+    },
+    {
+      "id": "hospital_qs",
+      "label": "Hospital — Questions",
+      "slides": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": "integrity",
+      "label": "Integrity",
+      "slides": [
+        13
+      ]
+    },
+    {
+      "id": "choices_school",
+      "label": "School Choices",
+      "slides": [
+        14
+      ]
+    },
+    {
+      "id": "ssc",
+      "label": "Start · Stop · Continue",
+      "slides": [
+        15
+      ]
+    },
+    {
+      "id": "cc_box",
+      "label": "Change Champion Box",
+      "slides": [
+        16,
+        17
+      ]
+    }
   ],
   "slides": [
     {
@@ -27,7 +104,7 @@
       "title": "Welcome to the Children's Constitution Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
-      "tip": "[REUSE FROM S1] Welcome music + co-branded landing. (Single centred title.)"
+      "tip": ""
     },
     {
       "n": 2,
@@ -38,7 +115,7 @@
         "Story 2 — March 17, 2017, Hindustan Times, Hyderabad: Unable to pay a bribe for a hospital wheelchair, a patient uses his son's toy tricycle. As attendants had been demanding ₹100 to ₹200 for providing a wheelchair, the patient's wife had been bringing their son's tricycle to the hospital during their visits. S. Raju, in his 40s, had been visiting the hospital for follow-up treatment for burn injuries he suffered due to an electrical shock last August. His wife Santoshi said that because she did not have money to pay 'tips' to the ward-boys, her husband was not given a wheelchair, and they had to use the toy tricycle to move around the hospital."
       ],
       "callout": "Teacher's Tip: Ask 2 student volunteers to read the stories aloud.",
-      "tip": "[NEW PLAYER FEATURE — pending] News-article card display. For placeholder build, displayed as static text blocks."
+      "tip": ""
     },
     {
       "n": 3,
@@ -50,14 +127,14 @@
         "One — list out a value or quality that the story shows, and which every good human being should live by.",
         "Two — list out the specific action or behaviour which shows that value."
       ],
-      "tip": "[PLACEHOLDER] Audio: vo_groupwork_intro.kn.mp3."
+      "tip": ""
     },
     {
       "n": 4,
       "kind": "mc_narration",
       "title": "Example — Master Change",
       "transcript": "I always leave late from home to my school. In order to reach on time, I often jump traffic signals or don't follow the road rules — that's the story. What is the value here that I am NOT showing which I must have as a good human being? (Pause 5s for class answers — MC then says: don't jump signals, be careful on road, look out for signs, leave early, be punctual, respect rules.) Great! Now in this story, what is the positive action that shows that value? (Pause 5s — MC: follow rules, be aware of other vehicles, reach school on time.) So your group will write 'not jump traffic signals' as the value and 'follow rules, reach school on time' as the actions that show this value. You have 8 minutes to do all the stories!",
-      "tip": "[PLACEHOLDER] Video: mc_value_example.kn.mp4 (Veo pending). 3 Veo shots with two 5-second silent holds."
+      "tip": ""
     },
     {
       "n": 5,
@@ -68,7 +145,7 @@
       "reminder_at": 120,
       "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
       "callout": "Teacher's Tip: Each sheet in Annexure 3 is different — do NOT give the same handout to all groups. You can use Annexure 2 as a reference but don't show it to students. Click the timer after distributing.",
-      "tip": "[EXTENDED TIMER WIDGET] 7-min timer + chime at 2 min remaining. PDF Annexure 3 lives outside the player."
+      "tip": ""
     },
     {
       "n": 6,
@@ -77,7 +154,7 @@
       "brief": "Thank you! You worked very well. It doesn't matter if you haven't finished — when we share, all stories will get covered. Now select 2 stories you'd like to share with the class. Make sure your value + action list is ready.",
       "timer_seconds": 60,
       "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "tip": "[REUSE TIMER WIDGET] 1-min timer. Audio: vo_finishing_groupwork.kn.mp3."
+      "tip": ""
     },
     {
       "n": 7,
@@ -88,7 +165,7 @@
         "Don't repeat stories — if another group already read your first pick, use your second."
       ],
       "callout": "Teacher's Tip: Move from group to group. Maintain discipline — all must listen when one speaks. Don't spend more than a minute per story. 7 groups = 7 minutes total.",
-      "tip": "[PLACEHOLDER] Audio: vo_sharing_stories.kn.mp3."
+      "tip": ""
     },
     {
       "n": 8,
@@ -100,7 +177,7 @@
         "Come to any part of the board and write large enough for everyone to read."
       ],
       "callout": "Teacher's Tip: Give them just a minute or two and make sure everyone has chalk in hand and doesn't have to wait to write on the board.",
-      "tip": "[PLACEHOLDER] Audio: vo_capture_board.kn.mp3."
+      "tip": ""
     },
     {
       "n": 9,
@@ -108,7 +185,7 @@
       "title": "Reflection",
       "prompt": "Let us spend a minute reflecting in silence on what we have written on the board — which has come out of your own group discussions. You will get 2 minutes to think and reflect.",
       "callout": "Teacher's Tip: When students start to reflect, point to the section of the board where you wrote responses for the hospital story at the beginning of the session, and ask them to re-read what they had said.",
-      "tip": "[PLACEHOLDER] Image: kids in reflective mood. Audio: vo_reflection.kn.mp3."
+      "tip": ""
     },
     {
       "n": 10,
@@ -119,21 +196,21 @@
         "What do you call that act of deciding? It starts with C___"
       ],
       "callout": "Teacher's Tip: Help students complete the answer if they're not able to. CHOICE.",
-      "tip": "[PLACEHOLDER] Image: shopkeeper handing change. Audio: vo_shopkeeper_choice.kn.mp3."
+      "tip": ""
     },
     {
       "n": 11,
       "kind": "mc_narration",
       "title": "What choice did the poor have?",
       "transcript": "Friends — in the hospital stories you read out at the beginning, what choice did the poor people have? What would happen to their loved one who is very sick if they don't pay the bribes? Share your thoughts with your teacher and friends. (Pause 10s for student responses.) Poor people sometimes have very little choice. If the poor didn't pay bribes, they could even lose their loved one, or in the case of ration cards or Aadhar cards, they could go hungry or lose their daily-wage job.",
-      "tip": "[PLACEHOLDER] Video: mc_poor_choice.kn.mp4 (Veo pending)."
+      "tip": ""
     },
     {
       "n": 12,
       "kind": "mc_narration",
       "title": "What about the hospital staff's choices?",
       "transcript": "In the hospital stories — what about the choices that the hospital staff made? Can you share your thoughts with your teacher and friends? (Pause 10s for response.) They could have chosen not to take bribes from poor people. They could have fought for the poor. They should have done their job fairly.",
-      "tip": "[PLACEHOLDER] Video: mc_staff_choice.kn.mp4 (Veo pending). Optional: stitch with slide 11."
+      "tip": ""
     },
     {
       "n": 13,
@@ -146,14 +223,14 @@
         "INTEGRITY",
         "Our personal integrity is built over many years by thousands and millions of choices we make — like all these everyday choices in your stories."
       ],
-      "tip": "[NEW PLAYER FEATURE — pending] Animated word-reveal for INTEGRITY (letter-by-letter or fade-in). Click-by-click reveal of statements. Audio: vo_integrity_definition.kn.mp3."
+      "tip": ""
     },
     {
       "n": 14,
       "kind": "mc_narration",
       "title": "Choices we make in school",
       "transcript": "Now let's talk about some choices we make right here in school. Think about this based on what we have learnt today. (1) Some children are putting blank chits and damaging the Change Champion Box. (2) What happens when we copy our project work from Google or ChatGPT and don't actually do it ourselves? (3) One of your friends was absent — and next day you help him or her in studies. (4) Some children broke the window panel while playing — and they admit it to the teacher. [ON-SCREEN TAGLINE OVERLAY:] Your everyday choices can make you the real Change Heroes.",
-      "tip": "[PLACEHOLDER] Video: mc_school_choices.kn.mp4 (Veo pending). 5 shots — final is silent for the tagline overlay."
+      "tip": ""
     },
     {
       "n": 15,
@@ -165,7 +242,7 @@
         "What's ONE thing you want to STOP doing?",
         "What's ONE thing you want to CONTINUE doing?"
       ],
-      "tip": "[PLACEHOLDER] Optional motion graphic (CapCut, not Veo). Audio: vo_start_stop_continue.kn.mp3."
+      "tip": ""
     },
     {
       "n": 16,
@@ -174,7 +251,18 @@
       "transcript": "Wow! We have been learning so many new things and doing wonderful activities in our CMCA Club, right? Now it's time to start collecting all the positive changes happening in our lives! Let me introduce something exciting — the Change Champion Box! 🎉 What is a Change Champion Box? It's a special box where you can share your change stories. Maybe you helped a friend, showed kindness to an animal, solved a problem at school, or helped someone at home. Every good action counts! You can even share stories about reporting a problem in your neighbourhood — a pothole, a broken streetlight, or anything that needs attention. If you take a step towards making a positive change, don't forget to add your story to the Change Champion Box. Now we need two volunteers who can help make this box and bring it to our next class. Don't worry if you don't know how to make it — we will give you simple instructions in Annexure 1. Let's get ready to collect lots of amazing change stories and become true Change Champions! 🌟",
       "callout": "Teacher's Tip: Use Annexure 1 to guide students to make the CC Box.",
       "closing_line": "Today our Constitution Club journey has taken another important step. See you again in the next session.",
-      "tip": "[PLACEHOLDER] Video: mc_cc_box.kn.mp4 (Veo pending). 5 Veo shots, ~35s. PDF Annexure 1 lives outside the player."
+      "tip": ""
+    },
+    {
+      "n": 17,
+      "kind": "title",
+      "title": "Children's Constitution Club",
+      "thank_you": true,
+      "closing_line": "Today we have learnt a lot about choice, integrity, and change. See you again in the next session.",
+      "centered": true,
+      "image": "/sessions/assets/kreis_seal.png",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Thank the children. End of session."
     }
   ]
 }

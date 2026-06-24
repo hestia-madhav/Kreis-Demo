@@ -6,17 +6,100 @@
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
-    { "id": "introduce",  "label": "ಪರಿಚಯ",                          "slides": [1, 2, 3] },
-    { "id": "calmers",    "label": "ಶಾಂತಗೊಳ್ಳೋಣ",                    "slides": [4, 5, 6] },
-    { "id": "groups",     "label": "ಗುಂಪು ರಚನೆ",                      "slides": [7] },
-    { "id": "group_work", "label": "ಗುಂಪು ಕಾರ್ಯ",                     "slides": [8, 9, 10, 11] },
-    { "id": "cc1",        "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",            "slides": [12, 13] },
-    { "id": "rules",      "label": "ನಿಯಮಗಳನ್ನು ಒಟ್ಟಿಗೆ ಮಾಡೋಣ",         "slides": [14, 15, 16, 17, 18, 19.5] },
-    { "id": "inspires",   "label": "ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ?",              "slides": [21, 22] },
-    { "id": "cc2",        "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",            "slides": [23, 24, 25] },
-    { "id": "ripples",    "label": "ಬದಲಾವಣೆಯ ಅಲೆಗಳು",                "slides": [26, 27] },
-    { "id": "preamble",   "label": "ಪ್ರಸ್ತಾವನೆ",                       "slides": [28] },
-    { "id": "ending",     "label": "ಧನ್ಯವಾದ",                         "slides": [29] }
+    {
+      "id": "introduce",
+      "label": "ಪರಿಚಯ",
+      "slides": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "calmers",
+      "label": "ಶಾಂತಗೊಳ್ಳೋಣ",
+      "slides": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "groups",
+      "label": "ಗುಂಪು ರಚನೆ",
+      "slides": [
+        7
+      ]
+    },
+    {
+      "id": "group_work",
+      "label": "ಗುಂಪು ಕಾರ್ಯ",
+      "slides": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "id": "cc1",
+      "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
+      "slides": [
+        12,
+        13
+      ]
+    },
+    {
+      "id": "rules",
+      "label": "ನಿಯಮಗಳನ್ನು ಒಟ್ಟಿಗೆ ಮಾಡೋಣ",
+      "slides": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19.5
+      ]
+    },
+    {
+      "id": "inspires",
+      "label": "ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ?",
+      "slides": [
+        21,
+        22
+      ]
+    },
+    {
+      "id": "cc2",
+      "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
+      "slides": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "id": "ripples",
+      "label": "ಬದಲಾವಣೆಯ ಅಲೆಗಳು",
+      "slides": [
+        26,
+        27
+      ]
+    },
+    {
+      "id": "preamble",
+      "label": "ಪ್ರಸ್ತಾವನೆ",
+      "slides": [
+        28
+      ]
+    },
+    {
+      "id": "ending",
+      "label": "ಧನ್ಯವಾದ",
+      "slides": [
+        29
+      ]
+    }
   ],
   "slides": [
     {
@@ -45,12 +128,28 @@
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್‌ ಅವರ ಪರಿಚಯ",
       "video": "/sessions/assets/mc_intro.kn.mp4",
       "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Constitution Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness (ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ) — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Children's Constitution Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Constitution Club — the CC Club!",
-      "tip": "MC ವೀಡಿಯೋವನ್ನು ಪೂರ್ತಿಯಾಗಿ ನೋಡಿ. CMCA ಪೂರ್ಣ ರೂಪ — Children's Movement for Civic Awareness — ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಉಳಿಯಬೇಕು. ಕನ್ನಡದಲ್ಲಿ: ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ. 'ಎಲ್ಲರೂ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ?' ಎಂದಾಗ ಮಕ್ಕಳನ್ನು ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಪ್ರೋತ್ಸಾಹಿಸಿ. (AKG/Savitha 16 Jun: MC should not drop the book in the video.)",
+      "tip": "MC ವೀಡಿಯೋವನ್ನು ಪೂರ್ತಿಯಾಗಿ ನೋಡಿ. CMCA ಪೂರ್ಣ ರೂಪ — Children's Movement for Civic Awareness — ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಉಳಿಯಬೇಕು. ಕನ್ನಡದಲ್ಲಿ: ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ. 'ಎಲ್ಲರೂ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ?' ಎಂದಾಗ ಮಕ್ಕಳನ್ನು ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಪ್ರೋತ್ಸಾಹಿಸಿ.",
       "images": [
-        { "src": "/sessions/assets/partner_gramaantara.jpeg",        "alt": "Gramaantara Trust",                       "caption": "Gramaantara Trust · Chikballapur" },
-        { "src": "/sessions/assets/partner_navu_prathishtana.png",   "alt": "Navu Prathishtana",                       "caption": "Navu Prathishtana · Mysuru, Kodagu, Kalaburgi, Bidar, Yadgir" },
-        { "src": "/sessions/assets/partner_prakruthi.jpeg",          "alt": "Prakruthi Foundation",                    "caption": "Prakruthi Foundation · Tumkur, Hassan, Bangalore Urban & Rural" },
-        { "src": "/sessions/assets/partner_yids.png",                "alt": "Young India Development Society (YIDS)",  "caption": "YIDS · Kolar, Shivamoga" }
+        {
+          "src": "/sessions/assets/partner_gramaantara.jpeg",
+          "alt": "Gramaantara Trust",
+          "caption": "Gramaantara Trust · Chikballapur"
+        },
+        {
+          "src": "/sessions/assets/partner_navu_prathishtana.png",
+          "alt": "Navu Prathishtana",
+          "caption": "Navu Prathishtana · Mysuru, Kodagu, Kalaburgi, Bidar, Yadgir"
+        },
+        {
+          "src": "/sessions/assets/partner_prakruthi.jpeg",
+          "alt": "Prakruthi Foundation",
+          "caption": "Prakruthi Foundation · Tumkur, Hassan, Bangalore Urban & Rural"
+        },
+        {
+          "src": "/sessions/assets/partner_yids.png",
+          "alt": "Young India Development Society (YIDS)",
+          "caption": "YIDS · Kolar, Shivamoga"
+        }
       ]
     },
     {
@@ -63,7 +162,7 @@
       ],
       "audio": "/sessions/assets/vo_eyes_on_you.kn.mp3",
       "post_video_text": "ಒಂದು ಎರಡು — ನನ್ನ ಕಡೆ ನೋಡಿ / ಬೋರ್ಡ್ ಕಡೆ ನೋಡಿ",
-      "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ — ಈಗ ಮತ್ತು ತರಗತಿಯನ್ನು ಶಾಂತಗೊಳಿಸಬೇಕಾದಾಗ ಪ್ರತಿ ಬಾರಿಯೂ. (AKG/Savitha 16 Jun: old calmer audio removed; slide 5's 'One Two — Eyes on You' moved here.)"
+      "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ — ಈಗ ಮತ್ತು ತರಗತಿಯನ್ನು ಶಾಂತಗೊಳಿಸಬೇಕಾದಾಗ ಪ್ರತಿ ಬಾರಿಯೂ."
     },
     {
       "n": 5,
@@ -88,7 +187,8 @@
       ],
       "audio": "/sessions/assets/vo_flat_tyre_shhh.mp3",
       "image": "/sessions/assets/flat_tyre.jpg",
-      "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ. (AKG/Savitha 16 Jun: 'Shhh' audio to be trimmed to ~4 seconds — producer task.)"
+      "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ.",
+      "image_layout": "side"
     },
     {
       "n": 7,
@@ -101,12 +201,22 @@
         "ಹಂಚಿಕೊಳ್ಳಲು, ಕೇಳಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಒಟ್ಟಾಗಿ ಕಲಿಯಲು ಅವಕಾಶವಿದೆ."
       ],
       "bullets_large": true,
-      "tip": "ಎಣಿಕೆ ವಿಧಾನ ಬಳಸಿ, 5–6 ಮಕ್ಕಳ ಮಿಶ್ರ-ಲಿಂಗ ಗುಂಪು ಮಾಡಿ. (AKG/Savitha 16 Jun: title was 'ಗುಂಪು ಮಾಡಿ' → 'ಗುಂಪು ರಚನೆ'. Body fully replaced. Old on-screen note removed.)",
+      "tip": "ಎಣಿಕೆ ವಿಧಾನ ಬಳಸಿ, 5–6 ಮಕ್ಕಳ ಮಿಶ್ರ-ಲಿಂಗ ಗುಂಪು ಮಾಡಿ.",
       "images": [
-        { "src": "/sessions/assets/group_work_1.jpg", "alt": "children working in a group" },
-        { "src": "/sessions/assets/group_work_2.jpg", "alt": "children working in a group" },
-        { "src": "/sessions/assets/group_work_3.jpg", "alt": "children working in a group" }
-      ]
+        {
+          "src": "/sessions/assets/group_work_1.jpg",
+          "alt": "children working in a group"
+        },
+        {
+          "src": "/sessions/assets/group_work_2.jpg",
+          "alt": "children working in a group"
+        },
+        {
+          "src": "/sessions/assets/group_work_3.jpg",
+          "alt": "children working in a group"
+        }
+      ],
+      "image_layout": "side"
     },
     {
       "n": 8,
@@ -116,10 +226,18 @@
       "timer_seconds": 480,
       "reminder_at": 120,
       "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "tip": "8 ನಿಮಿಷದ ನಂತರ ಪ್ರತೀ ಗುಂಪಿಗೂ ತಮ್ಮ ಹೆಸರು ಹಾಗೂ ಗುಂಪಿನ ಲೋಗೋ ತೋರಿಸಲು ಹೇಳಿರಿ. 2 ನಿಮಿಷ ಬಾಕಿ ಇರುವಾಗ ಮೆಲ್ಲನೆ ಒಂದು ಗಂಟೆ ಶಬ್ದ ಬರುತ್ತದೆ. (AKG/Savitha 16 Jun: 'ಪ್ರೇರಣೆಗಾಗಿ' → 'ಉದಾಹರಣೆಗಾಗಿ'.)",
+      "tip": "8 ನಿಮಿಷದ ನಂತರ ಪ್ರತೀ ಗುಂಪಿಗೂ ತಮ್ಮ ಹೆಸರು ಹಾಗೂ ಗುಂಪಿನ ಲೋಗೋ ತೋರಿಸಲು ಹೇಳಿರಿ. 2 ನಿಮಿಷ ಬಾಕಿ ಇರುವಾಗ ಮೆಲ್ಲನೆ ಒಂದು ಗಂಟೆ ಶಬ್ದ ಬರುತ್ತದೆ.",
       "images": [
-        { "src": "/sessions/assets/ksrtc_logo.webp", "alt": "KSRTC", "caption": "KSRTC" },
-        { "src": "/sessions/assets/kreis_logo.png",  "alt": "KREIS", "caption": "KREIS" }
+        {
+          "src": "/sessions/assets/ksrtc_logo.webp",
+          "alt": "KSRTC",
+          "caption": "KSRTC"
+        },
+        {
+          "src": "/sessions/assets/kreis_logo.png",
+          "alt": "KREIS",
+          "caption": "KREIS"
+        }
       ]
     },
     {
@@ -127,7 +245,15 @@
       "kind": "video",
       "title": "ಈಗ ಯಾರು ಜಯಶಾಲಿ ಎಂದು ನೋಡೋಣ",
       "video": "/sessions/assets/mc_questions_combined.kn.mp4",
-      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ಮಕ್ಕಳು ಗುಂಪಿನಲ್ಲಿ ಸುಮ್ಮನೆ ಯೋಚಿಸಲಿ; ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ ಬೇಗನೆ ಕೈ ಎತ್ತಲು ಹೇಳಿ. (AKG/Savitha 16 Jun: title changed; questions extended to 7 — video to be regenerated.)",
+      "pause_at": [
+        8,
+        16,
+        24,
+        32,
+        40
+      ],
+      "pause_duration": 5,
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ಮಕ್ಕಳು ಗುಂಪಿನಲ್ಲಿ ಸುಮ್ಮನೆ ಯೋಚಿಸಲಿ; ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ ಬೇಗನೆ ಕೈ ಎತ್ತಲು ಹೇಳಿ.",
       "transcript": "Master Change asks 7 group-reflection questions: (1) Did everyone share their thoughts about the name or logo? (2) Was it easy to choose one name or logo? (3) How did you decide which idea to pick? (4) Did everyone get a chance to share their opinion? (5) Did everyone get a chance to draw at least part of the logo? (6) Did you feel your idea was heard and respected? (7) When you showed your image, did everyone come together to display it?",
       "kn_questions": [
         "ಎಲ್ಲರೂ ಗುಂಪಿನ ಹೆಸರು ಅಥವಾ ಲೋಗೋ ಬಗ್ಗೆ ತಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಂಡರಾ?",
@@ -160,7 +286,7 @@
         "ಇನ್ನು ಮುಂದೆ, ಗುಂಪಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಭಾಗವಹಿಸುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ. ಪ್ರತಿಯೊಂದು ಕ್ಲಬ್ ಸೆಷನ್‌ನಲ್ಲೂ ಆರಂಭದಿಂದಲೇ ನಿಮ್ಮ ಗುಂಪಿನೊಂದಿಗೆ ಕುಳಿತುಕೊಳ್ಳಿ.",
         "ಈಗ \"ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ\" ಸಮಯ!"
       ],
-      "tip": "AKG/Savitha 16 Jun: script updated — video to be regenerated."
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ."
     },
     {
       "n": 12,
@@ -174,13 +300,12 @@
         "ಪರಸ್ಪರ ಜಗಳ ಮಾಡಿ, ತಾನುತಾನೇ ಕೆಲಸ ಮಾಡಿ."
       ],
       "correct_index": 2,
-      "tip": "ಸನ್ನಿವೇಶವನ್ನು ತರಗತಿಗೆ ಗಟ್ಟಿಯಾಗಿ ಓದಿ ಹೇಳಿ. ಉತ್ತರ ತೋರಿಸುವ ಮೊದಲು ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. ಸರಿ ಉತ್ತರ: c) ಎಲ್ಲಾ ಸದಸ್ಯರ ಹಿತಾಸಕ್ತಿಗಳನ್ನು ಗಮನದಲ್ಲಿಟ್ಟು ಚಿಂತಿಸಿ. (AKG/Savitha 16 Jun: scenario + all 4 options rewritten in natural Kannada.)"
+      "tip": "ಸನ್ನಿವೇಶವನ್ನು ತರಗತಿಗೆ ಗಟ್ಟಿಯಾಗಿ ಓದಿ ಹೇಳಿ. ಉತ್ತರ ತೋರಿಸುವ ಮೊದಲು ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. ಸರಿ ಉತ್ತರ: c) ಎಲ್ಲಾ ಸದಸ್ಯರ ಹಿತಾಸಕ್ತಿಗಳನ್ನು ಗಮನದಲ್ಲಿಟ್ಟು ಚಿಂತಿಸಿ."
     },
     {
       "n": 13,
       "kind": "mc_narration",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
-      "video": "/sessions/assets/mc_cc1_debrief.kn.mp4",
       "transcript": "Good try! The Preamble's words 'We, the People of India' remind us that the government is formed by the people and must work for the people's welfare. In your group activities too, when you make decisions, you should keep the welfare of every member in mind. Just as the government must think for the good of all citizens, you too must decide for the good of all your team members. From now on, every session will have Constitution Connect questions — they will help you link your daily life with the values of the Constitution. Let's move on to the next activity!",
       "kn_script": [
         "ಒಳ್ಳೆಯ ಪ್ರಯತ್ನ!",
@@ -189,7 +314,8 @@
         "ಇನ್ನು ಮುಂದೆ, ಪ್ರತಿಯೊಂದು ಸೆಷನ್‌ನಲ್ಲೂ ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆಗಳು ಇರುತ್ತವೆ. ಇವು ನಿಮ್ಮ ದೈನಂದಿನ ಜೀವನವನ್ನು ಸಂವಿಧಾನದ ಮೌಲ್ಯಗಳೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ.",
         "ಈಗ ಮುಂದಿನ ಚಟುವಟಿಕೆಗೆ ಸಾಗೋಣ!"
       ],
-      "tip": "ವೀಡಿಯೋ ನೋಡಿ. (AKG/Savitha 16 Jun: script updated — video to be regenerated.)"
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ.",
+      "_placeholder": true
     },
     {
       "n": 14,
@@ -200,7 +326,7 @@
         "ನೀವು ತುಂಬಾ ಮಜವಾದ ಒಂದು ಹೊಸ ಆಟ ಆಡಲು ಹೊರಟಿದ್ದೀರಿ ಎಂದು ಊಹಿಸಿ. ಆಟವನ್ನು ಸರಿಯಾಗಿ ಆಡಲು ನಿಮಗೆ ಏನು ಗೊತ್ತಿರಬೇಕು?",
         "ಎಲ್ಲರೂ ತಮಗೆ ಬೇಕಾದಂತೆ ಆಡಲು ಆರಂಭಿಸಿದರೆ, ಅಂಪೈರ್ ಅಥವಾ ರೆಫ್ರಿ ಅಥವಾ ತೀರ್ಪುಗಾರರ ಮಾತನ್ನು ಕೇಳದಿದ್ದರೆ ಆಟವು ಹೇಗಿರುತ್ತದೆ / ಏನಾಗುತ್ತದೆ?"
       ],
-      "tip": "ಒಂದೊಂದು ಪ್ರಶ್ನೆಯನ್ನು ತೋರಿಸಿ. ಮುಂದಿನ ಪ್ರಶ್ನೆಗೆ ಹೋಗುವ ಮೊದಲು ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ 1–2 ಉತ್ತರ ಪಡೆಯಿರಿ. (AKG/Savitha 16 Jun: was 3 questions → reduced to 2; Q2 reworded so it no longer overlaps with Q1.)"
+      "tip": "ಒಂದೊಂದು ಪ್ರಶ್ನೆಯನ್ನು ತೋರಿಸಿ. ಮುಂದಿನ ಪ್ರಶ್ನೆಗೆ ಹೋಗುವ ಮೊದಲು ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ 1–2 ಉತ್ತರ ಪಡೆಯಿರಿ."
     },
     {
       "n": 15,
@@ -214,7 +340,7 @@
         "ಶಿಕ್ಷಕರಾಗಿ ಪ್ರತಿಯೊಬ್ಬರಿಗೂ ಮಾತನಾಡಲು ಅವಕಾಶವನ್ನು ನೀಡುವ ಪ್ರಯತ್ನ ಮಾಡುವುದು ನನ್ನ ನಿಯಮ."
       ],
       "reveal_on_click": true,
-      "tip": "ಮಕ್ಕಳು ನೋಡುತ್ತಿರುವಾಗ ಆನಿಮೇಷನ್ ಮತ್ತೆ ಮತ್ತೆ ಆಡಲಿ. ಉತ್ತರ ತೋರಿಸಲು ಸಿದ್ಧವಾದಾಗ NEXT (ಅಥವಾ REVEAL) ಒತ್ತಿ. (AKG/Savitha 16 Jun: video to be trimmed from 8s → 4s; right-side intro text + two-rule post-reveal added; 'Reveal Answer' label rewritten as the two rules above.)"
+      "tip": "ಮಕ್ಕಳು ನೋಡುತ್ತಿರುವಾಗ ಆನಿಮೇಷನ್ ಮತ್ತೆ ಮತ್ತೆ ಆಡಲಿ. ಉತ್ತರ ತೋರಿಸಲು ಸಿದ್ಧವಾದಾಗ NEXT (ಅಥವಾ REVEAL) ಒತ್ತಿ."
     },
     {
       "n": 16,
@@ -223,14 +349,16 @@
       "brief": "ಚೀಟಿ / ಪೋಸ್ಟ್-ಇಟ್ ಬಳಸಿ, ನಿಮಗಾಗಿ 1 ನಿಯಮ ಮತ್ತು ನಿಮ್ಮ ಶಿಕ್ಷಕರು ಪಾಲಿಸಬೇಕಾದ 1 ನಿಯಮ ಬರೆಯಿರಿ.",
       "bullets_large": true,
       "timer_seconds": 180,
-      "tip": "ಟೈಮರ್ ಶುರು ಮಾಡುವ ಮೊದಲು ಚೀಟಿ / ಪೋಸ್ಟ್-ಇಟ್ ಹಂಚಿ. ನಂತರ 3 ನಿಮಿಷ ಟೈಮರ್ ಶುರು ಮಾಡಿ. (AKG/Savitha 16 Jun: title rename; rule structure changed from 2-self + 1-teacher to 1-self + 1-teacher.)"
+      "tip": "ಟೈಮರ್ ಶುರು ಮಾಡುವ ಮೊದಲು ಚೀಟಿ / ಪೋಸ್ಟ್-ಇಟ್ ಹಂಚಿ. ನಂತರ 3 ನಿಮಿಷ ಟೈಮರ್ ಶುರು ಮಾಡಿ."
     },
     {
       "n": 17,
       "kind": "static",
       "title": "ನಿಯಮಗಳ ಮಂಡನೆ",
-      "body": ["ಪ್ರತಿ ಗುಂಪು ಒಂದು ನಿಯಮ ಹೇಳುತ್ತದೆ — ಪುನರಾವರ್ತನೆ ಬೇಡ!"],
-      "tip": "ಗುಂಪು-ಗುಂಪಾಗಿ ಕೇಳಿ. ನಿಯಮ ಈಗಾಗಲೇ ಯಾರಾದರೂ ಹೇಳಿದ್ದರೆ, ಆ ಗುಂಪು ಬೇರೆ ನಿಯಮ ಹೇಳಲಿ. (AKG/Savitha 16 Jun: title rename.)"
+      "body": [
+        "ಪ್ರತಿ ಗುಂಪು ಒಂದು ನಿಯಮ ಹೇಳುತ್ತದೆ — ಪುನರಾವರ್ತನೆ ಬೇಡ!"
+      ],
+      "tip": "ಗುಂಪು-ಗುಂಪಾಗಿ ಕೇಳಿ. ನಿಯಮ ಈಗಾಗಲೇ ಯಾರಾದರೂ ಹೇಳಿದ್ದರೆ, ಆ ಗುಂಪು ಬೇರೆ ನಿಯಮ ಹೇಳಲಿ."
     },
     {
       "n": 18,
@@ -243,7 +371,6 @@
       "n": 19.5,
       "kind": "video",
       "title": "ಕ್ಲಬ್ ಯಶಸ್ವಿ ಆಗಲು ಮತ್ತಷ್ಟು ನಿಯಮಗಳು",
-      "video": "/sessions/assets/mc_change_champion_rules.kn.mp4",
       "image": "/sessions/assets/rule_flashcard.png",
       "transcript": "There are seven rules for the Club to succeed: ONE — first, be the change you want to see. TWO — share your opinion without fear. THREE — cooperate and respect time. FOUR — everyone is important. FIVE — keep your mind open to new ideas. SIX — share your experiences. SEVEN — working as a team is always better and more fun. Teachers, please add one more rule: treat everyone with respect.",
       "kn_script": [
@@ -257,7 +384,8 @@
         "7. ತಂಡವಾಗಿ ಕೆಲಸ ಮಾಡುವುದು ಯಾವಾಗಲೂ ಉತ್ತಮ ಮತ್ತು ಹೆಚ್ಚು ಖುಷಿ ಕೊಡುವುದು."
       ],
       "callout": "ಶಿಕ್ಷಕರೇ, \"ಎಲ್ಲರೊಂದಿಗೆ ಗೌರವದಿಂದ ಇರುವುದು\" ಎಂಬ ನಿಯಮವನ್ನು ಸೇರಿಸಿ.",
-      "tip": "ವೀಡಿಯೋ ಮುಗಿಯುವವರೆಗೆ ತೋರಿಸಿ. (AKG/Savitha 16 Jun: title changed from 'ಚೇಂಜ್ ಚಾಂಪಿಯನ್‌ನ 7 ನಿಯಮಗಳು' to 'ಕ್ಲಬ್ ಯಶಸ್ವಿ ಆಗಲು ಮತ್ತಷ್ಟು ನಿಯಮಗಳು'. The flashcard poster (formerly its own slide 19) merged into this slide. The old slide 20 — teacher's-rule click-reveal — removed; teacher's rule now appears as a callout. Video to be regenerated with the updated script.)"
+      "tip": "ವೀಡಿಯೋ ಮುಗಿಯುವವರೆಗೆ ತೋರಿಸಿ. merged into this slide. The old slide 20 — teacher's-rule click-reveal — removed; teacher's rule now appears as a callout. Video to be regenerated with the updated script.)",
+      "_placeholder": true
     },
     {
       "n": 21,
@@ -267,7 +395,7 @@
         "ನಮ್ಮ ಕ್ಲಬ್‌ಗೆ ನಿಯಮ ಇರುವಂತೆ, ನಮ್ಮ ದೇಶಕ್ಕೂ ನಿಯಮ ಇರುವ ಒಂದು ಪುಸ್ತಕ ಇದೆ — ಮತ್ತು ಇನ್ನೂ ಬಹಳಷ್ಟು!",
         "ಅದು ಸುಳಿವು — ಭಾರತದ ನಾಗರಿಕರಾಗಿ ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ?"
       ],
-      "tip": "ಕೆಲವು ಊಹೆಗಳನ್ನು ಕೇಳಿ. (AKG/Savitha 16 Jun: flagged for relook based on training experience — @Sonu + MP to address.)"
+      "tip": "ಕೆಲವು ಊಹೆಗಳನ್ನು ಕೇಳಿ."
     },
     {
       "n": 22,
@@ -280,7 +408,7 @@
         "ನಮ್ಮ ಸಂವಿಧಾನವು ಭಾರತದ ಬಗ್ಗೆ ಹೊಂದಿರುವ ಮಹತ್ವದ ಕನಸಿನಿಂದ ನಾವು ಸ್ಫೂರ್ತಿ ಪಡೆಯುತ್ತೇವೆ. ಅದು ನಮಗೆ ದಾರಿದೀಪವಾಗಿದ್ದು, ಪ್ರೇರಣೆ ನೀಡುತ್ತದೆ.",
         "ಸಂವಿಧಾನಕ್ಕೆ, ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ ಹಾಗೂ ಸಂವಿಧಾನ ಸಭೆಯ ಸದಸ್ಯರಿಗೆ ಗೌರವ ಸಲ್ಲಿಸುತ್ತಾ, ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಈ ಸೆಷನ್‌ ಅನ್ನು ನಾವು ಎಲ್ಲರೂ ಸೇರಿ ಪೀಠಿಕೆಯನ್ನು ಓದುವ ಮೂಲಕ ಮುಕ್ತಾಯಗೊಳಿಸೋಣ."
       ],
-      "tip": "AKG/Savitha 16 Jun: existing video missed the Ambedkar segment — to be regenerated with the script above which explicitly covers Constitution + Ambedkar + Constituent Assembly + Preamble read-along."
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ ಎಂದು ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ."
     },
     {
       "n": 23,
@@ -333,15 +461,15 @@
         "ಅವಳು ಮಾಡಿದ ಸಣ್ಣ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳು ತನ್ನ ಶಾಲೆ, ಊರು ಮತ್ತು ಅದರಾಚೆಯೂ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾದವು."
       ],
       "image": "/sessions/assets/ripple_of_change.jpg",
-      "tip": "ಅಸ್ಫಿಯಾಳನ್ನು ಪ್ರೀತಿಯಿಂದ ಪರಿಚಯಿಸಿ. ಮಕ್ಕಳಿಗೆ ಹೇಳಿ: ವೀಡಿಯೋ ಸುಮಾರು 3 ನಿಮಿಷ. (AKG/Savitha 16 Jun: 'Ripple of Change' image to be sourced/added — placeholder path set. On-screen Kannada updated.)"
+      "tip": "ಅಸ್ಫಿಯಾಳನ್ನು ಪ್ರೀತಿಯಿಂದ ಪರಿಚಯಿಸಿ. ಮಕ್ಕಳಿಗೆ ಹೇಳಿ: ವೀಡಿಯೋ ಸುಮಾರು 3 ನಿಮಿಷ."
     },
     {
       "n": 27,
       "kind": "video",
       "title": "ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆ",
       "video": "/sessions/assets/asfiya_story.mp4",
-      "duration_seconds": 180,
-      "tip": "ವೀಡಿಯೋ ಅಡಚಣೆ ಇಲ್ಲದೆ ತೋರಿಸಿ. ಮುಗಿದ ಮೇಲೆ ಮಕ್ಕಳ ಪ್ರತಿಕ್ರಿಯೆ ಕೇಳಿ. (AKG/Savitha 16 Jun: video to be regenerated with the new story below — 8th grade, paper cups → steel tumblers, community service, future doctor aspiration.)",
+      "duration_seconds": 63,
+      "tip": "ವೀಡಿಯೋ ಅಡಚಣೆ ಇಲ್ಲದೆ ತೋರಿಸಿ. ಮುಗಿದ ಮೇಲೆ ಮಕ್ಕಳ ಪ್ರತಿಕ್ರಿಯೆ ಕೇಳಿ.",
       "transcript": "Asfiya was a member of the Children's Constitution Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱",
       "kn_script": [
         "ಆಸ್ಫಿಯಾ ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆಯಾಗಿದ್ದಳು. 8ನೇ ತರಗತಿಯಲ್ಲಿ ಓದುತ್ತಿದ್ದಾಗ, ತನ್ನ ಸ್ನೇಹಿತರೊಂದಿಗೆ ಸೇರಿ ಶಾಲೆಯಲ್ಲಿ ಪೇಪರ್ ಕಪ್‌ಗಳ ಬದಲು ಸ್ಟೀಲ್ ಲೋಟಗಳನ್ನು ಬಳಸುವಂತೆ ಮಾಡಿ ಒಂದು ಒಳ್ಳೆಯ ಬದಲಾವಣೆಯನ್ನು ತಂದಳು.",
@@ -365,7 +493,9 @@
       "thank_you": true,
       "closing_line": "ಇಂದು ನಮ್ಮ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಪಯಣಕ್ಕೆ ಉತ್ತಮ ಆರಂಭ ಸಿಕ್ಕಿದೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
       "centered": true,
-      "tip": "Thank the children. End of session. (AKG/Savitha 16 Jun: was double-titled 'Children's Constitution Club!' — now single, centred, with closing line.)"
+      "image": "/sessions/assets/kreis_seal.png",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Thank the children. End of session."
     }
   ]
 }

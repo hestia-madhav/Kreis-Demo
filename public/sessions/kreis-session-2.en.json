@@ -7,16 +7,89 @@
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
-    { "id": "open",             "label": "Intro",                "slides": [1, 2] },
-    { "id": "naming_intro",     "label": "Name your Club",       "slides": [3, 4, 5] },
-    { "id": "naming_declare",   "label": "Declare the Winner",   "slides": [6, 7] },
-    { "id": "elections_intro",  "label": "Introduce Reps",       "slides": [8, 9] },
-    { "id": "elect_committee",  "label": "Elect Committee",      "slides": [10, 11, 12] },
-    { "id": "assertive_action", "label": "Assertive Action",     "slides": [13, 14] },
-    { "id": "elect_president",  "label": "Elect President",      "slides": [15, 16] },
-    { "id": "campaigns_intro",  "label": "Campaigns",            "slides": [17, 18] },
-    { "id": "launch_campaign",  "label": "Launch Campaign",      "slides": [19, 20, 21] },
-    { "id": "conclusion",       "label": "Conclusion",           "slides": [22] }
+    {
+      "id": "open",
+      "label": "Intro",
+      "slides": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "naming_intro",
+      "label": "Name your Club",
+      "slides": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "naming_declare",
+      "label": "Declare the Winner",
+      "slides": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "elections_intro",
+      "label": "Introduce Reps",
+      "slides": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "elect_committee",
+      "label": "Elect Committee",
+      "slides": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "assertive_action",
+      "label": "Assertive Action",
+      "slides": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "elect_president",
+      "label": "Elect President",
+      "slides": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "campaigns_intro",
+      "label": "Campaigns",
+      "slides": [
+        17,
+        18
+      ]
+    },
+    {
+      "id": "launch_campaign",
+      "label": "Launch Campaign",
+      "slides": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "conclusion",
+      "label": "Conclusion",
+      "slides": [
+        22,
+        23
+      ]
+    }
   ],
   "slides": [
     {
@@ -24,7 +97,7 @@
       "kind": "title",
       "title": "Session 2 — Naming of Club & Launch Campaign",
       "centered": true,
-      "tip": "[PLACEHOLDER] Branded title card, single centred title."
+      "tip": ""
     },
     {
       "n": 2,
@@ -32,7 +105,7 @@
       "title": "Welcome to the Children's Constitution Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
-      "tip": "[REUSE FROM S1] Welcome music + co-branded landing."
+      "tip": ""
     },
     {
       "n": 3,
@@ -43,7 +116,7 @@
         "Can you quickly check to see if you are all sitting in your groups?",
         "How about we give our club a name today?"
       ],
-      "tip": "[PLACEHOLDER] Image: kids sitting in groups."
+      "tip": ""
     },
     {
       "n": 4,
@@ -54,7 +127,7 @@
         "It should also equally motivate you."
       ],
       "callout": "Teacher's Tip: Write down the suggestions on the class board.",
-      "tip": "[PLACEHOLDER] Image: blackboard + teacher writing."
+      "tip": ""
     },
     {
       "n": 5,
@@ -65,7 +138,7 @@
         "Be fair — only raise your hand if you like the name!",
         "The name with the highest votes will be selected as your club name."
       ],
-      "tip": "[PLACEHOLDER] Image: raised hand."
+      "tip": ""
     },
     {
       "n": 6,
@@ -75,8 +148,8 @@
         "______________ Children's Constitution Club!",
         "And YOU have the power to bring about CHANGE!"
       ],
-      "callout": "[NEW PLAYER FEATURE — pending] Editable text input — teacher types the winning name on her device; renders in the blank above. Lives only on slide 6 (no persistence).",
-      "tip": "[PLACEHOLDER] SFX: drumroll + applause."
+      "callout": "",
+      "tip": ""
     },
     {
       "n": 7,
@@ -86,21 +159,21 @@
         "So many children like you are Active Citizens today, making so many ripples of change!",
         "But… with power comes responsibility."
       ],
-      "tip": "[PLACEHOLDER] Image: diverse mixed-age active citizens."
+      "tip": ""
     },
     {
       "n": 8,
       "kind": "mc_narration",
       "title": "Master Change Appears",
       "transcript": "Hello junior citizens, Namaskara! I am back for another session with you! Now that you have selected your group name, you have one more step to do. Just like a parliament in the nation or even the student council in your school, we will have our own committee! And we are going to do that together. You will see Democracy in Action! How do we choose our leaders in India? (pause for responses) Yes — we have elections at different levels: Gram Panchayat, Vidhan Sabha, Lok Sabha.",
-      "tip": "[PLACEHOLDER] Video: mc_election_intro.kn.mp4 (Veo pending). Post-prod overlays Indian government tiers."
+      "tip": ""
     },
     {
       "n": 9,
       "kind": "mc_narration",
       "title": "What makes an ideal representative?",
       "transcript": "Before we move on to electing, what makes an ideal representative? What are some of the qualities they need? (pause for responses) — (Q1) If your friend and another student are candidates, and you know that the other student may do the job better — who will you vote for? (Q2) Would it matter if the job was done by a girl or a boy? (Q3) How will you feel if your friends didn't vote for you? (Q4) What if you stand for elections but don't win? What will your attitude be towards the winner?",
-      "tip": "[PLACEHOLDER] Video: mc_pop_questions.kn.mp4 (4 questions stitched, Veo pending). 5s pause after each question."
+      "tip": ""
     },
     {
       "n": 10,
@@ -110,7 +183,7 @@
       "timer_seconds": 120,
       "reminder_at": 60,
       "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "tip": "[REUSE TIMER WIDGET] 2-min timer, chime at 1 min remaining."
+      "tip": ""
     },
     {
       "n": 11,
@@ -121,28 +194,34 @@
         "Who would like to stand as the Club President? Step forward.",
         "You have 1 minute to tell the club why they should elect you!"
       ],
-      "tip": "[PLACEHOLDER] SFX: claps."
+      "tip": ""
     },
     {
       "n": 12,
       "kind": "static",
       "title": "Committee in front",
-      "body": ["Selected members stand in front of the class and pitch."],
-      "tip": "[ASSET IN-DECK] Pitch-to-class illustration already in Session 2 source pptx."
+      "body": [
+        "Selected members stand in front of the class and pitch."
+      ],
+      "tip": ""
     },
     {
       "n": 13,
       "kind": "static",
       "title": "Assertive Action",
-      "body": ["Do you think this is okay? Rethink if your class is in this same situation!"],
-      "tip": "[PLACEHOLDER] Image continuation on slide 14."
+      "body": [
+        "Do you think this is okay? Rethink if your class is in this same situation!"
+      ],
+      "tip": ""
     },
     {
       "n": 14,
       "kind": "static",
       "title": "Assertive Action — Visual",
-      "body": ["(Affirmative action illustration)"],
-      "tip": "[ASSET IN-DECK] Image already in Session 2 source pptx."
+      "body": [
+        "(Affirmative action illustration)"
+      ],
+      "tip": ""
     },
     {
       "n": 15,
@@ -153,7 +232,7 @@
         "You have 1 vote."
       ],
       "callout": "Teacher's Tip: Ask the elected children to turn back. The rest close their eyes and vote by showing their hands. Take the total count, announce and congratulate.",
-      "tip": "[PLACEHOLDER] Audio: vo_lets_vote.kn.mp3."
+      "tip": ""
     },
     {
       "n": 16,
@@ -164,29 +243,33 @@
         "Now is the time for all our hands to get to work!"
       ],
       "callout": "Teacher's Tip: If it gets unmanageable, use calmers!",
-      "tip": "[PLACEHOLDER] SFX: cheers + applause."
+      "tip": ""
     },
     {
       "n": 17,
       "kind": "video",
       "title": "What is a campaign?",
       "transcript": "What you see is a campaign! A campaign is like a big, exciting team mission to reach a specific goal or to educate people about a topic. It is when you make a smart plan, gather your tools, and work together to win a prize or solve a big problem! Let us spread the cheer all around now! We will be doing a CMCA Club Launch Campaign — during one of your school assemblies! (Yaaaaaayyyy! Cheers by children!)",
-      "tip": "[PLACEHOLDER] Video: campaigns_slideshow.kn.mp4 — slideshow of 6-8 photos changing every 4s + BGM + Kannada VO. Assembled in CapCut, not Veo."
+      "tip": ""
     },
     {
       "n": 18,
       "kind": "static",
       "title": "Campaign image bank",
-      "body": ["(Campaign images)"],
-      "tip": "[ASSET IN-DECK] 3 campaign images already in Session 2 source pptx."
+      "body": [
+        "(Campaign images)"
+      ],
+      "tip": ""
     },
     {
       "n": 19,
       "kind": "static",
       "title": "CMCA Club Launch",
-      "body": ["You have two options!"],
+      "body": [
+        "You have two options!"
+      ],
       "callout": "Option A vs Option B — two graphic panels side-by-side. Children pick one and execute offline. NO on-screen choice.",
-      "tip": "[PLACEHOLDER] Two-panel decorative graphic — not interactive."
+      "tip": ""
     },
     {
       "n": 20,
@@ -197,7 +280,7 @@
         "There are many roles to be taken up for the success of the launch — especially the Club President and the Core Committee.",
         "The success of the launch is in your hands!"
       ],
-      "tip": "[PLACEHOLDER] Image: little hands working together."
+      "tip": ""
     },
     {
       "n": 21,
@@ -209,7 +292,7 @@
         "The magic is in your hands!"
       ],
       "callout": "Teacher's Tip: Distribute the annexures to the groups. Core Committee takes the lead for the launch.",
-      "tip": "[PLACEHOLDER] PDF annexures live outside the player."
+      "tip": ""
     },
     {
       "n": 22,
@@ -217,7 +300,18 @@
       "title": "Master Change signs off",
       "transcript": "Hey Friends. I see you are all getting ready to help your school know about your club. This is your opportunity to let everyone know that you are a part of an important mission and that you need the school's support too! Have fun. Plan well. Wishing you all the very best! I am excited to watch this club launch already! BYEEEEEEEEEEEEEEEEE! (waving hands)",
       "closing_line": "Today our Constitution Club journey has taken another important step. See you again in the next session.",
-      "tip": "[PLACEHOLDER] Video: mc_signoff.kn.mp4 (Veo pending). Generic — no club-name reference."
+      "tip": ""
+    },
+    {
+      "n": 23,
+      "kind": "title",
+      "title": "Children's Constitution Club",
+      "thank_you": true,
+      "closing_line": "Today our Constitution Club journey has taken another important step. See you again in the next session.",
+      "centered": true,
+      "image": "/sessions/assets/kreis_seal.png",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Thank the children. End of session."
     }
   ]
 }

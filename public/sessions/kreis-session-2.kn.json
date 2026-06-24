@@ -7,16 +7,89 @@
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
-    { "id": "open",              "label": "ಪರಿಚಯ",                 "slides": [1, 2] },
-    { "id": "naming_intro",      "label": "ಹೆಸರು ಸೂಚಿಸಿ",            "slides": [3, 4, 5] },
-    { "id": "naming_declare",    "label": "ಹೆಸರು ಘೋಷಿಸಿ",            "slides": [6, 7] },
-    { "id": "elections_intro",   "label": "ಪ್ರತಿನಿಧಿ ಪರಿಚಯ",           "slides": [8, 9] },
-    { "id": "elect_committee",   "label": "ಸಮಿತಿ ಆಯ್ಕೆ",              "slides": [10, 11, 12] },
-    { "id": "assertive_action",  "label": "ದೃಢ ಕ್ರಮ",                "slides": [13, 14] },
-    { "id": "elect_president",   "label": "ಅಧ್ಯಕ್ಷ ಆಯ್ಕೆ",             "slides": [15, 16] },
-    { "id": "campaigns_intro",   "label": "ಅಭಿಯಾನ ಪರಿಚಯ",            "slides": [17, 18] },
-    { "id": "launch_campaign",   "label": "ಲಾಂಚ್ ಅಭಿಯಾನ",            "slides": [19, 20, 21] },
-    { "id": "conclusion",        "label": "ಮುಗಿಸುವಿಕೆ",                "slides": [22] }
+    {
+      "id": "open",
+      "label": "ಪರಿಚಯ",
+      "slides": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "naming_intro",
+      "label": "ಹೆಸರು ಸೂಚಿಸಿ",
+      "slides": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "naming_declare",
+      "label": "ಹೆಸರು ಘೋಷಿಸಿ",
+      "slides": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "elections_intro",
+      "label": "ಪ್ರತಿನಿಧಿ ಪರಿಚಯ",
+      "slides": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "elect_committee",
+      "label": "ಸಮಿತಿ ಆಯ್ಕೆ",
+      "slides": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "assertive_action",
+      "label": "ದೃಢ ಕ್ರಮ",
+      "slides": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "elect_president",
+      "label": "ಅಧ್ಯಕ್ಷ ಆಯ್ಕೆ",
+      "slides": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "campaigns_intro",
+      "label": "ಅಭಿಯಾನ ಪರಿಚಯ",
+      "slides": [
+        17,
+        18
+      ]
+    },
+    {
+      "id": "launch_campaign",
+      "label": "ಲಾಂಚ್ ಅಭಿಯಾನ",
+      "slides": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "conclusion",
+      "label": "ಮುಗಿಸುವಿಕೆ",
+      "slides": [
+        22,
+        23
+      ]
+    }
   ],
   "slides": [
     {
@@ -25,7 +98,7 @@
       "title": "ಸೆಷನ್ 2 — ಕ್ಲಬ್‌ಗೆ ಹೆಸರು ಮತ್ತು ಲಾಂಚ್ ಅಭಿಯಾನ",
       "subtitle": "Naming of Club & Launch Campaign",
       "centered": true,
-      "tip": "[PLACEHOLDER] Branded title card — same template as Session 1. Final art pending."
+      "tip": ""
     },
     {
       "n": 2,
@@ -33,7 +106,7 @@
       "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
-      "tip": "[REUSE FROM S1] Same welcome music + branding as Session 1's landing slide."
+      "tip": ""
     },
     {
       "n": 3,
@@ -44,7 +117,7 @@
         "ನೀವೆಲ್ಲರೂ ನಿಮ್ಮ ಗುಂಪುಗಳಲ್ಲಿ ಕುಳಿತಿದ್ದೀರಾ ಎಂದು ಬೇಗ ನೋಡಿಕೊಳ್ಳಿ.",
         "ಇಂದು ನಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಒಂದು ಹೆಸರು ಕೊಡೋಣ ಹೇಗೆ?"
       ],
-      "tip": "[PLACEHOLDER] Image: kids sitting in groups. Audio: vo_welcome_back.kn.mp3 (pending generation)."
+      "tip": ""
     },
     {
       "n": 4,
@@ -55,7 +128,7 @@
         "ಅವು ನಿಮ್ಮನ್ನು ಪ್ರೇರೇಪಿಸುವಂತೆ ಇರಬೇಕು."
       ],
       "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಸಲಹೆಗಳನ್ನು ಫಲಕದ ಮೇಲೆ ಬರೆಯಿರಿ.",
-      "tip": "[PLACEHOLDER] Image: blackboard + teacher writing. Audio: vo_name_suggestions.kn.mp3."
+      "tip": ""
     },
     {
       "n": 5,
@@ -66,7 +139,7 @@
         "ನ್ಯಾಯವಾಗಿರಿ — ಹೆಸರು ನಿಜವಾಗಿಯೂ ಇಷ್ಟವಾದರೆ ಮಾತ್ರ ಕೈ ಎತ್ತಿ!",
         "ಅತಿ ಹೆಚ್ಚು ಮತ ಪಡೆದ ಹೆಸರು ನಿಮ್ಮ ಕ್ಲಬ್‌ನ ಹೆಸರಾಗುತ್ತದೆ."
       ],
-      "tip": "[PLACEHOLDER] Image: raised hand. Audio: vo_voting_rules.kn.mp3."
+      "tip": ""
     },
     {
       "n": 6,
@@ -76,8 +149,8 @@
         "______________ ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್!",
         "ಮತ್ತು ಬದಲಾವಣೆ ತರುವ ಶಕ್ತಿ ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ!"
       ],
-      "callout": "[NEW PLAYER FEATURE — pending] Editable text field — teacher types the winning club name on her device; renders in the blank above. Lives only on slide 6 (no persistence).",
-      "tip": "[PLACEHOLDER] SFX: drumroll + applause. The editable text input is the new player component for Session 2."
+      "callout": "",
+      "tip": ""
     },
     {
       "n": 7,
@@ -87,21 +160,21 @@
         "ನಿಮ್ಮಂಥ ಎಷ್ಟೋ ಮಕ್ಕಳು ಇಂದು ಸಕ್ರಿಯ ನಾಗರಿಕರು — ಅನೇಕ ಬದಲಾವಣೆಯ ತರಂಗಗಳನ್ನು ಸೃಷ್ಟಿಸುತ್ತಿದ್ದಾರೆ.",
         "ಆದರೆ… ಶಕ್ತಿಯ ಜೊತೆಗೆ ಜವಾಬ್ದಾರಿಯೂ ಬರುತ್ತದೆ."
       ],
-      "tip": "[PLACEHOLDER] Image: diverse mixed-age active citizens. Audio: vo_active_citizens.kn.mp3."
+      "tip": ""
     },
     {
       "n": 8,
       "kind": "mc_narration",
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಮತ್ತೆ ಬಂದರು",
       "transcript": "Namaskara junior citizens! You picked your group name — one more step. Like a parliament or student council, we form our own committee. Democracy in action! How do we choose leaders in India? Yes — we have elections at different levels: Gram Panchayat, Vidhan Sabha, Lok Sabha.",
-      "tip": "[PLACEHOLDER] Video: mc_election_intro.kn.mp4 (pending Veo generation — see veo_prompts.md CLIP 1). Post-prod overlays Indian government tiers falling in sequence."
+      "tip": ""
     },
     {
       "n": 9,
       "kind": "mc_narration",
       "title": "ಆದರ್ಶ ಪ್ರತಿನಿಧಿ ಎಂದರೆ ಯಾರು?",
       "transcript": "Before we elect, what makes an ideal representative? — (Q1) If your friend and another student are candidates, and the other student would do the job better — who will you vote for? (Q2) Would it matter if the job was done by a girl or a boy? (Q3) How will you feel if your friends didn't vote for you? (Q4) If you stand for elections but don't win, what's your attitude toward the winner?",
-      "tip": "[PLACEHOLDER] Video: mc_pop_questions.kn.mp4 (4 questions stitched, pending Veo — see veo_prompts.md CLIP 2). Pause 5s after each question for class discussion."
+      "tip": ""
     },
     {
       "n": 10,
@@ -111,7 +184,7 @@
       "timer_seconds": 120,
       "reminder_at": 60,
       "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "tip": "[REUSE TIMER WIDGET] 2-min timer with chime at 1 min remaining. Reuses S1's calmer timer."
+      "tip": ""
     },
     {
       "n": 11,
@@ -122,28 +195,34 @@
         "ಕ್ಲಬ್‌ನ ಅಧ್ಯಕ್ಷರಾಗಿ ಯಾರು ನಿಲ್ಲಲು ಇಚ್ಛಿಸುತ್ತೀರಿ? ಒಂದು ಹೆಜ್ಜೆ ಮುಂದೆ ಬನ್ನಿ.",
         "ಕ್ಲಬ್‌ಗೆ ನಿಮ್ಮನ್ನು ಯಾಕೆ ಆಯ್ಕೆ ಮಾಡಬೇಕು ಎಂಬುದನ್ನು ಹೇಳಲು ನಿಮಗೆ 1 ನಿಮಿಷ."
       ],
-      "tip": "[PLACEHOLDER] SFX: claps. Audio: vo_step_forward.kn.mp3."
+      "tip": ""
     },
     {
       "n": 12,
       "kind": "static",
       "title": "ಸಮಿತಿ ಸಿದ್ಧ",
-      "body": ["ಆಯ್ಕೆಯಾದ ಸದಸ್ಯರು ಮುಂದೆ ಬಂದು ಮಾತನಾಡುತ್ತಾರೆ."],
-      "tip": "[ASSET IN-DECK] Continuation image of kid pitching to the class (already in Session 2 source pptx)."
+      "body": [
+        "ಆಯ್ಕೆಯಾದ ಸದಸ್ಯರು ಮುಂದೆ ಬಂದು ಮಾತನಾಡುತ್ತಾರೆ."
+      ],
+      "tip": ""
     },
     {
       "n": 13,
       "kind": "static",
       "title": "ದೃಢ ಕ್ರಮ",
-      "body": ["ಇದು ಸರಿಯಾ? ನಿಮ್ಮ ತರಗತಿಯೂ ಇದೇ ಪರಿಸ್ಥಿತಿಯಲ್ಲಿದ್ದರೆ ಮತ್ತೊಮ್ಮೆ ಯೋಚಿಸಿ."],
-      "tip": "[PLACEHOLDER] Audio: vo_assertive_action.kn.mp3. Image continuation on slide 14."
+      "body": [
+        "ಇದು ಸರಿಯಾ? ನಿಮ್ಮ ತರಗತಿಯೂ ಇದೇ ಪರಿಸ್ಥಿತಿಯಲ್ಲಿದ್ದರೆ ಮತ್ತೊಮ್ಮೆ ಯೋಚಿಸಿ."
+      ],
+      "tip": ""
     },
     {
       "n": 14,
       "kind": "static",
       "title": "ದೃಢ ಕ್ರಮ — ಚಿತ್ರ",
-      "body": ["(ತರಗತಿಯ ಚಿತ್ರ)"],
-      "tip": "[ASSET IN-DECK] Affirmative-action illustration already in Session 2 source pptx."
+      "body": [
+        "(ತರಗತಿಯ ಚಿತ್ರ)"
+      ],
+      "tip": ""
     },
     {
       "n": 15,
@@ -154,7 +233,7 @@
         "ನಿಮಗೆ ಒಂದು ಮತ ಇದೆ."
       ],
       "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಆಯ್ಕೆಯಾದವರನ್ನು ಹಿಂದೆ ತಿರುಗಲು ಹೇಳಿ. ಉಳಿದವರು ಕಣ್ಣು ಮುಚ್ಚಿ ಕೈ ಎತ್ತಿ ಮತ ಹಾಕಲಿ. ಒಟ್ಟು ಎಣಿಸಿ, ಅಭಿನಂದನೆ ತಿಳಿಸಿ.",
-      "tip": "[PLACEHOLDER] Audio: vo_lets_vote.kn.mp3."
+      "tip": ""
     },
     {
       "n": 16,
@@ -165,29 +244,33 @@
         "ಈಗ ನಮ್ಮೆಲ್ಲರ ಕೈಗಳು ಕೆಲಸಕ್ಕೆ ಸಜ್ಜಾಗುವ ಸಮಯ!"
       ],
       "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ತರಗತಿ ನಿಯಂತ್ರಿಸಲು ಕಷ್ಟವಾದರೆ ಶಾಂತಗೊಳಿಸುವ (calmer) ಬಳಸಿ.",
-      "tip": "[PLACEHOLDER] SFX: cheers_kids_yay.mp3. Audio: vo_congrats_committee.kn.mp3."
+      "tip": ""
     },
     {
       "n": 17,
       "kind": "video",
       "title": "ಅಭಿಯಾನ ಎಂದರೇನು?",
       "transcript": "What you see is a campaign — a big, exciting team mission to reach a specific goal or to educate people about a topic. Make a smart plan, gather your tools, work together — to win a prize or solve a big problem! Let's spread the cheer now! We'll be doing a CMCA Club Launch Campaign during one of your school assemblies! (Yaaaay!)",
-      "tip": "[PLACEHOLDER] Video: campaigns_slideshow.kn.mp4 — 6-8 stock campaign photos at 4s each + BGM + Kannada VO. Assembled in CapCut (NOT Veo). Pending production."
+      "tip": ""
     },
     {
       "n": 18,
       "kind": "static",
       "title": "ಅಭಿಯಾನದ ಚಿತ್ರಗಳು",
-      "body": ["(ಅಭಿಯಾನದ ಚಿತ್ರಗಳ ಸಂಗ್ರಹ)"],
-      "tip": "[ASSET IN-DECK] 3 campaign images already in Session 2 source pptx."
+      "body": [
+        "(ಅಭಿಯಾನದ ಚಿತ್ರಗಳ ಸಂಗ್ರಹ)"
+      ],
+      "tip": ""
     },
     {
       "n": 19,
       "kind": "static",
       "title": "CMCA ಕ್ಲಬ್ ಲಾಂಚ್",
-      "body": ["ನಿಮಗೆ ಎರಡು ಆಯ್ಕೆಗಳಿವೆ!"],
+      "body": [
+        "ನಿಮಗೆ ಎರಡು ಆಯ್ಕೆಗಳಿವೆ!"
+      ],
       "callout": "ಆಯ್ಕೆ A vs ಆಯ್ಕೆ B — ಎರಡು ಗ್ರಾಫಿಕ್ ಪ್ಯಾನಲ್‌ಗಳು. ಮಕ್ಕಳು ಒಂದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ಮಾಡುತ್ತಾರೆ.",
-      "tip": "[PLACEHOLDER] Audio: vo_campaign_options.kn.mp3. Visual: two-panel decorative graphic — NOT interactive (children pick offline)."
+      "tip": ""
     },
     {
       "n": 20,
@@ -198,7 +281,7 @@
         "ಲಾಂಚ್‌ನ ಯಶಸ್ಸಿಗೆ ಅನೇಕ ಪಾತ್ರಗಳಿವೆ — ವಿಶೇಷವಾಗಿ ಅಧ್ಯಕ್ಷ ಮತ್ತು ಮುಖ್ಯ ಸಮಿತಿ.",
         "ಲಾಂಚ್‌ನ ಯಶಸ್ಸು ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ!"
       ],
-      "tip": "[PLACEHOLDER] Image: little hands working together. Audio: vo_diverse_culture.kn.mp3."
+      "tip": ""
     },
     {
       "n": 21,
@@ -210,7 +293,7 @@
         "ಮಾಯೆ ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ!"
       ],
       "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಗುಂಪುಗಳಿಗೆ ಅನೆಕ್ಸರ್‌ಗಳನ್ನು ಹಂಚಿ. ಮುಖ್ಯ ಸಮಿತಿಯವರು ಲಾಂಚ್‌ಗೆ ನೇತೃತ್ವ ವಹಿಸಲಿ.",
-      "tip": "[PLACEHOLDER] Audio: vo_annexures.kn.mp3. PDF annexures live outside the player (Ramya provides)."
+      "tip": ""
     },
     {
       "n": 22,
@@ -218,7 +301,18 @@
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಬೀಳ್ಕೊಡುಗೆ",
       "transcript": "Hey friends! I see you all getting ready to help your school know about your club. This is your chance to tell everyone you're on an important mission and need the school's support. Have fun. Plan well. All the very best — I'm excited to watch this club launch already! BYEEEEEEEEE!",
       "closing_line": "ಇಂದು ನಮ್ಮ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಪಯಣಕ್ಕೆ ಉತ್ತಮ ಆರಂಭ ಸಿಕ್ಕಿದೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
-      "tip": "[PLACEHOLDER] Video: mc_signoff.kn.mp4 (pending Veo — see veo_prompts.md CLIP 3). Generic — no club-name personalization."
+      "tip": ""
+    },
+    {
+      "n": 23,
+      "kind": "title",
+      "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್",
+      "thank_you": true,
+      "closing_line": "ಇಂದು ನಮ್ಮ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಪಯಣದಲ್ಲಿ ಮತ್ತೊಂದು ಪ್ರಮುಖ ಹೆಜ್ಜೆ ಇಟ್ಟಿದ್ದೇವೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
+      "centered": true,
+      "image": "/sessions/assets/kreis_seal.png",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Thank the children. End of session."
     }
   ]
 }

@@ -74,6 +74,9 @@ interface Slide {
   thank_you?: boolean; // if true, branded title slide renders the "Thank You" closing variant
   closing_line?: string; // AKG/Savitha 16 Jun: small Kannada closing line under the title — used on each session's final slide
   centered?: boolean; // hint to the renderer to centre this slide's content (used mainly on title cards)
+  pause_at?: number[];      // for video slides — pause at these timecodes (seconds) for class discussion. Slide 9: [8,16,24,32,40].
+  pause_duration?: number;  // seconds to hold each pause (default 5)
+  image_layout?: "side" | "stack"; // static slide composition; "side" puts text + image side-by-side, "stack" stacks them centred. Default stack.
   preamble_en?: string; // slide 28 — full English Preamble image (Madhubani border)
   preamble_kn?: string; // slide 28 — full Kannada Preamble image (Madhubani border)
 }
@@ -160,24 +163,29 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
     }
   };
 
-  // Re-open the tip every time we land on a new slide. Teachers dismiss
-  // per-slide when it overlaps controls (e.g. slide 9's "Next question"),
-  // but should see the next slide's tip by default.
-  useEffect(() => { setTipOpen(true); }, [idx]);
+  // Teacher Tip — AKG/Savitha 16 Jun: tip should appear briefly when
+  // entering a slide, then auto-hide. Teacher can click the toggle in
+  // the top-right to bring it back. Auto-hide after 5 seconds.
+  useEffect(() => {
+    setTipOpen(true);
+    const t = window.setTimeout(() => setTipOpen(false), 5000);
+    return () => window.clearTimeout(t);
+  }, [idx]);
 
-  // Fit-to-viewport: measure inner vs canvas after every slide change /
-  // resize, and apply a transform: scale() if content overflows. Runs on
-  // mount, slide change, window resize, and content mutation.
+  // Fit-to-viewport + scroll fallback (Madhav 25 Jun):
+  // - If content fits naturally → no scale.
+  // - If content overflows mildly (fit ≥ 0.75) → scale it down to fit.
+  // - If overflow is severe (fit < 0.75) → keep natural size and allow the
+  //   canvas to scroll vertically (with a hint indicator). Aggressive
+  //   downscaling makes everything tiny + unreadable.
+  const [canScroll, setCanScroll] = useState(false);
   useEffect(() => {
     const canvasEl = canvasRef.current;
     const fitEl = fitRef.current;
     if (!canvasEl || !fitEl) return;
 
     const recompute = () => {
-      // Reset to 1 first so we measure the natural content size, not the
-      // already-scaled size.
       fitEl.style.transform = "scale(1)";
-      // Force a reflow so the measurement reflects scale=1.
       void fitEl.offsetHeight;
       const canvasH = canvasEl.clientHeight;
       const canvasW = canvasEl.clientWidth;
@@ -186,9 +194,15 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
       if (canvasH === 0 || contentH === 0) return;
       const scaleH = canvasH / contentH;
       const scaleW = canvasW / contentW;
-      // Pick the smaller — guarantees fit in both dimensions. Never scale up.
-      const next = Math.min(1, scaleH, scaleW);
-      setFitScale(next);
+      const naturalFit = Math.min(1, scaleH, scaleW);
+      if (naturalFit >= 0.75) {
+        setFitScale(naturalFit);
+        setCanScroll(false);
+      } else {
+        // Severe overflow — give up the scale and allow scrolling.
+        setFitScale(1);
+        setCanScroll(true);
+      }
     };
 
     recompute();
@@ -251,7 +265,12 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
   };
 
   return (
-    <div ref={containerRef} className="sr-root" lang={activeLang}>
+    <div
+      ref={containerRef}
+      className="sr-root"
+      lang={activeLang}
+      style={{ ["--sr-progress" as string]: `${((idx + 1) / session.slides.length) * 100}%` }}
+    >
       {/* Top bar */}
       <header className="sr-topbar">
         <button className="sr-icon-btn" onClick={() => setNavOpen((v) => !v)} title="Toggle nav (N)">☰</button>
@@ -325,11 +344,12 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
             existing top-left layout so controls stay reachable. */}
         <main
           ref={canvasRef}
-          className={"sr-canvas " + (
-            (slide.kind === "static" || slide.kind === "reflect_share")
-              ? "is-projector"
-              : ""
-          )}
+          className={[
+            "sr-canvas",
+            (slide.kind === "static" || slide.kind === "reflect_share") ? "is-projector" : "",
+            canScroll ? "is-scrollable" : "",
+            (slide.kind === "video" || slide.kind === "mc_narration") ? "is-video-slide" : "",
+          ].filter(Boolean).join(" ")}
         >
           <div
             ref={fitRef}
@@ -341,40 +361,36 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
           <div className="sr-accent" />
 
           <div className="sr-slide-body">
-            <SlideBody slide={slide} onEvent={onEvent} onAdvance={next} />
+            <SlideBody slide={slide} onEvent={onEvent} onAdvance={next} lang={activeLang} />
           </div>
           </div>
 
-          {/* Teacher tip — collapsible so it doesn't cover on-slide controls */}
-          {slide.tip && (
-            tipOpen ? (
-              <aside className="sr-tip">
-                <button
-                  className="sr-tip-close"
-                  onClick={() => setTipOpen(false)}
-                  aria-label="Hide teacher tip"
-                  title="Hide tip"
-                >×</button>
-                <div className="sr-tip-label">🧑‍🏫 TEACHER TIP</div>
-                <div className="sr-tip-body">{slide.tip}</div>
-              </aside>
-            ) : (
-              <button
-                className="sr-tip-toggle"
-                onClick={() => setTipOpen(true)}
-                title="Show teacher tip"
-              >🧑‍🏫 Tip</button>
-            )
-          )}
+          {/* Teacher tip removed per Madhav 25 Jun — content was dev-facing
+              annotations leaking through, and the floating panel cluttered
+              the layout. Tips remain in JSON for documentation but are no
+              longer rendered. Restore here if needed. */}
         </main>
       </div>
 
-      {/* Bottom nav controls */}
+      {/* Bottom controls — AKG/Savitha 25 Jun feedback: hidden by default,
+          reveal-on-hover. A 24px trigger strip at the bottom edge of the
+          viewport lifts the control bar up when the teacher moves the mouse
+          there. Auto-hides again on leave. */}
+      <div className="sr-controls-trigger" aria-hidden="true" />
       <footer className="sr-controls">
         <button onClick={prev} disabled={idx === 0} className="sr-btn">← Prev</button>
-        <div className="sr-hint">← / → to navigate · R to reveal · T to start timer · F fullscreen · N toggle nav</div>
+        <div className="sr-hint">← / → navigate · R reveal · T timer · F fullscreen · N nav</div>
         <button onClick={next} disabled={idx === session.slides.length - 1} className="sr-btn sr-btn-primary">Next →</button>
       </footer>
+
+      {/* CMCA logo always present, bottom-left. AKG/Savitha 25 Jun: brand
+          continuity across every slide. */}
+      <img
+        className="sr-brand-corner"
+        src="/sessions/assets/cmca_logo.png"
+        alt="CMCA"
+        aria-hidden="true"
+      />
 
       <style jsx>{styles}</style>
     </div>
@@ -386,10 +402,12 @@ function SlideBody({
   slide,
   onEvent,
   onAdvance,
+  lang,
 }: {
   slide: Slide;
   onEvent?: (e: SessionEvent) => void;
   onAdvance: () => void;
+  lang: Lang;
 }) {
   switch (slide.kind) {
     case "title": return <TitleSlide slide={slide} />;
@@ -397,7 +415,7 @@ function SlideBody({
     case "mc_narration": return <McSlide slide={slide} />;
     case "group_activity_timer": return <TimerSlide slide={slide} onEvent={onEvent} />;
     case "click_reveal": return <RevealSlide slide={slide} onEvent={onEvent} />;
-    case "mcq": return <McqSlide slide={slide} onEvent={onEvent} />;
+    case "mcq": return <McqSlide slide={slide} onEvent={onEvent} lang={lang} />;
     case "reflect_share": return <ReflectSlide slide={slide} />;
     case "video": return <VideoSlide slide={slide} onEnded={onAdvance} />;
     case "video_question_series": return <VideoQuestionSeriesSlide slide={slide} onEvent={onEvent} />;
@@ -437,6 +455,14 @@ function TitleSlide({ slide }: { slide: Slide }) {
             session-end slide). Same Noto Sans Kannada font + smaller size. */}
         {slide.closing_line && <p className="sr-branded-closing">{slide.closing_line}</p>}
       </div>
+      {/* Madhav 25 Jun: optional hero image on title slides — used on slide 29
+          for the big closing visual. Renders above the audio chip. */}
+      {slide.image && (
+        <div className="sr-branded-hero">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={slide.image} alt="" />
+        </div>
+      )}
       {slide.audio && <div className="sr-branded-audio"><AudioChip src={slide.audio} /></div>}
     </div>
   );
@@ -447,8 +473,11 @@ function StaticSlide({ slide }: { slide: Slide }) {
   // on slides 7 "Form Groups" and 16 "Write your rules" — needs visual weight).
   const lineCls = slide.bullets_large ? "sr-line sr-line-lg" : "sr-line";
   const hasSideArt = !!slide.image || (slide.images && slide.images.length > 0);
+  // layout: "side" puts text + image side-by-side (slides 6, 7); default
+  // is "stack" — text on top, image below, both centred (slide 26 etc).
+  const layoutSide = slide.image_layout === "side";
   return (
-    <div className={hasSideArt ? "sr-static-with-image" : ""}>
+    <div className={hasSideArt ? ("sr-static-with-image " + (layoutSide ? "is-side" : "is-stack")) : ""}>
       <div className="sr-static-text">
         {slide.bullets_large ? (
           <ul className="sr-bullets-lg">
@@ -484,21 +513,46 @@ function StaticSlide({ slide }: { slide: Slide }) {
 }
 
 function McSlide({ slide }: { slide: Slide }) {
+  // Video full-width by default. Transcript hidden; click toggle → reveals
+  // a scrollable panel BELOW the video (not beside).
+  const [transcriptOpen, setTranscriptOpen] = useState(false);
+  useEffect(() => { setTranscriptOpen(false); }, [slide.n]);
   return (
     <div>
-      <div className="sr-mc-grid">
+      <div className="sr-mc-grid is-video-wide">
         <div className="sr-video-frame">
           {slide.video ? (
-            <video controls src={slide.video} poster="/sessions/assets/mc_poster.png" />
+            <video
+              key={slide.video}
+              controls
+              autoPlay
+              playsInline
+              src={slide.video}
+              poster="/sessions/assets/mc_poster.png"
+            />
           ) : (
             <div className="sr-video-placeholder">▶ MC video<br /><small>{slide.video || "(no video attached yet)"}</small></div>
           )}
         </div>
-        <div className="sr-transcript">
-          <div className="sr-transcript-label">Transcript (English)</div>
-          <p>{slide.transcript}</p>
-        </div>
       </div>
+      {slide.transcript && (
+        <>
+          <button
+            type="button"
+            className="sr-transcript-toggle"
+            onClick={() => setTranscriptOpen((v) => !v)}
+            aria-expanded={transcriptOpen}
+          >
+            {transcriptOpen ? "Hide transcript" : "📜 Show transcript"}
+          </button>
+          {transcriptOpen && (
+            <aside className="sr-transcript sr-transcript-below">
+              <div className="sr-transcript-label">Transcript (English)</div>
+              <p>{slide.transcript}</p>
+            </aside>
+          )}
+        </>
+      )}
       {/* Companion logo strip — used on slide 3 to display the partner
           orgs Sonu mentioned ("Along with CMCA, there are partner
           organisations…"). Renders as a row of logo cards under the
@@ -660,7 +714,7 @@ function RevealSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEv
   );
 }
 
-function McqSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEvent) => void }) {
+function McqSlide({ slide, onEvent, lang }: { slide: Slide; onEvent?: (e: SessionEvent) => void; lang: Lang }) {
   const [chosen, setChosen] = useState<number | null>(null);
   const [revealed, setRevealed] = useState(false);
 
@@ -700,9 +754,14 @@ function McqSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEvent
       </ol>
       {revealed && (
         <div className={"sr-feedback " + (chosen === slide.correct_index ? "is-right" : "is-close")}>
+          {/* AKG/Savitha 17 Jun: MCQ feedback must be in Kannada when lang=kn. */}
           {chosen === slide.correct_index
-            ? "Correct! Click Next to move on."
-            : "Not quite — the correct answer is highlighted. Click Next to continue."}
+            ? (lang === "kn"
+                ? "ಸರಿ! ಮುಂದುವರಿಸಲು ಮುಂದಿನ ಬಟನ್ ಒತ್ತಿ."
+                : "Correct! Click Next to move on.")
+            : (lang === "kn"
+                ? "ತಪ್ಪು — ಸರಿ ಉತ್ತರವನ್ನು ಗುರುತಿಸಲಾಗಿದೆ. ಮುಂದುವರಿಸಲು ಮುಂದಿನ ಬಟನ್ ಒತ್ತಿ."
+                : "Not quite — the correct answer is highlighted. Click Next to continue.")}
         </div>
       )}
     </div>
@@ -724,6 +783,8 @@ function VideoSlide({ slide, onEnded }: { slide: Slide; onEnded: () => void }) {
   // For looped clips (loop=true) we never auto-advance — the teacher clicks Next.
   const [ended, setEnded] = useState(false);
   const [revealed, setRevealed] = useState(false);
+  const [transcriptOpen, setTranscriptOpen] = useState(false);
+  useEffect(() => { setTranscriptOpen(false); }, [slide.n]);
 
   const handleEnded = () => {
     setEnded(true);
@@ -760,11 +821,11 @@ function VideoSlide({ slide, onEnded }: { slide: Slide; onEnded: () => void }) {
       <div className="sr-video-row">
         <div className="sr-video-large">
           {slide.video ? (
-            <video
-              controls
-              autoPlay
-              loop={slide.loop ?? false}
+            <VideoWithPauses
               src={slide.video}
+              loop={slide.loop ?? false}
+              pauseAt={slide.pause_at}
+              pauseDuration={slide.pause_duration ?? 5}
               onEnded={handleEnded}
             />
           ) : (
@@ -774,13 +835,25 @@ function VideoSlide({ slide, onEnded }: { slide: Slide; onEnded: () => void }) {
             </div>
           )}
         </div>
-        {hasTranscript && (
-          <aside className="sr-video-transcript">
-            <div className="sr-transcript-label">Transcript (English)</div>
-            <p>{slide.transcript}</p>
-          </aside>
-        )}
       </div>
+      {hasTranscript && (
+        <>
+          <button
+            type="button"
+            className="sr-transcript-toggle"
+            onClick={() => setTranscriptOpen((v) => !v)}
+            aria-expanded={transcriptOpen}
+          >
+            {transcriptOpen ? "Hide transcript" : "📜 Show transcript"}
+          </button>
+          {transcriptOpen && (
+            <aside className="sr-transcript sr-transcript-below">
+              <div className="sr-transcript-label">Transcript (English)</div>
+              <p>{slide.transcript}</p>
+            </aside>
+          )}
+        </>
+      )}
 
       {slide.post_video_text && (
         <div className="sr-post-video">
@@ -914,6 +987,92 @@ function PreamblePairSlide({ slide }: { slide: Slide }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={zoom} alt="" />
           <button className="sr-preamble-close" onClick={(e) => { e.stopPropagation(); setZoom(null); }}>×</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Video element with inter-question pauses. Used on slide 9 to bake the
+// "5-sec think break" between MC questions directly into playback — the
+// teacher does NOT need to manually pause. Walks the pause_at array; when
+// currentTime crosses each timestamp, pauses the video, shows an overlay
+// countdown, then resumes automatically. AKG/Savitha 24 Jun + Madhav 25 Jun.
+function VideoWithPauses({
+  src,
+  loop,
+  pauseAt,
+  pauseDuration,
+  onEnded,
+}: {
+  src: string;
+  loop: boolean;
+  pauseAt?: number[];
+  pauseDuration: number;
+  onEnded: () => void;
+}) {
+  const ref = useRef<HTMLVideoElement | null>(null);
+  const consumed = useRef<Set<number>>(new Set());
+  const [paused, setPaused] = useState(false);
+  const [countdown, setCountdown] = useState(0);
+
+  useEffect(() => {
+    // reset on src change
+    consumed.current = new Set();
+    setPaused(false);
+    setCountdown(0);
+  }, [src]);
+
+  const onTimeUpdate = () => {
+    const v = ref.current;
+    if (!v || !pauseAt || pauseAt.length === 0 || paused) return;
+    for (const t of pauseAt) {
+      if (consumed.current.has(t)) continue;
+      // Trigger when within a 0.4s window of the boundary
+      if (v.currentTime >= t && v.currentTime < t + 0.6) {
+        consumed.current.add(t);
+        v.pause();
+        setPaused(true);
+        setCountdown(pauseDuration);
+        let left = pauseDuration;
+        const timer = setInterval(() => {
+          left -= 1;
+          setCountdown(left);
+          if (left <= 0) {
+            clearInterval(timer);
+            setPaused(false);
+            v.play().catch(() => {});
+          }
+        }, 1000);
+        break;
+      }
+    }
+  };
+
+  return (
+    <div className="sr-vwp">
+      <video
+        ref={ref}
+        controls
+        autoPlay
+        playsInline
+        loop={loop}
+        src={src}
+        onTimeUpdate={onTimeUpdate}
+        onEnded={onEnded}
+      />
+      {paused && (
+        <div className="sr-vwp-pause" aria-live="polite">
+          <div className="sr-vwp-pause-label">Think time</div>
+          <div className="sr-vwp-pause-count">{countdown}</div>
+          <button
+            className="sr-vwp-pause-skip"
+            onClick={() => {
+              const v = ref.current;
+              if (v) v.play().catch(() => {});
+              setPaused(false);
+            }}
+          >Skip ↦</button>
         </div>
       )}
     </div>
@@ -1059,9 +1218,32 @@ const styles = `
       ${CREAM};
     background-attachment: fixed;
     color: ${INK};
-    font-family: "Trebuchet MS", "Trebuchet", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+    /* Professional UI pair — Inter for English (clean sans), Noto Sans Kannada
+       for Kannada. System fallbacks if Inter doesn't load. */
+    font-family: "Inter", "Noto Sans Kannada", -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-feature-settings: "cv11", "ss03";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  .sr-topbar { display: flex; align-items: center; gap: 16px; padding: 10px 16px; background: ${ORANGE}; color: #fff; }
+  /* Topbar — refined gradient + thin progress strip at the top edge. */
+  .sr-topbar {
+    display: flex; align-items: center; gap: 16px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, ${ORANGE} 0%, #ff8c00 100%);
+    color: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    position: relative;
+  }
+  /* Thin top progress strip — sleek alternative to the in-bar progress bar. */
+  .sr-topbar::after {
+    content: "";
+    position: absolute;
+    left: 0; top: 0; height: 2px;
+    background: rgba(255,255,255,0.6);
+    width: var(--sr-progress, 0%);
+    transition: width .35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
   .sr-topbar-title { flex: 1; font-size: 14px; }
   .sr-lang-toggle { display: inline-flex; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; overflow: hidden; }
   .sr-lang-btn { background: transparent; color: #fff; border: none; padding: 4px 12px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; letter-spacing: .02em; }
@@ -1087,20 +1269,93 @@ const styles = `
   .sr-nav-footer { font-size: 10px; opacity: 0.6; text-align: center; padding-top: 12px; }
 
   .sr-canvas {
-    flex: 1; padding: 28px 40px 110px; overflow: hidden; position: relative;
-    /* Light cream tint OVER the wave bg so the brand texture stays
-       visible across the whole canvas while keeping text legible.
-       Lowered from 78–85% → 35–45% opacity per design feedback (the
-       wave was too washed out before). */
+    flex: 1; padding: 28px 40px 80px; overflow: hidden; position: relative;
     background: linear-gradient(rgba(255,251,242,0.35), rgba(255,251,242,0.45));
+    scroll-behavior: smooth;
   }
+  /* Scroll fallback — when content overflows too much to scale, allow
+     vertical scrolling with a soft scroll-shadow hint at the bottom. */
+  .sr-canvas.is-scrollable {
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  /* Scroll indicator — fixed at the bottom of the viewport so it's persistent
+     and clearly visible on every slide where scrolling is needed. */
+  .sr-canvas.is-scrollable::after {
+    content: "↓ scroll for more";
+    position: fixed;
+    bottom: 14px; left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 14px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    pointer-events: none;
+    animation: sr-bounce 1.6s ease-in-out infinite;
+    z-index: 8;
+  }
+  @keyframes sr-bounce {
+    0%, 100% { transform: translateY(0); opacity: 0.85; }
+    50%      { transform: translateY(-3px); opacity: 1; }
+  }
+  /* Hide the bottom-left CMCA brand on video slides — slide 27's Asfiya
+     video already has the logo baked in, and slide 3 MC video shows
+     CMCA inside its own watermark. Avoids visual stacking. */
+  .sr-root:has(.sr-canvas.is-video-slide) .sr-brand-corner {
+    opacity: 0;
+    pointer-events: none;
+  }
+  /* Transcript panel — below the video, scrollable inside. AKG/Savitha
+     25 Jun: previously sat beside the video, made layout cramped. */
+  .sr-transcript-below {
+    margin: 14px auto 0;
+    max-width: 1000px;
+    background: rgba(255,255,255,0.96);
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 14px;
+    padding: 16px 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    max-height: 220px;
+    overflow-y: auto;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    animation: sr-transcript-in .22s ease-out;
+  }
+  @keyframes sr-transcript-in {
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .sr-transcript-below p { margin: 0; font-size: 14px; line-height: 1.6; color: ${INK}; }
+  /* Make preamble figures look clickable. */
+  .sr-preamble-card { cursor: zoom-in; transition: transform .15s ease, box-shadow .15s ease; }
+  .sr-preamble-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.10); }
+  /* Make the preamble close X more visible — white circle with dark X. */
+  .sr-preamble-close {
+    background: rgba(255,255,255,0.98) !important;
+    color: #1a1a1a !important;
+    font-size: 28px !important;
+    font-weight: 300 !important;
+    width: 48px !important;
+    height: 48px !important;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3) !important;
+  }
+  .sr-preamble-close:hover { background: #fff !important; transform: scale(1.05); }
   /* Fit-to-viewport wrapper: holds the slide's natural content size and
      gets a CSS transform: scale(N) applied by JS when content overflows
      the canvas. transform-origin: top center keeps the top of the slide
-     anchored so the section crumb + title don't drift. */
+     anchored so the section crumb + title don't drift.
+     Subtle fade-up motion on slide change for a polished feel. */
   .sr-canvas-fit {
     transform-origin: top center;
     width: 100%;
+    animation: sr-slide-in .35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  @keyframes sr-slide-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
   }
   .sr-canvas.is-projector .sr-canvas-fit {
     /* Projector-mode is-projector centers vertically via flex on the
@@ -1118,13 +1373,29 @@ const styles = `
   .sr-canvas.is-projector .sr-bullets-lg { list-style: none; padding: 0; }
   .sr-canvas.is-projector .sr-bullets-lg li { font-size: 30px; margin: 18px 0; }
   .sr-canvas.is-projector .sr-callout { font-size: 22px; margin: 24px auto 0; max-width: 900px; }
-  .sr-section-crumb { color: ${SAFFRON}; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
-  .sr-title { font-size: 36px; color: ${NAVY}; margin: 4px 0 10px; line-height: 1.15; }
-  .sr-accent { width: 56px; height: 5px; background: ${SAFFRON}; border-radius: 3px; margin-bottom: 24px; }
-  .sr-slide-body { font-size: 18px; line-height: 1.5; max-width: 1100px; }
+  /* Section crumb + title + accent — centered horizontally on every slide
+     so the layout reads as a presentation, not a left-aligned doc. */
+  .sr-section-crumb { color: ${SAFFRON}; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; text-align: center; }
+  .sr-title { font-size: 36px; color: ${NAVY}; margin: 4px auto 10px; line-height: 1.15; text-align: center; max-width: 1100px; }
+  .sr-accent { width: 56px; height: 5px; background: ${SAFFRON}; border-radius: 3px; margin: 0 auto 24px; }
+  /* Slide body — centered horizontally regardless of nav-rail state. */
+  .sr-slide-body { font-size: 18px; line-height: 1.5; max-width: 1100px; margin: 0 auto; width: 100%; }
 
   .sr-line { margin: 0 0 12px; font-size: 22px; }
-  .sr-callout { background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; color: ${NAVY}; padding: 14px 18px; border-radius: 10px; margin-top: 24px; font-size: 16px; font-weight: 600; }
+  /* Callout — softer styling, smaller font per AKG/Savitha 25 Jun feedback
+     (slide 7 in particular). */
+  .sr-callout {
+    background: ${LIGHT_SAFFRON};
+    border: 1px solid ${SAFFRON};
+    color: ${NAVY};
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 18px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.45;
+    max-width: 720px;
+  }
 
   .sr-title-hero { text-align: center; padding: 40px 0; }
   .sr-title-hero h2 { font-size: 44px; color: ${NAVY}; margin: 0 0 12px; }
@@ -1133,15 +1404,16 @@ const styles = `
      + dual-language title). */
   .sr-branded-title {
     position: relative;
-    min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px 40px;
+    padding: 32px 32px 24px;
     text-align: center;
     overflow: hidden;
     border-radius: 16px;
+    margin: 0 auto;
+    max-width: 1100px;
   }
   .sr-branded-bg {
     position: absolute; inset: 0;
@@ -1158,14 +1430,14 @@ const styles = `
     margin-bottom: 28px;
   }
   .sr-kreis-seal {
-    width: 200px; height: 200px;
+    width: 140px; height: 140px;
     object-fit: contain;
     filter: drop-shadow(0 4px 14px rgba(0,0,0,0.15));
   }
   .sr-cmca-mark {
-    width: 100px; height: auto;
+    width: 80px; height: auto;
     object-fit: contain;
-    margin-top: 24px;
+    margin-top: 16px;
     filter: drop-shadow(0 4px 10px rgba(0,0,0,0.12));
   }
   .sr-branded-titles { position: relative; z-index: 2; max-width: 900px; }
@@ -1219,7 +1491,14 @@ const styles = `
   .sr-branded-audio .sr-audio-card { margin-top: 0; }
   .sr-subtitle { font-size: 22px; color: ${SAFFRON}; }
 
-  .sr-mc-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
+  /* MC slide grid — bigger video frame per AKG/Savitha 25 Jun. When the
+     transcript toggle is closed (default), video takes the full canvas
+     width. When opened, splits into video-heavy + transcript pane. */
+  .sr-mc-grid { display: grid; gap: 24px; }
+  .sr-mc-grid.is-video-wide { grid-template-columns: 1fr; max-width: 1100px; margin: 0 auto; }
+  .sr-mc-grid.is-with-transcript { grid-template-columns: 2fr 1fr; }
+  .sr-mc-grid .sr-video-frame { width: 100%; min-height: 420px; }
+  .sr-mc-grid.is-video-wide .sr-video-frame { min-height: 520px; }
   /* Partner-org strip under MC narration slides (slide 3). */
   .sr-mc-partners { margin-top: 28px; }
   .sr-mc-partners-label { font-size: 12px; font-weight: 800; color: ${ORANGE}; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 10px; }
@@ -1324,9 +1603,11 @@ const styles = `
   .sr-reveal-controls { display: flex; gap: 12px; align-items: center; margin-top: 16px; }
   .sr-footer-cheer { margin-top: 18px; padding: 12px 14px; background: #e8f5ed; color: ${SUCCESS}; border-radius: 8px; font-weight: 700; }
 
-  .sr-mcq { max-width: 900px; }
-  .sr-scenario { font-size: 19px; margin: 0 0 20px; }
-  .sr-options { list-style: none; padding: 0; margin: 0; }
+  /* MCQ — centered layout. Slide 25 was rendering with empty right side; */
+  /* now the scenario + options are both centered within max-width. */
+  .sr-mcq { max-width: 820px; margin: 0 auto; text-align: center; }
+  .sr-scenario { font-size: 20px; margin: 0 auto 24px; max-width: 720px; line-height: 1.5; }
+  .sr-options { list-style: none; padding: 0; margin: 0 auto; max-width: 680px; text-align: left; }
   .sr-options li { margin-bottom: 12px; }
   .sr-option { display: flex; align-items: center; gap: 12px; width: 100%; padding: 14px 16px; background: #fff; border: 2px solid #e5e7eb; border-radius: 10px; cursor: pointer; transition: all .15s ease; text-align: left; font-family: inherit; font-size: 16px; color: ${INK}; }
   .sr-option:hover:not(:disabled) { border-color: ${SAFFRON}; }
@@ -1345,8 +1626,44 @@ const styles = `
   .sr-reflect blockquote { font-size: 28px; color: ${NAVY}; line-height: 1.4; margin: 20px 0; border-left: 4px solid ${SAFFRON}; padding-left: 20px; font-style: italic; }
   .sr-reflect-hint { color: ${MUTED}; font-size: 14px; }
 
-  .sr-video-large { background: #000; border-radius: 12px; aspect-ratio: 16 / 9; max-height: 70vh; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+  /* Video frame — always centered horizontally with a max-width cap so it
+     doesn't stretch awkwardly on wide screens. */
+  .sr-video-large {
+    background: #000;
+    border-radius: 12px;
+    aspect-ratio: 16 / 9;
+    max-height: 64vh;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; position: relative;
+    box-shadow: 0 16px 48px rgba(0,0,0,.18);
+  }
   .sr-video-large video { width: 100%; height: 100%; object-fit: contain; }
+  .sr-vwp { position: relative; width: 100%; height: 100%; }
+  .sr-vwp video { width: 100%; height: 100%; object-fit: contain; }
+  /* Inter-question pause overlay (slide 9). */
+  .sr-vwp-pause {
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    color: #fff;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 5;
+    animation: sr-fade-in .2s ease-out;
+  }
+  @keyframes sr-fade-in { from { opacity: 0; } to { opacity: 1; } }
+  .sr-vwp-pause-label { font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .8; margin-bottom: 12px; }
+  .sr-vwp-pause-count { font-size: 96px; font-weight: 200; line-height: 1; font-variant-numeric: tabular-nums; }
+  .sr-vwp-pause-skip {
+    margin-top: 18px; padding: 8px 18px;
+    background: rgba(255,255,255,0.15); color: #fff;
+    border: 1px solid rgba(255,255,255,0.4); border-radius: 999px;
+    font-family: inherit; font-size: 13px; font-weight: 600; letter-spacing: .03em;
+    cursor: pointer; transition: background .15s ease;
+  }
+  .sr-vwp-pause-skip:hover { background: rgba(255,255,255,0.25); }
   /* CMCA logo overlay for the large video player — same masking strategy
      as .sr-video-frame, scaled up slightly for the bigger frame. */
   .sr-video-large::after {
@@ -1417,32 +1734,102 @@ const styles = `
     font-variant-numeric: tabular-nums;
   }
 
-  /* Teacher Tip — AKG/Savitha feedback (16 Jun): tip was floating in the
-     bottom-right ABOVE main content on slides where text/imagery extended
-     that far right. New placement: docked into the bottom-LEFT, tucked
-     directly against the footer (bottom: 60px sits just above the 60px-
-     tall .sr-controls bar). Translucent backdrop + smaller width + lower
-     opacity so it never obscures the slide content underneath. */
+  /* Teacher Tip — AKG/Savitha 16 Jun v2: docked top-right, below the
+     header bar. Auto-shows for 5s on slide entry then auto-hides; the
+     teacher can click the 🧑‍🏫 pill to bring it back. Translucent
+     backdrop + small width + soft entrance animation. */
   .sr-tip {
-    position: fixed; bottom: 60px; left: 16px;
-    max-width: 320px; max-height: 28vh; overflow-y: auto;
-    background: rgba(254, 243, 199, 0.92);
+    position: fixed; top: 60px; right: 16px;
+    max-width: 320px; max-height: 50vh; overflow-y: auto;
+    background: rgba(254, 243, 199, 0.94);
     backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
     border: 1px solid ${SAFFRON};
     border-radius: 10px;
     padding: 10px 28px 10px 12px;
-    box-shadow: 0 4px 14px rgba(0,0,0,.10);
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
     z-index: 10;
     font-size: 12px;
+    animation: sr-tip-in .25s ease-out;
+  }
+  @keyframes sr-tip-in {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
   .sr-tip-label { color: ${NAVY}; font-size: 10px; font-weight: 800; letter-spacing: 1px; margin-bottom: 3px; }
   .sr-tip-body { color: ${INK}; font-size: 12px; line-height: 1.4; }
   .sr-tip-close { position: absolute; top: 4px; right: 6px; background: transparent; border: none; color: ${NAVY}; font-size: 18px; font-weight: 700; line-height: 1; cursor: pointer; padding: 2px 6px; border-radius: 6px; }
   .sr-tip-close:hover { background: rgba(0,0,0,0.08); }
-  .sr-tip-toggle { position: fixed; bottom: 70px; left: 16px; background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; color: ${NAVY}; border-radius: 999px; padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.08); z-index: 10; }
+  .sr-tip-toggle { position: fixed; top: 60px; right: 16px; background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; color: ${NAVY}; border-radius: 999px; padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.08); z-index: 10; }
   .sr-tip-toggle:hover { background: ${SAFFRON}; color: white; }
 
-  .sr-controls { position: fixed; bottom: 0; left: 0; right: 0; padding: 14px 24px; display: flex; align-items: center; gap: 16px; background: #fff; border-top: 1px solid #e5e7eb; z-index: 11; }
+  /* Bottom controls — AKG/Savitha 25 Jun: hidden by default, slide up on
+     hover of the bottom edge OR of the bar itself. Auto-hides on leave.
+     Translucent + blur for a modern UI feel. */
+  .sr-controls-trigger {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    height: 28px;
+    z-index: 10;
+    background: transparent;
+    pointer-events: auto;
+  }
+  .sr-controls {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    padding: 14px 24px;
+    display: flex; align-items: center; gap: 16px;
+    background: rgba(255,255,255,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0,0,0,.06);
+    z-index: 11;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform .25s ease, opacity .25s ease;
+  }
+  .sr-controls-trigger:hover ~ .sr-controls,
+  .sr-controls:hover,
+  .sr-controls:focus-within {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  /* CMCA brand corner — fixed bottom-left, present on every slide. */
+  .sr-brand-corner {
+    position: fixed;
+    bottom: 14px;
+    left: 18px;
+    width: 56px;
+    height: auto;
+    z-index: 9;
+    opacity: 0.88;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.12));
+    pointer-events: none;
+  }
+  /* Transcript toggle pill — sits below videos/MC frames. */
+  .sr-transcript-toggle {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 14px;
+    padding: 7px 16px;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 999px;
+    color: ${INK};
+    font-family: inherit; font-size: 12px; font-weight: 600; letter-spacing: .02em;
+    cursor: pointer;
+    transition: background .15s ease, border-color .15s ease, transform .08s ease;
+    backdrop-filter: blur(4px);
+  }
+  .sr-transcript-toggle:hover { background: ${LIGHT_SAFFRON}; border-color: ${SAFFRON}; }
+  .sr-transcript-toggle:active { transform: scale(0.97); }
+  /* Big hero image on title slides (slide 29 closing). */
+  .sr-branded-hero {
+    margin: 24px auto 0;
+    display: flex;
+    justify-content: center;
+  }
+  .sr-branded-hero img {
+    width: clamp(180px, 24vw, 320px);
+    height: auto;
+    filter: drop-shadow(0 8px 24px rgba(0,0,0,0.10));
+  }
   .sr-hint { flex: 1; text-align: center; color: ${MUTED}; font-size: 12px; }
   .sr-btn { background: #fff; border: 1px solid #e5e7eb; padding: 9px 18px; border-radius: 8px; cursor: pointer; font-family: inherit; font-size: 14px; color: ${INK}; }
   .sr-btn:hover:not(:disabled) { border-color: ${SAFFRON}; }
@@ -1461,13 +1848,50 @@ const styles = `
   /* Static slide with companion image — slide 6 (flat tyre), 22 (Ambedkar), 26 (Asfiya) */
   .sr-video-instructions { text-align: center; margin-bottom: 18px; }
   .sr-video-instruction-line { font-size: 22px; color: ${INK}; margin: 6px 0; font-weight: 600; }
-  .sr-static-with-image { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: start; }
+  /* Static + image — two layouts. Default "stack" = single column centred;
+     "side" = text and image side-by-side (slides 6, 7). */
+  .sr-static-with-image.is-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+  }
+  .sr-static-with-image.is-stack .sr-static-text { max-width: 820px; }
+  .sr-static-with-image.is-stack .sr-static-image { max-width: 520px; }
+  .sr-static-with-image.is-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .sr-static-with-image.is-side .sr-static-text { text-align: left; }
+  .sr-static-with-image.is-side .sr-static-image { width: 100%; }
+  .sr-static-with-image.is-side .sr-static-image-grid {
+    justify-content: center;
+    align-items: center;
+  }
   .sr-static-text { min-width: 0; }
   .sr-static-image { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
   .sr-static-image img { width: 100%; height: auto; display: block; border-radius: 8px; }
   /* Multi-image strip for slides like 7 (Form Groups reference photos)
      and 8 (KSRTC + KREIS inspiration logos). Auto-flows in a row. */
-  .sr-static-image-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; }
+  /* Logo / reference image strip — centered grid that doesn't sprawl when
+     there are few items (slide 8: KSRTC + KREIS logos). */
+  .sr-static-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .sr-static-image-grid .sr-image-card {
+    flex: 0 1 180px;
+    max-width: 220px;
+  }
   .sr-image-card { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.05); display: flex; flex-direction: column; gap: 8px; }
   .sr-image-card img { width: 100%; height: 120px; object-fit: contain; display: block; }
   .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
@@ -1479,12 +1903,16 @@ const styles = `
   .sr-brief-logo figcaption { font-size: 14px; font-weight: 800; color: ${ORANGE_INK}; letter-spacing: .04em; }
 
   /* Video slide with post-video reveal — slide 5 (Eyes on Me) + slide 15 (MC raising hand) */
-  .sr-video-large-wrap { display: flex; flex-direction: column; gap: 18px; }
+  /* Video container — fully centered; instructions above and transcript
+     below all sit centred. */
+  .sr-video-large-wrap { display: flex; flex-direction: column; gap: 18px; align-items: center; width: 100%; }
   /* Video row: when a transcript is present, video + transcript sit side
      by side; otherwise video fills the row. Mirrors the .sr-mc-grid
      layout used by mc_narration slides for visual consistency. */
-  .sr-video-row { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: start; }
-  .sr-video-with-transcript .sr-video-row { grid-template-columns: 1.4fr 1fr; }
+  /* Video row — always single column, centered. Transcript moved below
+     via the toggle (sr-transcript-below). */
+  .sr-video-row { display: flex; justify-content: center; width: 100%; }
+  .sr-video-row .sr-video-large { width: 100%; }
   .sr-video-transcript { background: ${ORANGE_BG}; border: 1px solid ${ORANGE}; border-radius: 12px; padding: 14px 16px; max-height: 70vh; overflow-y: auto; }
   .sr-video-transcript p { margin: 0; font-size: 15px; line-height: 1.55; color: ${INK}; }
   .sr-post-video { display: flex; justify-content: center; padding: 8px 0; }
