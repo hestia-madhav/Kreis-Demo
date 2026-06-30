@@ -154,18 +154,6 @@
     },
     {
       "n": 4,
-      "kind": "static",
-      "title": "Let's calm down",
-      "body": [
-        "Teacher says: \"One, two — eyes on me!\"",
-        "Children say: \"Eyes on you.\""
-      ],
-      "audio": "/sessions/assets/vo_eyes_on_you.kn.mp3",
-      "post_video_text": "One Two — Eyes on me / Eyes on the board",
-      "tip": "Energiser audio."
-    },
-    {
-      "n": 5,
       "kind": "video",
       "title": "One Two — Eyes on You",
       "body": [
@@ -178,7 +166,7 @@
       "transcript": "(whispered) Eyes on you."
     },
     {
-      "n": 6,
+      "n": 5,
       "kind": "static",
       "title": "Let's calm down again!",
       "body": [
@@ -191,14 +179,12 @@
       "image_layout": "side"
     },
     {
-      "n": 7,
+      "n": 6,
       "kind": "static",
       "title": "Form Groups",
       "body": [
-        "Let's form groups.",
-        "We'll do many Club activities in groups.",
-        "Every voice matters.",
-        "Space to share, listen, and learn together."
+        "Let's form groups — every voice matters.",
+        "Groups are for sharing, listening, and learning together."
       ],
       "bullets_large": true,
       "tip": "Use a counting method to form 5–6 child mixed-gender groups.",
@@ -215,11 +201,10 @@
           "src": "/sessions/assets/group_work_3.jpg",
           "alt": "children working in a group"
         }
-      ],
-      "image_layout": "side"
+      ]
     },
     {
-      "n": 8,
+      "n": 7,
       "kind": "group_activity_timer",
       "title": "Let's get creative!",
       "brief": "Name your group, make a group logo. For example: look at the KSRTC and KREIS logos.",
@@ -241,7 +226,7 @@
       ]
     },
     {
-      "n": 9,
+      "n": 8,
       "kind": "video",
       "title": "Now let's see who's the winner",
       "video": "/sessions/assets/mc_questions_combined.kn.mp4",
@@ -252,12 +237,12 @@
         32,
         40
       ],
-      "pause_duration": 5,
-      "tip": "Play video. Children think silently in groups; ask them to raise hand quickly per question.",
+      "pause_duration": 8,
+      "tip": "Watch the video. It will auto-pause after each question. Tell the class: \"Quick — show of hands! 8 seconds.\" If the class is noisy, settle them before pressing Skip.",
       "transcript": "Master Change asks 7 group-reflection questions: (1) Did everyone share their thoughts about the name or logo? (2) Was it easy to choose one name or logo? (3) How did you decide which idea to pick? (4) Did everyone get a chance to share their opinion? (5) Did everyone get a chance to draw at least part of the logo? (6) Did you feel your idea was heard and respected? (7) When you showed your image, did everyone come together to display it?"
     },
     {
-      "n": 10,
+      "n": 9,
       "kind": "reflect_share",
       "title": "Think & Share",
       "prompt": "From this group activity of naming your group and making a logo — what did you learn?",
@@ -266,7 +251,7 @@
       "callout": "✍ Smartboard — write children's answers on the board"
     },
     {
-      "n": 11,
+      "n": 10,
       "kind": "mc_narration",
       "title": "Master Change wraps the activity",
       "video": "/sessions/assets/mc_wrap_group_activity.kn.mp4",
@@ -274,7 +259,7 @@
       "tip": "Play the video."
     },
     {
-      "n": 12,
+      "n": 11,
       "kind": "mcq",
       "title": "Constitution Connect Question",
       "scenario": "You are doing a school team project with 8 classmates. The Preamble's words 'We the People' show how important it is to work together. How does this fit your project?",
@@ -288,7 +273,7 @@
       "tip": "Read the scenario aloud. Give children time to guess before revealing. Correct answer: c) Think keeping all members' wellbeing in mind."
     },
     {
-      "n": 13,
+      "n": 12,
       "kind": "mc_narration",
       "title": "Constitution Connect Question",
       "transcript": "Good try! The Preamble's words 'We, the People of India' remind us that the government is formed by the people and must work for the people's welfare. In your group activities too, when you make decisions, you should keep the welfare of every member in mind. Just as the government must think for the good of all citizens, you too must decide for the good of all your team members. From now on, every session will have Constitution Connect questions — they will help you link your daily life with the values of the Constitution. Let's move on!",
@@ -296,7 +281,7 @@
       "_placeholder": true
     },
     {
-      "n": 14,
+      "n": 13,
       "kind": "click_reveal",
       "title": "Make rules together — Think & Share",
       "intro": "While you answer these 2 questions, your teacher listens with you.",
@@ -307,11 +292,11 @@
       "tip": "Show one question at a time. Get 1–2 answers per question before moving on."
     },
     {
-      "n": 15,
+      "n": 14,
       "kind": "video",
       "title": "What is Master Change doing?",
       "video": "/sessions/assets/mc_raising_hand_loop.mp4",
-      "loop": true,
+      "loop": false,
       "intro_text": "Time to make Club rules. Let's see an example. What is Master Change doing here?",
       "post_video_text": [
         "Raising his hand to speak. As a child — this is YOUR rule.",
@@ -321,7 +306,7 @@
       "tip": "Loop animation while children watch. Press NEXT/REVEAL when ready."
     },
     {
-      "n": 16,
+      "n": 15,
       "kind": "group_activity_timer",
       "title": "Write rules in your group",
       "brief": "Using paper/post-its, write 1 rule for yourself and 1 rule for your teacher to follow.",
@@ -330,7 +315,7 @@
       "tip": "Distribute paper before starting timer. 3-min timer."
     },
     {
-      "n": 17,
+      "n": 16,
       "kind": "static",
       "title": "Present the rules",
       "body": [
@@ -339,14 +324,14 @@
       "tip": "Go group by group. If a rule is already taken, that group shares a different one."
     },
     {
-      "n": 18,
+      "n": 17,
       "kind": "reflect_share",
       "title": "Think & Share",
       "prompt": "What should we do if someone doesn't follow the rules?",
       "tip": "2–3 children's answers."
     },
     {
-      "n": 19.5,
+      "n": 18,
       "kind": "video",
       "title": "More rules for the Club to succeed",
       "image": "/sessions/assets/rule_flashcard.png",
@@ -356,7 +341,7 @@
       "_placeholder": true
     },
     {
-      "n": 21,
+      "n": 19,
       "kind": "static",
       "title": "Who inspires us?",
       "body": [
@@ -366,7 +351,7 @@
       "tip": "Ask for a few guesses."
     },
     {
-      "n": 22,
+      "n": 20,
       "kind": "mc_narration",
       "title": "Dr. B. R. Ambedkar and the Constituent Assembly",
       "video": "/sessions/assets/mc_who_inspires.kn.mp4",
@@ -375,7 +360,7 @@
       "tip": "Play the video. Pause for guesses on who inspires us."
     },
     {
-      "n": 23,
+      "n": 21,
       "kind": "mcq",
       "title": "Constitution Connect Question",
       "scenario": "Why does our school have a Children's Constitution Club?",
@@ -389,7 +374,7 @@
       "tip": "Read aloud. Give children time to guess. Click to reveal."
     },
     {
-      "n": 24,
+      "n": 22,
       "kind": "mcq",
       "title": "Constitution Connect Question",
       "scenario": "What is a campaign in the Children's Constitution Club?",
@@ -403,7 +388,7 @@
       "tip": "Read aloud. Give children time to guess. Click to reveal."
     },
     {
-      "n": 25,
+      "n": 23,
       "kind": "mcq",
       "title": "Constitution Connect Question",
       "scenario": "Which is a key value in the Children's Constitution Club?",
@@ -417,18 +402,19 @@
       "tip": "Read aloud. Give children time to guess. Click to reveal."
     },
     {
-      "n": 26,
+      "n": 24,
       "kind": "static",
       "title": "Ripples of Change",
       "body": [
-        "Let's hear the story of Asfiya — a member of the Children's Constitution Club.",
-        "Her small efforts led to positive change in her school, town, and beyond."
+        "Now let's talk about Ripples of Change — how one small action can lead to a big impact.",
+        "Asfiya, a member of the Children's Constitution Club, is a clear example.",
+        "Her small efforts brought positive change at her school, in her town, and beyond."
       ],
       "image": "/sessions/assets/ripple_of_change.jpg",
-      "tip": "Introduce Asfiya warmly. Tell kids: video is ~3 min."
+      "tip": "Tell the children: even one small effort can become a 'ripple of change.' Asfiya's story is next — about 3 minutes."
     },
     {
-      "n": 27,
+      "n": 25,
       "kind": "video",
       "title": "Asfiya's Story",
       "video": "/sessions/assets/asfiya_story.mp4",
@@ -437,7 +423,7 @@
       "transcript": "Asfiya was a member of the Children's Constitution Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱"
     },
     {
-      "n": 28,
+      "n": 26,
       "kind": "preamble_pair",
       "title": "Let's read the Preamble of India together",
       "tip": "Stand up. Read together. Slowly, clearly.",
@@ -445,7 +431,7 @@
       "preamble_kn": "/sessions/assets/preamble_kn.png"
     },
     {
-      "n": 29,
+      "n": 27,
       "kind": "title",
       "title": "Children's Constitution Club",
       "thank_you": true,
