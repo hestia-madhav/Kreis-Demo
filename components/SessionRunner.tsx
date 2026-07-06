@@ -1013,15 +1013,39 @@ function VideoWithPauses({
 }) {
   const ref = useRef<HTMLVideoElement | null>(null);
   const consumed = useRef<Set<number>>(new Set());
+  const pauseTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const [paused, setPaused] = useState(false);
   const [countdown, setCountdown] = useState(0);
 
   useEffect(() => {
-    // reset on src change
+    // reset on src change — also clears any pending countdown from the
+    // previous slide so it can't fire v.play() after unmount.
+    if (pauseTimer.current) {
+      clearInterval(pauseTimer.current);
+      pauseTimer.current = null;
+    }
     consumed.current = new Set();
     setPaused(false);
     setCountdown(0);
   }, [src]);
+
+  useEffect(() => {
+    // Full cleanup on unmount — kill the interval AND pause + detach the
+    // video so its audio doesn't linger after the user hits Next mid-pause.
+    // This was the root cause of the "random audio playing after Next" bug.
+    return () => {
+      if (pauseTimer.current) {
+        clearInterval(pauseTimer.current);
+        pauseTimer.current = null;
+      }
+      const v = ref.current;
+      if (v) {
+        try { v.pause(); } catch { /* ignore */ }
+        v.removeAttribute("src");
+        v.load();
+      }
+    };
+  }, []);
 
   const onTimeUpdate = () => {
     const v = ref.current;
@@ -1035,13 +1059,16 @@ function VideoWithPauses({
         setPaused(true);
         setCountdown(pauseDuration);
         let left = pauseDuration;
-        const timer = setInterval(() => {
+        pauseTimer.current = setInterval(() => {
           left -= 1;
           setCountdown(left);
           if (left <= 0) {
-            clearInterval(timer);
+            if (pauseTimer.current) clearInterval(pauseTimer.current);
+            pauseTimer.current = null;
             setPaused(false);
-            v.play().catch(() => {});
+            // Only resume if we're still mounted with the same video.
+            const still = ref.current;
+            if (still && still === v) still.play().catch(() => {});
           }
         }, 1000);
         break;
@@ -1111,6 +1138,20 @@ function AudioChip({ src }: { src: string }) {
       });
     }
   }, [src]);
+
+  useEffect(() => {
+    // Full cleanup on unmount — pause and detach the audio source so it
+    // doesn't keep playing after the user navigates away from an
+    // audio-carrying slide. Companion to the VideoWithPauses cleanup.
+    return () => {
+      const el = audioRef.current;
+      if (el) {
+        try { el.pause(); } catch { /* ignore */ }
+        el.removeAttribute("src");
+        el.load();
+      }
+    };
+  }, []);
 
   const toggle = () => {
     const el = audioRef.current;
@@ -1269,7 +1310,10 @@ const styles = `
   .sr-nav-footer { font-size: 10px; opacity: 0.6; text-align: center; padding-top: 12px; }
 
   .sr-canvas {
-    flex: 1; padding: 28px 40px 80px; overflow: hidden; position: relative;
+    /* Extra bottom padding (110px) reserves space for: fixed brand-corner
+       logo (bottom 14px + ~56px tall) + hover-reveal control bar trigger
+       (28px) + margin. Prevents content from overlapping either. */
+    flex: 1; padding: 28px 40px 110px; overflow: hidden; position: relative;
     background: linear-gradient(rgba(255,251,242,0.35), rgba(255,251,242,0.45));
     scroll-behavior: smooth;
   }
@@ -1366,7 +1410,7 @@ const styles = `
      scale up typography so the back row of a classroom can read it. */
   .sr-canvas.is-projector { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100%; }
   .sr-canvas.is-projector .sr-section-crumb { align-self: center; }
-  .sr-canvas.is-projector .sr-title { font-size: 56px; text-align: center; margin: 8px 0 14px; }
+  .sr-canvas.is-projector .sr-title { font-size: 48px; text-align: center; margin: 8px 0 14px; }
   .sr-canvas.is-projector .sr-accent { margin: 0 auto 24px; }
   .sr-canvas.is-projector .sr-slide-body { max-width: 1000px; font-size: 26px; line-height: 1.55; }
   .sr-canvas.is-projector .sr-line { font-size: 28px; margin: 14px 0; }
@@ -1376,7 +1420,7 @@ const styles = `
   /* Section crumb + title + accent — centered horizontally on every slide
      so the layout reads as a presentation, not a left-aligned doc. */
   .sr-section-crumb { color: ${SAFFRON}; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; text-align: center; }
-  .sr-title { font-size: 36px; color: ${NAVY}; margin: 4px auto 10px; line-height: 1.15; text-align: center; max-width: 1100px; }
+  .sr-title { font-size: 44px; color: ${NAVY}; margin: 4px auto 12px; line-height: 1.2; text-align: center; max-width: 1100px; font-weight: 700; }
   .sr-accent { width: 56px; height: 5px; background: ${SAFFRON}; border-radius: 3px; margin: 0 auto 24px; }
   /* Slide body — centered horizontally regardless of nav-rail state. */
   .sr-slide-body { font-size: 18px; line-height: 1.5; max-width: 1100px; margin: 0 auto; width: 100%; }
@@ -1398,7 +1442,7 @@ const styles = `
   }
 
   .sr-title-hero { text-align: center; padding: 40px 0; }
-  .sr-title-hero h2 { font-size: 44px; color: ${NAVY}; margin: 0 0 12px; }
+  .sr-title-hero h2 { font-size: 48px; color: ${NAVY}; margin: 0 0 12px; font-weight: 700; }
   /* Branded welcome / thank-you slide — mirrors the comms-team
      pptx layout (wavy white bg + KREIS round seal + CMCA mark
      + dual-language title). */
