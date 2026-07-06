@@ -1,97 +1,54 @@
 {
   "id": "kreis-session-3",
   "_language": "kn",
-  "_status": "placeholder",
-  "_note": "Placeholder build — slide structure final, all audio/video/image assets pending production. See cmca-pulse/Kreis Sessions/kreis-session-3/ for the production brief.",
+  "_revision": "2026-07-06-irfan-kn",
   "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್ — ಸೆಷನ್ 3",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
     {
-      "id": "open",
-      "label": "ಪರಿಚಯ",
+      "id": "welcome",
+      "label": "ಸ್ವಾಗತ",
       "slides": [
         1
       ]
     },
     {
       "id": "hospital_stories",
-      "label": "ಆಸ್ಪತ್ರೆ ಕಥೆಗಳು",
+      "label": "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳು",
       "slides": [
         2
       ]
     },
     {
-      "id": "groupwork_intro",
-      "label": "ಗುಂಪು ಕಾರ್ಯ ಪರಿಚಯ",
+      "id": "group_work",
+      "label": "ಗುಂಪು ಕೆಲಸ",
       "slides": [
         3,
-        4
-      ]
-    },
-    {
-      "id": "groupwork_do",
-      "label": "ಗುಂಪು ಕಾರ್ಯ",
-      "slides": [
+        4,
         5,
-        6
-      ]
-    },
-    {
-      "id": "groupwork_share",
-      "label": "ಹಂಚಿಕೆ",
-      "slides": [
+        6,
         7,
-        8
-      ]
-    },
-    {
-      "id": "reflection",
-      "label": "ಮನನ",
-      "slides": [
+        8,
         9
       ]
     },
     {
-      "id": "choice_intro",
-      "label": "ಆಯ್ಕೆ ಪರಿಚಯ",
-      "slides": [
-        10
-      ]
-    },
-    {
-      "id": "hospital_qs",
-      "label": "ಆಸ್ಪತ್ರೆ ಕಥೆ — ಪ್ರಶ್ನೆಗಳು",
-      "slides": [
-        11,
-        12
-      ]
-    },
-    {
       "id": "integrity",
-      "label": "ಸಮಗ್ರತೆ",
+      "label": "ಆಯ್ಕೆ ಮತ್ತು ಪ್ರಾಮಾಣಿಕತೆ",
       "slides": [
-        13
-      ]
-    },
-    {
-      "id": "choices_school",
-      "label": "ಶಾಲೆಯಲ್ಲಿ ಆಯ್ಕೆಗಳು",
-      "slides": [
+        10,
+        11,
+        12,
+        13,
         14
       ]
     },
     {
-      "id": "ssc",
-      "label": "ಶುರು · ನಿಲ್ಲಿಸಿ · ಮುಂದುವರಿಸಿ",
+      "id": "reflect_close",
+      "label": "ಚಿಂತನೆ ಮತ್ತು ಮುಕ್ತಾಯ",
       "slides": [
-        15
-      ]
-    },
-    {
-      "id": "cc_box",
-      "label": "ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್",
-      "slides": [
+        15,
         16,
         17
       ]
@@ -100,168 +57,233 @@
   "slides": [
     {
       "n": 1,
-      "kind": "title",
-      "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "kind": "static",
+      "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
       "audio": "/sessions/assets/welcome_music.mp3",
-      "centered": true,
-      "tip": ""
+      "image": "/sessions/assets/kreis_seal.png",
+      "tip": "ಸ್ವಾಗತ ಸಂಗೀತ. ಗುಂಪುಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಕುಳಿತಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ."
     },
     {
       "n": 2,
       "kind": "static",
-      "title": "ಆಸ್ಪತ್ರೆ ಕಥೆಗಳು",
+      "bullets_large": true,
+      "title": "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳು",
       "body": [
-        "ಕಥೆ 1 — ಜನವರಿ 2019, ಟೈಮ್ಸ್ ಆಫ್ ಇಂಡಿಯಾ, ಚೆನ್ನೈ: ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಉಚಿತ ಹೆರಿಗೆ ಚಿಕಿತ್ಸೆ ಸಿಗುತ್ತದೆ — ಆದರೆ ಮಹಿಳೆಯರ ಕುಟುಂಬದವರು ವಾರ್ಡ್ ಸಿಬ್ಬಂದಿಗೆ ಕನಿಷ್ಠ 3,500 ರೂಪಾಯಿ ಲಂಚ ಕೊಟ್ಟರು. ಮಗು ಗಂಡಾಗಿದ್ದರೆ ಇನ್ನೂ ಹೆಚ್ಚು ಕೊಡಬೇಕು ಎಂದು ದೂರಿದರು.",
-        "ಕಥೆ 2 — ಮಾರ್ಚ್ 17, 2017, ಹಿಂದೂಸ್ತಾನ್ ಟೈಮ್ಸ್, ಹೈದರಾಬಾದ್: ಗಾಲಿ ಕುರ್ಚಿಗೆ ಲಂಚ ಕೊಡಲಾಗದೆ, ರೋಗಿ ತನ್ನ ಮಗನ ಆಟಿಕೆ ಟ್ರೈಸಿಕಲ್ ಬಳಸಿದರು. ವಾರ್ಡ್ ಸಿಬ್ಬಂದಿ 100-200 ರೂಪಾಯಿ ಕೇಳುತ್ತಿದ್ದರು. ಎಲೆಕ್ಟ್ರಿಕ್ ಶಾಕ್ ಸುಟ್ಟು ಚಿಕಿತ್ಸೆಗೆ ಬರುತ್ತಿದ್ದ ಎಸ್. ರಾಜು ಅವರ ಪತ್ನಿ ಸಂತೋಷಿ — ಲಂಚ ಕೊಡಲಾಗದ ಕಾರಣ ಆಟಿಕೆ ಟ್ರೈಸಿಕಲ್ ತಂದು ಪತಿಯನ್ನು ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಸಾಗಿಸಿದರು."
+        "1) ಜನವರಿ 2019 — ಟೈಮ್ಸ್ ಆಫ್ ಇಂಡಿಯಾ, ಚೆನ್ನೈ: ಸರ್ಕಾರಿ ಹೆರಿಗೆ ಆಸ್ಪತ್ರೆಗಳಲ್ಲಿ ಚಿಕಿತ್ಸೆ ಉಚಿತವಾಗಿದ್ದರೂ, ಅಲ್ಲಿನ ಸಿಬ್ಬಂದಿ ಮಗುವನ್ನು ತಾಯಿಗೆ ತೋರಿಸಲು ಕನಿಷ್ಠ 3,500 ರೂಪಾಯಿ ಲಂಚ ಕೇಳುತ್ತಾರೆ.",
+        "2) ಮಾರ್ಚ್ 17, 2017 — ಹಿಂದೂಸ್ತಾನ್ ಟೈಮ್ಸ್, ಹೈದರಾಬಾದ್: ಆಸ್ಪತ್ರೆಯ ವೀಲ್‌ಚೇರ್‌ಗಾಗಿ ಲಂಚ ನೀಡಲು ಸಾಧ್ಯವಾಗದ ರೋಗಿಯ ಪತ್ನಿ ಆಸ್ಪತ್ರೆಗೆ ಬಂದು ಸಹಾಯ ಕೇಳಿದರು.",
+        "40ರ ಹರೆಯದ ಎಸ್. ರಾಜು ಅವರು ವಿದ್ಯುತ್ ಅವಘಡದಿಂದ ಉಂಟಾದ ಸುಟ್ಟ ಗಾಯಗಳಿಗೆ ಚಿಕಿತ್ಸೆ ಪಡೆಯುತ್ತಿದ್ದರು. ವೀಲ್‌ಚೇರ್‌ಗೆ ಅಟೆಂಡೆಂಟ್‌ಗಳು 100–200 ರೂಪಾಯಿ ಕೇಳಿದ್ದರಿಂದ ಪತ್ನಿ ಸಹಾಯ ಕೇಳಿದರು."
       ],
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಎರಡು ಸ್ವಯಂಸೇವಕ ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ ಕಥೆಗಳನ್ನು ಗಟ್ಟಿಯಾಗಿ ಓದಿಸಿ.",
-      "tip": ""
+      "images": [
+        {
+          "src": "/sessions/assets/s3_hospital_story_1.jpg",
+          "alt": "hospital story 1 — Chennai"
+        },
+        {
+          "src": "/sessions/assets/s3_hospital_story_2.jpg",
+          "alt": "hospital story 2 — Hyderabad"
+        }
+      ],
+      "image_layout": "side",
+      "tip": "ಎರಡು ಸುದ್ದಿ-ಆಧಾರಿತ ಕಥೆಗಳು. ಪ್ರತಿ ಕಥೆಗೆ ಸಂಬಂಧಿಸಿದ ಚಿತ್ರ ಪಕ್ಕದಲ್ಲಿ ತೋರಿಸಿ."
     },
     {
       "n": 3,
       "kind": "static",
-      "title": "ಗುಂಪು ಕಾರ್ಯ",
+      "title": "ಗುಂಪು ಕೆಲಸ",
       "body": [
-        "ಶಿಕ್ಷಕರು ಸಣ್ಣ ಕಥೆಗಳ ಹಾಳೆಗಳನ್ನು ಹಂಚುತ್ತಾರೆ. ನಿಮ್ಮ ಗುಂಪಿನಲ್ಲಿ ಓದಿ.",
-        "ಪ್ರತಿ ಕಥೆಗೆ — ಒಂದು, ಒಬ್ಬ ಒಳ್ಳೆಯ ಮನುಷ್ಯ ಹೊಂದಿರಬೇಕಾದ ಮೌಲ್ಯ ಬರೆಯಿರಿ.",
-        "ಎರಡು, ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ನಿರ್ದಿಷ್ಟ ಕ್ರಿಯೆ ಬರೆಯಿರಿ."
+        "ಶಿಕ್ಷಕರು ಸಣ್ಣ ಕಥೆಗಳನ್ನು ಹೊಂದಿರುವ ಹಾಳೆಗಳನ್ನು ವಿತರಿಸುತ್ತಾರೆ.",
+        "ನಿಮ್ಮ ಗುಂಪುಗಳಲ್ಲಿ ಅವುಗಳನ್ನು ಓದಿ.",
+        "ಓದುವಾಗ, ಪ್ರತಿ ಕಥೆಗೆ ಸಂಬಂಧಿಸಿದಂತೆ ಇವುಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡಿ:",
+        "ಒಂದು — ಆ ಕಥೆಯು ಪ್ರತಿಬಿಂಬಿಸುವ ಮತ್ತು ಪ್ರತಿಯೊಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನು ಪಾಲಿಸಬೇಕಾದ ಮೌಲ್ಯ ಅಥವಾ ಗುಣ.",
+        "ಎರಡು — ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ನಿರ್ದಿಷ್ಟ ಕ್ರಮ ಅಥವಾ ನಡವಳಿಕೆ."
       ],
-      "tip": ""
+      "image": "/sessions/assets/s3_group_reading.jpg",
+      "image_layout": "side",
+      "tip": "ಅನುಬಂಧ 3 (Annexure 3) ಪ್ರತಿ ಗುಂಪಿಗೆ ಒಂದೊಂದು ಹಾಳೆ ವಿತರಿಸಿ."
     },
     {
       "n": 4,
-      "kind": "mc_narration",
-      "title": "ಉದಾಹರಣೆ — ಮಾಸ್ಟರ್ ಚೇಂಜ್",
-      "transcript": "I always leave late from home — so I jump traffic signals. What is the value here that I'm NOT showing? (5s pause) Be punctual · follow rules · be careful on the road · leave early. Now what's the positive action that shows that value? (5s pause) Follow rules · reach school on time. So you'd write 'not jump signals' as the value and 'follow rules, reach on time' as the actions. You have 8 minutes for all stories!",
-      "tip": ""
+      "kind": "video",
+      "title": "ಉದಾಹರಣೆ — Master Change ಹೇಳುತ್ತಾರೆ",
+      "video": "/sessions/assets/s3_mc_traffic_signal.kn.mp4",
+      "pause_at": [
+        30,
+        60
+      ],
+      "pause_duration": 8,
+      "kn_script": [
+        "ನಾನು ಯಾವಾಗಲೂ ಮನೆಯಿಂದ ಶಾಲೆಗೆ ಹೊರಡುವಾಗ ತಡವಾಗುತ್ತದೆ. ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ತಲುಪಲು, ನಾನು ಅನೇಕ ಬಾರಿ ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರುತ್ತೇನೆ.",
+        "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?",
+        "(5 ಸೆಕೆಂಡ್ ವಿರಾಮ — ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರದಿರುವುದು, ರಸ್ತೆಯಲ್ಲಿ ಜಾಗರೂಕತೆ)",
+        "ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?",
+        "(5 ಸೆಕೆಂಡ್ ವಿರಾಮ — ನಿಯಮಗಳನ್ನು ಪಾಲಿಸುವುದು, ಇತರ ವಾಹನಗಳ ಬಗ್ಗೆ ಗೌರವ)"
+      ],
+      "transcript": "MC gives a traffic-signal example: 'I always get late leaving home for school. To reach on time I sometimes break traffic signals. Which value am I not showing? (pause) — Not breaking signals, road awareness. Very good! Now what positive action would show that value? (pause) — Following rules, respect for other vehicles.'",
+      "tip": "ವೀಡಿಯೋ 2 ಬಾರಿ ಸ್ವಯಂ ತಡೆಯುತ್ತದೆ (5-8 ಸೆಕೆಂಡ್ ಪ್ರತಿ). ತರಗತಿಗೆ ಹೇಳಿ: ಬೇಗ — ಕೈ ಎತ್ತಿ."
     },
     {
       "n": 5,
-      "kind": "group_activity_timer",
-      "title": "ಗುಂಪು ಕಾರ್ಯ ಶುರು",
-      "brief": "ಶಿಕ್ಷಕರು ಪ್ರತಿ ಗುಂಪಿಗೆ ಬೇರೆ ಬೇರೆ ಹಾಳೆ ಕೊಡುತ್ತಾರೆ (ಅನೆಕ್ಸರ್ 3). ಪ್ರತಿ ಕಥೆಗೆ ಮೌಲ್ಯ + ಕ್ರಿಯೆ ಬರೆಯಿರಿ.",
-      "timer_seconds": 420,
-      "reminder_at": 120,
-      "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಅನೆಕ್ಸರ್ 3 ಪ್ರತಿ ಹಾಳೆ ಬೇರೆ — ಒಂದೇ ಹಾಳೆ ಎಲ್ಲ ಗುಂಪಿಗೆ ಕೊಡಬೇಡಿ. ಅನೆಕ್ಸರ್ 2 ನಿಮ್ಮ ರೆಫರೆನ್ಸ್ — ಮಕ್ಕಳಿಗೆ ತೋರಿಸಬೇಡಿ.",
-      "tip": ""
+      "kind": "static",
+      "title": "ಗುಂಪು ಕೆಲಸ ಮಾಡಿ",
+      "body": [
+        "ಗುಂಪುಗಳಿಗೆ ಹಾಳೆಗಳನ್ನು ವಿತರಿಸಿ.",
+        "7 ನಿಮಿಷಗಳ ಟೈಮರ್ ಪ್ರಾರಂಭ. 2 ನಿಮಿಷ ಬಾಕಿ ಇರುವಾಗ ಎಚ್ಚರಿಕೆಯ ಬಜರ್ ಕೇಳಿಸುತ್ತದೆ."
+      ],
+      "audio": "/sessions/assets/timer_7min_ping.mp3",
+      "tip": "ಅನುಬಂಧ 3ರ ಹಾಳೆಗಳನ್ನು ವಿತರಿಸಿ. ಪ್ರತಿ ಗುಂಪಿಗೆ ಬೇರೆ ಬೇರೆ ಹಾಳೆ. 7 ನಿಮಿಷ ಟೈಮರ್ (ವಿಜೆಟ್ ನಿರ್ಮಾಣದಲ್ಲಿದೆ — ಸಮಯ ನೋಡಿಕೊಳ್ಳಿ)."
     },
     {
       "n": 6,
-      "kind": "group_activity_timer",
-      "title": "ಗುಂಪು ಕಾರ್ಯ ಮುಗಿಸಿ",
-      "brief": "ಧನ್ಯವಾದ! ತರಗತಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ಎರಡು ಕಥೆಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. ಮೌಲ್ಯ + ಕ್ರಿಯೆಯ ಪಟ್ಟಿ ಸಿದ್ಧವಿರಲಿ.",
-      "timer_seconds": 60,
-      "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "tip": ""
+      "kind": "static",
+      "title": "ಗುಂಪು ಕೆಲಸ ಮುಕ್ತಾಯಗೊಳಿಸಿ",
+      "body": [
+        "ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಗುಂಪುಗಳಲ್ಲಿ ನೀವು ತುಂಬಾ ಚೆನ್ನಾಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ!",
+        "ನೀವು ಕೆಲಸ ಮುಗಿಸದಿದ್ದರೂ ಪರವಾಗಿಲ್ಲ. ನಾವು ಪರಸ್ಪರ ಹಂಚಿಕೊಂಡಾಗ, ಎಲ್ಲಾ ಕಥೆಗಳು/ಸನ್ನಿವೇಶಗಳು ಚರ್ಚೆಯಾಗುತ್ತವೆ.",
+        "ಇಡೀ ತರಗತಿಯೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ನೀವು ಇಷ್ಟಪಡುವ ಎರಡು ಕಥೆಗಳು/ಸನ್ನಿವೇಶಗಳನ್ನು ಶೀಘ್ರವಾಗಿ ಆಯ್ಕೆ ಮಾಡಿ.",
+        "1 ನಿಮಿಷದ ಟೈಮರ್."
+      ],
+      "tip": "1 ನಿಮಿಷ ಟೈಮರ್. ಪ್ರತಿ ಗುಂಪು ಎರಡು ಕಥೆಗಳನ್ನು ಆರಿಸಿಕೊಳ್ಳಬೇಕು."
     },
     {
       "n": 7,
       "kind": "static",
       "title": "ಕಥೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ",
       "body": [
-        "ಪ್ರತಿ ಗುಂಪಿನಿಂದ ಒಬ್ಬರು ಸರದಿಯ ಪ್ರಕಾರ ಆಯ್ಕೆ ಮಾಡಿಕೊಂಡ ಒಂದು ಕಥೆಯನ್ನು ಓದಿ ಹೇಳಿ.",
-        "ಒಂದೇ ಕಥೆ ಪುನರಾವರ್ತನೆ ಬೇಡ — ಬೇರೆ ಗುಂಪು ಈಗಾಗಲೇ ಓದಿದ್ದರೆ ಎರಡನೆಯ ಕಥೆ ಬಳಸಿ."
+        "ವತಿ-ವರತಿಯಾಗಿ, ನಿಮ್ಮ ಗುಂಪಿನಿಂದ ಒಬ್ಬರು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಕಥೆಗಳಲ್ಲಿ ಒಂದನ್ನು ತರಗತಿಗೆ ಓದಿ ಹೇಳಿ.",
+        "ಕಥೆಗಳು/ಸನ್ನಿವೇಶಗಳನ್ನು ಪುನರಾವರ್ತಿಸಬೇಡಿ."
       ],
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಪ್ರತಿ ಕಥೆಗೆ 1 ನಿಮಿಷಕ್ಕಿಂತ ಹೆಚ್ಚು ಸಮಯ ಬೇಡ. 7 ಗುಂಪು = 7 ನಿಮಿಷ.",
-      "tip": ""
+      "tip": "ಪ್ರತಿ ಗುಂಪಿನ ಬಳಿ ಹೋಗಿ ಒಂದು ಕಥೆಯನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಹೇಳಿ. ಶಿಸ್ತನ್ನು ಕಾಪಾಡಿ."
     },
     {
       "n": 8,
       "kind": "static",
-      "title": "ಫಲಕದ ಮೇಲೆ ಬರೆಯಿರಿ",
+      "title": "ಬೋರ್ಡ್‌ಗೆ ಬರೆಯಿರಿ — ಗುಂಪು ಸಾರಾಂಶ",
       "body": [
-        "ಪ್ರತಿ ಗುಂಪಿನಿಂದ ಒಬ್ಬ ಸದಸ್ಯ ಫಲಕದ ಬಳಿ ಬಂದು ತಮ್ಮ ಎರಡು ಕ್ರಿಯೆ-ಹೇಳಿಕೆಗಳನ್ನು ಬರೆಯಲಿ.",
-        "ಮೌಲ್ಯ ಬೇಡ — ಕ್ರಿಯೆಯ ಹೇಳಿಕೆಗಳು ಮಾತ್ರ.",
-        "ನಿಮಗೆ 1 ನಿಮಿಷ. ಫಲಕದ ಯಾವುದೇ ಭಾಗದಲ್ಲಿ ದೊಡ್ಡದಾಗಿ ಬರೆಯಿರಿ."
+        "ಪ್ರತಿ ಗುಂಪಿನಿಂದ ಒಬ್ಬ ಸದಸ್ಯರು ಬೋರ್ಡ್ ಬಳಿ ಬಂದು ನಿಮ್ಮ ಪಟ್ಟಿಯಲ್ಲಿರುವ 2 ಕ್ರಿಯಾ-ಹೇಳಿಕೆಗಳನ್ನು (action statements) ಬರೆಯಿರಿ.",
+        "ನಿಮಗೆ ಕೇವಲ 1 ನಿಮಿಷ ಸಮಯವಿದೆ, ಆದ್ದರಿಂದ ಬೇಗನೆ ಮಾಡಿ!",
+        "ಬೋರ್ಡ್‌ನ ಯಾವುದೇ ಭಾಗಕ್ಕೆ ಬಂದು ಎಲ್ಲರಿಗೂ ಓದಲು ಸಾಧ್ಯವಾಗುವಂತೆ ದೊಡ್ಡ ಅಕ್ಷರಗಳಲ್ಲಿ ಬರೆಯಿರಿ."
       ],
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಎಲ್ಲರಿಗೂ ಚಾಕ್‌ಪೀಸ್ ಸಿದ್ಧವಿರಲಿ.",
-      "tip": ""
+      "tip": "1 ನಿಮಿಷ ಟೈಮರ್. ಪ್ರತಿಯೊಬ್ಬರ ಕೈಯಲ್ಲೂ ಸೀಮೆಸುಣ್ಣ (chalk) ಇರುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ."
     },
     {
       "n": 9,
-      "kind": "reflect_share",
-      "title": "ಮನನ",
-      "prompt": "ಫಲಕದ ಮೇಲೆ ಬರೆದಿರುವುದನ್ನು ಮೌನವಾಗಿ ಯೋಚಿಸಿ — ಇದು ನಿಮ್ಮ ಸ್ವಂತ ಚರ್ಚೆಯಿಂದ ಬಂದದ್ದು. 2 ನಿಮಿಷ.",
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಮಕ್ಕಳು ಮನನ ಶುರು ಮಾಡಿದಾಗ, ಸೆಷನ್‌ನ ಆರಂಭದಲ್ಲಿ ಆಸ್ಪತ್ರೆ ಕಥೆಗಳಿಗೆ ಬರೆದ ಉತ್ತರಗಳ ಭಾಗವನ್ನು ತೋರಿಸಿ ಮತ್ತು ಮತ್ತೊಮ್ಮೆ ಓದಲು ಹೇಳಿ.",
-      "tip": ""
+      "kind": "static",
+      "title": "ಚಿಂತಿಸೋಣ — 2 ನಿಮಿಷ ಮೌನ",
+      "body": [
+        "ನಿಮ್ಮ ಗುಂಪು ಚರ್ಚೆಗಳಿಂದ ಹೊರಬಂದ ಮತ್ತು ಬೋರ್ಡ್ ಮೇಲೆ ಬರೆದಿರುವ ವಿಷಯಗಳ ಬಗ್ಗೆ ನಾವೆಲ್ಲರೂ ಒಂದು ನಿಮಿಷ ಮೌನವಾಗಿ ಆಲೋಚಿಸೋಣ.",
+        "ಆಲೋಚಿಸಲು ಮತ್ತು ಚಿಂತಿಸಲು ನಿಮಗೆ 2 ನಿಮಿಷಗಳ ಕಾಲಾವಕಾಶ."
+      ],
+      "audio": "/sessions/assets/timer_2min_ping.mp3",
+      "tip": "ಮಕ್ಕಳು ಆಲೋಚಿಸಲು ಪ್ರಾರಂಭಿಸಿದಾಗ, ಸೆಷನ್‌ನ ಆರಂಭದಲ್ಲಿ ಆಸ್ಪತ್ರೆಯ ಕಥೆಗೆ ಸಂಬಂಧಿಸಿದ ಮೌಲ್ಯಗಳನ್ನು ಸಂಪರ್ಕಿಸಲು ಪ್ರೋತ್ಸಾಹಿಸಿ."
     },
     {
       "n": 10,
-      "kind": "static",
-      "title": "ಆಯ್ಕೆ ಎಂದರೆ ಏನು?",
-      "body": [
-        "ಒಂದು ಅಂಗಡಿಯವನು ತಪ್ಪಾಗಿ ನಿಮಗೆ 150 ರೂಪಾಯಿ ಹೆಚ್ಚು ಚಿಲ್ಲರೆ ಕೊಟ್ಟರೆ — ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
-        "ಈ ತೀರ್ಮಾನ ಮಾಡುವ ಕ್ರಿಯೆಗೆ ಏನು ಹೇಳುತ್ತೇವೆ? ಅದು C ಯಿಂದ ಶುರು ಆಗುತ್ತದೆ…"
+      "kind": "video",
+      "loop": false,
+      "title": "150 ರೂಪಾಯಿ — ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+      "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
+      "intro_text": "ಒಬ್ಬ ಅಂಗಡಿಯವನು ತಪ್ಪು ತಿಳಿವಳಿಕೆಯಿಂದ ನಿಮಗೆ 150 ರೂಪಾಯಿ ಹೆಚ್ಚುವರಿ ಚಿಲ್ಲರೆ ಕೊಟ್ಟರೆ, ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
+      "post_video_text": [
+        "ಹೀಗೆ ನಿರ್ಧಾರ ಮಾಡುವ ಕ್ರಿಯೆಯನ್ನು ಏನನ್ನುತ್ತಾರೆ?",
+        "ಆ… ಅಕ್ಷರದಿಂದ ಶುರುವಾಗುತ್ತದೆ.",
+        "ಆಯ್ಕೆ — CHOICE"
       ],
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. ಉತ್ತರ: CHOICE — ಆಯ್ಕೆ.",
-      "tip": ""
+      "reveal_on_click": true,
+      "image": "/sessions/assets/reference/s3_image2.png",
+      "tip": "ಮಕ್ಕಳಿಗೆ ಉತ್ತರ ಆಡಲು ಸಮಯ ನೀಡಿ. ತಡವಾದರೆ REVEAL/NEXT ಒತ್ತಿ ಆಯ್ಕೆ (CHOICE) ತೋರಿಸಿ."
     },
     {
       "n": 11,
       "kind": "mc_narration",
-      "title": "ಬಡ ಜನರ ಆಯ್ಕೆ",
-      "transcript": "Friends — in the hospital stories you read, what choice did the poor people have? What would happen to their loved one if they don't pay the bribe? Share your thoughts. (10s pause) Poor people sometimes have very little choice. If they didn't pay bribes they could lose their loved one, or for ration/Aadhar cards they could go hungry or lose their daily-wage job.",
-      "tip": ""
+      "title": "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳ ಬಗ್ಗೆ ಆಲೋಚಿಸಿ",
+      "video": "/sessions/assets/s3_mc_hospital_reflection.kn.mp4",
+      "kn_script": [
+        "ಸ್ನೇಹಿತರೇ, ಆರಂಭದಲ್ಲಿ ನೀವು ಓದಿದ ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಬಡ ಜನರಿಗೆ ಯಾವ ಆಯ್ಕೆ ಇತ್ತು? ಅವರು ಲಂಚ ನೀಡದಿದ್ದರೆ ತೊಂದರೆ ಅನುಭವಿಸಬೇಕಿತ್ತು.",
+        "ಬಡ ಜನರಿಗೆ ಕೆಲವೊಮ್ಮೆ ಅತಿ ಕಡಿಮೆ ಆಯ್ಕೆಗಳಿರುತ್ತವೆ. ಬಡವರು ಲಂಚ ಕೊಡುವುದು ಬಲವಂತದಿಂದ."
+      ],
+      "transcript": "Friends, in the hospital stories you read — what choice did poor people have? Sometimes poor people have very few choices. Poor people pay bribes out of compulsion.",
+      "tip": "MC ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳ ಬಗ್ಗೆ ಮಕ್ಕಳ ಗಮನವನ್ನು ಸೆಳೆಯುತ್ತಾರೆ. ಚರ್ಚೆಗೆ ಸಮಯ ನೀಡಿ."
     },
     {
       "n": 12,
       "kind": "mc_narration",
-      "title": "ಆಸ್ಪತ್ರೆ ಸಿಬ್ಬಂದಿಯ ಆಯ್ಕೆ",
-      "transcript": "And what about the choices the hospital STAFF made? Share your thoughts with your teacher and friends. (10s pause) They could have chosen not to take bribes from poor people. They could have stood up for the poor. They should have done their job fairly.",
-      "tip": ""
+      "title": "ಆಸ್ಪತ್ರೆ ಸಿಬ್ಬಂದಿಯ ಆಯ್ಕೆಗಳು?",
+      "video": "/sessions/assets/s3_mc_staff_choices.kn.mp4",
+      "kn_script": [
+        "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿ ಮಾಡಿದ ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಏನು ಹೇಳುತ್ತೀರಿ?",
+        "ಅವರು ಬಡವರಿಂದ ಲಂಚ ತೆಗೆದುಕೊಳ್ಳದಿರುವ ಆಯ್ಕೆಯನ್ನು ಮಾಡಬಹುದಿತ್ತು — ಆದರೆ ಮಾಡಲಿಲ್ಲ."
+      ],
+      "transcript": "In the hospital stories — what do you say about the choices the staff made? They could have chosen not to take bribes from the poor — but they didn't.",
+      "tip": "ಗುಂಪುಗಳಲ್ಲಿ ಚರ್ಚಿಸಲು ಹೇಳಿ."
     },
     {
       "n": 13,
-      "kind": "click_reveal",
-      "title": "ಸಮಗ್ರತೆ — INTEGRITY",
-      "intro": "ಈ ಮೌಲ್ಯಗಳು ಮತ್ತು ಕ್ರಿಯೆಗಳನ್ನು ಅನುಸರಿಸಿದರೆ, ನೀವು ಯಾವ ರೀತಿಯ ವ್ಯಕ್ತಿ ಆಗುತ್ತೀರಿ?",
-      "prompts": [
-        "ಉತ್ತಮ ಮನುಷ್ಯ · ಜವಾಬ್ದಾರಿಯುತ · ಒಳ್ಳೆಯ ಚಾರಿತ್ರ್ಯ · ಉತ್ತರದಾಯಿ",
-        "ಆಯ್ಕೆಗಳ ಆಧಾರದ ಮೇಲೆ ನಾವು ಬೆಳೆಸುವ ಈ ಮೌಲ್ಯಗಳಿಗೆ ಒಂದು ಪದ ಇದೆ — ಊಹಿಸಬಲ್ಲಿರಾ?",
-        "INTEGRITY — ಸಮಗ್ರತೆ",
-        "ನಮ್ಮ ವೈಯಕ್ತಿಕ ಸಮಗ್ರತೆ ಸಾವಿರಾರು ದೈನಂದಿನ ಆಯ್ಕೆಗಳಿಂದ ವರ್ಷಗಳ ಮೇಲೆ ರೂಪುಗೊಳ್ಳುತ್ತದೆ — ನಿಮ್ಮ ಕಥೆಗಳಲ್ಲಿನ ಎಲ್ಲಾ ದೈನಂದಿನ ಆಯ್ಕೆಗಳಂತೆ."
+      "kind": "static",
+      "title": "ಆಯ್ಕೆಯ ಹಿಂದೆ — ಪ್ರಾಮಾಣಿಕತೆ (INTEGRITY)",
+      "body": [
+        "ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿಯ ಆಯ್ಕೆಯ ಹಿಂದೆ ಇಲ್ಲದಿರುವ ಗುಣ ಯಾವುದು?"
       ],
-      "tip": ""
+      "post_video_text": [
+        "\"INTEGRITY\" — ಪ್ರಾಮಾಣಿಕತೆ / ನಿಷ್ಠೆ",
+        "ನಮ್ಮ ವೈಯಕ್ತಿಕ ಪ್ರಾಮಾಣಿಕತೆಯು ನೀವು ಕಥೆಗಳಲ್ಲಿ ಓದಿದಂತಹ ಸಾವಿರಾರು ಸನ್ನಿವೇಶಗಳನ್ನು ಬದಲಾಯಿಸಬಲ್ಲದು."
+      ],
+      "reveal_on_click": true,
+      "image": "/sessions/assets/s3_integrity_reveal.png",
+      "tip": "ಮಕ್ಕಳು ಉತ್ತರ ಹೇಳಿದ ಮೇಲೆ REVEAL/NEXT ಒತ್ತಿ. \"INTEGRITY\" ಸೃಜನಾತ್ಮಕವಾಗಿ ತೋರಿಸಿ."
     },
     {
       "n": 14,
       "kind": "mc_narration",
-      "title": "ಶಾಲೆಯಲ್ಲಿ ನಮ್ಮ ಆಯ್ಕೆಗಳು",
-      "transcript": "Now let's talk about some choices we make right here in school — remembering what we learnt today. (1) Some children put blank chits in the Change Champion Box and damage it. (2) What if we copy our project work from Google or ChatGPT and don't do it ourselves? (3) Your friend was absent — next day you help him or her catch up. (4) Some kids broke the window while playing — and they admit it to the teacher. [TAGLINE OVERLAY] Your everyday choices can make you the real Change Heroes.",
-      "tip": ""
+      "title": "ದಿನನಿತ್ಯದ ಆಯ್ಕೆಗಳು",
+      "video": "/sessions/assets/s3_mc_daily_choices.kn.mp4",
+      "kn_script": [
+        "ಈಗ ನಾವು ಶಾಲೆಯಲ್ಲಿಯೇ ಮಾಡುವ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ.",
+        "ಕೆಲವು ಮಕ್ಕಳು ಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುತ್ತಿದ್ದಾರೆ ಮತ್ತು Change Champion Box ಅನ್ನು ಹಾಳು ಮಾಡುತ್ತಿದ್ದಾರೆ.",
+        "ನಾವು ನಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್ ಕೆಲಸವನ್ನು ಗೂಗಲ್ ಅಥವಾ ChatGPT ನಿಂದ ಕಾಪಿ ಮಾಡಿದರೆ ಮತ್ತು ನಾವೇ ಅದನ್ನು ಮಾಡದಿದ್ದರೆ ಏನಾಗುತ್ತದೆ?",
+        "ನಿಮ್ಮ ಸ್ನೇಹಿತರೊಬ್ಬರು ಗೈರುಹಾಜರಾಗಿದ್ದರು ಮತ್ತು ಮರುದಿನ ನೀವು ಅವರಿಗೆ ಪಾಠದಲ್ಲಿ ಸಹಾಯ ಮಾಡುತ್ತೀರಿ.",
+        "ಕೆಲವು ಮಕ್ಕಳು ಆಟವಾಡುವಾಗ ಕಿಟಕಿಯ ಗಾಜನ್ನು ಒಡೆದರು ಮತ್ತು ಅವರು ಅದನ್ನು ಶಿಕ್ಷಕರಿಗೆ ಒಪ್ಪಿಕೊಳ್ಳುತ್ತಾರೆ.",
+        "ನಿಮ್ಮ ದೈನಂದಿನ ಆಯ್ಕೆಗಳು ನಿಮ್ಮನ್ನು ನಿಜವಾದ ಬದಲಾವಣೆಯ ಶಕ್ತಿಯನ್ನಾಗಿ ಮಾಡುತ್ತವೆ."
+      ],
+      "transcript": "MC talks about daily choices at school — spoiled Change Champion Box, copying from ChatGPT, helping absent friends, admitting a broken window. Ends with 'your daily choices make you a real change champion'.",
+      "tip": "ಪ್ರತಿ ಸನ್ನಿವೇಶದ ನಂತರ ಮಕ್ಕಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು ಸಮಯ ನೀಡಿ."
     },
     {
       "n": 15,
       "kind": "static",
-      "title": "ಶುರು · ನಿಲ್ಲಿಸಿ · ಮುಂದುವರಿಸಿ",
+      "title": "ನಾಣ್ಯದ ಎರಡು ಮುಖಗಳು (Optional)",
       "body": [
-        "ಇಂದು ಕಲಿತದ್ದರ ಆಧಾರದ ಮೇಲೆ —",
-        "ನಿಮ್ಮ ಜೀವನದಲ್ಲಿ ಯಾವ ಒಂದು ಹೊಸ ಕೆಲಸವನ್ನು ಶುರು ಮಾಡಲು ಬಯಸುತ್ತೀರಿ?",
-        "ಯಾವ ಒಂದು ಕೆಲಸವನ್ನು ನಿಲ್ಲಿಸಲು ಬಯಸುತ್ತೀರಿ?",
-        "ಯಾವ ಒಂದು ಕೆಲಸವನ್ನು ಮುಂದುವರಿಸಲು ಬಯಸುತ್ತೀರಿ?"
+        "ಪ್ರತಿ ನಾಣ್ಯಕ್ಕೂ ಎರಡು ಮುಖಗಳಿವೆ.",
+        "ಜೀವನದಲ್ಲಿಯೂ ಸಹ, ಪ್ರತಿ ವಿಷಯಕ್ಕೂ ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ದೃಷ್ಟಿಕೋನಗಳಿವೆ."
       ],
-      "tip": ""
+      "image": "/sessions/assets/s3_coin_two_sides.jpg",
+      "tip": "ಸಮಯ ಇದ್ದರೆ ಮಾತ್ರ ತೋರಿಸಿ. Optional."
     },
     {
       "n": 16,
-      "kind": "mc_narration",
-      "title": "ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್",
-      "transcript": "Wow — we've been learning so many new things in our CMCA Club, right? Now it's time to start collecting all the positive changes happening in our lives. Let me introduce something exciting — the Change Champion Box! 🎉 What is it? A special box where you share your change stories. Helped a friend? Showed kindness to an animal? Solved a problem at school? Helped someone at home? Every good action counts! You can even share stories about reporting problems in your neighbourhood — a pothole, a broken streetlight, anything needing attention. If you take a step towards positive change, add your story to the Change Champion Box. Now I need TWO volunteers who can help make this box and bring it to next class. Don't worry — we'll give you simple instructions in Annexure 1. Let's get ready to collect amazing change stories and become true Change Champions! 🌟",
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್ ತಯಾರಿಸಲು ಅನೆಕ್ಸರ್ 1 ಬಳಸಿ.",
-      "closing_line": "ಇಂದು ನಮ್ಮ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಪಯಣದಲ್ಲಿ ಮತ್ತೊಂದು ಪ್ರಮುಖ ಹೆಜ್ಜೆ ಇಟ್ಟಿದ್ದೇವೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
-      "tip": ""
+      "kind": "static",
+      "title": "ಪ್ರಾರಂಭಿಸಿ — ನಿಲ್ಲಿಸಿ — ಮುಂದುವರಿಸಿ",
+      "body": [
+        "ಇಂದು ನೀವು ಕಲಿತ ವಿಷಯಗಳ ಆಧಾರದ ಮೇಲೆ:",
+        "ನಿಮ್ಮ ಜೀವನದಲ್ಲಿ ನೀವು ಪ್ರಾರಂಭಿಸಲು ಬಯಸುವ ಒಂದು ಹೊಸ ವಿಷಯ ಯಾವುದು?",
+        "ನೀವು ಮಾಡಲು ಇಷ್ಟಪಡದ (ನಿಲ್ಲಿಸಲು ಬಯಸುವ) ಒಂದು ವಿಷಯ ಯಾವುದು?",
+        "ನೀವು ಮಾಡುತ್ತಿರುವ ಯಾವುದನ್ನು ಮುಂದುವರಿಸಲು ಬಯಸುತ್ತೀರಿ?"
+      ],
+      "image": "/sessions/assets/s3_start_stop_continue.jpg",
+      "tip": "ಪ್ರತಿ ಮಗುವಿಗೆ ಒಂದೊಂದು ಉತ್ತರ ಹೇಳಲು ಸಮಯ ನೀಡಿ."
     },
     {
       "n": 17,
-      "kind": "title",
-      "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್",
-      "thank_you": true,
-      "closing_line": "ಇಂದು ಆಯ್ಕೆ, ಸಮಗ್ರತೆ ಮತ್ತು ಬದಲಾವಣೆಯ ಕುರಿತು ಬಹಳಷ್ಟು ಕಲಿತಿದ್ದೇವೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
-      "centered": true,
-      "image": "/sessions/assets/kreis_seal.png",
-      "audio": "/sessions/assets/welcome_music.mp3",
-      "tip": "Thank the children. End of session."
+      "kind": "mc_narration",
+      "title": "Change Champion Box — ಪರಿಚಯ",
+      "video": "/sessions/assets/s3_mc_change_champion_box.kn.mp4",
+      "kn_script": [
+        "ವಾಹ್! ನಮ್ಮ CMCA ಕ್ಲಬ್‌ನಲ್ಲಿ ನಾವು ಎಷ್ಟು ಹೊಸ ವಿಷಯಗಳನ್ನು ಕಲಿಯುತ್ತಿದ್ದೇವೆ ಮತ್ತು ಅದ್ಭುತವಾದ ಚಟುವಟಿಕೆಗಳನ್ನು ಮಾಡುತ್ತಿದ್ದೇವೆ.",
+        "ಈಗ, ನಮ್ಮ ಜೀವನದಲ್ಲಿ ನಡೆಯುತ್ತಿರುವ ಎಲ್ಲಾ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಸಮಯ ಬಂದಿದೆ!",
+        "ನಾನು ನಿಮಗೆ ಒಂದು ಆಕರ್ಷಕ ವಿಷಯವನ್ನು ಪರಿಚಯಿಸುತ್ತೇನೆ — ಅದೇ Change Champion Box! 🎉",
+        "ಇದು ನಿಮ್ಮ ಬದಲಾವಣೆಯ ಕಥೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಪೆಟ್ಟಿಗೆ."
+      ],
+      "transcript": "Wow! Our CMCA Club is learning so many new things. Time to collect all the positive changes in our lives. Let me introduce something exciting — the Change Champion Box! It's a box that collects your change stories.",
+      "tip": "ಸೆಷನ್ 1ರ change_champion_rules.mp4 ವೀಡಿಯೋವನ್ನು ಮರುಬಳಸಬಹುದೇ ಎಂದು ಪರಿಶೀಲಿಸಿ. ಇಲ್ಲದಿದ್ದರೆ ಹೊಸ ವೀಡಿಯೋ ಬೇಕು."
     }
   ]
 }

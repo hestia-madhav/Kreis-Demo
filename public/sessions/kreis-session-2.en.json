@@ -1,317 +1,329 @@
 {
   "id": "kreis-session-2",
   "_language": "en",
-  "_status": "placeholder",
-  "_note": "Placeholder build — English transcript for hearing-impaired accessibility. All audio/video/image assets pending production.",
-  "title": "Children's Constitution Club — Session 2",
+  "_revision": "2026-07-06-irfan-kn-import",
+  "title": "CCC — Session 2: Club Naming + Launch Campaign",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
     {
-      "id": "open",
-      "label": "Intro",
+      "id": "welcome",
+      "label": "ಸ್ವಾಗತ",
       "slides": [
         1,
-        2
+        2,
+        3
       ]
     },
     {
-      "id": "naming_intro",
-      "label": "Name your Club",
+      "id": "name_club",
+      "label": "ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡಿ",
       "slides": [
-        3,
         4,
-        5
+        5,
+        6
       ]
     },
     {
-      "id": "naming_declare",
-      "label": "Declare the Winner",
+      "id": "active_citizens",
+      "label": "ಸಕ್ರಿಯ ಪೌರರು",
       "slides": [
-        6,
         7
       ]
     },
     {
-      "id": "elections_intro",
-      "label": "Introduce Reps",
+      "id": "committee",
+      "label": "ಸಮಿತಿ ರಚನೆ",
       "slides": [
         8,
-        9
-      ]
-    },
-    {
-      "id": "elect_committee",
-      "label": "Elect Committee",
-      "slides": [
+        9,
         10,
         11,
-        12
-      ]
-    },
-    {
-      "id": "assertive_action",
-      "label": "Assertive Action",
-      "slides": [
+        12,
         13,
-        14
-      ]
-    },
-    {
-      "id": "elect_president",
-      "label": "Elect President",
-      "slides": [
+        14,
         15,
         16
       ]
     },
     {
-      "id": "campaigns_intro",
-      "label": "Campaigns",
+      "id": "launch",
+      "label": "ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
       "slides": [
         17,
-        18
-      ]
-    },
-    {
-      "id": "launch_campaign",
-      "label": "Launch Campaign",
-      "slides": [
+        18,
         19,
         20,
-        21
-      ]
-    },
-    {
-      "id": "conclusion",
-      "label": "Conclusion",
-      "slides": [
-        22,
-        23
+        21,
+        22
       ]
     }
   ],
   "slides": [
     {
       "n": 1,
-      "kind": "title",
-      "title": "Session 2 — Naming of Club & Launch Campaign",
-      "centered": true,
-      "tip": ""
+      "kind": "static",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "image": "/sessions/assets/kreis_seal.png",
+      "title": "[EN translation pending] — kn: ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "tip": "[EN translation pending]"
     },
     {
       "n": 2,
-      "kind": "title",
-      "title": "Welcome to the Children's Constitution Club!",
-      "audio": "/sessions/assets/welcome_music.mp3",
-      "centered": true,
-      "tip": ""
+      "kind": "static",
+      "image": "/sessions/assets/reference/s2_image2.png",
+      "title": "[EN translation pending] — kn: KREIS ಸೆಷನ್ 2 — ಕ್ಲಬ್ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+      "tip": "[EN translation pending]"
     },
     {
       "n": 3,
       "kind": "static",
-      "title": "Welcome back!",
+      "image": "/sessions/assets/s2_kids_in_groups.jpg",
+      "image_layout": "side",
+      "title": "[EN translation pending] — kn: ಮತ್ತೊಂದು ಸೆಷನ್‌ಗೆ ಸ್ವಾಗತ!",
       "body": [
-        "Hey and welcome back to another session at CMCA!",
-        "Can you quickly check to see if you are all sitting in your groups?",
-        "How about we give our club a name today?"
+        "[EN translation pending]"
       ],
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 4,
       "kind": "static",
-      "title": "Name your Club!",
+      "bullets_large": true,
+      "image": "/sessions/assets/s2_blackboard_with_names.jpg",
+      "title": "[EN translation pending] — kn: ನಿಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡಿ!",
       "body": [
-        "Make sure your names are impactful and speak citizenship!",
-        "It should also equally motivate you."
+        "[EN translation pending]"
       ],
-      "callout": "Teacher's Tip: Write down the suggestions on the class board.",
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 5,
       "kind": "static",
-      "title": "What is your Club Name?",
+      "image": "/sessions/assets/s2_kids_raising_hands.jpg",
+      "image_layout": "side",
+      "title": "[EN translation pending] — kn: ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರು ಏನು?",
       "body": [
-        "You have 1 vote per person for 1 name. Choose wisely.",
-        "Be fair — only raise your hand if you like the name!",
-        "The name with the highest votes will be selected as your club name."
+        "[EN translation pending]"
       ],
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 6,
       "kind": "static",
-      "title": "And… your Club Name is…?",
+      "audio": "/sessions/assets/drum_roll_applause.mp3",
+      "title": "[EN translation pending] — kn: ಮತ್ತು… ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರು..?",
       "body": [
-        "______________ Children's Constitution Club!",
-        "And YOU have the power to bring about CHANGE!"
+        "[EN translation pending]"
       ],
-      "callout": "",
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 7,
       "kind": "static",
-      "title": "Ripples of Change",
+      "image": "/sessions/assets/s2_age_diversity_change_makers.jpg",
+      "image_layout": "side",
+      "title": "[EN translation pending] — kn: ಸಕ್ರಿಯ ಪೌರರಾಗಿ",
       "body": [
-        "So many children like you are Active Citizens today, making so many ripples of change!",
-        "But… with power comes responsibility."
+        "[EN translation pending]"
       ],
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 8,
       "kind": "mc_narration",
-      "title": "Master Change Appears",
-      "transcript": "Hello junior citizens, Namaskara! I am back for another session with you! Now that you have selected your group name, you have one more step to do. Just like a parliament in the nation or even the student council in your school, we will have our own committee! And we are going to do that together. You will see Democracy in Action! How do we choose our leaders in India? (pause for responses) Yes — we have elections at different levels: Gram Panchayat, Vidhan Sabha, Lok Sabha.",
-      "tip": ""
+      "video": "/sessions/assets/s2_mc_democracy.kn.mp4",
+      "image": "/sessions/assets/s2_democracy_levels.png",
+      "transcript": "Hello little citizens! Master Change is back for another session. Now that you've picked your club name, one more task remains — form a committee, like Parliament or your school cabinet. How do we choose our leaders in India? Yes — through elections at different levels: Gram Panchayat, State, Centre.",
+      "title": "[EN translation pending] — kn: Master Change ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತಾರೆ",
+      "kn_script": [
+        "ಹಲೋ ಪುಟ್ಟ ಪೌರರೇ, ನಮಸ್ಕಾರ! ನಿಮ್ಮೊಂದಿಗೆ ಮತ್ತೊಂದು ಸೆಷನ್‌ಗಾಗಿ ನಾನು ಮತ್ತೆ ಬಂದಿದ್ದೇನೆ!",
+        "ಈಗ ನೀವು ನಿಮ್ಮ ಗುಂಪಿನ ಹೆಸರನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ್ದೀರಿ, ಆದರೆ ಮಾಡಬೇಕಾದ ಇನ್ನೊಂದು ಕೆಲಸ ಬಾಕಿ ಇದೆ.",
+        "ನಮ್ಮ ದೇಶದಲ್ಲಿ ಸಂಸತ್ತು ಇರುವಂತೆ ಅಥವಾ ನಿಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಶಾಲಾ ಮಂತ್ರಿಮಂಡಲ ಇರುವಂತೆ, ನಮ್ಮದೇ ಆದ ಒಂದು ಸಮಿತಿಯನ್ನು ರಚಿಸಬೇಕು.",
+        "ಭಾರತದಲ್ಲಿ ನಾವು ನಮ್ಮ ನಾಯಕರನ್ನು ಹೇಗೆ ಆರಿಸುತ್ತೇವೆ?",
+        "ಹೌದು, ನಾವು ವಿವಿಧ ಹಂತಗಳಲ್ಲಿ ಚುನಾವಣೆಗಳನ್ನು ನಡೆಸುತ್ತೇವೆ — ಗ್ರಾಮ ಪಂಚಾಯಿತಿ, ರಾಜ್ಯ, ಕೇಂದ್ರ."
+      ],
+      "en_script": [
+        "[EN translation pending]"
+      ],
+      "tip": "[EN translation pending]"
     },
     {
       "n": 9,
       "kind": "mc_narration",
-      "title": "What makes an ideal representative?",
-      "transcript": "Before we move on to electing, what makes an ideal representative? What are some of the qualities they need? (pause for responses) — (Q1) If your friend and another student are candidates, and you know that the other student may do the job better — who will you vote for? (Q2) Would it matter if the job was done by a girl or a boy? (Q3) How will you feel if your friends didn't vote for you? (Q4) What if you stand for elections but don't win? What will your attitude be towards the winner?",
-      "tip": ""
+      "video": "/sessions/assets/s2_mc_representative_qualities.kn.mp4",
+      "transcript": "Before we vote — what qualities should an ideal representative have? If your friend and another student are candidates, and the other student is better at the job, who do you vote for? Does it matter if they are a boy or a girl? How would you feel if your friends did not vote for you? What if you ran and lost — how would you view the winner?",
+      "title": "[EN translation pending] — kn: ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳು",
+      "kn_script": [
+        "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?",
+        "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ಹಾಗೂ ಆ ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಈ ಕೆಲಸವನ್ನು ಉತ್ತಮವಾಗಿ ಮಾಡಬಲ್ಲರು ಎಂದು ನಿಮಗೆ ಅನಿಸಿದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?",
+        "ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ?",
+        "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ?",
+        "ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ? ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?"
+      ],
+      "en_script": [
+        "[EN translation pending]"
+      ],
+      "tip": "[EN translation pending]"
     },
     {
       "n": 10,
-      "kind": "group_activity_timer",
-      "title": "Let's get our committee ready!",
-      "brief": "Your first step is to elect one person from your group to be part of the core committee of the club. You have 2 minutes!",
-      "timer_seconds": 120,
-      "reminder_at": 60,
-      "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "tip": ""
+      "kind": "static",
+      "audio": "/sessions/assets/timer_2min_ping.mp3",
+      "title": "[EN translation pending] — kn: ಬನ್ನಿ, ನಮ್ಮ ಸಮಿತಿಯನ್ನು ಸಿದ್ಧಪಡಿಸೋಣ!",
+      "body": [
+        "[EN translation pending]"
+      ],
+      "tip": "[EN translation pending]"
     },
     {
       "n": 11,
       "kind": "static",
-      "title": "Let's get our committee ready!",
+      "image": "/sessions/assets/s2_candidates_in_front.jpg",
+      "audio": "/sessions/assets/applause_short.mp3",
+      "title": "[EN translation pending] — kn: ಆಯ್ಕೆಯಾದವರು ಮುಂದೆ ಬನ್ನಿ",
       "body": [
-        "Good Job! Now all the selected members come in front of the class.",
-        "Who would like to stand as the Club President? Step forward.",
-        "You have 1 minute to tell the club why they should elect you!"
+        "[EN translation pending]"
       ],
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 12,
       "kind": "static",
-      "title": "Committee in front",
+      "image": "/sessions/assets/reference/s2_image4.png",
+      "title": "[EN translation pending] — kn: ಕ್ಲಬ್ ರಚನೆ",
       "body": [
-        "Selected members stand in front of the class and pitch."
+        "[EN translation pending]"
       ],
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 13,
       "kind": "static",
-      "title": "Assertive Action",
+      "image": "/sessions/assets/s2_assertive_action.jpg",
+      "title": "[EN translation pending] — kn: ದೃಢವಾದ ಕ್ರಮ (Assertive Action)",
       "body": [
-        "Do you think this is okay? Rethink if your class is in this same situation!"
+        "[EN translation pending]"
       ],
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 14,
       "kind": "static",
-      "title": "Assertive Action — Visual",
+      "image": "/sessions/assets/reference/s2_image5.png",
+      "title": "[EN translation pending] — kn: ಪ್ರಮುಖ ಸಮಿತಿ",
       "body": [
-        "(Affirmative action illustration)"
+        "[EN translation pending]"
       ],
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 15,
       "kind": "static",
-      "title": "Let's Vote Now!",
+      "title": "[EN translation pending] — kn: ಈಗ ಮತ ಚಲಾಯಿಸೋಣ!",
       "body": [
-        "Who will be our Club President?",
-        "You have 1 vote."
+        "[EN translation pending]"
       ],
-      "callout": "Teacher's Tip: Ask the elected children to turn back. The rest close their eyes and vote by showing their hands. Take the total count, announce and congratulate.",
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 16,
       "kind": "static",
-      "title": "Congratulations!",
+      "audio": "/sessions/assets/cheer_applause.mp3",
+      "title": "[EN translation pending] — kn: ಅಭಿನಂದನೆಗಳು!",
       "body": [
-        "Congratulations to our President and Core Committee!",
-        "Now is the time for all our hands to get to work!"
+        "[EN translation pending]"
       ],
-      "callout": "Teacher's Tip: If it gets unmanageable, use calmers!",
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 17,
-      "kind": "video",
-      "title": "What is a campaign?",
-      "transcript": "What you see is a campaign! A campaign is like a big, exciting team mission to reach a specific goal or to educate people about a topic. It is when you make a smart plan, gather your tools, and work together to win a prize or solve a big problem! Let us spread the cheer all around now! We will be doing a CMCA Club Launch Campaign — during one of your school assemblies! (Yaaaaaayyyy! Cheers by children!)",
-      "tip": ""
+      "kind": "static",
+      "image": "/sessions/assets/s2_campaign_visual.jpg",
+      "audio": "/sessions/assets/kids_cheer.mp3",
+      "title": "[EN translation pending] — kn: ಇದು ಏನು? — ಅಭಿಯಾನ (Campaign)",
+      "body": [
+        "[EN translation pending]"
+      ],
+      "tip": "[EN translation pending]"
     },
     {
       "n": 18,
       "kind": "static",
-      "title": "Campaign image bank",
-      "body": [
-        "(Campaign images)"
+      "images": [
+        {
+          "src": "/sessions/assets/reference/s2_image7.png",
+          "alt": "campaign option 1"
+        },
+        {
+          "src": "/sessions/assets/reference/s2_image6.png",
+          "alt": "campaign option 2"
+        },
+        {
+          "src": "/sessions/assets/reference/s2_image3.png",
+          "alt": "campaign option 3"
+        }
       ],
-      "tip": ""
+      "image_layout": "stack",
+      "title": "[EN translation pending] — kn: ಉದ್ಘಾಟನಾ ಆಯ್ಕೆಗಳು",
+      "tip": "[EN translation pending]"
     },
     {
       "n": 19,
       "kind": "static",
-      "title": "CMCA Club Launch",
-      "body": [
-        "You have two options!"
+      "images": [
+        {
+          "src": "/sessions/assets/s2_launch_option_1.jpg",
+          "alt": "launch option 1"
+        },
+        {
+          "src": "/sessions/assets/s2_launch_option_2.jpg",
+          "alt": "launch option 2"
+        }
       ],
-      "callout": "Option A vs Option B — two graphic panels side-by-side. Children pick one and execute offline. NO on-screen choice.",
-      "tip": ""
+      "image_layout": "side",
+      "title": "[EN translation pending] — kn: CMCA ಕ್ಲಬ್ ಉದ್ಘಾಟನೆ",
+      "body": [
+        "[EN translation pending]"
+      ],
+      "tip": "[EN translation pending]"
     },
     {
       "n": 20,
       "kind": "static",
-      "title": "The success of the launch",
+      "image": "/sessions/assets/s2_hands_working_together.jpg",
+      "image_layout": "side",
+      "title": "[EN translation pending] — kn: ಜವಾಬ್ದಾರಿ ಕ್ಲಬ್ ಸಮಿತಿಗೆ",
       "body": [
-        "The campaign you would be doing is about the importance of diverse culture in our country.",
-        "There are many roles to be taken up for the success of the launch — especially the Club President and the Core Committee.",
-        "The success of the launch is in your hands!"
+        "[EN translation pending]"
       ],
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 21,
       "kind": "static",
-      "title": "You'll receive prints",
+      "title": "[EN translation pending] — kn: ಮುದ್ರಿತ ಪ್ರತಿಗಳು (Handouts)",
       "body": [
-        "You will receive prints to help support this process! Each group will get one set of prints.",
-        "Sit together and discuss how best we can make our school aware of our club.",
-        "The magic is in your hands!"
+        "[EN translation pending]"
       ],
-      "callout": "Teacher's Tip: Distribute the annexures to the groups. Core Committee takes the lead for the launch.",
-      "tip": ""
+      "tip": "[EN translation pending]"
     },
     {
       "n": 22,
       "kind": "mc_narration",
-      "title": "Master Change signs off",
-      "transcript": "Hey Friends. I see you are all getting ready to help your school know about your club. This is your opportunity to let everyone know that you are a part of an important mission and that you need the school's support too! Have fun. Plan well. Wishing you all the very best! I am excited to watch this club launch already! BYEEEEEEEEEEEEEEEEE! (waving hands)",
-      "closing_line": "Today our Constitution Club journey has taken another important step. See you again in the next session.",
-      "tip": ""
-    },
-    {
-      "n": 23,
-      "kind": "title",
-      "title": "Children's Constitution Club",
-      "thank_you": true,
-      "closing_line": "Today our Constitution Club journey has taken another important step. See you again in the next session.",
-      "centered": true,
-      "image": "/sessions/assets/kreis_seal.png",
-      "audio": "/sessions/assets/welcome_music.mp3",
-      "tip": "Thank the children. End of session."
+      "video": "/sessions/assets/s2_mc_farewell.kn.mp4",
+      "transcript": "Hey friends! I can see you all getting ready to tell the whole school about your club! Be happy, plan well, and best of luck to you all. I'm already waiting to see this club launch. Bye byeeee!",
+      "title": "[EN translation pending] — kn: Master Change ವಿದಾಯ",
+      "kn_script": [
+        "ಹೇ ಸ್ನೇಹಿತರೇ, ನಿಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಇಡೀ ಶಾಲೆಗೆ ತಿಳಿಸಲು ನೀವೆಲ್ಲರೂ ಸಿದ್ಧರಾಗುತ್ತಿರುವುದನ್ನು ನಾನು ನೋಡುತ್ತಿದ್ದೇನೆ!",
+        "ಖುಷಿಯಾಗಿರಿ, ಚೆನ್ನಾಗಿ ಯೋಜನೆ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮೆಲ್ಲರಿಗೂ ಶುಭವಾಗಲಿ!",
+        "ಈ ಕ್ಲಬ್ ಉದ್ಘಾಟನೆಯನ್ನು ನೋಡಲು ನಾನು ಈಗಲೇ ಕಾಯುತ್ತಿದ್ದೇನೆ.",
+        "ಬೈ ಬೈಈಈಈಈಈಈಈಈ! (ಕೈ ಬೀಸುತ್ತಾ)"
+      ],
+      "en_script": [
+        "[EN translation pending]"
+      ],
+      "tip": "[EN translation pending]"
     }
   ]
 }

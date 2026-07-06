@@ -1,318 +1,344 @@
 {
   "id": "kreis-session-2",
   "_language": "kn",
-  "_status": "placeholder",
-  "_note": "Placeholder build — slide structure final, all audio/video/image assets pending production. See cmca-pulse/Kreis Sessions/Kreis-session-2/ for the production brief.",
+  "_revision": "2026-07-06-irfan-kn",
   "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್ — ಸೆಷನ್ 2",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
     {
-      "id": "open",
-      "label": "ಪರಿಚಯ",
+      "id": "welcome",
+      "label": "ಸ್ವಾಗತ",
       "slides": [
         1,
-        2
+        2,
+        3
       ]
     },
     {
-      "id": "naming_intro",
-      "label": "ಹೆಸರು ಸೂಚಿಸಿ",
+      "id": "name_club",
+      "label": "ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡಿ",
       "slides": [
-        3,
         4,
-        5
+        5,
+        6
       ]
     },
     {
-      "id": "naming_declare",
-      "label": "ಹೆಸರು ಘೋಷಿಸಿ",
+      "id": "active_citizens",
+      "label": "ಸಕ್ರಿಯ ಪೌರರು",
       "slides": [
-        6,
         7
       ]
     },
     {
-      "id": "elections_intro",
-      "label": "ಪ್ರತಿನಿಧಿ ಪರಿಚಯ",
+      "id": "committee",
+      "label": "ಸಮಿತಿ ರಚನೆ",
       "slides": [
         8,
-        9
-      ]
-    },
-    {
-      "id": "elect_committee",
-      "label": "ಸಮಿತಿ ಆಯ್ಕೆ",
-      "slides": [
+        9,
         10,
         11,
-        12
-      ]
-    },
-    {
-      "id": "assertive_action",
-      "label": "ದೃಢ ಕ್ರಮ",
-      "slides": [
+        12,
         13,
-        14
-      ]
-    },
-    {
-      "id": "elect_president",
-      "label": "ಅಧ್ಯಕ್ಷ ಆಯ್ಕೆ",
-      "slides": [
+        14,
         15,
         16
       ]
     },
     {
-      "id": "campaigns_intro",
-      "label": "ಅಭಿಯಾನ ಪರಿಚಯ",
+      "id": "launch",
+      "label": "ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
       "slides": [
         17,
-        18
-      ]
-    },
-    {
-      "id": "launch_campaign",
-      "label": "ಲಾಂಚ್ ಅಭಿಯಾನ",
-      "slides": [
+        18,
         19,
         20,
-        21
-      ]
-    },
-    {
-      "id": "conclusion",
-      "label": "ಮುಗಿಸುವಿಕೆ",
-      "slides": [
-        22,
-        23
+        21,
+        22
       ]
     }
   ],
   "slides": [
     {
       "n": 1,
-      "kind": "title",
-      "title": "ಸೆಷನ್ 2 — ಕ್ಲಬ್‌ಗೆ ಹೆಸರು ಮತ್ತು ಲಾಂಚ್ ಅಭಿಯಾನ",
-      "subtitle": "Naming of Club & Launch Campaign",
-      "centered": true,
-      "tip": ""
+      "kind": "static",
+      "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "image": "/sessions/assets/kreis_seal.png",
+      "tip": "ಸ್ವಾಗತ ಸಂಗೀತ ಪ್ಲೇ ಆಗುತ್ತದೆ. ಎಲ್ಲಾ ಮಕ್ಕಳು ಕುಳಿತಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ."
     },
     {
       "n": 2,
-      "kind": "title",
-      "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
-      "audio": "/sessions/assets/welcome_music.mp3",
-      "centered": true,
-      "tip": ""
+      "kind": "static",
+      "title": "KREIS ಸೆಷನ್ 2 — ಕ್ಲಬ್ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+      "image": "/sessions/assets/reference/s2_image2.png",
+      "tip": "ಇಂದಿನ ಸೆಷನ್‌ನ ಶೀರ್ಷಿಕೆಯನ್ನು ಪರಿಚಯಿಸಿ."
     },
     {
       "n": 3,
       "kind": "static",
-      "title": "ಮತ್ತೆ ಸ್ವಾಗತ!",
+      "title": "ಮತ್ತೊಂದು ಸೆಷನ್‌ಗೆ ಸ್ವಾಗತ!",
       "body": [
-        "ಹೇ! ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಇನ್ನೊಂದು ಸೆಷನ್‌ಗೆ ಮತ್ತೆ ಸ್ವಾಗತ!",
         "ನೀವೆಲ್ಲರೂ ನಿಮ್ಮ ಗುಂಪುಗಳಲ್ಲಿ ಕುಳಿತಿದ್ದೀರಾ ಎಂದು ಬೇಗ ನೋಡಿಕೊಳ್ಳಿ.",
-        "ಇಂದು ನಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಒಂದು ಹೆಸರು ಕೊಡೋಣ ಹೇಗೆ?"
+        "ಇಂದು ನಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಒಂದು ಹೆಸರು ಕೊಡೋಣ, ಬನ್ನಿ…"
       ],
-      "tip": ""
+      "image": "/sessions/assets/s2_kids_in_groups.jpg",
+      "image_layout": "side",
+      "tip": "ಗುಂಪುಗಳ ರಚನೆಯನ್ನು ಪುನಃಪರಿಶೀಲಿಸಿ. ಎಲ್ಲರೂ ತಮ್ಮ ಗುಂಪಿನಲ್ಲಿ ಇದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ."
     },
     {
       "n": 4,
       "kind": "static",
-      "title": "ನಿಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಹೆಸರು ಇಡಿ!",
+      "bullets_large": true,
+      "title": "ನಿಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡಿ!",
       "body": [
-        "ನಿಮ್ಮ ಹೆಸರುಗಳು ಪ್ರಭಾವಶಾಲಿಯಾಗಿರಲಿ ಮತ್ತು ನಾಗರಿಕ ಭಾವನೆಯನ್ನು ಪ್ರತಿನಿಧಿಸಲಿ.",
-        "ಅವು ನಿಮ್ಮನ್ನು ಪ್ರೇರೇಪಿಸುವಂತೆ ಇರಬೇಕು."
+        "ಪ್ರತಿಯೊಂದು ಗುಂಪು ತಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಒಂದು ಹೆಸರನ್ನು ಯೋಚಿಸಿ ಸೂಚಿಸಬೇಕು.",
+        "ನೀವು ಇಡುವ ಹೆಸರು ಪ್ರಭಾವಶಾಲಿಯಾಗಿರಲಿ ಮತ್ತು ಪೌರತ್ವವನ್ನು ಪ್ರತಿಬಿಂಬಿಸಲಿ!",
+        "ಅದು ನಿಮಗೆ ಅಷ್ಟೇ ಸಮಾನವಾಗಿ ಪ್ರೇರಣೆ ನೀಡುವಂತಿರಲಿ."
       ],
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಸಲಹೆಗಳನ್ನು ಫಲಕದ ಮೇಲೆ ಬರೆಯಿರಿ.",
-      "tip": ""
+      "image": "/sessions/assets/s2_blackboard_with_names.jpg",
+      "tip": "ವಿದ್ಯಾರ್ಥಿಗಳು ನೀಡುವ ಸಲಹೆಗಳನ್ನು ತರಗತಿಯ ಕಪ್ಪುಹಲಗೆಯ ಮೇಲೆ ಬರೆಯಿರಿ. ಪ್ರಸಿದ್ಧ ವ್ಯಕ್ತಿಗಳ ಹೆಸರುಗಳಿಂದ ಸ್ಫೂರ್ತಿ ಪಡೆಯಬಹುದು ಎಂದು ಸೂಚಿಸಿ."
     },
     {
       "n": 5,
       "kind": "static",
-      "title": "ನಿಮ್ಮ ಕ್ಲಬ್‌ನ ಹೆಸರು ಏನು?",
+      "title": "ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರು ಏನು?",
       "body": [
-        "ಪ್ರತಿಯೊಬ್ಬರಿಗೆ ಒಂದು ಹೆಸರಿಗೆ ಒಂದು ಮತ. ಜಾಣ್ಮೆಯಿಂದ ಆಯ್ಕೆ ಮಾಡಿ.",
-        "ನ್ಯಾಯವಾಗಿರಿ — ಹೆಸರು ನಿಜವಾಗಿಯೂ ಇಷ್ಟವಾದರೆ ಮಾತ್ರ ಕೈ ಎತ್ತಿ!",
-        "ಅತಿ ಹೆಚ್ಚು ಮತ ಪಡೆದ ಹೆಸರು ನಿಮ್ಮ ಕ್ಲಬ್‌ನ ಹೆಸರಾಗುತ್ತದೆ."
+        "ಒಬ್ಬ ವ್ಯಕ್ತಿಗೆ ಒಂದು ಹೆಸರಿಗೆ ಒಂದು ಮತ ಮಾತ್ರ.",
+        "ಬುದ್ಧಿವಂತಿಕೆಯಿಂದ ಆಯ್ಕೆ ಮಾಡಿ. ನ್ಯಾಯಯುತವಾಗಿರಿ.",
+        "ಯಾವ ಹೆಸರಿಗೆ ಅತಿ ಹೆಚ್ಚು ಮತಗಳು ಬರುತ್ತವೆಯೋ, ಅದನ್ನೇ ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರಾಗಿ ಆಯ್ಕೆ ಮಾಡಲಾಗುತ್ತದೆ!"
       ],
-      "tip": ""
+      "image": "/sessions/assets/s2_kids_raising_hands.jpg",
+      "image_layout": "side",
+      "tip": "ಪ್ರತಿ ಹೆಸರಿಗೆ ಕೈ ಎತ್ತಿಸಿ ಎಣಿಸಿ. ಫಲಿತಾಂಶವನ್ನು ಕಪ್ಪುಹಲಗೆಯ ಮೇಲೆ ಬರೆಯಿರಿ."
     },
     {
       "n": 6,
       "kind": "static",
-      "title": "ನಿಮ್ಮ ಕ್ಲಬ್‌ನ ಹೆಸರು…",
+      "title": "ಮತ್ತು… ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರು..?",
       "body": [
-        "______________ ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್!",
-        "ಮತ್ತು ಬದಲಾವಣೆ ತರುವ ಶಕ್ತಿ ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ!"
+        "______________ ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್….",
+        "ನೆನಪಿಡಿ, ಬದಲಾವಣೆಯನ್ನು ತರುವ ಶಕ್ತಿ ನಿಮ್ಮಲ್ಲಿದೆ!"
       ],
-      "callout": "",
-      "tip": ""
+      "audio": "/sessions/assets/drum_roll_applause.mp3",
+      "tip": "ಡ್ರಮ್ ರೋಲ್ ಮತ್ತು ಚಪ್ಪಾಳೆಯ ಶಬ್ದ. ಮಕ್ಕಳಿಗೆ ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಹೇಳಿ."
     },
     {
       "n": 7,
       "kind": "static",
-      "title": "ಬದಲಾವಣೆಯ ಅಲೆಗಳು",
+      "title": "ಸಕ್ರಿಯ ಪೌರರಾಗಿ",
       "body": [
-        "ನಿಮ್ಮಂಥ ಎಷ್ಟೋ ಮಕ್ಕಳು ಇಂದು ಸಕ್ರಿಯ ನಾಗರಿಕರು — ಅನೇಕ ಬದಲಾವಣೆಯ ತರಂಗಗಳನ್ನು ಸೃಷ್ಟಿಸುತ್ತಿದ್ದಾರೆ.",
-        "ಆದರೆ… ಶಕ್ತಿಯ ಜೊತೆಗೆ ಜವಾಬ್ದಾರಿಯೂ ಬರುತ್ತದೆ."
+        "ಇಂದು ನಿಮ್ಮಂತೆಯೇ ಅನೇಕ ಮಕ್ಕಳು 'ಸಕ್ರಿಯ ಪೌರರಾಗಿ' ಬದಲಾವಣೆಯ ಅಲೆಗಳನ್ನು ಸೃಷ್ಟಿಸುತ್ತಿದ್ದಾರೆ!",
+        "ಆದರೆ… ಮರೆಯಬೇಡಿ, ಅಧಿಕಾರದ ಜೊತೆಗೆ ಜವಾಬ್ದಾರಿಯೂ ಬರುತ್ತದೆ."
       ],
-      "tip": ""
+      "image": "/sessions/assets/s2_age_diversity_change_makers.jpg",
+      "image_layout": "side",
+      "tip": "ಬದಲಾವಣೆ ತರಬಲ್ಲ ಎಲ್ಲಾ ವಯಸ್ಸಿನ ವ್ಯಕ್ತಿಗಳ ಚಿತ್ರ ತೋರಿಸಿ."
     },
     {
       "n": 8,
       "kind": "mc_narration",
-      "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಮತ್ತೆ ಬಂದರು",
-      "transcript": "Namaskara junior citizens! You picked your group name — one more step. Like a parliament or student council, we form our own committee. Democracy in action! How do we choose leaders in India? Yes — we have elections at different levels: Gram Panchayat, Vidhan Sabha, Lok Sabha.",
-      "tip": ""
+      "title": "Master Change ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತಾರೆ",
+      "video": "/sessions/assets/s2_mc_democracy.kn.mp4",
+      "image": "/sessions/assets/s2_democracy_levels.png",
+      "kn_script": [
+        "ಹಲೋ ಪುಟ್ಟ ಪೌರರೇ, ನಮಸ್ಕಾರ! ನಿಮ್ಮೊಂದಿಗೆ ಮತ್ತೊಂದು ಸೆಷನ್‌ಗಾಗಿ ನಾನು ಮತ್ತೆ ಬಂದಿದ್ದೇನೆ!",
+        "ಈಗ ನೀವು ನಿಮ್ಮ ಗುಂಪಿನ ಹೆಸರನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ್ದೀರಿ, ಆದರೆ ಮಾಡಬೇಕಾದ ಇನ್ನೊಂದು ಕೆಲಸ ಬಾಕಿ ಇದೆ.",
+        "ನಮ್ಮ ದೇಶದಲ್ಲಿ ಸಂಸತ್ತು ಇರುವಂತೆ ಅಥವಾ ನಿಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಶಾಲಾ ಮಂತ್ರಿಮಂಡಲ ಇರುವಂತೆ, ನಮ್ಮದೇ ಆದ ಒಂದು ಸಮಿತಿಯನ್ನು ರಚಿಸಬೇಕು.",
+        "ಭಾರತದಲ್ಲಿ ನಾವು ನಮ್ಮ ನಾಯಕರನ್ನು ಹೇಗೆ ಆರಿಸುತ್ತೇವೆ?",
+        "ಹೌದು, ನಾವು ವಿವಿಧ ಹಂತಗಳಲ್ಲಿ ಚುನಾವಣೆಗಳನ್ನು ನಡೆಸುತ್ತೇವೆ — ಗ್ರಾಮ ಪಂಚಾಯಿತಿ, ರಾಜ್ಯ, ಕೇಂದ್ರ."
+      ],
+      "transcript": "Hello little citizens! Master Change is back for another session. Now that you've picked your club name, one more task remains — form a committee, like Parliament or your school cabinet. How do we choose our leaders in India? Yes — through elections at different levels: Gram Panchayat, State, Centre.",
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ಪ್ರಜಾಪ್ರಭುತ್ವದ ಹಂತಗಳ ಗ್ರಾಫಿಕ್ ಹಂತ ಹಂತವಾಗಿ ಬರುತ್ತದೆ."
     },
     {
       "n": 9,
       "kind": "mc_narration",
-      "title": "ಆದರ್ಶ ಪ್ರತಿನಿಧಿ ಎಂದರೆ ಯಾರು?",
-      "transcript": "Before we elect, what makes an ideal representative? — (Q1) If your friend and another student are candidates, and the other student would do the job better — who will you vote for? (Q2) Would it matter if the job was done by a girl or a boy? (Q3) How will you feel if your friends didn't vote for you? (Q4) If you stand for elections but don't win, what's your attitude toward the winner?",
-      "tip": ""
+      "title": "ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳು",
+      "video": "/sessions/assets/s2_mc_representative_qualities.kn.mp4",
+      "kn_script": [
+        "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?",
+        "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ಹಾಗೂ ಆ ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಈ ಕೆಲಸವನ್ನು ಉತ್ತಮವಾಗಿ ಮಾಡಬಲ್ಲರು ಎಂದು ನಿಮಗೆ ಅನಿಸಿದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?",
+        "ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ?",
+        "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ?",
+        "ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ? ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?"
+      ],
+      "transcript": "Before we vote — what qualities should an ideal representative have? If your friend and another student are candidates, and the other student is better at the job, who do you vote for? Does it matter if they are a boy or a girl? How would you feel if your friends did not vote for you? What if you ran and lost — how would you view the winner?",
+      "tip": "4 ಪ್ರಶ್ನೆಗಳಿಗೆ ಪ್ರತಿ ಪ್ರಶ್ನೆಯ ನಂತರ ಚರ್ಚೆಗೆ ಸಮಯ ನೀಡಿ. ಗುಂಪುಗಳಲ್ಲಿ ಚರ್ಚಿಸಲು ಹೇಳಿ."
     },
     {
       "n": 10,
-      "kind": "group_activity_timer",
-      "title": "ಸಮಿತಿಯನ್ನು ಸಿದ್ಧಗೊಳಿಸೋಣ!",
-      "brief": "ನಿಮ್ಮ ಮೊದಲ ಹೆಜ್ಜೆ — ನಿಮ್ಮ ಗುಂಪಿನಿಂದ ಒಬ್ಬರನ್ನು ಕ್ಲಬ್‌ನ ಮುಖ್ಯ ಸಮಿತಿಗೆ ಆಯ್ಕೆ ಮಾಡಿ.",
-      "timer_seconds": 120,
-      "reminder_at": 60,
-      "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
-      "tip": ""
+      "kind": "static",
+      "title": "ಬನ್ನಿ, ನಮ್ಮ ಸಮಿತಿಯನ್ನು ಸಿದ್ಧಪಡಿಸೋಣ!",
+      "body": [
+        "ಅನುಸರಿಸಬೇಕಾದ ಹಂತಗಳು:",
+        "ನಿಮ್ಮ ಮೊದಲ ಹಂತವೆಂದರೆ, ಕ್ಲಬ್‌ನ ಪ್ರಮುಖ ಸಮಿತಿಯ (Core Committee) ಭಾಗವಾಗಲು ನಿಮ್ಮ ಗುಂಪಿನಿಂದ ಒಬ್ಬ ವ್ಯಕ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
+        "ನಿಮಗೆ 2 ನಿಮಿಷಗಳ ಕಾಲಾವಕಾಶವಿದೆ!"
+      ],
+      "audio": "/sessions/assets/timer_2min_ping.mp3",
+      "tip": "2 ನಿಮಿಷ ಟೈಮರ್ ಬೇಕು. 1 ನಿಮಿಷ ಮುಗಿದಾಗ ನೆನಪಿಸುವ ಶಬ್ದ. (ಟೈಮರ್ ವಿಜೆಟ್ ಇನ್ನೂ ನಿರ್ಮಾಣದಲ್ಲಿ — ಸಮಯ ನೋಡಿಕೊಳ್ಳಿ.)"
     },
     {
       "n": 11,
       "kind": "static",
-      "title": "ಸಮಿತಿಯನ್ನು ಸಿದ್ಧಗೊಳಿಸೋಣ!",
+      "title": "ಆಯ್ಕೆಯಾದವರು ಮುಂದೆ ಬನ್ನಿ",
       "body": [
-        "ಶಾಭಾಶ್! ಈಗ ಆಯ್ಕೆಯಾದ ಸದಸ್ಯರೆಲ್ಲರೂ ತರಗತಿಯ ಮುಂದೆ ಬನ್ನಿ.",
-        "ಕ್ಲಬ್‌ನ ಅಧ್ಯಕ್ಷರಾಗಿ ಯಾರು ನಿಲ್ಲಲು ಇಚ್ಛಿಸುತ್ತೀರಿ? ಒಂದು ಹೆಜ್ಜೆ ಮುಂದೆ ಬನ್ನಿ.",
-        "ಕ್ಲಬ್‌ಗೆ ನಿಮ್ಮನ್ನು ಯಾಕೆ ಆಯ್ಕೆ ಮಾಡಬೇಕು ಎಂಬುದನ್ನು ಹೇಳಲು ನಿಮಗೆ 1 ನಿಮಿಷ."
+        "ಶಬಾಷ್! ಈಗ ಆಯ್ಕೆಯಾದ ಎಲ್ಲಾ ಸದಸ್ಯರು ತರಗತಿಯ ಮುಂದೆ ಬನ್ನಿ.",
+        "ಕ್ಲಬ್ ಅಧ್ಯಕ್ಷರಾಗಿ ನಿಲ್ಲಲು ಯಾರಿಗೆ ಇಷ್ಟವಿದೆ? ಮುಂದೆ ಬನ್ನಿ.",
+        "ಕ್ಲಬ್ ನಿಮ್ಮನ್ನು ಯಾಕೆ ಆರಿಸಬೇಕು ಎಂದು ಹೇಳಲು ನಿಮಗೆ ಸಮಯವಿದೆ."
       ],
-      "tip": ""
+      "image": "/sessions/assets/s2_candidates_in_front.jpg",
+      "audio": "/sessions/assets/applause_short.mp3",
+      "tip": "ಚಪ್ಪಾಳೆಯ ಶಬ್ದ. ಪ್ರತಿ ಅಭ್ಯರ್ಥಿಗೆ 30 ಸೆಕೆಂಡ್ ಮಾತನಾಡಲು ಅವಕಾಶ ನೀಡಿ."
     },
     {
       "n": 12,
       "kind": "static",
-      "title": "ಸಮಿತಿ ಸಿದ್ಧ",
+      "title": "ಕ್ಲಬ್ ರಚನೆ",
       "body": [
-        "ಆಯ್ಕೆಯಾದ ಸದಸ್ಯರು ಮುಂದೆ ಬಂದು ಮಾತನಾಡುತ್ತಾರೆ."
+        "ಕ್ಲಬ್ ಅಧ್ಯಕ್ಷರು",
+        "ಪ್ರಮುಖ ಸಮಿತಿ",
+        "CMCA ಗುಂಪುಗಳು"
       ],
-      "tip": ""
+      "image": "/sessions/assets/reference/s2_image4.png",
+      "tip": "ಕ್ಲಬ್ ರಚನೆಯನ್ನು ಪರಿಚಯಿಸಿ — ಅಧ್ಯಕ್ಷ, ಪ್ರಮುಖ ಸಮಿತಿ, CMCA ಗುಂಪುಗಳು."
     },
     {
       "n": 13,
       "kind": "static",
-      "title": "ದೃಢ ಕ್ರಮ",
+      "title": "ದೃಢವಾದ ಕ್ರಮ (Assertive Action)",
       "body": [
-        "ಇದು ಸರಿಯಾ? ನಿಮ್ಮ ತರಗತಿಯೂ ಇದೇ ಪರಿಸ್ಥಿತಿಯಲ್ಲಿದ್ದರೆ ಮತ್ತೊಮ್ಮೆ ಯೋಚಿಸಿ."
+        "ಇದು ಸರಿಯೆಂದು ನಿಮಗೆ ಅನಿಸುತ್ತದೆಯೇ?",
+        "ನಿಮ್ಮ ತರಗತಿಯೂ ಇದೇ ಪರಿಸ್ಥಿತಿಯಲ್ಲಿದ್ದರೆ ಒಮ್ಮೆ ಯೋಚಿಸಿ!"
       ],
-      "tip": ""
+      "image": "/sessions/assets/s2_assertive_action.jpg",
+      "tip": "ಮಕ್ಕಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು ಸಮಯ ನೀಡಿ."
     },
     {
       "n": 14,
       "kind": "static",
-      "title": "ದೃಢ ಕ್ರಮ — ಚಿತ್ರ",
+      "title": "ಪ್ರಮುಖ ಸಮಿತಿ",
       "body": [
-        "(ತರಗತಿಯ ಚಿತ್ರ)"
+        "ಕ್ಲಬ್ ಅಧ್ಯಕ್ಷರು",
+        "CMCA ಗುಂಪುಗಳು",
+        "ಒಂದು ಹುಡುಗಿ ಮತ್ತು ಒಂದು ಹುಡುಗ ಪ್ರಮುಖ ಸಮಿತಿಯಲ್ಲಿ."
       ],
-      "tip": ""
+      "image": "/sessions/assets/reference/s2_image5.png",
+      "tip": "ಸಮಿತಿಯಲ್ಲಿ ಲಿಂಗ ಸಮಾನತೆಯ ಪ್ರಾಮುಖ್ಯತೆಯನ್ನು ವಿವರಿಸಿ."
     },
     {
       "n": 15,
       "kind": "static",
-      "title": "ಈಗ ಮತ ಹಾಕೋಣ!",
+      "title": "ಈಗ ಮತ ಚಲಾಯಿಸೋಣ!",
       "body": [
-        "ನಮ್ಮ ಕ್ಲಬ್‌ನ ಅಧ್ಯಕ್ಷ ಯಾರಾಗುತ್ತಾರೆ?",
-        "ನಿಮಗೆ ಒಂದು ಮತ ಇದೆ."
+        "ನಮ್ಮ ಕ್ಲಬ್ ಅಧ್ಯಕ್ಷರು ಯಾರಾಗುತ್ತಾರೆ?",
+        "ನಿಮಗೆ 1 ಮತವಿದೆ."
       ],
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಆಯ್ಕೆಯಾದವರನ್ನು ಹಿಂದೆ ತಿರುಗಲು ಹೇಳಿ. ಉಳಿದವರು ಕಣ್ಣು ಮುಚ್ಚಿ ಕೈ ಎತ್ತಿ ಮತ ಹಾಕಲಿ. ಒಟ್ಟು ಎಣಿಸಿ, ಅಭಿನಂದನೆ ತಿಳಿಸಿ.",
-      "tip": ""
+      "tip": "ಆಯ್ಕೆಯಾದ ಮಕ್ಕಳಿಗೆ ಹಿಂತಿರುಗಿ ನಿಲ್ಲಲು ಹೇಳಿ ಮತ್ತು ಉಳಿದ ಮಕ್ಕಳಿಗೆ ಕಣ್ಣು ಮುಚ್ಚಲು ಹೇಳಿ. ನಂತರ ಪ್ರತಿ ಅಭ್ಯರ್ಥಿಗೆ ಬಂದ ಮತಗಳನ್ನು ಎಣಿಸಿ."
     },
     {
       "n": 16,
       "kind": "static",
       "title": "ಅಭಿನಂದನೆಗಳು!",
       "body": [
-        "ನಮ್ಮ ಅಧ್ಯಕ್ಷ ಮತ್ತು ಮುಖ್ಯ ಸಮಿತಿಗೆ ಅಭಿನಂದನೆಗಳು!",
-        "ಈಗ ನಮ್ಮೆಲ್ಲರ ಕೈಗಳು ಕೆಲಸಕ್ಕೆ ಸಜ್ಜಾಗುವ ಸಮಯ!"
+        "ನಮ್ಮ ಅಧ್ಯಕ್ಷರಿಗೆ ಮತ್ತು ಪ್ರಮುಖ ಸಮಿತಿಗೆ ಅಭಿನಂದನೆಗಳು!",
+        "ಈಗ ನಾವೆಲ್ಲರೂ ಕೈಜೋಡಿಸಿ ಕೆಲಸ ಮಾಡುವ ಸಮಯ!"
       ],
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ತರಗತಿ ನಿಯಂತ್ರಿಸಲು ಕಷ್ಟವಾದರೆ ಶಾಂತಗೊಳಿಸುವ (calmer) ಬಳಸಿ.",
-      "tip": ""
+      "audio": "/sessions/assets/cheer_applause.mp3",
+      "tip": "ಗದ್ದಲ ಹೆಚ್ಚಾದರೆ, ಸೆಷನ್ 1ರ ಶಾಂತಗೊಳಿಸುವ ವಿಧಾನಗಳನ್ನು (calmers) ಬಳಸಿ."
     },
     {
       "n": 17,
-      "kind": "video",
-      "title": "ಅಭಿಯಾನ ಎಂದರೇನು?",
-      "transcript": "What you see is a campaign — a big, exciting team mission to reach a specific goal or to educate people about a topic. Make a smart plan, gather your tools, work together — to win a prize or solve a big problem! Let's spread the cheer now! We'll be doing a CMCA Club Launch Campaign during one of your school assemblies! (Yaaaay!)",
-      "tip": ""
+      "kind": "static",
+      "title": "ಇದು ಏನು? — ಅಭಿಯಾನ (Campaign)",
+      "body": [
+        "ನೀವು ನೋಡುತ್ತಿರುವುದು ಒಂದು 'ಅಭಿಯಾನ' (Campaign)! ಅಭಿಯಾನ ಎಂದರೆ ಒಂದು ನಿರ್ದಿಷ್ಟ ಗುರಿಯನ್ನು ತಲುಪಲು ಅಥವಾ ಒಂದು ಸಂದೇಶವನ್ನು ಹರಡಲು ನಡೆಸುವ ಸಂಘಟಿತ ಪ್ರಯತ್ನ.",
+        "ನೀವು ಒಂದು ಸ್ಮಾರ್ಟ್ ಯೋಜನೆ ರೂಪಿಸಿ, ನಿಮ್ಮ ಪರಿಕರಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿ, ಬಹುಮಾನ ಗೆಲ್ಲಲು ಅಥವಾ ದೊಡ್ಡ ಬದಲಾವಣೆಗೆ ಪ್ರಯತ್ನಿಸಿ.",
+        "ಬನ್ನಿ, ಈಗ ಈ ಸಂಭ್ರಮವನ್ನು ಎಲ್ಲೆಡೆ ಹರಡೋಣ!",
+        "ನಾವು ಒಂದು CMCA Club Launch Campaign (ಕ್ಲಬ್ ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ) ಮಾಡಲಿದ್ದೇವೆ! ಇದನ್ನು ನಿಮ್ಮ ಶಾಲೆಯ ಪ್ರಾರ್ಥನಾ ಸಭೆಯಲ್ಲಿ ಮಾಡಬಹುದು."
+      ],
+      "image": "/sessions/assets/s2_campaign_visual.jpg",
+      "audio": "/sessions/assets/kids_cheer.mp3",
+      "tip": "ಉತ್ಸಾಹಭರಿತ ಆಡಿಯೋ. ಮಕ್ಕಳನ್ನು ಅಭಿಯಾನದ ಬಗ್ಗೆ ಉತ್ಸಾಹಗೊಳಿಸಿ."
     },
     {
       "n": 18,
       "kind": "static",
-      "title": "ಅಭಿಯಾನದ ಚಿತ್ರಗಳು",
-      "body": [
-        "(ಅಭಿಯಾನದ ಚಿತ್ರಗಳ ಸಂಗ್ರಹ)"
+      "title": "ಉದ್ಘಾಟನಾ ಆಯ್ಕೆಗಳು",
+      "images": [
+        {
+          "src": "/sessions/assets/reference/s2_image7.png",
+          "alt": "campaign option 1"
+        },
+        {
+          "src": "/sessions/assets/reference/s2_image6.png",
+          "alt": "campaign option 2"
+        },
+        {
+          "src": "/sessions/assets/reference/s2_image3.png",
+          "alt": "campaign option 3"
+        }
       ],
-      "tip": ""
+      "image_layout": "stack",
+      "tip": "ಮೂರು ಉದಾಹರಣೆಗಳನ್ನು ತೋರಿಸಿ. ಮಕ್ಕಳಿಗೆ ಆಯ್ಕೆ ಬಗ್ಗೆ ಚರ್ಚಿಸಲು ಹೇಳಿ."
     },
     {
       "n": 19,
       "kind": "static",
-      "title": "CMCA ಕ್ಲಬ್ ಲಾಂಚ್",
+      "title": "CMCA ಕ್ಲಬ್ ಉದ್ಘಾಟನೆ",
       "body": [
-        "ನಿಮಗೆ ಎರಡು ಆಯ್ಕೆಗಳಿವೆ!"
+        "ನಿಮ್ಮ ಮುಂದೆ ಎರಡು ಆಯ್ಕೆಗಳಿವೆ!"
       ],
-      "callout": "ಆಯ್ಕೆ A vs ಆಯ್ಕೆ B — ಎರಡು ಗ್ರಾಫಿಕ್ ಪ್ಯಾನಲ್‌ಗಳು. ಮಕ್ಕಳು ಒಂದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ಮಾಡುತ್ತಾರೆ.",
-      "tip": ""
+      "images": [
+        {
+          "src": "/sessions/assets/s2_launch_option_1.jpg",
+          "alt": "launch option 1"
+        },
+        {
+          "src": "/sessions/assets/s2_launch_option_2.jpg",
+          "alt": "launch option 2"
+        }
+      ],
+      "image_layout": "side",
+      "tip": "ಗುಂಪುಗಳಿಗೆ ಎರಡು ಆಯ್ಕೆಗಳಲ್ಲಿ ಒಂದನ್ನು ಆರಿಸಿಕೊಳ್ಳಲು ಹೇಳಿ."
     },
     {
       "n": 20,
       "kind": "static",
-      "title": "ಲಾಂಚ್‌ನ ಯಶಸ್ಸು",
+      "title": "ಜವಾಬ್ದಾರಿ ಕ್ಲಬ್ ಸಮಿತಿಗೆ",
       "body": [
-        "ನೀವು ಮಾಡಲಿರುವ ಅಭಿಯಾನ — ನಮ್ಮ ದೇಶದ ವೈವಿಧ್ಯಮಯ ಸಂಸ್ಕೃತಿಯ ಬಗ್ಗೆ.",
-        "ಲಾಂಚ್‌ನ ಯಶಸ್ಸಿಗೆ ಅನೇಕ ಪಾತ್ರಗಳಿವೆ — ವಿಶೇಷವಾಗಿ ಅಧ್ಯಕ್ಷ ಮತ್ತು ಮುಖ್ಯ ಸಮಿತಿ.",
-        "ಲಾಂಚ್‌ನ ಯಶಸ್ಸು ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ!"
+        "ಉದ್ಘಾಟನಾ ಅಭಿಯಾನದ ಯಶಸ್ಸಿನ ಜವಾಬ್ದಾರಿಯನ್ನು ಕ್ಲಬ್ ಸಮಿತಿಗೆ ನೀಡಿ ಮತ್ತು ನಿಮ್ಮ ಶಿಕ್ಷಕ ಸಂಯೋಜಕರಿಂದ ಸಾಧ್ಯವಾದಷ್ಟು ಸಹಾಯ ಪಡೆಯಿರಿ.",
+        "ನಮ್ಮ ದೇಶದ ವೈವಿಧ್ಯಮಯ ಸಂಸ್ಕೃತಿಯ ಪ್ರಾಮುಖ್ಯತೆಯ ಬಗ್ಗೆ ನೀವು ಅಭಿಯಾನವನ್ನು ಮಾಡಲಿದ್ದೀರಿ."
       ],
-      "tip": ""
+      "image": "/sessions/assets/s2_hands_working_together.jpg",
+      "image_layout": "side",
+      "tip": "ಎಲ್ಲರೂ ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡುವ ಪ್ರಾಮುಖ್ಯತೆಯನ್ನು ಒತ್ತಿ ಹೇಳಿ."
     },
     {
       "n": 21,
       "kind": "static",
-      "title": "ಮುದ್ರಿತ ಪತ್ರಗಳು",
+      "title": "ಮುದ್ರಿತ ಪ್ರತಿಗಳು (Handouts)",
       "body": [
-        "ಈ ಪ್ರಕ್ರಿಯೆಗೆ ಸಹಾಯವಾಗಲು ನಿಮಗೆ ಮುದ್ರಿತ ಪತ್ರಗಳು ಸಿಗುತ್ತವೆ! ಪ್ರತಿ ಗುಂಪಿಗೆ ಒಂದು ಸೆಟ್.",
-        "ಒಟ್ಟಿಗೆ ಕುಳಿತು, ನಮ್ಮ ಶಾಲೆಗೆ ಕ್ಲಬ್‌ನ ಬಗ್ಗೆ ಹೇಗೆ ಚೆನ್ನಾಗಿ ತಿಳಿಸಬಹುದು ಎಂಬುದನ್ನು ಚರ್ಚಿಸಿ.",
-        "ಮಾಯೆ ನಿಮ್ಮ ಕೈಯಲ್ಲಿದೆ!"
+        "ಈ ಪ್ರಕ್ರಿಯೆಗೆ ಸಹಾಯ ಮಾಡಲು ನಿಮಗೆ ಕೆಲವು ಮುದ್ರಿತ ಪ್ರತಿಗಳು ಸಿಗಲಿವೆ!",
+        "ಪ್ರತಿ ಗುಂಪಿಗೆ ಒಂದು ಸೆಟ್ ಪ್ರತಿಗಳು ದೊರೆಯುತ್ತವೆ.",
+        "ನಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ನಮ್ಮ ಶಾಲೆಗೆ ಅತ್ಯುತ್ತಮವಾಗಿ ಹೇಗೆ ತಿಳಿಸಬಹುದು ಎಂದು ನಿರ್ಧರಿಸಲು ನೀವೆಲ್ಲರೂ ಒಟ್ಟಾಗಿ ಕುಳಿತು ಚರ್ಚಿಸಿ."
       ],
-      "callout": "ಶಿಕ್ಷಕರ ಸಲಹೆ: ಗುಂಪುಗಳಿಗೆ ಅನೆಕ್ಸರ್‌ಗಳನ್ನು ಹಂಚಿ. ಮುಖ್ಯ ಸಮಿತಿಯವರು ಲಾಂಚ್‌ಗೆ ನೇತೃತ್ವ ವಹಿಸಲಿ.",
-      "tip": ""
+      "tip": "ಗುಂಪುಗಳಿಗೆ ಅನುಬಂಧಗಳನ್ನು (annexures) ವಿತರಿಸಿ ಮತ್ತು ಉದ್ಘಾಟನೆಯ ನೇತೃತ್ವ ವಹಿಸಿಕೊಳ್ಳಲು ಪ್ರೋತ್ಸಾಹಿಸಿ."
     },
     {
       "n": 22,
       "kind": "mc_narration",
-      "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಬೀಳ್ಕೊಡುಗೆ",
-      "transcript": "Hey friends! I see you all getting ready to help your school know about your club. This is your chance to tell everyone you're on an important mission and need the school's support. Have fun. Plan well. All the very best — I'm excited to watch this club launch already! BYEEEEEEEEE!",
-      "closing_line": "ಇಂದು ನಮ್ಮ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಪಯಣಕ್ಕೆ ಉತ್ತಮ ಆರಂಭ ಸಿಕ್ಕಿದೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
-      "tip": ""
-    },
-    {
-      "n": 23,
-      "kind": "title",
-      "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್",
-      "thank_you": true,
-      "closing_line": "ಇಂದು ನಮ್ಮ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಪಯಣದಲ್ಲಿ ಮತ್ತೊಂದು ಪ್ರಮುಖ ಹೆಜ್ಜೆ ಇಟ್ಟಿದ್ದೇವೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
-      "centered": true,
-      "image": "/sessions/assets/kreis_seal.png",
-      "audio": "/sessions/assets/welcome_music.mp3",
-      "tip": "Thank the children. End of session."
+      "title": "Master Change ವಿದಾಯ",
+      "video": "/sessions/assets/s2_mc_farewell.kn.mp4",
+      "kn_script": [
+        "ಹೇ ಸ್ನೇಹಿತರೇ, ನಿಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಇಡೀ ಶಾಲೆಗೆ ತಿಳಿಸಲು ನೀವೆಲ್ಲರೂ ಸಿದ್ಧರಾಗುತ್ತಿರುವುದನ್ನು ನಾನು ನೋಡುತ್ತಿದ್ದೇನೆ!",
+        "ಖುಷಿಯಾಗಿರಿ, ಚೆನ್ನಾಗಿ ಯೋಜನೆ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮೆಲ್ಲರಿಗೂ ಶುಭವಾಗಲಿ!",
+        "ಈ ಕ್ಲಬ್ ಉದ್ಘಾಟನೆಯನ್ನು ನೋಡಲು ನಾನು ಈಗಲೇ ಕಾಯುತ್ತಿದ್ದೇನೆ.",
+        "ಬೈ ಬೈಈಈಈಈಈಈಈಈ! (ಕೈ ಬೀಸುತ್ತಾ)"
+      ],
+      "transcript": "Hey friends! I can see you all getting ready to tell the whole school about your club! Be happy, plan well, and best of luck to you all. I'm already waiting to see this club launch. Bye byeeee!",
+      "tip": "MC ವಿದಾಯ ಹೇಳುತ್ತಾರೆ. ಸೆಷನ್ ಮುಕ್ತಾಯ."
     }
   ]
 }
