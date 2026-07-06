@@ -119,6 +119,10 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
   const [idx, setIdx] = useState(0);
   const [navOpen, setNavOpen] = useState(true);
   const [tipOpen, setTipOpen] = useState(true);
+  // Bottom controls: click-toggle instead of hover-strip. Hover-strip was
+  // triggering accidentally when teachers dragged the video seek bar
+  // (Madhav, 6 Jul).
+  const [controlsOpen, setControlsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   // Fit-to-viewport — eliminates per-slide scrolling. The canvas is fixed-
@@ -372,12 +376,21 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
         </main>
       </div>
 
-      {/* Bottom controls — AKG/Savitha 25 Jun feedback: hidden by default,
-          reveal-on-hover. A 24px trigger strip at the bottom edge of the
-          viewport lifts the control bar up when the teacher moves the mouse
-          there. Auto-hides again on leave. */}
-      <div className="sr-controls-trigger" aria-hidden="true" />
-      <footer className="sr-controls">
+      {/* Bottom controls — hidden by default, toggled by a small chevron
+          pill at bottom-center. Earlier revision used a bottom-edge hover
+          strip; that trigger conflicted with video seek-bar drags (Madhav,
+          6 Jul), so an explicit click-toggle replaced it. */}
+      <button
+        type="button"
+        className={"sr-controls-toggle " + (controlsOpen ? "is-open" : "")}
+        onClick={() => setControlsOpen((v) => !v)}
+        aria-expanded={controlsOpen}
+        aria-controls="sr-controls"
+        title={controlsOpen ? "Hide controls" : "Show controls"}
+      >
+        {controlsOpen ? "▼" : "▲"}
+      </button>
+      <footer id="sr-controls" className={"sr-controls " + (controlsOpen ? "is-open" : "")}>
         <button onClick={prev} disabled={idx === 0} className="sr-btn">← Prev</button>
         <div className="sr-hint">← / → navigate · R reveal · T timer · F fullscreen · N nav</div>
         <button onClick={next} disabled={idx === session.slides.length - 1} className="sr-btn sr-btn-primary">Next →</button>
@@ -1013,31 +1026,18 @@ function VideoWithPauses({
 }) {
   const ref = useRef<HTMLVideoElement | null>(null);
   const consumed = useRef<Set<number>>(new Set());
-  const pauseTimer = useRef<ReturnType<typeof setInterval> | null>(null);
   const [paused, setPaused] = useState(false);
-  const [countdown, setCountdown] = useState(0);
 
   useEffect(() => {
-    // reset on src change — also clears any pending countdown from the
-    // previous slide so it can't fire v.play() after unmount.
-    if (pauseTimer.current) {
-      clearInterval(pauseTimer.current);
-      pauseTimer.current = null;
-    }
+    // reset on src change
     consumed.current = new Set();
     setPaused(false);
-    setCountdown(0);
   }, [src]);
 
   useEffect(() => {
-    // Full cleanup on unmount — kill the interval AND pause + detach the
-    // video so its audio doesn't linger after the user hits Next mid-pause.
-    // This was the root cause of the "random audio playing after Next" bug.
+    // Full cleanup on unmount — pause and detach the video source so its
+    // audio doesn't linger after navigating away.
     return () => {
-      if (pauseTimer.current) {
-        clearInterval(pauseTimer.current);
-        pauseTimer.current = null;
-      }
       const v = ref.current;
       if (v) {
         try { v.pause(); } catch { /* ignore */ }
@@ -1047,33 +1047,29 @@ function VideoWithPauses({
     };
   }, []);
 
+  // Manual advance — pause at each `pause_at` boundary. Teacher must click
+  // the → Continue button (corner of the video) to resume. No auto-countdown.
+  // Rationale (Madhav, 6 Jul): classroom pace is dictated by the teacher,
+  // not the video. `pause_duration` from the JSON is ignored on purpose.
+  void pauseDuration;
   const onTimeUpdate = () => {
     const v = ref.current;
     if (!v || !pauseAt || pauseAt.length === 0 || paused) return;
     for (const t of pauseAt) {
       if (consumed.current.has(t)) continue;
-      // Trigger when within a 0.4s window of the boundary
       if (v.currentTime >= t && v.currentTime < t + 0.6) {
         consumed.current.add(t);
         v.pause();
         setPaused(true);
-        setCountdown(pauseDuration);
-        let left = pauseDuration;
-        pauseTimer.current = setInterval(() => {
-          left -= 1;
-          setCountdown(left);
-          if (left <= 0) {
-            if (pauseTimer.current) clearInterval(pauseTimer.current);
-            pauseTimer.current = null;
-            setPaused(false);
-            // Only resume if we're still mounted with the same video.
-            const still = ref.current;
-            if (still && still === v) still.play().catch(() => {});
-          }
-        }, 1000);
         break;
       }
     }
+  };
+
+  const resume = () => {
+    const v = ref.current;
+    if (v) v.play().catch(() => {});
+    setPaused(false);
   };
 
   return (
@@ -1089,18 +1085,19 @@ function VideoWithPauses({
         onEnded={onEnded}
       />
       {paused && (
-        <div className="sr-vwp-pause" aria-live="polite">
-          <div className="sr-vwp-pause-label">Think time</div>
-          <div className="sr-vwp-pause-count">{countdown}</div>
+        <>
+          {/* Dim overlay behind the arrow, gives visual signal without blocking */}
+          <div className="sr-vwp-dim" aria-hidden="true" />
           <button
-            className="sr-vwp-pause-skip"
-            onClick={() => {
-              const v = ref.current;
-              if (v) v.play().catch(() => {});
-              setPaused(false);
-            }}
-          >Skip ↦</button>
-        </div>
+            type="button"
+            className="sr-vwp-next-btn"
+            onClick={resume}
+            aria-label="Continue to next question"
+            title="Continue to next question"
+          >
+            →
+          </button>
+        </>
       )}
     </div>
   );
@@ -1686,28 +1683,42 @@ const styles = `
   .sr-video-large video { width: 100%; height: 100%; object-fit: contain; }
   .sr-vwp { position: relative; width: 100%; height: 100%; }
   .sr-vwp video { width: 100%; height: 100%; object-fit: contain; }
-  /* Inter-question pause overlay (slide 9). */
-  .sr-vwp-pause {
+  /* Inter-question pause — subtle dim behind a corner arrow. Teacher clicks
+     the arrow to advance; no auto-countdown (Madhav directive 6 Jul). */
+  .sr-vwp-dim {
     position: absolute; inset: 0;
-    background: rgba(0,0,0,0.55);
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    color: #fff;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    z-index: 5;
+    background: rgba(0,0,0,0.28);
+    z-index: 4;
+    pointer-events: none;
     animation: sr-fade-in .2s ease-out;
   }
   @keyframes sr-fade-in { from { opacity: 0; } to { opacity: 1; } }
-  .sr-vwp-pause-label { font-size: 14px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; opacity: .8; margin-bottom: 12px; }
-  .sr-vwp-pause-count { font-size: 96px; font-weight: 200; line-height: 1; font-variant-numeric: tabular-nums; }
-  .sr-vwp-pause-skip {
-    margin-top: 18px; padding: 8px 18px;
-    background: rgba(255,255,255,0.15); color: #fff;
-    border: 1px solid rgba(255,255,255,0.4); border-radius: 999px;
-    font-family: inherit; font-size: 13px; font-weight: 600; letter-spacing: .03em;
-    cursor: pointer; transition: background .15s ease;
+  .sr-vwp-next-btn {
+    /* Positioned bottom-LEFT to keep clear of the CMCA logo overlay
+       (which sits bottom-right on .sr-video-large::after). */
+    position: absolute;
+    bottom: 20px; left: 20px;
+    width: 68px; height: 68px;
+    border-radius: 50%;
+    background: ${SAFFRON};
+    color: ${NAVY};
+    border: 3px solid #fff;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 6;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.35);
+    transition: transform .12s ease, background .12s ease;
+    animation: sr-pulse 1.6s ease-in-out infinite;
+    display: flex; align-items: center; justify-content: center;
   }
-  .sr-vwp-pause-skip:hover { background: rgba(255,255,255,0.25); }
+  .sr-vwp-next-btn:hover { transform: scale(1.06); background: #ffb84d; }
+  .sr-vwp-next-btn:active { transform: scale(0.98); }
+  @keyframes sr-pulse {
+    0%, 100% { box-shadow: 0 6px 22px rgba(0,0,0,0.35), 0 0 0 0 rgba(255,180,50,0.7); }
+    50%      { box-shadow: 0 6px 22px rgba(0,0,0,0.35), 0 0 0 12px rgba(255,180,50,0); }
+  }
   /* CMCA logo overlay for the large video player — same masking strategy
      as .sr-video-frame, scaled up slightly for the bigger frame. */
   .sr-video-large::after {
@@ -1809,12 +1820,32 @@ const styles = `
   /* Bottom controls — AKG/Savitha 25 Jun: hidden by default, slide up on
      hover of the bottom edge OR of the bar itself. Auto-hides on leave.
      Translucent + blur for a modern UI feel. */
-  .sr-controls-trigger {
-    position: fixed; left: 0; right: 0; bottom: 0;
-    height: 28px;
-    z-index: 10;
-    background: transparent;
-    pointer-events: auto;
+  .sr-controls-toggle {
+    /* Small chevron pill fixed at bottom-center. Click to open the
+       controls bar. Explicit click (not hover) so it can't be triggered
+       by video seek-bar drags. */
+    position: fixed;
+    bottom: 8px; left: 50%;
+    transform: translateX(-50%);
+    width: 44px; height: 22px;
+    border-radius: 12px 12px 0 0;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgba(0,0,0,.08);
+    border-bottom: none;
+    color: ${NAVY};
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 12;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 -2px 6px rgba(0,0,0,.06);
+    transition: bottom .25s ease, background .12s ease;
+    padding: 0;
+  }
+  .sr-controls-toggle:hover { background: #fff; }
+  .sr-controls-toggle.is-open {
+    /* When the bar is open, sit the toggle on top of it so it stays clickable */
+    bottom: 54px;
   }
   .sr-controls {
     position: fixed; bottom: 0; left: 0; right: 0;
@@ -1829,9 +1860,7 @@ const styles = `
     opacity: 0;
     transition: transform .25s ease, opacity .25s ease;
   }
-  .sr-controls-trigger:hover ~ .sr-controls,
-  .sr-controls:hover,
-  .sr-controls:focus-within {
+  .sr-controls.is-open {
     transform: translateY(0);
     opacity: 1;
   }

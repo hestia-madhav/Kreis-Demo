@@ -154,16 +154,14 @@
     },
     {
       "n": 4,
-      "kind": "video",
+      "kind": "static",
       "title": "One Two — Eyes on You",
       "body": [
         "Teacher: \"One, two — eyes on me!\"",
         "Children whisper: \"Eyes on you.\""
       ],
-      "video": "/sessions/assets/eyes_on_you_whisper.kn.mp4",
-      "post_video_text": "One Two — Eyes on me",
       "tip": "Use this calmer whenever you need to settle the class.",
-      "transcript": "(whispered) Eyes on you."
+      "audio": "/sessions/assets/vo_eyes_on_you.kn.mp3"
     },
     {
       "n": 5,
@@ -201,7 +199,8 @@
           "src": "/sessions/assets/group_work_3.jpg",
           "alt": "children working in a group"
         }
-      ]
+      ],
+      "image_layout": "side"
     },
     {
       "n": 7,
@@ -274,11 +273,16 @@
     },
     {
       "n": 12,
-      "kind": "mc_narration",
+      "kind": "static",
       "title": "Constitution Connect Question",
-      "transcript": "Good try! The Preamble's words 'We, the People of India' remind us that the government is formed by the people and must work for the people's welfare. In your group activities too, when you make decisions, you should keep the welfare of every member in mind. Just as the government must think for the good of all citizens, you too must decide for the good of all your team members. From now on, every session will have Constitution Connect questions — they will help you link your daily life with the values of the Constitution. Let's move on!",
-      "tip": "Play the video.",
-      "_placeholder": true
+      "tip": "Read each line calmly. This is the reflective beat of the session.",
+      "body": [
+        "Good effort!",
+        "The Preamble words \"We, the People of India\" remind us that government is built by the people, for the people.",
+        "When your group takes decisions, remember every member — that is what the Constitution asks of us.",
+        "From every session onwards, a Constitution Connect Question will follow — a small link back to what the Constitution says.",
+        "Now let's move on to the next activity!"
+      ]
     },
     {
       "n": 13,
@@ -355,7 +359,6 @@
       "kind": "mc_narration",
       "title": "Dr. B. R. Ambedkar and the Constituent Assembly",
       "video": "/sessions/assets/mc_who_inspires.kn.mp4",
-      "image": "/sessions/assets/ambedkar_constituent_assembly.jpg",
       "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Constitution Club's learning journey by all of us together reading the Preamble.",
       "tip": "Play the video. Pause for guesses on who inspires us."
     },

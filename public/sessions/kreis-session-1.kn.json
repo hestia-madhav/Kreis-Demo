@@ -154,16 +154,14 @@
     },
     {
       "n": 4,
-      "kind": "video",
+      "kind": "static",
       "title": "1 - 2 ನನ್ನ ಕಡೆ ನೋಡಿ",
       "body": [
         "ಶಿಕ್ಷಕರು ಹೇಳುತ್ತಾರೆ: \"1, 2, ನನ್ನ ಕಡೆ ನೋಡಿ!\"",
         "ಮಕ್ಕಳು ಪಿಸುಗುಟ್ಟಿ ಹೇಳುತ್ತಾರೆ: \"ನಿಮ್ಮ ಕಡೆ ನೋಡುತ್ತಿದ್ದೇವೆ.\""
       ],
-      "video": "/sessions/assets/eyes_on_you_whisper.kn.mp4",
-      "post_video_text": "1 - 2 ನನ್ನ ಕಡೆ ನೋಡಿ",
       "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ — ಈಗ ಮತ್ತು ತರಗತಿಯನ್ನು ಶಾಂತಗೊಳಿಸಬೇಕಾದಾಗ ಪ್ರತಿ ಬಾರಿಯೂ.",
-      "transcript": "(whispered) Eyes on you."
+      "audio": "/sessions/assets/vo_eyes_on_you.kn.mp3"
     },
     {
       "n": 5,
@@ -201,7 +199,8 @@
           "src": "/sessions/assets/group_work_3.jpg",
           "alt": "children working in a group"
         }
-      ]
+      ],
+      "image_layout": "side"
     },
     {
       "n": 7,
@@ -289,18 +288,17 @@
     },
     {
       "n": 12,
-      "kind": "mc_narration",
+      "kind": "static",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
-      "transcript": "Good try! The Preamble's words 'We, the People of India' remind us that the government is formed by the people and must work for the people's welfare. In your group activities too, when you make decisions, you should keep the welfare of every member in mind. Just as the government must think for the good of all citizens, you too must decide for the good of all your team members. From now on, every session will have Constitution Connect questions — they will help you link your daily life with the values of the Constitution. Let's move on to the next activity!",
-      "kn_script": [
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ.",
+      "_placeholder": true,
+      "body": [
         "ಒಳ್ಳೆಯ ಪ್ರಯತ್ನ!",
         "ಸಂವಿಧಾನದ ಪ್ರಸ್ತಾವನೆ \"ನಾವು, ಭಾರತದ ಜನರು\" ಎಂಬ ಪದಗಳು ಸರ್ಕಾರವು ಜನರಿಂದ ನಿರ್ಮಿತವಾಗಿದ್ದು, ಜನರ ಹಿತಕ್ಕಾಗಿ ಕೆಲಸ ಮಾಡಬೇಕು ಎಂಬುದನ್ನು ನಮಗೆ ನೆನಪಿಸುತ್ತವೆ.",
         "ನಿಮ್ಮ ಗುಂಪಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿಯೂ ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುವಾಗ ಎಲ್ಲ ಸದಸ್ಯರ ಹಿತವನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಳ್ಳಬೇಕು. ಸರ್ಕಾರವು ಎಲ್ಲ ನಾಗರಿಕರ ಒಳ್ಳೆಯದನ್ನು ಯೋಚಿಸುವಂತೆ, ನೀವು ಸಹ ನಿಮ್ಮ ಗುಂಪಿನ ಎಲ್ಲರ ಒಳ್ಳೆಯದನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಂಡು ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕು.",
         "ಇನ್ನು ಮುಂದೆ, ಪ್ರತಿಯೊಂದು ಸೆಷನ್‌ನಲ್ಲೂ ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆಗಳು ಇರುತ್ತವೆ. ಇವು ನಿಮ್ಮ ದೈನಂದಿನ ಜೀವನವನ್ನು ಸಂವಿಧಾನದ ಮೌಲ್ಯಗಳೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ.",
         "ಈಗ ಮುಂದಿನ ಚಟುವಟಿಕೆಗೆ ಸಾಗೋಣ!"
-      ],
-      "tip": "ವೀಡಿಯೋ ನೋಡಿ.",
-      "_placeholder": true
+      ]
     },
     {
       "n": 13,
@@ -387,7 +385,6 @@
       "kind": "mc_narration",
       "title": "ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಮತ್ತು ಸಂವಿಧಾನ ರಚನಾ ಸಭೆ",
       "video": "/sessions/assets/mc_who_inspires.kn.mp4",
-      "image": "/sessions/assets/ambedkar_constituent_assembly.jpg",
       "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Constitution Club's learning journey by all of us together reading the Preamble.",
       "kn_script": [
         "ನಮ್ಮ ಸಂವಿಧಾನವು ಭಾರತದ ಬಗ್ಗೆ ಹೊಂದಿರುವ ಮಹತ್ವದ ಕನಸಿನಿಂದ ನಾವು ಸ್ಫೂರ್ತಿ ಪಡೆಯುತ್ತೇವೆ. ಅದು ನಮಗೆ ದಾರಿದೀಪವಾಗಿದ್ದು, ಪ್ರೇರಣೆ ನೀಡುತ್ತದೆ.",
