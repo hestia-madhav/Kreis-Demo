@@ -20,84 +20,83 @@
       "label": "ಶಾಂತಗೊಳ್ಳೋಣ",
       "slides": [
         4,
-        5,
-        6
+        5
       ]
     },
     {
       "id": "groups",
       "label": "ಗುಂಪು ರಚನೆ",
       "slides": [
-        7
+        6
       ]
     },
     {
       "id": "group_work",
       "label": "ಗುಂಪು ಕಾರ್ಯ",
       "slides": [
+        7,
         8,
         9,
-        10,
-        11
+        10
       ]
     },
     {
       "id": "cc1",
-      "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
+      "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ 1",
       "slides": [
+        11,
         12,
         13
       ]
     },
     {
       "id": "rules",
-      "label": "ನಿಯಮಗಳನ್ನು ಒಟ್ಟಿಗೆ ಮಾಡೋಣ",
+      "label": "ನಿಯಮಗಳನ್ನು ಮಾಡೋಣ",
       "slides": [
         14,
         15,
         16,
         17,
         18,
-        19.5
+        19
       ]
     },
     {
       "id": "inspires",
       "label": "ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ?",
       "slides": [
-        21,
-        22
+        20
       ]
     },
     {
       "id": "cc2",
-      "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
+      "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ 2",
       "slides": [
-        23,
-        24,
-        25
+        21,
+        22,
+        23
       ]
     },
     {
       "id": "ripples",
       "label": "ಬದಲಾವಣೆಯ ಅಲೆಗಳು",
       "slides": [
-        26,
-        27
+        24,
+        25
       ]
     },
     {
       "id": "preamble",
       "label": "ಪ್ರಸ್ತಾವನೆ",
       "slides": [
-        28
+        26
       ]
     },
     {
       "id": "ending",
       "label": "ಧನ್ಯವಾದ",
       "slides": [
-        29
+        27
       ]
     }
   ],
@@ -291,7 +290,6 @@
       "kind": "static",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
       "tip": "ವೀಡಿಯೋ ನೋಡಿ.",
-      "_placeholder": true,
       "body": [
         "ಒಳ್ಳೆಯ ಪ್ರಯತ್ನ!",
         "ಸಂವಿಧಾನದ ಪ್ರಸ್ತಾವನೆ \"ನಾವು, ಭಾರತದ ಜನರು\" ಎಂಬ ಪದಗಳು ಸರ್ಕಾರವು ಜನರಿಂದ ನಿರ್ಮಿತವಾಗಿದ್ದು, ಜನರ ಹಿತಕ್ಕಾಗಿ ಕೆಲಸ ಮಾಡಬೇಕು ಎಂಬುದನ್ನು ನಮಗೆ ನೆನಪಿಸುತ್ತವೆ.",
@@ -367,8 +365,7 @@
         "7. ತಂಡವಾಗಿ ಕೆಲಸ ಮಾಡುವುದು ಯಾವಾಗಲೂ ಉತ್ತಮ ಮತ್ತು ಹೆಚ್ಚು ಖುಷಿ ಕೊಡುವುದು."
       ],
       "callout": "ಶಿಕ್ಷಕರೇ, \"ಎಲ್ಲರೊಂದಿಗೆ ಗೌರವದಿಂದ ಇರುವುದು\" ಎಂಬ ನಿಯಮವನ್ನು ಸೇರಿಸಿ.",
-      "tip": "ವೀಡಿಯೋ ಮುಗಿಯುವವರೆಗೆ ತೋರಿಸಿ. merged into this slide. The old slide 20 — teacher's-rule click-reveal — removed; teacher's rule now appears as a callout. Video to be regenerated with the updated script.)",
-      "_placeholder": true
+      "tip": "ವೀಡಿಯೋ ಮುಗಿಯುವವರೆಗೆ ತೋರಿಸಿ. merged into this slide. The old slide 20 — teacher's-rule click-reveal — removed; teacher's rule now appears as a callout. Video to be regenerated with the updated script.)"
     },
     {
       "n": 19,

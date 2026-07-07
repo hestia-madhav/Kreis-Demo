@@ -17,87 +17,86 @@
     },
     {
       "id": "calmers",
-      "label": "Calmers",
+      "label": "Calm down",
       "slides": [
         4,
-        5,
-        6
+        5
       ]
     },
     {
       "id": "groups",
-      "label": "Form Groups",
+      "label": "Form groups",
       "slides": [
-        7
+        6
       ]
     },
     {
       "id": "group_work",
-      "label": "Group Work",
+      "label": "Group work",
       "slides": [
+        7,
         8,
         9,
-        10,
-        11
+        10
       ]
     },
     {
       "id": "cc1",
-      "label": "Constitution Connect Q",
+      "label": "Constitution Connect 1",
       "slides": [
+        11,
         12,
         13
       ]
     },
     {
       "id": "rules",
-      "label": "Make Club Rules",
+      "label": "Making rules",
       "slides": [
         14,
         15,
         16,
         17,
         18,
-        19.5
+        19
       ]
     },
     {
       "id": "inspires",
-      "label": "Who Inspires Us?",
+      "label": "Who inspires us?",
       "slides": [
-        21,
-        22
+        20
       ]
     },
     {
       "id": "cc2",
-      "label": "Constitution Connect Q",
+      "label": "Constitution Connect 2",
       "slides": [
-        23,
-        24,
-        25
+        21,
+        22,
+        23
       ]
     },
     {
       "id": "ripples",
       "label": "Ripples of Change",
       "slides": [
-        26,
-        27
+        24,
+        25
       ]
     },
     {
       "id": "preamble",
       "label": "Preamble",
       "slides": [
-        28
+        26
       ]
     },
     {
       "id": "ending",
-      "label": "Thank You",
+      "label": "Thank you",
       "slides": [
-        29
+        27
       ]
     }
   ],
@@ -341,8 +340,7 @@
       "image": "/sessions/assets/rule_flashcard.png",
       "transcript": "There are seven rules for the Club to succeed: ONE — first, be the change you want to see. TWO — share your opinion without fear. THREE — cooperate and respect time. FOUR — everyone is important. FIVE — keep your mind open to new ideas. SIX — share your experiences. SEVEN — working as a team is always better and more fun. Teachers, please add one more: treat everyone with respect.",
       "callout": "Teachers, please add the rule: \"Treat everyone with respect.\"",
-      "tip": "Play through.",
-      "_placeholder": true
+      "tip": "Play through."
     },
     {
       "n": 19,

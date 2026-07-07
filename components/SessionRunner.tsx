@@ -223,7 +223,19 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
   const slide = session.slides[idx];
 
   const sectionOf = useCallback(
-    (n: number) => session.sections.find((s) => s.slides.includes(n))!,
+    (n: number) => {
+      // Never crash if a slide number isn't in the sections config —
+      // fall back to a synthetic empty-label section. Historical bug:
+      // sections referenced pre-delete slide numbers → undefined here
+      // → .label threw → white-screen crash (Madhav, 6 Jul).
+      return (
+        session.sections.find((s) => s.slides.includes(n)) ?? {
+          id: "unknown",
+          label: "",
+          slides: [n],
+        }
+      );
+    },
     [session.sections]
   );
   const currentSection = sectionOf(slide.n);
