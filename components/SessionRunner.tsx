@@ -1421,9 +1421,13 @@ const styles = `
        canvas; the fit wrapper should still measure as one block. */
     display: flex; flex-direction: column; align-items: center;
   }
-  /* Projector mode: vertically + horizontally center text-only slides and
-     scale up typography so the back row of a classroom can read it. */
-  .sr-canvas.is-projector { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 100%; }
+  /* Projector mode: horizontally centred, TOP-aligned (was vertically
+     centred — Madhav 6 Jul: tall slides like 12/18 with 5 body lines were
+     letting the transform-scaled title bleed above the canvas and get
+     covered by the top bar). Top-align keeps the title anchored below the
+     topbar regardless of body length. Short slides get breathing room as
+     bottom whitespace instead of dead space above. */
+  .sr-canvas.is-projector { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding-top: 40px; }
   .sr-canvas.is-projector .sr-section-crumb { align-self: center; }
   .sr-canvas.is-projector .sr-title { font-size: 48px; text-align: center; margin: 8px 0 14px; }
   .sr-canvas.is-projector .sr-accent { margin: 0 auto 24px; }
