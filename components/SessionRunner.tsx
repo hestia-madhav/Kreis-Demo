@@ -1278,31 +1278,37 @@ const styles = `
   }
   /* Topbar — refined gradient + thin progress strip at the top edge. */
   .sr-topbar {
-    display: flex; align-items: center; gap: 16px;
-    padding: 12px 20px;
-    background: linear-gradient(135deg, ${ORANGE} 0%, #ff8c00 100%);
-    color: #fff;
-    box-shadow: 0 2px 12px rgba(0,0,0,.08);
+    /* Slim, restrained top strip — dropped the heavy orange gradient
+       (Madhav, 6 Jul) so slide content owns the visual foreground.
+       Progress bar remains as a thin coloured underline; lang toggle
+       sits on the right. Session title reduced to a subtle grey caption. */
+    display: flex; align-items: center; gap: 12px;
+    padding: 6px 16px;
+    background: #fff;
+    color: ${NAVY};
+    border-bottom: 1px solid rgba(0,0,0,.06);
     position: relative;
+    min-height: 32px;
   }
   /* Thin top progress strip — sleek alternative to the in-bar progress bar. */
   .sr-topbar::after {
+    /* Progress underline — saffron on white so it shows without being loud */
     content: "";
     position: absolute;
-    left: 0; top: 0; height: 2px;
-    background: rgba(255,255,255,0.6);
+    left: 0; bottom: 0; height: 2px;
+    background: ${ORANGE};
     width: var(--sr-progress, 0%);
     transition: width .35s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .sr-topbar-title { flex: 1; font-size: 14px; }
-  .sr-lang-toggle { display: inline-flex; border: 1px solid rgba(255,255,255,.55); border-radius: 999px; overflow: hidden; }
-  .sr-lang-btn { background: transparent; color: #fff; border: none; padding: 4px 12px; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; letter-spacing: .02em; }
+  .sr-topbar-title { flex: 1; font-size: 12px; color: rgba(0,0,0,.5); font-weight: 500; letter-spacing: .02em; }
+  .sr-lang-toggle { display: inline-flex; border: 1px solid rgba(0,0,0,.12); border-radius: 999px; overflow: hidden; }
+  .sr-lang-btn { background: transparent; color: ${NAVY}; border: none; padding: 3px 10px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: inherit; letter-spacing: .02em; }
   .sr-lang-btn:hover:not(.is-disabled):not(.is-active) { background: rgba(255,255,255,.18); }
-  .sr-lang-btn.is-active { background: #fff; color: ${ORANGE_INK}; cursor: default; }
+  .sr-lang-btn.is-active { background: ${ORANGE}; color: #fff; cursor: default; }
   .sr-lang-btn.is-disabled { opacity: .45; cursor: not-allowed; }
   .sr-translation-banner { background: #FFF3CD; color: #7A5D00; padding: 6px 16px; font-size: 13px; font-weight: 600; border-bottom: 1px solid #F1D77A; text-align: center; }
   .sr-sep { opacity: 0.4; margin: 0 6px; }
-  .sr-icon-btn { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.3); padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 16px; }
+  .sr-icon-btn { background: transparent; color: ${NAVY}; border: 1px solid rgba(0,0,0,.12); padding: 2px 8px; border-radius: 6px; cursor: pointer; font-size: 14px; }
   .sr-progress { display: flex; align-items: center; gap: 10px; font-size: 12px; min-width: 220px; }
   .sr-progress-bar { width: 160px; height: 6px; background: rgba(255,255,255,.2); border-radius: 3px; overflow: hidden; }
   .sr-progress-bar > div { height: 100%; background: #fff; transition: width .25s ease; }
