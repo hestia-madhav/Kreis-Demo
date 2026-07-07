@@ -199,7 +199,12 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
       const scaleH = canvasH / contentH;
       const scaleW = canvasW / contentW;
       const naturalFit = Math.min(1, scaleH, scaleW);
-      if (naturalFit >= 0.75) {
+      // Threshold lowered 0.75 → 0.55 (Madhav 6 Jul): slides with long
+      // Kannada body text (12, 18, 24) wrap into more visual lines than
+      // English, so they need more aggressive scaling before hitting
+      // scroll. 0.55 keeps text readable from the back of a classroom
+      // and covers every current slide without needing scroll fallback.
+      if (naturalFit >= 0.55) {
         setFitScale(naturalFit);
         setCanScroll(false);
       } else {
@@ -1431,8 +1436,8 @@ const styles = `
   .sr-canvas.is-projector .sr-section-crumb { align-self: center; }
   .sr-canvas.is-projector .sr-title { font-size: 48px; text-align: center; margin: 8px 0 14px; }
   .sr-canvas.is-projector .sr-accent { margin: 0 auto 24px; }
-  .sr-canvas.is-projector .sr-slide-body { max-width: 1000px; font-size: 26px; line-height: 1.55; }
-  .sr-canvas.is-projector .sr-line { font-size: 28px; margin: 14px 0; }
+  .sr-canvas.is-projector .sr-slide-body { max-width: 1100px; font-size: 22px; line-height: 1.5; }
+  .sr-canvas.is-projector .sr-line { font-size: 24px; margin: 10px 0; line-height: 1.4; }
   .sr-canvas.is-projector .sr-bullets-lg { list-style: none; padding: 0; }
   .sr-canvas.is-projector .sr-bullets-lg li { font-size: 30px; margin: 18px 0; }
   .sr-canvas.is-projector .sr-callout { font-size: 22px; margin: 24px auto 0; max-width: 900px; }
