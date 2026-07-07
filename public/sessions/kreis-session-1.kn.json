@@ -350,11 +350,12 @@
     },
     {
       "n": 18,
-      "kind": "video",
+      "kind": "static",
       "title": "ಕ್ಲಬ್ ಯಶಸ್ವಿ ಆಗಲು ಮತ್ತಷ್ಟು ನಿಯಮಗಳು",
       "image": "/sessions/assets/rule_flashcard.png",
-      "transcript": "There are seven rules for the Club to succeed: ONE — first, be the change you want to see. TWO — share your opinion without fear. THREE — cooperate and respect time. FOUR — everyone is important. FIVE — keep your mind open to new ideas. SIX — share your experiences. SEVEN — working as a team is always better and more fun. Teachers, please add one more rule: treat everyone with respect.",
-      "kn_script": [
+      "callout": "ಶಿಕ್ಷಕರೇ, \"ಎಲ್ಲರೊಂದಿಗೆ ಗೌರವದಿಂದ ಇರುವುದು\" ಎಂಬ ನಿಯಮವನ್ನು ಸೇರಿಸಿ.",
+      "tip": "ವೀಡಿಯೋ ಮುಗಿಯುವವರೆಗೆ ತೋರಿಸಿ.",
+      "body": [
         "ಕ್ಲಬ್ ಯಶಸ್ವಿ ಆಗಲು ಏಳು ನಿಯಮಗಳಿವೆ:",
         "1. ನೀವು ನೋಡಲು ಬಯಸುವ ಬದಲಾವಣೆಯನ್ನು ಮೊದಲು ನೀವೇ ಆಗಿರಿ.",
         "2. ಭಯವಿಲ್ಲದೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.",
@@ -364,8 +365,7 @@
         "6. ನಿಮ್ಮ ಅನುಭವಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.",
         "7. ತಂಡವಾಗಿ ಕೆಲಸ ಮಾಡುವುದು ಯಾವಾಗಲೂ ಉತ್ತಮ ಮತ್ತು ಹೆಚ್ಚು ಖುಷಿ ಕೊಡುವುದು."
       ],
-      "callout": "ಶಿಕ್ಷಕರೇ, \"ಎಲ್ಲರೊಂದಿಗೆ ಗೌರವದಿಂದ ಇರುವುದು\" ಎಂಬ ನಿಯಮವನ್ನು ಸೇರಿಸಿ.",
-      "tip": "ವೀಡಿಯೋ ಮುಗಿಯುವವರೆಗೆ ತೋರಿಸಿ. merged into this slide. The old slide 20 — teacher's-rule click-reveal — removed; teacher's rule now appears as a callout. Video to be regenerated with the updated script.)"
+      "image_layout": "side"
     },
     {
       "n": 19,

@@ -335,12 +335,22 @@
     },
     {
       "n": 18,
-      "kind": "video",
+      "kind": "static",
       "title": "More rules for the Club to succeed",
       "image": "/sessions/assets/rule_flashcard.png",
-      "transcript": "There are seven rules for the Club to succeed: ONE — first, be the change you want to see. TWO — share your opinion without fear. THREE — cooperate and respect time. FOUR — everyone is important. FIVE — keep your mind open to new ideas. SIX — share your experiences. SEVEN — working as a team is always better and more fun. Teachers, please add one more: treat everyone with respect.",
       "callout": "Teachers, please add the rule: \"Treat everyone with respect.\"",
-      "tip": "Play through."
+      "tip": "Play through.",
+      "body": [
+        "There are seven rules for the Club to succeed: ONE — first, be the change you want to see",
+        "TWO — share your opinion without fear",
+        "THREE — cooperate and respect time",
+        "FOUR — everyone is important",
+        "FIVE — keep your mind open to new ideas",
+        "SIX — share your experiences",
+        "SEVEN — working as a team is always better and more fun",
+        "Teachers, please add one more: treat everyone with respect"
+      ],
+      "image_layout": "side"
     },
     {
       "n": 19,
