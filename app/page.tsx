@@ -1,85 +1,48 @@
 import Link from "next/link";
 
-// Index page — lists all KREIS sessions. Replaced the old redirect
-// (which jumped straight to session 1) now that more sessions are in
-// the pipeline. Each card links into the player; sessions in
-// production show a disabled "Coming soon" state with the production
-// stage flagged in the body copy so reviewers know what's pending.
+// Programme picker landing. Two programmes live on this platform:
+// - KREIS (Children's Constitution Club) — Karnataka govt schools
+// - DOM  (Civic Club)                     — Department of Minorities schools
+// User picks a programme, then a session within.
 
-type Status = "live" | "in_production" | "in_progress" | "draft";
+type Programme = {
+  id: "kreis" | "dom";
+  name: string;
+  clubLabel: string;
+  colour: string;
+  bgAccent: string;
+  audience: string;
+  href: string;
+  sessions: string;
+  status: string;
+};
 
-interface SessionEntry {
-  id: string;
-  number: number;
-  title: string;
-  subtitle: string;
-  status: Status;
-  durationMin: number;
-  // What's complete for sessions not yet live — shown as a checklist
-  // on the card so reviewers can see how close it is.
-  progress?: string[];
-}
-
-const SESSIONS: SessionEntry[] = [
+const PROGRAMMES: Programme[] = [
   {
-    id: "kreis-session-1",
-    number: 1,
-    title: "Welcome to the Children's Constitution Club",
-    subtitle: "Introductions · Calmers · Group formation · Constitution connect · Club rules",
-    status: "in_progress",
-    durationMin: 60,
+    id: "kreis",
+    name: "KREIS",
+    clubLabel: "Children's Constitution Club",
+    colour: "#F39C1F",
+    bgAccent: "rgba(243, 156, 31, 0.12)",
+    audience:
+      "Karnataka Residential Educational Institutions Society — 484 residential schools across Karnataka",
+    href: "/kreis",
+    sessions: "3 sessions in progress",
+    status: "Live for pilot",
   },
   {
-    id: "kreis-session-2",
-    number: 2,
-    title: "Naming of Club & Launch Campaign",
-    subtitle:
-      "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
-    status: "in_progress",
-    durationMin: 60,
-    progress: [
-      "✅ Source deck (V2)",
-      "✅ Slide-by-slide script (digital_inputs.csv)",
-      "✅ Veo prompts drafted (3 Master Change videos)",
-      "✅ Kannada VO prompts drafted (13 audio lines)",
-      "✅ Player JSON skeletons (kn + en) — current build",
-      "🔴 Stock-image sourcing (8 needed)",
-      "🔴 Veo generation (mc_election_intro / pop_questions / signoff)",
-      "🔴 Kannada VO generation in Google AI Studio",
-      "🔴 Campaigns slideshow assembly (CapCut)",
-      "🔴 Editable Club Name input on slide 6",
-    ],
-  },
-  {
-    id: "kreis-session-3",
-    number: 3,
-    title: "Choices, Integrity & the Change Champion Box",
-    subtitle:
-      "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
-    status: "in_progress",
-    durationMin: 60,
-    progress: [
-      "✅ Source deck (V1)",
-      "✅ Slide-by-slide script (digital_inputs.csv)",
-      "✅ Veo prompts drafted (5 Master Change videos)",
-      "✅ Kannada VO prompts drafted (9 audio lines)",
-      "✅ Player JSON skeletons (kn + en) — current build",
-      "🔴 PDF annexures (1 / 2 / 3) locked with Ramya",
-      "🔴 News-article card design (slide 2)",
-      "🔴 Stock-image sourcing (slides 9, 10)",
-      "🔴 Veo generation (5 separate MC videos)",
-      "🔴 Kannada VO generation in Google AI Studio",
-      "🔴 INTEGRITY word-reveal animation (player code)",
-    ],
+    id: "dom",
+    name: "DOM",
+    clubLabel: "Civic Club",
+    colour: "#0EA5E9",
+    bgAccent: "rgba(14, 165, 233, 0.10)",
+    audience:
+      "Department of Minorities schools — Karnataka, Andhra Pradesh, Odisha (pending Kannada / Telugu / Odia translation)",
+    href: "/dom",
+    sessions: "3 sessions in preparation",
+    status: "In preparation · Jul 16 target",
   },
 ];
-
-const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {
-  live: { label: "Live", bg: "#D1FAE5", fg: "#065F46" },
-  in_production: { label: "In production", bg: "#FEF3C7", fg: "#92400E" },
-  in_progress: { label: "In progress", bg: "#FEF3C7", fg: "#92400E" },
-  draft: { label: "Draft", bg: "#E5E7EB", fg: "#374151" },
-};
 
 export default function HomePage() {
   return (
@@ -87,255 +50,206 @@ export default function HomePage() {
       style={{
         minHeight: "100vh",
         background:
-          "radial-gradient(1200px 600px at 50% -10%, rgba(243, 156, 31, 0.15), transparent 60%), #FFFBF2",
+          "radial-gradient(1400px 700px at 50% -10%, rgba(243, 156, 31, 0.13), transparent 60%), #FFFBF2",
         padding: "3rem 1.25rem 5rem",
         fontFamily:
           'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Kannada", sans-serif',
         color: "#1F2937",
       }}
     >
-      <div style={{ maxWidth: "920px", margin: "0 auto" }}>
-        {/* Header with co-branded logos */}
+      <div style={{ maxWidth: "960px", margin: "0 auto" }}>
         <header
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             gap: "1rem",
-            marginBottom: "2.5rem",
+            marginBottom: "3rem",
             flexWrap: "wrap",
           }}
         >
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-            <img
-              src="/sessions/assets/kreis_logo.png"
-              alt="KREIS"
-              style={{ height: "56px", width: "auto" }}
-            />
-            <div style={{ borderLeft: "1px solid #E5E7EB", height: "40px" }} />
-            <img
-              src="/sessions/assets/cmca_logo.png"
-              alt="CMCA"
-              style={{ height: "44px", width: "auto" }}
-            />
-          </div>
+          <img
+            src="/sessions/assets/cmca_logo.png"
+            alt="CMCA"
+            style={{ height: "48px", width: "auto" }}
+          />
           <div
             style={{
-              fontSize: "0.75rem",
+              fontSize: "0.72rem",
               color: "#6B7280",
-              letterSpacing: "0.08em",
+              letterSpacing: "0.1em",
               textTransform: "uppercase",
             }}
           >
-            Children&apos;s Constitution Club
+            Interactive Session Platform
           </div>
         </header>
 
         <h1
           style={{
-            fontSize: "2.25rem",
+            fontSize: "2.5rem",
             fontWeight: 800,
             margin: "0 0 0.5rem",
             color: "#1E293B",
             lineHeight: 1.15,
           }}
         >
-          KREIS Session Player
+          Choose a programme
         </h1>
         <p
           style={{
             fontSize: "1.05rem",
             color: "#4B5563",
-            margin: "0 0 2.5rem",
+            margin: "0 0 3rem",
             maxWidth: "640px",
           }}
         >
-          Interactive sessions for the Children&apos;s Constitution Club —
-          delivered in Kannada with English subtitles for hearing-impaired
-          access. Pick a session below to play.
+          Pick the programme you&apos;re running today. Each programme has its
+          own session set — content, language, and club framing differ between
+          KREIS and DOM.
         </p>
 
-        {/* Session cards */}
-        <div style={{ display: "grid", gap: "1.25rem" }}>
-          {SESSIONS.map((s) => {
-            const pill = STATUS_PILL[s.status];
-            // Cards are clickable when not strictly "draft" — sessions
-            // marked "in_progress" still link through so reviewers can walk
-            // the latest placeholder build.
-            const isLive = s.status === "live" || s.status === "in_progress";
-            const card = (
+        <div
+          style={{
+            display: "grid",
+            gap: "1.5rem",
+            gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))",
+          }}
+        >
+          {PROGRAMMES.map((p) => (
+            <Link
+              key={p.id}
+              href={p.href}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <article
                 style={{
                   background: "#FFFFFF",
-                  border: "1px solid #E5E7EB",
-                  borderRadius: "14px",
-                  padding: "1.5rem 1.75rem",
-                  boxShadow: "0 1px 2px rgba(0,0,0,0.04)",
-                  transition: "transform 0.15s ease, box-shadow 0.15s ease",
-                  opacity: isLive ? 1 : 0.92,
-                  cursor: isLive ? "pointer" : "default",
+                  border: `2px solid ${p.colour}22`,
+                  borderRadius: "18px",
+                  padding: "2rem 1.75rem",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+                  transition:
+                    "transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease",
+                  cursor: "pointer",
+                  height: "100%",
+                  position: "relative",
+                  overflow: "hidden",
                 }}
               >
+                {/* Coloured accent stripe on top */}
                 <div
                   style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "flex-start",
-                    gap: "1rem",
-                    marginBottom: "0.4rem",
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: "6px",
+                    background: p.colour,
+                  }}
+                />
+
+                <div
+                  style={{
+                    fontSize: "0.7rem",
+                    fontWeight: 700,
+                    letterSpacing: "0.14em",
+                    textTransform: "uppercase",
+                    color: p.colour,
+                    marginTop: "0.5rem",
                   }}
                 >
-                  <div
-                    style={{
-                      fontSize: "0.78rem",
-                      letterSpacing: "0.12em",
-                      color: "#F39C1F",
-                      fontWeight: 700,
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Session {s.number}
-                  </div>
-                  <span
-                    style={{
-                      background: pill.bg,
-                      color: pill.fg,
-                      borderRadius: "999px",
-                      padding: "0.2rem 0.7rem",
-                      fontSize: "0.72rem",
-                      fontWeight: 700,
-                      letterSpacing: "0.04em",
-                    }}
-                  >
-                    {pill.label}
-                  </span>
+                  Programme
                 </div>
-
                 <h2
                   style={{
-                    fontSize: "1.5rem",
-                    fontWeight: 700,
-                    margin: "0 0 0.5rem",
-                    color: "#1E293B",
+                    fontSize: "2rem",
+                    fontWeight: 800,
+                    margin: "0.25rem 0 0.75rem",
+                    color: "#111827",
                   }}
                 >
-                  {s.title}
+                  {p.name}
                 </h2>
+
+                <div
+                  style={{
+                    display: "inline-block",
+                    padding: "0.25rem 0.75rem",
+                    borderRadius: "999px",
+                    background: p.bgAccent,
+                    color: p.colour,
+                    fontSize: "0.85rem",
+                    fontWeight: 700,
+                    marginBottom: "1rem",
+                  }}
+                >
+                  {p.clubLabel}
+                </div>
+
                 <p
                   style={{
-                    margin: "0 0 1rem",
+                    fontSize: "0.9rem",
                     color: "#4B5563",
-                    fontSize: "0.95rem",
                     lineHeight: 1.5,
+                    margin: "0 0 1.5rem",
                   }}
                 >
-                  {s.subtitle}
+                  {p.audience}
                 </p>
+
                 <div
                   style={{
                     display: "flex",
                     alignItems: "center",
+                    justifyContent: "space-between",
                     gap: "0.75rem",
-                    fontSize: "0.85rem",
-                    color: "#6B7280",
+                    paddingTop: "1rem",
+                    borderTop: "1px solid #E5E7EB",
                   }}
                 >
-                  <span>⏱ {s.durationMin} min</span>
-                  <span style={{ opacity: 0.4 }}>·</span>
-                  <span>Kannada audio · English subtitles</span>
-                </div>
-
-                {/* Progress checklist for in-production sessions */}
-                {s.progress && (
-                  <details style={{ marginTop: "1rem" }}>
-                    <summary
-                      style={{
-                        cursor: "pointer",
-                        fontSize: "0.85rem",
-                        color: "#6B7280",
-                        userSelect: "none",
-                      }}
-                    >
-                      Production status ({s.progress.length} items)
-                    </summary>
-                    <ul
-                      style={{
-                        margin: "0.5rem 0 0",
-                        padding: "0 0 0 1.25rem",
-                        fontSize: "0.85rem",
-                        color: "#4B5563",
-                        lineHeight: 1.6,
-                      }}
-                    >
-                      {s.progress.map((p) => (
-                        <li key={p}>{p}</li>
-                      ))}
-                    </ul>
-                  </details>
-                )}
-
-                {!isLive && (
-                  <div
+                  <span style={{ fontSize: "0.9rem", color: "#374151" }}>
+                    {p.sessions}
+                  </span>
+                  <span
                     style={{
-                      marginTop: "1rem",
-                      padding: "0.6rem 0.9rem",
-                      background: "#FEF3C7",
-                      color: "#78350F",
-                      borderRadius: "8px",
-                      fontSize: "0.8rem",
-                      fontWeight: 500,
-                    }}
-                  >
-                    Production in progress — link will activate once audio &
-                    video assets land in <code>public/sessions/</code>.
-                  </div>
-                )}
-
-                {isLive && (
-                  <div
-                    style={{
-                      marginTop: "1rem",
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: "0.4rem",
-                      color: "#F39C1F",
-                      fontWeight: 600,
-                      fontSize: "0.92rem",
+                      gap: "0.35rem",
+                      color: p.colour,
+                      fontWeight: 700,
+                      fontSize: "0.9rem",
                     }}
                   >
-                    Play session →
-                  </div>
-                )}
-              </article>
-            );
+                    Open →
+                  </span>
+                </div>
 
-            return isLive ? (
-              <Link
-                key={s.id}
-                href={`/s/${s.id}`}
-                style={{ textDecoration: "none", color: "inherit" }}
-              >
-                {card}
-              </Link>
-            ) : (
-              <div key={s.id}>{card}</div>
-            );
-          })}
+                <div
+                  style={{
+                    fontSize: "0.72rem",
+                    color: "#9CA3AF",
+                    marginTop: "0.65rem",
+                    letterSpacing: "0.03em",
+                  }}
+                >
+                  {p.status}
+                </div>
+              </article>
+            </Link>
+          ))}
         </div>
 
-        <footer
+        <div
           style={{
             marginTop: "3rem",
-            paddingTop: "1.5rem",
-            borderTop: "1px solid #E5E7EB",
-            fontSize: "0.8rem",
-            color: "#9CA3AF",
+            fontSize: "0.78rem",
+            color: "#6B7280",
             textAlign: "center",
           }}
         >
-          CMCA × KREIS · A programme of Children&apos;s Movement for Civic
-          Awareness · Karnataka Residential Educational Institutions Society
-        </footer>
+          KREIS platform pilot · A2Z Antifragility × CMCA India
+        </div>
       </div>
     </main>
   );

@@ -395,9 +395,31 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
           </div>
           </div>
 
-          {/* Teacher tip removed per Madhav 25 Jun — content was dev-facing
-              annotations leaking through, and the floating panel cluttered
-              the layout. Tips remain in JSON for documentation but are no
+          {/* Teacher tip — brought back per Madhav 7 Jul school pilot.
+              Content sweep-rewritten for facilitator use (not dev
+              annotations). Toggle pill sits top-right; panel slides in
+              from the right when opened. */}
+          {slide.tip && (
+            <>
+              <button
+                type="button"
+                className={"sr-tip-toggle " + (tipOpen ? "is-open" : "")}
+                onClick={() => setTipOpen((v) => !v)}
+                aria-expanded={tipOpen}
+                title={tipOpen ? "Hide teacher tip" : "Show teacher tip"}
+              >
+                {tipOpen ? "✕" : "💡"} {tipOpen ? "Hide tip" : "Tip"}
+              </button>
+              {tipOpen && (
+                <aside className="sr-tip-panel" aria-label="Teacher tip">
+                  <div className="sr-tip-panel-label">Teacher tip</div>
+                  <p>{slide.tip}</p>
+                </aside>
+              )}
+            </>
+          )}
+          {/* end teacher tip block. Legacy comment retained for context:
+              Tips were hidden per Madhav 25 Jun (dev annotations leaking through);
               longer rendered. Restore here if needed. */}
         </main>
       </div>
@@ -629,10 +651,17 @@ function TimerSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEve
   const total = slide.timer_seconds ?? 60;
   const [remaining, setRemaining] = useState(total);
   const [running, setRunning] = useState(false);
+  const [showEndPopup, setShowEndPopup] = useState(false);
   const reminded = useRef(false);
 
+  // Audio elements for the two alert points. Preloaded on mount so playback
+  // is instantaneous (Madhav 7 Jul: '2 min mark it should make a sound with
+  // a pop up notification' + 'when timer ends [same]').
+  const chimeRef = useRef<HTMLAudioElement | null>(null);
+  const endRef = useRef<HTMLAudioElement | null>(null);
+
   useEffect(() => {
-    setRemaining(total); setRunning(false); reminded.current = false;
+    setRemaining(total); setRunning(false); reminded.current = false; setShowEndPopup(false);
   }, [slide.n, total]);
 
   useEffect(() => {
@@ -643,6 +672,9 @@ function TimerSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEve
           clearInterval(id);
           setRunning(false);
           onEvent?.({ type: "timer_completed", slide: slide.n, ts: Date.now() });
+          // Play end alert + open modal popup
+          endRef.current?.play().catch(() => {});
+          setShowEndPopup(true);
           return 0;
         }
         return r - 1;
@@ -650,6 +682,16 @@ function TimerSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEve
     }, 1000);
     return () => clearInterval(id);
   }, [running, slide.n, onEvent]);
+
+  // Fire the 2-min-remaining chime exactly once when countdown crosses
+  // reminder_at. Also opens a small popup so a distracted teacher can see it.
+  useEffect(() => {
+    if (!slide.reminder_at) return;
+    if (remaining === slide.reminder_at && !reminded.current) {
+      reminded.current = true;
+      chimeRef.current?.play().catch(() => {});
+    }
+  }, [remaining, slide.reminder_at]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -714,6 +756,20 @@ function TimerSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEve
           <button className="sr-btn" onClick={reset}>Reset</button>
         </div>
       </div>
+      {/* Preloaded audio for the two alert points */}
+      <audio ref={chimeRef} src={slide.reminder_chime || "/sessions/assets/timer_2min_warning.mp3"} preload="auto" />
+      <audio ref={endRef} src="/sessions/assets/timer_end.mp3" preload="auto" />
+      {/* End-of-timer modal popup */}
+      {showEndPopup && (
+        <div className="sr-timer-modal" role="alertdialog" aria-labelledby="sr-timer-modal-title">
+          <div className="sr-timer-modal-inner">
+            <div className="sr-timer-modal-icon">⏰</div>
+            <div id="sr-timer-modal-title" className="sr-timer-modal-title">Time's up!</div>
+            <div className="sr-timer-modal-sub">Wrap up the activity and move to sharing.</div>
+            <button className="sr-btn sr-btn-primary" onClick={() => setShowEndPopup(false)}>OK</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -1685,6 +1741,27 @@ const styles = `
   .sr-timer-label { font-size: 12px; letter-spacing: 1px; color: ${NAVY}; margin-top: 4px; }
   .sr-timer-controls { position: absolute; bottom: -10px; left: 50%; transform: translate(-50%, 100%); display: flex; gap: 10px; }
 
+  /* End-of-timer modal — big, loud, unmissable. Uses the same saffron
+     accent as the pause button. Teachers dismiss with OK. */
+  .sr-timer-modal {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 100;
+    animation: sr-fade-in .18s ease-out;
+  }
+  .sr-timer-modal-inner {
+    background: #fff;
+    border-radius: 20px;
+    padding: 36px 44px;
+    max-width: 460px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+  .sr-timer-modal-icon { font-size: 64px; line-height: 1; margin-bottom: 8px; }
+  .sr-timer-modal-title { font-size: 30px; font-weight: 800; color: ${NAVY}; margin-bottom: 8px; }
+  .sr-timer-modal-sub { font-size: 15px; color: ${MUTED}; margin-bottom: 20px; }
+
   .sr-reveal { max-width: 900px; }
   .sr-intro { color: ${MUTED}; margin: 0 0 18px; font-size: 14px; }
   .sr-reveal-list { list-style: none; padding: 0; margin: 0; }
@@ -1866,8 +1943,24 @@ const styles = `
   .sr-tip-body { color: ${INK}; font-size: 12px; line-height: 1.4; }
   .sr-tip-close { position: absolute; top: 4px; right: 6px; background: transparent; border: none; color: ${NAVY}; font-size: 18px; font-weight: 700; line-height: 1; cursor: pointer; padding: 2px 6px; border-radius: 6px; }
   .sr-tip-close:hover { background: rgba(0,0,0,0.08); }
-  .sr-tip-toggle { position: fixed; top: 60px; right: 16px; background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; color: ${NAVY}; border-radius: 999px; padding: 5px 12px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.08); z-index: 10; }
+  .sr-tip-toggle { position: fixed; top: 44px; right: 12px; background: ${LIGHT_SAFFRON}; border: 1px solid ${SAFFRON}; color: ${NAVY}; border-radius: 999px; padding: 6px 14px; font-size: 12px; font-weight: 700; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.08); z-index: 20; }
   .sr-tip-toggle:hover { background: ${SAFFRON}; color: white; }
+  .sr-tip-toggle.is-open { background: #fff; }
+  .sr-tip-panel {
+    position: fixed;
+    top: 82px; right: 12px;
+    width: 300px; max-width: calc(100vw - 24px);
+    background: #fffbe8;
+    border: 1.5px solid ${SAFFRON};
+    border-radius: 12px;
+    padding: 14px 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+    z-index: 19;
+    animation: sr-fade-in .18s ease-out;
+    max-height: 60vh; overflow-y: auto;
+  }
+  .sr-tip-panel-label { font-size: 11px; font-weight: 700; color: ${SAFFRON}; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 6px; }
+  .sr-tip-panel p { margin: 0; font-size: 14px; line-height: 1.5; color: ${NAVY}; white-space: pre-line; }
 
   /* Bottom controls — AKG/Savitha 25 Jun: hidden by default, slide up on
      hover of the bottom edge OR of the bar itself. Auto-hides on leave.

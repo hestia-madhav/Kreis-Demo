@@ -108,7 +108,7 @@
       "subtitle": "KREIS × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
-      "tip": "Welcome music as children enter. Single centered title."
+      "tip": "Play welcome music as children enter. Keep this slide on screen. Press Next once everyone is seated in their group."
     },
     {
       "n": 2,
@@ -172,7 +172,7 @@
       ],
       "audio": "/sessions/assets/vo_flat_tyre_shhh.mp3",
       "image": "/sessions/assets/flat_tyre.jpg",
-      "tip": "Energiser.",
+      "tip": "Play the audio till the whole class settles. Reuse this energiser any time the class gets noisy.",
       "image_layout": "side"
     },
     {
@@ -208,7 +208,7 @@
       "brief": "Name your group, make a group logo. For example: look at the KSRTC and KREIS logos.",
       "timer_seconds": 480,
       "reminder_at": 120,
-      "reminder_chime": "/sessions/assets/timer_reminder_chime.mp3",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
       "tip": "Start 8-min timer. Soft chime when 2 min remain. After 8 min, each group shows their name + logo.",
       "images": [
         {
@@ -244,7 +244,7 @@
       "kind": "reflect_share",
       "title": "Think & Share",
       "prompt": "From this group activity of naming your group and making a logo — what did you learn?",
-      "tip": "Get answers from 3–4 children.",
+      "tip": "Take answers from 3–4 children. Pick different groups — not from the same table. Encourage varied answers.",
       "image": "/sessions/assets/smartboard_icon.svg",
       "callout": "✍ Smartboard — write children's answers on the board"
     },
@@ -254,7 +254,7 @@
       "title": "Master Change wraps the activity",
       "video": "/sessions/assets/mc_wrap_group_activity.kn.mp4",
       "transcript": "You have now practiced something very important. When you listen to each other, share your ideas, and work together, you become true Constitution Champions. From now on, make sure everyone takes part in group activities. From the start of every Club session, sit together with your group. Now it's time for the Constitution Connect Question!",
-      "tip": "Play the video."
+      "tip": "Play the full video. Master Change wraps up the group activity and sets up Constitution Connect."
     },
     {
       "n": 11,
@@ -274,7 +274,7 @@
       "n": 12,
       "kind": "static",
       "title": "Constitution Connect Question",
-      "tip": "Read each line calmly. This is the reflective beat of the session.",
+      "tip": "Read all 5 lines calmly, one at a time. This is the reflective beat — do not rush.",
       "body": [
         "Good effort!",
         "The Preamble words \"We, the People of India\" remind us that government is built by the people, for the people.",
@@ -287,12 +287,13 @@
       "n": 13,
       "kind": "click_reveal",
       "title": "Make rules together — Think & Share",
-      "intro": "While you answer these 2 questions, your teacher listens with you.",
+      "intro": "Teacher will listen with you as you answer these 3 questions.",
       "prompts": [
-        "Imagine you're about to play a really fun new game. What do you need to know to play it properly?",
-        "If everyone starts playing as they like, and doesn't listen to the umpire/referee/judge, what happens to the game?"
+        "Imagine you are going to play a super exciting new game. Before you play the game, what do you need to know?",
+        "What do you need to understand to play the game correctly?",
+        "What happens in a game if all the players do what they want, don't listen to the umpire, or referee?"
       ],
-      "tip": "Show one question at a time. Get 1–2 answers per question before moving on."
+      "tip": "Show one question at a time (click to reveal next). Get 1–2 quick answers per question before moving on. The build-up: Q1 = you need to know rules, Q2 = you need to understand them, Q3 = what happens without them. This sets up co-creating rules on the next slide."
     },
     {
       "n": 14,
@@ -315,7 +316,9 @@
       "brief": "Using paper/post-its, write 1 rule for yourself and 1 rule for your teacher to follow.",
       "bullets_large": true,
       "timer_seconds": 180,
-      "tip": "Distribute paper before starting timer. 3-min timer."
+      "tip": "Distribute paper before starting timer. 3-min timer.",
+      "reminder_at": 60,
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
     },
     {
       "n": 16,
@@ -324,14 +327,14 @@
       "body": [
         "Each group shares one rule — no repeats!"
       ],
-      "tip": "Go group by group. If a rule is already taken, that group shares a different one."
+      "tip": "Ask group by group. Don't let a group repeat a rule another group already gave. Write every rule on the board."
     },
     {
       "n": 17,
       "kind": "reflect_share",
       "title": "Think & Share",
       "prompt": "What should we do if someone doesn't follow the rules?",
-      "tip": "2–3 children's answers."
+      "tip": "Take answers from 2–3 children. Encourage different perspectives."
     },
     {
       "n": 18,
@@ -339,7 +342,7 @@
       "title": "More rules for the Club to succeed",
       "image": "/sessions/assets/rule_flashcard.png",
       "callout": "Teachers, please add the rule: \"Treat everyone with respect.\"",
-      "tip": "Play through.",
+      "tip": "Read out all 7 rules, one by one. Teachers — end by adding a rule of your own (respect for everyone).",
       "body": [
         "There are seven rules for the Club to succeed: ONE — first, be the change you want to see",
         "TWO — share your opinion without fear",
@@ -360,7 +363,7 @@
         "Just as our Club has rules, our country has a whole book of rules — and so much more!",
         "Clue: who inspires us as citizens of India?"
       ],
-      "tip": "Ask for a few guesses."
+      "tip": "Give children time to guess. Ask: \"Our country also has a book of rules — what is it?\" Bring the focus to the Constitution."
     },
     {
       "n": 20,
@@ -449,7 +452,7 @@
       "centered": true,
       "image": "/sessions/assets/kreis_seal.png",
       "audio": "/sessions/assets/welcome_music.mp3",
-      "tip": "Thank the children. End of session."
+      "tip": "Thank the children. End of session. Next session: naming your Club."
     }
   ]
 }
