@@ -119,10 +119,18 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
   const [idx, setIdx] = useState(0);
   const [navOpen, setNavOpen] = useState(true);
   const [tipOpen, setTipOpen] = useState(true);
-  // Bottom controls: click-toggle instead of hover-strip. Hover-strip was
-  // triggering accidentally when teachers dragged the video seek bar
-  // (Madhav, 6 Jul).
-  const [controlsOpen, setControlsOpen] = useState(false);
+  // Touch-device detection (Madhav 7 Jul: 'no fullscreen option if no
+  // keyboard'). matchMedia pointer:coarse is the standard proxy for
+  // 'primary input is a finger / stylus, no physical keyboard'.
+  const [isTouch, setIsTouch] = useState(false);
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const mq = window.matchMedia("(pointer: coarse)");
+    setIsTouch(mq.matches);
+    const onChange = (e: MediaQueryListEvent) => setIsTouch(e.matches);
+    mq.addEventListener?.("change", onChange);
+    return () => mq.removeEventListener?.("change", onChange);
+  }, []);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
   // Fit-to-viewport — eliminates per-slide scrolling. The canvas is fixed-
@@ -199,19 +207,13 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
       const scaleH = canvasH / contentH;
       const scaleW = canvasW / contentW;
       const naturalFit = Math.min(1, scaleH, scaleW);
-      // Threshold lowered 0.75 → 0.55 (Madhav 6 Jul): slides with long
-      // Kannada body text (12, 18, 24) wrap into more visual lines than
-      // English, so they need more aggressive scaling before hitting
-      // scroll. 0.55 keeps text readable from the back of a classroom
-      // and covers every current slide without needing scroll fallback.
-      if (naturalFit >= 0.55) {
-        setFitScale(naturalFit);
-        setCanScroll(false);
-      } else {
-        // Severe overflow — give up the scale and allow scrolling.
-        setFitScale(1);
-        setCanScroll(true);
-      }
+      // Always shrink to fit — never scroll. Madhav 7 Jul school pilot:
+      // 'no scroll for more scenario, layout should be clean like a
+      // slideshow'. Even at aggressive scale (down to 0.35), the text
+      // stays readable on a projector/smartboard because we lifted the
+      // base font sizes; on smaller screens the auto-shrink handles it.
+      setFitScale(Math.max(0.35, naturalFit));
+      setCanScroll(false);
     };
 
     recompute();
@@ -377,9 +379,16 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
             className="sr-canvas-fit"
             style={{ transform: `scale(${fitScale})` }}
           >
-          <div className="sr-section-crumb">{currentSection.label}</div>
-          <h1 className="sr-title">{slide.title}</h1>
-          <div className="sr-accent" />
+          {/* Title-kind slides render their own branded title in TitleSlide —
+              skip the outer crumb + h1 so we don't render the title twice
+              (Madhav 7 Jul: 'title slide has two titles in kannada'). */}
+          {slide.kind !== "title" && (
+            <>
+              <div className="sr-section-crumb">{currentSection.label}</div>
+              <h1 className="sr-title">{slide.title}</h1>
+              <div className="sr-accent" />
+            </>
+          )}
 
           <div className="sr-slide-body">
             <SlideBody slide={slide} onEvent={onEvent} onAdvance={next} lang={activeLang} />
@@ -393,25 +402,37 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
         </main>
       </div>
 
-      {/* Bottom controls — hidden by default, toggled by a small chevron
-          pill at bottom-center. Earlier revision used a bottom-edge hover
-          strip; that trigger conflicted with video seek-bar drags (Madhav,
-          6 Jul), so an explicit click-toggle replaced it. */}
-      <button
-        type="button"
-        className={"sr-controls-toggle " + (controlsOpen ? "is-open" : "")}
-        onClick={() => setControlsOpen((v) => !v)}
-        aria-expanded={controlsOpen}
-        aria-controls="sr-controls"
-        title={controlsOpen ? "Hide controls" : "Show controls"}
-      >
-        {controlsOpen ? "▼" : "▲"}
-      </button>
-      <footer id="sr-controls" className={"sr-controls " + (controlsOpen ? "is-open" : "")}>
-        <button onClick={prev} disabled={idx === 0} className="sr-btn">← Prev</button>
-        <div className="sr-hint">← / → navigate · R reveal · T timer · F fullscreen · N nav</div>
-        <button onClick={next} disabled={idx === session.slides.length - 1} className="sr-btn sr-btn-primary">Next →</button>
-      </footer>
+      {/* Side controls — the teacher stands on the LEFT of the screen at
+          the smartboard, so Prev + Next sit as a stacked pair on the left
+          edge, always visible. Bottom control bar removed (Madhav 7 Jul
+          school pilot: 'back and next button can appear at the same
+          side where the teacher stands').
+
+          Fullscreen shortcut hint is hidden when there's no keyboard
+          (touch smartboard) — 'No fullscreen option if no keyboard'. */}
+      <div className="sr-side-nav" aria-label="Slide navigation">
+        <button
+          onClick={prev}
+          disabled={idx === 0}
+          className="sr-side-btn"
+          aria-label="Previous slide"
+          title="Previous (←)"
+        >
+          <span className="sr-side-icon">‹</span>
+          <span className="sr-side-label">Prev</span>
+        </button>
+        <div className="sr-side-count">{idx + 1} / {session.slides.length}</div>
+        <button
+          onClick={next}
+          disabled={idx === session.slides.length - 1}
+          className="sr-side-btn sr-side-btn-primary"
+          aria-label="Next slide"
+          title="Next (→)"
+        >
+          <span className="sr-side-icon">›</span>
+          <span className="sr-side-label">Next</span>
+        </button>
+      </div>
 
       {/* CMCA logo always present, bottom-left. AKG/Savitha 25 Jun: brand
           continuity across every slide. */}
@@ -555,7 +576,6 @@ function McSlide({ slide }: { slide: Slide }) {
             <video
               key={slide.video}
               controls
-              autoPlay
               playsInline
               src={slide.video}
               poster="/sessions/assets/mc_poster.png"
@@ -934,9 +954,8 @@ function VideoQuestionSeriesSlide({
 
       <div className="sr-video-large">
         <video
-          key={current.video}      // forces remount → autoplay restarts cleanly
+          key={current.video}      // forces remount so play button resets
           controls
-          autoPlay
           src={current.video}
           onEnded={() => setEnded(true)}
         />
@@ -1069,9 +1088,25 @@ function VideoWithPauses({
   // Rationale (Madhav, 6 Jul): classroom pace is dictated by the teacher,
   // not the video. `pause_duration` from the JSON is ignored on purpose.
   void pauseDuration;
+  const lastTime = useRef(0);
   const onTimeUpdate = () => {
     const v = ref.current;
-    if (!v || !pauseAt || pauseAt.length === 0 || paused) return;
+    if (!v || !pauseAt || pauseAt.length === 0) return;
+    // Rewind detection — if the teacher scrubs backwards past a boundary,
+    // that boundary should re-fire on next playthrough. Madhav 7 Jul school
+    // pilot: 'if rewind, questions don't stop / everything autoplays'.
+    if (v.currentTime + 0.5 < lastTime.current) {
+      const cleared: number[] = [];
+      for (const t of pauseAt) {
+        if (t > v.currentTime && consumed.current.has(t)) {
+          consumed.current.delete(t);
+          cleared.push(t);
+        }
+      }
+      void cleared;
+    }
+    lastTime.current = v.currentTime;
+    if (paused) return;
     for (const t of pauseAt) {
       if (consumed.current.has(t)) continue;
       if (v.currentTime >= t && v.currentTime < t + 0.6) {
@@ -1094,7 +1129,6 @@ function VideoWithPauses({
       <video
         ref={ref}
         controls
-        autoPlay
         playsInline
         loop={loop}
         src={src}
@@ -1140,17 +1174,9 @@ function AudioChip({ src }: { src: string }) {
     setPlaying(false);
     setCurrent(0);
     setDuration(0);
-    // Attempt autoplay when the audio source changes (new slide). The
-    // `autoPlay` attribute on the <audio> element handles the initial
-    // mount; this handles slide-to-slide transitions where the same
-    // element is reused with a new `src`. Browsers will reject without
-    // a recent user gesture; the visible play button is the fallback.
-    const el = audioRef.current;
-    if (el) {
-      el.play().catch(() => {
-        // Autoplay blocked — leave the play button visible; no crash.
-      });
-    }
+    // No autoplay — teacher clicks the play button when ready. Madhav
+    // 7 Jul school pilot: audio triggering on slide entry was disruptive
+    // in a classroom (kids' attention was still on the previous slide).
   }, [src]);
 
   useEffect(() => {
@@ -1224,7 +1250,6 @@ function AudioChip({ src }: { src: string }) {
         ref={audioRef}
         src={src}
         preload="auto"
-        autoPlay
         tabIndex={-1}
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
@@ -1847,49 +1872,67 @@ const styles = `
   /* Bottom controls — AKG/Savitha 25 Jun: hidden by default, slide up on
      hover of the bottom edge OR of the bar itself. Auto-hides on leave.
      Translucent + blur for a modern UI feel. */
-  .sr-controls-toggle {
-    /* Small chevron pill fixed at bottom-center. Click to open the
-       controls bar. Explicit click (not hover) so it can't be triggered
-       by video seek-bar drags. */
+  /* Side-mounted Prev/Next — anchored to the left edge for touch reach
+     by the teacher standing at the smartboard. Vertical stack: Prev on
+     top, slide counter in the middle, Next as the primary action at the
+     bottom. Prev/Next always visible; large tap targets for touch UX. */
+  .sr-side-nav {
     position: fixed;
-    bottom: 8px; left: 50%;
-    transform: translateX(-50%);
-    width: 44px; height: 22px;
-    border-radius: 12px 12px 0 0;
-    background: rgba(255,255,255,0.9);
-    border: 1px solid rgba(0,0,0,.08);
-    border-bottom: none;
+    left: 12px; top: 50%;
+    transform: translateY(-50%);
+    display: flex; flex-direction: column; gap: 10px;
+    align-items: stretch;
+    z-index: 15;
+    pointer-events: none;
+  }
+  .sr-side-nav > * { pointer-events: auto; }
+  .sr-side-btn {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    width: 60px; min-height: 78px;
+    padding: 10px 6px;
+    background: rgba(255,255,255,0.94);
+    color: ${NAVY};
+    border: 1.5px solid rgba(0,0,0,.08);
+    border-radius: 14px;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.10);
+    transition: transform .12s ease, background .12s ease, opacity .2s ease;
+  }
+  .sr-side-btn:hover { background: #fff; transform: translateX(2px); }
+  .sr-side-btn:active { transform: translateX(0) scale(0.98); }
+  .sr-side-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+  .sr-side-btn-primary { background: ${ORANGE}; color: #fff; border-color: ${ORANGE}; }
+  .sr-side-btn-primary:hover { background: #ff8c00; }
+  .sr-side-icon { font-size: 28px; line-height: 1; font-weight: 700; }
+  .sr-side-label { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-top: 4px; }
+  .sr-side-count {
+    text-align: center;
     color: ${NAVY};
     font-size: 12px;
-    line-height: 1;
-    cursor: pointer;
-    z-index: 12;
-    display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 -2px 6px rgba(0,0,0,.06);
-    transition: bottom .25s ease, background .12s ease;
-    padding: 0;
+    font-weight: 600;
+    padding: 6px 10px;
+    background: rgba(255,255,255,0.7);
+    border-radius: 10px;
+    letter-spacing: .05em;
   }
-  .sr-controls-toggle:hover { background: #fff; }
-  .sr-controls-toggle.is-open {
-    /* When the bar is open, sit the toggle on top of it so it stays clickable */
-    bottom: 54px;
+
+  /* Responsive breakpoints (Madhav 7 Jul: mobile, tablet, projector,
+     smartboard all need to work). Side nav shrinks on narrow screens. */
+  @media (max-width: 640px) {
+    .sr-side-btn { width: 44px; min-height: 58px; padding: 6px 4px; }
+    .sr-side-icon { font-size: 22px; }
+    .sr-side-label { font-size: 9px; }
+    .sr-side-count { font-size: 10px; padding: 4px 6px; }
+    .sr-side-nav { left: 6px; gap: 6px; }
   }
-  .sr-controls {
-    position: fixed; bottom: 0; left: 0; right: 0;
-    padding: 14px 24px;
-    display: flex; align-items: center; gap: 16px;
-    background: rgba(255,255,255,0.94);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-top: 1px solid rgba(0,0,0,.06);
-    z-index: 11;
-    transform: translateY(100%);
-    opacity: 0;
-    transition: transform .25s ease, opacity .25s ease;
-  }
-  .sr-controls.is-open {
-    transform: translateY(0);
-    opacity: 1;
+  @media (min-width: 2000px) {
+    /* Big projector / 4K smartboard — scale up the side buttons */
+    .sr-side-btn { width: 84px; min-height: 108px; padding: 14px 8px; }
+    .sr-side-icon { font-size: 40px; }
+    .sr-side-label { font-size: 14px; }
+    .sr-side-count { font-size: 15px; padding: 8px 14px; }
+    .sr-side-nav { left: 24px; gap: 14px; }
   }
   /* CMCA brand corner — fixed bottom-left, present on every slide. */
   .sr-brand-corner {
@@ -1930,7 +1973,7 @@ const styles = `
     height: auto;
     filter: drop-shadow(0 8px 24px rgba(0,0,0,0.10));
   }
-  .sr-hint { flex: 1; text-align: center; color: ${MUTED}; font-size: 12px; }
+  .sr-hint { flex: 1; text-align: center; color: ${MUTED}; font-size: 12px; } /* deprecated — bottom bar removed 7 Jul */
   .sr-btn { background: #fff; border: 1px solid #e5e7eb; padding: 9px 18px; border-radius: 8px; cursor: pointer; font-family: inherit; font-size: 14px; color: ${INK}; }
   .sr-btn:hover:not(:disabled) { border-color: ${SAFFRON}; }
   .sr-btn:disabled { opacity: 0.4; cursor: not-allowed; }
