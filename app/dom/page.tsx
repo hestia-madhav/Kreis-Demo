@@ -1,11 +1,14 @@
 import Link from "next/link";
 
 // DOM programme session list. Three sessions matching the KREIS structure,
-// with "Constitution Club" → "Civic Club" and content pending Kannada /
-// Telugu / Odia translation from Sonu + Aishwarya. Sessions are stubbed
-// as "in preparation" until content lands.
+// with "Children's Constitution Club" → "Children's Civic Club" (DOM =
+// Department of Minorities). Player JSON (en + kn) has been
+// built from the CMCA source decks — Kannada text is an AI draft pending
+// CMCA linguistic review (see _revision tag in each session JSON). Video/
+// audio assets are not yet produced, same "in_progress skeleton" state as
+// KREIS Session 2/3.
 
-type Status = "in_progress" | "in_preparation" | "draft";
+type Status = "live" | "in_progress" | "in_preparation" | "draft";
 
 interface SessionEntry {
   id: string;
@@ -21,18 +24,19 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "dom-session-1",
     number: 1,
-    title: "Welcome to the Civic Club",
+    title: "Welcome to the Children's Civic Club",
     subtitle:
-      "Introductions · Calmers · Group formation · Civic connect · Club rules",
-    status: "in_preparation",
+      "Introductions · Calmers · Group formation · Constitution connect · Club rules",
+    status: "in_progress",
     durationMin: 60,
     progress: [
       "✅ Source deck (English draft from CMCA)",
       "✅ Structural mapping to KREIS Session 1 completed",
-      "🔴 Kannada / Telugu / Odia translation from Sonu / Aishwarya",
-      "🔴 'Constitution Club' → 'Civic Club' replacements",
+      "✅ Player JSON built (en + kn) — AI draft translation",
+      "🔴 CMCA linguistic review of Kannada (Sonu / Irfan / Aishwarya)",
+      "🔴 'ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್' (Children's Civic Club) naming sign-off",
       "🔴 State-specific content variants (Odisha local stories per Ramya)",
-      "🔴 Player JSON build",
+      "🔴 Video / audio asset production",
     ],
   },
   {
@@ -41,12 +45,14 @@ const SESSIONS: SessionEntry[] = [
     title: "Naming of Club & Launch Campaign",
     subtitle:
       "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
-    status: "in_preparation",
+    status: "in_progress",
     durationMin: 60,
     progress: [
       "✅ Source deck (English draft from CMCA)",
-      "🔴 Awaiting Kannada / Telugu / Odia translation",
-      "🔴 Player JSON build",
+      "✅ Player JSON built (en + kn) — AI draft translation",
+      "🔴 CMCA linguistic review of Kannada",
+      "🔴 Editable club-name field on slide 6 (flagged by CMCA, not yet built)",
+      "🔴 Video / audio asset production",
     ],
   },
   {
@@ -55,17 +61,19 @@ const SESSIONS: SessionEntry[] = [
     title: "Choices, Integrity & the Change Champion Box",
     subtitle:
       "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
-    status: "in_preparation",
+    status: "in_progress",
     durationMin: 60,
     progress: [
       "✅ Source deck (English draft from CMCA)",
-      "🔴 Awaiting Kannada / Telugu / Odia translation",
-      "🔴 Player JSON build",
+      "✅ Player JSON built (en + kn) — AI draft translation",
+      "🔴 CMCA linguistic review of Kannada",
+      "🔴 Video / audio asset production",
     ],
   },
 ];
 
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {
+  live: { label: "Live", bg: "#D1FAE5", fg: "#065F46" },
   in_progress: { label: "In progress", bg: "#FEF3C7", fg: "#92400E" },
   in_preparation: { label: "In preparation", bg: "#DBEAFE", fg: "#075985" },
   draft: { label: "Draft", bg: "#E5E7EB", fg: "#374151" },
@@ -128,7 +136,7 @@ export default function DomHomePage() {
             letterSpacing: "0.05em",
           }}
         >
-          DOM · Civic Club
+          DOM · Children's Civic Club
         </div>
 
         <h1
@@ -146,28 +154,45 @@ export default function DomHomePage() {
           style={{
             fontSize: "1.05rem",
             color: "#4B5563",
+            margin: "0 0 1rem",
+            maxWidth: "640px",
+          }}
+        >
+          Interactive Children's Civic Club sessions for the Department of Minorities
+          schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha.
+          Pick a session below to review the draft.
+        </p>
+        <p
+          style={{
+            fontSize: "0.85rem",
+            color: "#B45309",
+            background: "#FFFBEB",
+            border: "1px solid #FDE68A",
+            borderRadius: "8px",
+            padding: "0.6rem 0.9rem",
             margin: "0 0 2.5rem",
             maxWidth: "640px",
           }}
         >
-          Interactive Civic Club sessions for the Department of Minorities
-          schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha.
-          Sessions are in preparation ahead of the 16 Jul training window.
+          ⚠ Kannada text is an AI draft translation for CMCA to vet — not yet
+          confirmed by Sonu / Irfan / Aishwarya. Video and audio have not
+          been produced yet.
         </p>
 
         <div style={{ display: "grid", gap: "1.25rem" }}>
           {SESSIONS.map((s) => {
             const pill = STATUS_PILL[s.status];
-            return (
+            const isLive = s.status === "live" || s.status === "in_progress";
+            const card = (
               <article
-                key={s.id}
                 style={{
                   background: "#FFFFFF",
                   border: "1px solid #E5E7EB",
                   borderRadius: "14px",
                   padding: "1.5rem 1.75rem",
                   boxShadow: "0 1px 2px rgba(0,0,0,0.04)",
-                  opacity: 0.9,
+                  opacity: isLive ? 1 : 0.9,
+                  cursor: isLive ? "pointer" : "default",
                 }}
               >
                 <div
@@ -230,22 +255,60 @@ export default function DomHomePage() {
                   {s.subtitle}
                 </p>
 
-                <ul
-                  style={{
-                    listStyle: "none",
-                    padding: 0,
-                    margin: 0,
-                    display: "grid",
-                    gap: "0.3rem",
-                    fontSize: "0.82rem",
-                    color: "#374151",
-                  }}
-                >
-                  {s.progress.map((p, i) => (
-                    <li key={i}>{p}</li>
-                  ))}
-                </ul>
+                <details style={{ marginTop: "0.25rem" }}>
+                  <summary
+                    style={{
+                      cursor: "pointer",
+                      fontSize: "0.85rem",
+                      color: "#6B7280",
+                      userSelect: "none",
+                    }}
+                  >
+                    Production status ({s.progress.length} items)
+                  </summary>
+                  <ul
+                    style={{
+                      margin: "0.5rem 0 0",
+                      padding: "0 0 0 1.25rem",
+                      fontSize: "0.85rem",
+                      color: "#4B5563",
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    {s.progress.map((p, i) => (
+                      <li key={i}>{p}</li>
+                    ))}
+                  </ul>
+                </details>
+
+                {isLive && (
+                  <div
+                    style={{
+                      marginTop: "1rem",
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "0.4rem",
+                      color: DOM_COLOUR,
+                      fontWeight: 600,
+                      fontSize: "0.92rem",
+                    }}
+                  >
+                    Review draft session →
+                  </div>
+                )}
               </article>
+            );
+
+            return isLive ? (
+              <Link
+                key={s.id}
+                href={`/s/${s.id}`}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                {card}
+              </Link>
+            ) : (
+              <div key={s.id}>{card}</div>
             );
           })}
         </div>
@@ -258,7 +321,9 @@ export default function DomHomePage() {
             textAlign: "center",
           }}
         >
-          DOM sessions activate once Kannada / Telugu / Odia translations land from CMCA content team.
+          DOM sessions move to "Live" once CMCA confirms the Kannada
+          translation and video/audio assets land in{" "}
+          <code>public/sessions/</code>.
         </div>
       </div>
     </main>

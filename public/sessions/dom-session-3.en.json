@@ -1,0 +1,288 @@
+{
+  "id": "dom-session-3",
+  "_language": "en",
+  "_revision": "2026-07-09-ai-draft-pending-cmca-review",
+  "title": "DOM — Session 3: Choices, Integrity & the Change Champion Box",
+  "programme": "DOM",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "slides": [
+        1
+      ]
+    },
+    {
+      "id": "hospital_stories",
+      "label": "Hospital Stories",
+      "slides": [
+        2
+      ]
+    },
+    {
+      "id": "group_work",
+      "label": "Group Work",
+      "slides": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "integrity",
+      "label": "Choice & Integrity",
+      "slides": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "id": "creative_expression",
+      "label": "Creative Expression",
+      "slides": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": "reflect_close",
+      "label": "Reflect & Close",
+      "slides": [
+        19,
+        20
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to your Children's Civic Club!",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Play the welcome music; make sure groups are seated."
+    },
+    {
+      "n": 2,
+      "kind": "static",
+      "bullets_large": true,
+      "title": "Hospital Stories",
+      "body": [
+        "1) January 2019 — The Times of India, Chennai: Families of women who have babies at government maternity hospitals, where treatment is free, complained that they end up paying at least ₹3,500 as bribes to ward attendants, housekeeping, and other staff. They have to pay more if the newborn is a boy.",
+        "2) March 17, 2017 — Hindustan Times, Hyderabad: Unable to pay a bribe for a hospital wheelchair, a patient uses his son's toy tricycle. S. Raju, in his 40s, had been visiting the hospital for follow-up treatment for burn injuries from an electrical shock. His wife Santoshi alleged that because she couldn't pay the ward-boys' \"tip,\" her husband wasn't given a wheelchair, so they used the toy tricycle to move around the hospital."
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s3_hospital_story_1.jpg",
+          "alt": "hospital story 1 — Chennai"
+        },
+        {
+          "src": "/sessions/assets/s3_hospital_story_2.jpg",
+          "alt": "hospital story 2 — Hyderabad"
+        }
+      ],
+      "image_layout": "side",
+      "tip": "Ask 2 student volunteers to read the news stories aloud."
+    },
+    {
+      "n": 3,
+      "kind": "static",
+      "title": "Group Work",
+      "body": [
+        "Teacher will distribute sheets which contain short stories. Read them in your groups.",
+        "As you read, for each story: One — list out the value or quality the story shows, which every good human being should live by. Two — list out the specific action or behaviour that shows that value."
+      ],
+      "tip": "Distribute Annexure 3 — one sheet per group."
+    },
+    {
+      "n": 4,
+      "kind": "mc_narration",
+      "title": "Example — Master Change Explains",
+      "video": "/sessions/assets/dom_s3_mc_traffic_signal.mp4",
+      "transcript": "\"I always leave late from home to my school. In order to reach on time, I often jump traffic signals or don't follow the road rules.\" What is the value here that I am not showing, which I must have as a good human being? (pause 5 secs — not jumping traffic signals, being careful on the road, leaving early, being punctual, respecting rules) Great! Now, in this story, what is the positive action to show that value? (pause 5 secs — following rules, being aware of other vehicles, reaching school on time) So your group will just write 'not jumping traffic signals' as the value, and 'following rules, reaching school on time' as the action that shows this value. You have 8 minutes to do all the stories/situations.",
+      "tip": "Video pauses twice for 5 seconds — prompt kids to raise hands fast."
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "Group Work Begins",
+      "body": [
+        "Distribute the sheets to groups.",
+        "7-minute timer — a warning sound plays when 2 minutes are left."
+      ],
+      "audio": "/sessions/assets/timer_7min_ping.mp3",
+      "tip": "Give each group a different Annexure 3 sheet, then start the timer."
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "Finishing Group Work",
+      "body": [
+        "Thank you! You worked very well in your groups!",
+        "It does not matter if you haven't finished — when we share with each other, all stories/situations will get covered.",
+        "You have 1 minute to quickly select two stories/situations you'd like to share with the whole class. Make sure your list of values/qualities with the action or behaviour is ready."
+      ],
+      "tip": "Start the 1-minute timer once students finish reading."
+    },
+    {
+      "n": 7,
+      "kind": "static",
+      "title": "Sharing Stories",
+      "body": [
+        "Taking turns, one of you from each group please read one of your selected stories/situations for the rest of the class.",
+        "Do not repeat stories/situations — use your second choice if a group has already read your first."
+      ],
+      "tip": "Have groups share one story each, no repeats, one minute per group."
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Capturing Group Work",
+      "body": [
+        "Now, 1 member from each group comes up to the board and quickly writes down the 2 action-statements from your list — not values, just 2 specific action statements.",
+        "You have just 1 minute, so be quick! Write large enough so everyone can read."
+      ],
+      "tip": "Give 1-2 minutes; make sure every group has chalk ready."
+    },
+    {
+      "n": 9,
+      "kind": "static",
+      "title": "Reflection",
+      "body": [
+        "Let us spend a minute reflecting in silence on what we have written on the board, which has come out of your own group discussions.",
+        "You will get 2 minutes to think and reflect."
+      ],
+      "audio": "/sessions/assets/timer_2min_ping.mp3",
+      "tip": "Point kids back to the hospital-story board notes during reflection."
+    },
+    {
+      "n": 10,
+      "kind": "video",
+      "loop": false,
+      "title": "150 Rupees — What Will You Do?",
+      "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
+      "intro_text": "If a shopkeeper gave you 150 rupees extra as change by mistake, what will you do? (pause 3 seconds)",
+      "post_video_text": [
+        "What do you call that action of deciding? It starts with C_____.",
+        "CHOICE"
+      ],
+      "reveal_on_click": true,
+      "tip": "Help students complete the answer if needed: CHOICE."
+    },
+    {
+      "n": 11,
+      "kind": "mc_narration",
+      "title": "Questions from the Hospital Stories",
+      "video": "/sessions/assets/dom_s3_mc_hospital_reflection.mp4",
+      "transcript": "Friends, in the hospital stories you read out at the beginning, what choice did the poor people have? What would happen to their loved one who is very sick, if they don't pay the bribes? Share your thoughts with your teacher and friends. (pause 10 secs) Poor people sometimes have very little choice. If the poor did not pay bribes, they could even lose their loved one, or in the case of ration cards or Aadhar cards, they could go hungry or lose their daily-wage job.",
+      "tip": "Give 10 seconds for responses before the video continues."
+    },
+    {
+      "n": 12,
+      "kind": "mc_narration",
+      "title": "The Hospital Staff's Choices?",
+      "video": "/sessions/assets/dom_s3_mc_staff_choices.mp4",
+      "transcript": "In the hospital stories, what about the choices that the hospital staff made? Can you share your thoughts with your teacher and friends? (pause 10 secs) They could have chosen not to take bribes from poor people, they could have fought for the poor people, they should have done their job fairly, etc.",
+      "tip": "Give 10 seconds for responses, then discuss in groups."
+    },
+    {
+      "n": 13,
+      "kind": "static",
+      "title": "Behind the Choice — Integrity",
+      "body": [
+        "If you follow these values and actions, what kind of person do you become? A better human being, responsible, of good character, accountable.",
+        "There is a word for this — the values we develop based on the choices we make. Can you make a guess?"
+      ],
+      "post_video_text": [
+        "INTEGRITY",
+        "Our personal integrity is built over many years by thousands and millions of choices we make, like all these everyday choices you read about in your stories/situations."
+      ],
+      "reveal_on_click": true,
+      "tip": "Click through each line; reveal INTEGRITY once guessed."
+    },
+    {
+      "n": 14,
+      "kind": "mc_narration",
+      "title": "Choices We Make",
+      "video": "/sessions/assets/dom_s3_mc_daily_choices.mp4",
+      "transcript": "Now let's talk about some choices we make right here in school. Think about what we've learnt today. Some children are putting blank chits and damaging the Change Champion Box. What happens when we copy our project work from Google or ChatGPT and don't actually do it ourselves? One of your friends was absent and the next day you help them with studies. Some children broke a window panel while playing and admitted it to the teacher. Your everyday choices can make you the real change heroes.",
+      "tip": "Pause after each scenario for reactions."
+    },
+    {
+      "n": 15,
+      "kind": "static",
+      "title": "Creative Expression (Optional) — Every Coin Has Two Sides",
+      "body": [
+        "A large coin image — front and back.",
+        "Every coin has two sides. In life too, every issue has more than one perspective.",
+        "Take a blank sheet and draw a coin with two sides: Side A — something you value (e.g. honesty, friendship, fun). Side B — a challenge or opposite idea (e.g. dishonesty, conflict, boredom). Use colours, symbols, or words."
+      ],
+      "image": "/sessions/assets/s3_coin_two_sides.jpg",
+      "tip": "Optional — only show if time permits."
+    },
+    {
+      "n": 16,
+      "kind": "static",
+      "title": "Creative Expression — Draw the Coin",
+      "body": [
+        "Take a blank sheet and draw a coin with two sides.",
+        "Side A: something you value (e.g. honesty, friendship, fun).",
+        "Side B: a challenge or opposite idea (e.g. dishonesty, conflict, boredom).",
+        "Use colours, symbols, or words."
+      ],
+      "tip": "Hand out blank sheets for the coin drawing."
+    },
+    {
+      "n": 17,
+      "kind": "click_reveal",
+      "title": "Creative Expression — Discussion Questions",
+      "intro": "Discuss one at a time.",
+      "prompts": [
+        "What did you put on each side?",
+        "Why do you think both sides exist?",
+        "What happens if we only look at one side of the coin?",
+        "How can seeing both sides within ourselves help us make fair choices?"
+      ],
+      "tip": "Reveal the discussion questions one at a time."
+    },
+    {
+      "n": 18,
+      "kind": "mc_narration",
+      "title": "Creative Expression — Master Change's Closing Line",
+      "video": "/sessions/assets/dom_s3_mc_coin_closing.mp4",
+      "transcript": "Just like every coin has two sides, you too carry both — the part that wants what's best for you, and the part that cares about others. When you pause to see both, you learn to think before you act. And that's how you make choices that are fair, kind, and good for everyone.",
+      "tip": "Read slowly — this closes the optional Creative Expression block."
+    },
+    {
+      "n": 19,
+      "kind": "static",
+      "title": "Start — Stop — Continue",
+      "body": [
+        "Based on what you learned today:",
+        "What's one new thing you want to start doing in your life?",
+        "What's one thing you want to stop doing?",
+        "What's one thing you want to keep doing or continue doing?"
+      ],
+      "image": "/sessions/assets/s3_start_stop_continue.jpg",
+      "tip": "Give each child a turn to answer one prompt."
+    },
+    {
+      "n": 20,
+      "kind": "mc_narration",
+      "title": "Change Champion Box — Introduction",
+      "video": "/sessions/assets/dom_s3_mc_change_champion_box.mp4",
+      "transcript": "Wow! We have been learning so many new things and doing wonderful activities in our CMCA Club, right? Now, it's time to start collecting all the positive changes happening in our lives! Let me introduce something exciting — the Change Champion Box! What is a Change Champion Box? It's a special box where you can share your change stories. Maybe you helped a friend, showed kindness to an animal, solved a problem at school, or helped someone at home — every good action counts! You can even share stories about reporting a problem in your neighbourhood, like a pothole, a broken streetlight, or any issue that needs attention. If you take a step towards making a positive change, don't forget to add your story to the Change Champion Box. Now, we need two volunteers who can help make this box and bring it to our next class. Don't worry if you don't know how to make it — we will give you simple instructions. Let's get ready to collect lots of amazing change stories and become true Change Champions!",
+      "tip": "Use Annexure 1 to help students build the Change Champion Box."
+    }
+  ]
+}

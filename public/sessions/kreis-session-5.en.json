@@ -1,0 +1,263 @@
+{
+  "id": "kreis-session-5",
+  "_language": "en",
+  "_revision": "2026-07-11-en-from-irfan-kn",
+  "title": "Children's Constitution Club — Session 5",
+  "programme": "KREIS",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "slides": [1]
+    },
+    {
+      "id": "roc_stories",
+      "label": "ROC Stories",
+      "slides": [2, 3, 4]
+    },
+    {
+      "id": "local_govt",
+      "label": "Local Government",
+      "slides": [5, 6, 7, 8, 9]
+    },
+    {
+      "id": "helplines",
+      "label": "Helpline Numbers",
+      "slides": [10, 11, 12, 13, 14, 15, 16]
+    },
+    {
+      "id": "wrap_up",
+      "label": "Wrap-up & Ripple Tasks",
+      "slides": [17, 18, 19]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to the Children's Constitution Club!",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Play welcome music."
+    },
+    {
+      "n": 2,
+      "kind": "group_activity_timer",
+      "title": "ROC Stories — Read",
+      "brief": "Let us start the session by reading some interesting stories! Read the stories in your groups. You have 3 minutes.",
+      "timer_seconds": 180,
+      "reminder_at": 60,
+      "tip": "Distribute Annexure 1 to students (one copy per group)."
+    },
+    {
+      "n": 3,
+      "kind": "static",
+      "title": "ROC Stories — Discussion",
+      "body": [
+        "What did you find common in all these stories? Share with your class!",
+        "Nazia and Maria from Gurur, Mysuru, were concerned that there were not enough buses for children to reach school on time.",
+        "Shameth, Sneha, Nafeesa, Shamita, and Lavanya from Hosur worked to resolve the problem of plastic bags in their neighbourhood.",
+        "Teachers should put these questions to the students: Whose job is it to provide these facilities and needs?",
+        "Why did Gurunath or Nazia, Maria or Arundhati need to bother about all this? What would have happened if everyone had kept quiet and done nothing to solve the problems?"
+      ],
+      "tip": "Each group should share."
+    },
+    {
+      "n": 4,
+      "kind": "static",
+      "title": "ROC Stories — MC Says",
+      "body": [
+        "These stories are not made up — they are based on real incidents that took place in various cities across the country, and all the students in these stories were members of the Children's Constitution Club. Isn't that amazing? Even teenagers can be active citizens!",
+        "When we ask the government for facilities or needs, we are asking for our Rights — meaning we are making the government work for us.",
+        "While we have rights to many things, solving problems is not just the government's job. We must care about our surroundings and take action! That becomes our Responsibility.",
+        "So when we ask for our rights, we are fulfilling our Responsibilities."
+      ],
+      "tip": "MC video needed here (not yet produced)."
+    },
+    {
+      "n": 5,
+      "kind": "click_reveal",
+      "title": "3 Levels of Government",
+      "intro": "These are the 3 levels of government: Central Government → Member of Parliament (MP) | State Government → MLA | Local Government → Councillor/Corporator",
+      "prompts": [
+        "Who is the Prime Minister of India? — Shri Narendra Modi",
+        "Who is the Chief Minister of our state? — Teacher to share current information",
+        "Do you know who your area's MLA or MP is? — Teacher to share!",
+        "Do you know who your area's Corporator or Councillor is? — Teacher to share!"
+      ],
+      "tip": "Teacher's note: The teacher must know the name of the MP/MLA of the school's area and the Councillor of the school's ward. Even though local government is the most important for fixing our daily problems, only a few of us know who our Corporator is and that they represent our voice at the city level!"
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "Active Citizens — Visualization",
+      "body": [
+        "Today we will learn how to become Active Citizens, just like Nazia, Maria, Gurunath and Arundhati.",
+        "Now close your eyes and listen to this audio. Imagine what you hear:",
+        "Imagine you are at home. Think about the taps in your house. Are you getting enough water? Are the lights and fans working — is there electricity?",
+        "Now you are stepping out of the house onto the street. How does the road look? What is the condition of the roads? Are there trees around? Is there garbage or has everything been cleaned?",
+        "Next, you are going to school. Is there a traffic police constable to help cross the road? Is there a zebra crossing? What is the condition inside the school? Are there enough clean toilets?",
+        "Now think about the entire city! Think about the roads you travel on — are there footpaths? How is the traffic and are there potholes on the roads?",
+        "Now open your eyes."
+      ],
+      "tip": "Audio with sound effects needed between each point."
+    },
+    {
+      "n": 7,
+      "kind": "group_activity_timer",
+      "title": "Active Citizens — Group Work",
+      "brief": "Discuss in your groups and write down all the problems you thought of! You have 2 minutes. Hint: What bothers you, your family, and your community the most? What are the common problems that adults in your community talk about?",
+      "timer_seconds": 120,
+      "reminder_at": 60,
+      "tip": "2 minute timer."
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Local Government",
+      "body": [
+        "So who solves our problems? Does the Prime Minister solve this problem? Yes or no?",
+        "Does the Chief Minister solve this problem? Yes or no?",
+        "Then who is responsible for fixing all these problems? Can you guess and tell your teacher?",
+        "Electricity Department | Municipal Corporation or City Corporation | Panchayat | Water Board | Traffic Police",
+        "What are all these institutions collectively called?",
+        "All of these together are called Local Government, and this is the most important part of government in our daily lives!"
+      ],
+      "tip": "Elicit answers from students — electricity dept, municipality, panchayat, water board, traffic police, etc."
+    },
+    {
+      "n": 9,
+      "kind": "static",
+      "title": "Share Your Problems",
+      "body": [
+        "Share your problems with your teacher!",
+        "You may have faced these:",
+        "No footpaths",
+        "Garbage piles",
+        "No street lights",
+        "Construction waste dumped on footpaths",
+        "Waterlogging",
+        "Sewage overflow",
+        "Injured stray puppy or cat",
+        "No clean toilets in school",
+        "And other problems!"
+      ],
+      "tip": "Write the problems students share on the board."
+    },
+    {
+      "n": 10,
+      "kind": "static",
+      "title": "Helpline Numbers",
+      "body": [
+        "The teacher will now distribute a very important sheet to all of you — the Helpline Numbers!",
+        "This is very important because it gives you the POWER to bring about change. Keep it safe at home.",
+        "Paste it on your notice board, wall, or fridge at home where everyone can see it."
+      ],
+      "tip": "Distribute helpline sheets."
+    },
+    {
+      "n": 11,
+      "kind": "static",
+      "title": "Helpline Numbers — Quiz",
+      "body": [
+        "It's quiz time! You will hear questions one by one and give your answers to your teacher. The teacher will tell you whether your answer is correct or not! Are you ready?",
+        "What is the women's helpline number?",
+        "Which organization handles water supply?",
+        "What number do you call for an ambulance?",
+        "If you find an injured stray dog, who do you call?",
+        "Who do we call during a power outage?",
+        "What is 1098 used for?"
+      ],
+      "tip": "Use the helpline sheet to give correct answers."
+    },
+    {
+      "n": 12,
+      "kind": "static",
+      "title": "Next Activity — Choose One",
+      "body": [
+        "Next activity — choose the one that suits you best:",
+        "1. Make a helpline call in class",
+        "2. Listen to a pre-recorded helpline call",
+        "3. Write a complaint letter",
+        "4. Write complaint postcards / mass letters"
+      ],
+      "tip": "Pick one of 4 options. The next slides cover the chosen activity."
+    },
+    {
+      "n": 13,
+      "kind": "static",
+      "title": "Make a Helpline Call in Class!",
+      "body": [
+        "Your teacher has come with a problem, and all of you will solve it together by calling the helpline number! Are you ready?",
+        "Can you help the teacher identify the correct helpline number to call?",
+        "The teacher will now share the problem with you! All the best!",
+        "If your call doesn't connect today, don't be disappointed! Try again in the next class!"
+      ],
+      "tip": "Teacher should call on speakerphone. If possible, a student can register the complaint. If the helpline doesn't respond, wait a few minutes and try again. If put on hold, cut the call and try again after some minutes."
+    },
+    {
+      "n": 14,
+      "kind": "static",
+      "title": "Write a Complaint Letter",
+      "body": [
+        "Teacher shares a problem: The teacher shares a problem they have chosen with the club.",
+        "Teacher distributes a sample letter — one copy per group.",
+        "Students, discuss the sample letter in your groups — What is it about? What is the problem? How specific are the location details? (Street, road, layout, etc.) Is any solution suggested?",
+        "Write a real letter together: With students' help, the teacher writes a letter to any one institution regarding the problem. The teacher emails this letter to the relevant institution.",
+        "Students, take note! You will be doing the same thing at home on your own!"
+      ],
+      "tip": "Prepare in advance: You may need to research and identify addresses of some institutions near the school to use as examples in class."
+    },
+    {
+      "n": 15,
+      "kind": "group_activity_timer",
+      "title": "Postcards / Mass Letters",
+      "brief": "The teacher shares a problem from around the school. Teacher distributes sample letters/postcards to all students. Now all of you write letters on your postcards or write some slogans! Use catchy phrases to get the attention of the official/relevant institution! You have 10 minutes!",
+      "timer_seconds": 600,
+      "reminder_at": 180,
+      "tip": "Bring enough postcards or letter templates so every student in the club gets a copy."
+    },
+    {
+      "n": 16,
+      "kind": "static",
+      "title": "Collect Letters",
+      "body": [
+        "The teacher collects all letters/postcards to send to the relevant institution. The teacher can take students to meet the official or invite the official to school! All the best!"
+      ],
+      "tip": "For government schools, you can also identify problems within the school itself. Since the identified problem affects the entire school, it would be good if an official comes and speaks to all the students."
+    },
+    {
+      "n": 17,
+      "kind": "static",
+      "title": "Ripple Task 1: Display Helpline Sheets",
+      "body": [
+        "Paste the helpline sheets in your classroom and at home where everyone can easily see the numbers, so they can be used when needed. Where will you paste it?",
+        "Why do you think we want helpline sheets to be displayed for everyone?",
+        "Also, quiz your friends and parents about the helpline numbers and find out which numbers they know."
+      ],
+      "tip": "Highlight and emphasize this question."
+    },
+    {
+      "n": 18,
+      "kind": "static",
+      "title": "Ripple Task 2: Call from Home!",
+      "body": [
+        "When you go home, use the helpline sheet to call and report your complaint! But do this only after contacting your parents and with their help and consent!",
+        "Remember that keeping parents informed about everything is also a responsibility.",
+        "Once you have filed your complaint, don't forget to fill out the Change Champion report! Your teacher will now distribute copies of this to all of you."
+      ],
+      "tip": "Distribute copies of the Change Champion report."
+    },
+    {
+      "n": 19,
+      "kind": "static",
+      "title": "Wrap-up",
+      "body": [
+        "Remember that nobody will be checking what you are doing or how you do the activity! So let us do all activities honestly and be true to ourselves!",
+        "All the best, see you next time!"
+      ],
+      "tip": "MC video needed here (not yet produced)."
+    }
+  ]
+}

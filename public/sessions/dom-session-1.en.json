@@ -1,0 +1,443 @@
+{
+  "id": "dom-session-1",
+  "_language": "en",
+  "_revision": "2026-07-09-ai-draft-pending-cmca-review",
+  "title": "Welcome to your Children's Civic Club — Session 1",
+  "programme": "DOM",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "introduce",
+      "label": "Introduce",
+      "slides": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "calmers",
+      "label": "Calmers",
+      "slides": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "groups",
+      "label": "Form Groups",
+      "slides": [
+        8
+      ]
+    },
+    {
+      "id": "group_work",
+      "label": "Group Work",
+      "slides": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": "cc1",
+      "label": "Constitution Connect 1",
+      "slides": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": "rules",
+      "label": "Co-creating Rules",
+      "slides": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "id": "inspires",
+      "label": "Who Inspires Us?",
+      "slides": [
+        22,
+        23
+      ]
+    },
+    {
+      "id": "cc2",
+      "label": "Constitution Connect 2",
+      "slides": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "id": "ripples",
+      "label": "Ripples of Change",
+      "slides": [
+        27,
+        28
+      ]
+    },
+    {
+      "id": "preamble",
+      "label": "Preamble",
+      "slides": [
+        29
+      ]
+    },
+    {
+      "id": "ending",
+      "label": "Thank You",
+      "slides": [
+        30
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to your Children's Civic Club!",
+      "subtitle": "DOM × CMCA",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Press Next once everyone is seated."
+    },
+    {
+      "n": 2,
+      "kind": "static",
+      "title": "Teacher Introduction",
+      "body": [
+        "My name is ____",
+        "I am your CMCA teacher",
+        "Something I like / don't like:"
+      ],
+      "tip": "Introduce yourself — share one thing you like and one you don't."
+    },
+    {
+      "n": 3,
+      "kind": "mc_narration",
+      "title": "Master Change Introduction",
+      "video": "/sessions/assets/mc_intro.kn.mp4",
+      "transcript": "Hello junior citizens, Namaskara! I am Master Change. I am here to help teacher and you. Welcome to your Children's Civic Club! This year, I too am a member of your Club as a CMCA Change Champion. CMCA or the Children's Movement for Civic Awareness inspires and empowers young people like you and me to be concerned, thinking and active citizens. I am here to be with you and teacher, as a guide and support. Can you all clap for CMCA and for me? Thank you for your warm welcome! Let's start our journey as active junior citizens and members of our Civic Club also known as CC Club! Now, let's hear what your teacher has to share with you.",
+      "tip": "Play the video in full; prompt kids to clap when Master Change asks."
+    },
+    {
+      "n": 4,
+      "kind": "static",
+      "title": "1-2 Eyes on Me — Getting Ready",
+      "body": [
+        "Sometimes we get so excited that we can't stop talking or moving around… just like in a game!",
+        "Just like in a game, our Club has a whistle too!"
+      ],
+      "tip": "Let the whistle voice-over play, then move to the next slide."
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "Let's Calm Down… 1-2 Eyes on Me!",
+      "body": [
+        "Teacher says: \"1, 2, Eyes on Me!\"",
+        "Children whisper back: \"Eyes on you.\""
+      ],
+      "audio": "/sessions/assets/vo_eyes_on_you.kn.mp3",
+      "tip": "Play the audio; reuse this energiser whenever the class needs to settle."
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "1-2 Eyes on Me!",
+      "body": [
+        "Teacher says: \"1-2, Eyes on Me!\"",
+        "Voice changes to a whisper: TOGETHER, in a loud whisper say, \"eyes on you.\" Remember — no screaming!"
+      ],
+      "tip": "Let the lips animation and whisper audio play through once."
+    },
+    {
+      "n": 7,
+      "kind": "static",
+      "title": "Let's Calm Down Again! — Flat Tyre",
+      "body": [
+        "Voice-over demos the sound: shhhh",
+        "Teacher says \"Flat Tyre!\""
+      ],
+      "audio": "/sessions/assets/vo_flat_tyre_shhh.mp3",
+      "image": "/sessions/assets/flat_tyre.jpg",
+      "image_layout": "side",
+      "tip": "Play until groups are calm; reuse anytime the class gets noisy."
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Forming Groups",
+      "body": [
+        "In our Club, many activities are done in groups.",
+        "Everyone's voice matters."
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/group_work_1.jpg",
+          "alt": "children working in a group"
+        },
+        {
+          "src": "/sessions/assets/group_work_2.jpg",
+          "alt": "children working in a group"
+        },
+        {
+          "src": "/sessions/assets/group_work_3.jpg",
+          "alt": "children working in a group"
+        }
+      ],
+      "image_layout": "side",
+      "callout": "Form mixed groups of girls and boys. Working together in school prepares us to work together in workplaces and communities.",
+      "tip": "Form mixed-gender groups using the Counting Method."
+    },
+    {
+      "n": 9,
+      "kind": "group_activity_timer",
+      "title": "Let's Get Creative!",
+      "brief": "Name your group and design your group logo (some example logos are shown — KSRTC).",
+      "images": [
+        {
+          "src": "/sessions/assets/ksrtc_logo.webp",
+          "alt": "KSRTC",
+          "caption": "KSRTC"
+        }
+      ],
+      "timer_seconds": 480,
+      "reminder_at": 120,
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "tip": "Start the 8-minute timer; a chime plays with 2 minutes left."
+    },
+    {
+      "n": 10,
+      "kind": "video",
+      "title": "Let's See Who Wins!",
+      "video": "/sessions/assets/mc_questions_combined.kn.mp4",
+      "pause_at": [
+        8,
+        16,
+        24,
+        32,
+        40,
+        48
+      ],
+      "pause_duration": 8,
+      "transcript": "Master Change: All your logos are looking good! So what usually happens at the end of a competition or game? Yes, we need a WINNER — we will decide the winner of a group a little differently. I will ask you a few questions and you have to think about the answer. (1) Did everyone in the group SHARE ideas about the group name or logo? (2) Was it easy to agree as a group? How did you decide whose ideas to choose? (3) Did everyone in the group get a chance to SPEAK about what they felt should be the group name or logo? (4) Did everyone get a chance to DRAW some part of the logo? (5) Did everyone feel that their ideas were counted, and that they were HEARD? If you had more than 2 responses as 'YES', you have done well! You can all give each other high-fives! Let's continue this team spirit throughout the year. See you later!",
+      "tip": "Tell kids to raise hands fast — 8 seconds per question."
+    },
+    {
+      "n": 11,
+      "kind": "reflect_share",
+      "title": "Reflect & Share",
+      "prompt": "What have you learnt from this group activity of naming your group and creating your logo?",
+      "image": "/sessions/assets/smartboard_icon.svg",
+      "callout": "✍ Smartboard — write children's answers on the board",
+      "tip": "Call on 3-4 children from different groups for their answers."
+    },
+    {
+      "n": 12,
+      "kind": "mc_narration",
+      "title": "Master Change Wraps Up the Activity",
+      "video": "/sessions/assets/mc_wrap_group_activity.kn.mp4",
+      "transcript": "You've now practiced something very important — it's all on the board! When you listen, share and work together, you are Children's Civic Club members throughout your life. Make sure that from now on, everyone participates in group activities. For all Club sessions, sit together in your groups right from the start! Now it's time for the Constitution Connect Quiz Question! Over to you, teacher!",
+      "tip": "Play the video in full — it leads into the Constitution Connect quiz."
+    },
+    {
+      "n": 13,
+      "kind": "mcq",
+      "title": "Constitution Connect",
+      "scenario": "You are working with 8 classmates on a school team project. The words 'We the People' from the Preamble highlight the importance of working together. How does this apply to your project? Can you guess the correct option?",
+      "options": [
+        "Try to convince everyone that only your decisions are the best.",
+        "Agree to others' decisions just to keep them happy, without understanding them.",
+        "Think by keeping in mind the interests of all members.",
+        "Argue with each other and work separately."
+      ],
+      "correct_index": 2,
+      "tip": "Read the scenario aloud, let kids guess, then reveal answer (c)."
+    },
+    {
+      "n": 14,
+      "kind": "mc_narration",
+      "title": "Constitution Connect — Master Change Explains",
+      "video": "/sessions/assets/mc_cc1_debrief.kn.mp4",
+      "transcript": "Hey, that was a great try! The words 'We the People' in the Preamble remind us that the government is formed by the people and for the people. In your team project, this means your decisions should take into account the interests of all team members. Just as the government must think for the well-being of all citizens, you too must make decisions for the good of all members of your team. Going forward, Constitution Connect questions will be included in every session, so that you can link learning with constitutional values in your everyday life. Let's move on!",
+      "tip": "Read slowly — this is the reflection moment, don't rush."
+    },
+    {
+      "n": 15,
+      "kind": "click_reveal",
+      "title": "Co-creating Rules — Reflect & Share",
+      "intro": "Teacher will listen with you as you answer these 3 questions!",
+      "prompts": [
+        "Imagine that you are going to play a super exciting new game. Before you play the game, what do you need to know?",
+        "What do you need to understand to play the game correctly?",
+        "What happens in a game, if all the players do what they want, and don't listen to the umpire, referee, or judge?"
+      ],
+      "tip": "Click to reveal one question at a time; take 1-2 answers each."
+    },
+    {
+      "n": 16,
+      "kind": "video",
+      "title": "Co-creating Rules — What is Master Change Doing?",
+      "video": "/sessions/assets/mc_raising_hand_loop.mp4",
+      "loop": false,
+      "intro_text": "Time to create rules for the Club. Let's look at an example. What is Master Change doing here?",
+      "post_video_text": [
+        "He is raising his hand to speak and waiting his turn! As children, that's your rule.",
+        "As a teacher, my rule is to try to give everyone a chance to speak."
+      ],
+      "reveal_on_click": true,
+      "tip": "Let the loop play, then click Reveal to show the answer."
+    },
+    {
+      "n": 17,
+      "kind": "group_activity_timer",
+      "title": "Write Your Rules",
+      "brief": "In your groups, using slips or post-its, write 2 rules for your group to follow and 1 rule for your teacher to follow.",
+      "bullets_large": true,
+      "timer_seconds": 180,
+      "tip": "Hand out slips, then start the 3-minute timer."
+    },
+    {
+      "n": 18,
+      "kind": "static",
+      "title": "Sharing Rules with Each Other",
+      "body": [
+        "Each group will share one rule — and not repeat rules others have shared!"
+      ],
+      "tip": "Collect one rule per group on the board — no repeats."
+    },
+    {
+      "n": 19,
+      "kind": "reflect_share",
+      "title": "Reflect & Share",
+      "prompt": "What do we do if someone is not following the rules? Do we stay silent, or remind them respectfully?",
+      "tip": "Take 2-3 answers, encouraging different viewpoints."
+    },
+    {
+      "n": 20,
+      "kind": "static",
+      "title": "Stick Your Rules on This Flash Card",
+      "image": "/sessions/assets/rule_flashcard.png",
+      "tip": "Show this card — groups will stick their rule slips on it."
+    },
+    {
+      "n": 21,
+      "kind": "static",
+      "title": "One Rule Per Group",
+      "body": [
+        "One member from each group sticks their rule onto the flashcard."
+      ],
+      "callout": "Teacher's rule: Be respectful to everyone",
+      "tip": "Click to reveal the teacher's rule after kids share theirs."
+    },
+    {
+      "n": 22,
+      "kind": "static",
+      "title": "Who Inspires Us?",
+      "body": [
+        "Just as our Club has rules, our nation has a Book which has rules — and much, much more!",
+        "That's a clue — who inspires us as citizens of India?"
+      ],
+      "tip": "Let kids guess, then point them toward the Constitution."
+    },
+    {
+      "n": 23,
+      "kind": "mc_narration",
+      "title": "Dr. B. R. Ambedkar and the Constituent Assembly",
+      "video": "/sessions/assets/mc_who_inspires.kn.mp4",
+      "transcript": "We are inspired by our Constitution's vision for India — it guides and motivates us. As a mark of respect for the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session by reading our Preamble, as we begin the learning journey of our Children's Civic Club.",
+      "tip": "Play the video; pause for guesses before it names Ambedkar."
+    },
+    {
+      "n": 24,
+      "kind": "mcq",
+      "title": "Constitution Connect",
+      "scenario": "Why do we have a Children's Civic Club?",
+      "options": [
+        "To play games only",
+        "To learn about rights, responsibilities, and democracy",
+        "To avoid school work",
+        "To watch movies"
+      ],
+      "correct_index": 1,
+      "tip": "Read aloud, let kids guess, then click to reveal the answer."
+    },
+    {
+      "n": 25,
+      "kind": "mcq",
+      "title": "Constitution Connect",
+      "scenario": "What is a campaign in a Children's Civic Club?",
+      "options": [
+        "A way to spread awareness and bring change on an issue",
+        "A competition to win prizes",
+        "A holiday activity",
+        "A classroom test"
+      ],
+      "correct_index": 0,
+      "tip": "Read aloud, let kids guess, then click to reveal the answer."
+    },
+    {
+      "n": 26,
+      "kind": "mcq",
+      "title": "Constitution Connect",
+      "scenario": "Which of these is an important value in a Children's Civic Club?",
+      "options": [
+        "Ignoring others' ideas",
+        "Respecting everyone's voice",
+        "Always winning arguments",
+        "Working alone"
+      ],
+      "correct_index": 1,
+      "tip": "Read aloud, let kids guess, then click to reveal the answer."
+    },
+    {
+      "n": 27,
+      "kind": "static",
+      "title": "Ripples of Change",
+      "body": [
+        "Now you will learn about Asfiya — a young citizen whose small actions created ripples of change in her school, her community, and beyond."
+      ],
+      "tip": "A small effort can ripple into big change — Asfiya's story is next."
+    },
+    {
+      "n": 28,
+      "kind": "video",
+      "title": "Asfiya's Story",
+      "video": "/sessions/assets/asfiya_story.mp4",
+      "duration_seconds": 180,
+      "transcript": "Asfiya is a 21-year-old student and a CMCA alumna from Bengaluru. She is the eldest of four siblings and was born to Indian parents in Saudi Arabia, where her father used to work as an engineer. She recently got in touch with us and shared her story of change. Here are some snippets of our conversation with her — we dare you to leave uninspired! \"Since I was little, I was always inclined towards helping people, but I didn't know what being an active citizen meant. Then, this great opportunity was given to me, becoming a Children's Civic Club member. That year, some classmates and I convinced the school to switch from disposable paper cups to steel tumblers.\" Asfiya's drive to make a difference could not be confined within the walls of her classroom. She also sparked change in her community by getting civic issues fixed, rescuing injured animals, and encouraging her family and friends to follow suit. But instead of receiving the praise she deserved, Asfiya had to face criticism from adults around her: \"People would often bring me down and tell me to focus on my studies instead. CMCA strengthened my beliefs. It gave me the confidence to hold my head up and ignore those who wanted to discourage me from doing good in society. CMCA taught me that while academics are important, being humane is what matters the most.\" When she's not studying, Asfiya is tending her terrace garden, feeding community animals, organising clothes and food donations, or leading tree plantation drives with fellow students. Her plans for the future? She wants to study to become a doctor, but also wishes to work or volunteer with the United Nations! CMCA believes that every member of the Civic Club is like the centre of a ripple — that's you! You have the power to influence those around you. Every message you receive here, through the Civic Club, reaches even more people, just like ripples spreading out. It sparks change in others. In CMCA, we call these stories 'Ripples of Change.' They lead by example to influence friends and schoolmates, families, and neighbours and communities.",
+      "tip": "Play without interruption; ask for reactions after."
+    },
+    {
+      "n": 29,
+      "kind": "preamble_pair",
+      "title": "Let's Recite the Preamble of the Indian Constitution Together",
+      "tip": "Stand up and recite together, slowly and clearly.",
+      "preamble_en": "/sessions/assets/preamble_en.png",
+      "preamble_kn": "/sessions/assets/preamble_kn.png"
+    },
+    {
+      "n": 30,
+      "kind": "title",
+      "title": "Children's Civic Club",
+      "thank_you": true,
+      "closing_line": "Today we had a great start to our Children's Civic Club journey. See you again in the next session.",
+      "centered": true,
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Thank the children — next session is naming the club."
+    }
+  ]
+}

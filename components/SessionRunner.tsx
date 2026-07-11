@@ -57,6 +57,8 @@ interface Slide {
   post_video_text?: string;       // text revealed after the video ends (slide 5/15)
   reveal_on_click?: boolean;      // require teacher click before showing post_video_text
   transcript?: string;
+  kn_script?: string[];
+  kn_questions?: string[];
   brief?: string;
   timer_seconds?: number;
   reminder_at?: number;
@@ -225,7 +227,11 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
       ro.disconnect();
       window.removeEventListener("resize", recompute);
     };
-  }, [idx, activeLang]);
+    // navOpen is included so fitScale is freshly recomputed the moment the
+    // nav rail opens/closes — the canvas width changes synchronously with
+    // that toggle (verifying DOM build: video/mc_narration slides looked
+    // misaligned right after closing the nav).
+  }, [idx, activeLang, navOpen]);
 
   const slide = session.slides[idx];
 
@@ -341,7 +347,7 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
           <nav className="sr-nav">
             <div className="sr-nav-header">
               <div className="sr-nav-brand">{session.programme}</div>
-              <div className="sr-nav-sub">CC Club · Session 1</div>
+              <div className="sr-nav-sub">{session.title}</div>
             </div>
             <ul className="sr-nav-list">
               {session.sections.map((sec) => {
@@ -391,7 +397,7 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
           )}
 
           <div className="sr-slide-body">
-            <SlideBody slide={slide} onEvent={onEvent} onAdvance={next} lang={activeLang} />
+            <SlideBody slide={slide} onEvent={onEvent} onAdvance={next} lang={activeLang} programme={session.programme} />
           </div>
           </div>
 
@@ -424,11 +430,11 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
         </main>
       </div>
 
-      {/* Side controls — the teacher stands on the LEFT of the screen at
-          the smartboard, so Prev + Next sit as a stacked pair on the left
-          edge, always visible. Bottom control bar removed (Madhav 7 Jul
-          school pilot: 'back and next button can appear at the same
-          side where the teacher stands').
+      {/* Side controls — moved to the bottom-left corner (Madhav, verifying
+          DOM build: the old left-edge, vertically-centered stack sat on top
+          of the hamburger nav rail whenever it was open). Bottom-left is
+          still on the teacher's side of the screen, just out of the nav
+          rail's way. Logo moved to bottom-right to make room (see below).
 
           Fullscreen shortcut hint is hidden when there's no keyboard
           (touch smartboard) — 'No fullscreen option if no keyboard'. */}
@@ -456,7 +462,8 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
         </button>
       </div>
 
-      {/* CMCA logo always present, bottom-left. AKG/Savitha 25 Jun: brand
+      {/* CMCA logo, bottom-right corner (moved from bottom-left to make
+          room for the Prev/Next controls). Always present for brand
           continuity across every slide. */}
       <img
         className="sr-brand-corner"
@@ -476,21 +483,23 @@ function SlideBody({
   onEvent,
   onAdvance,
   lang,
+  programme,
 }: {
   slide: Slide;
   onEvent?: (e: SessionEvent) => void;
   onAdvance: () => void;
   lang: Lang;
+  programme: string;
 }) {
   switch (slide.kind) {
-    case "title": return <TitleSlide slide={slide} />;
+    case "title": return <TitleSlide slide={slide} programme={programme} />;
     case "static": return <StaticSlide slide={slide} />;
-    case "mc_narration": return <McSlide slide={slide} />;
+    case "mc_narration": return <McSlide slide={slide} lang={lang} />;
     case "group_activity_timer": return <TimerSlide slide={slide} onEvent={onEvent} />;
     case "click_reveal": return <RevealSlide slide={slide} onEvent={onEvent} />;
     case "mcq": return <McqSlide slide={slide} onEvent={onEvent} lang={lang} />;
     case "reflect_share": return <ReflectSlide slide={slide} />;
-    case "video": return <VideoSlide slide={slide} onEnded={onAdvance} />;
+    case "video": return <VideoSlide slide={slide} onEnded={onAdvance} lang={lang} />;
     case "video_question_series": return <VideoQuestionSeriesSlide slide={slide} onEvent={onEvent} />;
     case "preamble": return <PreambleSlide slide={slide} />;
     case "preamble_pair": return <PreamblePairSlide slide={slide} />;
@@ -499,9 +508,9 @@ function SlideBody({
 }
 
 // ─────────────────────────── slide kinds ───────────────────────────────────
-function TitleSlide({ slide }: { slide: Slide }) {
+function TitleSlide({ slide, programme }: { slide: Slide; programme: string }) {
   // Branded layout mirrors Sonu's "Welcome to the Children's Constitution
-  // Club!" pptx template — wavy white background, KREIS round seal centred
+  // Club!" pptx template — wavy white background, programme seal centred
   // at top, CMCA "spark change" logo top-right, dual-language title centred
   // below. Used for slide 1 (welcome) and the new closing slide (thank you).
   //
@@ -511,11 +520,17 @@ function TitleSlide({ slide }: { slide: Slide }) {
   //   slide.thank_you — when true, "Thank You" appears under the title pair
   //                     (matches the pptx slide 4 layout)
   const isThanks = !!slide.thank_you;
+  // The round seal image is KREIS-branded artwork — only KREIS has one.
+  // Verifying DOM build: this was hardcoded, so DOM title slides were
+  // incorrectly showing the KREIS seal. DOM has no seal asset yet (see
+  // dom_sessions_assets_for_srivathsa.md open questions) — omit it rather
+  // than show the wrong programme's branding.
+  const showSeal = programme === "KREIS";
   return (
     <div className="sr-branded-title">
       <div className="sr-branded-bg" aria-hidden />
       <div className="sr-branded-logos">
-        <img className="sr-kreis-seal" src="/sessions/assets/kreis_seal.png" alt="KREIS" />
+        {showSeal && <img className="sr-kreis-seal" src="/sessions/assets/kreis_seal.png" alt="KREIS" />}
         <img className="sr-cmca-mark" src="/sessions/assets/cmca_logo.png" alt="CMCA" />
       </div>
       <div className="sr-branded-titles">
@@ -585,29 +600,33 @@ function StaticSlide({ slide }: { slide: Slide }) {
   );
 }
 
-function McSlide({ slide }: { slide: Slide }) {
-  // Video full-width by default. Transcript hidden; click toggle → reveals
-  // a scrollable panel BELOW the video (not beside).
+function McSlide({ slide, lang }: { slide: Slide; lang: Lang }) {
   const [transcriptOpen, setTranscriptOpen] = useState(false);
   useEffect(() => { setTranscriptOpen(false); }, [slide.n]);
+  const [videoFailed, setVideoFailed] = useState(false);
+  useEffect(() => { setVideoFailed(false); }, [slide.video]);
+  const showKnTranscript = lang === "kn" && slide.kn_script && slide.kn_script.length > 0;
+  const transcriptText = showKnTranscript ? slide.kn_script!.join("\n\n") : slide.transcript;
+  const transcriptLabel = showKnTranscript ? "ಪಠ್ಯ (ಕನ್ನಡ)" : "Transcript (English)";
   return (
     <div>
       <div className="sr-mc-grid is-video-wide">
         <div className="sr-video-frame">
-          {slide.video ? (
+          {slide.video && !videoFailed ? (
             <video
               key={slide.video}
               controls
               playsInline
               src={slide.video}
               poster="/sessions/assets/mc_poster.png"
+              onError={() => setVideoFailed(true)}
             />
           ) : (
-            <div className="sr-video-placeholder">▶ MC video<br /><small>{slide.video || "(no video attached yet)"}</small></div>
+            <div className="sr-video-placeholder">▶ MC video not yet produced<br /><small>{slide.video || "(no video attached yet)"}</small></div>
           )}
         </div>
       </div>
-      {slide.transcript && (
+      {transcriptText && (
         <>
           <button
             type="button"
@@ -615,12 +634,12 @@ function McSlide({ slide }: { slide: Slide }) {
             onClick={() => setTranscriptOpen((v) => !v)}
             aria-expanded={transcriptOpen}
           >
-            {transcriptOpen ? "Hide transcript" : "📜 Show transcript"}
+            {transcriptOpen ? (showKnTranscript ? "ಪಠ್ಯ ಮರೆಮಾಡಿ" : "Hide transcript") : (showKnTranscript ? "📜 ಪಠ್ಯ ತೋರಿಸಿ" : "📜 Show transcript")}
           </button>
           {transcriptOpen && (
             <aside className="sr-transcript sr-transcript-below">
-              <div className="sr-transcript-label">Transcript (English)</div>
-              <p>{slide.transcript}</p>
+              <div className="sr-transcript-label">{transcriptLabel}</div>
+              <p style={{ whiteSpace: "pre-line" }}>{transcriptText}</p>
             </aside>
           )}
         </>
@@ -883,7 +902,7 @@ function ReflectSlide({ slide }: { slide: Slide }) {
   );
 }
 
-function VideoSlide({ slide, onEnded }: { slide: Slide; onEnded: () => void }) {
+function VideoSlide({ slide, onEnded, lang }: { slide: Slide; onEnded: () => void; lang: Lang }) {
   // `post_video_text` shows after the clip ends. If `reveal_on_click` is true,
   // we hold the text hidden behind a "Reveal" button (slide 15 "MC raising hand").
   // For looped clips (loop=true) we never auto-advance — the teacher clicks Next.
@@ -908,15 +927,13 @@ function VideoSlide({ slide, onEnded }: { slide: Slide; onEnded: () => void }) {
       : ended
   );
 
-  // English transcript next to the video (per Sonu's directive:
-  // "transcripts can be in English to support hearing impaired").
-  const hasTranscript = !!slide.transcript;
+  const showKnTranscript = lang === "kn" && slide.kn_script && slide.kn_script.length > 0;
+  const transcriptText = showKnTranscript ? slide.kn_script!.join("\n\n") : slide.transcript;
+  const transcriptLabel = showKnTranscript ? "ಪಠ್ಯ (ಕನ್ನಡ)" : "Transcript (English)";
+  const hasTranscript = !!transcriptText;
 
   return (
     <div className={"sr-video-large-wrap " + (hasTranscript ? "sr-video-with-transcript" : "")}>
-      {/* Optional instruction lines rendered ABOVE the video — used for
-          calmers ("Teacher says… / Children whisper back…") so the rules of
-          the classroom convention are visible on the projector. */}
       {slide.body && slide.body.length > 0 && (
         <div className="sr-video-instructions">
           {slide.body.map((line, i) => (
@@ -950,12 +967,12 @@ function VideoSlide({ slide, onEnded }: { slide: Slide; onEnded: () => void }) {
             onClick={() => setTranscriptOpen((v) => !v)}
             aria-expanded={transcriptOpen}
           >
-            {transcriptOpen ? "Hide transcript" : "📜 Show transcript"}
+            {transcriptOpen ? (showKnTranscript ? "ಪಠ್ಯ ಮರೆಮಾಡಿ" : "Hide transcript") : (showKnTranscript ? "📜 ಪಠ್ಯ ತೋರಿಸಿ" : "📜 Show transcript")}
           </button>
           {transcriptOpen && (
             <aside className="sr-transcript sr-transcript-below">
-              <div className="sr-transcript-label">Transcript (English)</div>
-              <p>{slide.transcript}</p>
+              <div className="sr-transcript-label">{transcriptLabel}</div>
+              <p style={{ whiteSpace: "pre-line" }}>{transcriptText}</p>
             </aside>
           )}
         </>
@@ -1119,11 +1136,15 @@ function VideoWithPauses({
   const ref = useRef<HTMLVideoElement | null>(null);
   const consumed = useRef<Set<number>>(new Set());
   const [paused, setPaused] = useState(false);
+  // Same "not produced yet" gap as McSlide — swap the broken native player
+  // for an honest placeholder when the file 404s.
+  const [failed, setFailed] = useState(false);
 
   useEffect(() => {
     // reset on src change
     consumed.current = new Set();
     setPaused(false);
+    setFailed(false);
   }, [src]);
 
   useEffect(() => {
@@ -1180,6 +1201,14 @@ function VideoWithPauses({
     setPaused(false);
   };
 
+  if (failed) {
+    return (
+      <div className="sr-vwp">
+        <div className="sr-video-placeholder">▶ Video not yet produced<br /><small>{src}</small></div>
+      </div>
+    );
+  }
+
   return (
     <div className="sr-vwp">
       <video
@@ -1190,6 +1219,7 @@ function VideoWithPauses({
         src={src}
         onTimeUpdate={onTimeUpdate}
         onEnded={onEnded}
+        onError={() => setFailed(true)}
       />
       {paused && (
         <>
@@ -1411,10 +1441,7 @@ const styles = `
   .sr-nav-footer { font-size: 10px; opacity: 0.6; text-align: center; padding-top: 12px; }
 
   .sr-canvas {
-    /* Extra bottom padding (110px) reserves space for: fixed brand-corner
-       logo (bottom 14px + ~56px tall) + hover-reveal control bar trigger
-       (28px) + margin. Prevents content from overlapping either. */
-    flex: 1; padding: 28px 40px 110px; overflow: hidden; position: relative;
+    flex: 1; padding: 20px 32px 80px; overflow: hidden; position: relative;
     background: linear-gradient(rgba(255,251,242,0.35), rgba(255,251,242,0.45));
     scroll-behavior: smooth;
   }
@@ -1513,9 +1540,9 @@ const styles = `
      covered by the top bar). Top-align keeps the title anchored below the
      topbar regardless of body length. Short slides get breathing room as
      bottom whitespace instead of dead space above. */
-  .sr-canvas.is-projector { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding-top: 40px; }
+  .sr-canvas.is-projector { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding-top: 24px; }
   .sr-canvas.is-projector .sr-section-crumb { align-self: center; }
-  .sr-canvas.is-projector .sr-title { font-size: 48px; text-align: center; margin: 8px 0 14px; }
+  .sr-canvas.is-projector .sr-title { font-size: 40px; text-align: center; margin: 6px 0 10px; }
   .sr-canvas.is-projector .sr-accent { margin: 0 auto 24px; }
   .sr-canvas.is-projector .sr-slide-body { max-width: 1100px; font-size: 22px; line-height: 1.5; }
   .sr-canvas.is-projector .sr-line { font-size: 24px; margin: 10px 0; line-height: 1.4; }
@@ -1525,7 +1552,7 @@ const styles = `
   /* Section crumb + title + accent — centered horizontally on every slide
      so the layout reads as a presentation, not a left-aligned doc. */
   .sr-section-crumb { color: ${SAFFRON}; font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; text-align: center; }
-  .sr-title { font-size: 44px; color: ${NAVY}; margin: 4px auto 12px; line-height: 1.2; text-align: center; max-width: 1100px; font-weight: 700; }
+  .sr-title { font-size: 36px; color: ${NAVY}; margin: 4px auto 10px; line-height: 1.2; text-align: center; max-width: 1100px; font-weight: 700; }
   .sr-accent { width: 56px; height: 5px; background: ${SAFFRON}; border-radius: 3px; margin: 0 auto 24px; }
   /* Slide body — centered horizontally regardless of nav-rail state. */
   .sr-slide-body { font-size: 18px; line-height: 1.5; max-width: 1100px; margin: 0 auto; width: 100%; }
@@ -1965,16 +1992,16 @@ const styles = `
   /* Bottom controls — AKG/Savitha 25 Jun: hidden by default, slide up on
      hover of the bottom edge OR of the bar itself. Auto-hides on leave.
      Translucent + blur for a modern UI feel. */
-  /* Side-mounted Prev/Next — anchored to the left edge for touch reach
-     by the teacher standing at the smartboard. Vertical stack: Prev on
-     top, slide counter in the middle, Next as the primary action at the
-     bottom. Prev/Next always visible; large tap targets for touch UX. */
+  /* Prev/Next — anchored to the bottom-left corner (moved off the
+     vertically-centered left edge, which sat on top of the hamburger nav
+     rail whenever it was open). Horizontal row: Prev, slide counter,
+     Next as the primary action. Always visible; large tap targets for
+     touch UX. */
   .sr-side-nav {
     position: fixed;
-    left: 12px; top: 50%;
-    transform: translateY(-50%);
-    display: flex; flex-direction: column; gap: 10px;
-    align-items: stretch;
+    left: 16px; bottom: 14px;
+    display: flex; flex-direction: row; gap: 10px;
+    align-items: center;
     z-index: 15;
     pointer-events: none;
   }
@@ -2027,11 +2054,12 @@ const styles = `
     .sr-side-count { font-size: 15px; padding: 8px 14px; }
     .sr-side-nav { left: 24px; gap: 14px; }
   }
-  /* CMCA brand corner — fixed bottom-left, present on every slide. */
+  /* CMCA brand corner — fixed bottom-right (moved off bottom-left to make
+     room for Prev/Next), present on every slide. */
   .sr-brand-corner {
     position: fixed;
     bottom: 14px;
-    left: 18px;
+    right: 18px;
     width: 56px;
     height: auto;
     z-index: 9;
@@ -2125,11 +2153,11 @@ const styles = `
     max-width: 1000px;
   }
   .sr-static-image-grid .sr-image-card {
-    flex: 0 1 180px;
-    max-width: 220px;
+    flex: 0 1 280px;
+    max-width: 340px;
   }
   .sr-image-card { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.05); display: flex; flex-direction: column; gap: 8px; }
-  .sr-image-card img { width: 100%; height: 120px; object-fit: contain; display: block; }
+  .sr-image-card img { width: 100%; height: 200px; object-fit: contain; display: block; }
   .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
   /* Brief panel on timer slides also supports companion logos beneath
      the brief text — used for slide 8 (KSRTC + KREIS logo inspiration). */

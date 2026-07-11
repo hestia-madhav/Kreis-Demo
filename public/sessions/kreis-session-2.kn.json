@@ -139,7 +139,7 @@
     {
       "n": 8,
       "kind": "mc_narration",
-      "title": "Master Change ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತಾರೆ",
+      "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತಾರೆ",
       "video": "/sessions/assets/s2_mc_democracy.kn.mp4",
       "image": "/sessions/assets/s2_democracy_levels.png",
       "kn_script": [
@@ -300,7 +300,7 @@
           "alt": "launch option 2"
         }
       ],
-      "image_layout": "side",
+      "image_layout": "stack",
       "tip": "ಗುಂಪುಗಳಿಗೆ ಎರಡು ಆಯ್ಕೆಗಳಲ್ಲಿ ಒಂದನ್ನು ಆರಿಸಿಕೊಳ್ಳಲು ಹೇಳಿ."
     },
     {
@@ -329,7 +329,7 @@
     {
       "n": 22,
       "kind": "mc_narration",
-      "title": "Master Change ವಿದಾಯ",
+      "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್ ವಿದಾಯ",
       "video": "/sessions/assets/s2_mc_farewell.kn.mp4",
       "kn_script": [
         "ಹೇ ಸ್ನೇಹಿತರೇ, ನಿಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಇಡೀ ಶಾಲೆಗೆ ತಿಳಿಸಲು ನೀವೆಲ್ಲರೂ ಸಿದ್ಧರಾಗುತ್ತಿರುವುದನ್ನು ನಾನು ನೋಡುತ್ತಿದ್ದೇನೆ!",

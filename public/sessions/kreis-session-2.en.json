@@ -135,7 +135,7 @@
       "video": "/sessions/assets/s2_mc_democracy.kn.mp4",
       "image": "/sessions/assets/s2_democracy_levels.png",
       "transcript": "Hello little citizens! Master Change is back for another session. Now that you've picked your club name, one more task remains — form a committee, like Parliament or your school cabinet. How do we choose our leaders in India? Yes — through elections at different levels: Gram Panchayat, State, Centre.",
-      "title": "[EN translation pending] — kn: Master Change ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತಾರೆ",
+      "title": "Master Change appears",
       "kn_script": [
         "ಹಲೋ ಪುಟ್ಟ ಪೌರರೇ, ನಮಸ್ಕಾರ! ನಿಮ್ಮೊಂದಿಗೆ ಮತ್ತೊಂದು ಸೆಷನ್‌ಗಾಗಿ ನಾನು ಮತ್ತೆ ಬಂದಿದ್ದೇನೆ!",
         "ಈಗ ನೀವು ನಿಮ್ಮ ಗುಂಪಿನ ಹೆಸರನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ್ದೀರಿ, ಆದರೆ ಮಾಡಬೇಕಾದ ಇನ್ನೊಂದು ಕೆಲಸ ಬಾಕಿ ಇದೆ.",
@@ -281,12 +281,12 @@
           "alt": "launch option 2"
         }
       ],
-      "image_layout": "side",
-      "title": "[EN translation pending] — kn: CMCA ಕ್ಲಬ್ ಉದ್ಘಾಟನೆ",
+      "image_layout": "stack",
+      "title": "CMCA Club Launch",
       "body": [
-        "[EN translation pending]"
+        "You have two options!"
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Show both options and let groups choose one."
     },
     {
       "n": 20,
@@ -313,7 +313,7 @@
       "kind": "mc_narration",
       "video": "/sessions/assets/s2_mc_farewell.kn.mp4",
       "transcript": "Hey friends! I can see you all getting ready to tell the whole school about your club! Be happy, plan well, and best of luck to you all. I'm already waiting to see this club launch. Bye byeeee!",
-      "title": "[EN translation pending] — kn: Master Change ವಿದಾಯ",
+      "title": "Master Change farewell",
       "kn_script": [
         "ಹೇ ಸ್ನೇಹಿತರೇ, ನಿಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಇಡೀ ಶಾಲೆಗೆ ತಿಳಿಸಲು ನೀವೆಲ್ಲರೂ ಸಿದ್ಧರಾಗುತ್ತಿರುವುದನ್ನು ನಾನು ನೋಡುತ್ತಿದ್ದೇನೆ!",
         "ಖುಷಿಯಾಗಿರಿ, ಚೆನ್ನಾಗಿ ಯೋಜನೆ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮೆಲ್ಲರಿಗೂ ಶುಭವಾಗಲಿ!",
