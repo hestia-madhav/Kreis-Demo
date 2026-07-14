@@ -396,7 +396,7 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
             </>
           )}
 
-          <div className="sr-slide-body">
+          <div className={`sr-slide-body${!slide.image && !(slide.images && slide.images.length) && !slide.video ? ' sr-text-only' : ''}`}>
             <SlideBody slide={slide} onEvent={onEvent} onAdvance={next} lang={activeLang} programme={session.programme} />
           </div>
           </div>
@@ -1212,9 +1212,11 @@ function VideoWithPauses({
   return (
     <div className="sr-vwp">
       <video
+        key={src}
         ref={ref}
         controls
         playsInline
+        preload="auto"
         loop={loop}
         src={src}
         onTimeUpdate={onTimeUpdate}
@@ -1260,9 +1262,8 @@ function AudioChip({ src }: { src: string }) {
     setPlaying(false);
     setCurrent(0);
     setDuration(0);
-    // No autoplay — teacher clicks the play button when ready. Madhav
-    // 7 Jul school pilot: audio triggering on slide entry was disruptive
-    // in a classroom (kids' attention was still on the previous slide).
+    const el = audioRef.current;
+    if (el) el.load();
   }, [src]);
 
   useEffect(() => {
@@ -1282,7 +1283,7 @@ function AudioChip({ src }: { src: string }) {
   const toggle = () => {
     const el = audioRef.current;
     if (!el) return;
-    if (el.paused) el.play(); else el.pause();
+    if (el.paused) el.play().catch(() => {}); else el.pause();
     // Blur the play button so focus returns to the slide root → keyboard
     // navigation keeps working immediately after click.
     (document.activeElement as HTMLElement | null)?.blur?.();
@@ -1545,7 +1546,9 @@ const styles = `
   .sr-canvas.is-projector .sr-title { font-size: 40px; text-align: center; margin: 6px 0 10px; }
   .sr-canvas.is-projector .sr-accent { margin: 0 auto 24px; }
   .sr-canvas.is-projector .sr-slide-body { max-width: 1100px; font-size: 22px; line-height: 1.5; }
-  .sr-canvas.is-projector .sr-line { font-size: 24px; margin: 10px 0; line-height: 1.4; }
+  .sr-canvas.is-projector .sr-line { font-size: 26px; margin: 10px 0; line-height: 1.4; }
+  .sr-canvas.is-projector .sr-text-only .sr-line { font-size: 32px; line-height: 1.5; margin: 14px 0; }
+  .sr-canvas.is-projector .sr-text-only .sr-callout { font-size: 24px; }
   .sr-canvas.is-projector .sr-bullets-lg { list-style: none; padding: 0; }
   .sr-canvas.is-projector .sr-bullets-lg li { font-size: 30px; margin: 18px 0; }
   .sr-canvas.is-projector .sr-callout { font-size: 22px; margin: 24px auto 0; max-width: 900px; }
@@ -2046,6 +2049,52 @@ const styles = `
     .sr-side-count { font-size: 10px; padding: 4px 6px; }
     .sr-side-nav { left: 6px; gap: 6px; }
   }
+  /* Tablet portrait (768px and below) — collapse nav rail, adjust sizing */
+  @media (max-width: 768px) {
+    .sr-nav { display: none; }
+    .sr-canvas { padding: 16px 16px 80px; }
+    .sr-canvas.is-projector .sr-title { font-size: 28px; }
+    .sr-canvas.is-projector .sr-slide-body { font-size: 18px; }
+    .sr-canvas.is-projector .sr-line { font-size: 20px; }
+    .sr-canvas.is-projector .sr-text-only .sr-line { font-size: 26px; }
+    .sr-static-with-image.is-side { grid-template-columns: 1fr; }
+    .sr-mc-grid.is-video-wide .sr-video-frame { min-height: 280px; }
+    .sr-timer-grid { grid-template-columns: 1fr; gap: 20px; }
+    .sr-timer-ring { width: 220px; height: 220px; margin: 0 auto; }
+    .sr-branded-en { font-size: 34px; }
+    .sr-branded-kn { font-size: 28px; }
+    .sr-preamble-pair { grid-template-columns: 1fr; gap: 16px; }
+    .sr-static-image-grid .sr-image-card { flex: 0 1 300px; max-width: 400px; }
+    .sr-image-card img { height: 260px; }
+  }
+  /* Mobile (480px and below) */
+  @media (max-width: 480px) {
+    .sr-canvas { padding: 10px 10px 70px; }
+    .sr-canvas.is-projector .sr-title { font-size: 22px; }
+    .sr-canvas.is-projector .sr-line { font-size: 18px; }
+    .sr-canvas.is-projector .sr-text-only .sr-line { font-size: 22px; }
+    .sr-branded-en { font-size: 26px; }
+    .sr-branded-kn { font-size: 22px; }
+    .sr-branded-thanks { font-size: 40px; }
+    .sr-kreis-seal { width: 80px; height: 80px; }
+    .sr-branded-logos { gap: 24px; }
+    .sr-audio-card { padding: 12px 14px; gap: 12px; }
+    .sr-audio-play { width: 44px; height: 44px; font-size: 20px; }
+    .sr-video-large { max-height: 45vh; }
+    .sr-mc-grid.is-video-wide .sr-video-frame { min-height: 200px; }
+    .sr-image-card img { height: 200px; }
+    .sr-static-image-grid .sr-image-card { flex: 0 1 260px; max-width: 100%; }
+    .sr-tip-panel { width: 240px; }
+    .sr-topbar-title { display: none; }
+  }
+  /* Short viewport (landscape phone / small laptop) */
+  @media (max-height: 600px) {
+    .sr-mc-grid.is-video-wide .sr-video-frame { min-height: 240px; }
+    .sr-video-large { max-height: 50vh; }
+    .sr-canvas { padding-top: 12px; }
+    .sr-canvas.is-projector { padding-top: 12px; }
+    .sr-static-with-image.is-stack .sr-static-image img { max-height: 30vh; }
+  }
   @media (min-width: 2000px) {
     /* Big projector / 4K smartboard — scale up the side buttons */
     .sr-side-btn { width: 84px; min-height: 108px; padding: 14px 8px; }
@@ -2123,6 +2172,7 @@ const styles = `
   }
   .sr-static-with-image.is-stack .sr-static-text { max-width: 820px; }
   .sr-static-with-image.is-stack .sr-static-image { max-width: 520px; }
+  .sr-static-with-image.is-stack .sr-static-image img { max-height: 38vh; }
   .sr-static-with-image.is-side {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2134,8 +2184,20 @@ const styles = `
   .sr-static-with-image.is-side .sr-static-text { text-align: left; }
   .sr-static-with-image.is-side .sr-static-image { width: 100%; }
   .sr-static-with-image.is-side .sr-static-image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     justify-content: center;
     align-items: center;
+  }
+  .sr-static-with-image.is-side .sr-static-image-grid .sr-image-card {
+    flex: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  .sr-static-with-image.is-side .sr-static-image-grid .sr-image-card img {
+    height: auto;
+    max-height: 28vh;
   }
   .sr-static-text { min-width: 0; }
   .sr-static-image { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
@@ -2153,11 +2215,11 @@ const styles = `
     max-width: 1000px;
   }
   .sr-static-image-grid .sr-image-card {
-    flex: 0 1 280px;
-    max-width: 340px;
+    flex: 0 1 400px;
+    max-width: 480px;
   }
   .sr-image-card { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.05); display: flex; flex-direction: column; gap: 8px; }
-  .sr-image-card img { width: 100%; height: 200px; object-fit: contain; display: block; }
+  .sr-image-card img { width: 100%; height: 340px; object-fit: contain; display: block; }
   .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
   /* Brief panel on timer slides also supports companion logos beneath
      the brief text — used for slide 8 (KSRTC + KREIS logo inspiration). */
