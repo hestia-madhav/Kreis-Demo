@@ -2049,8 +2049,9 @@ const styles = `
     .sr-side-count { font-size: 10px; padding: 4px 6px; }
     .sr-side-nav { left: 6px; gap: 6px; }
   }
-  /* Tablet portrait (768px and below) — collapse nav rail, adjust sizing */
-  @media (max-width: 768px) {
+  /* Tablet portrait (820px and below — covers 8" tablets like Lenovo Tab M8
+     at 800px portrait width where the 220px nav rail would eat 27% of viewport) */
+  @media (max-width: 820px) {
     .sr-nav { display: none; }
     .sr-canvas { padding: 16px 16px 80px; }
     .sr-canvas.is-projector .sr-title { font-size: 28px; }
@@ -2087,6 +2088,13 @@ const styles = `
     .sr-tip-panel { width: 240px; }
     .sr-topbar-title { display: none; }
   }
+  /* Tablet landscape (≤820px height — Lenovo Tab M8 is 800px in landscape) */
+  @media (max-height: 820px) {
+    .sr-canvas { padding-bottom: 90px; }
+    .sr-static-with-image.is-stack .sr-static-image img { max-height: 34vh; }
+    .sr-video-large { max-height: 55vh; }
+    .sr-image-card img { max-height: 32vh; object-fit: contain; }
+  }
   /* Short viewport (landscape phone / small laptop) */
   @media (max-height: 600px) {
     .sr-mc-grid.is-video-wide .sr-video-frame { min-height: 240px; }
@@ -2094,6 +2102,15 @@ const styles = `
     .sr-canvas { padding-top: 12px; }
     .sr-canvas.is-projector { padding-top: 12px; }
     .sr-static-with-image.is-stack .sr-static-image img { max-height: 30vh; }
+  }
+  /* Touch devices (tablets) — enlarge tap targets for Prev/Next */
+  @media (pointer: coarse) {
+    .sr-side-btn { width: 66px; min-height: 84px; padding: 12px 8px; }
+    .sr-side-icon { font-size: 30px; }
+    .sr-audio-play { width: 64px; height: 64px; font-size: 28px; }
+    .sr-audio-bar { height: 14px; }
+    .sr-topbar { min-height: 44px; }
+    .sr-tip-toggle { padding: 8px 16px; font-size: 13px; }
   }
   @media (min-width: 2000px) {
     /* Big projector / 4K smartboard — scale up the side buttons */

@@ -107,7 +107,7 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "Welcome to your Children's Civic Club!",
+      "title": "Welcome to your Civic Club!",
       "subtitle": "DOM × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
@@ -166,7 +166,7 @@
     {
       "n": 7,
       "kind": "static",
-      "title": "Let's Calm Down Again! — Flat Tyre",
+      "title": "Let's Calm Down Again!",
       "body": [
         "Voice-over demos the sound: shhhh",
         "Teacher says \"Flat Tyre!\""

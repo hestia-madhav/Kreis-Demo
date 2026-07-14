@@ -67,7 +67,7 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "Welcome to your Children's Civic Club!",
+      "title": "Welcome to your Civic Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
       "tip": "Play the welcome music; make sure groups are seated."
@@ -120,7 +120,6 @@
         "Distribute the sheets to groups.",
         "7-minute timer — a warning sound plays when 2 minutes are left."
       ],
-      "audio": "/sessions/assets/timer_7min_ping.mp3",
       "tip": "Give each group a different Annexure 3 sheet, then start the timer."
     },
     {
@@ -162,7 +161,6 @@
         "Let us spend a minute reflecting in silence on what we have written on the board, which has come out of your own group discussions.",
         "You will get 2 minutes to think and reflect."
       ],
-      "audio": "/sessions/assets/timer_2min_ping.mp3",
       "tip": "Point kids back to the hospital-story board notes during reflection."
     },
     {
