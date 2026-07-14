@@ -737,8 +737,9 @@ function TimerSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEve
   const mm = String(Math.floor(remaining / 60)).padStart(2, "0");
   const ss = String(remaining % 60).padStart(2, "0");
 
+  const hasRefImage = !!slide.image;
   return (
-    <div className="sr-timer-grid">
+    <div className={`sr-timer-grid${hasRefImage ? ' has-ref-image' : ''}`}>
       <div className="sr-brief">
         <p>{slide.brief}</p>
         {/* Companion image strip — e.g. KSRTC + KREIS logos on slide 8.
@@ -753,6 +754,12 @@ function TimerSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEve
                 {im.caption && <figcaption>{im.caption}</figcaption>}
               </figure>
             ))}
+          </div>
+        )}
+        {slide.image && (
+          <div className="sr-timer-ref-image">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={slide.image} alt="" />
           </div>
         )}
       </div>
@@ -815,8 +822,25 @@ function RevealSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEv
     return () => window.removeEventListener("keydown", onKey);
   }, [reveal]);
 
+  const [videoFailed, setVideoFailed] = useState(false);
+  useEffect(() => { setVideoFailed(false); }, [slide.video]);
+
   return (
-    <div className="sr-reveal">
+    <div className={`sr-reveal${slide.video ? ' has-video' : ''}`}>
+      {slide.video && !videoFailed && (
+        <div className="sr-reveal-video">
+          <div className="sr-video-frame">
+            <video
+              key={slide.video}
+              controls
+              playsInline
+              src={slide.video}
+              poster="/sessions/assets/mc_poster.png"
+              onError={() => setVideoFailed(true)}
+            />
+          </div>
+        </div>
+      )}
       {slide.intro && <p className="sr-intro">{slide.intro}</p>}
       <ol className="sr-reveal-list">
         {prompts.map((p, i) => (
@@ -1754,14 +1778,18 @@ const styles = `
     /* subtle drop shadow so the logo sits cleanly on any frame background */
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
   }
-  .sr-video-placeholder { color: ${MUTED}; text-align: center; font-size: 18px; font-weight: 600; }
+  .sr-video-placeholder { color: ${MUTED}; text-align: center; font-size: 18px; font-weight: 600; padding: 48px 24px; background: rgba(0,0,0,.03); border-radius: 12px; border: 2px dashed #e5e7eb; }
   .sr-transcript { background: #fff; border: 1px solid #e5e7eb; padding: 16px; border-radius: 10px; max-height: 360px; overflow-y: auto; }
   .sr-transcript-label { color: ${SAFFRON}; font-weight: 700; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; }
   .sr-transcript p { margin: 0; font-size: 14px; line-height: 1.55; }
 
   .sr-timer-grid { display: grid; grid-template-columns: 1fr 320px; gap: 32px; align-items: center; }
-  .sr-brief p { font-size: 22px; line-height: 1.4; margin: 0; }
+  .sr-timer-grid.has-ref-image { grid-template-columns: 1fr 280px; align-items: start; }
+  .sr-brief p { font-size: 22px; line-height: 1.55; margin: 0; color: ${INK}; }
+  .sr-timer-ref-image { margin-top: 20px; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+  .sr-timer-ref-image img { width: 100%; height: auto; max-height: 36vh; object-fit: contain; display: block; border-radius: 8px; }
   .sr-timer-ring { position: relative; width: 320px; height: 320px; color: ${SAFFRON}; }
+  .sr-timer-grid.has-ref-image .sr-timer-ring { width: 280px; height: 280px; }
   .sr-timer-ring.is-warn { color: ${ERROR}; }
   .sr-timer-ring.is-flash { animation: pulse 1s infinite; }
   @keyframes pulse { 50% { opacity: 0.55; } }
@@ -1793,12 +1821,16 @@ const styles = `
   .sr-timer-modal-sub { font-size: 15px; color: ${MUTED}; margin-bottom: 20px; }
 
   .sr-reveal { max-width: 900px; }
-  .sr-intro { color: ${MUTED}; margin: 0 0 18px; font-size: 14px; }
+  .sr-reveal.has-video { max-width: 1100px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start; }
+  .sr-reveal.has-video .sr-reveal-video { grid-row: 1 / -1; }
+  .sr-reveal.has-video .sr-video-frame { min-height: 300px; }
+  .sr-reveal-video { margin-bottom: 16px; }
+  .sr-intro { color: ${INK}; margin: 0 0 18px; font-size: 18px; line-height: 1.5; }
   .sr-reveal-list { list-style: none; padding: 0; margin: 0; }
   .sr-reveal-item { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; background: #fff; border-radius: 10px; margin-bottom: 10px; transition: opacity .25s ease, background .25s ease; border: 1px solid #e5e7eb; }
   .sr-reveal-item.is-hidden { background: rgba(255,255,255,.5); }
   .sr-reveal-num { background: ${SAFFRON}; color: ${NAVY}; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
-  .sr-reveal-body { font-size: 17px; line-height: 1.4; }
+  .sr-reveal-body { font-size: 19px; line-height: 1.5; }
   .sr-reveal-mask { color: ${MUTED}; font-style: italic; font-size: 14px; }
   .sr-reveal-controls { display: flex; gap: 12px; align-items: center; margin-top: 16px; }
   .sr-footer-cheer { margin-top: 18px; padding: 12px 14px; background: #e8f5ed; color: ${SUCCESS}; border-radius: 8px; font-weight: 700; }
@@ -2059,14 +2091,22 @@ const styles = `
     .sr-canvas.is-projector .sr-line { font-size: 20px; }
     .sr-canvas.is-projector .sr-text-only .sr-line { font-size: 26px; }
     .sr-static-with-image.is-side { grid-template-columns: 1fr; }
+    .sr-static-with-image.is-side .sr-static-image { position: static; }
+    .sr-static-with-image.is-side .sr-static-image img { max-height: 36vh; }
     .sr-mc-grid.is-video-wide .sr-video-frame { min-height: 280px; }
     .sr-timer-grid { grid-template-columns: 1fr; gap: 20px; }
+    .sr-timer-grid.has-ref-image { grid-template-columns: 1fr; }
+    .sr-timer-grid.has-ref-image .sr-timer-ring { width: 220px; height: 220px; }
+    .sr-timer-ref-image img { max-height: 28vh; }
     .sr-timer-ring { width: 220px; height: 220px; margin: 0 auto; }
     .sr-branded-en { font-size: 34px; }
     .sr-branded-kn { font-size: 28px; }
     .sr-preamble-pair { grid-template-columns: 1fr; gap: 16px; }
-    .sr-static-image-grid .sr-image-card { flex: 0 1 300px; max-width: 400px; }
-    .sr-image-card img { height: 260px; }
+    .sr-static-image-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .sr-image-card img { height: 220px; }
+    .sr-reveal.has-video { grid-template-columns: 1fr; }
+    .sr-reveal.has-video .sr-reveal-video { grid-row: auto; }
+    .sr-reveal.has-video .sr-video-frame { min-height: 220px; }
   }
   /* Mobile (480px and below) */
   @media (max-width: 480px) {
@@ -2083,8 +2123,9 @@ const styles = `
     .sr-audio-play { width: 44px; height: 44px; font-size: 20px; }
     .sr-video-large { max-height: 45vh; }
     .sr-mc-grid.is-video-wide .sr-video-frame { min-height: 200px; }
-    .sr-image-card img { height: 200px; }
-    .sr-static-image-grid .sr-image-card { flex: 0 1 260px; max-width: 100%; }
+    .sr-image-card img { height: 180px; }
+    .sr-static-image-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+    .sr-timer-ref-image img { max-height: 24vh; }
     .sr-tip-panel { width: 240px; }
     .sr-topbar-title { display: none; }
   }
@@ -2092,8 +2133,11 @@ const styles = `
   @media (max-height: 820px) {
     .sr-canvas { padding-bottom: 90px; }
     .sr-static-with-image.is-stack .sr-static-image img { max-height: 34vh; }
+    .sr-static-with-image.is-side .sr-static-image img { max-height: 40vh; }
     .sr-video-large { max-height: 55vh; }
-    .sr-image-card img { max-height: 32vh; object-fit: contain; }
+    .sr-image-card img { max-height: 28vh; object-fit: contain; }
+    .sr-timer-ref-image img { max-height: 28vh; }
+    .sr-reveal.has-video .sr-video-frame { min-height: 240px; }
   }
   /* Short viewport (landscape phone / small laptop) */
   @media (max-height: 600px) {
@@ -2187,34 +2231,29 @@ const styles = `
     gap: 24px;
     text-align: center;
   }
-  .sr-static-with-image.is-stack .sr-static-text { max-width: 820px; }
+  .sr-static-with-image.is-stack .sr-static-text { max-width: 820px; text-align: left; }
   .sr-static-with-image.is-stack .sr-static-image { max-width: 520px; }
   .sr-static-with-image.is-stack .sr-static-image img { max-height: 38vh; }
+  .sr-static-with-image.is-stack .sr-static-image-grid { max-width: 100%; }
   .sr-static-with-image.is-side {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    align-items: center;
+    grid-template-columns: 3fr 2fr;
+    gap: 28px;
+    align-items: start;
     max-width: 1100px;
     margin: 0 auto;
   }
-  .sr-static-with-image.is-side .sr-static-text { text-align: left; }
-  .sr-static-with-image.is-side .sr-static-image { width: 100%; }
+  .sr-static-with-image.is-side .sr-static-text { text-align: left; padding-top: 4px; }
+  .sr-static-with-image.is-side .sr-static-image { width: 100%; position: sticky; top: 16px; }
+  .sr-static-with-image.is-side .sr-static-image img { max-height: 50vh; }
   .sr-static-with-image.is-side .sr-static-image-grid {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    justify-content: center;
-    align-items: center;
-  }
-  .sr-static-with-image.is-side .sr-static-image-grid .sr-image-card {
-    flex: none;
-    max-width: 100%;
-    width: 100%;
   }
   .sr-static-with-image.is-side .sr-static-image-grid .sr-image-card img {
     height: auto;
-    max-height: 28vh;
+    max-height: 32vh;
   }
   .sr-static-text { min-width: 0; }
   .sr-static-image { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
@@ -2224,19 +2263,15 @@ const styles = `
   /* Logo / reference image strip — centered grid that doesn't sprawl when
      there are few items (slide 8: KSRTC + KREIS logos). */
   .sr-static-image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
     margin: 0 auto;
     max-width: 1000px;
   }
-  .sr-static-image-grid .sr-image-card {
-    flex: 0 1 400px;
-    max-width: 480px;
-  }
-  .sr-image-card { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.05); display: flex; flex-direction: column; gap: 8px; }
-  .sr-image-card img { width: 100%; height: 340px; object-fit: contain; display: block; }
+  .sr-image-card { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.05); display: flex; flex-direction: column; gap: 8px; transition: transform .2s ease, box-shadow .2s ease; }
+  .sr-image-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.1); }
+  .sr-image-card img { width: 100%; height: 280px; object-fit: contain; display: block; }
   .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
   /* Brief panel on timer slides also supports companion logos beneath
      the brief text — used for slide 8 (KSRTC + KREIS logo inspiration). */

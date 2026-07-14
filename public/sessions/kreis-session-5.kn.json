@@ -183,7 +183,8 @@
         "ಇದನ್ನು ನಿಮ್ಮ ಮನೆಯಲ್ಲಿ ಎಲ್ಲರಿಗೂ ಕಾಣುವಂತೆ ಬೋರ್ಡ್, ಗೋಡೆ ಅಥವಾ ಫ್ರಿಡ್ಜ್ ಮೇಲೆ ಅಂಟಿಸಿ."
       ],
       "tip": "ಸಹಾಯವಾಣಿ ಹಾಳೆಗಳನ್ನು ವಿತರಿಸಿ.",
-      "image": "/sessions/assets/s5_helpline_numbers.jpeg"
+      "image": "/sessions/assets/s5_helpline_numbers.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 11,
@@ -237,7 +238,8 @@
         "ವಿದ್ಯಾರ್ಥಿಗಳೇ ಗಮನಿಸಿ! ನೀವು ಮನೆಯಲ್ಲಿ ಕೂಡ ಸ್ವತಃ ಇದನ್ನೇ ಮಾಡಲಿದ್ದೀರಿ!"
       ],
       "tip": "ಮುಂಚಿತವಾಗಿ ಸಿದ್ಧರಾಗಿ: ತರಗತಿಯಲ್ಲಿ ಉದಾಹರಣೆಯಾಗಿ ಬಳಸಲು ಶಾಲೆಯ ಹತ್ತಿರವಿರುವ ಕೆಲವು ಸಂಸ್ಥೆಗಳ ವಿಳಾಸಗಳನ್ನು ನೀವು ಸಂಶೋಧಿಸಿ ಗುರುತಿಸಿಕೊಳ್ಳಬೇಕಾಗಬಹುದು.",
-      "image": "/sessions/assets/s5_sample_complaint_letter.jpeg"
+      "image": "/sessions/assets/s5_sample_complaint_letter.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 15,
@@ -280,7 +282,8 @@
         "ಒಮ್ಮೆ ನೀವು ದೂರನ್ನು ದಾಖಲಿಸಿದ ನಂತರ, Change Champion ವರದಿಯನ್ನು ತುಂಬಲು ಮರೆಯಬೇಡಿ! ನಿಮ್ಮ ಶಿಕ್ಷಕರು ಈಗ ನಿಮ್ಮೆಲ್ಲರಿಗೂ ಇದರ ಪ್ರತಿಯನ್ನು ವಿತರಿಸುತ್ತಾರೆ."
       ],
       "tip": "Change Champion ವರದಿಯ ಪ್ರತಿಯನ್ನು ವಿತರಿಸಿ.",
-      "image": "/sessions/assets/s5_change_champion_report.jpeg"
+      "image": "/sessions/assets/s5_change_champion_report.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 19,

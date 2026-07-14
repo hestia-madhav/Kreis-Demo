@@ -187,10 +187,26 @@
       ],
       "tip": "ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ 10 ಸೆಕೆಂಡ್ ವಿರಾಮ ನೀಡಿ. ಪ್ರತಿ ವಿಭಾಗದ ಹಕ್ಕುಗಳನ್ನು ಬೋರ್ಡ್ ಮೇಲೆ ಬರೆಯಿರಿ. ಫ್ಲ್ಯಾಶ್ ಕಾರ್ಡ್‌ಗಳನ್ನು ಹಿಡಿಯಲು ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಕೇಳಿ.",
       "images": [
-        "/sessions/assets/s4_flash_card_survival.jpeg",
-        "/sessions/assets/s4_flash_card_protection.jpeg",
-        "/sessions/assets/s4_flash_card_development.jpeg",
-        "/sessions/assets/s4_flash_card_participation.jpeg"
+        {
+          "src": "/sessions/assets/s4_flash_card_survival.jpeg",
+          "alt": "Survival Rights flash card",
+          "caption": "Survival"
+        },
+        {
+          "src": "/sessions/assets/s4_flash_card_protection.jpeg",
+          "alt": "Protection Rights flash card",
+          "caption": "Protection"
+        },
+        {
+          "src": "/sessions/assets/s4_flash_card_development.jpeg",
+          "alt": "Development Rights flash card",
+          "caption": "Development"
+        },
+        {
+          "src": "/sessions/assets/s4_flash_card_participation.jpeg",
+          "alt": "Participation Rights flash card",
+          "caption": "Participation"
+        }
       ]
     },
     {
@@ -239,8 +255,14 @@
       ],
       "tip": "MGS ಚಿತ್ರಗಳನ್ನು ತೋರಿಸಿ. ಮಕ್ಕಳ ಪ್ರತಿಕ್ರಿಯೆಗಾಗಿ ವಿರಾಮ ನೀಡಿ.",
       "images": [
-        "/sessions/assets/s4_mgs_photo_1.jpeg",
-        "/sessions/assets/s4_mgs_photo_2.jpeg"
+        {
+          "src": "/sessions/assets/s4_mgs_photo_1.jpeg",
+          "alt": "Makkala Grama Sabha meeting"
+        },
+        {
+          "src": "/sessions/assets/s4_mgs_photo_2.jpeg",
+          "alt": "Children at Makkala Grama Sabha"
+        }
       ]
     },
     {

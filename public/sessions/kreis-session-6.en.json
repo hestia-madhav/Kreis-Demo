@@ -108,7 +108,8 @@
         "Student 5: Social Media & WhatsApp Champions"
       ],
       "tip": "Give each volunteer their slip from Annexure 1.",
-      "image": "/sessions/assets/s6_roleplay_character_slips.jpeg"
+      "image": "/sessions/assets/s6_roleplay_character_slips.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 5,
@@ -271,7 +272,8 @@
         "AI (Artificial Intelligence) can also create images, videos, and news that deceive people! This creates even more fake news and spreads misinformation."
       ],
       "tip": "Show AI-generated fake news example image.",
-      "image": "/sessions/assets/s6_ai_fake_news_example.jpeg"
+      "image": "/sessions/assets/s6_ai_fake_news_example.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 19,
@@ -282,7 +284,8 @@
         "Share with your teacher."
       ],
       "tip": "Show Preamble image. Accept all responses.",
-      "image": "/sessions/assets/preamble_en.png"
+      "image": "/sessions/assets/preamble_en.png",
+      "image_layout": "side"
     },
     {
       "n": 20,
@@ -309,7 +312,8 @@
         "Your activities will be considered Ripples of Change and can be added to your Club's Box."
       ],
       "tip": "Teachers must distribute Annexure 3 (4Ws handout) to all students.",
-      "image": "/sessions/assets/s6_4ws_handout.jpeg"
+      "image": "/sessions/assets/s6_4ws_handout.jpeg",
+      "image_layout": "side"
     }
   ]
 }

@@ -108,7 +108,8 @@
         "ವಿದ್ಯಾರ್ಥಿ 5: ಸೋಶಿಯಲ್ ಮೀಡಿಯಾ ಮತ್ತು ವಾಟ್ಸಾಪ್ ಚಾಂಪಿಯನ್ಸ್"
       ],
       "tip": "ಅನುಬಂಧ 1 ರಿಂದ ಪ್ರತಿ ಸ್ವಯಂಸೇವಕರಿಗೆ ಚೀಟಿ ನೀಡಿ.",
-      "image": "/sessions/assets/s6_roleplay_character_slips.jpeg"
+      "image": "/sessions/assets/s6_roleplay_character_slips.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 5,
@@ -272,7 +273,8 @@
         "ಎಐ (AI — ಕೃತಕ ಬುದ್ಧಿ) ಜನರನ್ನು ಮೋಸಗೊಳಿಸುವ ಚಿತ್ರಗಳು, ವಿಡಿಯೋಗಳು ಮತ್ತು ಸುದ್ದಿಗಳನ್ನೂ ಸೃಷ್ಟಿಸಬಹುದು! ಇದು ಇನ್ನಷ್ಟು ಸುಳ್ಳು ಸುದ್ದಿಗಳನ್ನು ಸೃಷ್ಟಿಸುತ್ತದೆ ಮತ್ತು ತಪ್ಪು ಮಾಹಿತಿಯನ್ನು ಹರಡುತ್ತದೆ."
       ],
       "tip": "AI-generated ಸುದ್ದಿಯ ಉದಾಹರಣೆ ಚಿತ್ರ ತೋರಿಸಿ.",
-      "image": "/sessions/assets/s6_ai_fake_news_example.jpeg"
+      "image": "/sessions/assets/s6_ai_fake_news_example.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 19,
@@ -283,7 +285,8 @@
         "ನಿಮ್ಮ ಶಿಕ್ಷಕರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ."
       ],
       "tip": "ಕನ್ನಡ ಪೀಠಿಕೆಯ ಚಿತ್ರ ತೋರಿಸಿ. ಎಲ್ಲಾ ಪ್ರತಿಕ್ರಿಯೆಗಳನ್ನು ಸ್ವೀಕರಿಸಿ.",
-      "image": "/sessions/assets/preamble_kn.png"
+      "image": "/sessions/assets/preamble_kn.png",
+      "image_layout": "side"
     },
     {
       "n": 20,
@@ -310,7 +313,8 @@
         "ನಿಮ್ಮ ಚಟುವಟಿಕೆಗಳನ್ನು ಬದಲಾವಣೆಯ ಅಲೆಗಳು (Ripples of Change) ಎಂದು ಪರಿಗಣಿಸಲಾಗುವುದು ಮತ್ತು ಅವುಗಳನ್ನು ನಿಮ್ಮ ಕ್ಲಬ್‌ನ ಪೆಟ್ಟಿಗೆಗೆ (Club's Box) ಸೇರಿಸಬಹುದು."
       ],
       "tip": "ಶಿಕ್ಷಕರು ಎಲ್ಲಾ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅನುಬಂಧ 3 (4Ws ಹ್ಯಾಂಡ್‌ಔಟ್) ಅನ್ನು ವಿತರಿಸಬೇಕು.",
-      "image": "/sessions/assets/s6_4ws_handout.jpeg"
+      "image": "/sessions/assets/s6_4ws_handout.jpeg",
+      "image_layout": "side"
     }
   ]
 }

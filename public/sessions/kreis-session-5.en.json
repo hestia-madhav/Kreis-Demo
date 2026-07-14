@@ -183,7 +183,8 @@
         "Paste it on your notice board, wall, or fridge at home where everyone can see it."
       ],
       "tip": "Distribute helpline sheets.",
-      "image": "/sessions/assets/s5_helpline_numbers.jpeg"
+      "image": "/sessions/assets/s5_helpline_numbers.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 11,
@@ -237,7 +238,8 @@
         "Students, take note! You will be doing the same thing at home on your own!"
       ],
       "tip": "Prepare in advance: You may need to research and identify addresses of some institutions near the school to use as examples in class.",
-      "image": "/sessions/assets/s5_sample_complaint_letter.jpeg"
+      "image": "/sessions/assets/s5_sample_complaint_letter.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 15,
@@ -280,7 +282,8 @@
         "Once you have filed your complaint, don't forget to fill out the Change Champion report! Your teacher will now distribute copies of this to all of you."
       ],
       "tip": "Distribute copies of the Change Champion report.",
-      "image": "/sessions/assets/s5_change_champion_report.jpeg"
+      "image": "/sessions/assets/s5_change_champion_report.jpeg",
+      "image_layout": "side"
     },
     {
       "n": 19,
