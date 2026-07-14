@@ -9,32 +9,59 @@
     {
       "id": "welcome",
       "label": "Welcome",
-      "slides": [1]
+      "slides": [
+        1
+      ]
     },
     {
       "id": "roleplay_setup",
       "label": "Roleplay — Setup",
-      "slides": [2, 3, 4, 5]
+      "slides": [
+        2,
+        3,
+        4,
+        5
+      ]
     },
     {
       "id": "roleplay_performance",
       "label": "Roleplay — Performance & Discussion",
-      "slides": [6, 7, 8, 9, 10, 11]
+      "slides": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
     },
     {
       "id": "scientific_temper_4ws",
       "label": "Scientific Temper & 4Ws",
-      "slides": [12, 13, 14]
+      "slides": [
+        12,
+        13,
+        14
+      ]
     },
     {
       "id": "fake_news_exercise",
       "label": "Fake News Analysis",
-      "slides": [15, 16, 17]
+      "slides": [
+        15,
+        16,
+        17
+      ]
     },
     {
       "id": "ai_wrapup",
       "label": "AI, Constitution & Ripple Task",
-      "slides": [18, 19, 20, 21]
+      "slides": [
+        18,
+        19,
+        20,
+        21
+      ]
     }
   ],
   "slides": [
@@ -80,7 +107,8 @@
         "Student 4: Residents' Welfare Association & Parents",
         "Student 5: Social Media & WhatsApp Champions"
       ],
-      "tip": "Give each volunteer their slip from Annexure 1."
+      "tip": "Give each volunteer their slip from Annexure 1.",
+      "image": "/sessions/assets/s6_roleplay_character_slips.jpeg"
     },
     {
       "n": 5,
@@ -89,7 +117,8 @@
       "brief": "The five volunteers should read their slips 2-3 times to prepare. Get ready to read a bit dramatically!",
       "timer_seconds": 60,
       "reminder_at": 30,
-      "tip": "1 minute preparation time."
+      "tip": "1 minute preparation time.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
     },
     {
       "n": 6,
@@ -153,13 +182,14 @@
     },
     {
       "n": 11,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Roleplay — Scientific Temper",
-      "body": [
+      "tip": "Play MC video Part 1. Wait 5 seconds for answer.",
+      "video": "/sessions/assets/s6_mc_scientific_temper_p1.kn.mp4",
+      "kn_script": [
         "When we ask questions, verify facts, and think clearly before believing or forwarding something — we are using something very important.",
         "Can you guess what it's called?"
-      ],
-      "tip": "MC video Part 1 needed (not yet produced). Wait 5 seconds for the answer."
+      ]
     },
     {
       "n": 12,
@@ -172,7 +202,8 @@
         "Meaning: Using your brain like a detective — asking for evidence, staying calm, and accepting the truth without being swayed by emotions.",
         "This is how we fight fake news and misinformation — by thinking like scientists and asking questions!"
       ],
-      "tip": "MC video Part 2 needed (not yet produced)."
+      "tip": "Play MC video Part 2.",
+      "video": "/sessions/assets/s6_mc_scientific_temper_p2.kn.mp4"
     },
     {
       "n": 13,
@@ -239,7 +270,8 @@
         "It is very important to always stop and check before believing or sharing anything.",
         "AI (Artificial Intelligence) can also create images, videos, and news that deceive people! This creates even more fake news and spreads misinformation."
       ],
-      "tip": "AI-generated news example image needed (not yet ready)."
+      "tip": "Show AI-generated fake news example image.",
+      "image": "/sessions/assets/s6_ai_fake_news_example.jpeg"
     },
     {
       "n": 19,
@@ -249,19 +281,21 @@
         "Which constitutional value from the Preamble best fits the activities and discussions we did today?",
         "Share with your teacher."
       ],
-      "tip": "Show Preamble image. Accept all responses."
+      "tip": "Show Preamble image. Accept all responses.",
+      "image": "/sessions/assets/preamble_en.png"
     },
     {
       "n": 20,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Fundamental Duty",
-      "body": [
+      "tip": "Play MC video.",
+      "video": "/sessions/assets/s6_mc_fundamental_duty.kn.mp4",
+      "kn_script": [
         "Our Constitution guarantees us rights. There is a Fundamental Duty in the Indian Constitution about verifying the truth of what we read, hear, and speak, and thinking critically.",
         "Can you guess what this Fundamental Duty actually says?",
         "Yes! It is: to develop scientific temper, humanism, and the spirit of inquiry and reform.",
         "Did you know that applying the 4Ws test is part of our Fundamental Duty?"
-      ],
-      "tip": "MC video needed (not yet produced)."
+      ]
     },
     {
       "n": 21,
@@ -274,7 +308,8 @@
         "I will distribute handouts to everyone. These will be very helpful for you to verify information and data.",
         "Your activities will be considered Ripples of Change and can be added to your Club's Box."
       ],
-      "tip": "Teachers must distribute Annexure 3 (4Ws handout) to all students."
+      "tip": "Teachers must distribute Annexure 3 (4Ws handout) to all students.",
+      "image": "/sessions/assets/s6_4ws_handout.jpeg"
     }
   ]
 }

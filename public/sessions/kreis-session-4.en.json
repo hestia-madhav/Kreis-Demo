@@ -9,32 +9,54 @@
     {
       "id": "welcome",
       "label": "Welcome",
-      "slides": [1]
+      "slides": [
+        1
+      ]
     },
     {
       "id": "change_champion",
       "label": "Change Stories",
-      "slides": [2, 3]
+      "slides": [
+        2,
+        3
+      ]
     },
     {
       "id": "ajay_story",
       "label": "Ajay's Story",
-      "slides": [4, 5, 6]
+      "slides": [
+        4,
+        5,
+        6
+      ]
     },
     {
       "id": "child_rights",
       "label": "Child Rights & Responsibilities",
-      "slides": [7, 8, 9, 10, 11, 12]
+      "slides": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
     },
     {
       "id": "childline_reflection",
       "label": "ChildLine & Reflection",
-      "slides": [13, 14]
+      "slides": [
+        13,
+        14
+      ]
     },
     {
       "id": "mgs_wrapup",
       "label": "MGS Introduction & Wrap-up",
-      "slides": [15, 16]
+      "slides": [
+        15,
+        16
+      ]
     }
   ],
   "slides": [
@@ -135,7 +157,9 @@
       "brief": "Look at all the pictures in the handout, discuss in your groups, and list child rights and responsibilities. Write as clearly as possible.",
       "timer_seconds": 300,
       "reminder_at": 60,
-      "tip": "Distribute handouts to each group. 5 minute timer."
+      "tip": "Distribute handouts to each group. 5 minute timer.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "image": "/sessions/assets/s4_child_rights_handout.jpeg"
     },
     {
       "n": 10,
@@ -144,7 +168,8 @@
       "brief": "Exchange your sheet with the group next to you. Look at the pictures in the other group's sheet and try to add any child rights or responsibilities they may have missed.",
       "timer_seconds": 300,
       "reminder_at": 60,
-      "tip": "Draw 4 boxes on the board labelled SURVIVAL, PARTICIPATION, DEVELOPMENT, and PROTECTION. Keep flash cards ready."
+      "tip": "Draw 4 boxes on the board labelled SURVIVAL, PARTICIPATION, DEVELOPMENT, and PROTECTION. Keep flash cards ready.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
     },
     {
       "n": 11,
@@ -160,7 +185,13 @@
         "What do you understand by Development Rights, and why are they important?",
         "What do you understand by Participation Rights, and why are they important?"
       ],
-      "tip": "Write the rights under each category on the board. Ask students to hold up the flash cards."
+      "tip": "Write the rights under each category on the board. Ask students to hold up the flash cards.",
+      "images": [
+        "/sessions/assets/s4_flash_card_survival.jpeg",
+        "/sessions/assets/s4_flash_card_protection.jpeg",
+        "/sessions/assets/s4_flash_card_development.jpeg",
+        "/sessions/assets/s4_flash_card_participation.jpeg"
+      ]
     },
     {
       "n": 12,
@@ -206,13 +237,19 @@
         "Here children talk about issues related to them like school, safety, and play!",
         "If you got a chance to speak at that meeting, what would you like to tell your village leaders?"
       ],
-      "tip": "Show MGS images. Pause for children's responses."
+      "tip": "Show MGS images. Pause for children's responses.",
+      "images": [
+        "/sessions/assets/s4_mgs_photo_1.jpeg",
+        "/sessions/assets/s4_mgs_photo_2.jpeg"
+      ]
     },
     {
       "n": 16,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Wrap-up",
-      "body": [
+      "tip": "Play MC video. Encourage students to put stories in the CC box.",
+      "video": "/sessions/assets/s4_mc_wrapup.kn.mp4",
+      "kn_script": [
         "Hey Change Champions! Did you know that every big change begins with a small step?",
         "Maybe you helped someone, solved a problem, showed kindness, or made your community a little better. No action is too small when it comes to bringing about change!",
         "Remember, change starts with you!",
@@ -220,8 +257,7 @@
         "After writing, carefully fold your sheet... and put it in the Change Champion Box!",
         "Who knows? The small ripple you create today could become a big wave of change tomorrow!",
         "Are you ready, Champions? Let's fill the box with amazing stories! Thank you."
-      ],
-      "tip": "MC video needed here (not yet produced)."
+      ]
     }
   ]
 }

@@ -9,27 +9,51 @@
     {
       "id": "welcome",
       "label": "Welcome",
-      "slides": [1]
+      "slides": [
+        1
+      ]
     },
     {
       "id": "roc_stories",
       "label": "ROC Stories",
-      "slides": [2, 3, 4]
+      "slides": [
+        2,
+        3,
+        4
+      ]
     },
     {
       "id": "local_govt",
       "label": "Local Government",
-      "slides": [5, 6, 7, 8, 9]
+      "slides": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "id": "helplines",
       "label": "Helpline Numbers",
-      "slides": [10, 11, 12, 13, 14, 15, 16]
+      "slides": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
     },
     {
       "id": "wrap_up",
       "label": "Wrap-up & Ripple Tasks",
-      "slides": [17, 18, 19]
+      "slides": [
+        17,
+        18,
+        19
+      ]
     }
   ],
   "slides": [
@@ -48,7 +72,9 @@
       "brief": "Let us start the session by reading some interesting stories! Read the stories in your groups. You have 3 minutes.",
       "timer_seconds": 180,
       "reminder_at": 60,
-      "tip": "Distribute Annexure 1 to students (one copy per group)."
+      "tip": "Distribute Annexure 1 to students (one copy per group).",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "image": "/sessions/assets/s5_annexure1_roc_stories.jpeg"
     },
     {
       "n": 3,
@@ -65,15 +91,16 @@
     },
     {
       "n": 4,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "ROC Stories — MC Says",
-      "body": [
+      "tip": "Play MC video.",
+      "video": "/sessions/assets/s5_mc_roc_stories.kn.mp4",
+      "kn_script": [
         "These stories are not made up — they are based on real incidents that took place in various cities across the country, and all the students in these stories were members of the Children's Constitution Club. Isn't that amazing? Even teenagers can be active citizens!",
         "When we ask the government for facilities or needs, we are asking for our Rights — meaning we are making the government work for us.",
         "While we have rights to many things, solving problems is not just the government's job. We must care about our surroundings and take action! That becomes our Responsibility.",
         "So when we ask for our rights, we are fulfilling our Responsibilities."
-      ],
-      "tip": "MC video needed here (not yet produced)."
+      ]
     },
     {
       "n": 5,
@@ -110,7 +137,8 @@
       "brief": "Discuss in your groups and write down all the problems you thought of! You have 2 minutes. Hint: What bothers you, your family, and your community the most? What are the common problems that adults in your community talk about?",
       "timer_seconds": 120,
       "reminder_at": 60,
-      "tip": "2 minute timer."
+      "tip": "2 minute timer.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
     },
     {
       "n": 8,
@@ -154,7 +182,8 @@
         "This is very important because it gives you the POWER to bring about change. Keep it safe at home.",
         "Paste it on your notice board, wall, or fridge at home where everyone can see it."
       ],
-      "tip": "Distribute helpline sheets."
+      "tip": "Distribute helpline sheets.",
+      "image": "/sessions/assets/s5_helpline_numbers.jpeg"
     },
     {
       "n": 11,
@@ -207,7 +236,8 @@
         "Write a real letter together: With students' help, the teacher writes a letter to any one institution regarding the problem. The teacher emails this letter to the relevant institution.",
         "Students, take note! You will be doing the same thing at home on your own!"
       ],
-      "tip": "Prepare in advance: You may need to research and identify addresses of some institutions near the school to use as examples in class."
+      "tip": "Prepare in advance: You may need to research and identify addresses of some institutions near the school to use as examples in class.",
+      "image": "/sessions/assets/s5_sample_complaint_letter.jpeg"
     },
     {
       "n": 15,
@@ -216,7 +246,9 @@
       "brief": "The teacher shares a problem from around the school. Teacher distributes sample letters/postcards to all students. Now all of you write letters on your postcards or write some slogans! Use catchy phrases to get the attention of the official/relevant institution! You have 10 minutes!",
       "timer_seconds": 600,
       "reminder_at": 180,
-      "tip": "Bring enough postcards or letter templates so every student in the club gets a copy."
+      "tip": "Bring enough postcards or letter templates so every student in the club gets a copy.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "image": "/sessions/assets/s5_postcards_templates.jpeg"
     },
     {
       "n": 16,
@@ -247,17 +279,19 @@
         "Remember that keeping parents informed about everything is also a responsibility.",
         "Once you have filed your complaint, don't forget to fill out the Change Champion report! Your teacher will now distribute copies of this to all of you."
       ],
-      "tip": "Distribute copies of the Change Champion report."
+      "tip": "Distribute copies of the Change Champion report.",
+      "image": "/sessions/assets/s5_change_champion_report.jpeg"
     },
     {
       "n": 19,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Wrap-up",
-      "body": [
+      "tip": "Play MC video. Say see you next time.",
+      "video": "/sessions/assets/s5_mc_wrapup.kn.mp4",
+      "kn_script": [
         "Remember that nobody will be checking what you are doing or how you do the activity! So let us do all activities honestly and be true to ourselves!",
         "All the best, see you next time!"
-      ],
-      "tip": "MC video needed here (not yet produced)."
+      ]
     }
   ]
 }
