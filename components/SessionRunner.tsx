@@ -135,14 +135,19 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
   }, []);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  // Fit-to-viewport — eliminates per-slide scrolling. The canvas is fixed-
-  // height (filling the flex slot between header + footer); the inner
-  // wrapper is whatever size the slide content naturally takes. If the
-  // inner is taller than the canvas, we scale it down with CSS transform
-  // so the whole slide fits the viewport. No scrolling, ever.
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  useEffect(() => {
+    const onFs = () => setIsFullscreen(!!document.fullscreenElement);
+    document.addEventListener("fullscreenchange", onFs);
+    return () => document.removeEventListener("fullscreenchange", onFs);
+  }, []);
+  const toggleFullscreen = () => {
+    const el = containerRef.current;
+    if (!document.fullscreenElement && el?.requestFullscreen) el.requestFullscreen().catch(() => {});
+    else if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+  };
+
   const canvasRef = useRef<HTMLElement | null>(null);
-  const fitRef = useRef<HTMLDivElement | null>(null);
-  const [fitScale, setFitScale] = useState(1);
 
   // ─────── language state ───────
   // Resolution order on first paint:
@@ -186,52 +191,10 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
     return () => window.clearTimeout(t);
   }, [idx]);
 
-  // Fit-to-viewport + scroll fallback (Madhav 25 Jun):
-  // - If content fits naturally → no scale.
-  // - If content overflows mildly (fit ≥ 0.75) → scale it down to fit.
-  // - If overflow is severe (fit < 0.75) → keep natural size and allow the
-  //   canvas to scroll vertically (with a hint indicator). Aggressive
-  //   downscaling makes everything tiny + unreadable.
-  const [canScroll, setCanScroll] = useState(false);
+  // Scroll canvas to top on slide change
   useEffect(() => {
-    const canvasEl = canvasRef.current;
-    const fitEl = fitRef.current;
-    if (!canvasEl || !fitEl) return;
-
-    const recompute = () => {
-      fitEl.style.transform = "scale(1)";
-      void fitEl.offsetHeight;
-      const canvasH = canvasEl.clientHeight;
-      const canvasW = canvasEl.clientWidth;
-      const contentH = fitEl.scrollHeight;
-      const contentW = fitEl.scrollWidth;
-      if (canvasH === 0 || contentH === 0) return;
-      const scaleH = canvasH / contentH;
-      const scaleW = canvasW / contentW;
-      const naturalFit = Math.min(1, scaleH, scaleW);
-      if (naturalFit >= 0.65) {
-        setFitScale(naturalFit);
-        setCanScroll(false);
-      } else {
-        setFitScale(1);
-        setCanScroll(true);
-      }
-    };
-
-    recompute();
-    const ro = new ResizeObserver(recompute);
-    ro.observe(canvasEl);
-    ro.observe(fitEl);
-    window.addEventListener("resize", recompute);
-    return () => {
-      ro.disconnect();
-      window.removeEventListener("resize", recompute);
-    };
-    // navOpen is included so fitScale is freshly recomputed the moment the
-    // nav rail opens/closes — the canvas width changes synchronously with
-    // that toggle (verifying DOM build: video/mc_narration slides looked
-    // misaligned right after closing the nav).
-  }, [idx, activeLang, navOpen]);
+    canvasRef.current?.scrollTo({ top: 0 });
+  }, [idx]);
 
   const slide = session.slides[idx];
 
@@ -328,6 +291,12 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
             title={knAvailable ? "ಕನ್ನಡ" : "Kannada coming soon"}
           >ಕನ್ನಡ</button>
         </div>
+        <button
+          className="sr-fs-btn"
+          onClick={toggleFullscreen}
+          title={isFullscreen ? "Exit fullscreen (F)" : "Fullscreen (F)"}
+          aria-label={isFullscreen ? "Exit fullscreen" : "Enter fullscreen"}
+        >{isFullscreen ? "⊠" : "⛶"}</button>
         <div className="sr-progress">
           <div className="sr-progress-bar"><div style={{ width: `${((idx + 1) / session.slides.length) * 100}%` }} /></div>
           <span>{idx + 1} / {session.slides.length}</span>
@@ -376,18 +345,9 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
           className={[
             "sr-canvas",
             (slide.kind === "static" || slide.kind === "reflect_share") ? "is-projector" : "",
-            canScroll ? "is-scrollable" : "",
             (slide.kind === "video" || slide.kind === "mc_narration") ? "is-video-slide" : "",
           ].filter(Boolean).join(" ")}
         >
-          <div
-            ref={fitRef}
-            className="sr-canvas-fit"
-            style={{ transform: `scale(${fitScale})` }}
-          >
-          {/* Title-kind slides render their own branded title in TitleSlide —
-              skip the outer crumb + h1 so we don't render the title twice
-              (Madhav 7 Jul: 'title slide has two titles in kannada'). */}
           {slide.kind !== "title" && (
             <>
               <div className="sr-section-crumb">{currentSection.label}</div>
@@ -398,7 +358,6 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
 
           <div className={`sr-slide-body${!slide.image && !(slide.images && slide.images.length) && !slide.video ? ' sr-text-only' : ''}`}>
             <SlideBody slide={slide} onEvent={onEvent} onAdvance={next} lang={activeLang} programme={session.programme} />
-          </div>
           </div>
 
           {/* Teacher tip — brought back per Madhav 7 Jul school pilot.
@@ -1450,6 +1409,8 @@ const styles = `
   .sr-translation-banner { background: #FFF3CD; color: #7A5D00; padding: 6px 16px; font-size: 13px; font-weight: 600; border-bottom: 1px solid #F1D77A; text-align: center; }
   .sr-sep { opacity: 0.4; margin: 0 6px; }
   .sr-icon-btn { background: transparent; color: ${NAVY}; border: 1px solid rgba(0,0,0,.12); padding: 2px 8px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+  .sr-fs-btn { background: transparent; color: ${NAVY}; border: 1px solid rgba(0,0,0,.12); padding: 2px 8px; border-radius: 6px; cursor: pointer; font-size: 16px; line-height: 1; transition: background .15s ease; }
+  .sr-fs-btn:hover { background: ${LIGHT_SAFFRON}; }
   .sr-progress { display: flex; align-items: center; gap: 10px; font-size: 12px; min-width: 220px; }
   .sr-progress-bar { width: 160px; height: 6px; background: rgba(255,255,255,.2); border-radius: 3px; overflow: hidden; }
   .sr-progress-bar > div { height: 100%; background: #fff; transition: width .25s ease; }
@@ -1466,37 +1427,11 @@ const styles = `
   .sr-nav-footer { font-size: 10px; opacity: 0.6; text-align: center; padding-top: 12px; }
 
   .sr-canvas {
-    flex: 1; padding: 20px 32px 80px; overflow: hidden; position: relative;
+    flex: 1; padding: 20px 32px 80px; position: relative;
     background: linear-gradient(rgba(255,251,242,0.35), rgba(255,251,242,0.45));
-    scroll-behavior: smooth;
-  }
-  /* Scroll fallback — when content overflows too much to scale, allow
-     vertical scrolling with a soft scroll-shadow hint at the bottom. */
-  .sr-canvas.is-scrollable {
     overflow-y: auto;
+    scroll-behavior: smooth;
     scrollbar-width: thin;
-  }
-  /* Scroll indicator — fixed at the bottom of the viewport so it's persistent
-     and clearly visible on every slide where scrolling is needed. */
-  .sr-canvas.is-scrollable::after {
-    content: "↓ scroll for more";
-    position: fixed;
-    bottom: 14px; left: 50%;
-    transform: translateX(-50%);
-    padding: 5px 14px;
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-    border-radius: 999px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .04em;
-    pointer-events: none;
-    animation: sr-bounce 1.6s ease-in-out infinite;
-    z-index: 8;
-  }
-  @keyframes sr-bounce {
-    0%, 100% { transform: translateY(0); opacity: 0.85; }
-    50%      { transform: translateY(-3px); opacity: 1; }
   }
   /* Hide the bottom-left CMCA brand on video slides — slide 27's Asfiya
      video already has the logo baked in, and slide 3 MC video shows
@@ -1542,23 +1477,12 @@ const styles = `
   .sr-preamble-close:hover { background: #fff !important; transform: scale(1.05); }
   /* Fit-to-viewport wrapper: holds the slide's natural content size and
      gets a CSS transform: scale(N) applied by JS when content overflows
-     the canvas. transform-origin: top center keeps the top of the slide
-     anchored so the section crumb + title don't drift.
      Subtle fade-up motion on slide change for a polished feel. */
-  .sr-canvas-fit {
-    transform-origin: top center;
-    width: 100%;
-    animation: sr-slide-in .35s cubic-bezier(0.16, 1, 0.3, 1);
-  }
   @keyframes sr-slide-in {
     from { opacity: 0; }
     to   { opacity: 1; }
   }
-  .sr-canvas.is-projector .sr-canvas-fit {
-    /* Projector-mode is-projector centers vertically via flex on the
-       canvas; the fit wrapper should still measure as one block. */
-    display: flex; flex-direction: column; align-items: center;
-  }
+  .sr-canvas > * { animation: sr-slide-in .35s cubic-bezier(0.16, 1, 0.3, 1); }
   /* Projector mode: horizontally centred, TOP-aligned (was vertically
      centred — Madhav 6 Jul: tall slides like 12/18 with 5 body lines were
      letting the transform-scaled title bleed above the canvas and get
