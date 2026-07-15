@@ -209,13 +209,13 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
       const scaleH = canvasH / contentH;
       const scaleW = canvasW / contentW;
       const naturalFit = Math.min(1, scaleH, scaleW);
-      // Always shrink to fit — never scroll. Madhav 7 Jul school pilot:
-      // 'no scroll for more scenario, layout should be clean like a
-      // slideshow'. Even at aggressive scale (down to 0.35), the text
-      // stays readable on a projector/smartboard because we lifted the
-      // base font sizes; on smaller screens the auto-shrink handles it.
-      setFitScale(Math.max(0.35, naturalFit));
-      setCanScroll(false);
+      if (naturalFit >= 0.65) {
+        setFitScale(naturalFit);
+        setCanScroll(false);
+      } else {
+        setFitScale(1);
+        setCanScroll(true);
+      }
     };
 
     recompute();
