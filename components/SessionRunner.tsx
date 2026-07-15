@@ -577,7 +577,7 @@ function McSlide({ slide, lang }: { slide: Slide; lang: Lang }) {
               controls
               playsInline
               src={slide.video}
-              poster="/sessions/assets/mc_poster.png"
+
               onError={() => setVideoFailed(true)}
             />
           ) : (
@@ -794,7 +794,7 @@ function RevealSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEv
               controls
               playsInline
               src={slide.video}
-              poster="/sessions/assets/mc_poster.png"
+
               onError={() => setVideoFailed(true)}
             />
           </div>
