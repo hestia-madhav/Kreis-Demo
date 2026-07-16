@@ -1,7 +1,7 @@
 {
   "id": "dom-session-1",
   "_language": "en",
-  "_revision": "2026-07-09-ai-draft-pending-cmca-review",
+  "_revision": "2026-07-16-ashwini-pptx-corrections",
   "title": "Welcome to your Civic Club — Session 1",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
@@ -117,7 +117,7 @@
       "title": "Teacher Introduction",
       "body": [
         "My name is ____",
-        "I am your CMCA teacher",
+        "I am your Civic Club teacher",
         "Something I like / don't like:"
       ],
       "tip": "Introduce yourself — share one thing you like and one you don't."
@@ -126,6 +126,7 @@
       "n": 3,
       "kind": "mc_narration",
       "title": "Master Change Introduction",
+      "_dom_video_notes": "DOM version: (1) at 08-10s replace 'Constitution Club' with 'Civic Club'; (2) at 24-32s remove partner mention; (3) remove partner logos from on-screen graphics",
       "video": "/sessions/assets/mc_intro.kn.mp4",
       "transcript": "Hello junior citizens, Namaskara! I am Master Change. I am here to help teacher and you. Welcome to your Children's Civic Club! This year, I too am a member of your Club as a CMCA Change Champion. CMCA or the Children's Movement for Civic Awareness inspires and empowers young people like you and me to be concerned, thinking and active citizens. I am here to be with you and teacher, as a guide and support. Can you all clap for CMCA and for me? Thank you for your warm welcome! Let's start our journey as active junior citizens and members of our Civic Club also known as CC Club! Now, let's hear what your teacher has to share with you.",
       "tip": "Play the video in full; prompt kids to clap when Master Change asks."
@@ -133,12 +134,16 @@
     {
       "n": 4,
       "kind": "static",
-      "title": "1-2 Eyes on Me — Getting Ready",
+      "title": "Calmer Techniques",
       "body": [
         "Sometimes we get so excited that we can't stop talking or moving around… just like in a game!",
-        "Just like in a game, our Club has a whistle too!"
+        "Just like in a game, our Club has a whistle too!",
+        "Our 3 calmer call-and-responses:",
+        "1. One Two… Eyes on You ✅",
+        "2. ಒಂದು ಎರಡು… ಬೋರ್ಡ್ ಕಡೆ ನೋಡು ✅",
+        "3. ಹಾಯ್… ಹೆಲೋ ✅"
       ],
-      "tip": "Let the whistle voice-over play, then move to the next slide."
+      "tip": "Introduce all 3 call-and-response calmers, then practise each one."
     },
     {
       "n": 5,
@@ -211,6 +216,11 @@
           "src": "/sessions/assets/ksrtc_logo.webp",
           "alt": "KSRTC",
           "caption": "KSRTC"
+        },
+        {
+          "src": "/sessions/assets/partner_karnataka_govt.jpeg",
+          "alt": "Government of Karnataka",
+          "caption": "Karnataka Govt"
         }
       ],
       "timer_seconds": 480,
