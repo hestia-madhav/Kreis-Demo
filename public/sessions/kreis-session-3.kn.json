@@ -1,7 +1,7 @@
 {
   "id": "kreis-session-3",
   "_language": "kn",
-  "_revision": "2026-07-06-irfan-kn",
+  "_revision": "2026-07-16-ashwini-feedback",
   "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್ — ಸೆಷನ್ 3",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -83,8 +83,8 @@
           "alt": "hospital story 2 — Hyderabad"
         }
       ],
-      "image_layout": "side",
-      "tip": "ಎರಡು ಸುದ್ದಿ-ಆಧಾರಿತ ಕಥೆಗಳು. ಪ್ರತಿ ಕಥೆಗೆ ಸಂಬಂಧಿಸಿದ ಚಿತ್ರ ಪಕ್ಕದಲ್ಲಿ ತೋರಿಸಿ."
+      "image_layout": "stack",
+      "tip": "ಎರಡು ಸುದ್ದಿ-ಆಧಾರಿತ ಕಥೆಗಳು. ಚಿತ್ರಗಳನ್ನು ಕೆಳಗೆ ತೋರಿಸಿ."
     },
     {
       "n": 3,
@@ -106,11 +106,6 @@
       "kind": "video",
       "title": "ಉದಾಹರಣೆ — Master Change ಹೇಳುತ್ತಾರೆ",
       "video": "/sessions/assets/s3_mc_traffic_signal.kn.mp4",
-      "pause_at": [
-        30,
-        60
-      ],
-      "pause_duration": 8,
       "kn_script": [
         "ನಾನು ಯಾವಾಗಲೂ ಮನೆಯಿಂದ ಶಾಲೆಗೆ ಹೊರಡುವಾಗ ತಡವಾಗುತ್ತದೆ. ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ತಲುಪಲು, ನಾನು ಅನೇಕ ಬಾರಿ ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರುತ್ತೇನೆ.",
         "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?",
@@ -283,7 +278,8 @@
         "ಇದು ನಿಮ್ಮ ಬದಲಾವಣೆಯ ಕಥೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಪೆಟ್ಟಿಗೆ."
       ],
       "transcript": "Wow! Our CMCA Club is learning so many new things. Time to collect all the positive changes in our lives. Let me introduce something exciting — the Change Champion Box! It's a box that collects your change stories.",
-      "tip": "ಸೆಷನ್ 1ರ change_champion_rules.mp4 ವೀಡಿಯೋವನ್ನು ಮರುಬಳಸಬಹುದೇ ಎಂದು ಪರಿಶೀಲಿಸಿ. ಇಲ್ಲದಿದ್ದರೆ ಹೊಸ ವೀಡಿಯೋ ಬೇಕು."
+      "tip": "ಸೆಷನ್ 1ರ change_champion_rules.mp4 ವೀಡಿಯೋವನ್ನು ಮರುಬಳಸಬಹುದೇ ಎಂದು ಪರಿಶೀಲಿಸಿ. ಇಲ್ಲದಿದ್ದರೆ ಹೊಸ ವೀಡಿಯೋ ಬೇಕು.",
+      "_content_needed": "Ashwini feedback 16-Jul: add box creation details and rules for the Change Champion Box — e.g. how to make the box, what chits to write, when to open it, rules for participation. Content not yet provided — awaiting from CMCA team."
     }
   ]
 }

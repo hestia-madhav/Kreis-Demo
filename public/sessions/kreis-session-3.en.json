@@ -1,7 +1,7 @@
 {
   "id": "kreis-session-3",
   "_language": "en",
-  "_revision": "2026-07-06-irfan-kn-import",
+  "_revision": "2026-07-16-ashwini-feedback",
   "title": "CCC — Session 3: Values, Choices, Integrity",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -77,7 +77,7 @@
           "alt": "hospital story 2 — Hyderabad"
         }
       ],
-      "image_layout": "side",
+      "image_layout": "stack",
       "title": "[EN translation pending] — kn: ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳು",
       "body": [
         "[EN translation pending]"
@@ -99,11 +99,6 @@
       "n": 4,
       "kind": "video",
       "video": "/sessions/assets/s3_mc_traffic_signal.kn.mp4",
-      "pause_at": [
-        30,
-        60
-      ],
-      "pause_duration": 8,
       "transcript": "MC gives a traffic-signal example: 'I always get late leaving home for school. To reach on time I sometimes break traffic signals. Which value am I not showing? (pause) — Not breaking signals, road awareness. Very good! Now what positive action would show that value? (pause) — Following rules, respect for other vehicles.'",
       "title": "[EN translation pending] — kn: ಉದಾಹರಣೆ — Master Change ಹೇಳುತ್ತಾರೆ",
       "kn_script": [
@@ -277,7 +272,8 @@
       "en_script": [
         "[EN translation pending]"
       ],
-      "tip": "[EN translation pending]"
+      "tip": "[EN translation pending]",
+      "_content_needed": "Ashwini feedback 16-Jul: add box creation details and rules for the Change Champion Box — e.g. how to make the box, what chits to write, when to open it, rules for participation. Content not yet provided — awaiting from CMCA team."
     }
   ]
 }

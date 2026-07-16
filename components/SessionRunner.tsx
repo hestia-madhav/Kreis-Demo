@@ -1686,22 +1686,7 @@ const styles = `
   .sr-preamble-close:hover { background: #d8851a; }
   .sr-video-frame { background: #e5e7eb; border-radius: 12px; aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
   .sr-video-frame video { width: 100%; height: 100%; object-fit: contain; background: #000; }
-  /* CMCA logo overlay — masks the Veo watermark at bottom-right.
-     Applied via ::after so we don't need to touch every video element's JSX.
-     pointer-events: none so it never blocks the play/pause controls. */
-  .sr-video-frame::after {
-    content: '';
-    position: absolute;
-    bottom: 14px;
-    right: 14px;
-    width: 64px;
-    height: 76px;
-    background: url('/sessions/assets/cmca_logo.png') no-repeat center / contain;
-    pointer-events: none;
-    z-index: 5;
-    /* subtle drop shadow so the logo sits cleanly on any frame background */
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.35));
-  }
+  /* CMCA logo overlay removed — Ashwini feedback 16-Jul: no logos on video boxes. */
   .sr-video-placeholder { color: ${MUTED}; text-align: center; font-size: 18px; font-weight: 600; padding: 48px 24px; background: rgba(0,0,0,.03); border-radius: 12px; border: 2px dashed #e5e7eb; }
   .sr-transcript { background: #fff; border: 1px solid #e5e7eb; padding: 16px; border-radius: 10px; max-height: 360px; overflow-y: auto; }
   .sr-transcript-label { color: ${SAFFRON}; font-weight: 700; font-size: 11px; text-transform: uppercase; margin-bottom: 8px; }
@@ -1834,20 +1819,7 @@ const styles = `
     0%, 100% { box-shadow: 0 6px 22px rgba(0,0,0,0.35), 0 0 0 0 rgba(255,180,50,0.7); }
     50%      { box-shadow: 0 6px 22px rgba(0,0,0,0.35), 0 0 0 12px rgba(255,180,50,0); }
   }
-  /* CMCA logo overlay for the large video player — same masking strategy
-     as .sr-video-frame, scaled up slightly for the bigger frame. */
-  .sr-video-large::after {
-    content: '';
-    position: absolute;
-    bottom: 18px;
-    right: 18px;
-    width: 88px;
-    height: 104px;
-    background: url('/sessions/assets/cmca_logo.png') no-repeat center / contain;
-    pointer-events: none;
-    z-index: 5;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.4));
-  }
+  /* CMCA logo overlay (large video) removed — Ashwini feedback 16-Jul. */
 
   .sr-preamble { max-width: 900px; line-height: 1.7; }
   .sr-preamble p { font-size: 18px; margin: 0 0 10px; }
@@ -2195,7 +2167,7 @@ const styles = `
   }
   .sr-image-card { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.05); display: flex; flex-direction: column; gap: 8px; transition: transform .2s ease, box-shadow .2s ease; }
   .sr-image-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.1); }
-  .sr-image-card img { width: 100%; height: 280px; object-fit: contain; display: block; }
+  .sr-image-card img { width: 100%; height: 400px; object-fit: contain; display: block; }
   .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
   /* Brief panel on timer slides also supports companion logos beneath
      the brief text — used for slide 8 (KSRTC + KREIS logo inspiration). */

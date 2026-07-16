@@ -1,7 +1,7 @@
 {
   "id": "kreis-session-2",
   "_language": "en",
-  "_revision": "2026-07-06-irfan-kn-import",
+  "_revision": "2026-07-16-ashwini-feedback",
   "title": "CCC — Session 2: Club Naming + Launch Campaign",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -71,7 +71,6 @@
     {
       "n": 2,
       "kind": "static",
-      "image": "/sessions/assets/reference/s2_image2.png",
       "title": "Club Naming & Launch Campaign",
       "tip": "[EN translation pending]"
     },

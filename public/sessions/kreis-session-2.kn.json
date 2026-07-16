@@ -1,7 +1,7 @@
 {
   "id": "kreis-session-2",
   "_language": "kn",
-  "_revision": "2026-07-06-irfan-kn",
+  "_revision": "2026-07-16-ashwini-feedback",
   "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್ — ಸೆಷನ್ 2",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -72,7 +72,6 @@
       "n": 2,
       "kind": "static",
       "title": "ಕ್ಲಬ್ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
-      "image": "/sessions/assets/reference/s2_image2.png",
       "tip": "ಇಂದಿನ ಸೆಷನ್‌ನ ಶೀರ್ಷಿಕೆಯನ್ನು ಪರಿಚಯಿಸಿ."
     },
     {
