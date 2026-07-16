@@ -2,7 +2,7 @@
   "id": "dom-session-1",
   "_language": "en",
   "_revision": "2026-07-09-ai-draft-pending-cmca-review",
-  "title": "Welcome to your Children's Civic Club — Session 1",
+  "title": "Welcome to your Civic Club — Session 1",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -168,8 +168,7 @@
       "kind": "static",
       "title": "Let's Calm Down Again!",
       "body": [
-        "Voice-over demos the sound: shhhh",
-        "Teacher says \"Flat Tyre!\""
+        "Voice-over demos the sound: shhhh"
       ],
       "audio": "/sessions/assets/vo_flat_tyre_shhh.mp3",
       "image": "/sessions/assets/flat_tyre.jpg",
@@ -365,7 +364,7 @@
       "n": 24,
       "kind": "mcq",
       "title": "Constitution Connect",
-      "scenario": "Why do we have a Children's Civic Club?",
+      "scenario": "Why do we have a Civic Club?",
       "options": [
         "To play games only",
         "To learn about rights, responsibilities, and democracy",
@@ -379,7 +378,7 @@
       "n": 25,
       "kind": "mcq",
       "title": "Constitution Connect",
-      "scenario": "What is a campaign in a Children's Civic Club?",
+      "scenario": "What is a campaign in a Civic Club?",
       "options": [
         "A way to spread awareness and bring change on an issue",
         "A competition to win prizes",
@@ -393,7 +392,7 @@
       "n": 26,
       "kind": "mcq",
       "title": "Constitution Connect",
-      "scenario": "Which of these is an important value in a Children's Civic Club?",
+      "scenario": "Which of these is an important value in a Civic Club?",
       "options": [
         "Ignoring others' ideas",
         "Respecting everyone's voice",
@@ -432,9 +431,9 @@
     {
       "n": 30,
       "kind": "title",
-      "title": "Children's Civic Club",
+      "title": "Civic Club",
       "thank_you": true,
-      "closing_line": "Today we had a great start to our Children's Civic Club journey. See you again in the next session.",
+      "closing_line": "Today we had a great start to our Civic Club journey. See you again in the next session.",
       "centered": true,
       "audio": "/sessions/assets/welcome_music.mp3",
       "tip": "Thank the children — next session is naming the club."

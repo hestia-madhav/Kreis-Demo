@@ -2,7 +2,7 @@
   "id": "dom-session-1",
   "_language": "kn",
   "_revision": "2026-07-09-ai-draft-pending-cmca-review",
-  "title": "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ — ಸೆಷನ್ 1",
+  "title": "ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ — ಸೆಷನ್ 1",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -131,7 +131,7 @@
       "video": "/sessions/assets/mc_intro.kn.mp4",
       "transcript": "Hello junior citizens, Namaskara! I am Master Change. I am here to help teacher and you. Welcome to your Children's Civic Club! This year, I too am a member of your Club as a CMCA Change Champion. CMCA or the Children's Movement for Civic Awareness inspires and empowers young people like you and me to be concerned, thinking and active citizens. I am here to be with you and teacher, as a guide and support. Can you all clap for CMCA and for me? Thank you for your warm welcome! Let's start our journey as active junior citizens and members of our Civic Club also known as CC Club! Now, let's hear what your teacher has to share with you.",
       "kn_script": [
-        "ನಮಸ್ಕಾರ ಕಿರಿಯ ನಾಗರಿಕರೇ! ನಾನು ಮಾಸ್ಟರ್ ಚೇಂಜ್. ಶಿಕ್ಷಕರಿಗೂ ನಿಮಗೂ ಸಹಾಯ ಮಾಡಲು ನಾನಿಲ್ಲಿದ್ದೇನೆ. ನಿಮ್ಮ ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+        "ನಮಸ್ಕಾರ ಕಿರಿಯ ನಾಗರಿಕರೇ! ನಾನು ಮಾಸ್ಟರ್ ಚೇಂಜ್. ಶಿಕ್ಷಕರಿಗೂ ನಿಮಗೂ ಸಹಾಯ ಮಾಡಲು ನಾನಿಲ್ಲಿದ್ದೇನೆ. ನಿಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
         "ಈ ವರ್ಷ, ನಾನು ಕೂಡ CMCA ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಆಗಿ ನಿಮ್ಮ ಕ್ಲಬ್‌ನ ಒಬ್ಬ ಸದಸ್ಯ. CMCA ಅಂದರೆ Children's Movement for Civic Awareness (ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ) — ಇದು ನಿಮ್ಮಂತಹ, ನನ್ನಂತಹ ಮಕ್ಕಳನ್ನು ಕಾಳಜಿಯುಳ್ಳ, ಆಲೋಚನಾಶೀಲ ಮತ್ತು ಸಕ್ರಿಯ ನಾಗರಿಕರಾಗಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ ಮತ್ತು ಸಶಕ್ತಗೊಳಿಸುತ್ತದೆ.",
         "ನಾನು ನಿಮ್ಮ ಮತ್ತು ಶಿಕ್ಷಕರ ಜೊತೆ ಮಾರ್ಗದರ್ಶಕನಾಗಿ, ಬೆಂಬಲವಾಗಿ ಇರುತ್ತೇನೆ. ಎಲ್ಲರೂ CMCA ಗಾಗಿ ಮತ್ತು ನನಗಾಗಿ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ? ನಿಮ್ಮ ಆತ್ಮೀಯ ಸ್ವಾಗತಕ್ಕೆ ಧನ್ಯವಾದಗಳು!",
         "ಸಕ್ರಿಯ ಕಿರಿಯ ನಾಗರಿಕರಾಗಿ ಮತ್ತು CC ಕ್ಲಬ್ ಎಂದೂ ಕರೆಯಲ್ಪಡುವ ನಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯರಾಗಿ ನಮ್ಮ ಪಯಣವನ್ನು ಆರಂಭಿಸೋಣ! ಈಗ, ನಿಮ್ಮ ಶಿಕ್ಷಕರು ಏನು ಹಂಚಿಕೊಳ್ಳಲಿದ್ದಾರೆ ಎಂದು ಕೇಳೋಣ."
@@ -174,8 +174,7 @@
       "kind": "static",
       "title": "ಮತ್ತೆ ಶಾಂತವಾಗೋಣ!",
       "body": [
-        "ಧ್ವನಿ ಶಬ್ದವನ್ನು ತೋರಿಸುತ್ತದೆ: ಷ್‌ಷ್‌ಷ್‌ಷ್‌",
-        "ಶಿಕ್ಷಕರು ಹೇಳುತ್ತಾರೆ \"ಫ್ಲಾಟ್ ಟೈರ್!\""
+        "ಧ್ವನಿ ಶಬ್ದವನ್ನು ತೋರಿಸುತ್ತದೆ: ಷ್‌ಷ್‌ಷ್‌ಷ್‌"
       ],
       "audio": "/sessions/assets/vo_flat_tyre_shhh.mp3",
       "image": "/sessions/assets/flat_tyre.jpg",
@@ -266,7 +265,7 @@
       "transcript": "You've now practiced something very important — it's all on the board! When you listen, share and work together, you are Children's Civic Club members throughout your life. Make sure that from now on, everyone participates in group activities. For all Club sessions, sit together in your groups right from the start! Now it's time for the Constitution Connect Quiz Question! Over to you, teacher!",
       "kn_script": [
         "ನೀವು ಈಗ ಒಂದು ಬಹಳ ಮುಖ್ಯವಾದ ವಿಷಯವನ್ನು ಅಭ್ಯಾಸ ಮಾಡಿದ್ದೀರಿ — ಅದೆಲ್ಲಾ ಬೋರ್ಡ್ ಮೇಲಿದೆ!",
-        "ನೀವು ಒಬ್ಬರ ಮಾತನ್ನು ಮತ್ತೊಬ್ಬರು ಕೇಳಿದಾಗ, ಹಂಚಿಕೊಂಡಾಗ ಮತ್ತು ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡಿದಾಗ, ನೀವು ಜೀವನವಿಡೀ ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯರಾಗಿರುತ್ತೀರಿ.",
+        "ನೀವು ಒಬ್ಬರ ಮಾತನ್ನು ಮತ್ತೊಬ್ಬರು ಕೇಳಿದಾಗ, ಹಂಚಿಕೊಂಡಾಗ ಮತ್ತು ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡಿದಾಗ, ನೀವು ಜೀವನವಿಡೀ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯರಾಗಿರುತ್ತೀರಿ.",
         "ಇನ್ನು ಮುಂದೆ, ಗುಂಪಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಭಾಗವಹಿಸುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ. ಪ್ರತಿಯೊಂದು ಕ್ಲಬ್ ಸೆಷನ್‌ನಲ್ಲೂ ಆರಂಭದಿಂದಲೇ ನಿಮ್ಮ ಗುಂಪಿನೊಂದಿಗೆ ಕುಳಿತುಕೊಳ್ಳಿ!",
         "ಈಗ \"ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ\" ಸಮಯ! ಶಿಕ್ಷಕರೇ, ನಿಮಗೆ ಬಿಟ್ಟಿದ್ದು!"
       ],
@@ -385,7 +384,7 @@
       "transcript": "We are inspired by our Constitution's vision for India — it guides and motivates us. As a mark of respect for the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session by reading our Preamble, as we begin the learning journey of our Children's Civic Club.",
       "kn_script": [
         "ನಮ್ಮ ಸಂವಿಧಾನವು ಭಾರತದ ಬಗ್ಗೆ ಹೊಂದಿರುವ ಮಹತ್ವದ ಕನಸಿನಿಂದ ನಾವು ಸ್ಫೂರ್ತಿ ಪಡೆಯುತ್ತೇವೆ. ಅದು ನಮಗೆ ದಾರಿದೀಪವಾಗಿದ್ದು, ಪ್ರೇರಣೆ ನೀಡುತ್ತದೆ.",
-        "ಸಂವಿಧಾನಕ್ಕೆ, ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ ಹಾಗೂ ಸಂವಿಧಾನ ಸಭೆಯ ಸದಸ್ಯರಿಗೆ ಗೌರವ ಸಲ್ಲಿಸುತ್ತಾ, ನಮ್ಮ ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಕಲಿಕೆಯ ಪಯಣ ಆರಂಭಿಸುತ್ತಾ, ಈ ಸೆಷನ್‌ ಅನ್ನು ನಾವು ಎಲ್ಲರೂ ಸೇರಿ ಪೀಠಿಕೆಯನ್ನು ಓದುವ ಮೂಲಕ ಮುಕ್ತಾಯಗೊಳಿಸೋಣ."
+        "ಸಂವಿಧಾನಕ್ಕೆ, ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ ಹಾಗೂ ಸಂವಿಧಾನ ಸಭೆಯ ಸದಸ್ಯರಿಗೆ ಗೌರವ ಸಲ್ಲಿಸುತ್ತಾ, ನಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಕಲಿಕೆಯ ಪಯಣ ಆರಂಭಿಸುತ್ತಾ, ಈ ಸೆಷನ್‌ ಅನ್ನು ನಾವು ಎಲ್ಲರೂ ಸೇರಿ ಪೀಠಿಕೆಯನ್ನು ಓದುವ ಮೂಲಕ ಮುಕ್ತಾಯಗೊಳಿಸೋಣ."
       ],
       "tip": "ವೀಡಿಯೋ ಪ್ಲೇ ಮಾಡಿ; ಅಂಬೇಡ್ಕರ್ ಹೆಸರು ಬರುವ ಮೊದಲು ಊಹಿಸಲು ಬಿಡಿ."
     },
@@ -393,7 +392,7 @@
       "n": 24,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
-      "scenario": "ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್ ಏಕೆ ಇದೆ?",
+      "scenario": "ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ನಾಗರಿಕ ಕ್ಲಬ್ ಏಕೆ ಇದೆ?",
       "options": [
         "ಬರೀ ಆಟ ಆಡಲು",
         "ಹಕ್ಕುಗಳು, ಜವಾಬ್ದಾರಿಗಳು ಮತ್ತು ಪ್ರಜಾಪ್ರಭುತ್ವದ ಬಗ್ಗೆ ಕಲಿಯಲು",
@@ -407,7 +406,7 @@
       "n": 25,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
-      "scenario": "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ನಲ್ಲಿ ಅಭಿಯಾನ (campaign) ಎಂದರೇನು?",
+      "scenario": "ನಾಗರಿಕ ಕ್ಲಬ್‌ನಲ್ಲಿ ಅಭಿಯಾನ (campaign) ಎಂದರೇನು?",
       "options": [
         "ಒಂದು ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ ಅರಿವು ಮೂಡಿಸಿ ಬದಲಾವಣೆ ತರುವ ಮಾರ್ಗ",
         "ಬಹುಮಾನ ಗೆಲ್ಲುವ ಸ್ಪರ್ಧೆ",
@@ -421,7 +420,7 @@
       "n": 26,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
-      "scenario": "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ನಲ್ಲಿ ಇವುಗಳಲ್ಲಿ ಯಾವುದು ಮುಖ್ಯ ಮೌಲ್ಯ?",
+      "scenario": "ನಾಗರಿಕ ಕ್ಲಬ್‌ನಲ್ಲಿ ಇವುಗಳಲ್ಲಿ ಯಾವುದು ಮುಖ್ಯ ಮೌಲ್ಯ?",
       "options": [
         "ಬೇರೆಯವರ ಯೋಚನೆಯನ್ನು ನಿರ್ಲಕ್ಷಿಸುವುದು",
         "ಪ್ರತಿಯೊಬ್ಬರ ಧ್ವನಿಯನ್ನು ಗೌರವಿಸುವುದು",
@@ -449,7 +448,7 @@
       "transcript": "Asfiya is a 21-year-old student and a CMCA alumna from Bengaluru, the eldest of four siblings, born to Indian parents in Saudi Arabia where her father worked as an engineer. As a Children's Civic Club member, she and her classmates convinced the school to switch from paper cups to steel tumblers. She went on to fix civic issues in her community, rescue injured animals, and inspire her family and friends. Despite facing criticism from adults, CMCA strengthened her belief in doing good. Today she tends a terrace garden, feeds community animals, organises donation and plantation drives, and dreams of becoming a doctor while volunteering with the United Nations.",
       "kn_script": [
         "ಆಸ್ಫಿಯಾ ಬೆಂಗಳೂರಿನ 21 ವರ್ಷದ ವಿದ್ಯಾರ್ಥಿನಿ ಮತ್ತು CMCA ಹಳೆಯ ವಿದ್ಯಾರ್ಥಿನಿ. ಅವಳು ನಾಲ್ಕು ಒಡಹುಟ್ಟಿದವರಲ್ಲಿ ಹಿರಿಯವಳು — ಸೌದಿ ಅರೇಬಿಯಾದಲ್ಲಿ ಜನಿಸಿದಳು, ಅಲ್ಲಿ ಅವಳ ತಂದೆ ಇಂಜಿನಿಯರ್ ಆಗಿ ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದರು. ಇತ್ತೀಚೆಗೆ ಅವಳು ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ ತನ್ನ ಬದಲಾವಣೆಯ ಕಥೆಯನ್ನು ಹಂಚಿಕೊಂಡಳು.",
-        "\"ಚಿಕ್ಕಂದಿನಿಂದಲೂ ನಾನು ಜನರಿಗೆ ಸಹಾಯ ಮಾಡುವ ಒಲವು ಹೊಂದಿದ್ದೆ, ಆದರೆ ಸಕ್ರಿಯ ನಾಗರಿಕಳಾಗುವುದು ಎಂದರೇನು ಎಂದು ನನಗೆ ತಿಳಿದಿರಲಿಲ್ಲ. ನಂತರ, ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯಳಾಗುವ ಈ ದೊಡ್ಡ ಅವಕಾಶ ನನಗೆ ಸಿಕ್ಕಿತು. ಆ ವರ್ಷ, ನಾನು ಮತ್ತು ಕೆಲವು ಸಹಪಾಠಿಗಳು ಶಾಲೆಯಲ್ಲಿ ಪೇಪರ್ ಕಪ್‌ಗಳ ಬದಲು ಸ್ಟೀಲ್ ಲೋಟಗಳನ್ನು ಬಳಸುವಂತೆ ಶಾಲೆಯನ್ನು ಒಪ್ಪಿಸಿದೆವು.\"",
+        "\"ಚಿಕ್ಕಂದಿನಿಂದಲೂ ನಾನು ಜನರಿಗೆ ಸಹಾಯ ಮಾಡುವ ಒಲವು ಹೊಂದಿದ್ದೆ, ಆದರೆ ಸಕ್ರಿಯ ನಾಗರಿಕಳಾಗುವುದು ಎಂದರೇನು ಎಂದು ನನಗೆ ತಿಳಿದಿರಲಿಲ್ಲ. ನಂತರ, ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯಳಾಗುವ ಈ ದೊಡ್ಡ ಅವಕಾಶ ನನಗೆ ಸಿಕ್ಕಿತು. ಆ ವರ್ಷ, ನಾನು ಮತ್ತು ಕೆಲವು ಸಹಪಾಠಿಗಳು ಶಾಲೆಯಲ್ಲಿ ಪೇಪರ್ ಕಪ್‌ಗಳ ಬದಲು ಸ್ಟೀಲ್ ಲೋಟಗಳನ್ನು ಬಳಸುವಂತೆ ಶಾಲೆಯನ್ನು ಒಪ್ಪಿಸಿದೆವು.\"",
         "ಶಾಲೆಯ ಗೋಡೆಗಳಿಗಷ್ಟೇ ಆಸ್ಫಿಯಾಳ ಬದಲಾವಣೆಯ ಹಂಬಲ ಸೀಮಿತವಾಗಲಿಲ್ಲ. ಅವಳು ತನ್ನ ಸಮುದಾಯದಲ್ಲಿಯೂ ನಾಗರಿಕ ಸಮಸ್ಯೆಗಳನ್ನು ಸರಿಪಡಿಸಿ, ಗಾಯಗೊಂಡ ಪ್ರಾಣಿಗಳನ್ನು ರಕ್ಷಿಸಿ, ತನ್ನ ಕುಟುಂಬ ಮತ್ತು ಸ್ನೇಹಿತರನ್ನೂ ಇದೇ ದಾರಿಯಲ್ಲಿ ಪ್ರೇರೇಪಿಸಿದಳು.",
         "ಆದರೆ ಅವಳಿಗೆ ಸಿಗಬೇಕಾದ ಮೆಚ್ಚುಗೆ ಬದಲು, ಸುತ್ತಮುತ್ತಲಿನ ಹಿರಿಯರಿಂದ ಟೀಕೆ ಎದುರಿಸಬೇಕಾಯಿತು: \"ಜನರು ಆಗಾಗ ನನ್ನನ್ನು ಕುಗ್ಗಿಸಿ, ಓದಿನ ಕಡೆ ಗಮನ ಕೊಡು ಎನ್ನುತ್ತಿದ್ದರು. CMCA ನನ್ನ ನಂಬಿಕೆಗಳನ್ನು ಬಲಪಡಿಸಿತು. ಸಮಾಜಕ್ಕೆ ಒಳಿತು ಮಾಡುವುದನ್ನು ತಡೆಯಲು ಬಯಸಿದವರನ್ನು ನಿರ್ಲಕ್ಷಿಸಿ, ತಲೆ ಎತ್ತಿ ನಡೆಯುವ ಧೈರ್ಯ ಅದು ನನಗೆ ಕೊಟ್ಟಿತು. ಶಿಕ್ಷಣ ಮುಖ್ಯ, ಆದರೆ ಮಾನವೀಯತೆಯೇ ಅತಿ ಮುಖ್ಯ ಎಂದು CMCA ನನಗೆ ಕಲಿಸಿತು.\"",
         "ಓದದ ಸಮಯದಲ್ಲಿ, ಆಸ್ಫಿಯಾ ತನ್ನ ತಾರಸಿ ತೋಟವನ್ನು ಪೋಷಿಸುತ್ತಾಳೆ, ಸಮುದಾಯದ ಪ್ರಾಣಿಗಳಿಗೆ ಆಹಾರ ನೀಡುತ್ತಾಳೆ, ಬಟ್ಟೆ ಮತ್ತು ಆಹಾರ ದೇಣಿಗೆ ಸಂಗ್ರಹಿಸುತ್ತಾಳೆ, ಮತ್ತು ಸಹ ವಿದ್ಯಾರ್ಥಿಗಳೊಂದಿಗೆ ಗಿಡ ನೆಡುವ ಅಭಿಯಾನಗಳನ್ನು ಮುನ್ನಡೆಸುತ್ತಾಳೆ. ಮುಂದೆ ವೈದ್ಯೆಯಾಗುವ ಕನಸು ಹೊಂದಿದ್ದು, ವಿಶ್ವಸಂಸ್ಥೆಯೊಂದಿಗೂ (United Nations) ಕೆಲಸ ಮಾಡುವ ಅಥವಾ ಸ್ವಯಂಸೇವೆ ಸಲ್ಲಿಸುವ ಆಸೆ ಹೊಂದಿದ್ದಾಳೆ.",
@@ -468,9 +467,9 @@
     {
       "n": 30,
       "kind": "title",
-      "title": "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್",
+      "title": "ನಾಗರಿಕ ಕ್ಲಬ್",
       "thank_you": true,
-      "closing_line": "ಇಂದು ನಮ್ಮ ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಪಯಣಕ್ಕೆ ಉತ್ತಮ ಆರಂಭ ಸಿಕ್ಕಿದೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
+      "closing_line": "ಇಂದು ನಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಪಯಣಕ್ಕೆ ಉತ್ತಮ ಆರಂಭ ಸಿಕ್ಕಿದೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
       "centered": true,
       "audio": "/sessions/assets/welcome_music.mp3",
       "tip": "ಮಕ್ಕಳಿಗೆ ಧನ್ಯವಾದ ಹೇಳಿ — ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಕ್ಲಬ್ ನಾಮಕರಣ."

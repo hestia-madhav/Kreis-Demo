@@ -92,7 +92,7 @@
         }
       ],
       "image_layout": "side",
-      "tip": "Ask 2 student volunteers to read the news stories aloud."
+      "tip": "Have 2 student volunteers read the news stories aloud. Let children read, not the teacher."
     },
     {
       "n": 3,
@@ -114,13 +114,13 @@
     },
     {
       "n": 5,
-      "kind": "static",
+      "kind": "group_activity_timer",
       "title": "Group Work Begins",
-      "body": [
-        "Distribute the sheets to groups.",
-        "7-minute timer — a warning sound plays when 2 minutes are left."
-      ],
-      "tip": "Give each group a different Annexure 3 sheet, then start the timer."
+      "tip": "Give each group a different Annexure 3 sheet, then start the timer.",
+      "brief": "Distribute sheets to groups. Identify values and actions for each story.",
+      "timer_seconds": 420,
+      "reminder_at": 120,
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
     },
     {
       "n": 6,
