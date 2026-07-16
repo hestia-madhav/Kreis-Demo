@@ -1,8 +1,8 @@
 {
   "id": "dom-session-1",
   "_language": "kn",
-  "_revision": "2026-07-16-ashwini-pptx-corrections",
-  "title": "ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ — ಸೆಷನ್ 1",
+  "_revision": "2026-07-16-kreis-duplicate",
+  "title": "ನಾಗರಿಕ ಕ್ಲಬ್ — ಸೆಷನ್ 1",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -20,40 +20,40 @@
       "label": "ಶಾಂತಗೊಳ್ಳೋಣ",
       "slides": [
         4,
-        5,
-        6,
-        7
+        5
       ]
     },
     {
       "id": "groups",
       "label": "ಗುಂಪುಗಳಾಗಿ ಕುಳಿತುಕೊಳ್ಳಿ",
       "slides": [
-        8
+        6
       ]
     },
     {
       "id": "group_work",
       "label": "ಗುಂಪು ಕಾರ್ಯ",
       "slides": [
+        7,
+        8,
         9,
-        10,
-        11,
-        12
+        10
       ]
     },
     {
       "id": "cc1",
       "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ 1",
       "slides": [
-        13,
-        14
+        11,
+        12,
+        13
       ]
     },
     {
       "id": "rules",
       "label": "ನಿಯಮಗಳನ್ನು ಮಾಡೋಣ",
       "slides": [
+        14,
         15,
         16,
         17,
@@ -65,39 +65,38 @@
       "id": "inspires",
       "label": "ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ?",
       "slides": [
-        20,
-        21
+        20
       ]
     },
     {
       "id": "cc2",
       "label": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ 2",
       "slides": [
+        21,
         22,
-        23,
-        24
+        23
       ]
     },
     {
       "id": "ripples",
       "label": "ಸಣ್ಣ ಕ್ರಿಯೆ, ದೊಡ್ಡ ಪರಿಣಾಮ",
       "slides": [
-        25,
-        26
+        24,
+        25
       ]
     },
     {
       "id": "preamble",
       "label": "ಪ್ರಸ್ತಾವನೆ",
       "slides": [
-        27
+        26
       ]
     },
     {
       "id": "ending",
       "label": "ಧನ್ಯವಾದ",
       "slides": [
-        28
+        27
       ]
     }
   ],
@@ -105,11 +104,11 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "ನಿಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
-      "subtitle": "DOM × CMCA",
+      "title": "ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "subtitle": "KREIS × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
-      "tip": "ಎಲ್ಲರೂ ಕುಳಿತ ಮೇಲೆ Next ಒತ್ತಿ."
+      "tip": "ಸ್ವಾಗತ ಸಂಗೀತ ಪ್ಲೇ ಮಾಡಿ. ಮಕ್ಕಳು ಒಳಗೆ ಬರುತ್ತಿರುವಾಗ ಈ ಸ್ಲೈಡ್ ಕಾಣಿಸಲಿ. ಎಲ್ಲರೂ ಸಿದ್ಧರಾದ ಮೇಲೆ Next ಒತ್ತಿ."
     },
     {
       "n": 2,
@@ -117,83 +116,75 @@
       "title": "ಶಿಕ್ಷಕರ ಪರಿಚಯ",
       "body": [
         "ನನ್ನ ಹೆಸರು ____",
-        "ನಾನು ನಿಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ ಶಿಕ್ಷಕ/ಶಿಕ್ಷಕಿ",
+        "ನಾನು ನಿಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಶಿಕ್ಷಕ/ಶಿಕ್ಷಕಿ",
         "ನನಗೆ ಇಷ್ಟವಾದದ್ದು / ಇಷ್ಟವಾಗದ್ದು:"
       ],
-      "tip": "ನಿಮ್ಮ ಪರಿಚಯ ಮಾಡಿಕೊಳ್ಳಿ — ಒಂದು ಇಷ್ಟ, ಒಂದು ಇಷ್ಟವಿಲ್ಲದ್ದು ಹೇಳಿ."
+      "tip": "ನಿಮ್ಮ ಪರಿಚಯ ಮಾಡಿಕೊಳ್ಳಿ. ನಿಮಗೆ ಇಷ್ಟವಾದದ್ದು ಒಂದು, ಇಷ್ಟವಾಗದ್ದು ಒಂದು ಹೇಳಿ — ಮಕ್ಕಳಿಗೆ ಮುಕ್ತ ಮನಸ್ಸನ್ನು ತೋರಿಸಿ."
     },
     {
       "n": 3,
       "kind": "mc_narration",
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್‌ ಅವರ ಪರಿಚಯ",
-      "_dom_video_notes": "DOM version: (1) at 08-10s replace 'Constitution Club' with 'Civic Club'; (2) at 24-32s remove partner mention; (3) remove partner logos from on-screen graphics",
       "video": "/sessions/assets/mc_intro.kn.mp4",
-      "transcript": "Hello junior citizens, Namaskara! I am Master Change. I am here to help teacher and you. Welcome to your Children's Civic Club! This year, I too am a member of your Club as a CMCA Change Champion. CMCA or the Children's Movement for Civic Awareness inspires and empowers young people like you and me to be concerned, thinking and active citizens. I am here to be with you and teacher, as a guide and support. Can you all clap for CMCA and for me? Thank you for your warm welcome! Let's start our journey as active junior citizens and members of our Civic Club also known as CC Club! Now, let's hear what your teacher has to share with you.",
-      "kn_script": [
-        "ನಮಸ್ಕಾರ ಕಿರಿಯ ನಾಗರಿಕರೇ! ನಾನು ಮಾಸ್ಟರ್ ಚೇಂಜ್. ಶಿಕ್ಷಕರಿಗೂ ನಿಮಗೂ ಸಹಾಯ ಮಾಡಲು ನಾನಿಲ್ಲಿದ್ದೇನೆ. ನಿಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
-        "ಈ ವರ್ಷ, ನಾನು ಕೂಡ CMCA ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಆಗಿ ನಿಮ್ಮ ಕ್ಲಬ್‌ನ ಒಬ್ಬ ಸದಸ್ಯ. CMCA ಅಂದರೆ Children's Movement for Civic Awareness (ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ) — ಇದು ನಿಮ್ಮಂತಹ, ನನ್ನಂತಹ ಮಕ್ಕಳನ್ನು ಕಾಳಜಿಯುಳ್ಳ, ಆಲೋಚನಾಶೀಲ ಮತ್ತು ಸಕ್ರಿಯ ನಾಗರಿಕರಾಗಲು ಪ್ರೇರೇಪಿಸುತ್ತದೆ ಮತ್ತು ಸಶಕ್ತಗೊಳಿಸುತ್ತದೆ.",
-        "ನಾನು ನಿಮ್ಮ ಮತ್ತು ಶಿಕ್ಷಕರ ಜೊತೆ ಮಾರ್ಗದರ್ಶಕನಾಗಿ, ಬೆಂಬಲವಾಗಿ ಇರುತ್ತೇನೆ. ಎಲ್ಲರೂ CMCA ಗಾಗಿ ಮತ್ತು ನನಗಾಗಿ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ? ನಿಮ್ಮ ಆತ್ಮೀಯ ಸ್ವಾಗತಕ್ಕೆ ಧನ್ಯವಾದಗಳು!",
-        "ಸಕ್ರಿಯ ಕಿರಿಯ ನಾಗರಿಕರಾಗಿ ಮತ್ತು CC ಕ್ಲಬ್ ಎಂದೂ ಕರೆಯಲ್ಪಡುವ ನಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯರಾಗಿ ನಮ್ಮ ಪಯಣವನ್ನು ಆರಂಭಿಸೋಣ! ಈಗ, ನಿಮ್ಮ ಶಿಕ್ಷಕರು ಏನು ಹಂಚಿಕೊಳ್ಳಲಿದ್ದಾರೆ ಎಂದು ಕೇಳೋಣ."
-      ],
-      "tip": "ವೀಡಿಯೋ ಪೂರ್ತಿ ನೋಡಿ; MC ಕೇಳಿದಾಗ ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಪ್ರೋತ್ಸಾಹಿಸಿ."
+      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Civic Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness (ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ) — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Civic Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Civic Club — the Civic Club!",
+      "tip": "MC ವೀಡಿಯೋವನ್ನು ಪೂರ್ತಿಯಾಗಿ ನೋಡಿ. CMCA ಪೂರ್ಣ ರೂಪ — Children's Movement for Civic Awareness — ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಉಳಿಯಬೇಕು. ಕನ್ನಡದಲ್ಲಿ: ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ. 'ಎಲ್ಲರೂ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ?' ಎಂದಾಗ ಮಕ್ಕಳನ್ನು ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಪ್ರೋತ್ಸಾಹಿಸಿ.",
+      "images": [
+        {
+          "src": "/sessions/assets/partner_gramaantara.jpeg",
+          "alt": "Gramaantara Trust",
+          "caption": "Gramaantara Trust · Chikballapur"
+        },
+        {
+          "src": "/sessions/assets/partner_navu_prathishtana.png",
+          "alt": "Navu Prathishtana",
+          "caption": "Navu Prathishtana · Mysuru, Kodagu, Kalaburgi, Bidar, Yadgir"
+        },
+        {
+          "src": "/sessions/assets/partner_prakruthi.jpeg",
+          "alt": "Prakruthi Foundation",
+          "caption": "Prakruthi Foundation · Tumkur, Hassan, Bangalore Urban & Rural"
+        },
+        {
+          "src": "/sessions/assets/partner_yids.png",
+          "alt": "Young India Development Society (YIDS)",
+          "caption": "YIDS · Kolar, Shivamoga"
+        }
+      ]
     },
     {
       "n": 4,
       "kind": "static",
-      "title": "ಶಾಂತಗೊಳಿಸುವ ಮಾರ್ಗಗಳು",
-      "body": [
-        "ಕೆಲವೊಮ್ಮೆ ನಾವು ತುಂಬಾ ಉತ್ಸಾಹಗೊಂಡು ಮಾತನಾಡುವುದನ್ನು ಅಥವಾ ಓಡಾಡುವುದನ್ನು ನಿಲ್ಲಿಸಲು ಆಗುವುದಿಲ್ಲ… ಆಟದಲ್ಲಿ ಇರುವ ಹಾಗೆ!",
-        "ಆಟದಲ್ಲಿ ಇರುವ ಹಾಗೆ, ನಮ್ಮ ಕ್ಲಬ್‌ಗೂ ಒಂದು ಸೀಟಿ ಇದೆ!",
-        "ನಮ್ಮ 3 ಶಾಂತಗೊಳಿಸುವ ಕರೆಗಳು:",
-        "1. One Two… Eyes on You ✅",
-        "2. ಒಂದು ಎರಡು… ಬೋರ್ಡ್ ಕಡೆ ನೋಡು ✅",
-        "3. ಹಾಯ್… ಹೆಲೋ ✅"
-      ],
-      "tip": "3 ಕಾಲ್‌-ರೆಸ್ಪಾನ್ಸ್ ಪರಿಚಯಿಸಿ, ನಂತರ ಒಂದೊಂದಾಗಿ ಅಭ್ಯಾಸ ಮಾಡಿ."
-    },
-    {
-      "n": 5,
-      "kind": "static",
-      "title": "ಮತ್ತೆ ಶಾಂತವಾಗೋಣ… 1-2 ನನ್ನ ಕಡೆ ನೋಡಿ!",
+      "title": "1 - 2 ನನ್ನ ಕಡೆ ನೋಡಿ",
       "body": [
         "ಶಿಕ್ಷಕರು ಹೇಳುತ್ತಾರೆ: \"1, 2, ನನ್ನ ಕಡೆ ನೋಡಿ!\"",
         "ಮಕ್ಕಳು ಪಿಸುಗುಟ್ಟಿ ಹೇಳುತ್ತಾರೆ: \"ನಿಮ್ಮ ಕಡೆ ನೋಡುತ್ತಿದ್ದೇವೆ.\""
       ],
-      "audio": "/sessions/assets/vo_eyes_on_you.kn.mp3",
-      "tip": "ಆಡಿಯೋ ಪ್ಲೇ ಮಾಡಿ — ತರಗತಿ ಶಾಂತಗೊಳ್ಳಬೇಕಾದಾಗಲೆಲ್ಲಾ ಮತ್ತೆ ಬಳಸಿ."
+      "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ — ಈಗ ಮತ್ತು ತರಗತಿಯನ್ನು ಶಾಂತಗೊಳಿಸಬೇಕಾದಾಗ ಪ್ರತಿ ಬಾರಿಯೂ.",
+      "audio": "/sessions/assets/vo_eyes_on_you.kn.wav"
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "ಮತ್ತೆ ಶಾಂತವಾಗೋಣ!",
+      "body": [
+        "ಶಿಕ್ಷಕರು ಹೇಳುತ್ತಾರೆ: \"ಫ್ಲಾಟ್ ಟೈರ್!\"",
+        "ಮಕ್ಕಳು ಹೇಳುತ್ತಾರೆ: \"ಷ್‌ಷ್‌ಷ್‌ಷ್‌!\""
+      ],
+      "audio": "/sessions/assets/vo_flat_tyre_shhh.mp3",
+      "image": "/sessions/assets/flat_tyre.jpg",
+      "tip": "ಗುಂಪುಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಶಾಂತವಾಗುವವರೆಗೆ ಆಡಿಯೋ ಪ್ಲೇ ಮಾಡಿ. ತರಗತಿ ಗದ್ದಲವಿದ್ದಾಗ ಈ ಎನರ್ಜೈಸರ್ ಮತ್ತೆ ಬಳಸಬಹುದು.",
+      "image_layout": "side"
     },
     {
       "n": 6,
       "kind": "static",
-      "title": "1-2 ನನ್ನ ಕಡೆ ನೋಡಿ!",
-      "body": [
-        "ಶಿಕ್ಷಕರು ಹೇಳುತ್ತಾರೆ: \"1-2, ನನ್ನ ಕಡೆ ನೋಡಿ!\"",
-        "ಧ್ವನಿ ಪಿಸುಮಾತಿಗೆ ಬದಲಾಗುತ್ತದೆ: ಎಲ್ಲರೂ ಒಟ್ಟಿಗೆ, ಗಟ್ಟಿಯಾದ ಪಿಸುಮಾತಿನಲ್ಲಿ \"ನಿಮ್ಮ ಕಡೆ ನೋಡುತ್ತಿದ್ದೇವೆ\" ಎಂದು ಹೇಳಿ. ನೆನಪಿಡಿ — ಕಿರುಚಬಾರದು!"
-      ],
-      "tip": "ತುಟಿ ಆನಿಮೇಷನ್ ಮತ್ತು ಪಿಸುಮಾತು ಆಡಿಯೋ ಒಮ್ಮೆ ಪ್ಲೇ ಆಗಲಿ."
-    },
-    {
-      "n": 7,
-      "kind": "static",
-      "title": "ಮತ್ತೆ ಶಾಂತವಾಗೋಣ!",
-      "body": [
-        "ಧ್ವನಿ ಶಬ್ದವನ್ನು ತೋರಿಸುತ್ತದೆ: ಷ್‌ಷ್‌ಷ್‌ಷ್‌"
-      ],
-      "audio": "/sessions/assets/vo_flat_tyre_shhh.mp3",
-      "image": "/sessions/assets/flat_tyre.jpg",
-      "image_layout": "side",
-      "tip": "ಗುಂಪುಗಳು ಶಾಂತವಾಗುವವರೆಗೆ ಪ್ಲೇ ಮಾಡಿ; ಗದ್ದಲವಾದಾಗ ಮತ್ತೆ ಬಳಸಿ."
-    },
-    {
-      "n": 8,
-      "kind": "static",
       "title": "ಗುಂಪು ರಚನೆ",
       "body": [
-        "ಗುಂಪು ರಚನೆ ಮಾಡೋಣ",
-        "ಕ್ಲಬ್‌ನ ಹಲವಾರು ಚಟುವಟಿಕೆಗಳನ್ನು ಗುಂಪಿನಲ್ಲಿ ಮಾಡಲಿದ್ದೇವೆ.",
-        "ಪ್ರತಿಯೊಬ್ಬರ ಧ್ವನಿಯೂ ಮುಖ್ಯ.",
-        "ಹಂಚಿಕೊಳ್ಳಲು, ಕೇಳಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಒಟ್ಟಾಗಿ ಕಲಿಯಲು ಅವಕಾಶವಿದೆ."
+        "ಗುಂಪು ರಚನೆ ಮಾಡೋಣ — ಪ್ರತಿಯೊಬ್ಬರ ಧ್ವನಿಯೂ ಮುಖ್ಯ.",
+        "ಹಂಚಿಕೊಳ್ಳಲು, ಕೇಳಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಒಟ್ಟಾಗಿ ಕಲಿಯಲು ಗುಂಪು."
       ],
+      "bullets_large": true,
+      "tip": "ಎಣಿಕೆ ವಿಧಾನ ಬಳಸಿ, 5–6 ಮಕ್ಕಳ ಮಿಶ್ರ-ಲಿಂಗ ಗುಂಪು ಮಾಡಿ.",
       "images": [
         {
           "src": "/sessions/assets/group_work_1.jpg",
@@ -208,15 +199,17 @@
           "alt": "children working in a group"
         }
       ],
-      "image_layout": "side",
-      "callout": "ಹುಡುಗಿಯರು ಮತ್ತು ಹುಡುಗರ ಮಿಶ್ರ ಗುಂಪುಗಳನ್ನು ಮಾಡಿ. ಶಾಲೆಯಲ್ಲಿ ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡುವುದು ಕೆಲಸದ ಸ್ಥಳಗಳಲ್ಲಿ ಮತ್ತು ಸಮುದಾಯಗಳಲ್ಲಿ ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡಲು ನಮ್ಮನ್ನು ಸಿದ್ಧಗೊಳಿಸುತ್ತದೆ.",
-      "tip": "ಎಣಿಕೆ ವಿಧಾನ ಬಳಸಿ ಮಿಶ್ರ ಗುಂಪುಗಳನ್ನು ರಚಿಸಿ."
+      "image_layout": "side"
     },
     {
-      "n": 9,
+      "n": 7,
       "kind": "group_activity_timer",
       "title": "ಕ್ರಿಯೇಟಿವ್ ಆಗೋಣ!",
-      "brief": "ನಿಮ್ಮ ಗುಂಪಿಗೆ ಹೆಸರು ಇಡಿ, ಗುಂಪಿನ ಲೋಗೋ ಮಾಡಿ (ಉದಾಹರಣೆಗಾಗಿ: KSRTC ಲೋಗೋ ತೋರಿಸಲಾಗಿದೆ).",
+      "brief": "ನಿಮ್ಮ ಗುಂಪಿಗೆ ಹೆಸರು ಇಡಿ, ಗುಂಪಿನ ಲೋಗೋ ಮಾಡಿ. ಉದಾಹರಣೆಗಾಗಿ: KSRTC, KREIS ಲೋಗೋಗಳನ್ನು ನೋಡಿ.",
+      "timer_seconds": 480,
+      "reminder_at": 120,
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "tip": "8 ನಿಮಿಷದ ನಂತರ ಪ್ರತೀ ಗುಂಪಿಗೂ ತಮ್ಮ ಹೆಸರು ಹಾಗೂ ಗುಂಪಿನ ಲೋಗೋ ತೋರಿಸಲು ಹೇಳಿರಿ. 2 ನಿಮಿಷ ಬಾಕಿ ಇರುವಾಗ ಮೆಲ್ಲನೆ ಒಂದು ಗಂಟೆ ಶಬ್ದ ಬರುತ್ತದೆ.",
       "images": [
         {
           "src": "/sessions/assets/ksrtc_logo.webp",
@@ -224,18 +217,14 @@
           "caption": "KSRTC"
         },
         {
-          "src": "/sessions/assets/partner_karnataka_govt.jpeg",
-          "alt": "ಕರ್ನಾಟಕ ಸರ್ಕಾರ",
-          "caption": "ಕರ್ನಾಟಕ ಸರ್ಕಾರ"
+          "src": "/sessions/assets/kreis_logo.png",
+          "alt": "DOM",
+          "caption": "DOM"
         }
-      ],
-      "timer_seconds": 480,
-      "reminder_at": 120,
-      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
-      "tip": "8 ನಿಮಿಷದ ನಂತರ ಪ್ರತೀ ಗುಂಪಿಗೂ ತಮ್ಮ ಹೆಸರು ಹಾಗೂ ಗುಂಪಿನ ಲೋಗೋ ತೋರಿಸಲು ಹೇಳಿರಿ. 2 ನಿಮಿಷ ಬಾಕಿ ಇರುವಾಗ ಮೆಲ್ಲನೆ ಒಂದು ಗಂಟೆ ಶಬ್ದ ಬರುತ್ತದೆ."
+      ]
     },
     {
-      "n": 10,
+      "n": 8,
       "kind": "video",
       "title": "ಈಗ ಯಾರು ಜಯಶಾಲಿ ಎಂದು ನೋಡೋಣ",
       "video": "/sessions/assets/mc_questions_combined.kn.mp4",
@@ -247,7 +236,8 @@
         40
       ],
       "pause_duration": 8,
-      "transcript": "Master Change asks group-reflection questions after the logo activity: (1) Did everyone SHARE ideas about the group name or logo? (2) Was it easy to agree as a group? How did you decide whose ideas to choose? (3) Did everyone get a chance to SPEAK about the group name or logo? (4) Did everyone get a chance to DRAW some part of the logo? (5) Did everyone feel HEARD? If most answers were YES, give each other high-fives!",
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ಪ್ರತಿ ಪ್ರಶ್ನೆ ನಂತರ ವೀಡಿಯೋ ಸ್ವಯಂ ತಡೆಯುತ್ತದೆ. ತರಗತಿಗೆ ಹೇಳಿ: \"ಬೇಗ — ಕೈ ಎತ್ತಿ! 8 ಸೆಕೆಂಡ್.\" ತರಗತಿ ಗದ್ದಲವಿದ್ದರೆ Skip ಒತ್ತುವ ಮುನ್ನ ಶಾಂತಗೊಳಿಸಿ.",
+      "transcript": "Master Change asks 7 group-reflection questions: (1) Did everyone share their thoughts about the name or logo? (2) Was it easy to choose one name or logo? (3) How did you decide which idea to pick? (4) Did everyone get a chance to share their opinion? (5) Did everyone get a chance to draw at least part of the logo? (6) Did you feel your idea was heard and respected? (7) When you showed your image, did everyone come together to display it?",
       "kn_questions": [
         "ಎಲ್ಲರೂ ಗುಂಪಿನ ಹೆಸರು ಅಥವಾ ಲೋಗೋ ಬಗ್ಗೆ ತಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಂಡರಾ?",
         "ಒಂದು ಹೆಸರನ್ನು ಅಥವಾ ಲೋಗೋವನ್ನು ಆಯ್ಕೆ ಮಾಡುವುದು ಸುಲಭವಾಗಿತ್ತಾ?",
@@ -256,34 +246,33 @@
         "ಎಲ್ಲರೂ ಲೋಗೋ ಚಿತ್ರಿಸಲು ಸ್ವಲ್ಪವಾದರೂ ಭಾಗವಹಿಸಿದ್ದರಾ?",
         "ನಿಮ್ಮ ಆಲೋಚನೆಯನ್ನು ಕೇಳಲಾಯಿತು ಮತ್ತು ಗೌರವಿಸಲಾಯಿತು ಎಂದು ನಿಮಗೆ ಅನಿಸಿತ್ತಾ?",
         "ಚಿತ್ರವನ್ನು ತೋರಿಸುವಾಗ ಎಲ್ಲರೂ ಸೇರಿ ಅದನ್ನು ಪ್ರದರ್ಶಿಸಿದ್ದೀರಾ?"
-      ],
-      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ಪ್ರತಿ ಪ್ರಶ್ನೆ ನಂತರ ವೀಡಿಯೋ ಸ್ವಯಂ ತಡೆಯುತ್ತದೆ. ತರಗತಿಗೆ ಹೇಳಿ: \"ಬೇಗ — ಕೈ ಎತ್ತಿ! 8 ಸೆಕೆಂಡ್.\""
+      ]
     },
     {
-      "n": 11,
+      "n": 9,
       "kind": "reflect_share",
       "title": "ಯೋಚಿಸಿ & ಹೇಳಿ",
       "prompt": "ಗುಂಪಿಗೆ ಹೆಸರು ಇಟ್ಟು, ಲೋಗೋ ಮಾಡಿದ ಈ ಗುಂಪು ಚಟುವಟಿಕೆಯಿಂದ ನೀವು ಏನು ಕಲಿತಿರಿ?",
+      "tip": "3–4 ಮಕ್ಕಳಿಂದ ಉತ್ತರ ಪಡೆಯಿರಿ. ಎಲ್ಲರ ಗುಂಪಿನಿಂದ ಕೇಳಿ — ಒಂದೇ ಗುಂಪಿನ ಮಕ್ಕಳಲ್ಲ. ಬೇರೆ ಬೇರೆ ಉತ್ತರಗಳನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ.",
       "image": "/sessions/assets/smartboard_icon.svg",
-      "callout": "✍ ಸ್ಮಾರ್ಟ್‌ಬೋರ್ಡ್ — ಮಕ್ಕಳ ಉತ್ತರಗಳನ್ನು ಫಲಕದ ಮೇಲೆ ಬರೆಯಿರಿ",
-      "tip": "ಬೇರೆ ಬೇರೆ ಗುಂಪುಗಳ 3–4 ಮಕ್ಕಳಿಂದ ಉತ್ತರ ಪಡೆಯಿರಿ."
+      "callout": "✍ ಸ್ಮಾರ್ಟ್‌ಬೋರ್ಡ್ — ಮಕ್ಕಳ ಉತ್ತರಗಳನ್ನು ಫಲಕದ ಮೇಲೆ ಬರೆಯಿರಿ"
     },
     {
-      "n": 12,
+      "n": 10,
       "kind": "mc_narration",
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಚಟುವಟಿಕೆಯನ್ನು ಮುಗಿಸುತ್ತಾರೆ",
       "video": "/sessions/assets/mc_wrap_group_activity.kn.mp4",
-      "transcript": "You've now practiced something very important — it's all on the board! When you listen, share and work together, you are Children's Civic Club members throughout your life. Make sure that from now on, everyone participates in group activities. For all Club sessions, sit together in your groups right from the start! Now it's time for the Constitution Connect Quiz Question! Over to you, teacher!",
+      "transcript": "You have now practiced something very important. When you listen to each other, share your ideas, and work together, you become true Change Champions. From now on, make sure everyone takes part in group activities. From the start of every Club session, sit together with your group. Now it's time for the Change Connect Question!",
       "kn_script": [
         "ನೀವು ಈಗ ಒಂದು ಬಹಳ ಮುಖ್ಯವಾದ ವಿಷಯವನ್ನು ಅಭ್ಯಾಸ ಮಾಡಿದ್ದೀರಿ.",
-        "ನೀವು ಒಬ್ಬರ ಮಾತನ್ನು ಮತ್ತೊಬ್ಬರು ಕೇಳಿದಾಗ, ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಂಡಾಗ ಮತ್ತು ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡಿದಾಗ, ನೀವು ಜೀವನವಿಡೀ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯರಾಗಿರುತ್ತೀರಿ.",
+        "ನೀವು ಒಬ್ಬರ ಮಾತನ್ನು ಮತ್ತೊಬ್ಬರು ಕೇಳಿದಾಗ, ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಂಡಾಗ ಮತ್ತು ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡಿದಾಗ, ನೀವು ನಿಜವಾದ Change Champion‌ಗಳು ಆಗುತ್ತೀರಿ.",
         "ಇನ್ನು ಮುಂದೆ, ಗುಂಪಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಭಾಗವಹಿಸುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ. ಪ್ರತಿಯೊಂದು ಕ್ಲಬ್ ಸೆಷನ್‌ನಲ್ಲೂ ಆರಂಭದಿಂದಲೇ ನಿಮ್ಮ ಗುಂಪಿನೊಂದಿಗೆ ಕುಳಿತುಕೊಳ್ಳಿ.",
         "ಈಗ \"ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ\" ಸಮಯ!"
       ],
-      "tip": "ವೀಡಿಯೋ ಪೂರ್ತಿ ನೋಡಿ — ಇದು ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆಗೆ ಪೀಠಿಕೆ."
+      "tip": "ವೀಡಿಯೋ ಪೂರ್ತಿಯಾಗಿ ನೋಡಿ. Master Change ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆಗೆ ಪೀಠಿಕೆ ಹಾಕುತ್ತಾರೆ."
     },
     {
-      "n": 13,
+      "n": 11,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
       "scenario": "ನೀವು 8 ಮಂದಿ ಸಹಪಾಠಿಗಳೊಂದಿಗೆ ಶಾಲೆಯ ತಂಡದ ಯೋಜನೆಯಲ್ಲಿ ಇದ್ದೀರಿ. ಸಂವಿಧಾನದ ಪ್ರಸ್ತಾವನೆಯಲ್ಲಿರುವ \"ನಾವು ಜನತೆ\" ಎಂಬ ಮಾತು ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡುವ ಮಹತ್ವಕ್ಕೆ ಹೇಗೆ ಸಂಬಂಧಿಸುತ್ತದೆ? ಸರಿಯಾದ ಆಯ್ಕೆಯನ್ನು ಊಹಿಸುವಿರಾ?",
@@ -294,70 +283,81 @@
         "ಪರಸ್ಪರ ಜಗಳ ಮಾಡಿ, ತಾನುತಾನೇ ಕೆಲಸ ಮಾಡಿ."
       ],
       "correct_index": 2,
-      "tip": "ಸನ್ನಿವೇಶ ಓದಿ, ಊಹಿಸಲು ಸಮಯ ಕೊಟ್ಟು, ಉತ್ತರ (c) ತೋರಿಸಿ."
+      "tip": "ಸನ್ನಿವೇಶವನ್ನು ತರಗತಿಗೆ ಗಟ್ಟಿಯಾಗಿ ಓದಿ ಹೇಳಿ. ಉತ್ತರ ತೋರಿಸುವ ಮೊದಲು ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. ಸರಿ ಉತ್ತರ: c) ಎಲ್ಲಾ ಸದಸ್ಯರ ಹಿತಾಸಕ್ತಿಗಳನ್ನು ಗಮನದಲ್ಲಿಟ್ಟು ಚಿಂತಿಸಿ."
+    },
+    {
+      "n": 12,
+      "kind": "static",
+      "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
+      "tip": "ಈ 5 ಸಾಲುಗಳನ್ನು ಶಾಂತವಾಗಿ ಒಂದೊಂದೇ ಓದಿ. ಇದು ಸಂವಿಧಾನ ಸಂಪರ್ಕದ ಪ್ರತಿಫಲನ — ವೇಗವಾಗಬೇಡಿ.",
+      "body": [
+        "ಒಳ್ಳೆಯ ಪ್ರಯತ್ನ!",
+        "ಸಂವಿಧಾನದ ಪ್ರಸ್ತಾವನೆ \"ನಾವು, ಭಾರತದ ಜನರು\" ಎಂಬ ಪದಗಳು ಸರ್ಕಾರವು ಜನರಿಂದ ನಿರ್ಮಿತವಾಗಿದ್ದು, ಜನರ ಹಿತಕ್ಕಾಗಿ ಕೆಲಸ ಮಾಡಬೇಕು ಎಂಬುದನ್ನು ನಮಗೆ ನೆನಪಿಸುತ್ತವೆ.",
+        "ನಿಮ್ಮ ಗುಂಪಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿಯೂ ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುವಾಗ ಎಲ್ಲ ಸದಸ್ಯರ ಹಿತವನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಳ್ಳಬೇಕು. ಸರ್ಕಾರವು ಎಲ್ಲ ನಾಗರಿಕರ ಒಳ್ಳೆಯದನ್ನು ಯೋಚಿಸುವಂತೆ, ನೀವು ಸಹ ನಿಮ್ಮ ಗುಂಪಿನ ಎಲ್ಲರ ಒಳ್ಳೆಯದನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಂಡು ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕು.",
+        "ಇನ್ನು ಮುಂದೆ, ಪ್ರತಿಯೊಂದು ಸೆಷನ್‌ನಲ್ಲೂ ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆಗಳು ಇರುತ್ತವೆ. ಇವು ನಿಮ್ಮ ದೈನಂದಿನ ಜೀವನವನ್ನು ಸಂವಿಧಾನದ ಮೌಲ್ಯಗಳೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ.",
+        "ಈಗ ಮುಂದಿನ ಚಟುವಟಿಕೆಗೆ ಸಾಗೋಣ!"
+      ]
+    },
+    {
+      "n": 13,
+      "kind": "click_reveal",
+      "title": "ನಿಯಮಗಳನ್ನು ಒಟ್ಟಿಗೆ ಮಾಡೋಣ — ಯೋಚಿಸಿ & ಹೇಳಿ",
+      "intro": "ಈ 3 ಪ್ರಶ್ನೆಗಳಿಗೆ ನೀವು ಉತ್ತರಿಸುವಾಗ ಶಿಕ್ಷಕರು ನಿಮ್ಮ ಜೊತೆ ಆಲಿಸುತ್ತಾರೆ.",
+      "prompts": [
+        "ನೀವು ತುಂಬಾ ಮಜವಾದ ಒಂದು ಹೊಸ ಆಟ ಆಡಲು ಹೊರಟಿದ್ದೀರಿ ಎಂದು ಊಹಿಸಿ. ಆಟ ಆಡುವ ಮೊದಲು ನಿಮಗೆ ಏನು ಗೊತ್ತಿರಬೇಕು?",
+        "ಆಟವನ್ನು ಸರಿಯಾಗಿ ಆಡಲು ನೀವು ಏನನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಬೇಕು?",
+        "ಎಲ್ಲರೂ ತಮಗೆ ಬೇಕಾದಂತೆ ಆಡಲು ಆರಂಭಿಸಿದರೆ, ಅಂಪೈರ್ ಅಥವಾ ರೆಫ್ರಿ ಅಥವಾ ತೀರ್ಪುಗಾರರ ಮಾತನ್ನು ಕೇಳದಿದ್ದರೆ ಆಟದಲ್ಲಿ ಏನಾಗುತ್ತದೆ?"
+      ],
+      "tip": "ಒಂದೊಂದೇ ಪ್ರಶ್ನೆಯನ್ನು ತೋರಿಸಿ (ಕ್ಲಿಕ್ ಮಾಡಿ ಮುಂದಿನದನ್ನು ತೆರೆಯಿರಿ). ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ 1–2 ಉತ್ತರ ಪಡೆದು ಮುಂದೆ ಹೋಗಿ. ಪ್ರಶ್ನೆಗಳ ಹರಿವು: ಪ್ರ.1 = ನಿಯಮಗಳು ಬೇಕು, ಪ್ರ.2 = ಅವುಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಬೇಕು, ಪ್ರ.3 = ಇಲ್ಲದಿದ್ದರೆ ಏನಾಗುತ್ತದೆ?"
     },
     {
       "n": 14,
-      "kind": "mc_narration",
-      "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ — ಮಾಸ್ಟರ್ ಚೇಂಜ್ ವಿವರಿಸುತ್ತಾರೆ",
-      "video": "/sessions/assets/mc_cc1_debrief.kn.mp4",
-      "transcript": "Hey, that was a great try! The words 'We the People' in the Preamble remind us that the government is formed by the people and for the people. In your team project, this means your decisions should take into account the interests of all team members. Just as the government must think for the well-being of all citizens, you too must make decisions for the good of all members of your team. Going forward, Constitution Connect questions will be included in every session, so that you can link learning with constitutional values in your everyday life. Let's move on!",
-      "kn_script": [
-        "ಒಳ್ಳೆಯ ಪ್ರಯತ್ನ! ಸಂವಿಧಾನದ ಪ್ರಸ್ತಾವನೆಯಲ್ಲಿನ \"ನಾವು, ಭಾರತದ ಜನರು\" ಎಂಬ ಪದಗಳು ಸರ್ಕಾರವು ಜನರಿಂದ ನಿರ್ಮಿತವಾಗಿದ್ದು, ಜನರ ಹಿತಕ್ಕಾಗಿ ಕೆಲಸ ಮಾಡಬೇಕು ಎಂಬುದನ್ನು ನಮಗೆ ನೆನಪಿಸುತ್ತವೆ.",
-        "ನಿಮ್ಮ ಗುಂಪಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿಯೂ ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುವಾಗ ಎಲ್ಲ ಸದಸ್ಯರ ಹಿತವನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಳ್ಳಬೇಕು. ಸರ್ಕಾರವು ಎಲ್ಲ ನಾಗರಿಕರ ಒಳ್ಳೆಯದನ್ನು ಯೋಚಿಸುವಂತೆ, ನೀವು ಸಹ ನಿಮ್ಮ ಗುಂಪಿನ ಎಲ್ಲರ ಒಳ್ಳೆಯದನ್ನು ಗಮನದಲ್ಲಿಟ್ಟುಕೊಂಡು ನಿರ್ಧಾರಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಬೇಕು.",
-        "ಇನ್ನು ಮುಂದೆ, ಪ್ರತಿಯೊಂದು ಸೆಷನ್‌ನಲ್ಲೂ ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆಗಳು ಇರುತ್ತವೆ. ಇವು ನಿಮ್ಮ ದೈನಂದಿನ ಜೀವನವನ್ನು ಸಂವಿಧಾನದ ಮೌಲ್ಯಗಳೊಂದಿಗೆ ಸಂಪರ್ಕಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ. ಈಗ ಮುಂದಿನ ಚಟುವಟಿಕೆಗೆ ಸಾಗೋಣ!"
-      ],
-      "tip": "ನಿಧಾನವಾಗಿ ಓದಿ — ಇದು ಪ್ರತಿಫಲನದ ಕ್ಷಣ, ವೇಗವಾಗಬೇಡಿ."
-    },
-    {
-      "n": 15,
-      "kind": "click_reveal",
-      "title": "ನಿಯಮಗಳನ್ನು ಒಟ್ಟಿಗೆ ಮಾಡೋಣ — ಯೋಚಿಸಿ & ಹೇಳಿ",
-      "intro": "ಈ 2 ಪ್ರಶ್ನೆಗಳಿಗೆ ನೀವು ಉತ್ತರಿಸುವಾಗ ಶಿಕ್ಷಕರು ನಿಮ್ಮ ಜೊತೆ ಆಲಿಸುತ್ತಾರೆ.",
-      "prompts": [
-        "ನೀವು ತುಂಬಾ ಮಜವಾದ ಒಂದು ಹೊಸ ಆಟ ಆಡಲು ಹೊರಟಿದ್ದೀರಿ ಎಂದು ಊಹಿಸಿ. ಆಟವನ್ನು ಸರಿಯಾಗಿ ಆಡಲು ನಿಮಗೆ ಏನು ಗೊತ್ತಿರಬೇಕು?",
-        "ಎಲ್ಲರೂ ತಮಗೆ ಬೇಕಾದಂತೆ ಆಡಲು ಆರಂಭಿಸಿದರೆ, ಅಂಪೈರ್ ಅಥವಾ ರೆಫ್ರಿ ಅಥವಾ ತೀರ್ಪುಗಾರರ ಮಾತನ್ನು ಕೇಳದಿದ್ದರೆ ಆಟದಲ್ಲಿ ಏನಾಗುತ್ತದೆ?"
-      ],
-      "tip": "ಒಂದೊಂದೇ ಪ್ರಶ್ನೆ ಕ್ಲಿಕ್ ಮಾಡಿ ತೆರೆಯಿರಿ; ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ 1–2 ಉತ್ತರ ಪಡೆಯಿರಿ."
-    },
-    {
-      "n": 16,
       "kind": "video",
-      "title": "ನಿಯಮಗಳನ್ನು ಒಟ್ಟಿಗೆ ಮಾಡೋಣ — ಮಾಸ್ಟರ್ ಚೇಂಜ್‌ ಏನು ಮಾಡುತ್ತಿದ್ದಾರೆ?",
+      "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್‌ ಏನು ಮಾಡುತ್ತಿದ್ದಾರೆ?",
       "video": "/sessions/assets/mc_raising_hand_loop.mp4",
       "loop": false,
       "intro_text": "ಕ್ಲಬ್‌ಗಾಗಿ ನಿಯಮಗಳನ್ನು ರಚಿಸೋ ಸಮಯ. ಒಂದು ಉದಾಹರಣೆಯನ್ನು ನೋಡೋಣ. ಇಲ್ಲಿ ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಏನು ಮಾಡುತ್ತಿದ್ದಾರೆ?",
       "post_video_text": [
-        "ಮಾತನಾಡಲು ಕೈ ಎತ್ತಿ ತನ್ನ ಸರದಿಗಾಗಿ ಕಾಯುತ್ತಿದ್ದಾರೆ! ಮಕ್ಕಳಾಗಿ ಇದು ನಿಮ್ಮ ನಿಯಮ.",
+        "ಮಾತನಾಡಲು ಕೈ ಎತ್ತುತ್ತಿದ್ದಾರೆ. ಮಕ್ಕಳಾಗಿ ಇದು ನಿಮ್ಮ ನಿಯಮ.",
         "ಶಿಕ್ಷಕರಾಗಿ ಪ್ರತಿಯೊಬ್ಬರಿಗೂ ಮಾತನಾಡಲು ಅವಕಾಶವನ್ನು ನೀಡುವ ಪ್ರಯತ್ನ ಮಾಡುವುದು ನನ್ನ ನಿಯಮ."
       ],
       "reveal_on_click": true,
-      "tip": "ಲೂಪ್ ಪ್ಲೇ ಆಗಲಿ, ನಂತರ ಉತ್ತರ ತೋರಿಸಲು Reveal ಒತ್ತಿ."
+      "tip": "ಮಕ್ಕಳು ನೋಡುತ್ತಿರುವಾಗ ಆನಿಮೇಷನ್ ಮತ್ತೆ ಮತ್ತೆ ಆಡಲಿ. ಉತ್ತರ ತೋರಿಸಲು ಸಿದ್ಧವಾದಾಗ NEXT (ಅಥವಾ REVEAL) ಒತ್ತಿ."
     },
     {
-      "n": 17,
+      "n": 15,
       "kind": "group_activity_timer",
       "title": "ಗುಂಪಿನಲ್ಲಿ ನಿಯಮಗಳನ್ನು ರಚಿಸಿ",
       "brief": "ಚೀಟಿ / ಪೋಸ್ಟ್-ಇಟ್ ಬಳಸಿ, ನಿಮಗಾಗಿ 1 ನಿಯಮ ಮತ್ತು ನಿಮ್ಮ ಶಿಕ್ಷಕರು ಪಾಲಿಸಬೇಕಾದ 1 ನಿಯಮ ಬರೆಯಿರಿ.",
       "bullets_large": true,
       "timer_seconds": 180,
-      "tip": "ಚೀಟಿ ಹಂಚಿ, ನಂತರ 3 ನಿಮಿಷದ ಟೈಮರ್ ಶುರು ಮಾಡಿ."
+      "tip": "ಟೈಮರ್ ಶುರು ಮಾಡುವ ಮೊದಲು ಚೀಟಿ / ಪೋಸ್ಟ್-ಇಟ್ ಹಂಚಿ. ನಂತರ 3 ನಿಮಿಷ ಟೈಮರ್ ಶುರು ಮಾಡಿ.",
+      "reminder_at": 60,
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
     },
     {
-      "n": 18,
+      "n": 16,
       "kind": "static",
       "title": "ನಿಯಮಗಳ ಮಂಡನೆ",
       "body": [
         "ಪ್ರತಿ ಗುಂಪು ಒಂದು ನಿಯಮ ಹೇಳುತ್ತದೆ — ಪುನರಾವರ್ತನೆ ಬೇಡ!"
       ],
-      "tip": "ಪ್ರತಿ ಗುಂಪಿನಿಂದ ಒಂದು ನಿಯಮ ಬೋರ್ಡ್ ಮೇಲೆ ಬರೆಯಿರಿ — ಪುನರಾವರ್ತನೆ ಬೇಡ."
+      "tip": "ಗುಂಪು-ಗುಂಪಾಗಿ ಕೇಳಿ. ಒಂದು ಗುಂಪು ಹೇಳಿದ ನಿಯಮ ಬೇರೆ ಗುಂಪು ಪುನರಾವರ್ತಿಸದಿರಲಿ. ಎಲ್ಲಾ ನಿಯಮಗಳನ್ನು ಬೋರ್ಡ್ ಮೇಲೆ ಬರೆಯಿರಿ."
     },
     {
-      "n": 19,
+      "n": 17,
+      "kind": "reflect_share",
+      "title": "ಯೋಚಿಸಿ & ಹೇಳಿ",
+      "prompt": "ಯಾರಾದರೂ ನಿಯಮಗಳನ್ನು ಪಾಲಿಸದಿದ್ದರೆ ನಾವು ಏನು ಮಾಡಬೇಕು?",
+      "tip": "2–3 ಮಕ್ಕಳಿಂದ ಉತ್ತರ ಪಡೆಯಿರಿ. ಬೇರೆ ಬೇರೆ ದೃಷ್ಟಿಕೋನಗಳನ್ನು ಪ್ರೋತ್ಸಾಹಿಸಿ."
+    },
+    {
+      "n": 18,
       "kind": "static",
       "title": "ಕ್ಲಬ್ ಯಶಸ್ವಿ ಆಗಲು ಮತ್ತಷ್ಟು ನಿಯಮಗಳು",
       "image": "/sessions/assets/rule_flashcard.png",
-      "tip": "ಈ 7 ನಿಯಮಗಳನ್ನು ಒಂದೊಂದಾಗಿ ಓದಿ. ಕೊನೆಗೆ ಶಿಕ್ಷಕರ ನಿಯಮ ಸೇರಿಸಿ.",
+      "callout": "ಶಿಕ್ಷಕರೇ, \"ಎಲ್ಲರೊಂದಿಗೆ ಗೌರವದಿಂದ ಇರುವುದು\" ಎಂಬ ನಿಯಮವನ್ನು ಸೇರಿಸಿ.",
+      "tip": "ಎಲ್ಲಾ 7 ನಿಯಮಗಳನ್ನು ಒಂದೊಂದಾಗಿ ಓದಿ ಹೇಳಿ. ಶಿಕ್ಷಕರೇ, ಕೊನೆಯಲ್ಲಿ ನಿಮ್ಮ ಒಂದು ನಿಯಮವನ್ನೂ ಸೇರಿಸಿ.",
       "body": [
         "ಕ್ಲಬ್ ಯಶಸ್ವಿ ಆಗಲು ಏಳು ನಿಯಮಗಳಿವೆ:",
         "1. ನೀವು ನೋಡಲು ಬಯಸುವ ಬದಲಾವಣೆಯನ್ನು ಮೊದಲು ನೀವೇ ಆಗಿರಿ.",
@@ -368,32 +368,32 @@
         "6. ನಿಮ್ಮ ಅನುಭವಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ.",
         "7. ತಂಡವಾಗಿ ಕೆಲಸ ಮಾಡುವುದು ಯಾವಾಗಲೂ ಉತ್ತಮ ಮತ್ತು ಹೆಚ್ಚು ಖುಷಿ ಕೊಡುವುದು."
       ],
-      "callout": "ಶಿಕ್ಷಕರೇ, \"ಎಲ್ಲರೊಂದಿಗೆ ಗೌರವದಿಂದ ಇರುವುದು\" ಎಂಬ ನಿಯಮವನ್ನು ಸೇರಿಸಿ."
+      "image_layout": "side"
     },
     {
-      "n": 20,
+      "n": 19,
       "kind": "static",
       "title": "ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ?",
       "body": [
         "ನಮ್ಮ ಕ್ಲಬ್‌ಗೆ ನಿಯಮ ಇರುವಂತೆ, ನಮ್ಮ ದೇಶಕ್ಕೂ ನಿಯಮ ಇರುವ ಒಂದು ಪುಸ್ತಕ ಇದೆ — ಮತ್ತು ಇನ್ನೂ ಬಹಳಷ್ಟು!",
         "ಅದು ಸುಳಿವು — ಭಾರತದ ನಾಗರಿಕರಾಗಿ ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ?"
       ],
-      "tip": "ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಬಿಟ್ಟು, ನಂತರ ಸಂವಿಧಾನದ ಕಡೆ ಗಮನ ಸೆಳೆಯಿರಿ."
+      "tip": "ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. \"ನಮ್ಮ ದೇಶಕ್ಕೂ ನಿಯಮಗಳ ಪುಸ್ತಕ ಇದೆ — ಅದೇನು?\" ಎಂದು ಕೇಳಿ. ಸಂವಿಧಾನದ ಕಡೆ ಗಮನ ಸೆಳೆಯಿರಿ."
     },
     {
-      "n": 21,
+      "n": 20,
       "kind": "mc_narration",
       "title": "ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಮತ್ತು ಸಂವಿಧಾನ ರಚನಾ ಸಭೆ",
       "video": "/sessions/assets/mc_who_inspires.kn.mp4",
-      "transcript": "We are inspired by our Constitution's vision for India — it guides and motivates us. As a mark of respect for the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session by reading our Preamble, as we begin the learning journey of our Children's Civic Club.",
+      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Civic Club's learning journey by all of us together reading the Preamble.",
       "kn_script": [
         "ನಮ್ಮ ಸಂವಿಧಾನವು ಭಾರತದ ಬಗ್ಗೆ ಹೊಂದಿರುವ ಮಹತ್ವದ ಕನಸಿನಿಂದ ನಾವು ಸ್ಫೂರ್ತಿ ಪಡೆಯುತ್ತೇವೆ. ಅದು ನಮಗೆ ದಾರಿದೀಪವಾಗಿದ್ದು, ಪ್ರೇರಣೆ ನೀಡುತ್ತದೆ.",
-        "ಸಂವಿಧಾನಕ್ಕೆ, ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ ಹಾಗೂ ಸಂವಿಧಾನ ಸಭೆಯ ಸದಸ್ಯರಿಗೆ ಗೌರವ ಸಲ್ಲಿಸುತ್ತಾ, ನಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಕಲಿಕೆಯ ಪಯಣ ಆರಂಭಿಸುತ್ತಾ, ಈ ಸೆಷನ್‌ ಅನ್ನು ನಾವು ಎಲ್ಲರೂ ಸೇರಿ ಪೀಠಿಕೆಯನ್ನು ಓದುವ ಮೂಲಕ ಮುಕ್ತಾಯಗೊಳಿಸೋಣ."
+        "ಸಂವಿಧಾನಕ್ಕೆ, ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ ಹಾಗೂ ಸಂವಿಧಾನ ಸಭೆಯ ಸದಸ್ಯರಿಗೆ ಗೌರವ ಸಲ್ಲಿಸುತ್ತಾ, ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಈ ಸೆಷನ್‌ ಅನ್ನು ನಾವು ಎಲ್ಲರೂ ಸೇರಿ ಪೀಠಿಕೆಯನ್ನು ಓದುವ ಮೂಲಕ ಮುಕ್ತಾಯಗೊಳಿಸೋಣ."
       ],
-      "tip": "ವೀಡಿಯೋ ಪ್ಲೇ ಮಾಡಿ; ಅಂಬೇಡ್ಕರ್ ಹೆಸರು ಬರುವ ಮೊದಲು ಊಹಿಸಲು ಬಿಡಿ."
+      "tip": "ವೀಡಿಯೋ ನೋಡಿ. ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ ಎಂದು ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ."
     },
     {
-      "n": 22,
+      "n": 21,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
       "scenario": "ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ನಾಗರಿಕ ಕ್ಲಬ್ ಏಕೆ ಇದೆ?",
@@ -404,10 +404,10 @@
         "ಸಿನಿಮಾ ನೋಡಲು"
       ],
       "correct_index": 1,
-      "tip": "ಗಟ್ಟಿಯಾಗಿ ಓದಿ, ಊಹಿಸಲು ಬಿಟ್ಟು, ನಂತರ ಉತ್ತರ ತೋರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
+      "tip": "ಗಟ್ಟಿಯಾಗಿ ಓದಿ. ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. ನಂತರ ಉತ್ತರ ತೋರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
     },
     {
-      "n": 23,
+      "n": 22,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
       "scenario": "ನಾಗರಿಕ ಕ್ಲಬ್‌ನಲ್ಲಿ ಅಭಿಯಾನ (campaign) ಎಂದರೇನು?",
@@ -418,10 +418,10 @@
         "ತರಗತಿಯ ಪರೀಕ್ಷೆ"
       ],
       "correct_index": 0,
-      "tip": "ಗಟ್ಟಿಯಾಗಿ ಓದಿ, ಊಹಿಸಲು ಬಿಟ್ಟು, ನಂತರ ಉತ್ತರ ತೋರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
+      "tip": "ಗಟ್ಟಿಯಾಗಿ ಓದಿ. ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. ನಂತರ ಉತ್ತರ ತೋರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
     },
     {
-      "n": 24,
+      "n": 23,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
       "scenario": "ನಾಗರಿಕ ಕ್ಲಬ್‌ನಲ್ಲಿ ಇವುಗಳಲ್ಲಿ ಯಾವುದು ಮುಖ್ಯ ಮೌಲ್ಯ?",
@@ -432,49 +432,53 @@
         "ಒಬ್ಬಂಟಿಯಾಗಿ ಕೆಲಸ ಮಾಡುವುದು"
       ],
       "correct_index": 1,
-      "tip": "ಗಟ್ಟಿಯಾಗಿ ಓದಿ, ಊಹಿಸಲು ಬಿಟ್ಟು, ನಂತರ ಉತ್ತರ ತೋರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
+      "tip": "ಗಟ್ಟಿಯಾಗಿ ಓದಿ. ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. ನಂತರ ಉತ್ತರ ತೋರಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ."
     },
     {
-      "n": 25,
+      "n": 24,
       "kind": "static",
       "title": "ಬದಲಾವಣೆಯ ತರಂಗ",
       "body": [
-        "ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆ ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆಯನ್ನು ಕೇಳೋಣ. ಅವಳು ಮಾಡಿದ ಸಣ್ಣ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳು ತನ್ನ ಶಾಲೆ, ಊರು ಮತ್ತು ಅದರಾಚೆಯೂ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾದವು."
+        "Now you will learn about Asfiya — a young citizen whose small actions created ripples of change in her school, her community, and beyond.",
+        "ಈಗ ನಾವು ಬದಲಾವಣೆಯ ತರಂಗದ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ — ಒಂದು ಸಣ್ಣ ಕ್ರಿಯೆ ಹೇಗೆ ದೊಡ್ಡ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.",
+        "ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆ ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆ ಇದಕ್ಕೆ ಸ್ಪಷ್ಟ ಉದಾಹರಣೆ.",
+        "ಅವಳ ಸಣ್ಣ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳು ತನ್ನ ಶಾಲೆ, ಊರು ಮತ್ತು ಅದರಾಚೆಯೂ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾದವು."
       ],
-      "tip": "ಸಣ್ಣ ಪ್ರಯತ್ನವೂ ದೊಡ್ಡ ಬದಲಾವಣೆಯಾಗಬಹುದು — ಆಸ್ಫಿಯಾಳ ಕಥೆ ಮುಂದೆ."
+      "tip": "ಮಕ್ಕಳಿಗೆ ಹೇಳಿ: ಒಂದು ಸಣ್ಣ ಪ್ರಯತ್ನವೂ ಬದಲಾವಣೆಯ ತರಂಗವಾಗಬಹುದು. ಆಸ್ಫಿಯಾಳ ಕಥೆ ಮುಂದಿನ ಸ್ಲೈಡ್‌ನಲ್ಲಿ — ಸುಮಾರು 3 ನಿಮಿಷ."
     },
     {
-      "n": 26,
+      "n": 25,
       "kind": "video",
       "title": "ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆ",
       "video": "/sessions/assets/asfiya_story.mp4",
-      "duration_seconds": 180,
-      "transcript": "Asfiya is a 21-year-old student and a CMCA alumna from Bengaluru, the eldest of four siblings, born to Indian parents in Saudi Arabia where her father worked as an engineer. As a Children's Civic Club member, she and her classmates convinced the school to switch from paper cups to steel tumblers. She went on to fix civic issues in her community, rescue injured animals, and inspire her family and friends. Despite facing criticism from adults, CMCA strengthened her belief in doing good. Today she tends a terrace garden, feeds community animals, organises donation and plantation drives, and dreams of becoming a doctor while volunteering with the United Nations.",
+      "duration_seconds": 63,
+      "tip": "ವೀಡಿಯೋ ಅಡಚಣೆ ಇಲ್ಲದೆ ತೋರಿಸಿ. ಮುಗಿದ ಮೇಲೆ ಮಕ್ಕಳ ಪ್ರತಿಕ್ರಿಯೆ ಕೇಳಿ.",
+      "transcript": "Asfiya was a member of the Civic Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱",
       "kn_script": [
         "ಆಸ್ಫಿಯಾ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆಯಾಗಿದ್ದಳು. 8ನೇ ತರಗತಿಯಲ್ಲಿ ಓದುತ್ತಿದ್ದಾಗ, ತನ್ನ ಸ್ನೇಹಿತರೊಂದಿಗೆ ಸೇರಿ ಶಾಲೆಯಲ್ಲಿ ಪೇಪರ್ ಕಪ್‌ಗಳ ಬದಲು ಸ್ಟೀಲ್ ಲೋಟಗಳನ್ನು ಬಳಸುವಂತೆ ಮಾಡಿ ಒಂದು ಒಳ್ಳೆಯ ಬದಲಾವಣೆಯನ್ನು ತಂದಳು.",
         "ಅವಳು ಶಾಲೆಯಲ್ಲಷ್ಟೇ ಅಲ್ಲ, ತನ್ನ ಸಮುದಾಯದಲ್ಲಿಯೂ ನಾಗರಿಕ ಸಮಸ್ಯೆಗಳಿಗೆ ಸ್ಪಂದಿಸಿ, ಗಾಯಗೊಂಡ ಪ್ರಾಣಿಗಳಿಗೆ ಸಹಾಯ ಮಾಡಿ, ಗಿಡಗಳನ್ನು ನೆಟ್ಟು ಮತ್ತು ಅಗತ್ಯವಿರುವವರಿಗೆ ನೆರವಾಗುವ ಕೆಲಸಗಳನ್ನು ಮಾಡುತ್ತಿದ್ದಳು.",
         "ಕೆಲವರು ಅವಳನ್ನು ನಿರುತ್ಸಾಹಗೊಳಿಸಿದರೂ, ಸಮಾಜಕ್ಕೆ ಒಳಿತು ಮಾಡುವ ತನ್ನ ಪ್ರಯತ್ನಗಳನ್ನು ಅವಳು ಮುಂದುವರಿಸಿದಳು. ಇಂದು ಕೂಡ ಅವಳು ಸೇವಾ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ತೊಡಗಿಕೊಂಡಿದ್ದು, ಮುಂದೆ ವೈದ್ಯಳಾಗಿ ಇನ್ನಷ್ಟು ಜನರಿಗೆ ಸಹಾಯ ಮಾಡುವ ಕನಸು ಹೊಂದಿದ್ದಾಳೆ.",
         "ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆ ನಮಗೆ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳೂ ದೊಡ್ಡ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾಗಬಹುದು ಎಂಬುದನ್ನು ತೋರಿಸುತ್ತದೆ. 🌱"
-      ],
-      "tip": "ಅಡಚಣೆ ಇಲ್ಲದೆ ಪ್ಲೇ ಮಾಡಿ; ನಂತರ ಮಕ್ಕಳ ಪ್ರತಿಕ್ರಿಯೆ ಕೇಳಿ."
+      ]
     },
     {
-      "n": 27,
+      "n": 26,
       "kind": "preamble_pair",
       "title": "ಭಾರತದ ಸಂವಿಧಾನದ ಪ್ರಸ್ತಾವನೆಯನ್ನು ಒಟ್ಟಿಗೆ ಪಠಿಸೋಣ",
-      "tip": "ಎದ್ದು ನಿಂತು ಒಟ್ಟಿಗೆ ನಿಧಾನವಾಗಿ, ಸ್ಪಷ್ಟವಾಗಿ ಪಠಿಸಿ.",
+      "tip": "ಎದ್ದು ನಿಲ್ಲಿ. ಒಟ್ಟಿಗೆ ಪಠಿಸಿ. ನಿಧಾನವಾಗಿ, ಸ್ಪಷ್ಟವಾಗಿ.",
       "preamble_en": "/sessions/assets/preamble_en.png",
       "preamble_kn": "/sessions/assets/preamble_kn.png"
     },
     {
-      "n": 28,
+      "n": 27,
       "kind": "title",
       "title": "ನಾಗರಿಕ ಕ್ಲಬ್",
       "thank_you": true,
       "closing_line": "ಇಂದು ನಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಪಯಣಕ್ಕೆ ಉತ್ತಮ ಆರಂಭ ಸಿಕ್ಕಿದೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
       "centered": true,
+      "image": "/sessions/assets/kreis_seal.png",
       "audio": "/sessions/assets/welcome_music.mp3",
-      "tip": "ಮಕ್ಕಳಿಗೆ ಧನ್ಯವಾದ ಹೇಳಿ — ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಕ್ಲಬ್ ನಾಮಕರಣ."
+      "tip": "ಮಕ್ಕಳಿಗೆ ಧನ್ಯವಾದ ಹೇಳಿ. ಸೆಷನ್ ಮುಕ್ತಾಯ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಕ್ಲಬ್ ನಾಮಕರಣ."
     }
   ]
 }
