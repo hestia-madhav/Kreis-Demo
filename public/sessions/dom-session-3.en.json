@@ -1,56 +1,59 @@
 {
   "id": "dom-session-3",
   "_language": "en",
-  "_revision": "2026-07-16-kreis-duplicate",
+  "_revision": "2026-07-17-savitha-akg-ppt",
   "title": "Civic Club — Session 3: Values, Choices, Integrity",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
     {
       "id": "welcome",
-      "label": "ಸ್ವಾಗತ",
+      "label": "ಸ್ವಾಗತ & ಚೇಂಜ್ ಚಾಂಪಿಯನ್",
       "slides": [
-        1
-      ]
-    },
-    {
-      "id": "hospital_stories",
-      "label": "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳು",
-      "slides": [
+        1,
         2
       ]
     },
     {
-      "id": "group_work",
-      "label": "ಗುಂಪು ಕೆಲಸ",
+      "id": "hospital_stories",
+      "label": "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳು & ಚರ್ಚೆ",
       "slides": [
         3,
         4,
-        5,
+        5
+      ]
+    },
+    {
+      "id": "group_work",
+      "label": "ಗುಂಪು ಕೆಲಸ & ಹಂಚಿಕೆ",
+      "slides": [
         6,
         7,
         8,
-        9
+        9,
+        10,
+        11
       ]
     },
     {
-      "id": "integrity",
-      "label": "ಆಯ್ಕೆ ಮತ್ತು ಪ್ರಾಮಾಣಿಕತೆ",
+      "id": "values_choices",
+      "label": "ಮೌಲ್ಯಗಳು & ಆಯ್ಕೆಗಳು",
       "slides": [
-        10,
-        11,
         12,
         13,
-        14
+        14,
+        15,
+        16
       ]
     },
     {
-      "id": "reflect_close",
-      "label": "ಚಿಂತನೆ ಮತ್ತು ಮುಕ್ತಾಯ",
+      "id": "reflection_closing",
+      "label": "ಚಿಂತನೆ & ಮುಕ್ತಾಯ",
       "slides": [
-        15,
-        16,
-        17
+        17,
+        18,
+        19,
+        20
       ]
     }
   ],
@@ -58,15 +61,51 @@
     {
       "n": 1,
       "kind": "static",
+      "title": "[EN translation pending] — kn: ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
-      "title": "[EN translation pending] — kn: ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
-      "tip": "[EN translation pending]"
+      "tip": "ಸ್ವಾಗತ ಸಂಗೀತ. ಗುಂಪುಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಕುಳಿತಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ.",
+      "_asset_needed": "DOM-specific logo needed to replace kreis_seal.png"
     },
     {
       "n": 2,
       "kind": "static",
+      "title": "[EN translation pending] — kn: ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ವಲಯ",
+      "body": "[EN translation pending] — kn: ನಿಮ್ಮ ಬದಲಾವಣೆಯ ಕಥೆಗಳನ್ನು ಸೆರೆಹಿಡಿದು ಇಡಬಹುದಂತಹ ಒಂದು ಪೆಟ್ಟಿಗೆ",
+      "image": "/sessions/assets/change_champion_box.png",
+      "tip": "Distribute Making Change Champion Box Instruction Annexure"
+    },
+    {
+      "n": 3,
+      "kind": "static",
+      "title": "[EN translation pending] — kn: ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ವಲಯ",
+      "body": [
+        "[EN translation pending] — kn: 1. ಜನವರಿ 2019: ಟೈಮ್ಸ್ ಆಫ್‌ ಇಂಡಿಯ, ಚೆನ್ನೈ: ಉಚಿತ ಆರೋಗ್ಯ ಸೇವೆ ಇರುವಂತಹ ಸರ್ಕಾರಿ ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಮಕ್ಕಳಿಗೆ ಜನ್ಮ ನೀಡಿದಂತಹ ಮಹಿಳೆಯರ ಅನೇಕ ಕುಟುಂಬಗಳು ಇಂದು ದೂರು ನೀಡಿದವು. ವಾರ್ಡಿನ ಸಹಾಯಕರಿಗೆ, ಕೆಲಸಮಾಡುವವರಿಗೆ, ಮತ್ತು ಇತರೆ ಸಿಬ್ಬಂದಿ ವರ್ಗದವರಿಗೆ ಅವರು ಕನಿಷ್ಟಪಕ್ಷ 3,500 ರೂಗಳಷ್ಟು ಲಂಚವನ್ನು ನೀಡಬೇಕು ಎಂದು ಹೇಳಿದ್ದಾರೆ. ಅದರಲ್ಲೂ ಗಂಡು ಮಗು ಹುಟ್ಟಿದಲ್ಲಿ ಹೆಚ್ಚು ಹಣವನ್ನು ನೀಡಬೇಕು.",
+        "[EN translation pending] — kn: 2. ಮಾರ್ಚಿ 17, 2017: ಹಿಂದುಸ್ತಾನ್ ಟೈಮ್ಸ್, ಹೈದೆರಾಬಾದ್: ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಗಾಲಿಕುರ್ಚಿಗೆ ಲಂಚವನ್ನು ನೀಡಲಾಗದೆ, ಒಬ್ಬ ರೋಗಿಯು ತನ್ನ ಮಗನ ಮೂರು ಚಕ್ರದ ಆಟದ ಸೈಕಲ್ ಅನ್ನು ಬಳಸಿದನು. ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಸಹಾಯಕರು ಗಾಲಿ ಕುರ್ಚಿಗಾಗಿ 100 ರಿಂದ 200 ರೂಗಳನ್ನು ಕೋಡುವಂತೆ ಕೇಳುತ್ತಿದ್ದುದರಿಂದ, ರೋಗಿಯ ಹೆಂಡತಿಯು ತನ್ನ ಮಗನ ಮೂರುಚಕ್ರದ ಸೈಕಲ್ ಅನ್ನು ಆಸ್ಪತ್ರೆಗೆ ಭೇಟಿ ನೀಡಿದಾಗ ಒಳಗೆ ಕರೆದುಕೋಂಡು ಹೋಗಲು ತರುತ್ತಿದ್ದಾಳೆ. 40 ವರ್ಷ ವಯಸ್ಸಾಗಿರುವ ರಾಜುವಿಗೆ ಕಳೆದ ಆಗಸ್ಟ್ ತಿಂಗಳಿನಲ್ಲಿ ವಿದ್ಯುತ್ ಶಾಕ್‍ನಿಂದ ಸುಟ್ಟಗಾಯಗಳಾಗಿದ್ದು, ಅದರ ಚಿಕಿತ್ಸೆಗಾಗಿ ಆಗಾಗ್ಗೆ ಆಸ್ಪತ್ರೆಗೆ ಭೇಟಿ ನೀಡುತ್ತಿದ್ದಾನೆ. ಅವನ ಹೆಂಡತಿ ಸಂತೋಷಿ, ವಾರ್ಡ್‍ಬಾಯ್‍ಗಳಿಗೆ \"\\u0cad\\u0c95\\u0ccd\\u0cb7\\u0cc0\\u0cb8\\u0cc1\" ಕೋಡಲು ತನ್ನ ಬಳಿ ಹಣವಿಲ್ಲವಾದ್ದರಿಂದ ತನ್ನ ಗಂಡನಿಗೆ ಅವರು ಗಾಲಿ ಕುರ್ಚಿಯನ್ನು ನೀಡಲಿಲ್ಲ. ಹಾಗಾಗಿ ತಾವು \"\\u0cae\\u0cc2\\u0cb0\\u0cc1 \\u0c9a\\u0c95\\u0ccd\\u0cb0\\u0ca6 \\u0cb8\\u0cc8\\u0c95\\u0cb2\\u0ccd\" ಅನ್ನು ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಓಡಾಡಲು ಬಳಸಬೇಕಾಯಿತು ಎಂದು ದೂರಿದ್ದಾಳೆ."
+      ],
+      "tip": "Distribute Making Change Champion Box Instruction Annexure"
+    },
+    {
+      "n": 4,
+      "kind": "reflect_share",
+      "title": "[EN translation pending] — kn: ಯೋಚಿಸಿ ಹೇಳಿ",
+      "prompts": [
+        "[EN translation pending] — kn: ಇಂತಹ ಸಂಗತಿಗಳು ಏಕೆ ಆಗುತ್ತವೆ? ಇದರಿಂದ ನಿಮಗೆ ಏನೆನಿಸುತ್ತದೆ?",
+        "[EN translation pending] — kn: ಇದಕ್ಕೆ ಯಾರು ಜವಾಬ್ದಾರಿ ಎಂದು ನೀವು ಯೋಚಿಸುವಿರಿ?",
+        "[EN translation pending] — kn: ಒಬ್ಬ ಮನುಷ್ಯನಿಗೆ ಗಾಲಿ ಕುರ್ಚಿಯನ್ನು ಬಳಸಲು ನೀಡದೇ ಆಟದ ಮೂರು ಚಕ್ರದ ಸೈಕಲ್ ಅನ್ನು ನೀಡಿದಾಗ ಅವನಿಗೆ ಹೇಗೆ ಅನಿಸುವುದು ಎಂಬುದನ್ನು ಒಂದು ಕ್ಷಣ ನೀವು ಕಲ್ಪಿಸಿಕೋಳ್ಳಿ."
+      ],
+      "tip": "ಮಕ್ಕಳಿಗೆ ಒಂದೋಂದೇ ಪ್ರಶ್ನೆ ಕೇಳಿ. ಯೋಚಿಸಲು ಸಮಯ ನೀಡಿ. 2-3 ಉತ್ತರಗಳನ್ನು ಪಡೆಯಿರಿ."
+    },
+    {
+      "n": 5,
+      "kind": "static",
       "bullets_large": true,
+      "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ",
+      "body": [
+        "[EN translation pending] — kn: ಕಥೆಗಳು ಅಥವಾ ಸನ್ನಿವೇಶಗಳಿರುವ ಹಾಳೆಗಳನ್ನು ಹಂಚುವುದು",
+        "[EN translation pending] — kn: ಒಂದು - ಕಥೆಯು ತೋರಿಸುವ ಮೌಲ್ಯ ಅಥವಾ ಗುಣವನ್ನು, ಯಾವುದೇ ಉತ್ತಮ ಮನುಷ್ಯನು ಅಳವಡಿಸಿಕೋಂಡು ಬದುಕಬೇಕಾದಂತಹದ್ದನ್ನು ಪಟ್ಟಿ ಮಾಡಿ",
+        "[EN translation pending] — kn: ಎರಡು - ಅಂತಹ ನಿರ್ದಿಷ್ಟ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವಂತಹ ಕ್ರಮ ಅಥವಾ ನಡವಳಿಕೆ"
+      ],
       "images": [
         {
           "src": "/sessions/assets/s3_hospital_story_1.jpg",
@@ -77,30 +116,35 @@
           "alt": "hospital story 2 — Hyderabad"
         }
       ],
-      "image_layout": "stack",
-      "title": "[EN translation pending] — kn: ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳು",
-      "body": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
+      "tip": "ಎರಡು ಸುದ್ದಿ-ಆಧಾರಿತ ಕಥೆಗಳು. ಚಿತ್ರಗಳನ್ನು ಕೆಳಗೆ ತೋರಿಸಿ."
     },
     {
-      "n": 3,
+      "n": 6,
+      "kind": "reflect_share",
+      "title": "[EN translation pending] — kn: ಯೋಚಿಸಿ ಹೇಳಿ",
+      "prompts": [
+        "[EN translation pending] — kn: ಇಂತಹ ಸಂಗತಿಗಳು ಏಕೆ ಆಗುತ್ತವೆ? ಇದರಿಂದ ನಿಮಗೆ ಏನೆನಿಸುತ್ತದೆ?",
+        "[EN translation pending] — kn: ಇದಕ್ಕೆ ಯಾರು ಜವಾಬ್ದಾರಿ ಎಂದು ನೀವು ಯೋಚಿಸುವಿರಿ?",
+        "[EN translation pending] — kn: ಒಬ್ಬ ಮನುಷ್ಯನಿಗೆ ಗಾಲಿ ಕುರ್ಚಿಯನ್ನು ಬಳಸಲು ನೀಡದೇ ಆಟದ ಮೂರು ಚಕ್ರದ ಸೈಕಲ್ ಅನ್ನು ನೀಡಿದಾಗ ಅವನಿಗೆ ಹೇಗೆ ಅನಿಸುವುದು ಎಂಬುದನ್ನು ಒಂದು ಕ್ಷಣ ನೀವು ಕಲ್ಪಿಸಿಕೋಳ್ಳಿ."
+      ],
+      "tip": "ಮಕ್ಕಳಿಗೆ ಒಂದೋಂದೇ ಪ್ರಶ್ನೆ ಕೇಳಿ. ಯೋಚಿಸಲು ಸಮಯ ನೀಡಿ. 2-3 ಉತ್ತರಗಳನ್ನು ಪಡೆಯಿರಿ."
+    },
+    {
+      "n": 7,
       "kind": "static",
-      "image": "/sessions/assets/s3_group_reading.jpg",
-      "image_layout": "side",
       "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ",
       "body": [
-        "[EN translation pending]"
+        "[EN translation pending] — kn: ಕಥೆಗಳು ಅಥವಾ ಸನ್ನಿವೇಶಗಳಿರುವ ಹಾಳೆಗಳನ್ನು ಹಂಚುವುದು",
+        "[EN translation pending] — kn: ಒಂದು - ಕಥೆಯು ತೋರಿಸುವ ಮೌಲ್ಯ ಅಥವಾ ಗುಣವನ್ನು, ಯಾವುದೇ ಉತ್ತಮ ಮನುಷ್ಯನು ಅಳವಡಿಸಿಕೋಂಡು ಬದುಕಬೇಕಾದಂತಹದ್ದನ್ನು ಪಟ್ಟಿ ಮಾಡಿ",
+        "[EN translation pending] — kn: ಎರಡು - ಅಂತಹ ನಿರ್ದಿಷ್ಟ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವಂತಹ ಕ್ರಮ ಅಥವಾ ನಡವಳಿಕೆ"
       ],
-      "tip": "[EN translation pending]"
+      "tip": "ಅನುಬಂಧ 3 (Annexure 3) ಪ್ರತಿ ಗುಂಪಿಗೆ ಒಂದೊಂದು ಹಾಳೆ ವಿತರಿಸಿ."
     },
     {
-      "n": 4,
+      "n": 8,
       "kind": "video",
-      "video": "/sessions/assets/s3_mc_traffic_signal.kn.mp4",
-      "transcript": "MC gives a traffic-signal example: 'I always get late leaving home for school. To reach on time I sometimes break traffic signals. Which value am I not showing? (pause) — Not breaking signals, road awareness. Very good! Now what positive action would show that value? (pause) — Following rules, respect for other vehicles.'",
       "title": "[EN translation pending] — kn: ಉದಾಹರಣೆ — Master Change ಹೇಳುತ್ತಾರೆ",
+      "video": "/sessions/assets/s3_mc_traffic_signal.kn.mp4",
       "kn_script": [
         "ನಾನು ಯಾವಾಗಲೂ ಮನೆಯಿಂದ ಶಾಲೆಗೆ ಹೊರಡುವಾಗ ತಡವಾಗುತ್ತದೆ. ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ತಲುಪಲು, ನಾನು ಅನೇಕ ಬಾರಿ ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರುತ್ತೇನೆ.",
         "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?",
@@ -108,172 +152,176 @@
         "ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?",
         "(5 ಸೆಕೆಂಡ್ ವಿರಾಮ — ನಿಯಮಗಳನ್ನು ಪಾಲಿಸುವುದು, ಇತರ ವಾಹನಗಳ ಬಗ್ಗೆ ಗೌರವ)"
       ],
+      "transcript": "MC gives a traffic-signal example: 'I always get late leaving home for school. To reach on time I sometimes break traffic signals. Which value am I not showing? (pause) — Not breaking signals, road awareness. Very good! Now what positive action would show that value? (pause) — Following rules, respect for other vehicles.'",
+      "tip": "ವೀಡಿಯೋ 2 ಬಾರಿ ಸ್ವಯಂ ತಡೆಯುತ್ತದೆ (5-8 ಸೆಕೆಂಡ್ ಪ್ರತಿ). ತರಗತಿಗೆ ಹೇಳಿ: ಬೇಗ — ಕೈ ಎತ್ತಿ.",
       "en_script": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
-    },
-    {
-      "n": 5,
-      "kind": "static",
-      "audio": "/sessions/assets/timer_7min_ping.mp3",
-      "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ ಮಾಡಿ",
-      "body": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
-    },
-    {
-      "n": 6,
-      "kind": "static",
-      "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ ಮುಕ್ತಾಯಗೊಳಿಸಿ",
-      "body": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
-    },
-    {
-      "n": 7,
-      "kind": "static",
-      "title": "[EN translation pending] — kn: ಕಥೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ",
-      "body": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
-    },
-    {
-      "n": 8,
-      "kind": "static",
-      "title": "[EN translation pending] — kn: ಬೋರ್ಡ್‌ಗೆ ಬರೆಯಿರಿ — ಗುಂಪು ಸಾರಾಂಶ",
-      "body": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
+        "[EN translation pending] — kn: ನಾನು ಯಾವಾಗಲೂ ಮನೆಯಿಂದ ಶಾಲೆಗೆ ಹೊರಡುವಾಗ ತಡವಾಗುತ್ತದೆ. ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ತಲುಪಲು, ನಾನು ಅನೇಕ ಬಾರಿ ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರುತ್ತೇನೆ.",
+        "[EN translation pending] — kn: ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?",
+        "[EN translation pending] — kn: (5 ಸೆಕೆಂಡ್ ವಿರಾಮ — ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರದಿರುವುದು, ರಸ್ತೆಯಲ್ಲಿ ಜಾಗರೂಕತೆ)",
+        "[EN translation pending] — kn: ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?",
+        "[EN translation pending] — kn: (5 ಸೆಕೆಂಡ್ ವಿರಾಮ — ನಿಯಮಗಳನ್ನು ಪಾಲಿಸುವುದು, ಇತರ ವಾಹನಗಳ ಬಗ್ಗೆ ಗೌರವ)"
+      ]
     },
     {
       "n": 9,
       "kind": "static",
-      "audio": "/sessions/assets/timer_2min_ping.mp3",
-      "title": "[EN translation pending] — kn: ಚಿಂತಿಸೋಣ — 2 ನಿಮಿಷ ಮೌನ",
+      "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ ಮಾಡಿ",
       "body": [
-        "[EN translation pending]"
+        "[EN translation pending] — kn: ಗುಂಪುಗಳಿಗೆ ಹಾಳೆಗಳನ್ನು ವಿತರಿಸಿ.",
+        "[EN translation pending] — kn: 7 ನಿಮಿಷಗಳ ಟೈಮರ್ ಪ್ರಾರಂಭ. 2 ನಿಮಿಷ ಬಾಕಿ ಇರುವಾಗ ಎಚ್ಚರಿಕೆಯ ಬಜರ್ ಕೇಳಿಸುತ್ತದೆ."
       ],
-      "tip": "[EN translation pending]"
+      "audio": "/sessions/assets/timer_7min_ping.mp3",
+      "tip": "ಅನುಬಂಧ 3ರ ಹಾಳೆಗಳನ್ನು ವಿತರಿಸಿ. ಪ್ರತಿ ಗುಂಪಿಗೆ ಬೇರೆ ಬೇರೆ ಹಾಳೆ. 7 ನಿಮಿಷ ಟೈಮರ್ (ವಿಜೆಟ್ ನಿರ್ಮಾಣದಲ್ಲಿದೆ — ಸಮಯ ನೋಡಿಕೊಳ್ಳಿ)."
     },
     {
       "n": 10,
-      "kind": "video",
-      "loop": false,
-      "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
-      "reveal_on_click": true,
-      "image": "/sessions/assets/reference/s3_image2.png",
-      "title": "[EN translation pending] — kn: 150 ರೂಪಾಯಿ — ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
-      "tip": "[EN translation pending]",
-      "intro_text": "[EN translation pending]",
-      "post_video_text": [
-        "[EN translation pending]"
-      ]
+      "kind": "static",
+      "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ ಮುಕ್ತಾಯಗೊಳಿಸಿ",
+      "body": [
+        "[EN translation pending] — kn: ಧನ್ಯವಾದಗಳು! ನಿಮ್ಮ ಗುಂಪುಗಳಲ್ಲಿ ನೀವು ತುಂಬಾ ಚೆನ್ನಾಗಿ ಕೆಲಸ ಮಾಡಿದ್ದೀರಿ!",
+        "[EN translation pending] — kn: ನೀವು ಕೆಲಸ ಮುಗಿಸದಿದ್ದರೂ ಪರವಾಗಿಲ್ಲ. ನಾವು ಪರಸ್ಪರ ಹಂಚಿಕೊಂಡಾಗ, ಎಲ್ಲಾ ಕಥೆಗಳು/ಸನ್ನಿವೇಶಗಳು ಚರ್ಚೆಯಾಗುತ್ತವೆ.",
+        "[EN translation pending] — kn: ಇಡೀ ತರಗತಿಯೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಲು ನೀವು ಇಷ್ಟಪಡುವ ಎರಡು ಕಥೆಗಳು/ಸನ್ನಿವೇಶಗಳನ್ನು ಶೀಘ್ರವಾಗಿ ಆಯ್ಕೆ ಮಾಡಿ."
+      ],
+      "tip": "1 ನಿಮಿಷ ಟೈಮರ್. ಪ್ರತಿ ಗುಂಪು ಎರಡು ಕಥೆಗಳನ್ನು ಆರಿಸಿಕೊಳ್ಳಬೇಕು."
     },
     {
       "n": 11,
-      "kind": "mc_narration",
-      "video": "/sessions/assets/s3_mc_hospital_reflection.kn.mp4",
-      "transcript": "Friends, in the hospital stories you read — what choice did poor people have? Sometimes poor people have very few choices. Poor people pay bribes out of compulsion.",
-      "title": "[EN translation pending] — kn: ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳ ಬಗ್ಗೆ ಆಲೋಚಿಸಿ",
-      "kn_script": [
-        "ಸ್ನೇಹಿತರೇ, ಆರಂಭದಲ್ಲಿ ನೀವು ಓದಿದ ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಬಡ ಜನರಿಗೆ ಯಾವ ಆಯ್ಕೆ ಇತ್ತು? ಅವರು ಲಂಚ ನೀಡದಿದ್ದರೆ ತೊಂದರೆ ಅನುಭವಿಸಬೇಕಿತ್ತು.",
-        "ಬಡ ಜನರಿಗೆ ಕೆಲವೊಮ್ಮೆ ಅತಿ ಕಡಿಮೆ ಆಯ್ಕೆಗಳಿರುತ್ತವೆ. ಬಡವರು ಲಂಚ ಕೊಡುವುದು ಬಲವಂತದಿಂದ."
+      "kind": "static",
+      "title": "[EN translation pending] — kn: ಕಥೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ",
+      "body": [
+        "[EN translation pending] — kn: ಒಬ್ಬರಾದ ಮೇಲೆ ಒಬ್ಬರಂತೆ, ನಿಮ್ಮ ಗುಂಪಿನಿಂದ ಒಬ್ಬರು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಯ್ಕೆಯ ಕಥೆಗಳಲ್ಲಿ ಒಂದನ್ನು ತರಗತಿಗೆ ಓದಿ ಹೇಳಿ.",
+        "[EN translation pending] — kn: ಕಥೆಗಳು/ಸನ್ನಿವೇಶಗಳನ್ನು ಪುನರಾವರ್ತಿಸಬೇಡಿ."
       ],
-      "en_script": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
+      "tip": "ಪ್ರತಿ ಗುಂಪಿನ ಬಳಿ ಹೋಗಿ ಒಂದು ಕಥೆಯನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಹೇಳಿ. ಶಿಸ್ತನ್ನು ಕಾಪಾಡಿ."
     },
     {
       "n": 12,
-      "kind": "mc_narration",
-      "video": "/sessions/assets/s3_mc_staff_choices.kn.mp4",
-      "transcript": "In the hospital stories — what do you say about the choices the staff made? They could have chosen not to take bribes from the poor — but they didn't.",
-      "title": "[EN translation pending] — kn: ಆಸ್ಪತ್ರೆ ಸಿಬ್ಬಂದಿಯ ಆಯ್ಕೆಗಳು?",
-      "kn_script": [
-        "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿ ಮಾಡಿದ ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಏನು ಹೇಳುತ್ತೀರಿ?",
-        "ಅವರು ಬಡವರಿಂದ ಲಂಚ ತೆಗೆದುಕೊಳ್ಳದಿರುವ ಆಯ್ಕೆಯನ್ನು ಮಾಡಬಹುದಿತ್ತು — ಆದರೆ ಮಾಡಲಿಲ್ಲ."
+      "kind": "static",
+      "title": "[EN translation pending] — kn: ಬೋರ್ಡ್‌ಗೆ ಬರೆಯಿರಿ — ಗುಂಪು ಸಾರಾಂಶ",
+      "body": [
+        "[EN translation pending] — kn: ಪ್ರತಿ ಗುಂಪಿನಿಂದ ಒಬ್ಬ ಸದಸ್ಯರು ಬೋರ್ಡ್ ಬಳಿ ಬಂದು ನಿಮ್ಮ ಪಟ್ಟಿಯಲ್ಲಿರುವ 2 ಕ್ರಿಯಾ-ಹೇಳಿಕೆಗಳನ್ನು (action statements) ಬರೆಯಿರಿ.",
+        "[EN translation pending] — kn: ನಿಮಗೆ ಕೇವಲ 1 ನಿಮಿಷ ಸಮಯವಿದೆ, ಆದ್ದರಿಂದ ಬೇಗನೆ ಮಾಡಿ!",
+        "[EN translation pending] — kn: ಬೋರ್ಡ್‌ನ ಯಾವುದೇ ಭಾಗಕ್ಕೆ ಬಂದು ಎಲ್ಲರಿಗೂ ಓದಲು ಸಾಧ್ಯವಾಗುವಂತೆ ದೊಡ್ಡ ಅಕ್ಷರಗಳಲ್ಲಿ ಬರೆಯಿರಿ."
       ],
-      "en_script": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
+      "tip": "1 ನಿಮಿಷ ಟೈಮರ್. ಪ್ರತಿಯೊಬ್ಬರ ಕೈಯಲ್ಲೂ ಸೀಮೆಸುಣ್ಣ (chalk) ಇರುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ.",
+      "_bug": "Audio is not working in the video — needs re-export with audio track"
     },
     {
       "n": 13,
       "kind": "static",
-      "reveal_on_click": true,
-      "image": "/sessions/assets/s3_integrity_reveal.jpg",
-      "title": "[EN translation pending] — kn: ಆಯ್ಕೆಯ ಹಿಂದೆ — ಪ್ರಾಮಾಣಿಕತೆ (INTEGRITY)",
+      "title": "[EN translation pending] — kn: ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳ ಬಗ್ಗೆ ಆಲೋಚಿಸಿ",
       "body": [
-        "[EN translation pending]"
+        "[EN translation pending] — kn: ನಿಮ್ಮ ಗುಂಪು ಚರ್ಚೆಗಳಿಂದ ಹೊರಬಂದ ಮತ್ತು ಬೋರ್ಡ್ ಮೇಲೆ ಬರೆದಿರುವ ವಿಷಯಗಳ ಬಗ್ಗೆ ನಾವೆಲ್ಲರೂ ಒಂದು ನಿಮಿಷ ಮೌನವಾಗಿ ಆಲೋಚಿಸೋಣ.",
+        "[EN translation pending] — kn: ಆಲೋಚಿಸಲು ಮತ್ತು ಚಿಂತಿಸಲು ನಿಮಗೆ 2 ನಿಮಿಷಗಳ ಕಾಲಾವಕಾಶ."
       ],
-      "tip": "[EN translation pending]",
-      "post_video_text": [
-        "[EN translation pending]"
-      ]
+      "audio": "/sessions/assets/timer_2min_ping.mp3",
+      "tip": "ಮಕ್ಕಳು ಆಲೋಚಿಸಲು ಪ್ರಾರಂಭಿಸಿದಾಗ, ಸೆಷನ್‌ನ ಆರಂಭದಲ್ಲಿ ಆಸ್ಪತ್ರೆಯ ಕಥೆಗೆ ಸಂಬಂಧಿಸಿದ ಮೌಲ್ಯಗಳನ್ನು ಸಂಪರ್ಕಿಸಲು ಪ್ರೋತ್ಸಾಹಿಸಿ.",
+      "kn_script": "ಆರಂಭದಲ್ಲಿ ನಾನು ಓದಿದ ಆಸ್ಪತ್ರೆಯ ಕಥೆಯಲ್ಲಿ, ಬಡಜನರಿಗೆ ಯಾವ ಆಯ್ಕೆಗಳು ಇತ್ತು? ಅವರು ಒಂದುವೇಳೆ ಲಂಚವನ್ನು ಕೋಡದೇ ಇದ್ದರೆ, ಖಾಯಿಲೆಯಾಗಿರುವ ಅವರ ಪ್ರೀತಿಪಾತ್ರರಿಗೆ ಏನಾಗುತ್ತದೆ?\n\n[4 ಸೆಕೆಂಡ್ ವಿರಾಮ]\n\nಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿ ಮಾಡಿದಂತಹ ಆಯ್ಕೆ ಏನಾಗಿತ್ತು?",
+      "_video_needed": "Video needs re-recording with new combined script (old slides 11+12 merged)",
+      "en_script": "[EN translation pending] — kn: ಆರಂಭದಲ್ಲಿ ನಾನು ಓದಿದ ಆಸ್ಪತ್ರೆಯ ಕಥೆಯಲ್ಲಿ, ಬಡಜನರಿಗೆ ಯಾವ ಆಯ್ಕೆಗಳು ಇತ್ತು? ಅವರು ಒಂದುವೇಳೆ ಲಂಚವನ್ನು ಕೋಡದೇ ಇದ್ದರೆ, ಖಾಯಿಲೆಯಾಗಿರುವ ಅವರ ಪ್ರೀತಿಪಾತ್ರರಿಗೆ ಏನಾಗುತ್ತದೆ?\n\n[4 ಸೆಕೆಂಡ್ ವಿರಾಮ]\n\nಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿ ಮಾಡಿದಂತಹ ಆಯ್ಕೆ ಏನಾಗಿತ್ತು?"
     },
     {
       "n": 14,
-      "kind": "mc_narration",
-      "video": "/sessions/assets/s3_mc_daily_choices.kn.mp4",
-      "transcript": "MC talks about daily choices at school — spoiled Change Champion Box, copying from ChatGPT, helping absent friends, admitting a broken window. Ends with 'your daily choices make you a real change champion'.",
-      "title": "[EN translation pending] — kn: ದಿನನಿತ್ಯದ ಆಯ್ಕೆಗಳು",
-      "kn_script": [
-        "ಈಗ ನಾವು ಶಾಲೆಯಲ್ಲಿಯೇ ಮಾಡುವ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ.",
-        "ಕೆಲವು ಮಕ್ಕಳು ಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುತ್ತಿದ್ದಾರೆ ಮತ್ತು Change Champion Box ಅನ್ನು ಹಾಳು ಮಾಡುತ್ತಿದ್ದಾರೆ.",
-        "ನಾವು ನಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್ ಕೆಲಸವನ್ನು ಗೂಗಲ್ ಅಥವಾ ChatGPT ನಿಂದ ಕಾಪಿ ಮಾಡಿದರೆ ಮತ್ತು ನಾವೇ ಅದನ್ನು ಮಾಡದಿದ್ದರೆ ಏನಾಗುತ್ತದೆ?",
-        "ನಿಮ್ಮ ಸ್ನೇಹಿತರೊಬ್ಬರು ಗೈರುಹಾಜರಾಗಿದ್ದರು ಮತ್ತು ಮರುದಿನ ನೀವು ಅವರಿಗೆ ಪಾಠದಲ್ಲಿ ಸಹಾಯ ಮಾಡುತ್ತೀರಿ.",
-        "ಕೆಲವು ಮಕ್ಕಳು ಆಟವಾಡುವಾಗ ಕಿಟಕಿಯ ಗಾಜನ್ನು ಒಡೆದರು ಮತ್ತು ಅವರು ಅದನ್ನು ಶಿಕ್ಷಕರಿಗೆ ಒಪ್ಪಿಕೊಳ್ಳುತ್ತಾರೆ.",
-        "ನಿಮ್ಮ ದೈನಂದಿನ ಆಯ್ಕೆಗಳು ನಿಮ್ಮನ್ನು ನಿಜವಾದ ಬದಲಾವಣೆಯ ಶಕ್ತಿಯನ್ನಾಗಿ ಮಾಡುತ್ತವೆ."
+      "kind": "mcq",
+      "title": "[EN translation pending] — kn: ನಾವು ಮಾಡುವ ಆಯ್ಕೆಗಳ ಆಧಾರದ ಮೇಲೆ ಬೆಳೆಸಿಕೋಳ್ಳುವ ಮೌಲ್ಯ ಯಾವುದು?",
+      "options": [
+        {
+          "text": "[EN] ಪ್ರಾಮಾಣಿಕತೆ",
+          "correct": false
+        },
+        {
+          "text": "[EN] ನೈತಿಕತೆ",
+          "correct": true
+        },
+        {
+          "text": "[EN] ಸಹಾನುಭೂತಿ",
+          "correct": false
+        },
+        {
+          "text": "[EN] ಧೈರ್ಯ",
+          "correct": false
+        }
       ],
-      "en_script": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
+      "tip": "ಸರಿ ಉತ್ತರ: ನೈತಿಕತೆ (Integrity). ಎಲ್ಲ ಆಯ್ಕೆಗಳೂ ಮೌಲ್ಯಗಳೇ ಆದರೆ ಆಯ್ಕೆಗಳ ಹಿಂದಿರುವ ನಿರ್ದಿಷ್ಟ ಮೌಲ್ಯ ನೈತಿಕತೆ."
     },
     {
       "n": 15,
-      "kind": "static",
-      "image": "/sessions/assets/s3_coin_two_sides.jpg",
-      "title": "[EN translation pending] — kn: ನಾಣ್ಯದ ಎರಡು ಮುಖಗಳು (Optional)",
-      "body": [
-        "[EN translation pending]"
+      "kind": "mcq",
+      "title": "[EN translation pending] — kn: ನಾವು ಮಾಡುವ ಆಯ್ಕೆಗಳ ಆಧಾರದ ಮೇಲೆ ಬೆಳೆಸಿಕೋಳ್ಳುವ ಮೌಲ್ಯ ಯಾವುದು?",
+      "options": [
+        {
+          "text": "[EN] ಪ್ರಾಮಾಣಿಕತೆ",
+          "correct": false
+        },
+        {
+          "text": "[EN] ನೈತಿಕತೆ",
+          "correct": true
+        },
+        {
+          "text": "[EN] ಸಹಾನುಭೂತಿ",
+          "correct": false
+        },
+        {
+          "text": "[EN] ಧೈರ್ಯ",
+          "correct": false
+        }
       ],
-      "tip": "[EN translation pending]"
+      "tip": "ಸರಿ ಉತ್ತರ: ನೈತಿಕತೆ (Integrity). ಎಲ್ಲ ಆಯ್ಕೆಗಳೂ ಮೌಲ್ಯಗಳೇ ಆದರೆ ಆಯ್ಕೆಗಳ ಹಿಂದಿರುವ ನಿರ್ದಿಷ್ಟ ಮೌಲ್ಯ ನೈತಿಕತೆ.",
+      "kn_script": "ಬನ್ನಿ, ಈಗ ನಾವು ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಮಾಡಬಹುದಾದ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ\n\nಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಆಗದೇ ಇರುವಂತಹ ಕಥೆಯನ್ನು ಬರೆದು ಹಾಕಿದರೆ ಏನಾಗುತ್ತದೆ?\n\nನಾವು ಸುಳ್ಳನ್ನು ಬರೆದು ಹಾಕಿದರೆ ನಾವು ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಆಗುತ್ತೇವೆಯೇ?\n\nಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುವುದು ಅಥವಾ ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯನ್ನು ಹಾಳು ಮಾಡುವುದು - ಇವೆಲ್ಲವೂ ನಮ್ಮ ಬಗ್ಗೆ, ನಮ್ಮ ತರಗತಿ, ನಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಏನನ್ನು ಹೇಳುತ್ತವೆ?\n\nನಾವು ನಮ್ಮ ಯೋಜನಾ ಕಾರ್ಯವನ್ನು ಗೂಗಲ್ ನಿಂದ ಅಥವಾ ಚಾಟ್ ಜಿಪಿಟಿ ಬಳಸಿ ನಕಲು ಮಾಡಿದರೆ, ಸ್ವತಃ ನಾವೇ ಮಾಡದೇ ಇದ್ದರೆ ಏನಾಗುತ್ತದೆ?\n\nನಾವು ನಿಜವಾಗಿಯೂ ಮಾಡದೇ ಇರುವ ಸಂಗತಿಯನ್ನು ಪ್ರಸ್ತುತ ಪಡಿಸಬೇಕಾದಾಗ ನಮಗೆ ಹೇಗೆನಿಸುತ್ತದೆ?",
+      "_video_needed": "Video needs re-recording with new script about school choices and Change Champion Box integrity",
+      "en_script": "[EN translation pending] — kn: ಬನ್ನಿ, ಈಗ ನಾವು ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಮಾಡಬಹುದಾದ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ\n\nಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಆಗದೇ ಇರುವಂತಹ ಕಥೆಯನ್ನು ಬರೆದು ಹಾಕಿದರೆ ಏನಾಗುತ್ತದೆ?\n\nನಾವು ಸುಳ್ಳನ್ನು ಬರೆದು ಹಾಕಿದರೆ ನಾವು ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಆಗುತ್ತೇವೆಯೇ?\n\nಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುವುದು ಅಥವಾ ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯನ್ನು ಹಾಳು ಮಾಡುವುದು - ಇವೆಲ್ಲವೂ ನಮ್ಮ ಬಗ್ಗೆ, ನಮ್ಮ ತರಗತಿ, ನಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಏನನ್ನು ಹೇಳುತ್ತವೆ?\n\nನಾವು ನಮ್ಮ ಯೋಜನಾ ಕಾರ್ಯವನ್ನು ಗೂಗಲ್ ನಿಂದ ಅಥವಾ ಚಾಟ್ ಜಿಪಿಟಿ ಬಳಸಿ ನಕಲು ಮಾಡಿದರೆ, ಸ್ವತಃ ನಾವೇ ಮಾಡದೇ ಇದ್ದರೆ ಏನಾಗುತ್ತದೆ?\n\nನಾವು ನಿಜವಾಗಿಯೂ ಮಾಡದೇ ಇರುವ ಸಂಗತಿಯನ್ನು ಪ್ರಸ್ತುತ ಪಡಿಸಬೇಕಾದಾಗ ನಮಗೆ ಹೇಗೆನಿಸುತ್ತದೆ?"
     },
     {
       "n": 16,
-      "kind": "static",
-      "image": "/sessions/assets/s3_start_stop_continue.jpg",
-      "title": "[EN translation pending] — kn: ಪ್ರಾರಂಭಿಸಿ — ನಿಲ್ಲಿಸಿ — ಮುಂದುವರಿಸಿ",
-      "body": [
-        "[EN translation pending]"
-      ],
-      "tip": "[EN translation pending]"
+      "kind": "reflect_share",
+      "title": "[EN translation pending] — kn: ಯೋಚಿಸಿ",
+      "body": "[EN translation pending] — kn: ಪ್ರತಿ ಚಿಕ್ಕ ಆಯ್ಕೆಗಳ ಮೂಲಕ ನಾವು ಎಂತಹ ವ್ಯಕ್ತಿಯಾಗುತ್ತಿದ್ದೇವೆ?",
+      "tip": "ಮಕ್ಕಳಿಗೆ ಮೌನವಾಗಿ ಯೋಚಿಸಲು ಒಂದು ನಿಮಿಷ ನೀಡಿ. ನಂತರ 2-3 ಉತ್ತರಗಳನ್ನು ಕೇಳಿ."
     },
     {
       "n": 17,
       "kind": "mc_narration",
-      "video": "/sessions/assets/s3_mc_change_champion_box.kn.mp4",
-      "transcript": "Wow! Our CMCA Club is learning so many new things. Time to collect all the positive changes in our lives. Let me introduce something exciting — the Change Champion Box! It's a box that collects your change stories.",
-      "title": "[EN translation pending] — kn: Change Champion Box — ಪರಿಚಯ",
-      "kn_script": [
-        "ವಾಹ್! ನಮ್ಮ CMCA ಕ್ಲಬ್‌ನಲ್ಲಿ ನಾವು ಎಷ್ಟು ಹೊಸ ವಿಷಯಗಳನ್ನು ಕಲಿಯುತ್ತಿದ್ದೇವೆ ಮತ್ತು ಅದ್ಭುತವಾದ ಚಟುವಟಿಕೆಗಳನ್ನು ಮಾಡುತ್ತಿದ್ದೇವೆ.",
-        "ಈಗ, ನಮ್ಮ ಜೀವನದಲ್ಲಿ ನಡೆಯುತ್ತಿರುವ ಎಲ್ಲಾ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಸಮಯ ಬಂದಿದೆ!",
-        "ನಾನು ನಿಮಗೆ ಒಂದು ಆಕರ್ಷಕ ವಿಷಯವನ್ನು ಪರಿಚಯಿಸುತ್ತೇನೆ — ಅದೇ Change Champion Box! 🎉",
-        "ಇದು ನಿಮ್ಮ ಬದಲಾವಣೆಯ ಕಥೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಪೆಟ್ಟಿಗೆ."
+      "title": "[EN translation pending] — kn: ನಾಣ್ಯದ ಎರಡು ಮುಖಗಳು",
+      "video": "/sessions/assets/s3_mc_daily_choices.kn.mp4",
+      "kn_script": "ಬನ್ನಿ, ಈಗ ನಾವು ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಮಾಡಬಹುದಾದ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ\n\nಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಆಗದೇ ಇರುವಂತಹ ಕಥೆಯನ್ನು ಬರೆದು ಹಾಕಿದರೆ ಏನಾಗುತ್ತದೆ?\n\nನಾವು ಸುಳ್ಳನ್ನು ಬರೆದು ಹಾಕಿದರೆ ನಾವು ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಆಗುತ್ತೇವೆಯೇ?\n\nಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುವುದು ಅಥವಾ ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯನ್ನು ಹಾಳು ಮಾಡುವುದು - ಇವೆಲ್ಲವೂ ನಮ್ಮ ಬಗ್ಗೆ, ನಮ್ಮ ತರಗತಿ, ನಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಏನನ್ನು ಹೇಳುತ್ತವೆ?\n\nನಾವು ನಮ್ಮ ಯೋಜನಾ ಕಾರ್ಯವನ್ನು ಗೂಗಲ್ ನಿಂದ ಅಥವಾ ಚಾಟ್ ಜಿಪಿಟಿ ಬಳಸಿ ನಕಲು ಮಾಡಿದರೆ, ಸ್ವತಃ ನಾವೇ ಮಾಡದೇ ಇದ್ದರೆ ಏನಾಗುತ್ತದೆ?\n\nನಾವು ನಿಜವಾಗಿಯೂ ಮಾಡದೇ ಇರುವ ಸಂಗತಿಯನ್ನು ಪ್ರಸ್ತುತ ಪಡಿಸಬೇಕಾದಾಗ ನಮಗೆ ಹೇಗೆನಿಸುತ್ತದೆ?",
+      "transcript": "MC talks about daily choices at school — spoiled Change Champion Box, copying from ChatGPT, helping absent friends, admitting a broken window. Ends with 'your daily choices make you a real change champion'.",
+      "tip": "ಪ್ರತಿ ಸನ್ನಿವೇಶದ ನಂತರ ಮಕ್ಕಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು ಸಮಯ ನೀಡಿ.",
+      "_video_needed": "Video needs re-recording with new script about school choices and Change Champion Box integrity",
+      "body": [
+        "[EN translation pending] — kn: ಪ್ರತಿ ನಾಣ್ಯಕ್ಕೂ ಎರಡು ಮುಖಗಳಿವೆ. ಜೀವನದಲ್ಲೂ ಕುಡ ಪ್ರತಿ ಸಮಸ್ಯೆ/ವಿಷಯಕ್ಕೂ ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಪರಿಕಲ್ಪನೆಗಳಿರುತ್ತವೆ",
+        "[EN translation pending] — kn: ನಾಣ್ಯದ ಎರಡೂ ಮುಖಗಳ ಚಿತ್ರವನ್ನು ಬಿಡಿಸಿ",
+        "[EN translation pending] — kn: ಬದಿ A: ಅವರು ಬೆಲೆ ನೀಡುವಂತಹದ್ದು/ಮೌಲ್ಯಯುತವಾದದು (ಉದಾ., ಪ್ರಾಮಾಣಿಕತೆ, ಸ್ನೇಹ, ವಿನೋದ)",
+        "[EN translation pending] — kn: ಬದಿ B: ಒಂದು ಸವಾಲು ಅಥವಾ ವಿರುದ್ಧವಾದ ಕಲ್ಪನೆ (ಉದಾ., ಅಪ್ರಾಮಾಣಿಕತೆ, ಸಂಘರ್ಷ, ಬೇಸರ)"
       ],
-      "en_script": [
-        "[EN translation pending]"
+      "en_script": "[EN translation pending] — kn: ಬನ್ನಿ, ಈಗ ನಾವು ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಮಾಡಬಹುದಾದ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ\n\nಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಆಗದೇ ಇರುವಂತಹ ಕಥೆಯನ್ನು ಬರೆದು ಹಾಕಿದರೆ ಏನಾಗುತ್ತದೆ?\n\nನಾವು ಸುಳ್ಳನ್ನು ಬರೆದು ಹಾಕಿದರೆ ನಾವು ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಆಗುತ್ತೇವೆಯೇ?\n\nಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುವುದು ಅಥವಾ ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯನ್ನು ಹಾಳು ಮಾಡುವುದು - ಇವೆಲ್ಲವೂ ನಮ್ಮ ಬಗ್ಗೆ, ನಮ್ಮ ತರಗತಿ, ನಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಏನನ್ನು ಹೇಳುತ್ತವೆ?\n\nನಾವು ನಮ್ಮ ಯೋಜನಾ ಕಾರ್ಯವನ್ನು ಗೂಗಲ್ ನಿಂದ ಅಥವಾ ಚಾಟ್ ಜಿಪಿಟಿ ಬಳಸಿ ನಕಲು ಮಾಡಿದರೆ, ಸ್ವತಃ ನಾವೇ ಮಾಡದೇ ಇದ್ದರೆ ಏನಾಗುತ್ತದೆ?\n\nನಾವು ನಿಜವಾಗಿಯೂ ಮಾಡದೇ ಇರುವ ಸಂಗತಿಯನ್ನು ಪ್ರಸ್ತುತ ಪಡಿಸಬೇಕಾದಾಗ ನಮಗೆ ಹೇಗೆನಿಸುತ್ತದೆ?"
+    },
+    {
+      "n": 18,
+      "kind": "reflect_share",
+      "title": "[EN translation pending] — kn: ನಾಣ್ಯದ ಎರಡೂ ಮುಖಗಳು — ಯೋಚಿಸಿ",
+      "prompts": [
+        "[EN translation pending] — kn: ನಾವು ನಾಣ್ಯದ ಒಂದೇ ಬದಿಯನ್ನು/ಮುಖವನ್ನು ನೋಡಿದರೆ ಏನಾಗುತ್ತದೆ?",
+        "[EN translation pending] — kn: ಎರಡೂ ಬದಿಗಳನ್ನೂ ನಮ್ಮೋಳಗೇ ನೋಡುವುದರಿಂದ ಅದು ನಮಗೆ ನ್ಯಾಯಯುತ ಆಯ್ಕೆಗಳನ್ನು ಮಾಡಿಕೋಳ್ಳಲು ಹೇಗೆ ಸಹಾಯ ಮಾಡುತ್ತದೆ?"
       ],
-      "tip": "[EN translation pending]",
-      "_content_needed": "Ashwini feedback 16-Jul: add box creation details and rules for the Change Champion Box — e.g. how to make the box, what chits to write, when to open it, rules for participation. Content not yet provided — awaiting from CMCA team."
+      "tip": "ಮಕ್ಕಳಿಗೆ ಎರಡೂ ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳಿ. ಎರಡೂ ದೃಷ್ಟಿಕೋನಗಳನ್ನು ಪರಿಗಣಿಸುವ ಮಹತ್ವವನ್ನು ಒತ್ತಿ ಹೇಳಿ."
+    },
+    {
+      "n": 19,
+      "kind": "reflect_share",
+      "title": "[EN translation pending] — kn: ಯೋಚಿಸಿ",
+      "body": "[EN translation pending] — kn: ಪ್ರತಿ ಚಿಕ್ಕ ಆಯ್ಕೆಗಳ ಮೂಲಕ ನಾವು ಎಂತಹ ವ್ಯಕ್ತಿಯಾಗುತ್ತಿದ್ದೇವೆ?",
+      "tip": "ಮಕ್ಕಳಿಗೆ ಮೌನವಾಗಿ ಯೋಚಿಸಲು ಒಂದು ನಿಮಿಷ ನೀಡಿ. ನಂತರ 2-3 ಉತ್ತರಗಳನ್ನು ಕೇಳಿ."
+    },
+    {
+      "n": 20,
+      "kind": "title",
+      "title": "[EN translation pending] — kn: ನಾಗರಿಕ ಕ್ಲಬ್",
+      "thank_you": true,
+      "closing_line": "[EN translation pending] — kn: ಇಂದು ನಾವು ಮೌಲ್ಯಗಳು, ಆಯ್ಕೆಗಳು ಮತ್ತು ನೈತಿಕತೆಯ ಬಗ್ಗೆ ಕಲಿತಿದ್ದೇವೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
+      "centered": true,
+      "image": "/sessions/assets/kreis_seal.png",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "ಮಕ್ಕಳಿಗೆ ಧನ್ಯವಾದ ಹೇಳಿ. ಸೆಷನ್ ಮುಕ್ತಾಯ."
     }
   ]
 }
