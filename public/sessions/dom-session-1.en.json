@@ -105,7 +105,7 @@
       "n": 1,
       "kind": "title",
       "title": "Welcome to the Civic Club!",
-      "subtitle": "KREIS × CMCA",
+      "subtitle": "DOM × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
       "tip": "Play welcome music as children enter. Keep this slide on screen. Press Next once everyone is seated in their group."
@@ -126,40 +126,20 @@
       "kind": "mc_narration",
       "title": "Master Change introduces himself",
       "video": "/sessions/assets/mc_intro.kn.mp4",
-      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Civic Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Civic Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Civic Club — the Civic Club!",
-      "tip": "Play the full MC video.",
-      "images": [
-        {
-          "src": "/sessions/assets/partner_gramaantara.jpeg",
-          "alt": "Gramaantara Trust",
-          "caption": "Gramaantara Trust · Chikballapur"
-        },
-        {
-          "src": "/sessions/assets/partner_navu_prathishtana.png",
-          "alt": "Navu Prathishtana",
-          "caption": "Navu Prathishtana · Mysuru, Kodagu, Kalaburgi, Bidar, Yadgir"
-        },
-        {
-          "src": "/sessions/assets/partner_prakruthi.jpeg",
-          "alt": "Prakruthi Foundation",
-          "caption": "Prakruthi Foundation · Tumkur, Hassan, Bangalore Urban & Rural"
-        },
-        {
-          "src": "/sessions/assets/partner_yids.png",
-          "alt": "Young India Development Society (YIDS)",
-          "caption": "YIDS · Kolar, Shivamoga"
-        }
-      ]
+      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Civic Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Can you all clap for CMCA and me? Thank you for your warm welcome! Let's begin our journey as members of our Civic Club — the Civic Club!",
+      "tip": "Play the full MC video."
     },
     {
       "n": 4,
       "kind": "static",
-      "title": "One Two — Eyes on You",
+      "title": "Calmers",
       "body": [
-        "Teacher: \"One, two — eyes on me!\"",
-        "Children whisper: \"Eyes on you.\""
+        "Sometimes we get so excited that we can't stop talking or running around… like being in a game! Just like a game, our club also has a whistle!",
+        "1. One Two… Eyes on You",
+        "2. Ondu Eradu… Board kade nodu",
+        "3. Hi… Hello"
       ],
-      "tip": "Use this calmer whenever you need to settle the class.",
+      "tip": "Introduce the three calmers. Practice each one once with the children. Use any of them whenever the class gets noisy.",
       "audio": "/sessions/assets/vo_eyes_on_you.kn.wav"
     },
     {
@@ -420,9 +400,7 @@
       "kind": "static",
       "title": "Ripples of Change",
       "body": [
-        "Now you will learn about Asfiya — a young citizen whose small actions created ripples of change in her school, her community, and beyond.",
-        "One small action can create a ripple that reaches far beyond where it started.",
-        "Asfiya was a member of the Civic Club. Her small efforts brought positive change in her school, town, and community."
+        "Let's hear the story of Asfiya, a member of the Children's Civic Club — her small efforts brought positive change in her school, town, and beyond."
       ],
       "tip": "Tell the children: one small effort can become a ripple of change. Asfiya's story is next — about 3 minutes."
     },

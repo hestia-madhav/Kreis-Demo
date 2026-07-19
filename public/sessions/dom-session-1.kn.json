@@ -105,7 +105,7 @@
       "n": 1,
       "kind": "title",
       "title": "ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
-      "subtitle": "KREIS × CMCA",
+      "subtitle": "DOM × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
       "tip": "ಸ್ವಾಗತ ಸಂಗೀತ ಪ್ಲೇ ಮಾಡಿ. ಮಕ್ಕಳು ಒಳಗೆ ಬರುತ್ತಿರುವಾಗ ಈ ಸ್ಲೈಡ್ ಕಾಣಿಸಲಿ. ಎಲ್ಲರೂ ಸಿದ್ಧರಾದ ಮೇಲೆ Next ಒತ್ತಿ."
@@ -126,40 +126,20 @@
       "kind": "mc_narration",
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್‌ ಅವರ ಪರಿಚಯ",
       "video": "/sessions/assets/mc_intro.kn.mp4",
-      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Civic Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness (ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ) — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Civic Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Civic Club — the Civic Club!",
-      "tip": "MC ವೀಡಿಯೋವನ್ನು ಪೂರ್ತಿಯಾಗಿ ನೋಡಿ. CMCA ಪೂರ್ಣ ರೂಪ — Children's Movement for Civic Awareness — ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಉಳಿಯಬೇಕು. ಕನ್ನಡದಲ್ಲಿ: ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ. 'ಎಲ್ಲರೂ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ?' ಎಂದಾಗ ಮಕ್ಕಳನ್ನು ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಪ್ರೋತ್ಸಾಹಿಸಿ.",
-      "images": [
-        {
-          "src": "/sessions/assets/partner_gramaantara.jpeg",
-          "alt": "Gramaantara Trust",
-          "caption": "Gramaantara Trust · Chikballapur"
-        },
-        {
-          "src": "/sessions/assets/partner_navu_prathishtana.png",
-          "alt": "Navu Prathishtana",
-          "caption": "Navu Prathishtana · Mysuru, Kodagu, Kalaburgi, Bidar, Yadgir"
-        },
-        {
-          "src": "/sessions/assets/partner_prakruthi.jpeg",
-          "alt": "Prakruthi Foundation",
-          "caption": "Prakruthi Foundation · Tumkur, Hassan, Bangalore Urban & Rural"
-        },
-        {
-          "src": "/sessions/assets/partner_yids.png",
-          "alt": "Young India Development Society (YIDS)",
-          "caption": "YIDS · Kolar, Shivamoga"
-        }
-      ]
+      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Civic Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness (ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ) — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Can you all clap for CMCA and me? Thank you for your warm welcome! Let's begin our journey as members of our Civic Club — the Civic Club!",
+      "tip": "MC ವೀಡಿಯೋವನ್ನು ಪೂರ್ತಿಯಾಗಿ ನೋಡಿ. CMCA ಪೂರ್ಣ ರೂಪ — Children's Movement for Civic Awareness — ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಉಳಿಯಬೇಕು. ಕನ್ನಡದಲ್ಲಿ: ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ. 'ಎಲ್ಲರೂ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ?' ಎಂದಾಗ ಮಕ್ಕಳನ್ನು ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಪ್ರೋತ್ಸಾಹಿಸಿ."
     },
     {
       "n": 4,
       "kind": "static",
-      "title": "1 - 2 ನನ್ನ ಕಡೆ ನೋಡಿ",
+      "title": "ಶಾಂತಗೊಳ್ಳೋಣ — ಕಾಮರ್ಸ್",
       "body": [
-        "ಶಿಕ್ಷಕರು ಹೇಳುತ್ತಾರೆ: \"1, 2, ನನ್ನ ಕಡೆ ನೋಡಿ!\"",
-        "ಮಕ್ಕಳು ಪಿಸುಗುಟ್ಟಿ ಹೇಳುತ್ತಾರೆ: \"ನಿಮ್ಮ ಕಡೆ ನೋಡುತ್ತಿದ್ದೇವೆ.\""
+        "ಕೆಲವೊಮ್ಮೆ ನಾವು ತುಂಬಾ ಉತ್ಸಾಹಗೊಂಡು ಮಾತನಾಡುವುದನ್ನು ಅಥವಾ ಓಡಾಡುವುದನ್ನು ನಿಲ್ಲಿಸಲು ಆಗುವುದಿಲ್ಲ… ಆಟದಲ್ಲಿ ಇರುವ ಹಾಗೆ! ಆಟದಲ್ಲಿ ಇರುವ ಹಾಗೆ, ನಮ್ಮ ಕ್ಲಬ್‌ಗೂ ಒಂದು ಸೀಟಿ ಇದೆ!",
+        "1. One Two… Eyes on You",
+        "2. ಒಂದು ಎರಡು… ಬೋರ್ಡ್‌ ಕಡೆ ನೋಡು",
+        "3. ಹಾಯ್… ಹೆಲೋ"
       ],
-      "tip": "ಆಡಿಯೋ ಹಾಕಿ ಎನರ್ಜೈಸರ್ ಮಾಡಿ — ಈಗ ಮತ್ತು ತರಗತಿಯನ್ನು ಶಾಂತಗೊಳಿಸಬೇಕಾದಾಗ ಪ್ರತಿ ಬಾರಿಯೂ.",
+      "tip": "ಮೂರು ಕಾಮರ್ ಪರಿಚಯಿಸಿ. ಪ್ರತಿಯೊಂದನ್ನೂ ಮಕ್ಕಳೊಂದಿಗೆ ಒಮ್ಮೆ ಅಭ್ಯಾಸ ಮಾಡಿ. ತರಗತಿ ಗದ್ದಲವಿದ್ದಾಗ ಯಾವುದಾದರೂ ಒಂದು ಬಳಸಬಹುದು.",
       "audio": "/sessions/assets/vo_eyes_on_you.kn.wav"
     },
     {
@@ -439,10 +419,7 @@
       "kind": "static",
       "title": "ಬದಲಾವಣೆಯ ತರಂಗ",
       "body": [
-        "Now you will learn about Asfiya — a young citizen whose small actions created ripples of change in her school, her community, and beyond.",
-        "ಈಗ ನಾವು ಬದಲಾವಣೆಯ ತರಂಗದ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ — ಒಂದು ಸಣ್ಣ ಕ್ರಿಯೆ ಹೇಗೆ ದೊಡ್ಡ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.",
-        "ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆ ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆ ಇದಕ್ಕೆ ಸ್ಪಷ್ಟ ಉದಾಹರಣೆ.",
-        "ಅವಳ ಸಣ್ಣ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳು ತನ್ನ ಶಾಲೆ, ಊರು ಮತ್ತು ಅದರಾಚೆಯೂ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾದವು."
+        "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆ ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆಯನ್ನು ಕೇಳೋಣ — ಅವಳ ಸಣ್ಣ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳು ತನ್ನ ಶಾಲೆ, ಊರು ಮತ್ತು ಅದರಾಚೆಯೂ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾದವು."
       ],
       "tip": "ಮಕ್ಕಳಿಗೆ ಹೇಳಿ: ಒಂದು ಸಣ್ಣ ಪ್ರಯತ್ನವೂ ಬದಲಾವಣೆಯ ತರಂಗವಾಗಬಹುದು. ಆಸ್ಫಿಯಾಳ ಕಥೆ ಮುಂದಿನ ಸ್ಲೈಡ್‌ನಲ್ಲಿ — ಸುಮಾರು 3 ನಿಮಿಷ."
     },
