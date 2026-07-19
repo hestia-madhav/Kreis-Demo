@@ -103,18 +103,19 @@
     },
     {
       "n": 4,
-      "kind": "video",
+      "kind": "video_question_series",
       "title": "ಉದಾಹರಣೆ — Master Change ಹೇಳುತ್ತಾರೆ",
-      "video": "/sessions/assets/s3_mc_traffic_signal.kn.mp4",
+      "items": [
+        { "video": "/sessions/assets/s3_traffic_q1.kn.mp4", "question": "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?" },
+        { "video": "/sessions/assets/s3_traffic_q2.kn.mp4", "question": "ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?" }
+      ],
       "kn_script": [
         "ನಾನು ಯಾವಾಗಲೂ ಮನೆಯಿಂದ ಶಾಲೆಗೆ ಹೊರಡುವಾಗ ತಡವಾಗುತ್ತದೆ. ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ತಲುಪಲು, ನಾನು ಅನೇಕ ಬಾರಿ ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರುತ್ತೇನೆ.",
         "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?",
-        "(5 ಸೆಕೆಂಡ್ ವಿರಾಮ — ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರದಿರುವುದು, ರಸ್ತೆಯಲ್ಲಿ ಜಾಗರೂಕತೆ)",
-        "ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?",
-        "(5 ಸೆಕೆಂಡ್ ವಿರಾಮ — ನಿಯಮಗಳನ್ನು ಪಾಲಿಸುವುದು, ಇತರ ವಾಹನಗಳ ಬಗ್ಗೆ ಗೌರವ)"
+        "ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?"
       ],
-      "transcript": "MC gives a traffic-signal example: 'I always get late leaving home for school. To reach on time I sometimes break traffic signals. Which value am I not showing? (pause) — Not breaking signals, road awareness. Very good! Now what positive action would show that value? (pause) — Following rules, respect for other vehicles.'",
-      "tip": "ವೀಡಿಯೋ 2 ಬಾರಿ ಸ್ವಯಂ ತಡೆಯುತ್ತದೆ (5-8 ಸೆಕೆಂಡ್ ಪ್ರತಿ). ತರಗತಿಗೆ ಹೇಳಿ: ಬೇಗ — ಕೈ ಎತ್ತಿ."
+      "transcript": "MC gives a traffic-signal example: 'I always get late leaving home for school. To reach on time I sometimes break traffic signals. Which value am I not showing? Very good! Now what positive action would show that value?'",
+      "tip": "2 ಪ್ರಶ್ನೆಗಳು. ಪ್ರತಿ ಕ್ಲಿಪ್ ನಂತರ ಮಕ್ಕಳ ಉತ್ತರ ಕೇಳಿ, Next Question ಒತ್ತಿ."
     },
     {
       "n": 5,

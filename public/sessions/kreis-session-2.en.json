@@ -149,10 +149,14 @@
     },
     {
       "n": 9,
-      "kind": "mc_narration",
-      "video": "/sessions/assets/s2_mc_representative_qualities.kn.mp4",
-      "transcript": "Before we vote — what qualities should an ideal representative have? If your friend and another student are candidates, and the other student is better at the job, who do you vote for? Does it matter if they are a boy or a girl? How would you feel if your friends did not vote for you? What if you ran and lost — how would you view the winner?",
+      "kind": "video_question_series",
       "title": "[EN translation pending] — kn: ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳು",
+      "items": [
+        { "video": "/sessions/assets/s2_qualities_q1.kn.mp4", "question": "What qualities should an ideal representative have?" },
+        { "video": "/sessions/assets/s2_qualities_q2.kn.mp4", "question": "If your friend and another student are candidates, who do you vote for?" },
+        { "video": "/sessions/assets/s2_qualities_q3.kn.mp4", "question": "Does it matter if they are a boy or a girl?" },
+        { "video": "/sessions/assets/s2_qualities_q4.kn.mp4", "question": "How would you feel if your friends didn't vote for you? What if you lost?" }
+      ],
       "kn_script": [
         "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?",
         "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ಹಾಗೂ ಆ ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಈ ಕೆಲಸವನ್ನು ಉತ್ತಮವಾಗಿ ಮಾಡಬಲ್ಲರು ಎಂದು ನಿಮಗೆ ಅನಿಸಿದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?",
@@ -160,6 +164,7 @@
         "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ?",
         "ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ? ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?"
       ],
+      "transcript": "Before we vote — what qualities should an ideal representative have? If your friend and another student are candidates, and the other student is better at the job, who do you vote for? Does it matter if they are a boy or a girl? How would you feel if your friends did not vote for you? What if you ran and lost — how would you view the winner?",
       "en_script": [
         "[EN translation pending]"
       ],
