@@ -1,22 +1,18 @@
-import Link from "next/link";
+"use client";
 
-// Index page — lists all KREIS sessions. Replaced the old redirect
-// (which jumped straight to session 1) now that more sessions are in
-// the pipeline. Each card links into the player; sessions in
-// production show a disabled "Coming soon" state with the production
-// stage flagged in the body copy so reviewers know what's pending.
+import Link from "next/link";
+import LanguageToggle from "../../components/LanguageToggle";
+import { useLanguage } from "../../components/useLanguage";
 
 type Status = "live" | "in_production" | "in_progress" | "draft";
 
 interface SessionEntry {
   id: string;
   number: number;
-  title: string;
-  subtitle: string;
+  title: { en: string; kn: string };
+  subtitle: { en: string; kn: string };
   status: Status;
   durationMin: number;
-  // What's complete for sessions not yet live — shown as a checklist
-  // on the card so reviewers can see how close it is.
   progress?: string[];
 }
 
@@ -24,17 +20,28 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "kreis-session-1",
     number: 1,
-    title: "Welcome to the Children's Constitution Club",
-    subtitle: "Introductions · Calmers · Group formation · Constitution connect · Club rules",
+    title: {
+      en: "Welcome to the Children's Constitution Club",
+      kn: "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
+    },
+    subtitle: {
+      en: "Introductions · Calmers · Group formation · Constitution connect · Club rules",
+      kn: "ಪರಿಚಯ · ಶಾಂತಗೊಳಿಸುವಿಕೆ · ಗುಂಪು ರಚನೆ · ಸಂವಿಧಾನ ಸಂಪರ್ಕ · ಕ್ಲಬ್ ನಿಯಮಗಳು",
+    },
     status: "in_progress",
     durationMin: 60,
   },
   {
     id: "kreis-session-2",
     number: 2,
-    title: "Naming of Club & Launch Campaign",
-    subtitle:
-      "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
+    title: {
+      en: "Naming of Club & Launch Campaign",
+      kn: "ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡುವುದು ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+    },
+    subtitle: {
+      en: "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
+      kn: "ಕ್ಲಬ್ ಹೆಸರು ಆಯ್ಕೆ · ಕೋರ್ ಸಮಿತಿ ರಚನೆ · ಅಧ್ಯಕ್ಷರ ಚುನಾವಣೆ · ಶಾಲಾ ಸಭೆ ಉದ್ಘಾಟನೆ ಯೋಜನೆ",
+    },
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -54,9 +61,14 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "kreis-session-3",
     number: 3,
-    title: "Choices, Integrity & the Change Champion Box",
-    subtitle:
-      "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
+    title: {
+      en: "Choices, Integrity & the Change Champion Box",
+      kn: "ಆಯ್ಕೆಗಳು, ಪ್ರಾಮಾಣಿಕತೆ ಮತ್ತು ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್",
+    },
+    subtitle: {
+      en: "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
+      kn: "ಆಸ್ಪತ್ರೆ ಕಥೆಗಳು · ಗುಂಪು ಮೌಲ್ಯ ಅಭ್ಯಾಸ · ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಚಿಂತನೆ · ಪ್ರಾಮಾಣಿಕತೆ ಪರಿಚಯ · ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್ ನಿರ್ಮಾಣ",
+    },
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -77,9 +89,14 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "kreis-session-4",
     number: 4,
-    title: "Child Rights, Responsibilities & Makkala Grama Sabha",
-    subtitle:
-      "Change Champion Box · Ajay's story · Child rights (4 categories) · ChildLine 1098 · Reflection · MGS introduction",
+    title: {
+      en: "Child Rights, Responsibilities & Makkala Grama Sabha",
+      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು, ಜವಾಬ್ದಾರಿಗಳು ಮತ್ತು ಮಕ್ಕಳ ಗ್ರಾಮ ಸಭೆ",
+    },
+    subtitle: {
+      en: "Change Champion Box · Ajay's story · Child rights (4 categories) · ChildLine 1098 · Reflection · MGS introduction",
+      kn: "ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್ · ಅಜಯ್ ಕಥೆ · ಮಕ್ಕಳ ಹಕ್ಕುಗಳು (4 ವಿಭಾಗ) · ChildLine 1098 · ಚಿಂತನೆ · MGS ಪರಿಚಯ",
+    },
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -93,9 +110,14 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "kreis-session-5",
     number: 5,
-    title: "Active Citizens & Helpline Numbers",
-    subtitle:
-      "ROC stories · 3-tier government · Visualization exercise · Local government · Helpline quiz · Complaint letters / postcards · Ripple tasks",
+    title: {
+      en: "Active Citizens & Helpline Numbers",
+      kn: "ಸಕ್ರಿಯ ನಾಗರಿಕರು ಮತ್ತು ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು",
+    },
+    subtitle: {
+      en: "ROC stories · 3-tier government · Visualization exercise · Local government · Helpline quiz · Complaint letters / postcards · Ripple tasks",
+      kn: "ROC ಕಥೆಗಳು · 3-ಹಂತದ ಸರ್ಕಾರ · ಕಲ್ಪನೆ ಅಭ್ಯಾಸ · ಸ್ಥಳೀಯ ಸರ್ಕಾರ · ಸಹಾಯವಾಣಿ ರಸಪ್ರಶ್ನೆ · ದೂರು ಪತ್ರಗಳು · ತರಂಗ ಕಾರ್ಯಗಳು",
+    },
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -110,9 +132,14 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "kreis-session-6",
     number: 6,
-    title: "Fake News, Scientific Temper & the 4Ws Test",
-    subtitle:
-      "Roleplay (5 student roles) · Scientific temper · 4Ws framework · UPI ban fact-check exercise · AI fake news · Fundamental Duty connection · Ripple task",
+    title: {
+      en: "Fake News, Scientific Temper & the 4Ws Test",
+      kn: "ಸುಳ್ಳು ಸುದ್ದಿ, ವೈಜ್ಞಾನಿಕ ಮನೋಭಾವ ಮತ್ತು 4Ws ಪರೀಕ್ಷೆ",
+    },
+    subtitle: {
+      en: "Roleplay (5 student roles) · Scientific temper · 4Ws framework · UPI ban fact-check exercise · AI fake news · Fundamental Duty connection · Ripple task",
+      kn: "ಪಾತ್ರಾಭಿನಯ (5 ವಿದ್ಯಾರ್ಥಿ ಪಾತ್ರಗಳು) · ವೈಜ್ಞಾನಿಕ ಮನೋಭಾವ · 4Ws ಚೌಕಟ್ಟು · UPI ನಿಷೇಧ ಸತ್ಯಶೋಧನೆ · AI ಸುಳ್ಳು ಸುದ್ದಿ · ಮೂಲಭೂತ ಕರ್ತವ್ಯ · ತರಂಗ ಕಾರ್ಯ",
+    },
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -134,7 +161,46 @@ const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {
   draft: { label: "Draft", bg: "#E5E7EB", fg: "#374151" },
 };
 
+const KREIS_COLOUR = "#F39C1F";
+
+const STRINGS = {
+  en: {
+    clubLabel: "Children's Constitution Club",
+    heading: "KREIS Session Player",
+    subheading:
+      "Interactive sessions for the Children's Constitution Club — delivered in Kannada with English subtitles for hearing-impaired access. Pick a session below to play.",
+    sessionLabel: "Session",
+    durationSuffix: "min",
+    audioNote: "Kannada audio · English subtitles",
+    productionStatus: "Production status",
+    productionNote:
+      "Production in progress — link will activate once audio & video assets land.",
+    playSession: "Play session →",
+    footer:
+      "CMCA × KREIS · A programme of Children's Movement for Civic Awareness · Karnataka Residential Educational Institutions Society",
+  },
+  kn: {
+    clubLabel: "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್",
+    heading: "KREIS ಅವಧಿ ಪ್ಲೇಯರ್",
+    subheading:
+      "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗಾಗಿ ಸಂವಾದಾತ್ಮಕ ಅವಧಿಗಳು — ಕನ್ನಡದಲ್ಲಿ ಧ್ವನಿ, ಇಂಗ್ಲಿಷ್ ಉಪಶೀರ್ಷಿಕೆಗಳೊಂದಿಗೆ. ಪ್ಲೇ ಮಾಡಲು ಅವಧಿ ಆಯ್ಕೆಮಾಡಿ.",
+    sessionLabel: "ಅವಧಿ",
+    durationSuffix: "ನಿಮಿಷ",
+    audioNote: "ಕನ್ನಡ ಧ್ವನಿ · ಇಂಗ್ಲಿಷ್ ಉಪಶೀರ್ಷಿಕೆ",
+    productionStatus: "ಉತ್ಪಾದನೆ ಸ್ಥಿತಿ",
+    productionNote: "ಉತ್ಪಾದನೆಯಲ್ಲಿದೆ — ಧ್ವನಿ ಮತ್ತು ವೀಡಿಯೊ ಸಿದ್ಧವಾದಾಗ ಲಿಂಕ್ ಸಕ್ರಿಯವಾಗುತ್ತದೆ.",
+    playSession: "ಅವಧಿ ಪ್ಲೇ ಮಾಡಿ →",
+    footer:
+      "CMCA × KREIS · ಮಕ್ಕಳ ನಾಗರಿಕ ಪ್ರಜ್ಞೆ ಚಳುವಳಿಯ ಕಾರ್ಯಕ್ರಮ · ಕರ್ನಾಟಕ ವಸತಿ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳ ಸಂಘ",
+  },
+} as const;
+
 export default function HomePage() {
+  const { lang, toggle, ready } = useLanguage();
+  const t = STRINGS[lang];
+
+  if (!ready) return null;
+
   return (
     <main
       style={{
@@ -148,7 +214,6 @@ export default function HomePage() {
       }}
     >
       <div style={{ maxWidth: "920px", margin: "0 auto" }}>
-        {/* Header with co-branded logos */}
         <header
           style={{
             display: "flex",
@@ -172,15 +237,18 @@ export default function HomePage() {
               style={{ height: "44px", width: "auto" }}
             />
           </div>
-          <div
-            style={{
-              fontSize: "0.75rem",
-              color: "#6B7280",
-              letterSpacing: "0.08em",
-              textTransform: "uppercase",
-            }}
-          >
-            Children&apos;s Constitution Club
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+            <div
+              style={{
+                fontSize: "0.75rem",
+                color: "#6B7280",
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+              }}
+            >
+              {t.clubLabel}
+            </div>
+            <LanguageToggle lang={lang} onToggle={toggle} accentColour={KREIS_COLOUR} />
           </div>
         </header>
 
@@ -193,7 +261,7 @@ export default function HomePage() {
             lineHeight: 1.15,
           }}
         >
-          KREIS Session Player
+          {t.heading}
         </h1>
         <p
           style={{
@@ -203,18 +271,12 @@ export default function HomePage() {
             maxWidth: "640px",
           }}
         >
-          Interactive sessions for the Children&apos;s Constitution Club —
-          delivered in Kannada with English subtitles for hearing-impaired
-          access. Pick a session below to play.
+          {t.subheading}
         </p>
 
-        {/* Session cards */}
         <div style={{ display: "grid", gap: "1.25rem" }}>
           {SESSIONS.map((s) => {
             const pill = STATUS_PILL[s.status];
-            // Cards are clickable when not strictly "draft" — sessions
-            // marked "in_progress" still link through so reviewers can walk
-            // the latest placeholder build.
             const isLive = s.status === "live" || s.status === "in_progress";
             const card = (
               <article
@@ -242,12 +304,12 @@ export default function HomePage() {
                     style={{
                       fontSize: "0.78rem",
                       letterSpacing: "0.12em",
-                      color: "#F39C1F",
+                      color: KREIS_COLOUR,
                       fontWeight: 700,
                       textTransform: "uppercase",
                     }}
                   >
-                    Session {s.number}
+                    {t.sessionLabel} {s.number}
                   </div>
                   <span
                     style={{
@@ -272,7 +334,7 @@ export default function HomePage() {
                     color: "#1E293B",
                   }}
                 >
-                  {s.title}
+                  {s.title[lang]}
                 </h2>
                 <p
                   style={{
@@ -282,7 +344,7 @@ export default function HomePage() {
                     lineHeight: 1.5,
                   }}
                 >
-                  {s.subtitle}
+                  {s.subtitle[lang]}
                 </p>
                 <div
                   style={{
@@ -293,12 +355,11 @@ export default function HomePage() {
                     color: "#6B7280",
                   }}
                 >
-                  <span>⏱ {s.durationMin} min</span>
+                  <span>⏱ {s.durationMin} {t.durationSuffix}</span>
                   <span style={{ opacity: 0.4 }}>·</span>
-                  <span>Kannada audio · English subtitles</span>
+                  <span>{t.audioNote}</span>
                 </div>
 
-                {/* Progress checklist for in-production sessions */}
                 {s.progress && (
                   <details style={{ marginTop: "1rem" }}>
                     <summary
@@ -309,7 +370,7 @@ export default function HomePage() {
                         userSelect: "none",
                       }}
                     >
-                      Production status ({s.progress.length} items)
+                      {t.productionStatus} ({s.progress.length} items)
                     </summary>
                     <ul
                       style={{
@@ -339,8 +400,7 @@ export default function HomePage() {
                       fontWeight: 500,
                     }}
                   >
-                    Production in progress — link will activate once audio &
-                    video assets land in <code>public/sessions/</code>.
+                    {t.productionNote}
                   </div>
                 )}
 
@@ -351,12 +411,12 @@ export default function HomePage() {
                       display: "inline-flex",
                       alignItems: "center",
                       gap: "0.4rem",
-                      color: "#F39C1F",
+                      color: KREIS_COLOUR,
                       fontWeight: 600,
                       fontSize: "0.92rem",
                     }}
                   >
-                    Play session →
+                    {t.playSession}
                   </div>
                 )}
               </article>
@@ -386,8 +446,7 @@ export default function HomePage() {
             textAlign: "center",
           }}
         >
-          CMCA × KREIS · A programme of Children&apos;s Movement for Civic
-          Awareness · Karnataka Residential Educational Institutions Society
+          {t.footer}
         </footer>
       </div>
     </main>

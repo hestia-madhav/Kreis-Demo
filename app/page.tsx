@@ -1,19 +1,18 @@
-import Link from "next/link";
+"use client";
 
-// Programme picker landing. Two programmes live on this platform:
-// - KREIS (Children's Constitution Club) — Karnataka govt schools
-// - DOM  (Civic Club)                     — Department of Minorities schools
-// User picks a programme, then a session within.
+import Link from "next/link";
+import LanguageToggle from "../components/LanguageToggle";
+import { useLanguage } from "../components/useLanguage";
 
 type Programme = {
   id: "kreis" | "dom";
   name: string;
-  clubLabel: string;
+  clubLabel: { en: string; kn: string };
   colour: string;
   bgAccent: string;
-  audience: string;
+  audience: { en: string; kn: string };
   href: string;
-  sessions: string;
+  sessions: { en: string; kn: string };
   status: string;
 };
 
@@ -21,30 +20,66 @@ const PROGRAMMES: Programme[] = [
   {
     id: "kreis",
     name: "KREIS",
-    clubLabel: "Children's Constitution Club",
+    clubLabel: {
+      en: "Children's Constitution Club",
+      kn: "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್",
+    },
     colour: "#F39C1F",
     bgAccent: "rgba(243, 156, 31, 0.12)",
-    audience:
-      "Karnataka Residential Educational Institutions Society — 484 residential schools across Karnataka",
+    audience: {
+      en: "Karnataka Residential Educational Institutions Society — 484 residential schools across Karnataka",
+      kn: "ಕರ್ನಾಟಕ ವಸತಿ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳ ಸಂಘ — ಕರ್ನಾಟಕಾದ್ಯಂತ 484 ವಸತಿ ಶಾಲೆಗಳು",
+    },
     href: "/kreis",
-    sessions: "3 sessions",
+    sessions: { en: "3 sessions", kn: "3 ಅವಧಿಗಳು" },
     status: "Live for pilot",
   },
   {
     id: "dom",
     name: "DOM",
-    clubLabel: "Children's Civic Club",
+    clubLabel: {
+      en: "Children's Civic Club",
+      kn: "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್",
+    },
     colour: "#0EA5E9",
     bgAccent: "rgba(14, 165, 233, 0.10)",
-    audience:
-      "Department of Minorities schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha",
+    audience: {
+      en: "Department of Minorities schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha",
+      kn: "ಅಲ್ಪಸಂಖ್ಯಾತರ ಇಲಾಖೆ ಶಾಲೆಗಳು — ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ಒಡಿಶಾದಲ್ಲಿ 350+ ಶಾಲೆಗಳು",
+    },
     href: "/dom",
-    sessions: "3 sessions",
+    sessions: { en: "3 sessions", kn: "3 ಅವಧಿಗಳು" },
     status: "In progress",
   },
 ];
 
+const STRINGS = {
+  en: {
+    tagline: "Interactive Session Platform",
+    heading: "Choose a programme",
+    subheading:
+      "Pick the programme you're running today. Each programme has its own session set — content, language, and club framing differ between KREIS and DOM.",
+    programmeLabel: "Programme",
+    open: "Open →",
+    footer: "KREIS platform pilot · A2Z Antifragility × CMCA India",
+  },
+  kn: {
+    tagline: "ಸಂವಾದಾತ್ಮಕ ಅವಧಿ ವೇದಿಕೆ",
+    heading: "ಕಾರ್ಯಕ್ರಮವನ್ನು ಆಯ್ಕೆಮಾಡಿ",
+    subheading:
+      "ನೀವು ಇಂದು ನಡೆಸುತ್ತಿರುವ ಕಾರ್ಯಕ್ರಮವನ್ನು ಆಯ್ಕೆಮಾಡಿ. ಪ್ರತಿ ಕಾರ್ಯಕ್ರಮಕ್ಕೂ ತನ್ನದೇ ಆದ ಅವಧಿ ಸೆಟ್ ಇರುತ್ತದೆ.",
+    programmeLabel: "ಕಾರ್ಯಕ್ರಮ",
+    open: "ತೆರೆಯಿರಿ →",
+    footer: "KREIS ವೇದಿಕೆ ಪ್ರಾಯೋಗಿಕ · A2Z Antifragility × CMCA India",
+  },
+} as const;
+
 export default function HomePage() {
+  const { lang, toggle, ready } = useLanguage();
+  const t = STRINGS[lang];
+
+  if (!ready) return null;
+
   return (
     <main
       style={{
@@ -73,15 +108,18 @@ export default function HomePage() {
             alt="CMCA"
             style={{ height: "48px", width: "auto" }}
           />
-          <div
-            style={{
-              fontSize: "0.72rem",
-              color: "#6B7280",
-              letterSpacing: "0.1em",
-              textTransform: "uppercase",
-            }}
-          >
-            Interactive Session Platform
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+            <div
+              style={{
+                fontSize: "0.72rem",
+                color: "#6B7280",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+              }}
+            >
+              {t.tagline}
+            </div>
+            <LanguageToggle lang={lang} onToggle={toggle} />
           </div>
         </header>
 
@@ -94,7 +132,7 @@ export default function HomePage() {
             lineHeight: 1.15,
           }}
         >
-          Choose a programme
+          {t.heading}
         </h1>
         <p
           style={{
@@ -104,9 +142,7 @@ export default function HomePage() {
             maxWidth: "640px",
           }}
         >
-          Pick the programme you&apos;re running today. Each programme has its
-          own session set — content, language, and club framing differ between
-          KREIS and DOM.
+          {t.subheading}
         </p>
 
         <div
@@ -137,7 +173,6 @@ export default function HomePage() {
                   overflow: "hidden",
                 }}
               >
-                {/* Coloured accent stripe on top */}
                 <div
                   style={{
                     position: "absolute",
@@ -159,7 +194,7 @@ export default function HomePage() {
                     marginTop: "0.5rem",
                   }}
                 >
-                  Programme
+                  {t.programmeLabel}
                 </div>
                 <h2
                   style={{
@@ -184,7 +219,7 @@ export default function HomePage() {
                     marginBottom: "1rem",
                   }}
                 >
-                  {p.clubLabel}
+                  {p.clubLabel[lang]}
                 </div>
 
                 <p
@@ -195,7 +230,7 @@ export default function HomePage() {
                     margin: "0 0 1.5rem",
                   }}
                 >
-                  {p.audience}
+                  {p.audience[lang]}
                 </p>
 
                 <div
@@ -209,7 +244,7 @@ export default function HomePage() {
                   }}
                 >
                   <span style={{ fontSize: "0.9rem", color: "#374151" }}>
-                    {p.sessions}
+                    {p.sessions[lang]}
                   </span>
                   <span
                     style={{
@@ -221,7 +256,7 @@ export default function HomePage() {
                       fontSize: "0.9rem",
                     }}
                   >
-                    Open →
+                    {t.open}
                   </span>
                 </div>
 
@@ -248,7 +283,7 @@ export default function HomePage() {
             textAlign: "center",
           }}
         >
-          KREIS platform pilot · A2Z Antifragility × CMCA India
+          {t.footer}
         </div>
       </div>
     </main>

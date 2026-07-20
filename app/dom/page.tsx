@@ -1,17 +1,16 @@
-import Link from "next/link";
+"use client";
 
-// DOM programme session list. Three sessions matching the KREIS structure,
-// with "Children's Constitution Club" → "Children's Civic Club" (DOM =
-// Department of Minorities). Player JSON (en + kn) built from CMCA source
-// decks and corrected per 16th July PPT inputs.
+import Link from "next/link";
+import LanguageToggle from "../../components/LanguageToggle";
+import { useLanguage } from "../../components/useLanguage";
 
 type Status = "live" | "in_progress" | "in_preparation" | "draft";
 
 interface SessionEntry {
   id: string;
   number: number;
-  title: string;
-  subtitle: string;
+  title: { en: string; kn: string };
+  subtitle: { en: string; kn: string };
   status: Status;
   durationMin: number;
   progress: string[];
@@ -21,9 +20,14 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "dom-session-1",
     number: 1,
-    title: "Welcome to the Children's Civic Club",
-    subtitle:
-      "Introductions · Calmers · Group formation · Civic connect · Club rules",
+    title: {
+      en: "Welcome to the Children's Civic Club",
+      kn: "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
+    },
+    subtitle: {
+      en: "Introductions · Calmers · Group formation · Civic connect · Club rules",
+      kn: "ಪರಿಚಯ · ಶಾಂತಗೊಳಿಸುವಿಕೆ · ಗುಂಪು ರಚನೆ · ಪೌರ ಸಂಪರ್ಕ · ಕ್ಲಬ್ ನಿಯಮಗಳು",
+    },
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -39,9 +43,14 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "dom-session-2",
     number: 2,
-    title: "Naming of Club & Launch Campaign",
-    subtitle:
-      "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
+    title: {
+      en: "Naming of Club & Launch Campaign",
+      kn: "ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡುವುದು ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+    },
+    subtitle: {
+      en: "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
+      kn: "ಕ್ಲಬ್ ಹೆಸರು ಆಯ್ಕೆ · ಕೋರ್ ಸಮಿತಿ ರಚನೆ · ಅಧ್ಯಕ್ಷರ ಚುನಾವಣೆ · ಶಾಲಾ ಸಭೆ ಉದ್ಘಾಟನೆ ಯೋಜನೆ",
+    },
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -54,9 +63,14 @@ const SESSIONS: SessionEntry[] = [
   {
     id: "dom-session-3",
     number: 3,
-    title: "Choices, Integrity & the Change Champion Box",
-    subtitle:
-      "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
+    title: {
+      en: "Choices, Integrity & the Change Champion Box",
+      kn: "ಆಯ್ಕೆಗಳು, ಪ್ರಾಮಾಣಿಕತೆ ಮತ್ತು ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್",
+    },
+    subtitle: {
+      en: "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
+      kn: "ಆಸ್ಪತ್ರೆ ಕಥೆಗಳು · ಗುಂಪು ಮೌಲ್ಯ ಅಭ್ಯಾಸ · ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಚಿಂತನೆ · ಪ್ರಾಮಾಣಿಕತೆ ಪರಿಚಯ · ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್ ನಿರ್ಮಾಣ",
+    },
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -76,7 +90,39 @@ const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {
 
 const DOM_COLOUR = "#0EA5E9";
 
+const STRINGS = {
+  en: {
+    back: "← All programmes",
+    badge: "DOM · Children's Civic Club",
+    heading: "DOM Session Player",
+    subheading:
+      "Interactive Children's Civic Club sessions for the Department of Minorities schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha. Pick a session below to review the draft.",
+    sessionLabel: "Session",
+    durationSuffix: "min",
+    productionStatus: "Production status",
+    reviewDraft: "Review draft session →",
+    footer: "DOM · Children's Civic Club · CMCA India",
+  },
+  kn: {
+    back: "← ಎಲ್ಲಾ ಕಾರ್ಯಕ್ರಮಗಳು",
+    badge: "DOM · ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್",
+    heading: "DOM ಅವಧಿ ಪ್ಲೇಯರ್",
+    subheading:
+      "ಅಲ್ಪಸಂಖ್ಯಾತರ ಇಲಾಖೆ ಶಾಲೆಗಳಿಗಾಗಿ ಸಂವಾದಾತ್ಮಕ ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ ಅವಧಿಗಳು — ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ಒಡಿಶಾದಲ್ಲಿ 350+ ಶಾಲೆಗಳು. ಕರಡು ಪರಿಶೀಲಿಸಲು ಅವಧಿ ಆಯ್ಕೆಮಾಡಿ.",
+    sessionLabel: "ಅವಧಿ",
+    durationSuffix: "ನಿಮಿಷ",
+    productionStatus: "ಉತ್ಪಾದನೆ ಸ್ಥಿತಿ",
+    reviewDraft: "ಕರಡು ಅವಧಿ ಪರಿಶೀಲಿಸಿ →",
+    footer: "DOM · ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ · CMCA India",
+  },
+} as const;
+
 export default function DomHomePage() {
+  const { lang, toggle, ready } = useLanguage();
+  const t = STRINGS[lang];
+
+  if (!ready) return null;
+
   return (
     <main
       style={{
@@ -109,13 +155,16 @@ export default function DomHomePage() {
               fontWeight: 600,
             }}
           >
-            ← All programmes
+            {t.back}
           </Link>
-          <img
-            src="/sessions/assets/cmca_logo.png"
-            alt="CMCA"
-            style={{ height: "44px", width: "auto" }}
-          />
+          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+            <img
+              src="/sessions/assets/cmca_logo.png"
+              alt="CMCA"
+              style={{ height: "44px", width: "auto" }}
+            />
+            <LanguageToggle lang={lang} onToggle={toggle} accentColour={DOM_COLOUR} />
+          </div>
         </header>
 
         <div
@@ -131,7 +180,7 @@ export default function DomHomePage() {
             letterSpacing: "0.05em",
           }}
         >
-          DOM · Children's Civic Club
+          {t.badge}
         </div>
 
         <h1
@@ -143,7 +192,7 @@ export default function DomHomePage() {
             lineHeight: 1.15,
           }}
         >
-          DOM Session Player
+          {t.heading}
         </h1>
         <p
           style={{
@@ -153,9 +202,7 @@ export default function DomHomePage() {
             maxWidth: "640px",
           }}
         >
-          Interactive Children's Civic Club sessions for the Department of Minorities
-          schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha.
-          Pick a session below to review the draft.
+          {t.subheading}
         </p>
         <div style={{ marginBottom: "2.5rem" }} />
 
@@ -195,7 +242,7 @@ export default function DomHomePage() {
                         fontWeight: 700,
                       }}
                     >
-                      Session {s.number}
+                      {t.sessionLabel} {s.number}
                     </div>
                     <div
                       style={{
@@ -211,7 +258,7 @@ export default function DomHomePage() {
                     </div>
                   </div>
                   <div style={{ fontSize: "0.85rem", color: "#6B7280" }}>
-                    ≈ {s.durationMin} min
+                    ≈ {s.durationMin} {t.durationSuffix}
                   </div>
                 </div>
 
@@ -223,7 +270,7 @@ export default function DomHomePage() {
                     color: "#111827",
                   }}
                 >
-                  {s.title}
+                  {s.title[lang]}
                 </h2>
                 <p
                   style={{
@@ -232,7 +279,7 @@ export default function DomHomePage() {
                     margin: "0 0 1rem",
                   }}
                 >
-                  {s.subtitle}
+                  {s.subtitle[lang]}
                 </p>
 
                 <details style={{ marginTop: "0.25rem" }}>
@@ -244,7 +291,7 @@ export default function DomHomePage() {
                       userSelect: "none",
                     }}
                   >
-                    Production status ({s.progress.length} items)
+                    {t.productionStatus} ({s.progress.length} items)
                   </summary>
                   <ul
                     style={{
@@ -273,7 +320,7 @@ export default function DomHomePage() {
                       fontSize: "0.92rem",
                     }}
                   >
-                    Review draft session →
+                    {t.reviewDraft}
                   </div>
                 )}
               </article>
@@ -301,7 +348,7 @@ export default function DomHomePage() {
             textAlign: "center",
           }}
         >
-          DOM · Children&apos;s Civic Club · CMCA India
+          {t.footer}
         </div>
       </div>
     </main>
