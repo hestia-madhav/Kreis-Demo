@@ -1,8 +1,8 @@
 {
   "id": "dom-session-1",
   "_language": "kn",
-  "_revision": "2026-07-16-kreis-duplicate",
-  "title": "ನಾಗರಿಕ ಕ್ಲಬ್ — ಸೆಷನ್ 1",
+  "_revision": "2026-07-20-dom-corrections",
+  "title": "ಸಿವಿಕ್ ಕ್ಲಬ್ — ಸೆಷನ್ 1",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -104,7 +104,7 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "title": "ಸಿವಿಕ್ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
       "subtitle": "DOM × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
@@ -116,7 +116,7 @@
       "title": "ಶಿಕ್ಷಕರ ಪರಿಚಯ",
       "body": [
         "ನನ್ನ ಹೆಸರು ____",
-        "ನಾನು ನಿಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಶಿಕ್ಷಕ/ಶಿಕ್ಷಕಿ",
+        "ನಾನು ನಿಮ್ಮ ಸಿವಿಕ್ ಕ್ಲಬ್‌ ಶಿಕ್ಷಕ/ಶಿಕ್ಷಕಿ",
         "ನನಗೆ ಇಷ್ಟವಾದದ್ದು / ಇಷ್ಟವಾಗದ್ದು:"
       ],
       "tip": "ನಿಮ್ಮ ಪರಿಚಯ ಮಾಡಿಕೊಳ್ಳಿ. ನಿಮಗೆ ಇಷ್ಟವಾದದ್ದು ಒಂದು, ಇಷ್ಟವಾಗದ್ದು ಒಂದು ಹೇಳಿ — ಮಕ್ಕಳಿಗೆ ಮುಕ್ತ ಮನಸ್ಸನ್ನು ತೋರಿಸಿ."
@@ -126,20 +126,20 @@
       "kind": "mc_narration",
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್‌ ಅವರ ಪರಿಚಯ",
       "video": "/sessions/assets/mc_intro.kn.mp4",
-      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Civic Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness (ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ) — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Can you all clap for CMCA and me? Thank you for your warm welcome! Let's begin our journey as members of our Civic Club — the Civic Club!",
+      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Constitution Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness (ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ) — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Children's Constitution Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Constitution Club — the CC Club!",
       "tip": "MC ವೀಡಿಯೋವನ್ನು ಪೂರ್ತಿಯಾಗಿ ನೋಡಿ. CMCA ಪೂರ್ಣ ರೂಪ — Children's Movement for Civic Awareness — ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಉಳಿಯಬೇಕು. ಕನ್ನಡದಲ್ಲಿ: ಪೌರ ಪ್ರಜ್ಞೆಗಾಗಿ ಮಕ್ಕಳ ಚಳುವಳಿ. 'ಎಲ್ಲರೂ ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತೀರಾ?' ಎಂದಾಗ ಮಕ್ಕಳನ್ನು ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಪ್ರೋತ್ಸಾಹಿಸಿ."
     },
     {
       "n": 4,
       "kind": "static",
-      "title": "ಶಾಂತಗೊಳ್ಳೋಣ — ಕಾಮರ್ಸ್",
+      "title": "ಶಾಂತಗೊಳ್ಳೋಣ — ಕಾಮರ್‌ಗಳು",
       "body": [
-        "ಕೆಲವೊಮ್ಮೆ ನಾವು ತುಂಬಾ ಉತ್ಸಾಹಗೊಂಡು ಮಾತನಾಡುವುದನ್ನು ಅಥವಾ ಓಡಾಡುವುದನ್ನು ನಿಲ್ಲಿಸಲು ಆಗುವುದಿಲ್ಲ… ಆಟದಲ್ಲಿ ಇರುವ ಹಾಗೆ! ಆಟದಲ್ಲಿ ಇರುವ ಹಾಗೆ, ನಮ್ಮ ಕ್ಲಬ್‌ಗೂ ಒಂದು ಸೀಟಿ ಇದೆ!",
-        "1. One Two… Eyes on You",
-        "2. ಒಂದು ಎರಡು… ಬೋರ್ಡ್‌ ಕಡೆ ನೋಡು",
-        "3. ಹಾಯ್… ಹೆಲೋ"
+        "ಮಕ್ಕಳಿಗೆ ಕ್ಲಬ್‌ನ ಬಗ್ಗೆ ತುಂಬಾ ಉತ್ಸಾಹ ಇದೆ ಎಂದು ಗೊತ್ತು! ಶಾಂತವಾಗಿ ಕೇಳಲು ಕಾಮರ್‌ಗಳನ್ನು ಕಲಿಯೋಣ.",
+        "ಕಾಮರ್ 1: \"1, 2, ನನ್ನ ಕಡೆ ನೋಡಿ!\" → \"ನಿಮ್ಮ ಕಡೆ ನೋಡುತ್ತಿದ್ದೇವೆ.\"",
+        "ಕಾಮರ್ 2: \"ಒಂದು ಎರಡು\" → \"ಬೋರ್ಡ್ ಕಡೆ ನೋಡು\"",
+        "ಕಾಮರ್ 3: \"ಹಾಯ್\" → \"ಹೆಲೋ\""
       ],
-      "tip": "ಮೂರು ಕಾಮರ್ ಪರಿಚಯಿಸಿ. ಪ್ರತಿಯೊಂದನ್ನೂ ಮಕ್ಕಳೊಂದಿಗೆ ಒಮ್ಮೆ ಅಭ್ಯಾಸ ಮಾಡಿ. ತರಗತಿ ಗದ್ದಲವಿದ್ದಾಗ ಯಾವುದಾದರೂ ಒಂದು ಬಳಸಬಹುದು.",
+      "tip": "ಮೂರೂ ಕಾಮರ್‌ಗಳನ್ನು ಅಭ್ಯಾಸ ಮಾಡಿ. ಇವನ್ನು ಸೆಷನ್‌ನಲ್ಲಿ ತರಗತಿಯನ್ನು ಶಾಂತಗೊಳಿಸಲು ಬಳಸಿ.",
       "audio": "/sessions/assets/vo_eyes_on_you.kn.wav"
     },
     {
@@ -160,8 +160,10 @@
       "kind": "static",
       "title": "ಗುಂಪು ರಚನೆ",
       "body": [
-        "ಗುಂಪು ರಚನೆ ಮಾಡೋಣ — ಪ್ರತಿಯೊಬ್ಬರ ಧ್ವನಿಯೂ ಮುಖ್ಯ.",
-        "ಹಂಚಿಕೊಳ್ಳಲು, ಕೇಳಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಒಟ್ಟಾಗಿ ಕಲಿಯಲು ಗುಂಪು."
+        "ಗುಂಪು ರಚನೆ ಮಾಡೋಣ",
+        "ಕ್ಲಬ್‌ನ ಹಲವಾರು ಚಟುವಟಿಕೆಗಳನ್ನು ಗುಂಪಿನಲ್ಲಿ ಮಾಡಲಿದ್ದೇವೆ.",
+        "ಪ್ರತಿಯೊಬ್ಬರ ಧ್ವನಿಯೂ ಮುಖ್ಯ.",
+        "ಹಂಚಿಕೊಳ್ಳಲು, ಕೇಳಿಸಿಕೊಳ್ಳಲು ಮತ್ತು ಒಟ್ಟಾಗಿ ಕಲಿಯಲು ಅವಕಾಶವಿದೆ."
       ],
       "bullets_large": true,
       "tip": "ಎಣಿಕೆ ವಿಧಾನ ಬಳಸಿ, 5–6 ಮಕ್ಕಳ ಮಿಶ್ರ-ಲಿಂಗ ಗುಂಪು ಮಾಡಿ.",
@@ -198,8 +200,8 @@
         },
         {
           "src": "/sessions/assets/kreis_logo.png",
-          "alt": "DOM",
-          "caption": "DOM"
+          "alt": "KREIS",
+          "caption": "KREIS"
         }
       ]
     },
@@ -242,10 +244,10 @@
       "kind": "mc_narration",
       "title": "ಮಾಸ್ಟರ್ ಚೇಂಜ್ ಚಟುವಟಿಕೆಯನ್ನು ಮುಗಿಸುತ್ತಾರೆ",
       "video": "/sessions/assets/mc_wrap_group_activity.kn.mp4",
-      "transcript": "You have now practiced something very important. When you listen to each other, share your ideas, and work together, you become true Change Champions. From now on, make sure everyone takes part in group activities. From the start of every Club session, sit together with your group. Now it's time for the Change Connect Question!",
+      "transcript": "You have now practiced something very important. When you listen to each other, share your ideas, and work together, you become true Constitution Champions. From now on, make sure everyone takes part in group activities. From the start of every Club session, sit together with your group. Now it's time for the Constitution Connect Question!",
       "kn_script": [
         "ನೀವು ಈಗ ಒಂದು ಬಹಳ ಮುಖ್ಯವಾದ ವಿಷಯವನ್ನು ಅಭ್ಯಾಸ ಮಾಡಿದ್ದೀರಿ.",
-        "ನೀವು ಒಬ್ಬರ ಮಾತನ್ನು ಮತ್ತೊಬ್ಬರು ಕೇಳಿದಾಗ, ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಂಡಾಗ ಮತ್ತು ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡಿದಾಗ, ನೀವು ನಿಜವಾದ Change Champion‌ಗಳು ಆಗುತ್ತೀರಿ.",
+        "ನೀವು ಒಬ್ಬರ ಮಾತನ್ನು ಮತ್ತೊಬ್ಬರು ಕೇಳಿದಾಗ, ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಹಂಚಿಕೊಂಡಾಗ ಮತ್ತು ಒಟ್ಟಾಗಿ ಕೆಲಸ ಮಾಡಿದಾಗ, ನೀವು ನಿಜವಾದ ಸಂವಿಧಾನ ಚಾಂಪಿಯನ್‌ಗಳು ಆಗುತ್ತೀರಿ.",
         "ಇನ್ನು ಮುಂದೆ, ಗುಂಪಿನ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಭಾಗವಹಿಸುವಂತೆ ನೋಡಿಕೊಳ್ಳಿ. ಪ್ರತಿಯೊಂದು ಕ್ಲಬ್ ಸೆಷನ್‌ನಲ್ಲೂ ಆರಂಭದಿಂದಲೇ ನಿಮ್ಮ ಗುಂಪಿನೊಂದಿಗೆ ಕುಳಿತುಕೊಳ್ಳಿ.",
         "ಈಗ \"ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ\" ಸಮಯ!"
       ],
@@ -282,13 +284,12 @@
       "n": 13,
       "kind": "click_reveal",
       "title": "ನಿಯಮಗಳನ್ನು ಒಟ್ಟಿಗೆ ಮಾಡೋಣ — ಯೋಚಿಸಿ & ಹೇಳಿ",
-      "intro": "ಈ 3 ಪ್ರಶ್ನೆಗಳಿಗೆ ನೀವು ಉತ್ತರಿಸುವಾಗ ಶಿಕ್ಷಕರು ನಿಮ್ಮ ಜೊತೆ ಆಲಿಸುತ್ತಾರೆ.",
+      "intro": "ಈ 2 ಪ್ರಶ್ನೆಗಳಿಗೆ ನೀವು ಉತ್ತರಿಸುವಾಗ ಶಿಕ್ಷಕರು ನಿಮ್ಮ ಜೊತೆ ಆಲಿಸುತ್ತಾರೆ.",
       "prompts": [
-        "ನೀವು ತುಂಬಾ ಮಜವಾದ ಒಂದು ಹೊಸ ಆಟ ಆಡಲು ಹೊರಟಿದ್ದೀರಿ ಎಂದು ಊಹಿಸಿ. ಆಟ ಆಡುವ ಮೊದಲು ನಿಮಗೆ ಏನು ಗೊತ್ತಿರಬೇಕು?",
-        "ಆಟವನ್ನು ಸರಿಯಾಗಿ ಆಡಲು ನೀವು ಏನನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಬೇಕು?",
-        "ಎಲ್ಲರೂ ತಮಗೆ ಬೇಕಾದಂತೆ ಆಡಲು ಆರಂಭಿಸಿದರೆ, ಅಂಪೈರ್ ಅಥವಾ ರೆಫ್ರಿ ಅಥವಾ ತೀರ್ಪುಗಾರರ ಮಾತನ್ನು ಕೇಳದಿದ್ದರೆ ಆಟದಲ್ಲಿ ಏನಾಗುತ್ತದೆ?"
+        "ನೀವು ತುಂಬಾ ಮಜವಾದ ಒಂದು ಹೊಸ ಆಟ ಆಡಲು ಹೊರಟಿದ್ದೀರಿ ಎಂದು ಊಹಿಸಿ. ಆಟವನ್ನು ಸರಿಯಾಗಿ ಆಡಲು ನಿಮಗೆ ಏನು ಗೊತ್ತಿರಬೇಕು?",
+        "ಎಲ್ಲರೂ ತಮಗೆ ಬೇಕಾದಂತೆ ಆಡಲು ಆರಂಭಿಸಿದರೆ, ಅಂಪೈರ್ ಅಥವಾ ರೆಫ್ರಿ ಅಥವಾ ತೀರ್ಪುಗಾರರ ಮಾತನ್ನು ಕೇಳದಿದ್ದರೆ ಆಟವು ಹೇಗಿರುತ್ತದೆ / ಏನಾಗುತ್ತದೆ?"
       ],
-      "tip": "ಒಂದೊಂದೇ ಪ್ರಶ್ನೆಯನ್ನು ತೋರಿಸಿ (ಕ್ಲಿಕ್ ಮಾಡಿ ಮುಂದಿನದನ್ನು ತೆರೆಯಿರಿ). ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ 1–2 ಉತ್ತರ ಪಡೆದು ಮುಂದೆ ಹೋಗಿ. ಪ್ರಶ್ನೆಗಳ ಹರಿವು: ಪ್ರ.1 = ನಿಯಮಗಳು ಬೇಕು, ಪ್ರ.2 = ಅವುಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳಬೇಕು, ಪ್ರ.3 = ಇಲ್ಲದಿದ್ದರೆ ಏನಾಗುತ್ತದೆ?"
+      "tip": "ಒಂದೊಂದೇ ಪ್ರಶ್ನೆಯನ್ನು ತೋರಿಸಿ (ಕ್ಲಿಕ್ ಮಾಡಿ ಮುಂದಿನದನ್ನು ತೆರೆಯಿರಿ). ಪ್ರತಿ ಪ್ರಶ್ನೆಗೆ 1–2 ಉತ್ತರ ಪಡೆದು ಮುಂದೆ ಹೋಗಿ. ಪ್ರ.1 = ನಿಯಮಗಳು ಬೇಕು, ಪ್ರ.2 = ಇಲ್ಲದಿದ್ದರೆ ಏನಾಗುತ್ತದೆ?"
     },
     {
       "n": 14,
@@ -365,10 +366,10 @@
       "kind": "mc_narration",
       "title": "ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಮತ್ತು ಸಂವಿಧಾನ ರಚನಾ ಸಭೆ",
       "video": "/sessions/assets/mc_who_inspires.kn.mp4",
-      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Civic Club's learning journey by all of us together reading the Preamble.",
+      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Constitution Club's learning journey by all of us together reading the Preamble.",
       "kn_script": [
         "ನಮ್ಮ ಸಂವಿಧಾನವು ಭಾರತದ ಬಗ್ಗೆ ಹೊಂದಿರುವ ಮಹತ್ವದ ಕನಸಿನಿಂದ ನಾವು ಸ್ಫೂರ್ತಿ ಪಡೆಯುತ್ತೇವೆ. ಅದು ನಮಗೆ ದಾರಿದೀಪವಾಗಿದ್ದು, ಪ್ರೇರಣೆ ನೀಡುತ್ತದೆ.",
-        "ಸಂವಿಧಾನಕ್ಕೆ, ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ ಹಾಗೂ ಸಂವಿಧಾನ ಸಭೆಯ ಸದಸ್ಯರಿಗೆ ಗೌರವ ಸಲ್ಲಿಸುತ್ತಾ, ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಈ ಸೆಷನ್‌ ಅನ್ನು ನಾವು ಎಲ್ಲರೂ ಸೇರಿ ಪೀಠಿಕೆಯನ್ನು ಓದುವ ಮೂಲಕ ಮುಕ್ತಾಯಗೊಳಿಸೋಣ."
+        "ಸಂವಿಧಾನಕ್ಕೆ, ಡಾ. ಬಿ. ಆರ್. ಅಂಬೇಡ್ಕರ್ ಅವರಿಗೆ ಹಾಗೂ ಸಂವಿಧಾನ ಸಭೆಯ ಸದಸ್ಯರಿಗೆ ಗೌರವ ಸಲ್ಲಿಸುತ್ತಾ, ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಈ ಸೆಷನ್‌ ಅನ್ನು ನಾವು ಎಲ್ಲರೂ ಸೇರಿ ಪೀಠಿಕೆಯನ್ನು ಓದುವ ಮೂಲಕ ಮುಕ್ತಾಯಗೊಳಿಸೋಣ."
       ],
       "tip": "ವೀಡಿಯೋ ನೋಡಿ. ನಮಗೆ ಯಾರು ಸ್ಫೂರ್ತಿ ಎಂದು ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ."
     },
@@ -376,7 +377,7 @@
       "n": 21,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
-      "scenario": "ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ನಾಗರಿಕ ಕ್ಲಬ್ ಏಕೆ ಇದೆ?",
+      "scenario": "ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಸಿವಿಕ್ ಕ್ಲಬ್ ಏಕೆ ಇದೆ?",
       "options": [
         "ಬರೀ ಆಟ ಆಡಲು",
         "ಹಕ್ಕುಗಳು, ಜವಾಬ್ದಾರಿಗಳು ಮತ್ತು ಪ್ರಜಾಪ್ರಭುತ್ವದ ಬಗ್ಗೆ ಕಲಿಯಲು",
@@ -390,7 +391,7 @@
       "n": 22,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
-      "scenario": "ನಾಗರಿಕ ಕ್ಲಬ್‌ನಲ್ಲಿ ಅಭಿಯಾನ (campaign) ಎಂದರೇನು?",
+      "scenario": "ಸಿವಿಕ್ ಕ್ಲಬ್‌ನಲ್ಲಿ ಅಭಿಯಾನ (campaign) ಎಂದರೇನು?",
       "options": [
         "ಒಂದು ಸಮಸ್ಯೆಯ ಬಗ್ಗೆ ಅರಿವು ಮೂಡಿಸಿ ಬದಲಾವಣೆ ತರುವ ಮಾರ್ಗ",
         "ಬಹುಮಾನ ಗೆಲ್ಲುವ ಸ್ಪರ್ಧೆ",
@@ -404,7 +405,7 @@
       "n": 23,
       "kind": "mcq",
       "title": "ಸಂವಿಧಾನ ಸಂಪರ್ಕ ಪ್ರಶ್ನೆ",
-      "scenario": "ನಾಗರಿಕ ಕ್ಲಬ್‌ನಲ್ಲಿ ಇವುಗಳಲ್ಲಿ ಯಾವುದು ಮುಖ್ಯ ಮೌಲ್ಯ?",
+      "scenario": "ಸಿವಿಕ್ ಕ್ಲಬ್‌ನಲ್ಲಿ ಇವುಗಳಲ್ಲಿ ಯಾವುದು ಮುಖ್ಯ ಮೌಲ್ಯ?",
       "options": [
         "ಬೇರೆಯವರ ಯೋಚನೆಯನ್ನು ನಿರ್ಲಕ್ಷಿಸುವುದು",
         "ಪ್ರತಿಯೊಬ್ಬರ ಧ್ವನಿಯನ್ನು ಗೌರವಿಸುವುದು",
@@ -419,7 +420,7 @@
       "kind": "static",
       "title": "ಬದಲಾವಣೆಯ ತರಂಗ",
       "body": [
-        "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆ ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆಯನ್ನು ಕೇಳೋಣ — ಅವಳ ಸಣ್ಣ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳು ತನ್ನ ಶಾಲೆ, ಊರು ಮತ್ತು ಅದರಾಚೆಯೂ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾದವು."
+        "ಸಿವಿಕ್ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆ ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆಯನ್ನು ಕೇಳೋಣ. ಅವಳು ಮಾಡಿದ ಸಣ್ಣ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳು ತನ್ನ ಶಾಲೆ, ಊರು ಮತ್ತು ಅದರಾಚೆಯೂ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾದವು."
       ],
       "tip": "ಮಕ್ಕಳಿಗೆ ಹೇಳಿ: ಒಂದು ಸಣ್ಣ ಪ್ರಯತ್ನವೂ ಬದಲಾವಣೆಯ ತರಂಗವಾಗಬಹುದು. ಆಸ್ಫಿಯಾಳ ಕಥೆ ಮುಂದಿನ ಸ್ಲೈಡ್‌ನಲ್ಲಿ — ಸುಮಾರು 3 ನಿಮಿಷ."
     },
@@ -430,9 +431,9 @@
       "video": "/sessions/assets/asfiya_story.mp4",
       "duration_seconds": 63,
       "tip": "ವೀಡಿಯೋ ಅಡಚಣೆ ಇಲ್ಲದೆ ತೋರಿಸಿ. ಮುಗಿದ ಮೇಲೆ ಮಕ್ಕಳ ಪ್ರತಿಕ್ರಿಯೆ ಕೇಳಿ.",
-      "transcript": "Asfiya was a member of the Civic Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱",
+      "transcript": "Asfiya was a member of the Children's Constitution Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱",
       "kn_script": [
-        "ಆಸ್ಫಿಯಾ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆಯಾಗಿದ್ದಳು. 8ನೇ ತರಗತಿಯಲ್ಲಿ ಓದುತ್ತಿದ್ದಾಗ, ತನ್ನ ಸ್ನೇಹಿತರೊಂದಿಗೆ ಸೇರಿ ಶಾಲೆಯಲ್ಲಿ ಪೇಪರ್ ಕಪ್‌ಗಳ ಬದಲು ಸ್ಟೀಲ್ ಲೋಟಗಳನ್ನು ಬಳಸುವಂತೆ ಮಾಡಿ ಒಂದು ಒಳ್ಳೆಯ ಬದಲಾವಣೆಯನ್ನು ತಂದಳು.",
+        "ಆಸ್ಫಿಯಾ ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ನ ಸದಸ್ಯೆಯಾಗಿದ್ದಳು. 8ನೇ ತರಗತಿಯಲ್ಲಿ ಓದುತ್ತಿದ್ದಾಗ, ತನ್ನ ಸ್ನೇಹಿತರೊಂದಿಗೆ ಸೇರಿ ಶಾಲೆಯಲ್ಲಿ ಪೇಪರ್ ಕಪ್‌ಗಳ ಬದಲು ಸ್ಟೀಲ್ ಲೋಟಗಳನ್ನು ಬಳಸುವಂತೆ ಮಾಡಿ ಒಂದು ಒಳ್ಳೆಯ ಬದಲಾವಣೆಯನ್ನು ತಂದಳು.",
         "ಅವಳು ಶಾಲೆಯಲ್ಲಷ್ಟೇ ಅಲ್ಲ, ತನ್ನ ಸಮುದಾಯದಲ್ಲಿಯೂ ನಾಗರಿಕ ಸಮಸ್ಯೆಗಳಿಗೆ ಸ್ಪಂದಿಸಿ, ಗಾಯಗೊಂಡ ಪ್ರಾಣಿಗಳಿಗೆ ಸಹಾಯ ಮಾಡಿ, ಗಿಡಗಳನ್ನು ನೆಟ್ಟು ಮತ್ತು ಅಗತ್ಯವಿರುವವರಿಗೆ ನೆರವಾಗುವ ಕೆಲಸಗಳನ್ನು ಮಾಡುತ್ತಿದ್ದಳು.",
         "ಕೆಲವರು ಅವಳನ್ನು ನಿರುತ್ಸಾಹಗೊಳಿಸಿದರೂ, ಸಮಾಜಕ್ಕೆ ಒಳಿತು ಮಾಡುವ ತನ್ನ ಪ್ರಯತ್ನಗಳನ್ನು ಅವಳು ಮುಂದುವರಿಸಿದಳು. ಇಂದು ಕೂಡ ಅವಳು ಸೇವಾ ಚಟುವಟಿಕೆಗಳಲ್ಲಿ ತೊಡಗಿಕೊಂಡಿದ್ದು, ಮುಂದೆ ವೈದ್ಯಳಾಗಿ ಇನ್ನಷ್ಟು ಜನರಿಗೆ ಸಹಾಯ ಮಾಡುವ ಕನಸು ಹೊಂದಿದ್ದಾಳೆ.",
         "ಆಸ್ಫಿಯಾ ಅವರ ಕಥೆ ನಮಗೆ ಸಣ್ಣ ಪ್ರಯತ್ನಗಳೂ ದೊಡ್ಡ ಬದಲಾವಣೆಗೆ ಕಾರಣವಾಗಬಹುದು ಎಂಬುದನ್ನು ತೋರಿಸುತ್ತದೆ. 🌱"
@@ -449,9 +450,9 @@
     {
       "n": 27,
       "kind": "title",
-      "title": "ನಾಗರಿಕ ಕ್ಲಬ್",
+      "title": "ಸಿವಿಕ್ ಕ್ಲಬ್",
       "thank_you": true,
-      "closing_line": "ಇಂದು ನಮ್ಮ ನಾಗರಿಕ ಕ್ಲಬ್‌ನ ಪಯಣಕ್ಕೆ ಉತ್ತಮ ಆರಂಭ ಸಿಕ್ಕಿದೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
+      "closing_line": "ಇಂದು ನಮ್ಮ ಸಿವಿಕ್ ಕ್ಲಬ್‌ನ ಪಯಣಕ್ಕೆ ಉತ್ತಮ ಆರಂಭ ಸಿಕ್ಕಿದೆ. ಮುಂದಿನ ಸೆಷನ್‌ನಲ್ಲಿ ಮತ್ತೆ ಭೇಟಿಯಾಗೋಣ.",
       "centered": true,
       "image": "/sessions/assets/kreis_seal.png",
       "audio": "/sessions/assets/welcome_music.mp3",

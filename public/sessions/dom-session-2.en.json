@@ -1,277 +1,259 @@
 {
   "id": "dom-session-2",
   "_language": "en",
-  "_revision": "2026-07-16-savitha-akg-ppt",
+  "_revision": "2026-07-20-dom-corrections",
   "title": "Civic Club — Session 2: Club Naming + Launch Campaign",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
     {
       "id": "welcome",
-      "label": "ಸ್ವಾಗತ",
-      "slides": [
-        1,
-        2,
-        3
-      ]
+      "label": "Welcome",
+      "slides": [1, 2, 3]
     },
     {
       "id": "name_club",
-      "label": "ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡಿ",
-      "slides": [
-        4,
-        5,
-        6,
-        7
-      ]
+      "label": "Name your club",
+      "slides": [4, 5, 6, 7]
     },
     {
       "id": "active_citizens",
-      "label": "ಸಕ್ರಿಯ ಪೌರರು",
-      "slides": [
-        8
-      ]
+      "label": "Active citizens",
+      "slides": [8]
     },
     {
       "id": "committee",
-      "label": "ಸಮಿತಿ ರಚನೆ",
-      "slides": [
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17
-      ]
+      "label": "Committee formation",
+      "slides": [9, 10, 11, 12, 13, 14, 15, 16, 17]
     },
     {
       "id": "launch",
-      "label": "ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
-      "slides": [
-        18,
-        19,
-        20
-      ]
+      "label": "Launch campaign",
+      "slides": [18, 19, 20]
     }
   ],
   "slides": [
     {
       "n": 1,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "title": "Welcome to the Civic Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
-      "tip": "ಸ್ವಾಗತ ಸಂಗೀತ ಪ್ಲೇ ಆಗುತ್ತದೆ. ಎಲ್ಲಾ ಮಕ್ಕಳು ಕುಳಿತಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ.",
-      "_asset_needed": "DOM-specific logo needed to replace kreis_seal.png"
+      "tip": "Play welcome music. Make sure all children are seated."
     },
     {
       "n": 2,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಕ್ಲಬ್ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
-      "tip": "ಇಂದಿನ ಸೆಷನ್‌ನ ಶೀರ್ಷಿಕೆಯನ್ನು ಪರಿಚಯಿಸಿ."
+      "title": "Club Naming & Launch Campaign",
+      "centered": true,
+      "tip": "Introduce today's session title."
     },
     {
       "n": 3,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಮತ್ತೊಂದು ಸೆಷನ್‌ಗೆ ಸ್ವಾಗತ!",
+      "title": "Welcome to another session!",
       "body": [
-        "ನೀವೆಲ್ಲರೂ ನಿಮ್ಮ ಗುಂಪುಗಳಲ್ಲಿ ಕುಳಿತಿದ್ದೀರಾ ಎಂದು ಬೇಗ ನೋಡಿಕೊಳ್ಳಿ.",
-        "ಇಂದು ನಮ್ಮ ಕ್ಲಬ್‌ಗೆ ಒಂದು ಹೆಸರು ಕೊಡೋಣ, ಬನ್ನಿ…"
+        "Quick check — is everyone sitting in their groups?",
+        "Today let's give our club a name…"
       ],
+      "bullets_large": true,
       "image": "/sessions/assets/s2_kids_in_groups.jpg",
       "image_layout": "side",
-      "tip": "ಗುಂಪುಗಳ ರಚನೆಯನ್ನು ಪುನಃಪರಿಶೀಲಿಸಿ. ಎಲ್ಲರೂ ತಮ್ಮ ಗುಂಪಿನಲ್ಲಿ ಇದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ.",
-      "bullets_large": true
+      "tip": "Re-check group formation. Confirm everyone is in their group."
     },
     {
       "n": 4,
       "kind": "static",
       "bullets_large": true,
-      "title": "[EN translation pending] — kn: ನಿಮ್ಮ ಕ್ಲಬ್‍ಗೆ ಹೆಸರಿಡಿ!",
+      "title": "Name your Club!",
       "body": [
-        "ನಿಮ್ಮ ಕ್ಲಬ್‍ಗೆ ಯಾವ ಹೆಸರನ್ನು ಇಡಲು ನೀವು ಬಯಸುತ್ತೀರಿ?",
-        "ಕ್ಲಬ್‍ ಉದ್ದೇಶವೇನು ಎಂದು ಯೋಚಿಸಿ, ಸಕ್ರಿಯ ನಾಗರಿಕತ್ವದ ಬಗ್ಗೆ ಸೃಜನಾತ್ಮಕವಾಗಿ ಆಲೋಚಿಸಿ, ಉತ್ಸಾಹಪೂರ್ಣ, ಪರಿಣಾಮಕಾರಿ ಹೆಸರುಗಳನ್ನು ತಿಳಿಸಿ"
+        "What name would you like to give your club?",
+        "Think about the club's purpose, think creatively about active citizenship, and suggest inspiring, effective names."
       ],
-      "tip": "ವಿದ್ಯಾರ್ಥಿಗಳು ನೀಡುವ ಸಲಹೆಗಳನ್ನು ತರಗತಿಯ ಕಪ್ಪುಹಲಗೆಯ ಮೇಲೆ ಬರೆಯಿರಿ."
+      "tip": "Write students' suggestions on the blackboard."
     },
     {
       "n": 5,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರು ಏನು?",
+      "title": "What's your club name?",
       "body": [
-        "ಒಬ್ಬ ವ್ಯಕ್ತಿಗೆ ಒಂದು ಹೆಸರಿಗೆ ಒಂದು ಮತ ಮಾತ್ರ.",
-        "ಬುದ್ಧಿವಂತಿಕೆಯಿಂದ ಆಯ್ಕೆ ಮಾಡಿ. ನ್ಯಾಯಯುತವಾಗಿರಿ.",
-        "ಯಾವ ಹೆಸರಿಗೆ ಅತಿ ಹೆಚ್ಚು ಮತಗಳು ಬರುತ್ತವೆಯೋ, ಅದನ್ನೇ ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರಾಗಿ ಆಯ್ಕೆ ಮಾಡಲಾಗುತ್ತದೆ!"
+        "One person, one name, one vote.",
+        "Choose wisely. Be fair.",
+        "The name with the most votes becomes your club name!"
       ],
       "image": "/sessions/assets/s2_kids_raising_hands.jpg",
       "image_layout": "side",
-      "tip": "ಪ್ರತಿ ಹೆಸರಿಗೆ ಕೈ ಎತ್ತಿಸಿ ಎಣಿಸಿ. ಫಲಿತಾಂಶವನ್ನು ಕಪ್ಪುಹಲಗೆಯ ಮೇಲೆ ಬರೆಯಿರಿ."
+      "tip": "Raise hands for each name and count. Write results on the board."
     },
     {
       "n": 6,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಈಗ ಮತದಾನದ ಸಮಯ",
-      "tip": "ಮತದಾನ ಪ್ರಕ್ರಿಯೆ ವಿವರಿಸಿ."
+      "title": "Time to vote!",
+      "body": [
+        "Raise hands for each name and count the votes."
+      ],
+      "tip": "Conduct the vote. Each child gets only one vote."
     },
     {
       "n": 7,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಮತ್ತು… ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರು..?",
+      "title": "And… your club name is…?",
       "body": [
-        "______________ ನಾಗರಿಕ ಕ್ಲಬ್….",
-        "ನೆನಪಿಡಿ, ಬದಲಾವಣೆಯನ್ನು ತರುವ ಶಕ್ತಿ ನಿಮ್ಮಲ್ಲಿದೆ!"
+        "______________ Civic Club….",
+        "Remember, the power to bring change lies within you!"
       ],
       "audio": "/sessions/assets/drum_roll_applause.mp3",
-      "tip": "ಡ್ರಮ್ ರೋಲ್ ಮತ್ತು ಚಪ್ಪಾಳೆಯ ಶಬ್ದ. ಮಕ್ಕಳಿಗೆ ಚಪ್ಪಾಳೆ ತಟ್ಟಲು ಹೇಳಿ."
+      "tip": "Drum roll and applause. Ask children to clap."
     },
     {
       "n": 8,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಸಕ್ರಿಯ ಪೌರರಾಗಿ",
+      "title": "Be active citizens!",
       "body": [
-        "ಸಕ್ರಿಯ ನಾಗರಿಕರಾಗಲು ನಾವು ದೊಡ್ಡವರೇ ಆಗಬೇಕಿಲ್ಲ! (ಮಕ್ಕಳಾಗಿಯೂ ನೀವು ಸಕ್ರಿಯ ನಾಗರಿಕರಾಗಬಹುದು!)",
-        "ಹಿಂದಿನ ವರ್ಷಗಳಲ್ಲಿ ನೂರಾರು ಕ್ಲಬ್‍ನ ಮಕ್ಕಳು ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಗಳಾಗಿ ಅನೇಕ ಅದ್ಬುತವಾದ ಬದಲಾವಣೆಯ ತರಂಗ-ಕಾರ್ಯಗಳನ್ನು (Ripples of change) ಮಾಡಿದ್ದಾರೆ.",
-        "ಆದರೆ ಶಕ್ತಿಯ ಜೊತೆಗೆ ಜವಾಬ್ದಾರಿಗಳೂ ಬರುತ್ತದೆ"
+        "You don't have to be grown up to be an active citizen! Even as children, you can be active citizens!",
+        "In previous years, hundreds of club children have become Change Champions and done amazing Ripples of Change.",
+        "But with power comes responsibility."
       ],
       "image": "/sessions/assets/s2_age_diversity_change_makers.jpg",
       "image_layout": "side",
-      "tip": "ಬದಲಾವಣೆ ತರಬಲ್ಲ ಎಲ್ಲಾ ವಯಸ್ಸಿನ ವ್ಯಕ್ತಿಗಳ ಚಿತ್ರ ತೋರಿಸಿ."
+      "tip": "Show the image of change-makers of all ages."
     },
     {
       "n": 9,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಸಮಿತಿ ರಚನೆ",
+      "title": "Committee formation",
       "body": [
-        "ನಾವೀಗ ತರಗತಿಯ ನಾಯಕನನ್ನು ಮತ್ತು ಕ್ಲಬ್‍ಗಾಗಿ ಮೂಲ ಸಮಿತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡೋಣ",
-        "ಇಂದು ನಾವು ಪ್ರಜಾಪ್ರಭುತ್ವವನ್ನು ಕಾರ್ಯರೂಪದಲ್ಲಿ ಕಾಣಲಿದ್ದೇವೆ!"
+        "Let's now select our class leader and the core committee for the club.",
+        "Today we will see democracy in action!"
       ],
-      "tip": "ಸಮಿತಿ ರಚನೆಯ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪರಿಚಯಿಸಿ."
+      "tip": "Introduce the process of forming a committee through democracy."
     },
     {
       "n": 10,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಭಾರತದಲ್ಲಿ ಚುನಾವಣೆಗಳು",
+      "title": "India's election process",
       "body": [
-        "ಭಾರತದಲ್ಲಿ ನಾವು ನಮ್ಮ ನಾಯಕರನ್ನು ಹೇಗೆ ಆಯ್ಕೆ ಮಾಡುತ್ತೇವೆ ಎಂಬುದು ನಿಮಗೆ ಗೊತ್ತೇ?",
-        "ಚುನಾವಣೆಗಳು ನಡೆಯುವ ಸರ್ಕಾರದ ವಿವಿಧ ಹಂತಗಳು ಯಾವುವು ಎಂಬುದು ತಿಳಿದಿದೆಯೇ?"
+        "Do you know how we choose our leaders in India?",
+        "Do you know the different levels of government where elections are held?"
       ],
-      "tip": "ಮಕ್ಕಳಿಗೆ ಉತ್ತರಿಸಲು ಸಮಯ ನೀಡಿ. ಗ್ರಾಮ ಪಂಚಾಯಿತಿ, ರಾಜ್ಯ, ಕೇಂದ್ರ ಹಂತಗಳನ್ನು ಚರ್ಚಿಸಿ."
+      "image": "/sessions/assets/s2_democracy_levels.png",
+      "tip": "Give children time to guess. Explain Gram Panchayat, State, Centre levels."
     },
     {
       "n": 11,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಯ ಗುಣಲಕ್ಷಣಗಳೇನು?",
-      "tip": "ಗುಂಪುಗಳಲ್ಲಿ ಚರ್ಚಿಸಲು ಹೇಳಿ."
+      "title": "What qualities should an ideal representative have?",
+      "body": [
+        "Before we go to the election, think — what qualities should an ideal representative have?"
+      ],
+      "tip": "Give children time to answer. Then proceed to the video questions."
     },
     {
       "n": 12,
       "kind": "video_question_series",
-      "title": "ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳು",
       "items": [
         { "video": "/sessions/assets/s2_qualities_q1.kn.mp4", "question": "What qualities should an ideal representative have?" },
-        { "video": "/sessions/assets/s2_qualities_q2.kn.mp4", "question": "If your friend and a better candidate are both running, who do you vote for?" },
+        { "video": "/sessions/assets/s2_qualities_q2.kn.mp4", "question": "If your friend and another student are candidates, who do you vote for?" },
         { "video": "/sessions/assets/s2_qualities_q3.kn.mp4", "question": "Does it matter if they are a boy or a girl?" },
         { "video": "/sessions/assets/s2_qualities_q4.kn.mp4", "question": "How would you feel if your friends didn't vote for you? What if you lost?" }
       ],
       "kn_script": [
-        "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?",
-        "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ಹಾಗೂ ಆ ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಈ ಕೆಲಸವನ್ನು ಉತ್ತಮವಾಗಿ ಮಾಡಬಲ್ಲರು ಎಂದು ನಿಮಗೆ ಅನಿಸಿದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?",
+        "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು?",
+        "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?",
         "ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ?",
         "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ?",
-        "ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ? ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?"
+        "ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ?"
       ],
       "transcript": "Before we vote — what qualities should an ideal representative have? If your friend and another student are candidates, and the other student is better at the job, who do you vote for? Does it matter if they are a boy or a girl? How would you feel if your friends did not vote for you? What if you ran and lost — how would you view the winner?",
-      "tip": "Teacher clicks 'Next Question' after class discussion. 4 questions total. ಗುಂಪುಗಳಲ್ಲಿ ಚರ್ಚಿಸಲು ಹೇಳಿ."
+      "tip": "Allow discussion time after each question. Press Next Question to advance."
     },
     {
       "n": 13,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಬನ್ನಿ, ನಮ್ಮ ಸಮಿತಿಯನ್ನು ಸಿದ್ಧಪಡಿಸೋಣ!",
+      "title": "Let's prepare our committee!",
       "body": [
-        "ಅನುಸರಿಸಬೇಕಾದ ಹಂತಗಳು:",
-        "ನಿಮ್ಮ ಮೊದಲ ಹಂತವೆಂದರೆ, ಕ್ಲಬ್‌ನ ಪ್ರಮುಖ ಸಮಿತಿಯ (Core Committee) ಭಾಗವಾಗಲು ನಿಮ್ಮ ಗುಂಪಿನಿಂದ ಒಬ್ಬ ವ್ಯಕ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ.",
-        "ನಿಮಗೆ 2 ನಿಮಿಷಗಳ ಕಾಲಾವಕಾಶವಿದೆ!"
+        "Steps to follow:",
+        "Your first step is to choose one person from your group to be part of the Core Committee.",
+        "You have 2 minutes!"
       ],
       "audio": "/sessions/assets/timer_2min_ping.mp3",
-      "tip": "2 ನಿಮಿಷ ಟೈಮರ್ ಬೇಕು. 1 ನಿಮಿಷ ಮುಗಿದಾಗ ನೆನಪಿಸುವ ಶಬ್ದ. (ಟೈಮರ್ ವಿಜೆಟ್ ಇನ್ನೂ ನಿರ್ಮಾಣದಲ್ಲಿ — ಸಮಯ ನೋಡಿಕೊಳ್ಳಿ.)"
+      "tip": "2 minute timer needed. Reminder sound at 1 minute."
     },
     {
       "n": 14,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಆಯ್ಕೆಯಾದವರು ಮುಂದೆ ಬನ್ನಿ",
+      "title": "Elected members come forward",
       "body": [
-        "ಶಬಾಷ್! ಈಗ ಆಯ್ಕೆಯಾದ ಎಲ್ಲಾ ಸದಸ್ಯರು ತರಗತಿಯ ಮುಂದೆ ಬನ್ನಿ.",
-        "ಕ್ಲಬ್ ಅಧ್ಯಕ್ಷರಾಗಿ ನಿಲ್ಲಲು ಯಾರಿಗೆ ಇಷ್ಟವಿದೆ? ಮುಂದೆ ಬನ್ನಿ.",
-        "ಕ್ಲಬ್ ನಿಮ್ಮನ್ನು ಯಾಕೆ ಆರಿಸಬೇಕು ಎಂದು ಹೇಳಲು ನಿಮಗೆ ಸಮಯವಿದೆ."
+        "Well done! All elected members, come to the front of the class.",
+        "Who would like to stand as Club President? Come forward.",
+        "You have time to tell us why the Club should elect you."
       ],
       "image": "/sessions/assets/s2_candidates_in_front.jpg",
       "audio": "/sessions/assets/applause_short.mp3",
-      "tip": "ಚಪ್ಪಾಳೆಯ ಶಬ್ದ. ಪ್ರತಿ ಅಭ್ಯರ್ಥಿಗೆ 30 ಸೆಕೆಂಡ್ ಮಾತನಾಡಲು ಅವಕಾಶ ನೀಡಿ."
+      "tip": "Applause. Give each candidate 30 seconds to speak."
     },
     {
       "n": 15,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಧೃಢೀಕರಣ ಕ್ರಿಯೆ/ಸಕಾರಾತ್ಮಕ ಕ್ರಿಯೆ (Affirmative action)",
+      "title": "Affirmative Action",
       "body": [
-        "ಒಂದು ಲಿಂಗಕ್ಕೆ ಸಂಬಂಧಿಸಿದಂತೆ ಅತೀ ಕಡಿಮೆ ಸಂಖ್ಯೆಯ ಪ್ರತಿನಿಧಿಗಳಿದ್ದಲ್ಲಿ ಅಥವಾ ಯಾವುದೇ ಪ್ರತಿನಿಧಿಗಳು ಇಲ್ಲದಿದ್ದಲ್ಲಿ",
-        "ಕಡಿಮೆ ಪ್ರಾತಿನಿಧ್ಯವಿರುವ ಗುಂಪಿಗೆ ನ್ಯಾಯ ದೊರೆತಿದೆಯೇ?",
-        "ಅವರ ಧ್ವನಿ ಅಥವಾ ಅಭಿಪ್ರಾಯಗಳನ್ನು ಹೇಗೆ ಕೇಳಿಸಿಕೊಳ್ಳಬಹುದು?",
-        "ಹುಡುಗರು ಮತ್ತು ಹುಡುಗಿಯರಿಬ್ಬರಿಗೂ ನ್ಯಾಯಯುತವಾದ ಅವಕಾಶವನ್ನು ನೀಡಲಾಗಿದೆ ಎಂಬುದನ್ನು ನಾವು ಹೇಗೆ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬಹುದು?"
+        "If one gender has very few or no representatives:",
+        "Has the under-represented group received justice?",
+        "How can their voice or opinions be heard?",
+        "How can we ensure boys and girls both get a fair chance?"
       ],
-      "tip": "ಮೀಸಲಾತಿ (Reservation) ಅಥವಾ ಧೃಢೀಕರಣ ಕ್ರಮ ಪರಿಚಯಿಸಿ."
+      "tip": "Introduce Reservation or Affirmative Action. Explain the importance of gender equality in the committee."
     },
     {
       "n": 16,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಈಗ ಮತ ಚಲಾಯಿಸೋಣ!",
+      "title": "Let's vote!",
       "body": [
-        "ನಮ್ಮ ಕ್ಲಬ್ ಅಧ್ಯಕ್ಷರು ಯಾರಾಗುತ್ತಾರೆ?",
-        "ನಿಮಗೆ 1 ಮತವಿದೆ."
+        "Who will be our club president?",
+        "You have 1 vote."
       ],
-      "tip": "ಆಯ್ಕೆಯಾದ ಮಕ್ಕಳಿಗೆ ಹಿಂತಿರುಗಿ ನಿಲ್ಲಲು ಹೇಳಿ ಮತ್ತು ಉಳಿದ ಮಕ್ಕಳಿಗೆ ಕಣ್ಣು ಮುಚ್ಚಲು ಹೇಳಿ. ನಂತರ ಪ್ರತಿ ಅಭ್ಯರ್ಥಿಗೆ ಬಂದ ಮತಗಳನ್ನು ಎಣಿಸಿ."
+      "tip": "Have candidates stand at the back. Ask remaining children to close their eyes. Count votes for each candidate."
     },
     {
       "n": 17,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಅಭಿನಂದನೆಗಳು!",
+      "title": "Congratulations!",
       "body": [
-        "ನಮ್ಮ ಅಧ್ಯಕ್ಷರಿಗೆ ಮತ್ತು ಪ್ರಮುಖ ಸಮಿತಿಗೆ ಅಭಿನಂದನೆಗಳು!",
-        "ಈಗ ನಾವೆಲ್ಲರೂ ಕೈಜೋಡಿಸಿ ಕೆಲಸ ಮಾಡುವ ಸಮಯ!"
+        "Congratulations to our president and core committee!",
+        "Now it's time for all of us to work together!"
       ],
-      "audio": "/sessions/assets/applause_short.mp3",
-      "tip": "ಗದ್ದಲ ಹೆಚ್ಚಾದರೆ, ಸೆಷನ್ 1ರ ಶಾಂತಗೊಳಿಸುವ ವಿಧಾನಗಳನ್ನು (calmers) ಬಳಸಿ."
+      "audio": "/sessions/assets/cheer_applause.mp3",
+      "tip": "If it gets noisy, use the calmers from Session 1."
     },
     {
       "n": 18,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ನಾನೇ ಬದಲಾವಣೆ",
+      "title": "I Am The Change",
       "body": [
-        "ಕ್ಲಬ್ ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+        "Club Launch Campaign",
         "\"I AM THE CHANGE\"",
         "CLUB LAUNCH CAMPAIGN"
       ],
-      "tip": "ಮಕ್ಕಳನ್ನು ಅಭಿಯಾನದ ಬಗ್ಗೆ ಉತ್ಸಾಹಗೊಳಿಸಿ."
+      "centered": true,
+      "tip": "Introduce the club launch campaign."
     },
     {
       "n": 19,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಜವಾಬ್ದಾರಿ ಕ್ಲಬ್ ಸಮಿತಿಗೆ",
+      "title": "Committee's responsibility",
       "body": [
-        "ಉದ್ಘಾಟನಾ ಅಭಿಯಾನದ ಯಶಸ್ಸಿನ ಜವಾಬ್ದಾರಿಯನ್ನು ಕ್ಲಬ್ ಸಮಿತಿಗೆ ನೀಡಿ"
+        "Give the responsibility of the launch campaign's success to the club committee."
       ],
-      "tip": "ಗುಂಪುಗಳಿಗೆ ಅನುಬಂಧಗಳನ್ನು (annexures) ವಿತರಿಸಿ ಮತ್ತು ಉದ್ಘಾಟನೆಯ ನೇತೃತ್ವ ವಹಿಸಿಕೊಳ್ಳಲು ಪ್ರೋತ್ಸಾಹಿಸಿ."
+      "tip": "Distribute annexures to groups and encourage them to take the lead on the launch."
     },
     {
       "n": 20,
-      "kind": "static",
-      "title": "[EN translation pending] — kn: ಧನ್ಯವಾದಗಳು",
-      "body": [
-        "THANK YOU"
-      ],
-      "tip": "ಸೆಷನ್ ಮುಕ್ತಾಯ."
+      "kind": "title",
+      "title": "Thank You",
+      "thank_you": true,
+      "centered": true,
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Thank the children. End of session."
     }
   ]
 }
