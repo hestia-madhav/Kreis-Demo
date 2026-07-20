@@ -70,7 +70,9 @@
         "What name would you like to give your club?",
         "Think about the club's purpose, think creatively about active citizenship, and suggest inspiring, effective names."
       ],
-      "tip": "Write students' suggestions on the blackboard."
+      "tip": "Write students' suggestions on the blackboard.",
+      "image": "/sessions/assets/s2_naming_of_club.png",
+      "image_layout": "side"
     },
     {
       "n": 5,
@@ -136,7 +138,7 @@
         "Do you know how we choose our leaders in India?",
         "Do you know the different levels of government where elections are held?"
       ],
-      "image": "/sessions/assets/s2_democracy_levels.png",
+      "image": "/sessions/assets/s2_democracy_levels_kn.png",
       "tip": "Give children time to guess. Explain Gram Panchayat, State, Centre levels."
     },
     {
@@ -188,7 +190,7 @@
         "Who would like to stand as Club President? Come forward.",
         "You have time to tell us why the Club should elect you."
       ],
-      "image": "/sessions/assets/s2_candidates_in_front.jpg",
+      "image": "/sessions/assets/s2_candidates_election.jpg",
       "audio": "/sessions/assets/applause_short.mp3",
       "tip": "Applause. Give each candidate 30 seconds to speak."
     },

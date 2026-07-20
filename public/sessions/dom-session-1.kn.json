@@ -202,6 +202,11 @@
           "src": "/sessions/assets/kreis_logo.png",
           "alt": "KREIS",
           "caption": "KREIS"
+        },
+        {
+          "src": "/sessions/assets/partner_karnataka_govt.jpeg",
+          "alt": "Karnataka Government",
+          "caption": "Karnataka Govt"
         }
       ]
     },
