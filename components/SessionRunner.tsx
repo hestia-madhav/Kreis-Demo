@@ -1019,12 +1019,7 @@ function VideoQuestionSeriesSlide({
         />
       </div>
 
-      {/* Question text — visible always (so teacher can read aloud while clip plays),
-          but highlighted once clip ends. */}
-      <div className={"sr-vqs-question " + (ended ? "is-active" : "")}>
-        <span className="sr-vqs-num">Q{i + 1}</span>
-        <span>{current.question}</span>
-      </div>
+      {/* Question text hidden — educator feedback: not needed below the video box */}
 
       <div className="sr-vqs-controls">
         <button

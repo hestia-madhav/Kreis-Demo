@@ -27,20 +27,20 @@ const PROGRAMMES: Programme[] = [
     audience:
       "Karnataka Residential Educational Institutions Society — 484 residential schools across Karnataka",
     href: "/kreis",
-    sessions: "3 sessions in progress",
+    sessions: "3 sessions",
     status: "Live for pilot",
   },
   {
     id: "dom",
     name: "DOM",
-    clubLabel: "Civic Club",
+    clubLabel: "Children's Civic Club",
     colour: "#0EA5E9",
     bgAccent: "rgba(14, 165, 233, 0.10)",
     audience:
-      "Department of Minorities schools — Karnataka, Andhra Pradesh, Odisha (pending Kannada / Telugu / Odia translation)",
+      "Department of Minorities schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha",
     href: "/dom",
-    sessions: "3 sessions in preparation",
-    status: "In preparation · Jul 16 target",
+    sessions: "3 sessions",
+    status: "In progress",
   },
 ];
 

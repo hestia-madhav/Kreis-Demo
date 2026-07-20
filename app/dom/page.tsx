@@ -2,11 +2,8 @@ import Link from "next/link";
 
 // DOM programme session list. Three sessions matching the KREIS structure,
 // with "Children's Constitution Club" → "Children's Civic Club" (DOM =
-// Department of Minorities). Player JSON (en + kn) has been
-// built from the CMCA source decks — Kannada text is an AI draft pending
-// CMCA linguistic review (see _revision tag in each session JSON). Video/
-// audio assets are not yet produced, same "in_progress skeleton" state as
-// KREIS Session 2/3.
+// Department of Minorities). Player JSON (en + kn) built from CMCA source
+// decks and corrected per 16th July PPT inputs.
 
 type Status = "live" | "in_progress" | "in_preparation" | "draft";
 
@@ -32,11 +29,11 @@ const SESSIONS: SessionEntry[] = [
     progress: [
       "✅ Source deck (English draft from CMCA)",
       "✅ Structural mapping to KREIS Session 1 completed",
-      "✅ Player JSON built (en + kn) — AI draft translation",
-      "🔴 CMCA linguistic review of Kannada (Sonu / Irfan / Aishwarya)",
-      "🔴 'ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್' (Children's Civic Club) naming sign-off",
+      "✅ Player JSON built (en + kn)",
+      "✅ Naming corrected: ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ (Children's Civic Club)",
+      "✅ 16th July corrections applied",
+      "🔴 MC intro video re-record (says 'Constitution Club', needs 'Civic Club')",
       "🔴 State-specific content variants (Odisha local stories per Ramya)",
-      "🔴 Video / audio asset production",
     ],
   },
   {
@@ -49,10 +46,9 @@ const SESSIONS: SessionEntry[] = [
     durationMin: 60,
     progress: [
       "✅ Source deck (English draft from CMCA)",
-      "✅ Player JSON built (en + kn) — AI draft translation",
-      "🔴 CMCA linguistic review of Kannada",
+      "✅ Player JSON built (en + kn)",
+      "✅ 16th July corrections applied",
       "🔴 Editable club-name field on slide 6 (flagged by CMCA, not yet built)",
-      "🔴 Video / audio asset production",
     ],
   },
   {
@@ -65,9 +61,8 @@ const SESSIONS: SessionEntry[] = [
     durationMin: 60,
     progress: [
       "✅ Source deck (English draft from CMCA)",
-      "✅ Player JSON built (en + kn) — AI draft translation",
-      "🔴 CMCA linguistic review of Kannada",
-      "🔴 Video / audio asset production",
+      "✅ Player JSON built (en + kn)",
+      "✅ 16th July corrections applied",
     ],
   },
 ];
@@ -162,22 +157,7 @@ export default function DomHomePage() {
           schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha.
           Pick a session below to review the draft.
         </p>
-        <p
-          style={{
-            fontSize: "0.85rem",
-            color: "#B45309",
-            background: "#FFFBEB",
-            border: "1px solid #FDE68A",
-            borderRadius: "8px",
-            padding: "0.6rem 0.9rem",
-            margin: "0 0 2.5rem",
-            maxWidth: "640px",
-          }}
-        >
-          ⚠ Kannada text is an AI draft translation for CMCA to vet — not yet
-          confirmed by Sonu / Irfan / Aishwarya. Video and audio have not
-          been produced yet.
-        </p>
+        <div style={{ marginBottom: "2.5rem" }} />
 
         <div style={{ display: "grid", gap: "1.25rem" }}>
           {SESSIONS.map((s) => {
@@ -321,9 +301,7 @@ export default function DomHomePage() {
             textAlign: "center",
           }}
         >
-          DOM sessions move to "Live" once CMCA confirms the Kannada
-          translation and video/audio assets land in{" "}
-          <code>public/sessions/</code>.
+          DOM · Children&apos;s Civic Club · CMCA India
         </div>
       </div>
     </main>

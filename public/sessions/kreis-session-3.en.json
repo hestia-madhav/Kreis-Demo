@@ -1,57 +1,35 @@
 {
   "id": "kreis-session-3",
   "_language": "en",
-  "_revision": "2026-07-16-ashwini-feedback",
+  "_revision": "2026-07-20-en-translation",
   "title": "CCC — Session 3: Values, Choices, Integrity",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
     {
       "id": "welcome",
-      "label": "ಸ್ವಾಗತ",
-      "slides": [
-        1
-      ]
+      "label": "Welcome",
+      "slides": [1]
     },
     {
       "id": "hospital_stories",
-      "label": "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳು",
-      "slides": [
-        2
-      ]
+      "label": "Hospital Stories",
+      "slides": [2]
     },
     {
       "id": "group_work",
-      "label": "ಗುಂಪು ಕೆಲಸ",
-      "slides": [
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ]
+      "label": "Group Work",
+      "slides": [3, 4, 5, 6, 7, 8, 9]
     },
     {
       "id": "integrity",
-      "label": "ಆಯ್ಕೆ ಮತ್ತು ಪ್ರಾಮಾಣಿಕತೆ",
-      "slides": [
-        10,
-        11,
-        12,
-        13,
-        14
-      ]
+      "label": "Choices & Integrity",
+      "slides": [10, 11, 12, 13, 14]
     },
     {
       "id": "reflect_close",
-      "label": "ಚಿಂತನೆ ಮತ್ತು ಮುಕ್ತಾಯ",
-      "slides": [
-        15,
-        16,
-        17
-      ]
+      "label": "Reflection & Closing",
+      "slides": [15, 16, 17]
     }
   ],
   "slides": [
@@ -60,8 +38,8 @@
       "kind": "static",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
-      "title": "[EN translation pending] — kn: ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
-      "tip": "[EN translation pending]"
+      "title": "Welcome to the Children's Constitution Club!",
+      "tip": "Welcome music. Make sure everyone is seated in their groups."
     },
     {
       "n": 2,
@@ -78,27 +56,33 @@
         }
       ],
       "image_layout": "stack",
-      "title": "[EN translation pending] — kn: ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳು",
+      "title": "Hospital Stories",
       "body": [
-        "[EN translation pending]"
+        "1) January 2019 — Times of India, Chennai: Even though treatment at government maternity hospitals is free, the staff there demand a minimum bribe of Rs 3,500 to show the baby to the mother.",
+        "2) March 17, 2017 — Hindustan Times, Hyderabad: A patient's wife came to the hospital for help because they couldn't afford to pay a bribe for a wheelchair.",
+        "S. Raju, in his 40s, was being treated for burn injuries from an electrical accident. Since the attendants demanded Rs 100–200 for a wheelchair, his wife sought help."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Two news-based stories. Show the images below."
     },
     {
       "n": 3,
       "kind": "static",
       "image": "/sessions/assets/s3_group_reading.jpg",
       "image_layout": "side",
-      "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ",
+      "title": "Group Work",
       "body": [
-        "[EN translation pending]"
+        "The teacher distributes sheets with short stories.",
+        "Read them in your groups.",
+        "While reading, list the following for each story:",
+        "One — the value or quality that the story reflects and that every good person should follow.",
+        "Two — the specific action or behaviour that demonstrates that value."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Distribute one sheet of Annexure 3 to each group."
     },
     {
       "n": 4,
       "kind": "video_question_series",
-      "title": "[EN translation pending] — kn: ಉದಾಹರಣೆ — Master Change ಹೇಳುತ್ತಾರೆ",
+      "title": "Example — Master Change says",
       "items": [
         { "video": "/sessions/assets/s3_traffic_q1.kn.mp4", "question": "Which value am I not showing?" },
         { "video": "/sessions/assets/s3_traffic_q2.kn.mp4", "question": "What positive action would show that value?" }
@@ -110,56 +94,66 @@
         "ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?"
       ],
       "en_script": [
-        "[EN translation pending]"
+        "I always get late leaving home for school. To reach on time, I sometimes break traffic signals.",
+        "As a good person, which value should I have but am not showing here?",
+        "Very good! Now, what positive action in this story would demonstrate that value?"
       ],
-      "tip": "Teacher clicks 'Next Question' after class discussion for each question. 2 questions total."
+      "tip": "2 questions. After each clip, ask children for their answers, then press Next Question."
     },
     {
       "n": 5,
       "kind": "static",
       "audio": "/sessions/assets/timer_7min_ping.mp3",
-      "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ ಮಾಡಿ",
+      "title": "Do Group Work",
       "body": [
-        "[EN translation pending]"
+        "Distribute sheets to the groups.",
+        "7-minute timer starts. A warning buzzer will sound when 2 minutes remain."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Distribute Annexure 3 sheets. One different sheet per group. 7-minute timer (keep track of time)."
     },
     {
       "n": 6,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಗುಂಪು ಕೆಲಸ ಮುಕ್ತಾಯಗೊಳಿಸಿ",
+      "title": "Wrap Up Group Work",
       "body": [
-        "[EN translation pending]"
+        "Thank you! You all did very well in your groups!",
+        "It's okay if you didn't finish. When we share with each other, all stories/scenarios will be discussed.",
+        "Quickly pick two stories/scenarios that you'd like to share with the whole class.",
+        "1-minute timer."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "1-minute timer. Each group must pick two stories."
     },
     {
       "n": 7,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಕಥೆಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಿ",
+      "title": "Share Stories",
       "body": [
-        "[EN translation pending]"
+        "Turn by turn, one person from your group please read out one of your chosen stories to the class.",
+        "Do not repeat stories/scenarios."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Go to each group and ask them to share one story. Maintain discipline."
     },
     {
       "n": 8,
       "kind": "static",
-      "title": "[EN translation pending] — kn: ಬೋರ್ಡ್‌ಗೆ ಬರೆಯಿರಿ — ಗುಂಪು ಸಾರಾಂಶ",
+      "title": "Write on the Board — Group Summary",
       "body": [
-        "[EN translation pending]"
+        "One member from each group, come to the board and write 2 action statements from your list.",
+        "You have only 1 minute, so be quick!",
+        "Come to any part of the board and write in big letters so everyone can read."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "1-minute timer. Make sure everyone has chalk."
     },
     {
       "n": 9,
       "kind": "static",
       "audio": "/sessions/assets/timer_2min_ping.mp3",
-      "title": "[EN translation pending] — kn: ಚಿಂತಿಸೋಣ — 2 ನಿಮಿಷ ಮೌನ",
+      "title": "Let's Reflect — 2 Minutes of Silence",
       "body": [
-        "[EN translation pending]"
+        "Let us all quietly think for a moment about what emerged from your group discussions and what is written on the board.",
+        "You have 2 minutes to think and reflect."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "When children start thinking, encourage them to connect the values to the hospital stories from the beginning of the session."
     },
     {
       "n": 10,
@@ -168,11 +162,13 @@
       "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
       "reveal_on_click": true,
       "image": "/sessions/assets/reference/s3_image2.png",
-      "title": "[EN translation pending] — kn: 150 ರೂಪಾಯಿ — ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?",
-      "tip": "[EN translation pending]",
-      "intro_text": "[EN translation pending]",
+      "title": "Rs 150 — What Would You Do?",
+      "tip": "Give children time to answer. If they're slow, press REVEAL/NEXT to show 'Choice'.",
+      "intro_text": "A shopkeeper accidentally gives you Rs 150 extra change — what would you do?",
       "post_video_text": [
-        "[EN translation pending]"
+        "What do we call this act of making a decision?",
+        "It starts with the letter 'Ch'...",
+        "Choice — CHOICE"
       ]
     },
     {
@@ -180,43 +176,46 @@
       "kind": "mc_narration",
       "video": "/sessions/assets/s3_mc_hospital_reflection.kn.mp4",
       "transcript": "Friends, in the hospital stories you read — what choice did poor people have? Sometimes poor people have very few choices. Poor people pay bribes out of compulsion.",
-      "title": "[EN translation pending] — kn: ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳ ಬಗ್ಗೆ ಆಲೋಚಿಸಿ",
+      "title": "Think About the Hospital Stories",
       "kn_script": [
         "ಸ್ನೇಹಿತರೇ, ಆರಂಭದಲ್ಲಿ ನೀವು ಓದಿದ ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಬಡ ಜನರಿಗೆ ಯಾವ ಆಯ್ಕೆ ಇತ್ತು? ಅವರು ಲಂಚ ನೀಡದಿದ್ದರೆ ತೊಂದರೆ ಅನುಭವಿಸಬೇಕಿತ್ತು.",
         "ಬಡ ಜನರಿಗೆ ಕೆಲವೊಮ್ಮೆ ಅತಿ ಕಡಿಮೆ ಆಯ್ಕೆಗಳಿರುತ್ತವೆ. ಬಡವರು ಲಂಚ ಕೊಡುವುದು ಬಲವಂತದಿಂದ."
       ],
       "en_script": [
-        "[EN translation pending]"
+        "Friends, in the hospital stories you read at the beginning — what choice did poor people have? If they didn't pay the bribe, they had to suffer.",
+        "Sometimes poor people have very few choices. Poor people pay bribes out of compulsion."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "MC draws children's attention to the hospital stories. Give time for discussion."
     },
     {
       "n": 12,
       "kind": "mc_narration",
       "video": "/sessions/assets/s3_mc_staff_choices.kn.mp4",
       "transcript": "In the hospital stories — what do you say about the choices the staff made? They could have chosen not to take bribes from the poor — but they didn't.",
-      "title": "[EN translation pending] — kn: ಆಸ್ಪತ್ರೆ ಸಿಬ್ಬಂದಿಯ ಆಯ್ಕೆಗಳು?",
+      "title": "What About the Hospital Staff's Choices?",
       "kn_script": [
         "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿ ಮಾಡಿದ ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಏನು ಹೇಳುತ್ತೀರಿ?",
         "ಅವರು ಬಡವರಿಂದ ಲಂಚ ತೆಗೆದುಕೊಳ್ಳದಿರುವ ಆಯ್ಕೆಯನ್ನು ಮಾಡಬಹುದಿತ್ತು — ಆದರೆ ಮಾಡಲಿಲ್ಲ."
       ],
       "en_script": [
-        "[EN translation pending]"
+        "In the hospital stories, what do you say about the choices the hospital staff made?",
+        "They could have chosen not to take bribes from the poor — but they didn't."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Ask groups to discuss."
     },
     {
       "n": 13,
       "kind": "static",
       "reveal_on_click": true,
       "image": "/sessions/assets/s3_integrity_reveal.jpg",
-      "title": "[EN translation pending] — kn: ಆಯ್ಕೆಯ ಹಿಂದೆ — ಪ್ರಾಮಾಣಿಕತೆ (INTEGRITY)",
+      "title": "Behind the Choice — Integrity (INTEGRITY)",
       "body": [
-        "[EN translation pending]"
+        "What quality is missing behind the hospital staff's choice?"
       ],
-      "tip": "[EN translation pending]",
+      "tip": "After children answer, press REVEAL/NEXT. Creatively reveal 'INTEGRITY'.",
       "post_video_text": [
-        "[EN translation pending]"
+        "INTEGRITY — Honesty / Trustworthiness",
+        "Our personal integrity can change thousands of situations like the ones you read about in the stories."
       ]
     },
     {
@@ -224,7 +223,7 @@
       "kind": "mc_narration",
       "video": "/sessions/assets/s3_mc_daily_choices.kn.mp4",
       "transcript": "MC talks about daily choices at school — spoiled Change Champion Box, copying from ChatGPT, helping absent friends, admitting a broken window. Ends with 'your daily choices make you a real change champion'.",
-      "title": "[EN translation pending] — kn: ದಿನನಿತ್ಯದ ಆಯ್ಕೆಗಳು",
+      "title": "Everyday Choices",
       "kn_script": [
         "ಈಗ ನಾವು ಶಾಲೆಯಲ್ಲಿಯೇ ಮಾಡುವ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ.",
         "ಕೆಲವು ಮಕ್ಕಳು ಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುತ್ತಿದ್ದಾರೆ ಮತ್ತು Change Champion Box ಅನ್ನು ಹಾಳು ಮಾಡುತ್ತಿದ್ದಾರೆ.",
@@ -234,36 +233,45 @@
         "ನಿಮ್ಮ ದೈನಂದಿನ ಆಯ್ಕೆಗಳು ನಿಮ್ಮನ್ನು ನಿಜವಾದ ಬದಲಾವಣೆಯ ಶಕ್ತಿಯನ್ನಾಗಿ ಮಾಡುತ್ತವೆ."
       ],
       "en_script": [
-        "[EN translation pending]"
+        "Now let's talk about some choices we make right here at school.",
+        "Some children are putting in blank chits and spoiling the Change Champion Box.",
+        "What happens if we copy our project work from Google or ChatGPT and don't do it ourselves?",
+        "Your friend was absent and the next day you help them with the lesson.",
+        "Some children broke a window pane while playing, and they admit it to the teacher.",
+        "Your daily choices make you a real change champion."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Give children time to respond after each scenario."
     },
     {
       "n": 15,
       "kind": "static",
       "image": "/sessions/assets/s3_coin_two_sides.jpg",
-      "title": "[EN translation pending] — kn: ನಾಣ್ಯದ ಎರಡು ಮುಖಗಳು (Optional)",
+      "title": "Two Sides of a Coin (Optional)",
       "body": [
-        "[EN translation pending]"
+        "Every coin has two sides.",
+        "In life too, every matter has more than one perspective."
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Show only if time permits. Optional."
     },
     {
       "n": 16,
       "kind": "static",
       "image": "/sessions/assets/s3_start_stop_continue.jpg",
-      "title": "[EN translation pending] — kn: ಪ್ರಾರಂಭಿಸಿ — ನಿಲ್ಲಿಸಿ — ಮುಂದುವರಿಸಿ",
+      "title": "Start — Stop — Continue",
       "body": [
-        "[EN translation pending]"
+        "Based on what you learned today:",
+        "What is one new thing you want to start doing in your life?",
+        "What is one thing you want to stop doing?",
+        "What is something you're already doing that you want to continue?"
       ],
-      "tip": "[EN translation pending]"
+      "tip": "Give each child time to share one answer."
     },
     {
       "n": 17,
       "kind": "mc_narration",
       "video": "/sessions/assets/s3_mc_change_champion_box.kn.mp4",
       "transcript": "Wow! Our CMCA Club is learning so many new things. Time to collect all the positive changes in our lives. Let me introduce something exciting — the Change Champion Box! It's a box that collects your change stories.",
-      "title": "[EN translation pending] — kn: Change Champion Box — ಪರಿಚಯ",
+      "title": "Change Champion Box — Introduction",
       "kn_script": [
         "ವಾಹ್! ನಮ್ಮ CMCA ಕ್ಲಬ್‌ನಲ್ಲಿ ನಾವು ಎಷ್ಟು ಹೊಸ ವಿಷಯಗಳನ್ನು ಕಲಿಯುತ್ತಿದ್ದೇವೆ ಮತ್ತು ಅದ್ಭುತವಾದ ಚಟುವಟಿಕೆಗಳನ್ನು ಮಾಡುತ್ತಿದ್ದೇವೆ.",
         "ಈಗ, ನಮ್ಮ ಜೀವನದಲ್ಲಿ ನಡೆಯುತ್ತಿರುವ ಎಲ್ಲಾ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಸಮಯ ಬಂದಿದೆ!",
@@ -271,9 +279,12 @@
         "ಇದು ನಿಮ್ಮ ಬದಲಾವಣೆಯ ಕಥೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಪೆಟ್ಟಿಗೆ."
       ],
       "en_script": [
-        "[EN translation pending]"
+        "Wow! We're learning so many new things and doing amazing activities in our CMCA Club.",
+        "Now, it's time to collect all the positive changes happening in our lives!",
+        "Let me introduce you to something exciting — the Change Champion Box!",
+        "It's a box that collects your change stories."
       ],
-      "tip": "[EN translation pending]",
+      "tip": "Check if the change_champion_rules.mp4 video from Session 1 can be reused. If not, a new video is needed.",
       "_content_needed": "Ashwini feedback 16-Jul: add box creation details and rules for the Change Champion Box — e.g. how to make the box, what chits to write, when to open it, rules for participation. Content not yet provided — awaiting from CMCA team."
     }
   ]
