@@ -26,7 +26,7 @@ const SESSIONS: SessionEntry[] = [
     number: 1,
     title: "Welcome to the Children's Civic Club",
     subtitle:
-      "Introductions · Calmers · Group formation · Constitution connect · Club rules",
+      "Introductions · Calmers · Group formation · Civic connect · Club rules",
     status: "in_progress",
     durationMin: 60,
     progress: [
@@ -34,7 +34,7 @@ const SESSIONS: SessionEntry[] = [
       "✅ Structural mapping to KREIS Session 1 completed",
       "✅ Player JSON built (en + kn) — AI draft translation",
       "🔴 CMCA linguistic review of Kannada (Sonu / Irfan / Aishwarya)",
-      "🔴 'ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್' (Children's Civic Club) naming sign-off",
+      "🔴 'ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್' (Children's Civic Club) naming sign-off",
       "🔴 State-specific content variants (Odisha local stories per Ramya)",
       "🔴 Video / audio asset production",
     ],

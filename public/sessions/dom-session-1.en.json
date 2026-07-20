@@ -42,7 +42,7 @@
     },
     {
       "id": "cc1",
-      "label": "Constitution Connect 1",
+      "label": "Civic Connect 1",
       "slides": [
         11,
         12,
@@ -70,7 +70,7 @@
     },
     {
       "id": "cc2",
-      "label": "Constitution Connect 2",
+      "label": "Civic Connect 2",
       "slides": [
         21,
         22,
@@ -126,7 +126,7 @@
       "kind": "mc_narration",
       "title": "Master Change introduces himself",
       "video": "/sessions/assets/mc_intro.kn.mp4",
-      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Constitution Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Children's Constitution Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Constitution Club — the CC Club!",
+      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Civic Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Children's Civic Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Civic Club — the CC Club!",
       "tip": "Play the full MC video."
     },
     {
@@ -235,13 +235,13 @@
       "kind": "mc_narration",
       "title": "Master Change wraps the activity",
       "video": "/sessions/assets/mc_wrap_group_activity.kn.mp4",
-      "transcript": "You have now practiced something very important. When you listen to each other, share your ideas, and work together, you become true Constitution Champions. From now on, make sure everyone takes part in group activities. From the start of every Club session, sit together with your group. Now it's time for the Constitution Connect Question!",
-      "tip": "Play the full video. Master Change wraps up the group activity and sets up Constitution Connect."
+      "transcript": "You have now practiced something very important. When you listen to each other, share your ideas, and work together, you become true Civic Champions. From now on, make sure everyone takes part in group activities. From the start of every Club session, sit together with your group. Now it's time for the Civic Connect Question!",
+      "tip": "Play the full video. Master Change wraps up the group activity and sets up Civic Connect."
     },
     {
       "n": 11,
       "kind": "mcq",
-      "title": "Constitution Connect Question",
+      "title": "Civic Connect Question",
       "scenario": "You are doing a school team project with 8 classmates. The Preamble's words 'We the People' show how important it is to work together. How does this fit your project?",
       "options": [
         "Try to convince all members that your decision is the best.",
@@ -255,13 +255,13 @@
     {
       "n": 12,
       "kind": "static",
-      "title": "Constitution Connect Question",
+      "title": "Civic Connect Question",
       "tip": "Read all 5 lines calmly, one at a time. This is the reflective beat — do not rush.",
       "body": [
         "Good effort!",
         "The Preamble words \"We, the People of India\" remind us that government is built by the people, for the people.",
         "When your group takes decisions, remember every member — that is what the Constitution asks of us.",
-        "From every session onwards, a Constitution Connect Question will follow — a small link back to what the Constitution says.",
+        "From every session onwards, a Civic Connect Question will follow — a small link back to what the Constitution says.",
         "Now let's move on to the next activity!"
       ]
     },
@@ -351,13 +351,13 @@
       "kind": "mc_narration",
       "title": "Dr. B. R. Ambedkar and the Constituent Assembly",
       "video": "/sessions/assets/mc_who_inspires.kn.mp4",
-      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Constitution Club's learning journey by all of us together reading the Preamble.",
+      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Civic Club's learning journey by all of us together reading the Preamble.",
       "tip": "Play the video. Pause for guesses on who inspires us."
     },
     {
       "n": 21,
       "kind": "mcq",
-      "title": "Constitution Connect Question",
+      "title": "Civic Connect Question",
       "scenario": "Why does our school have a Civic Club?",
       "options": [
         "Just to play games",
@@ -371,7 +371,7 @@
     {
       "n": 22,
       "kind": "mcq",
-      "title": "Constitution Connect Question",
+      "title": "Civic Connect Question",
       "scenario": "What is a campaign in the Civic Club?",
       "options": [
         "A way to raise awareness about a problem and bring change",
@@ -385,7 +385,7 @@
     {
       "n": 23,
       "kind": "mcq",
-      "title": "Constitution Connect Question",
+      "title": "Civic Connect Question",
       "scenario": "Which is a key value in the Civic Club?",
       "options": [
         "Ignoring others' ideas",
@@ -412,7 +412,7 @@
       "video": "/sessions/assets/asfiya_story.mp4",
       "duration_seconds": 63,
       "tip": "Play uninterrupted. After it ends, get children's reactions.",
-      "transcript": "Asfiya was a member of the Children's Constitution Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱"
+      "transcript": "Asfiya was a member of the Children's Civic Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱"
     },
     {
       "n": 26,

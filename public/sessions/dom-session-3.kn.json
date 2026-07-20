@@ -2,7 +2,7 @@
   "id": "dom-session-3",
   "_language": "kn",
   "_revision": "2026-07-20-dom-corrections",
-  "title": "ಸಿವಿಕ್ ಕ್ಲಬ್ — ಸೆಷನ್ 3",
+  "title": "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ — ಸೆಷನ್ 3",
   "programme": "DOM",
   "duration_estimate_minutes": 45,
   "sections": [
@@ -61,7 +61,7 @@
     {
       "n": 1,
       "kind": "static",
-      "title": "ಸಿವಿಕ್ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
+      "title": "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
       "tip": "ಸ್ವಾಗತ ಸಂಗೀತ. ಗುಂಪುಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಕುಳಿತಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ."
@@ -70,7 +70,7 @@
       "n": 2,
       "kind": "static",
       "title": "ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ವಲಯ",
-      "body": "ನಿಮ್ಮ ಬದಲಾವಣೆಯ ಕಥೆಗಳನ್ನು ಸೆರೆಹಿಡಿದು ಇಡಬಹುದಂತಹ ಒಂದು ಪೆಟ್ಟಿಗೆ",
+      "body": ["ನಿಮ್ಮ ಬದಲಾವಣೆಯ ಕಥೆಗಳನ್ನು ಸೆರೆಹಿಡಿದು ಇಡಬಹುದಂತಹ ಒಂದು ಪೆಟ್ಟಿಗೆ"],
       "image": "/sessions/assets/change_champion_box.png",
       "tip": "Distribute Making Change champion Box Instruction Annexure"
     },
@@ -121,7 +121,7 @@
         "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?",
         "ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?"
       ],
-      "transcript": "MC gives a traffic-signal example: 'I always get late leaving home for school. To reach on time I sometimes break traffic signals. Which value am I not showing? Very good! Now what positive action would show that value?'",
+      "transcript": "MC ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್ ಉದಾಹರಣೆ ನೀಡುತ್ತಾರೆ: 'ನಾನು ಯಾವಾಗಲೂ ಮನೆಯಿಂದ ಶಾಲೆಗೆ ಹೊರಡುವಾಗ ತಡವಾಗುತ್ತದೆ. ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ತಲುಪಲು ನಾನು ಅನೇಕ ಬಾರಿ ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರುತ್ತೇನೆ. ನಾನು ತೋರಿಸುತ್ತಿರದ ಮೌಲ್ಯ ಯಾವುದು? ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?'",
       "tip": "2 ಪ್ರಶ್ನೆಗಳು. ಪ್ರತಿ ಕ್ಲಿಪ್ ನಂತರ ಮಕ್ಕಳ ಉತ್ತರ ಕೇಳಿ, Next Question ಒತ್ತಿ."
     },
     {
@@ -205,7 +205,7 @@
         "[4 ಸೆಕೆಂಡ್ ವಿರಾಮ]",
         "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿ ಮಾಡಿದಂತಹ ಆಯ್ಕೆ ಏನಾಗಿತ್ತು?"
       ],
-      "transcript": "Friends, in the hospital stories you read — what choice did poor people have? Sometimes poor people have very few choices. Poor people pay bribes out of compulsion.",
+      "transcript": "ಗೆಳೆಯರೇ, ನೀವು ಓದಿದ ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ — ಬಡಜನರಿಗೆ ಯಾವ ಆಯ್ಕೆ ಇತ್ತು? ಕೆಲವೊಮ್ಮೆ ಬಡಜನರಿಗೆ ತುಂಬಾ ಕಡಿಮೆ ಆಯ್ಕೆಗಳಿರುತ್ತವೆ. ಬಡಜನರು ಅನಿವಾರ್ಯತೆಯಿಂದ ಲಂಚ ಕೊಡುತ್ತಾರೆ.",
       "tip": "MC ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳ ಬಗ್ಗೆ ಮಕ್ಕಳ ಗಮನವನ್ನು ಸೆಳೆಯುತ್ತಾರೆ. ಚರ್ಚೆಗೆ ಸಮಯ ನೀಡಿ.",
       "_video_needed": "Video needs re-recording with new combined script (old slides 11+12 merged)"
     },
@@ -236,7 +236,7 @@
         "ನಾವು ನಮ್ಮ ಯೋಜನಾ ಕಾರ್ಯವನ್ನು ಗೂಗಲ್ ನಿಂದ ಅಥವಾ ಚಾಟ್ ಜಿಪಿಟಿ ಬಳಸಿ ನಕಲು ಮಾಡಿದರೆ, ಸ್ವತಃ ನಾವೇ ಮಾಡದೇ ಇದ್ದರೆ ಏನಾಗುತ್ತದೆ?",
         "ನಾವು ನಿಜವಾಗಿಯೂ ಮಾಡದೇ ಇರುವ ಸಂಗತಿಯನ್ನು ಪ್ರಸ್ತುತ ಪಡಿಸಬೇಕಾದಾಗ ನಮಗೆ ಹೇಗೆನಿಸುತ್ತದೆ?"
       ],
-      "transcript": "MC talks about daily choices at school — spoiled Change Champion Box, copying from ChatGPT, helping absent friends, admitting a broken window. Ends with 'your daily choices make you a real change champion'.",
+      "transcript": "MC ಶಾಲೆಯಲ್ಲಿನ ದೈನಂದಿನ ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡುತ್ತಾರೆ — ಹಾಳಾದ ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆ, ChatGPT ನಿಂದ ನಕಲು ಮಾಡುವುದು, ಗೈರುಹಾಜರಾದ ಸ್ನೇಹಿತರಿಗೆ ಸಹಾಯ ಮಾಡುವುದು, ಒಡೆದ ಕಿಟಕಿಯನ್ನು ಒಪ್ಪಿಕೊಳ್ಳುವುದು. 'ನಿಮ್ಮ ದೈನಂದಿನ ಆಯ್ಕೆಗಳೇ ನಿಮ್ಮನ್ನು ನಿಜವಾದ ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಮಾಡುತ್ತವೆ' ಎಂದು ಕೊನೆಗೊಳ್ಳುತ್ತಾರೆ.",
       "tip": "ಪ್ರತಿ ಸನ್ನಿವೇಶದ ನಂತರ ಮಕ್ಕಳಿಗೆ ಪ್ರತಿಕ್ರಿಯಿಸಲು ಸಮಯ ನೀಡಿ.",
       "_video_needed": "Video needs re-recording with new script about school choices and Change Champion Box integrity"
     },
@@ -244,7 +244,7 @@
       "n": 16,
       "kind": "static",
       "title": "ಯೋಚಿಸಿ",
-      "body": "ಪ್ರತಿ ಚಿಕ್ಕ ಆಯ್ಕೆಗಳ ಮೂಲಕ ನಾವು ಎಂತಹ ವ್ಯಕ್ತಿಯಾಗುತ್ತಿದ್ದೇವೆ?"
+      "body": ["ಪ್ರತಿ ಚಿಕ್ಕ ಆಯ್ಕೆಗಳ ಮೂಲಕ ನಾವು ಎಂತಹ ವ್ಯಕ್ತಿಯಾಗುತ್ತಿದ್ದೇವೆ?"]
     },
     {
       "n": 17,

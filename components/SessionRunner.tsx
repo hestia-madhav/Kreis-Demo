@@ -803,17 +803,19 @@ function RevealSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEv
       {slide.intro && <p className="sr-intro">{slide.intro}</p>}
       <ol className="sr-reveal-list">
         {prompts.map((p, i) => (
-          <li key={i} className={"sr-reveal-item " + (i < shown ? "is-shown" : "is-hidden")}>
+          <li
+            key={i}
+            className={"sr-reveal-item " + (i < shown ? "is-shown" : i === shown ? "is-next" : "is-hidden")}
+            onClick={() => { if (i === shown) reveal(); }}
+            style={{ cursor: i === shown ? "pointer" : "default" }}
+          >
             <span className="sr-reveal-num">{i + 1}</span>
-            <span className="sr-reveal-body">{i < shown ? p : <span className="sr-reveal-mask">— click Reveal to show —</span>}</span>
+            <span className="sr-reveal-body">{i < shown ? p : <span className="sr-reveal-mask">— tap to reveal —</span>}</span>
           </li>
         ))}
       </ol>
       <div className="sr-reveal-controls">
-        <button className="sr-btn sr-btn-primary" onClick={reveal} disabled={shown >= prompts.length}>
-          {shown === 0 ? "Reveal first" : shown < prompts.length ? `Reveal next (${shown}/${prompts.length})` : "All revealed"}
-        </button>
-        <span className="sr-hint">or press R</span>
+        <span className="sr-hint">{shown < prompts.length ? "Tap an item to reveal · or press R" : "All revealed ✓"}</span>
       </div>
       {slide.footer && shown >= prompts.length && (
         <div className="sr-footer-cheer">🎉 {slide.footer}</div>

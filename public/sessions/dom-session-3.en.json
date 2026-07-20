@@ -45,7 +45,7 @@
       "n": 2,
       "kind": "static",
       "title": "Change Champion Zone",
-      "body": "A box to capture your stories of change",
+      "body": ["A box to capture your stories of change"],
       "image": "/sessions/assets/change_champion_box.png",
       "tip": "Distribute Making Change Champion Box Instruction Annexure"
     },
@@ -237,7 +237,7 @@
       "n": 16,
       "kind": "static",
       "title": "Think about it",
-      "body": "Through every small choice, what kind of person are we becoming?"
+      "body": ["Through every small choice, what kind of person are we becoming?"]
     },
     {
       "n": 17,

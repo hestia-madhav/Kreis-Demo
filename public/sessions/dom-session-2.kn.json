@@ -2,7 +2,7 @@
   "id": "dom-session-2",
   "_language": "kn",
   "_revision": "2026-07-20-dom-corrections",
-  "title": "ಸಿವಿಕ್ ಕ್ಲಬ್ — ಸೆಷನ್ 2",
+  "title": "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ — ಸೆಷನ್ 2",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -36,7 +36,7 @@
     {
       "n": 1,
       "kind": "static",
-      "title": "ಸಿವಿಕ್ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "title": "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
       "tip": "ಸ್ವಾಗತ ಸಂಗೀತ ಪ್ಲೇ ಆಗುತ್ತದೆ. ಎಲ್ಲಾ ಮಕ್ಕಳು ಕುಳಿತಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ."
@@ -99,7 +99,7 @@
       "kind": "static",
       "title": "ಮತ್ತು… ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರು..?",
       "body": [
-        "______________ ಸಿವಿಕ್ ಕ್ಲಬ್….",
+        "______________ ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್….",
         "ನೆನಪಿಡಿ, ಬದಲಾವಣೆಯನ್ನು ತರುವ ಶಕ್ತಿ ನಿಮ್ಮಲ್ಲಿದೆ!"
       ],
       "audio": "/sessions/assets/drum_roll_applause.mp3",
@@ -164,7 +164,7 @@
         "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ?",
         "ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ? ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?"
       ],
-      "transcript": "Before we vote — what qualities should an ideal representative have? If your friend and another student are candidates, and the other student is better at the job, who do you vote for? Does it matter if they are a boy or a girl? How would you feel if your friends did not vote for you? What if you ran and lost — how would you view the winner?",
+      "transcript": "ನಾವು ಮತ ಹಾಕುವ ಮೊದಲು — ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಯಲ್ಲಿ ಯಾವ ಗುಣಗಳು ಇರಬೇಕು? ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಆ ಕೆಲಸಕ್ಕೆ ಹೆಚ್ಚು ಸೂಕ್ತವಾಗಿದ್ದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ? ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ? ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ? ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ — ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?",
       "tip": "4 ಪ್ರಶ್ನೆಗಳಿಗೆ ಪ್ರತಿ ಪ್ರಶ್ನೆಯ ನಂತರ ಚರ್ಚೆಗೆ ಸಮಯ ನೀಡಿ. Next Question ಒತ್ತಿ ಮುಂದಿನ ಪ್ರಶ್ನೆಗೆ ಹೋಗಿ."
     },
     {
