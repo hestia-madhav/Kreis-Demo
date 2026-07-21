@@ -9,27 +9,49 @@
     {
       "id": "welcome",
       "label": "Welcome",
-      "slides": [1]
+      "slides": [
+        1
+      ]
     },
     {
       "id": "hospital_stories",
       "label": "Hospital Stories",
-      "slides": [2]
+      "slides": [
+        2
+      ]
     },
     {
       "id": "group_work",
       "label": "Group Work",
-      "slides": [3, 4, 5, 6, 7, 8, 9]
+      "slides": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "id": "integrity",
       "label": "Choices & Integrity",
-      "slides": [10, 11, 12, 13, 14]
+      "slides": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
     },
     {
       "id": "reflect_close",
       "label": "Reflection & Closing",
-      "slides": [15, 16, 17]
+      "slides": [
+        15,
+        16,
+        17
+      ]
     }
   ],
   "slides": [
@@ -84,8 +106,14 @@
       "kind": "video_question_series",
       "title": "Example — Master Change says",
       "items": [
-        { "video": "/sessions/assets/s3_traffic_q1.kn.mp4", "question": "Which value am I not showing?" },
-        { "video": "/sessions/assets/s3_traffic_q2.kn.mp4", "question": "What positive action would show that value?" }
+        {
+          "video": "/sessions/assets/s3_traffic_q1.kn.mp4",
+          "question": "Which value am I not showing?"
+        },
+        {
+          "video": "/sessions/assets/s3_traffic_q2.kn.mp4",
+          "question": "What positive action would show that value?"
+        }
       ],
       "transcript": "MC gives a traffic-signal example: 'I always get late leaving home for school. To reach on time I sometimes break traffic signals. Which value am I not showing? — Not breaking signals, road awareness. Very good! Now what positive action would show that value? — Following rules, respect for other vehicles.'",
       "kn_script": [
@@ -160,7 +188,6 @@
       "kind": "video",
       "loop": false,
       "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
-      "reveal_on_click": true,
       "image": "/sessions/assets/reference/s3_image2.png",
       "title": "Rs 150 — What Would You Do?",
       "tip": "Give children time to answer. If they're slow, press REVEAL/NEXT to show 'Choice'.",
@@ -206,7 +233,6 @@
     {
       "n": 13,
       "kind": "static",
-      "reveal_on_click": true,
       "image": "/sessions/assets/s3_integrity_reveal.jpg",
       "title": "Behind the Choice — Integrity (INTEGRITY)",
       "body": [

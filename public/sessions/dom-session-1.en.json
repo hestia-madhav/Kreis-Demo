@@ -272,14 +272,14 @@
     },
     {
       "n": 13,
-      "kind": "click_reveal",
+      "kind": "static",
       "title": "Make rules together — Think & Share",
-      "intro": "Teacher will listen with you as you answer these 2 questions.",
-      "prompts": [
+      "tip": "Read each question aloud. Get 1–2 quick answers per question before moving on. The build-up: Q1 = you need to know rules, Q2 = you need to understand them, Q3 = what happens without them. This sets up co-creating rules on the next slide.",
+      "body": [
+        "Teacher will listen with you as you answer these 2 questions.",
         "Imagine you are going to play a super exciting new game. What do you need to know to play the game properly?",
         "If everyone starts playing however they want, and no one listens to the umpire or referee or judges, what would happen to the game?"
-      ],
-      "tip": "Show one question at a time (click to reveal next). Get 1–2 quick answers per question before moving on. The build-up: Q1 = you need to know rules, Q2 = you need to understand them, Q3 = what happens without them. This sets up co-creating rules on the next slide."
+      ]
     },
     {
       "n": 14,
@@ -292,7 +292,6 @@
         "Raising his hand to speak. As a child — this is YOUR rule.",
         "As a teacher — trying to give everyone a chance to speak — this is MY rule."
       ],
-      "reveal_on_click": true,
       "tip": "Loop animation while children watch. Press NEXT/REVEAL when ready."
     },
     {

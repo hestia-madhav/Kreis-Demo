@@ -106,8 +106,14 @@
       "kind": "video_question_series",
       "title": "ಉದಾಹರಣೆ — Master Change ಹೇಳುತ್ತಾರೆ",
       "items": [
-        { "video": "/sessions/assets/s3_traffic_q1.kn.mp4", "question": "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?" },
-        { "video": "/sessions/assets/s3_traffic_q2.kn.mp4", "question": "ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?" }
+        {
+          "video": "/sessions/assets/s3_traffic_q1.kn.mp4",
+          "question": "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?"
+        },
+        {
+          "video": "/sessions/assets/s3_traffic_q2.kn.mp4",
+          "question": "ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?"
+        }
       ],
       "kn_script": [
         "ನಾನು ಯಾವಾಗಲೂ ಮನೆಯಿಂದ ಶಾಲೆಗೆ ಹೊರಡುವಾಗ ತಡವಾಗುತ್ತದೆ. ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ತಲುಪಲು, ನಾನು ಅನೇಕ ಬಾರಿ ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರುತ್ತೇನೆ.",
@@ -184,7 +190,6 @@
         "ಆ… ಅಕ್ಷರದಿಂದ ಶುರುವಾಗುತ್ತದೆ.",
         "ಆಯ್ಕೆ — CHOICE"
       ],
-      "reveal_on_click": true,
       "image": "/sessions/assets/reference/s3_image2.png",
       "tip": "ಮಕ್ಕಳಿಗೆ ಉತ್ತರ ಆಡಲು ಸಮಯ ನೀಡಿ. ತಡವಾದರೆ REVEAL/NEXT ಒತ್ತಿ ಆಯ್ಕೆ (CHOICE) ತೋರಿಸಿ."
     },
@@ -223,7 +228,6 @@
         "\"INTEGRITY\" — ಪ್ರಾಮಾಣಿಕತೆ / ನಿಷ್ಠೆ",
         "ನಮ್ಮ ವೈಯಕ್ತಿಕ ಪ್ರಾಮಾಣಿಕತೆಯು ನೀವು ಕಥೆಗಳಲ್ಲಿ ಓದಿದಂತಹ ಸಾವಿರಾರು ಸನ್ನಿವೇಶಗಳನ್ನು ಬದಲಾಯಿಸಬಲ್ಲದು."
       ],
-      "reveal_on_click": true,
       "image": "/sessions/assets/s3_integrity_reveal.jpg",
       "tip": "ಮಕ್ಕಳು ಉತ್ತರ ಹೇಳಿದ ಮೇಲೆ REVEAL/NEXT ಒತ್ತಿ. \"INTEGRITY\" ಸೃಜನಾತ್ಮಕವಾಗಿ ತೋರಿಸಿ."
     },

@@ -194,30 +194,30 @@
     },
     {
       "n": 12,
-      "kind": "click_reveal",
+      "kind": "static",
       "title": "Scientific Temper",
-      "intro": "What is it called?",
-      "prompts": [
+      "tip": "Play MC video Part 2.",
+      "video": "/sessions/assets/s6_mc_scientific_temper_p2.kn.mp4",
+      "body": [
+        "What is it called?",
         "It is called Scientific Temper!",
         "Have you heard this word before?",
         "Meaning: Using your brain like a detective — asking for evidence, staying calm, and accepting the truth without being swayed by emotions.",
         "This is how we fight fake news and misinformation — by thinking like scientists and asking questions!"
-      ],
-      "tip": "Play MC video Part 2.",
-      "video": "/sessions/assets/s6_mc_scientific_temper_p2.kn.mp4"
+      ]
     },
     {
       "n": 13,
-      "kind": "click_reveal",
+      "kind": "static",
       "title": "4Ws Test",
-      "intro": "When reading any news, can you guess what these 4 words might mean?",
-      "prompts": [
+      "tip": "Let students guess first, then reveal each answer.",
+      "body": [
+        "When reading any news, can you guess what these 4 words might mean?",
         "WHO — Who is saying this? News channels, officials, etc.",
         "WHAT — What is my current opinion about this? Did I just accept this news as-is?",
         "WHERE — Where can I cross-check this information? Internet, different news channels, newspapers, government websites.",
         "WHETHER — Am I willing to change my old opinions based on new evidence?"
-      ],
-      "tip": "Let students guess first, then reveal each answer."
+      ]
     },
     {
       "n": 14,
@@ -243,25 +243,25 @@
     },
     {
       "n": 16,
-      "kind": "click_reveal",
+      "kind": "static",
       "title": "4Ws Test — WHAT & WHO",
-      "intro": "Do you have a favourite social media influencer? Imagine they have posted that online transactions including UPI services have been banned. You believe it and share it without verifying whether it is true. Let's use the 4Ws test!",
-      "prompts": [
+      "tip": "Reveal each answer on click.",
+      "body": [
+        "Do you have a favourite social media influencer? Imagine they have posted that online transactions including UPI services have been banned. You believe it and share it without verifying whether it is true. Let's use the 4Ws test!",
         "WHAT — What are my current opinions about this social media post? If the influencer who shared this post is someone you like, what happens? Does it change your reaction or not? → It's important to notice our current opinions and preferences about information that comes to us on social media, because this can shape our positions.",
         "WHO — Who spread this news? Social media, influencers. But who are these social media influencers? What reason is there to trust them? Are they reliable just because they have likes and followers? → Not necessarily!"
-      ],
-      "tip": "Reveal each answer on click."
+      ]
     },
     {
       "n": 17,
-      "kind": "click_reveal",
+      "kind": "static",
       "title": "4Ws Test — WHETHER & WHERE",
-      "intro": "The remaining part of the 4Ws test:",
-      "prompts": [
+      "tip": "Reveal each answer on click.",
+      "body": [
+        "The remaining part of the 4Ws test:",
         "WHETHER — Am I willing to change my old opinions based on new evidence? Even if you have believed and shared something, if someone shows you a reliable source proving it is wrong, would you change your decision? → We must be ready to change our decisions based on evidence!",
         "WHERE — Where can we cross-check this information? Which sources are more reliable? Who knows more about economics, banking, finance, etc.? → Other newspapers, independent sources, RBI and government websites, answers given in Parliament, reported cybercrime data. Find out what the experts are saying!"
-      ],
-      "tip": "Reveal each answer on click."
+      ]
     },
     {
       "n": 18,

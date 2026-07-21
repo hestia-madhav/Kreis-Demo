@@ -104,16 +104,16 @@
     },
     {
       "n": 5,
-      "kind": "click_reveal",
+      "kind": "static",
       "title": "3 Levels of Government",
-      "intro": "These are the 3 levels of government: Central Government → Member of Parliament (MP) | State Government → MLA | Local Government → Councillor/Corporator",
-      "prompts": [
+      "tip": "Teacher's note: The teacher must know the name of the MP/MLA of the school's area and the Councillor of the school's ward. Even though local government is the most important for fixing our daily problems, only a few of us know who our Corporator is and that they represent our voice at the city level!",
+      "body": [
+        "These are the 3 levels of government: Central Government → Member of Parliament (MP) | State Government → MLA | Local Government → Councillor/Corporator",
         "Who is the Prime Minister of India? — Shri Narendra Modi",
         "Who is the Chief Minister of our state? — Teacher to share current information",
         "Do you know who your area's MLA or MP is? — Teacher to share!",
         "Do you know who your area's Corporator or Councillor is? — Teacher to share!"
-      ],
-      "tip": "Teacher's note: The teacher must know the name of the MP/MLA of the school's area and the Councillor of the school's ward. Even though local government is the most important for fixing our daily problems, only a few of us know who our Corporator is and that they represent our voice at the city level!"
+      ]
     },
     {
       "n": 6,
