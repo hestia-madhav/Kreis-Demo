@@ -2,7 +2,7 @@
   "id": "dom-session-3",
   "_language": "kn",
   "_revision": "2026-07-20-dom-corrections",
-  "title": "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ — ಸೆಷನ್ 3",
+  "title": "ಪೌರ ಕ್ಲಬ್ — ಸೆಷನ್ 3",
   "programme": "DOM",
   "duration_estimate_minutes": 45,
   "sections": [
@@ -61,7 +61,7 @@
     {
       "n": 1,
       "kind": "static",
-      "title": "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
+      "title": "ಪೌರ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
       "tip": "ಸ್ವಾಗತ ಸಂಗೀತ. ಗುಂಪುಗಳಲ್ಲಿ ಎಲ್ಲರೂ ಕುಳಿತಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ."

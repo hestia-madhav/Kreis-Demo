@@ -39,7 +39,7 @@ const PROGRAMMES: Programme[] = [
     name: "DOM",
     clubLabel: {
       en: "Children's Civic Club",
-      kn: "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್",
+      kn: "ಪೌರ ಕ್ಲಬ್",
     },
     colour: "#0EA5E9",
     bgAccent: "rgba(14, 165, 233, 0.10)",

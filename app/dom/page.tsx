@@ -22,7 +22,7 @@ const SESSIONS: SessionEntry[] = [
     number: 1,
     title: {
       en: "Welcome to the Children's Civic Club",
-      kn: "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
+      kn: "ಪೌರ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
     },
     subtitle: {
       en: "Introductions · Calmers · Group formation · Civic connect · Club rules",
@@ -34,7 +34,7 @@ const SESSIONS: SessionEntry[] = [
       "✅ Source deck (English draft from CMCA)",
       "✅ Structural mapping to KREIS Session 1 completed",
       "✅ Player JSON built (en + kn)",
-      "✅ Naming corrected: ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ (Children's Civic Club)",
+      "✅ Naming corrected: ಪೌರ ಕ್ಲಬ್ (Children's Civic Club)",
       "✅ 16th July corrections applied",
       "🔴 MC intro video re-record (says 'Constitution Club', needs 'Civic Club')",
       "🔴 State-specific content variants (Odisha local stories per Ramya)",
@@ -105,15 +105,15 @@ const STRINGS = {
   },
   kn: {
     back: "← ಎಲ್ಲಾ ಕಾರ್ಯಕ್ರಮಗಳು",
-    badge: "DOM · ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್",
+    badge: "DOM · ಪೌರ ಕ್ಲಬ್",
     heading: "DOM ಅವಧಿ ಪ್ಲೇಯರ್",
     subheading:
-      "ಅಲ್ಪಸಂಖ್ಯಾತರ ಇಲಾಖೆ ಶಾಲೆಗಳಿಗಾಗಿ ಸಂವಾದಾತ್ಮಕ ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ ಅವಧಿಗಳು — ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ಒಡಿಶಾದಲ್ಲಿ 350+ ಶಾಲೆಗಳು. ಕರಡು ಪರಿಶೀಲಿಸಲು ಅವಧಿ ಆಯ್ಕೆಮಾಡಿ.",
+      "ಅಲ್ಪಸಂಖ್ಯಾತರ ಇಲಾಖೆ ಶಾಲೆಗಳಿಗಾಗಿ ಸಂವಾದಾತ್ಮಕ ಪೌರ ಕ್ಲಬ್ ಅವಧಿಗಳು — ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ಒಡಿಶಾದಲ್ಲಿ 350+ ಶಾಲೆಗಳು. ಕರಡು ಪರಿಶೀಲಿಸಲು ಅವಧಿ ಆಯ್ಕೆಮಾಡಿ.",
     sessionLabel: "ಅವಧಿ",
     durationSuffix: "ನಿಮಿಷ",
     productionStatus: "ಉತ್ಪಾದನೆ ಸ್ಥಿತಿ",
     reviewDraft: "ಕರಡು ಅವಧಿ ಪರಿಶೀಲಿಸಿ →",
-    footer: "DOM · ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ · CMCA India",
+    footer: "DOM · ಪೌರ ಕ್ಲಬ್ · CMCA India",
   },
 } as const;
 

@@ -2,7 +2,7 @@
   "id": "dom-session-2",
   "_language": "kn",
   "_revision": "2026-07-20-dom-corrections",
-  "title": "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್ — ಸೆಷನ್ 2",
+  "title": "ಪೌರ ಕ್ಲಬ್ — ಸೆಷನ್ 2",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -36,7 +36,7 @@
     {
       "n": 1,
       "kind": "static",
-      "title": "ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
+      "title": "ಪೌರ ಕ್ಲಬ್‌ಗೆ ಸ್ವಾಗತ!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
       "tip": "ಸ್ವಾಗತ ಸಂಗೀತ ಪ್ಲೇ ಆಗುತ್ತದೆ. ಎಲ್ಲಾ ಮಕ್ಕಳು ಕುಳಿತಿದ್ದಾರೆ ಎಂದು ಖಚಿತಪಡಿಸಿ."
@@ -101,7 +101,7 @@
       "kind": "static",
       "title": "ಮತ್ತು… ನಿಮ್ಮ ಕ್ಲಬ್ ಹೆಸರು..?",
       "body": [
-        "______________ ಪೌರಕರ್ಮಿಕ ಕ್ಲಬ್….",
+        "______________ ಪೌರ ಕ್ಲಬ್….",
         "ನೆನಪಿಡಿ, ಬದಲಾವಣೆಯನ್ನು ತರುವ ಶಕ್ತಿ ನಿಮ್ಮಲ್ಲಿದೆ!"
       ],
       "audio": "/sessions/assets/drum_roll_applause.mp3",
