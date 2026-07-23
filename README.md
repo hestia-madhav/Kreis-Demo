@@ -1,8 +1,11 @@
 # KREIS Demo — Interactive Session Player
 
-Standalone Next.js app that runs the CMCA KREIS Session 1 in a browser. No
-backend, no auth — just a static-asset-driven slide player. Deployable to
-Vercel free tier in one click.
+Standalone Next.js app that runs CMCA's school programme sessions in a
+browser. Two programmes — KREIS (Children's Constitution Club, 6 sessions)
+and DOM (Children's Civic Club, 3 sessions). No backend, no auth — static
+JSON + media assets drive everything.
+
+Deployed on Vercel. Auto-deploys on push to `main`.
 
 ## Local dev
 
@@ -12,54 +15,48 @@ npm run dev
 # open http://localhost:3000
 ```
 
-Root URL redirects to `/s/kreis-session-1`.
+Root URL shows a programme picker. Pick KREIS or DOM, then a session.
+
+Direct session URL: `http://localhost:3000/s/kreis-session-1`
 
 ## Deploy to Vercel
 
 1. Push this repo to GitHub.
 2. Go to https://vercel.com/new → import the repo → click Deploy.
-3. Done. The session is live at `https://<your-project>.vercel.app`.
+3. Done. No env vars, no build args.
 
-No env vars, no build args, nothing else.
+## Session structure
+
+Each session is a pair of JSON files:
+
+```
+public/sessions/<programme>-session-<N>.en.json   (English)
+public/sessions/<programme>-session-<N>.kn.json   (Kannada)
+```
+
+Media assets (video, audio, images) live in `public/sessions/assets/`.
+
+The player (`components/SessionRunner.tsx`) renders 11 slide kinds: title,
+static, mc_narration, video, video_question_series, mcq, click_reveal,
+reflect_share, group_activity_timer, preamble_pair, preamble.
 
 ## Adding a new session
 
-1. Drop the JSON definition at `public/sessions/<slug>.en.json` (English).
-2. Drop the video / audio / image assets at `public/sessions/assets/`.
-3. Visit `/s/<slug>`.
+1. Create the JSON pair (`.en.json` + `.kn.json`) in `public/sessions/`
+2. Drop media assets into `public/sessions/assets/`
+3. Add a card to the programme landing page (`app/kreis/page.tsx` or `app/dom/page.tsx`)
+4. Push to `main`
 
-## Adding a language
+See `CLAUDE.md` for the full schema reference and step-by-step process.
 
-The player supports per-session translations via sibling JSON files:
+## Working with Claude Code
 
-```
-public/sessions/<slug>.en.json   ← English (required)
-public/sessions/<slug>.kn.json   ← Kannada (optional)
-```
+This repo has a `CLAUDE.md` that covers the JSON schema, asset conventions,
+and session creation process. Clone the repo, start a Claude Code session,
+and it will pick up the context automatically.
 
-To add Kannada to an existing session:
-
-1. Copy `<slug>.en.json` → `<slug>.kn.json`.
-2. Translate every human-readable field (`title`, `body`, `intro`,
-   `tip`, `transcript`, `options`, etc.) in place.
-3. If Kannada gets its own audio/video tracks, replace the asset paths
-   inside the `.kn.json` (English file still points at English assets).
-4. Once the file is filled in, set `"_translation_status": "ready"` at
-   the top (or just delete the field). While it's `"pending"` the player
-   shows a yellow banner over Kannada slides so demo viewers know.
-
-The language toggle in the topbar is automatically disabled (`ಕನ್ನಡ` greyed
-out) when the `.kn.json` file is missing. Drop it in and the toggle goes
-live on next reload — no code change.
-
-Share a Kannada-only link by appending `?lang=kn` to the URL.
-
-## Updating an existing session
-
-Edit `public/sessions/kreis-session-1.json` and push. Vercel rebuilds
-automatically.
+For current status of every session, see `DEV_STATE.md`.
 
 ---
 
-Lives in this repo so you can iterate on the session content from any
-machine without touching the main CMCA PULSE codebase.
+A2Z Antifragility × CMCA India

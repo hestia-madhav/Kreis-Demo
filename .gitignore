@@ -16,3 +16,8 @@ out
 .vercel
 next-env.d.ts
 tsconfig.tsbuildinfo
+
+# build artifacts
+dist
+offline
+scripts
