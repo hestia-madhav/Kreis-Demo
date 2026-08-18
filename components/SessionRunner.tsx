@@ -40,6 +40,11 @@ interface QuestionItem {
   question: string;
 }
 
+interface RevealItem {
+  label: string;
+  detail: string;
+}
+
 interface Slide {
   n: number;
   kind: SlideKind;
@@ -65,7 +70,8 @@ interface Slide {
   reminder_chime?: string;        // mp3 played at the reminder mark
   intro?: string;
   prompts?: string[];
-  items?: QuestionItem[];         // for video_question_series
+  items?: (QuestionItem | RevealItem)[];
+  questions?: string[];
   footer?: string;
   scenario?: string;
   options?: string[];
@@ -761,17 +767,28 @@ function TimerSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEve
 
 function RevealSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEvent) => void }) {
   const [shown, setShown] = useState(0);
-  const prompts = slide.prompts || [];
+
+  const revealItems: Array<{ label: string; detail: string }> = useMemo(() => {
+    if (slide.items && slide.items.length > 0 && "label" in slide.items[0]) {
+      return slide.items as RevealItem[];
+    }
+    if (slide.prompts) {
+      return slide.prompts.map((p) => ({ label: p, detail: "" }));
+    }
+    return [];
+  }, [slide.items, slide.prompts]);
+
+  const revealImages = slide.images || [];
 
   useEffect(() => { setShown(0); }, [slide.n]);
 
   const reveal = useCallback(() => {
     setShown((s) => {
-      const next = Math.min(s + 1, prompts.length);
+      const next = Math.min(s + 1, revealItems.length);
       if (next > s) onEvent?.({ type: "reveal_clicked", slide: slide.n, index: next - 1, ts: Date.now() });
       return next;
     });
-  }, [prompts.length, slide.n, onEvent]);
+  }, [revealItems.length, slide.n, onEvent]);
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -794,7 +811,6 @@ function RevealSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEv
               controls
               playsInline
               src={slide.video}
-
               onError={() => setVideoFailed(true)}
             />
           </div>
@@ -802,7 +818,7 @@ function RevealSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEv
       )}
       {slide.intro && <p className="sr-intro">{slide.intro}</p>}
       <ol className="sr-reveal-list">
-        {prompts.map((p, i) => (
+        {revealItems.map((item, i) => (
           <li
             key={i}
             className={"sr-reveal-item " + (i < shown ? "is-shown" : i === shown ? "is-next" : "is-hidden")}
@@ -810,14 +826,30 @@ function RevealSlide({ slide, onEvent }: { slide: Slide; onEvent?: (e: SessionEv
             style={{ cursor: i === shown ? "pointer" : "default" }}
           >
             <span className="sr-reveal-num">{i + 1}</span>
-            <span className="sr-reveal-body">{i < shown ? p : <span className="sr-reveal-mask">— tap to reveal —</span>}</span>
+            <span className="sr-reveal-body">
+              {i < shown ? (
+                <>
+                  <strong>{item.label}</strong>
+                  {item.detail && <span style={{ display: "block", marginTop: "0.3em", fontWeight: 400 }}>{item.detail}</span>}
+                  {revealImages[i] && (
+                    <img
+                      src={revealImages[i].src}
+                      alt={revealImages[i].alt || item.label}
+                      style={{ display: "block", maxWidth: "280px", marginTop: "0.5em", borderRadius: "8px" }}
+                    />
+                  )}
+                </>
+              ) : (
+                <span className="sr-reveal-mask">— tap to reveal —</span>
+              )}
+            </span>
           </li>
         ))}
       </ol>
       <div className="sr-reveal-controls">
-        <span className="sr-hint">{shown < prompts.length ? "Tap an item to reveal · or press R" : "All revealed ✓"}</span>
+        <span className="sr-hint">{shown < revealItems.length ? "Tap an item to reveal · or press R" : "All revealed ✓"}</span>
       </div>
-      {slide.footer && shown >= prompts.length && (
+      {slide.footer && shown >= revealItems.length && (
         <div className="sr-footer-cheer">🎉 {slide.footer}</div>
       )}
     </div>
@@ -879,9 +911,21 @@ function McqSlide({ slide, onEvent, lang }: { slide: Slide; onEvent?: (e: Sessio
 }
 
 function ReflectSlide({ slide }: { slide: Slide }) {
+  const questions = slide.questions || (slide.prompt ? [slide.prompt] : []);
   return (
     <div className="sr-reflect">
-      <blockquote>“{slide.prompt}”</blockquote>
+      {slide.body && slide.body.length > 0 && (
+        <p className="sr-reflect-intro" style={{ marginBottom: "1em", fontSize: "1.1em" }}>{slide.body[0]}</p>
+      )}
+      {questions.length === 1 ? (
+        <blockquote>&quot;{questions[0]}&quot;</blockquote>
+      ) : (
+        <ol className="sr-reflect-questions" style={{ textAlign: "left", paddingLeft: "1.5em", lineHeight: 2 }}>
+          {questions.map((q, i) => (
+            <li key={i} style={{ fontSize: "1.05em", marginBottom: "0.5em" }}>{q}</li>
+          ))}
+        </ol>
+      )}
       <p className="sr-reflect-hint">Take responses from the class. There is no single right answer here.</p>
     </div>
   );
@@ -991,7 +1035,7 @@ function VideoQuestionSeriesSlide({
   slide: Slide;
   onEvent?: (e: SessionEvent) => void;
 }) {
-  const items = slide.items ?? [];
+  const items = (slide.items ?? []) as QuestionItem[];
   const [i, setI] = useState(0);
   const [ended, setEnded] = useState(false);
   const current = items[i];
