@@ -84,6 +84,7 @@ interface Slide {
   centered?: boolean; // hint to the renderer to centre this slide's content (used mainly on title cards)
   pause_at?: number[];      // for video slides — pause at these timecodes (seconds) for class discussion. Slide 9: [8,16,24,32,40].
   pause_duration?: number;  // seconds to hold each pause (default 5)
+  body_layout?: "grid" | "numbered"; // "grid" = 2x2 card grid (category tables), "numbered" = numbered colored cards (discussion Qs)
   image_layout?: "side" | "stack"; // static slide composition; "side" puts text + image side-by-side, "stack" stacks them centred. Default stack.
   preamble_en?: string; // slide 28 — full English Preamble image (Madhubani border)
   preamble_kn?: string; // slide 28 — full Kannada Preamble image (Madhubani border)
@@ -522,25 +523,57 @@ function TitleSlide({ slide, programme }: { slide: Slide; programme: string }) {
 }
 
 function StaticSlide({ slide }: { slide: Slide }) {
-  // bullets_large = render body as a big-font bullet list (per Sonu's feedback
-  // on slides 7 "Form Groups" and 16 "Write your rules" — needs visual weight).
   const lineCls = slide.bullets_large ? "sr-line sr-line-lg" : "sr-line";
   const hasSideArt = !!slide.image || (slide.images && slide.images.length > 0);
-  // layout: "side" puts text + image side-by-side (slides 6, 7); default
-  // is "stack" — text on top, image below, both centred (slide 26 etc).
   const layoutSide = slide.image_layout === "side";
+
+  const bodyContent = () => {
+    const body = slide.body || [];
+    if (slide.body_layout === "grid") {
+      return (
+        <div className="sr-body-grid">
+          {body.map((line, i) => {
+            const colonIdx = line.indexOf(":");
+            const heading = colonIdx > 0 ? line.slice(0, colonIdx) : "";
+            const detail = colonIdx > 0 ? line.slice(colonIdx + 1).trim() : line;
+            return (
+              <div key={i} className="sr-body-grid-card">
+                {heading && <div className="sr-body-grid-heading">{heading}</div>}
+                <div className="sr-body-grid-detail">{detail}</div>
+              </div>
+            );
+          })}
+        </div>
+      );
+    }
+    if (slide.body_layout === "numbered") {
+      return (
+        <ol className="sr-body-numbered">
+          {body.map((line, i) => (
+            <li key={i}>
+              <span className="sr-body-num">{i + 1}</span>
+              <span className="sr-body-num-text">{line}</span>
+            </li>
+          ))}
+        </ol>
+      );
+    }
+    if (slide.bullets_large) {
+      return (
+        <ul className="sr-bullets-lg">
+          {body.map((line, i) => (<li key={i}>{line}</li>))}
+        </ul>
+      );
+    }
+    return body.map((line, i) => (
+      <p key={i} className={lineCls}>{line}</p>
+    ));
+  };
+
   return (
     <div className={hasSideArt ? ("sr-static-with-image " + (layoutSide ? "is-side" : "is-stack")) : ""}>
       <div className="sr-static-text">
-        {slide.bullets_large ? (
-          <ul className="sr-bullets-lg">
-            {(slide.body || []).map((line, i) => (<li key={i}>{line}</li>))}
-          </ul>
-        ) : (
-          (slide.body || []).map((line, i) => (
-            <p key={i} className={lineCls}>{line}</p>
-          ))
-        )}
+        {bodyContent()}
         {slide.callout && <div className="sr-callout">💡 {slide.callout}</div>}
         {slide.audio && <AudioChip src={slide.audio} />}
       </div>
@@ -2146,6 +2179,83 @@ const styles = `
   .sr-bullets-lg { font-size: 28px; line-height: 1.5; color: ${INK}; padding-left: 28px; margin: 0; }
   .sr-bullets-lg li { margin-bottom: 14px; }
   .sr-bullets-lg li::marker { color: ${ORANGE}; }
+
+  /* Body grid layout — 2x2 card grid for category tables (PPT format, visually upgraded) */
+  .sr-body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .sr-body-grid-card {
+    background: rgba(255,255,255,0.85);
+    border: 2px solid ${ORANGE}22;
+    border-radius: 14px;
+    padding: 20px 22px;
+    text-align: left;
+    transition: border-color .15s ease, box-shadow .15s ease;
+  }
+  .sr-body-grid-card:hover {
+    border-color: ${ORANGE}66;
+    box-shadow: 0 4px 16px rgba(243,156,31,0.10);
+  }
+  .sr-body-grid-heading {
+    font-size: 18px;
+    font-weight: 800;
+    color: ${ORANGE_INK};
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid ${ORANGE}33;
+  }
+  .sr-body-grid-detail {
+    font-size: 16px;
+    line-height: 1.5;
+    color: ${INK};
+  }
+  .sr-canvas.is-projector .sr-body-grid-heading { font-size: 22px; }
+  .sr-canvas.is-projector .sr-body-grid-detail { font-size: 19px; }
+
+  /* Numbered card layout — discussion questions in colored cards */
+  .sr-body-numbered {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .sr-body-numbered li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: rgba(255,255,255,0.85);
+    border: 2px solid ${TEAL}22;
+    border-radius: 14px;
+    padding: 18px 22px;
+    transition: border-color .15s ease;
+  }
+  .sr-body-numbered li:hover { border-color: ${TEAL}66; }
+  .sr-body-num {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    background: ${TEAL};
+    color: #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .sr-body-num-text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: ${INK};
+    padding-top: 4px;
+  }
+  .sr-canvas.is-projector .sr-body-num-text { font-size: 26px; }
+  .sr-canvas.is-projector .sr-body-num { width: 42px; height: 42px; font-size: 18px; }
 
   /* Static slide with companion image — slide 6 (flat tyre), 22 (Ambedkar), 26 (Asfiya) */
   .sr-video-instructions { text-align: center; margin-bottom: 18px; }

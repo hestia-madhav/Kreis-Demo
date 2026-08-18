@@ -86,6 +86,7 @@
       "n": 5,
       "kind": "static",
       "title": "Discussion on Ajay's Story",
+      "body_layout": "numbered",
       "body": [
         "What did you feel about the story?",
         "What are some of the rights of animals?",
@@ -188,6 +189,7 @@
       "n": 11,
       "kind": "static",
       "title": "Details of Each Category",
+      "body_layout": "grid",
       "body": [
         "Right to Survival: Right to birth, minimum standard of food, shelter and clothing, right to live with dignity, right to healthcare, safe drinking water, nutritious food, clean environment.",
         "Right to Protection: Protection from all forms of violence, protection from neglect, protection from physical and sexual abuse, protection from dangerous substances.",
