@@ -95,8 +95,12 @@ const SESSIONS: SessionEntry[] = [
     progress: [
       "✅ Source deck V2 (11th August from Ashwini)",
       "✅ Player JSON built (en + kn)",
-      "✅ All assets shared with KREIS S4 — zero missing",
-      "✅ MC wrap-up video is programme-agnostic (says 'Change Champions', works for both)",
+      "✅ All shared assets from KREIS S4 present — zero missing refs",
+      "✅ MC wrap-up video is programme-agnostic (works for both)",
+      "🔴 MC video: Change Stories encouragement (animated CC box scenes)",
+      "🔴 Audio narration: Ajay's story + puppy photo card image",
+      "🔴 MC video: Child rights categories explanation",
+      "🔴 MC video: Protection/POCSO message narration",
     ],
   },
 ];
