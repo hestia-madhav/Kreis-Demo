@@ -98,7 +98,7 @@ const SESSIONS: SessionEntry[] = [
       "✅ All shared assets from KREIS S4 present — zero missing refs",
       "✅ MC wrap-up video is programme-agnostic (works for both)",
       "🔴 MC video: Change Stories encouragement (animated CC box scenes)",
-      "🔴 Audio narration: Ajay's story + puppy photo card image",
+      "✅ Audio narration: Ajay's story + puppy photo card image",
       "🔴 MC video: Child rights categories explanation",
       "🔴 MC video: Protection/POCSO message narration",
     ],

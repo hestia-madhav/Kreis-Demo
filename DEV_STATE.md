@@ -32,7 +32,7 @@ Last updated: 2026-08-18
 | S1: Welcome | 27 | 22 (0 missing) | ✅ | ✅ | Playable | MC intro re-record (says "Constitution Club", needs "Civic Club"), Odisha content variants |
 | S2: Club Naming | 20 | 16 (0 missing) | ✅ | ✅ | Playable | Editable club-name field |
 | S3: Choices & CCB | 20 | 15 (0 missing) | ✅ | ✅ | Playable | — |
-| S4: Child Rights | 16 | 8 (0 missing) | ✅ | ✅ | Playable (text fallback) | MC videos ×3 (change stories, child rights, POCSO), Ajay story audio + puppy photo |
+| S4: Child Rights | 16 | 10 (0 missing) | ✅ | ✅ | Playable (text fallback) | MC videos ×3 (change stories, child rights, POCSO) |
 
 ---
 
@@ -61,6 +61,7 @@ Last updated: 2026-08-18
 
 | Date | What | Commit |
 |------|------|--------|
+| 2026-08-18 | DOM S4: Ajay story audio + puppy image wired (slide 4, all 4 JSONs) | pending |
 | 2026-08-18 | DOM S4: Child Rights & Responsibilities (from Ashwini PPT V2, 11 Aug) | pending |
 | 2026-07-23 | P4: EN/ಕನ್ನಡ language toggle on all landing pages | `4af8725` |
 | 2026-07-20 | P3: Image audit — 3 new PPT images + Karnataka Govt logo to DOM | `45a2774` |
