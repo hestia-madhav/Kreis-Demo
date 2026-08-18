@@ -96,7 +96,7 @@ const SESSIONS: SessionEntry[] = [
       "✅ Source deck V2 (11th August from Ashwini)",
       "✅ Player JSON built (en + kn)",
       "✅ All assets shared with KREIS S4 — zero missing",
-      "🔴 MC wrap-up video says 'Constitution Club' — needs DOM-specific re-record",
+      "✅ MC wrap-up video is programme-agnostic (says 'Change Champions', works for both)",
     ],
   },
 ];
