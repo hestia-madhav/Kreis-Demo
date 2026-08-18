@@ -48,7 +48,7 @@ const PROGRAMMES: Programme[] = [
       kn: "ಅಲ್ಪಸಂಖ್ಯಾತರ ಇಲಾಖೆ ಶಾಲೆಗಳು — ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ಒಡಿಶಾದಲ್ಲಿ 350+ ಶಾಲೆಗಳು",
     },
     href: "/dom",
-    sessions: { en: "3 sessions", kn: "3 ಅವಧಿಗಳು" },
+    sessions: { en: "4 sessions", kn: "4 ಅವಧಿಗಳು" },
     status: "In progress",
   },
 ];

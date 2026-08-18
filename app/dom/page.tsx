@@ -79,6 +79,26 @@ const SESSIONS: SessionEntry[] = [
       "✅ 16th July corrections applied",
     ],
   },
+  {
+    id: "dom-session-4",
+    number: 4,
+    title: {
+      en: "Child Rights & Responsibilities",
+      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು & ಜವಾಬ್ದಾರಿಗಳು",
+    },
+    subtitle: {
+      en: "Ajay's story · Picture-cue activity · Four categories of child rights · Protection message · Reflection",
+      kn: "ಅಜಯ್ ಕಥೆ · ಚಿತ್ರ-ಸೂಚನೆ ಚಟುವಟಿಕೆ · ಮಕ್ಕಳ ಹಕ್ಕುಗಳ ನಾಲ್ಕು ವಿಭಾಗಗಳು · ರಕ್ಷಣೆ ಸಂದೇಶ · ಪ್ರತಿಫಲನ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Source deck V2 (11th August from Ashwini)",
+      "✅ Player JSON built (en + kn)",
+      "✅ All assets shared with KREIS S4 — zero missing",
+      "🔴 MC wrap-up video says 'Constitution Club' — needs DOM-specific re-record",
+    ],
+  },
 ];
 
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {
