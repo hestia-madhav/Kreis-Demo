@@ -1172,14 +1172,10 @@ function VideoWithPauses({
   }, [src]);
 
   useEffect(() => {
-    // Full cleanup on unmount — pause and detach the video source so its
-    // audio doesn't linger after navigating away.
     return () => {
       const v = ref.current;
       if (v) {
         try { v.pause(); } catch { /* ignore */ }
-        v.removeAttribute("src");
-        v.load();
       }
     };
   }, []);
@@ -1291,15 +1287,10 @@ function AudioChip({ src }: { src: string }) {
   }, [src]);
 
   useEffect(() => {
-    // Full cleanup on unmount — pause and detach the audio source so it
-    // doesn't keep playing after the user navigates away from an
-    // audio-carrying slide. Companion to the VideoWithPauses cleanup.
     return () => {
       const el = audioRef.current;
       if (el) {
         try { el.pause(); } catch { /* ignore */ }
-        el.removeAttribute("src");
-        el.load();
       }
     };
   }, []);
