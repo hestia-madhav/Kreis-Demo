@@ -163,22 +163,22 @@
       "tip": "ಪ್ರತಿ ವಿಭಾಗವನ್ನು ಒಂದೊಂದಾಗಿ ಕ್ಲಿಕ್ ಮಾಡಿ ತೋರಿಸಿ. ಪ್ರತಿ ಹಕ್ಕಿಗೆ ಸಂಬಂಧಿಸಿದ ಫ್ಲ್ಯಾಶ್ ಕಾರ್ಡ್ ಓದಲು ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಕೇಳಿ.",
       "images": [
         {
-          "src": "/sessions/assets/s4_flash_card_survival.jpeg",
+          "src": "/sessions/assets/s4_flash_card_survival-a.jpeg",
           "alt": "Survival Rights flash card",
           "caption": "ಜೀವಿಸುವ ಹಕ್ಕು"
         },
         {
-          "src": "/sessions/assets/s4_flash_card_development.jpeg",
+          "src": "/sessions/assets/s4_flash_card_development-a.jpeg",
           "alt": "Development Rights flash card",
           "caption": "ವಿಕಾಸ ಹೊಂದುವ ಹಕ್ಕು"
         },
         {
-          "src": "/sessions/assets/s4_flash_card_participation.jpeg",
+          "src": "/sessions/assets/s4_flash_card_participation-a.jpeg",
           "alt": "Participation Rights flash card",
           "caption": "ಭಾಗವಹಿಸುವ ಹಕ್ಕು"
         },
         {
-          "src": "/sessions/assets/s4_flash_card_protection.jpeg",
+          "src": "/sessions/assets/s4_flash_card_protection-a.jpeg",
           "alt": "Protection Rights flash card",
           "caption": "ರಕ್ಷಣೆಯ ಹಕ್ಕು"
         }
@@ -215,6 +215,7 @@
         "ಯಾರಾದರೂ ಇದನ್ನು ರಹಸ್ಯವಾಗಿಡಲು ಹೇಳಿದರೂ, ಬೆದರಿಕೆ ಹಾಕಿದರೂ ಅಥವಾ ಬಲವಂತ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿದರೂ, ಅದು ತಪ್ಪೇ.",
         "ಇಂತಹ ಘಟನೆ ಎಂದಾದರೂ ನಡೆದರೆ, ಇದನ್ನು ನೆನಪಿಟ್ಟುಕೊಳ್ಳಿ: ಇದರಲ್ಲಿ ನಿಮ್ಮ ಯಾವುದೇ ತಪ್ಪಿಲ್ಲ. ತಕ್ಷಣವೇ ನೀವು ನಂಬಿಕೆಯಿರುವ ಒಬ್ಬ ಹಿರಿಯರಿಗೆ ಈ ವಿಷಯವನ್ನು ತಿಳಿಸಿ, ಅಥವಾ 1098 (ಮಕ್ಕಳ ಸಹಾಯವಾಣಿ) ಗೆ ಕರೆ ಮಾಡಿ."
       ],
+      "image": "/sessions/assets/s4_childline_1098.png",
       "tip": "ಈ ಸ್ಲೈಡ್ ಅನ್ನು ಗಂಭೀರವಾಗಿ ಓದಿ. 1098 ChildLine ಸಂಖ್ಯೆಯನ್ನು ಬೋರ್ಡ್ ಮೇಲೆ ಬರೆಯಿರಿ."
     },
     {

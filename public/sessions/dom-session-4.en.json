@@ -163,22 +163,22 @@
       "tip": "Click to reveal each category one by one. Ask students to read out the relevant flash card.",
       "images": [
         {
-          "src": "/sessions/assets/s4_flash_card_survival.jpeg",
+          "src": "/sessions/assets/s4_flash_card_survival-a.jpeg",
           "alt": "Survival Rights flash card",
           "caption": "Survival"
         },
         {
-          "src": "/sessions/assets/s4_flash_card_development.jpeg",
+          "src": "/sessions/assets/s4_flash_card_development-a.jpeg",
           "alt": "Development Rights flash card",
           "caption": "Development"
         },
         {
-          "src": "/sessions/assets/s4_flash_card_participation.jpeg",
+          "src": "/sessions/assets/s4_flash_card_participation-a.jpeg",
           "alt": "Participation Rights flash card",
           "caption": "Participation"
         },
         {
-          "src": "/sessions/assets/s4_flash_card_protection.jpeg",
+          "src": "/sessions/assets/s4_flash_card_protection-a.jpeg",
           "alt": "Protection Rights flash card",
           "caption": "Protection"
         }
@@ -215,6 +215,7 @@
         "Even if someone tells you to keep it a secret, threatens you, or tries to force you, it is wrong.",
         "If such an incident ever happens, remember this: It is not your fault. Immediately tell a trusted adult, or call 1098 (ChildLine)."
       ],
+      "image": "/sessions/assets/s4_childline_1098.png",
       "tip": "Read this slide seriously. Write 1098 ChildLine number on the board."
     },
     {
