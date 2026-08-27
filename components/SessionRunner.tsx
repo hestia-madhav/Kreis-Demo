@@ -1567,7 +1567,7 @@ const styles = `
   .sr-canvas.is-projector .sr-section-crumb { align-self: center; }
   .sr-canvas.is-projector .sr-title { font-size: 40px; text-align: center; margin: 6px 0 10px; }
   .sr-canvas.is-projector .sr-accent { margin: 0 auto 24px; }
-  .sr-canvas.is-projector .sr-slide-body { max-width: 1100px; font-size: 22px; line-height: 1.5; }
+  .sr-canvas.is-projector .sr-slide-body { max-width: 1100px; font-size: 22px; line-height: 1.5; text-align: left; }
   .sr-canvas.is-projector .sr-line { font-size: 26px; margin: 10px 0; line-height: 1.4; }
   .sr-canvas.is-projector .sr-text-only .sr-line { font-size: 32px; line-height: 1.5; margin: 14px 0; }
   .sr-canvas.is-projector .sr-text-only .sr-callout { font-size: 24px; }
@@ -1580,7 +1580,7 @@ const styles = `
   .sr-title { font-size: 36px; color: ${NAVY}; margin: 4px auto 10px; line-height: 1.2; text-align: center; max-width: 1100px; font-weight: 700; }
   .sr-accent { width: 56px; height: 5px; background: ${SAFFRON}; border-radius: 3px; margin: 0 auto 24px; }
   /* Slide body — centered horizontally regardless of nav-rail state. */
-  .sr-slide-body { font-size: 18px; line-height: 1.5; max-width: 1100px; margin: 0 auto; width: 100%; }
+  .sr-slide-body { font-size: 18px; line-height: 1.5; max-width: 1100px; margin: 0 auto; width: 100%; text-align: left; }
 
   .sr-line { margin: 0 0 12px; font-size: 22px; }
   /* Callout — softer styling, smaller font per AKG/Savitha 25 Jun feedback
