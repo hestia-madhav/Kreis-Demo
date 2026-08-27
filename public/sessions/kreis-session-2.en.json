@@ -295,19 +295,18 @@
     {
       "n": 18,
       "kind": "static",
-      "title": "Launch Options",
+      "title": "I Am The Change",
+      "body": [
+        "Club Launch Campaign"
+      ],
       "images": [
         {
-          "src": "/sessions/assets/reference/s2_image7.png",
-          "alt": "campaign option 1"
+          "src": "/sessions/assets/s2_launch_option_1.jpg",
+          "alt": "School assembly launch"
         },
         {
-          "src": "/sessions/assets/reference/s2_image6.png",
-          "alt": "campaign option 2"
-        },
-        {
-          "src": "/sessions/assets/reference/s2_image3.png",
-          "alt": "campaign option 3"
+          "src": "/sessions/assets/s2_launch_option_2.jpg",
+          "alt": "Civic engagement campaign"
         }
       ],
       "image_layout": "stack",

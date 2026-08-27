@@ -160,11 +160,13 @@
       "n": 10,
       "kind": "static",
       "title": "ಭಾರತದ ಚುನಾವಣಾ ಪ್ರಕ್ರಿಯೆ",
+      "text_align": "left",
       "body": [
         "ಭಾರತದಲ್ಲಿ ನಾವು ನಮ್ಮ ನಾಯಕರನ್ನು ಹೇಗೆ ಆಯ್ಕೆ ಮಾಡುತ್ತೇವೆ ಎಂಬುದು ನಿಮಗೆ ಗೊತ್ತೇ?",
         "ಚುನಾವಣೆಗಳು ನಡೆಯುವ ಸರ್ಕಾರದ ವಿವಿಧ ಹಂತಗಳು ಯಾವುವು ಎಂಬುದು ತಿಳಿದಿದೆಯೇ?"
       ],
       "image": "/sessions/assets/s2_democracy_levels_kn.png",
+      "image_layout": "side",
       "tip": "ಮಕ್ಕಳಿಗೆ ಊಹಿಸಲು ಸಮಯ ಕೊಡಿ. ಗ್ರಾಮ ಪಂಚಾಯಿತಿ, ರಾಜ್ಯ, ಕೇಂದ್ರ ಹಂತಗಳನ್ನು ವಿವರಿಸಿ."
     },
     {
@@ -267,12 +269,13 @@
       "kind": "static",
       "title": "ನಾನೇ ಬದಲಾವಣೆ",
       "body": [
-        "ಕ್ಲಬ್ ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ"
+        "ಕ್ಲಬ್ ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+        "\"I AM THE CHANGE\"",
+        "CLUB LAUNCH CAMPAIGN"
       ],
       "images": [
-        { "src": "/sessions/assets/reference/s2_image7.png", "alt": "campaign option 1" },
-        { "src": "/sessions/assets/reference/s2_image6.png", "alt": "campaign option 2" },
-        { "src": "/sessions/assets/reference/s2_image3.png", "alt": "campaign option 3" }
+        { "src": "/sessions/assets/s2_launch_option_1.jpg", "alt": "School assembly launch" },
+        { "src": "/sessions/assets/s2_launch_option_2.jpg", "alt": "Civic engagement campaign" }
       ],
       "image_layout": "stack",
       "tip": "ಅಭಿಯಾನದ ಉದಾಹರಣೆಗಳನ್ನು ತೋರಿಸಿ. ಕ್ಲಬ್ ಉದ್ಘಾಟನಾ ಅಭಿಯಾನವನ್ನು ಪರಿಚಯಿಸಿ."

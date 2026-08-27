@@ -281,19 +281,20 @@
     {
       "n": 18,
       "kind": "static",
-      "title": "ಉದ್ಘಾಟನಾ ಆಯ್ಕೆಗಳು",
+      "title": "ನಾನೇ ಬದಲಾವಣೆ",
+      "body": [
+        "ಕ್ಲಬ್ ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+        "\"I AM THE CHANGE\"",
+        "CLUB LAUNCH CAMPAIGN"
+      ],
       "images": [
         {
-          "src": "/sessions/assets/reference/s2_image7.png",
-          "alt": "campaign option 1"
+          "src": "/sessions/assets/s2_launch_option_1.jpg",
+          "alt": "School assembly launch"
         },
         {
-          "src": "/sessions/assets/reference/s2_image6.png",
-          "alt": "campaign option 2"
-        },
-        {
-          "src": "/sessions/assets/reference/s2_image3.png",
-          "alt": "campaign option 3"
+          "src": "/sessions/assets/s2_launch_option_2.jpg",
+          "alt": "Civic engagement campaign"
         }
       ],
       "image_layout": "stack",
