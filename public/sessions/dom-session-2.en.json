@@ -2,34 +2,59 @@
   "id": "dom-session-2",
   "_language": "en",
   "_revision": "2026-07-20-dom-corrections",
-  "title": "Civic Club — Session 2: Club Naming + Launch Campaign",
+  "title": "Children's Civic Club — Session 2: Naming of Club & Launch Campaign",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
     {
       "id": "welcome",
       "label": "Welcome",
-      "slides": [1, 2, 3]
+      "slides": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "id": "name_club",
       "label": "Name your club",
-      "slides": [4, 5, 6, 7]
+      "slides": [
+        4,
+        5,
+        6,
+        7
+      ]
     },
     {
       "id": "active_citizens",
       "label": "Active citizens",
-      "slides": [8]
+      "slides": [
+        8
+      ]
     },
     {
       "id": "committee",
       "label": "Committee formation",
-      "slides": [9, 10, 11, 12, 13, 14, 15, 16, 17]
+      "slides": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
     },
     {
       "id": "launch",
       "label": "Launch campaign",
-      "slides": [18, 19, 20]
+      "slides": [
+        18,
+        19,
+        20
+      ]
     }
   ],
   "slides": [
@@ -154,10 +179,22 @@
       "n": 12,
       "kind": "video_question_series",
       "items": [
-        { "video": "/sessions/assets/s2_qualities_q1.kn.mp4", "question": "What qualities should an ideal representative have?" },
-        { "video": "/sessions/assets/s2_qualities_q2.kn.mp4", "question": "If your friend and another student are candidates, who do you vote for?" },
-        { "video": "/sessions/assets/s2_qualities_q3.kn.mp4", "question": "Does it matter if they are a boy or a girl?" },
-        { "video": "/sessions/assets/s2_qualities_q4.kn.mp4", "question": "How would you feel if your friends didn't vote for you? What if you lost?" }
+        {
+          "video": "/sessions/assets/s2_qualities_q1.kn.mp4",
+          "question": "What qualities should an ideal representative have?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q2.kn.mp4",
+          "question": "If your friend and another student are candidates, who do you vote for?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q3.kn.mp4",
+          "question": "Does it matter if they are a boy or a girl?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q4.kn.mp4",
+          "question": "How would you feel if your friends didn't vote for you? What if you lost?"
+        }
       ],
       "kn_script": [
         "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು?",

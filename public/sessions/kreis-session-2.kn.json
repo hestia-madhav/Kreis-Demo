@@ -2,7 +2,7 @@
   "id": "kreis-session-2",
   "_language": "kn",
   "_revision": "2026-07-16-ashwini-feedback",
-  "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್ — ಸೆಷನ್ 2",
+  "title": "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್ — ಸೆಷನ್ 2: ಕ್ಲಬ್ ಹೆಸರು ಮತ್ತು ಅಭಿಯಾನ",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -156,10 +156,22 @@
       "kind": "video_question_series",
       "title": "ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳು",
       "items": [
-        { "video": "/sessions/assets/s2_qualities_q1.kn.mp4", "question": "ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?" },
-        { "video": "/sessions/assets/s2_qualities_q2.kn.mp4", "question": "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?" },
-        { "video": "/sessions/assets/s2_qualities_q3.kn.mp4", "question": "ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ?" },
-        { "video": "/sessions/assets/s2_qualities_q4.kn.mp4", "question": "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ? ಸೋತರೆ ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?" }
+        {
+          "video": "/sessions/assets/s2_qualities_q1.kn.mp4",
+          "question": "ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q2.kn.mp4",
+          "question": "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q3.kn.mp4",
+          "question": "ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q4.kn.mp4",
+          "question": "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ? ಸೋತರೆ ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?"
+        }
       ],
       "kn_script": [
         "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?",

@@ -2,34 +2,59 @@
   "id": "dom-session-2",
   "_language": "kn",
   "_revision": "2026-07-20-dom-corrections",
-  "title": "ಪೌರ ಕ್ಲಬ್ — ಸೆಷನ್ 2",
+  "title": "ಮಕ್ಕಳ ಪೌರ ಕ್ಲಬ್ — ಸೆಷನ್ 2: ಕ್ಲಬ್ ಹೆಸರು ಮತ್ತು ಅಭಿಯಾನ",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
     {
       "id": "welcome",
       "label": "ಸ್ವಾಗತ",
-      "slides": [1, 2, 3]
+      "slides": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "id": "name_club",
       "label": "ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡಿ",
-      "slides": [4, 5, 6, 7]
+      "slides": [
+        4,
+        5,
+        6,
+        7
+      ]
     },
     {
       "id": "active_citizens",
       "label": "ಸಕ್ರಿಯ ಪೌರರು",
-      "slides": [8]
+      "slides": [
+        8
+      ]
     },
     {
       "id": "committee",
       "label": "ಸಮಿತಿ ರಚನೆ",
-      "slides": [9, 10, 11, 12, 13, 14, 15, 16, 17]
+      "slides": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
     },
     {
       "id": "launch",
       "label": "ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
-      "slides": [18, 19, 20]
+      "slides": [
+        18,
+        19,
+        20
+      ]
     }
   ],
   "slides": [
@@ -154,10 +179,22 @@
       "n": 12,
       "kind": "video_question_series",
       "items": [
-        { "video": "/sessions/assets/s2_qualities_q1.kn.mp4", "question": "ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?" },
-        { "video": "/sessions/assets/s2_qualities_q2.kn.mp4", "question": "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?" },
-        { "video": "/sessions/assets/s2_qualities_q3.kn.mp4", "question": "ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ?" },
-        { "video": "/sessions/assets/s2_qualities_q4.kn.mp4", "question": "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ? ಸೋತರೆ ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?" }
+        {
+          "video": "/sessions/assets/s2_qualities_q1.kn.mp4",
+          "question": "ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q2.kn.mp4",
+          "question": "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q3.kn.mp4",
+          "question": "ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ?"
+        },
+        {
+          "video": "/sessions/assets/s2_qualities_q4.kn.mp4",
+          "question": "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ? ಸೋತರೆ ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?"
+        }
       ],
       "kn_script": [
         "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?",

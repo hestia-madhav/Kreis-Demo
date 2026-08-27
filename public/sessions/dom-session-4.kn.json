@@ -2,39 +2,61 @@
   "id": "dom-session-4",
   "_language": "kn",
   "_revision": "2026-08-18-from-ppt-v2-11aug",
-  "title": "ಪೌರ ಕ್ಲಬ್ — ಸೆಷನ್ 4",
+  "title": "ಮಕ್ಕಳ ಪೌರ ಕ್ಲಬ್ — ಸೆಷನ್ 4: ಮಕ್ಕಳ ಹಕ್ಕುಗಳು",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
     {
       "id": "welcome",
       "label": "ಸ್ವಾಗತ",
-      "slides": [1]
+      "slides": [
+        1
+      ]
     },
     {
       "id": "change_champion",
       "label": "ಬದಲಾವಣೆಯ ಕಥೆಗಳು",
-      "slides": [2, 3]
+      "slides": [
+        2,
+        3
+      ]
     },
     {
       "id": "ajay_story",
       "label": "ಅಜಯ್ ಕಥೆ & ಚರ್ಚೆ",
-      "slides": [4, 5, 6]
+      "slides": [
+        4,
+        5,
+        6
+      ]
     },
     {
       "id": "child_rights",
       "label": "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು & ಜವಾಬ್ದಾರಿಗಳು",
-      "slides": [7, 8, 9, 10, 11, 12, 13]
+      "slides": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
     },
     {
       "id": "protection_reflection",
       "label": "ರಕ್ಷಣೆ ಸಂದೇಶ & ಆತ್ಮಾವಲೋಕನ",
-      "slides": [14, 15]
+      "slides": [
+        14,
+        15
+      ]
     },
     {
       "id": "wrapup",
       "label": "ಉಪಸಂಹಾರ",
-      "slides": [16]
+      "slides": [
+        16
+      ]
     }
   ],
   "slides": [
