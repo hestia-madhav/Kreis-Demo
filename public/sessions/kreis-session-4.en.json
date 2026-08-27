@@ -2,7 +2,7 @@
   "id": "kreis-session-4",
   "_language": "en",
   "_revision": "2026-07-11-en-from-irfan-kn",
-  "title": "Children's Constitution Club — Session 4: Child Rights",
+  "title": "Session 4: Child Rights",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -38,24 +38,23 @@
         8,
         9,
         10,
-        11,
-        12
+        11
       ]
     },
     {
       "id": "childline_reflection",
       "label": "ChildLine & Reflection",
       "slides": [
-        13,
-        14
+        12,
+        13
       ]
     },
     {
       "id": "mgs_wrapup",
       "label": "MGS Introduction & Wrap-up",
       "slides": [
-        15,
-        16
+        14,
+        15
       ]
     }
   ],
@@ -214,24 +213,15 @@
     {
       "n": 12,
       "kind": "static",
-      "title": "Group Sharing",
-      "body": [
-        "One member from each group will now take turns sharing only the child rights (not responsibilities) from your sheets.",
-        "Let us try to avoid repeating what others have already said."
-      ],
-      "tip": "Ask students to hold the relevant flash card as each right is read."
-    },
-    {
-      "n": 13,
-      "kind": "static",
       "title": "ChildLine",
       "body": [
         "If you or a child you know ever needs help, including issues like child labour or child marriage, you can call 1098 (ChildLine) or talk to an adult you trust for support."
       ],
-      "tip": "Write 1098 ChildLine number on the board."
+      "tip": "Write 1098 ChildLine number on the board.",
+      "image_layout": "side"
     },
     {
-      "n": 14,
+      "n": 13,
       "kind": "reflect_share",
       "title": "Reflection",
       "body": [
@@ -246,7 +236,7 @@
       "tip": "Display questions one by one. Click 'next' after all answers."
     },
     {
-      "n": 15,
+      "n": 14,
       "kind": "static",
       "title": "Introduction to Makkala Grama Sabha",
       "body": [
@@ -268,7 +258,7 @@
       ]
     },
     {
-      "n": 16,
+      "n": 15,
       "kind": "mc_narration",
       "title": "Wrap-up",
       "tip": "Play MC video. Encourage students to put stories in the CC box.",

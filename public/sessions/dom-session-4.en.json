@@ -2,7 +2,7 @@
   "id": "dom-session-4",
   "_language": "en",
   "_revision": "2026-08-18-from-ppt-v2-11aug",
-  "title": "Children's Civic Club — Session 4: Child Rights",
+  "title": "Session 4: Child Rights",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -39,23 +39,22 @@
         9,
         10,
         11,
-        12,
-        13
+        12
       ]
     },
     {
       "id": "protection_reflection",
       "label": "Protection Message & Reflection",
       "slides": [
-        14,
-        15
+        13,
+        14
       ]
     },
     {
       "id": "wrapup",
       "label": "Wrap-up",
       "slides": [
-        16
+        15
       ]
     }
   ],
@@ -223,16 +222,6 @@
     {
       "n": 12,
       "kind": "static",
-      "title": "Group Sharing",
-      "body": [
-        "One member from each group will now take turns sharing only the child rights (not responsibilities) from your sheets.",
-        "Let us try to avoid repeating what others have already said."
-      ],
-      "tip": "As each group reads their rights, write them on the board under the relevant category."
-    },
-    {
-      "n": 13,
-      "kind": "static",
       "title": "Right to Protection — Important Message",
       "body": [
         "You have the right to be protected from sexual abuse. This means no one has the right to touch you, kiss you, or force you to use your body in a way that makes you feel unsafe or uncomfortable, without your permission.",
@@ -240,10 +229,11 @@
         "If such an incident ever happens, remember this: It is not your fault. Immediately tell a trusted adult, or call 1098 (ChildLine)."
       ],
       "image": "/sessions/assets/s4_childline_1098.png",
-      "tip": "Read this slide seriously. Write 1098 ChildLine number on the board."
+      "tip": "Read this slide seriously. Write 1098 ChildLine number on the board.",
+      "image_layout": "side"
     },
     {
-      "n": 14,
+      "n": 13,
       "kind": "reflect_share",
       "title": "Reflection Circle",
       "body": [
@@ -258,7 +248,7 @@
       "tip": "Display questions one by one. Ask students to put answers in the CC box."
     },
     {
-      "n": 15,
+      "n": 14,
       "kind": "static",
       "title": "Every Small Step Matters",
       "body": [
@@ -268,7 +258,7 @@
       "tip": "Encourage students to clap."
     },
     {
-      "n": 16,
+      "n": 15,
       "kind": "mc_narration",
       "title": "Wrap-up",
       "tip": "Play MC video. Encourage students to put stories in the CC box.",

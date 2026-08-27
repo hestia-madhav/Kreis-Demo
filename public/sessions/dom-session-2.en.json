@@ -2,7 +2,7 @@
   "id": "dom-session-2",
   "_language": "en",
   "_revision": "2026-08-27-sp2-corrections",
-  "title": "Children's Civic Club — Session 2: Naming of Club and Launch Campaign",
+  "title": "Session 2: Naming of Club and Launch Campaign",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -272,8 +272,14 @@
         "Club Launch Campaign"
       ],
       "images": [
-        { "src": "/sessions/assets/s2_launch_option_1.jpg", "alt": "School assembly launch" },
-        { "src": "/sessions/assets/s2_launch_option_2.jpg", "alt": "Civic engagement campaign" }
+        {
+          "src": "/sessions/assets/s2_launch_option_1.jpg",
+          "alt": "School assembly launch"
+        },
+        {
+          "src": "/sessions/assets/s2_launch_option_2.jpg",
+          "alt": "Civic engagement campaign"
+        }
       ],
       "image_layout": "stack",
       "tip": "Show campaign examples. Introduce the club launch campaign."

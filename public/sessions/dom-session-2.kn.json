@@ -2,7 +2,7 @@
   "id": "dom-session-2",
   "_language": "kn",
   "_revision": "2026-08-27-sp2-corrections",
-  "title": "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್ — ಸೆಷನ್ 2: ಕ್ಲಬ್ ನ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+  "title": "ಸೆಷನ್ 2: ಕ್ಲಬ್ ನ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
@@ -274,8 +274,14 @@
         "CLUB LAUNCH CAMPAIGN"
       ],
       "images": [
-        { "src": "/sessions/assets/s2_launch_option_1.jpg", "alt": "School assembly launch" },
-        { "src": "/sessions/assets/s2_launch_option_2.jpg", "alt": "Civic engagement campaign" }
+        {
+          "src": "/sessions/assets/s2_launch_option_1.jpg",
+          "alt": "School assembly launch"
+        },
+        {
+          "src": "/sessions/assets/s2_launch_option_2.jpg",
+          "alt": "Civic engagement campaign"
+        }
       ],
       "image_layout": "stack",
       "tip": "ಅಭಿಯಾನದ ಉದಾಹರಣೆಗಳನ್ನು ತೋರಿಸಿ. ಕ್ಲಬ್ ಉದ್ಘಾಟನಾ ಅಭಿಯಾನವನ್ನು ಪರಿಚಯಿಸಿ."
