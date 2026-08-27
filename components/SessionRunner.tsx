@@ -82,10 +82,9 @@ interface Slide {
   thank_you?: boolean; // if true, branded title slide renders the "Thank You" closing variant
   closing_line?: string; // AKG/Savitha 16 Jun: small Kannada closing line under the title — used on each session's final slide
   centered?: boolean; // hint to the renderer to centre this slide's content (used mainly on title cards)
-  text_align?: "left" | "center"; // override body text alignment for static slides
   pause_at?: number[];      // for video slides — pause at these timecodes (seconds) for class discussion. Slide 9: [8,16,24,32,40].
   pause_duration?: number;  // seconds to hold each pause (default 5)
-  body_layout?: "grid" | "numbered"; // "grid" = 2x2 card grid (category tables), "numbered" = numbered colored cards (discussion Qs)
+  body_layout?: "grid" | "numbered" | "columns"; // "grid" = 2x2 card grid (category tables), "numbered" = numbered colored cards (discussion Qs), "columns" = side-by-side text columns (e.g. two stories left/right)
   image_layout?: "side" | "stack"; // static slide composition; "side" puts text + image side-by-side, "stack" stacks them centred. Default stack.
   preamble_en?: string; // slide 28 — full English Preamble image (Madhubani border)
   preamble_kn?: string; // slide 28 — full Kannada Preamble image (Madhubani border)
@@ -354,8 +353,6 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
             "sr-canvas",
             (slide.kind === "static" || slide.kind === "reflect_share") ? "is-projector" : "",
             (slide.kind === "video" || slide.kind === "mc_narration") ? "is-video-slide" : "",
-            slide.centered ? "is-vcenter" : "",
-            slide.text_align === "left" ? "is-left-align" : "",
           ].filter(Boolean).join(" ")}
         >
           {slide.kind !== "title" && (
@@ -546,6 +543,15 @@ function StaticSlide({ slide }: { slide: Slide }) {
               </div>
             );
           })}
+        </div>
+      );
+    }
+    if (slide.body_layout === "columns") {
+      return (
+        <div className="sr-body-columns">
+          {body.map((line, i) => (
+            <div key={i} className="sr-body-col">{line}</div>
+          ))}
         </div>
       );
     }
@@ -1558,10 +1564,6 @@ const styles = `
      topbar regardless of body length. Short slides get breathing room as
      bottom whitespace instead of dead space above. */
   .sr-canvas.is-projector { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding-top: 24px; }
-  .sr-canvas.is-vcenter { justify-content: center; padding-top: 0; }
-  .sr-canvas.is-left-align .sr-slide-body,
-  .sr-canvas.is-left-align .sr-line,
-  .sr-canvas.is-left-align .sr-bullets-lg { text-align: left; }
   .sr-canvas.is-projector .sr-section-crumb { align-self: center; }
   .sr-canvas.is-projector .sr-title { font-size: 40px; text-align: center; margin: 6px 0 10px; }
   .sr-canvas.is-projector .sr-accent { margin: 0 auto 24px; }
@@ -2058,6 +2060,7 @@ const styles = `
     .sr-canvas.is-projector .sr-slide-body { font-size: 18px; }
     .sr-canvas.is-projector .sr-line { font-size: 20px; }
     .sr-canvas.is-projector .sr-text-only .sr-line { font-size: 26px; }
+    .sr-body-columns { grid-template-columns: 1fr; }
     .sr-static-with-image.is-side { grid-template-columns: 1fr; }
     .sr-static-with-image.is-side .sr-static-image { position: static; }
     .sr-static-with-image.is-side .sr-static-image img { max-height: 36vh; }
@@ -2188,6 +2191,20 @@ const styles = `
   .sr-bullets-lg li::marker { color: ${ORANGE}; }
 
   /* Body grid layout — 2x2 card grid for category tables (PPT format, visually upgraded) */
+  .sr-body-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    max-width: 1060px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .sr-body-col {
+    font-size: 16px;
+    line-height: 1.65;
+    color: ${INK};
+  }
+  .sr-canvas.is-projector .sr-body-col { font-size: 18px; }
   .sr-body-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

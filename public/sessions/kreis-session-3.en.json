@@ -99,7 +99,8 @@
         "One — the value or quality that the story reflects and that every good person should follow.",
         "Two — the specific action or behaviour that demonstrates that value."
       ],
-      "tip": "Distribute one sheet of Annexure 3 to each group."
+      "tip": "Distribute one sheet of Annexure 3 to each group.",
+      "body_layout": "columns"
     },
     {
       "n": 4,
@@ -237,7 +238,9 @@
       "body": [
         "What quality is missing behind the hospital staff's choice?"
       ],
-      "prompts": ["Integrity — INTEGRITY"],
+      "prompts": [
+        "Integrity — INTEGRITY"
+      ],
       "footer": "Our personal integrity can change thousands of situations like the ones you read about in the stories.",
       "tip": "After children answer, tap REVEAL (or press R) to show 'INTEGRITY'."
     },

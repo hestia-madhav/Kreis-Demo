@@ -85,7 +85,8 @@
         "January 2019: Times of India, Chennai — Families of women who gave birth at a government hospital with free healthcare filed complaints today. They said they had to pay at least ₹3,500 in bribes to ward attendants, helpers, and other staff. The amount was even higher if a boy was born.",
         "March 17, 2017: Hindustan Times, Hyderabad — Unable to pay a bribe for a wheelchair at the hospital, a patient used his son's toy tricycle. Since hospital attendants were demanding ₹100–200 for a wheelchair, the patient's wife started bringing her son's tricycle to take her husband inside during visits. 40-year-old Raju suffered burn injuries from an electric shock last August and has been visiting the hospital regularly for treatment. His wife Santoshi said that because she could not afford to give 'tips' to wardboys, they refused to provide a wheelchair — so they had to use the tricycle to get around the hospital."
       ],
-      "tip": "Two news-based stories. Show images below."
+      "tip": "Two news-based stories. Show images below.",
+      "body_layout": "columns"
     },
     {
       "n": 4,
@@ -233,7 +234,9 @@
       "n": 14,
       "kind": "click_reveal",
       "title": "What value do we build through the choices we make?",
-      "prompts": ["Integrity — INTEGRITY"],
+      "prompts": [
+        "Integrity — INTEGRITY"
+      ],
       "tip": "After children answer, tap REVEAL (or press R). Show 'INTEGRITY'."
     },
     {
