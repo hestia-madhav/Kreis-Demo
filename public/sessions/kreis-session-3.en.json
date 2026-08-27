@@ -1,7 +1,7 @@
 {
   "id": "kreis-session-3",
   "_language": "en",
-  "_revision": "2026-07-20-en-translation",
+  "_revision": "2026-08-27-sp2-corrections",
   "title": "Children's Constitution Club — Session 3: Personal Integrity",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -146,8 +146,7 @@
       "body": [
         "Thank you! You all did very well in your groups!",
         "It's okay if you didn't finish. When we share with each other, all stories/scenarios will be discussed.",
-        "Quickly pick two stories/scenarios that you'd like to share with the whole class.",
-        "1-minute timer."
+        "Quickly pick two stories/scenarios that you'd like to share with the whole class."
       ],
       "tip": "1-minute timer. Each group must pick two stories."
     },
@@ -190,13 +189,14 @@
       "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
       "image": "/sessions/assets/reference/s3_image2.png",
       "title": "Rs 150 — What Would You Do?",
-      "tip": "Give children time to answer. If they're slow, press REVEAL/NEXT to show 'Choice'.",
       "intro_text": "A shopkeeper accidentally gives you Rs 150 extra change — what would you do?",
-      "post_video_text": [
+      "body": [
         "What do we call this act of making a decision?",
-        "It starts with the letter 'Ch'...",
-        "Choice — CHOICE"
-      ]
+        "It starts with the letter 'Ch'..."
+      ],
+      "post_video_text": "Choice — CHOICE",
+      "reveal_on_click": true,
+      "tip": "Give children time to answer. After the video, press REVEAL to show 'Choice'."
     },
     {
       "n": 11,
@@ -232,17 +232,14 @@
     },
     {
       "n": 13,
-      "kind": "static",
-      "image": "/sessions/assets/s3_integrity_reveal.jpg",
-      "title": "Behind the Choice — Integrity (INTEGRITY)",
+      "kind": "click_reveal",
+      "title": "What quality is missing behind the choice?",
       "body": [
         "What quality is missing behind the hospital staff's choice?"
       ],
-      "tip": "After children answer, press REVEAL/NEXT. Creatively reveal 'INTEGRITY'.",
-      "post_video_text": [
-        "INTEGRITY — Honesty / Trustworthiness",
-        "Our personal integrity can change thousands of situations like the ones you read about in the stories."
-      ]
+      "prompts": ["Integrity — INTEGRITY"],
+      "footer": "Our personal integrity can change thousands of situations like the ones you read about in the stories.",
+      "tip": "After children answer, tap REVEAL (or press R) to show 'INTEGRITY'."
     },
     {
       "n": 14,

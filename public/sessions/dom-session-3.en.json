@@ -1,7 +1,7 @@
 {
   "id": "dom-session-3",
   "_language": "en",
-  "_revision": "2026-07-20-dom-corrections",
+  "_revision": "2026-08-27-sp2-corrections",
   "title": "Children's Civic Club — Session 3: Personal Integrity",
   "programme": "DOM",
   "duration_estimate_minutes": 45,
@@ -79,7 +79,7 @@
     {
       "n": 3,
       "kind": "static",
-      "bullets_large": true,
+      "text_align": "left",
       "title": "Hospital Stories",
       "body": [
         "January 2019: Times of India, Chennai — Families of women who gave birth at a government hospital with free healthcare filed complaints today. They said they had to pay at least ₹3,500 in bribes to ward attendants, helpers, and other staff. The amount was even higher if a boy was born.",
@@ -90,6 +90,8 @@
     {
       "n": 4,
       "kind": "static",
+      "text_align": "left",
+      "bullets_large": true,
       "title": "Discussion",
       "body": [
         "Why do such things happen? How does this make you feel?",
@@ -198,13 +200,14 @@
       "title": "₹150 — What would you do?",
       "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
       "intro_text": "A shopkeeper mistakenly gives you ₹150 extra change. What would you do?",
-      "post_video_text": [
+      "body": [
         "What do we call this act of making a decision?",
-        "It starts with the letter C…",
-        "CHOICE"
+        "It starts with the letter C…"
       ],
+      "post_video_text": "CHOICE",
+      "reveal_on_click": true,
       "image": "/sessions/assets/reference/s3_image2.png",
-      "tip": "Give children time to answer. If they take too long, click REVEAL/NEXT to show CHOICE.",
+      "tip": "Give children time to answer. After the video, click REVEAL to show CHOICE.",
       "_bug": "Audio is not working in the Video pls fix it"
     },
     {
@@ -228,16 +231,10 @@
     },
     {
       "n": 14,
-      "kind": "static",
+      "kind": "click_reveal",
       "title": "What value do we build through the choices we make?",
-      "body": [
-        "What value do we build through the choices we make?"
-      ],
-      "post_video_text": [
-        "Integrity"
-      ],
-      "image": "/sessions/assets/s3_integrity_reveal.jpg",
-      "tip": "After children answer, click REVEAL/NEXT. Show 'INTEGRITY' creatively."
+      "prompts": ["Integrity — INTEGRITY"],
+      "tip": "After children answer, tap REVEAL (or press R). Show 'INTEGRITY'."
     },
     {
       "n": 15,
@@ -288,6 +285,8 @@
     {
       "n": 18,
       "kind": "static",
+      "text_align": "left",
+      "bullets_large": true,
       "title": "Two sides of a coin — Reflect",
       "body": [
         "What happens if we only look at one side of the coin?",
@@ -311,7 +310,7 @@
       "n": 20,
       "kind": "title",
       "title": "Thank you!",
-      "tip": "Check if change_champion_rules.mp4 video from Session 1 can be reused. If not, a new video is needed."
+      "tip": "Thank the children. End of session."
     }
   ]
 }
