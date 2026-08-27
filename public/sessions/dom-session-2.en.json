@@ -1,7 +1,7 @@
 {
   "id": "dom-session-2",
   "_language": "en",
-  "_revision": "2026-07-20-dom-corrections",
+  "_revision": "2026-08-27-sp2-corrections",
   "title": "Children's Civic Club — Session 2: Naming of Club and Launch Campaign",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
@@ -71,7 +71,7 @@
       "kind": "static",
       "title": "Club Naming & Launch Campaign",
       "centered": true,
-      "tip": "Introduce today's session title."
+      "tip": "Introduce today's session title. Display title in center of screen."
     },
     {
       "n": 3,
@@ -95,9 +95,7 @@
         "What name would you like to give your club?",
         "Think about the club's purpose, think creatively about active citizenship, and suggest inspiring, effective names."
       ],
-      "tip": "Write students' suggestions on the blackboard.",
-      "image": "/sessions/assets/s2_naming_of_club.png",
-      "image_layout": "side"
+      "tip": "Write students' suggestions on the blackboard."
     },
     {
       "n": 5,
@@ -119,6 +117,8 @@
       "body": [
         "Raise hands for each name and count the votes."
       ],
+      "image": "/sessions/assets/s2_naming_of_club.png",
+      "image_layout": "side",
       "tip": "Conduct the vote. Each child gets only one vote."
     },
     {
@@ -148,6 +148,7 @@
     {
       "n": 9,
       "kind": "static",
+      "text_align": "left",
       "title": "Committee formation",
       "body": [
         "Let's now select our class leader and the core committee for the club.",
@@ -169,10 +170,8 @@
     {
       "n": 11,
       "kind": "static",
+      "centered": true,
       "title": "What qualities should an ideal representative have?",
-      "body": [
-        "Before we go to the election, think — what qualities should an ideal representative have?"
-      ],
       "tip": "Give children time to answer. Then proceed to the video questions."
     },
     {
@@ -209,13 +208,13 @@
     {
       "n": 13,
       "kind": "static",
+      "text_align": "left",
       "title": "Let's prepare our committee!",
       "body": [
         "Steps to follow:",
         "Your first step is to choose one person from your group to be part of the Core Committee.",
         "You have 2 minutes!"
       ],
-      "audio": "/sessions/assets/timer_2min_ping.mp3",
       "tip": "2 minute timer needed. Reminder sound at 1 minute."
     },
     {
@@ -228,8 +227,7 @@
         "You have time to tell us why the Club should elect you."
       ],
       "image": "/sessions/assets/s2_candidates_election.jpg",
-      "audio": "/sessions/assets/applause_short.mp3",
-      "tip": "Applause. Give each candidate 30 seconds to speak."
+      "tip": "Give each candidate 30 seconds to speak."
     },
     {
       "n": 15,
@@ -261,7 +259,7 @@
         "Congratulations to our president and core committee!",
         "Now it's time for all of us to work together!"
       ],
-      "audio": "/sessions/assets/cheer_applause.mp3",
+      "audio": "/sessions/assets/applause_short.mp3",
       "tip": "If it gets noisy, use the calmers from Session 1."
     },
     {
@@ -269,12 +267,15 @@
       "kind": "static",
       "title": "I Am The Change",
       "body": [
-        "Club Launch Campaign",
-        "\"I AM THE CHANGE\"",
-        "CLUB LAUNCH CAMPAIGN"
+        "Club Launch Campaign"
       ],
-      "centered": true,
-      "tip": "Introduce the club launch campaign."
+      "images": [
+        { "src": "/sessions/assets/reference/s2_image7.png", "alt": "campaign option 1" },
+        { "src": "/sessions/assets/reference/s2_image6.png", "alt": "campaign option 2" },
+        { "src": "/sessions/assets/reference/s2_image3.png", "alt": "campaign option 3" }
+      ],
+      "image_layout": "stack",
+      "tip": "Show campaign examples. Introduce the club launch campaign."
     },
     {
       "n": 19,

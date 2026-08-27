@@ -82,6 +82,7 @@ interface Slide {
   thank_you?: boolean; // if true, branded title slide renders the "Thank You" closing variant
   closing_line?: string; // AKG/Savitha 16 Jun: small Kannada closing line under the title — used on each session's final slide
   centered?: boolean; // hint to the renderer to centre this slide's content (used mainly on title cards)
+  text_align?: "left" | "center"; // override body text alignment for static slides
   pause_at?: number[];      // for video slides — pause at these timecodes (seconds) for class discussion. Slide 9: [8,16,24,32,40].
   pause_duration?: number;  // seconds to hold each pause (default 5)
   body_layout?: "grid" | "numbered"; // "grid" = 2x2 card grid (category tables), "numbered" = numbered colored cards (discussion Qs)
@@ -353,6 +354,8 @@ export default function SessionRunner({ sessions, onEvent }: Props) {
             "sr-canvas",
             (slide.kind === "static" || slide.kind === "reflect_share") ? "is-projector" : "",
             (slide.kind === "video" || slide.kind === "mc_narration") ? "is-video-slide" : "",
+            slide.centered ? "is-vcenter" : "",
+            slide.text_align === "left" ? "is-left-align" : "",
           ].filter(Boolean).join(" ")}
         >
           {slide.kind !== "title" && (
@@ -1555,6 +1558,10 @@ const styles = `
      topbar regardless of body length. Short slides get breathing room as
      bottom whitespace instead of dead space above. */
   .sr-canvas.is-projector { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; text-align: center; padding-top: 24px; }
+  .sr-canvas.is-vcenter { justify-content: center; padding-top: 0; }
+  .sr-canvas.is-left-align .sr-slide-body,
+  .sr-canvas.is-left-align .sr-line,
+  .sr-canvas.is-left-align .sr-bullets-lg { text-align: left; }
   .sr-canvas.is-projector .sr-section-crumb { align-self: center; }
   .sr-canvas.is-projector .sr-title { font-size: 40px; text-align: center; margin: 6px 0 10px; }
   .sr-canvas.is-projector .sr-accent { margin: 0 auto 24px; }
