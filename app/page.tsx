@@ -31,15 +31,15 @@ const PROGRAMMES: Programme[] = [
       kn: "ಕರ್ನಾಟಕ ವಸತಿ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳ ಸಂಘ — ಕರ್ನಾಟಕಾದ್ಯಂತ 484 ವಸತಿ ಶಾಲೆಗಳು",
     },
     href: "/kreis",
-    sessions: { en: "3 sessions", kn: "3 ಅವಧಿಗಳು" },
+    sessions: { en: "6 sessions", kn: "6 ಅವಧಿಗಳು" },
     status: "Live for pilot",
   },
   {
     id: "dom",
     name: "DOM",
     clubLabel: {
-      en: "Children's Civic Club",
-      kn: "ಪೌರ ಕ್ಲಬ್",
+      en: "Children's Nagarika Club",
+      kn: "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್",
     },
     colour: "#0EA5E9",
     bgAccent: "rgba(14, 165, 233, 0.10)",

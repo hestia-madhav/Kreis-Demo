@@ -21,12 +21,12 @@ const SESSIONS: SessionEntry[] = [
     id: "dom-session-1",
     number: 1,
     title: {
-      en: "Welcome to the Children's Civic Club",
-      kn: "ಪೌರ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
+      en: "Welcome to the Children's Nagarika Club",
+      kn: "ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
     },
     subtitle: {
-      en: "Introductions · Calmers · Group formation · Civic connect · Club rules",
-      kn: "ಪರಿಚಯ · ಶಾಂತಗೊಳಿಸುವಿಕೆ · ಗುಂಪು ರಚನೆ · ಪೌರ ಸಂಪರ್ಕ · ಕ್ಲಬ್ ನಿಯಮಗಳು",
+      en: "Introductions · Calmers · Group formation · Nagarika connect · Club rules",
+      kn: "ಪರಿಚಯ · ಶಾಂತಗೊಳಿಸುವಿಕೆ · ಗುಂಪು ರಚನೆ · ನಾಗರಿಕ ಸಂಪರ್ಕ · ಕ್ಲಬ್ ನಿಯಮಗಳು",
     },
     status: "in_progress",
     durationMin: 60,
@@ -34,9 +34,9 @@ const SESSIONS: SessionEntry[] = [
       "✅ Source deck (English draft from CMCA)",
       "✅ Structural mapping to KREIS Session 1 completed",
       "✅ Player JSON built (en + kn)",
-      "✅ Naming corrected: ಪೌರ ಕ್ಲಬ್ (Children's Civic Club)",
+      "✅ Naming corrected: ನಾಗರಿಕ ಕ್ಲಬ್ (Children's Nagarika Club)",
       "✅ 16th July corrections applied",
-      "🔴 MC intro video re-record (says 'Constitution Club', needs 'Civic Club')",
+      "🔴 MC intro video re-record (says 'Constitution Club', needs 'Nagarika Club')",
       "🔴 State-specific content variants (Odisha local stories per Ramya)",
     ],
   },
@@ -117,27 +117,27 @@ const DOM_COLOUR = "#0EA5E9";
 const STRINGS = {
   en: {
     back: "← All programmes",
-    badge: "DOM · Children's Civic Club",
+    badge: "DOM · Children's Nagarika Club",
     heading: "DOM Session Player",
     subheading:
-      "Interactive Children's Civic Club sessions for the Department of Minorities schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha. Pick a session below to review the draft.",
+      "Interactive Children's Nagarika Club sessions for the Department of Minorities schools — 350+ schools across Karnataka, Andhra Pradesh, and Odisha. Pick a session below to review the draft.",
     sessionLabel: "Session",
     durationSuffix: "min",
     productionStatus: "Production status",
     reviewDraft: "Review draft session →",
-    footer: "DOM · Children's Civic Club · CMCA India",
+    footer: "DOM · Children's Nagarika Club · CMCA India",
   },
   kn: {
     back: "← ಎಲ್ಲಾ ಕಾರ್ಯಕ್ರಮಗಳು",
-    badge: "DOM · ಪೌರ ಕ್ಲಬ್",
+    badge: "DOM · ನಾಗರಿಕ ಕ್ಲಬ್",
     heading: "DOM ಅವಧಿ ಪ್ಲೇಯರ್",
     subheading:
-      "ಅಲ್ಪಸಂಖ್ಯಾತರ ಇಲಾಖೆ ಶಾಲೆಗಳಿಗಾಗಿ ಸಂವಾದಾತ್ಮಕ ಪೌರ ಕ್ಲಬ್ ಅವಧಿಗಳು — ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ಒಡಿಶಾದಲ್ಲಿ 350+ ಶಾಲೆಗಳು. ಕರಡು ಪರಿಶೀಲಿಸಲು ಅವಧಿ ಆಯ್ಕೆಮಾಡಿ.",
+      "ಅಲ್ಪಸಂಖ್ಯಾತರ ಇಲಾಖೆ ಶಾಲೆಗಳಿಗಾಗಿ ಸಂವಾದಾತ್ಮಕ ನಾಗರಿಕ ಕ್ಲಬ್ ಅವಧಿಗಳು — ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ಒಡಿಶಾದಲ್ಲಿ 350+ ಶಾಲೆಗಳು. ಕರಡು ಪರಿಶೀಲಿಸಲು ಅವಧಿ ಆಯ್ಕೆಮಾಡಿ.",
     sessionLabel: "ಅವಧಿ",
     durationSuffix: "ನಿಮಿಷ",
     productionStatus: "ಉತ್ಪಾದನೆ ಸ್ಥಿತಿ",
     reviewDraft: "ಕರಡು ಅವಧಿ ಪರಿಶೀಲಿಸಿ →",
-    footer: "DOM · ಪೌರ ಕ್ಲಬ್ · CMCA India",
+    footer: "DOM · ನಾಗರಿಕ ಕ್ಲಬ್ · CMCA India",
   },
 } as const;
 

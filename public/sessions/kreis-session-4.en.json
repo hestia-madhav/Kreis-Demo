@@ -1,7 +1,7 @@
 {
-  "id": "dom-session-4",
+  "id": "kreis-session-4",
   "_language": "en",
-  "_revision": "2026-08-18-from-ppt-v2-11aug",
+  "_revision": "2026-08-28-ppt-v2-gap-fix",
   "title": "Session 4: Child Rights",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -101,6 +101,7 @@
       ],
       "audio": "/sessions/assets/s4_ajay_story.kn.mp3",
       "image": "/sessions/assets/s4_puppy_stuck_in_ditch.jpg",
+      "image_layout": "side",
       "tip": "Play the audio. Students follow the story on screen."
     },
     {
@@ -125,6 +126,8 @@
         "Handouts will be distributed to each group. If there are 6 groups, some handouts will be repeated.",
         "After 5 minutes, groups must exchange their paper handouts with the neighbouring group."
       ],
+      "image": "/sessions/assets/s4_annexure2_handouts.png",
+      "image_layout": "side",
       "tip": "Distribute Annexure 2 handouts to each group."
     },
     {
@@ -168,23 +171,27 @@
       "title": "Four Categories of Child Rights",
       "items": [
         {
-          "label": "Right to Survival",
-          "detail": "Every child has the right to nutritious food, clean water, healthcare, rest, sleep, and a safe place to live."
+          "label": "FC-1: Right to Survival",
+          "detail": "Every child has the right to nutritious food, clean water, healthcare, rest, sleep, and a safe place to live.",
+          "color": "#6A2C91"
         },
         {
-          "label": "Right to Development",
-          "detail": "Opportunities for education and emotional, mental, and physical growth."
+          "label": "FC-2: Right to Development",
+          "detail": "Opportunities for education and emotional, mental, and physical growth.",
+          "color": "#2E8B4F"
         },
         {
-          "label": "Right to Participation",
-          "detail": "The right to share feelings and thoughts, ask questions, and participate in decisions that affect them."
+          "label": "FC-3: Right to Participation",
+          "detail": "The right to share feelings and thoughts, ask questions, and participate in decisions that affect them.",
+          "color": "#1E3A6E"
         },
         {
-          "label": "Right to Protection",
-          "detail": "The right to be protected from harm and ill-treatment by anyone."
+          "label": "FC-4: Right to Protection",
+          "detail": "The right to be protected from harm and ill-treatment by anyone.",
+          "color": "#C2185B"
         }
       ],
-      "tip": "Click to reveal each category one by one. Ask students to read out the relevant flash card.",
+      "tip": "Click to reveal each category one by one. Ask students to read out the relevant flash card. Mapping: Handout 1 → Survival, Handout 2 → Protection, Handout 3 → Participation, Handout 4 → Development.",
       "images": [
         {
           "src": "/sessions/assets/s4_flash_card_survival-a.jpeg",
