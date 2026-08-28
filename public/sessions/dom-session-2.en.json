@@ -61,7 +61,7 @@
     {
       "n": 1,
       "kind": "static",
-      "title": "Welcome to the Civic Club!",
+      "title": "Welcome to the Nagarika Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/dom_seal.jpeg",
       "tip": "Play welcome music. Make sure all children are seated."
@@ -126,7 +126,7 @@
       "kind": "static",
       "title": "And… your club name is…?",
       "body": [
-        "______________ Civic Club….",
+        "______________ Nagarika Club….",
         "Remember, the power to bring change lies within you!"
       ],
       "audio": "/sessions/assets/drum_roll_applause.mp3",

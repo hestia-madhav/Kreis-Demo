@@ -1,7 +1,7 @@
 {
-  "id": "kreis-session-4",
+  "id": "dom-session-4",
   "_language": "en",
-  "_revision": "2026-07-11-en-from-irfan-kn",
+  "_revision": "2026-08-18-from-ppt-v2-11aug",
   "title": "Session 4: Child Rights",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -23,37 +23,36 @@
     },
     {
       "id": "ajay_story",
-      "label": "Ajay's Story",
+      "label": "Ajay's Story & Discussion",
       "slides": [
         4,
-        5,
-        6
+        5
       ]
     },
     {
       "id": "child_rights",
       "label": "Child Rights & Responsibilities",
       "slides": [
+        6,
         7,
-        8,
         9,
         10,
-        11
+        11,
+        12
       ]
     },
     {
-      "id": "childline_reflection",
-      "label": "ChildLine & Reflection",
+      "id": "protection_reflection",
+      "label": "Protection Message & Reflection",
       "slides": [
-        12,
-        13
+        13,
+        14
       ]
     },
     {
-      "id": "mgs_wrapup",
-      "label": "MGS Introduction & Wrap-up",
+      "id": "wrapup",
+      "label": "Wrap-up",
       "slides": [
-        14,
         15
       ]
     }
@@ -72,10 +71,8 @@
       "kind": "static",
       "title": "Setting Up the Change Champion Zone",
       "body": [
-        "Now that you have prepared the box, please hand it over to me.",
-        "I will place it in a corner at the front of the classroom.",
-        "It is everyone's responsibility to make sure this box is not lost or moved elsewhere.",
-        "Each Core Committee member should take on the responsibility of reminding the teacher to read the change stories from the box.",
+        "Keep the Change Champion Box in one corner of the class.",
+        "Core Committee members should take on the responsibility of reminding the teacher to open the box and share the stories.",
         "Let us all encourage each other to bring about change!"
       ],
       "tip": "Collect the box and place it at the front of the class."
@@ -85,21 +82,22 @@
       "kind": "static",
       "title": "Change Stories",
       "body": [
-        "Hey CMCA Champions! Do you have any change stories to share? Maybe you helped someone, solved a problem, showed kindness, or took a small step to make a situation better.",
-        "If you have such a story, write it on a slip of paper and put it in the Change Champion Box!",
-        "If you don't have a story yet, that's okay! You can bring about a change anytime, notice the difference it makes, and then share your story with us later.",
-        "Remember, every big change begins with a small action!",
-        "So come forward, create small ripples of change, and don't forget to tell us about them!"
+        "[Video pending — MC narration to be recorded]",
+        "Hey CMCA Champions! Do you have a story of change to share? Maybe you helped someone, solved a problem, showed kindness, or took a small step to make things better.",
+        "If you do, write your story on a slip of paper and drop it into the Change Champion Box!",
+        "And if you don't have a story yet, that's okay too! You can always create a change, notice the difference it makes, and then share your story with us later.",
+        "Remember, every big change starts with one small action!",
+        "So go out there, create some ripples, and don't forget to tell us all about them!"
       ],
-      "tip": "If students have stories ready, ask them to put them in the CC Box."
+      "tip": "If students have stories in their hands, ask them to drop their stories in the CC box."
     },
     {
       "n": 4,
       "kind": "static",
       "title": "Ajay's Story",
       "body": [
-        "While Ajay was playing cricket with some friends, he suddenly heard a painful sound. He traced it to a nearby pit. A puppy was stuck there and could not get out. The pit was too deep for him to pull the puppy out.",
-        "The boy quickly ran home and asked his father to call the animal rescue helpline. While waiting for help, he stayed near the pit trying to calm the puppy. After 20 minutes, the animal rescue team arrived and safely brought the puppy out."
+        "While Ajay was playing cricket with some of his friends, he suddenly heard a dog's cry. He quickly traced it to a nearby ditch. A puppy was trapped and could not get out.",
+        "The boy ran home and asked his father to call the animal rescue helpline. He stayed near the ditch to calm the puppy until the rescuers arrived. After 20 minutes, the rescue team came and safely lifted the puppy out."
       ],
       "audio": "/sessions/assets/s4_ajay_story.kn.mp3",
       "image": "/sessions/assets/s4_puppy_stuck_in_ditch.jpg",
@@ -108,154 +106,158 @@
     {
       "n": 5,
       "kind": "static",
-      "title": "Reflecting on Ajay's Story",
+      "title": "Discussion on Ajay's Story",
+      "body_layout": "numbered",
       "body": [
-        "How did this story make you feel? Did it make you happy, sad, surprised, or thoughtful?",
-        "Animals may not be able to speak like us, but they too have rights! Can anyone tell some of those rights?",
-        "They are: the right to food, the right to medical care, the right to compassion, and the right to shelter."
+        "What did you feel about the story?",
+        "What are some of the rights of animals?",
+        "Have you or anyone around you ever helped an animal?"
       ],
-      "tip": "Pause 10 seconds for responses after each question."
+      "tip": "Get responses from 2-3 students for each question."
     },
     {
       "n": 6,
       "kind": "static",
-      "title": "Reflecting on Ajay's Story",
+      "title": "Picture-Cue Activity Introduction",
       "body": [
-        "Can you share an instance when you have helped animals?",
-        "It could be something as simple as feeding a dog, keeping water out for birds, helping an injured or sick animal, or supporting an animal shelter with your family."
+        "Are you all seated in your groups? Now, here's a fun challenge for your groups!",
+        "Look at the pictures, discuss in your groups, and guess the rights and responsibilities — write them on paper.",
+        "Handouts will be distributed to each group. If there are 6 groups, some handouts will be repeated.",
+        "After 5 minutes, groups must exchange their paper handouts with the neighbouring group."
       ],
-      "tip": "Get answers from 2-3 students."
+      "tip": "Distribute Annexure 2 handouts to each group."
     },
     {
       "n": 7,
-      "kind": "static",
-      "title": "Child Rights & Responsibilities",
-      "body": [
-        "Today let us understand the 'rights' that are reserved especially for you as children.",
-        "Of course, with every right comes...? Yes, you said it right — responsibilities!",
-        "So today we will look at both child rights and responsibilities."
-      ],
-      "tip": "Pause 4 seconds for the answer 'responsibilities'."
+      "kind": "group_activity_timer",
+      "title": "Group Activity — List Rights & Responsibilities",
+      "brief": "Look at all the pictures, discuss in your groups, and list child rights and responsibilities. After 5 minutes, exchange your handout with the neighbouring group.",
+      "timer_seconds": 600,
+      "reminder_at": 300,
+      "tip": "Walk around all groups to ensure every member is participating. Draw 4 boxes on the board labelled Survival, Protection, Development, and Participation.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
     },
     {
       "n": 8,
       "kind": "static",
-      "title": "Introduction to Child Rights",
+      "title": "Write on the Board",
+      "body_layout": "grid",
       "body": [
-        "Are you all seated in your groups? Now, I have a fun challenge for your groups!",
-        "We are going to guess some rights and responsibilities by looking at picture clues.",
-        "It will be like a picture quiz! But there's a special twist here...",
-        "The rights we will explore today are not just ordinary rights. They are special rights guaranteed to all children.",
-        "Do you know what they are called?",
-        "That's right! They are called Child Rights!"
+        "Survival: (Children write rights they found under this category)",
+        "Protection: (Children write rights they found under this category)",
+        "Development: (Children write rights they found under this category)",
+        "Participation: (Children write rights they found under this category)"
       ],
-      "tip": "Pause 3 seconds for the answer 'Child Rights'."
+      "tip": "Draw 4 boxes on the board. Each group writes their rights under the relevant category."
     },
     {
       "n": 9,
-      "kind": "group_activity_timer",
-      "title": "Group Work — Guess Rights from Pictures",
-      "brief": "Look at all the pictures in the handout, discuss in your groups, and list child rights and responsibilities. Write as clearly as possible.",
-      "timer_seconds": 300,
-      "reminder_at": 60,
-      "tip": "Distribute handouts to each group. 5 minute timer.",
-      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
-      "image": "/sessions/assets/s4_child_rights_handout.jpeg"
-    },
-    {
-      "n": 10,
-      "kind": "group_activity_timer",
-      "title": "Group Work — Swap Sheets",
-      "brief": "Exchange your sheet with the group next to you. Look at the pictures in the other group's sheet and try to add any child rights or responsibilities they may have missed.",
-      "timer_seconds": 300,
-      "reminder_at": 60,
-      "tip": "Draw 4 boxes on the board labelled SURVIVAL, PARTICIPATION, DEVELOPMENT, and PROTECTION. Keep flash cards ready.",
-      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
-    },
-    {
-      "n": 11,
       "kind": "static",
       "title": "Child Rights & the UN Convention",
       "body": [
-        "We are now going to share the work we did in our groups. But before that, can anyone tell what you understand by the term 'Child Rights'?",
-        "Every child from birth until they turn 18 is guaranteed child rights. These rights protect children and help them receive nutritious food, good healthcare, rest, and education.",
-        "Look at the board! These rights can be divided into four major categories:",
-        "Survival, Protection, Development, and Participation.",
-        "What do you understand by Survival Rights, and why are they important?",
-        "What do you understand by Protection Rights, and why are they important?",
-        "What do you understand by Development Rights, and why are they important?",
-        "What do you understand by Participation Rights, and why are they important?"
+        "[Video pending — MC narration to be recorded]",
+        "We are now going to share the work we did in our groups. But before that, can some of you tell me what you understand by the term 'Child Rights'?",
+        "Every child from birth until 18 years of age is guaranteed child rights. These rights protect children and help them receive nutritious food, good healthcare, rest, and education.",
+        "Look at the board! These rights can be divided into four major categories: Survival, Protection, Development, and Participation."
       ],
-      "tip": "Write the rights under each category on the board. Ask students to hold up the flash cards.",
+      "tip": "Pause 10 seconds for responses."
+    },
+    {
+      "n": 10,
+      "kind": "click_reveal",
+      "title": "Four Categories of Child Rights",
+      "items": [
+        {
+          "label": "Right to Survival",
+          "detail": "Every child has the right to nutritious food, clean water, healthcare, rest, sleep, and a safe place to live."
+        },
+        {
+          "label": "Right to Development",
+          "detail": "Opportunities for education and emotional, mental, and physical growth."
+        },
+        {
+          "label": "Right to Participation",
+          "detail": "The right to share feelings and thoughts, ask questions, and participate in decisions that affect them."
+        },
+        {
+          "label": "Right to Protection",
+          "detail": "The right to be protected from harm and ill-treatment by anyone."
+        }
+      ],
+      "tip": "Click to reveal each category one by one. Ask students to read out the relevant flash card.",
       "images": [
         {
-          "src": "/sessions/assets/s4_flash_card_survival.jpeg",
+          "src": "/sessions/assets/s4_flash_card_survival-a.jpeg",
           "alt": "Survival Rights flash card",
           "caption": "Survival"
         },
         {
-          "src": "/sessions/assets/s4_flash_card_protection.jpeg",
-          "alt": "Protection Rights flash card",
-          "caption": "Protection"
-        },
-        {
-          "src": "/sessions/assets/s4_flash_card_development.jpeg",
+          "src": "/sessions/assets/s4_flash_card_development-a.jpeg",
           "alt": "Development Rights flash card",
           "caption": "Development"
         },
         {
-          "src": "/sessions/assets/s4_flash_card_participation.jpeg",
+          "src": "/sessions/assets/s4_flash_card_participation-a.jpeg",
           "alt": "Participation Rights flash card",
           "caption": "Participation"
+        },
+        {
+          "src": "/sessions/assets/s4_flash_card_protection-a.jpeg",
+          "alt": "Protection Rights flash card",
+          "caption": "Protection"
         }
       ]
     },
     {
+      "n": 11,
+      "kind": "static",
+      "title": "Details of Each Category",
+      "body_layout": "grid",
+      "body": [
+        "Right to Survival: Right to birth, minimum standard of food, shelter and clothing, right to live with dignity, right to healthcare, safe drinking water, nutritious food, clean environment.",
+        "Right to Protection: Protection from all forms of violence, protection from neglect, protection from physical and sexual abuse, protection from dangerous substances.",
+        "Right to Participation: Freedom of opinion, freedom of expression, freedom of association, right to information, right to participate in decisions affecting them.",
+        "Right to Development: Right to education (a fundamental right in the Constitution), right to learn, right to rest and play, right to emotional, mental, and physical growth."
+      ],
+      "tip": "After each group reads their rights, read the relevant flash card."
+    },
+    {
       "n": 12,
       "kind": "static",
-      "title": "ChildLine",
+      "title": "Right to Protection — Important Message",
       "body": [
-        "If you or a child you know ever needs help, including issues like child labour or child marriage, you can call 1098 (ChildLine) or talk to an adult you trust for support."
+        "You have the right to be protected from sexual abuse. This means no one has the right to touch you, kiss you, or force you to use your body in a way that makes you feel unsafe or uncomfortable, without your permission.",
+        "Even if someone tells you to keep it a secret, threatens you, or tries to force you, it is wrong.",
+        "If such an incident ever happens, remember this: It is not your fault. Immediately tell a trusted adult, or call 1098 (ChildLine)."
       ],
-      "tip": "Write 1098 ChildLine number on the board.",
+      "image": "/sessions/assets/s4_childline_1098.png",
+      "tip": "Read this slide seriously. Write 1098 ChildLine number on the board.",
       "image_layout": "side"
     },
     {
       "n": 13,
       "kind": "reflect_share",
-      "title": "Reflection",
+      "title": "Reflection Circle",
       "body": [
-        "Take a sheet of paper. Answer a few simple questions honestly."
+        "Take a sheet of paper. Write your answers to the following questions and put them in the Change Champion Box."
       ],
       "questions": [
         "Which child right do you like the most?",
-        "Do you feel you receive this right in your life?",
-        "Do you feel all children receive this right?",
-        "What is one thing you can do to support this right for yourself or others?"
+        "Do you feel this right exists in your life?",
+        "Do you feel all children are getting this right?",
+        "What is one thing you can do to support this right?"
       ],
-      "tip": "Display questions one by one. Click 'next' after all answers."
+      "tip": "Display questions one by one. Ask students to put answers in the CC box."
     },
     {
       "n": 14,
       "kind": "static",
-      "title": "Introduction to Makkala Grama Sabha",
+      "title": "Every Small Step Matters",
       "body": [
-        "Have you ever participated in any meeting where adults really listen to children?",
-        "Did you know there is a special meeting just for children? It is called the Makkala Grama Sabha.",
-        "Here children talk about issues related to them like school, safety, and play!",
-        "If you got a chance to speak at that meeting, what would you like to tell your village leaders?"
+        "Change begins with us.",
+        "Thank you — let us encourage each other to be the change!"
       ],
-      "tip": "Show MGS images. Pause for children's responses.",
-      "images": [
-        {
-          "src": "/sessions/assets/s4_mgs_photo_1.jpeg",
-          "alt": "Makkala Grama Sabha meeting"
-        },
-        {
-          "src": "/sessions/assets/s4_mgs_photo_2.jpeg",
-          "alt": "Children at Makkala Grama Sabha"
-        }
-      ]
+      "tip": "Encourage students to clap."
     },
     {
       "n": 15,

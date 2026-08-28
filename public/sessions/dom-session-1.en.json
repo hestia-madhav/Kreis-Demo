@@ -104,7 +104,7 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "Welcome to the Civic Club!",
+      "title": "Welcome to the Nagarika Club!",
       "subtitle": "DOM × CMCA",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
@@ -116,7 +116,7 @@
       "title": "Teacher introduces themselves",
       "body": [
         "My name is ____",
-        "I am your Civic Club teacher",
+        "I am your Nagarika Club teacher",
         "Something I like / something I don't:"
       ],
       "tip": "Introduce yourself. Share one thing you like and one you don't — model openness."
@@ -126,7 +126,7 @@
       "kind": "mc_narration",
       "title": "Master Change introduces himself",
       "video": "/sessions/assets/mc_intro.kn.mp4",
-      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Civic Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Children's Civic Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Civic Club — the CC Club!",
+      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Nagarika Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Children's Nagarika Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Nagarika Club — the CC Club!",
       "tip": "Play the full MC video."
     },
     {
@@ -355,14 +355,14 @@
       "kind": "mc_narration",
       "title": "Dr. B. R. Ambedkar and the Constituent Assembly",
       "video": "/sessions/assets/mc_who_inspires.kn.mp4",
-      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Civic Club's learning journey by all of us together reading the Preamble.",
+      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Nagarika Club's learning journey by all of us together reading the Preamble.",
       "tip": "Play the video. Pause for guesses on who inspires us."
     },
     {
       "n": 21,
       "kind": "mcq",
       "title": "Civic Connect Question",
-      "scenario": "Why does our school have a Civic Club?",
+      "scenario": "Why does our school have a Nagarika Club?",
       "options": [
         "Just to play games",
         "To learn about rights, responsibilities, and democracy",
@@ -376,7 +376,7 @@
       "n": 22,
       "kind": "mcq",
       "title": "Civic Connect Question",
-      "scenario": "What is a campaign in the Civic Club?",
+      "scenario": "What is a campaign in the Nagarika Club?",
       "options": [
         "A way to raise awareness about a problem and bring change",
         "A prize-winning competition",
@@ -390,7 +390,7 @@
       "n": 23,
       "kind": "mcq",
       "title": "Civic Connect Question",
-      "scenario": "Which is a key value in the Civic Club?",
+      "scenario": "Which is a key value in the Nagarika Club?",
       "options": [
         "Ignoring others' ideas",
         "Respecting everyone's voice",
@@ -405,7 +405,7 @@
       "kind": "static",
       "title": "Ripples of Change",
       "body": [
-        "Let us hear the story of Asfiya, a member of the Civic Club. Her small efforts led to positive change in her school, her town, and beyond."
+        "Let us hear the story of Asfiya, a member of the Nagarika Club. Her small efforts led to positive change in her school, her town, and beyond."
       ],
       "tip": "Tell the children: one small effort can become a ripple of change. Asfiya's story is next — about 3 minutes."
     },
@@ -416,7 +416,7 @@
       "video": "/sessions/assets/asfiya_story.mp4",
       "duration_seconds": 63,
       "tip": "Play uninterrupted. After it ends, get children's reactions.",
-      "transcript": "Asfiya was a member of the Children's Civic Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱"
+      "transcript": "Asfiya was a member of the Children's Nagarika Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱"
     },
     {
       "n": 26,
@@ -429,9 +429,9 @@
     {
       "n": 27,
       "kind": "title",
-      "title": "Civic Club",
+      "title": "Nagarika Club",
       "thank_you": true,
-      "closing_line": "Today our Civic Club journey has had a great start. See you again in the next session.",
+      "closing_line": "Today our Nagarika Club journey has had a great start. See you again in the next session.",
       "centered": true,
       "image": "/sessions/assets/dom_seal.jpeg",
       "audio": "/sessions/assets/welcome_music.mp3",

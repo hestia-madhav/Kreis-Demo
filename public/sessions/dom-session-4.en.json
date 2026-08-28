@@ -26,16 +26,15 @@
       "label": "Ajay's Story & Discussion",
       "slides": [
         4,
-        5,
-        6
+        5
       ]
     },
     {
       "id": "child_rights",
       "label": "Child Rights & Responsibilities",
       "slides": [
+        6,
         7,
-        8,
         9,
         10,
         11,
@@ -62,7 +61,7 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "Welcome to the Children's Civic Club!",
+      "title": "Welcome to the Children's Nagarika Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
       "tip": "Play welcome music. Confirm everyone is seated in groups."
@@ -83,6 +82,7 @@
       "kind": "static",
       "title": "Change Stories",
       "body": [
+        "[Video pending — MC narration to be recorded]",
         "Hey CMCA Champions! Do you have a story of change to share? Maybe you helped someone, solved a problem, showed kindness, or took a small step to make things better.",
         "If you do, write your story on a slip of paper and drop it into the Change Champion Box!",
         "And if you don't have a story yet, that's okay too! You can always create a change, notice the difference it makes, and then share your story with us later.",
@@ -118,17 +118,6 @@
     {
       "n": 6,
       "kind": "static",
-      "title": "Child Rights & Responsibilities",
-      "body": [
-        "Today let us understand the 'rights' that are reserved especially for you as children.",
-        "Of course, with every right comes...? Yes, you said it right — responsibilities!",
-        "So today we will look at both child rights and responsibilities."
-      ],
-      "tip": "Pause 4 seconds for the answer 'responsibilities'."
-    },
-    {
-      "n": 7,
-      "kind": "static",
       "title": "Picture-Cue Activity Introduction",
       "body": [
         "Are you all seated in your groups? Now, here's a fun challenge for your groups!",
@@ -139,21 +128,34 @@
       "tip": "Distribute Annexure 2 handouts to each group."
     },
     {
-      "n": 8,
+      "n": 7,
       "kind": "group_activity_timer",
       "title": "Group Activity — List Rights & Responsibilities",
       "brief": "Look at all the pictures, discuss in your groups, and list child rights and responsibilities. After 5 minutes, exchange your handout with the neighbouring group.",
       "timer_seconds": 600,
       "reminder_at": 300,
       "tip": "Walk around all groups to ensure every member is participating. Draw 4 boxes on the board labelled Survival, Protection, Development, and Participation.",
-      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
-      "image": "/sessions/assets/s4_child_rights_handout.jpeg"
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Write on the Board",
+      "body_layout": "grid",
+      "body": [
+        "Survival: (Children write rights they found under this category)",
+        "Protection: (Children write rights they found under this category)",
+        "Development: (Children write rights they found under this category)",
+        "Participation: (Children write rights they found under this category)"
+      ],
+      "tip": "Draw 4 boxes on the board. Each group writes their rights under the relevant category."
     },
     {
       "n": 9,
       "kind": "static",
       "title": "Child Rights & the UN Convention",
       "body": [
+        "[Video pending — MC narration to be recorded]",
         "We are now going to share the work we did in our groups. But before that, can some of you tell me what you understand by the term 'Child Rights'?",
         "Every child from birth until 18 years of age is guaranteed child rights. These rights protect children and help them receive nutritious food, good healthcare, rest, and education.",
         "Look at the board! These rights can be divided into four major categories: Survival, Protection, Development, and Participation."
