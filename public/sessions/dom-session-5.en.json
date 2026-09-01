@@ -1,0 +1,239 @@
+{
+  "id": "dom-session-5",
+  "_language": "en",
+  "_revision": "2026-09-02-ppt-v2-condensed",
+  "title": "Session 5: Active Citizens & Helplines",
+  "programme": "DOM",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "slides": [1]
+    },
+    {
+      "id": "roc_stories",
+      "label": "ROC Stories",
+      "slides": [2, 3, 4]
+    },
+    {
+      "id": "local_govt",
+      "label": "Local Government",
+      "slides": [5, 6, 7, 8, 9, 10]
+    },
+    {
+      "id": "helplines",
+      "label": "Helpline Numbers",
+      "slides": [11, 12, 13]
+    },
+    {
+      "id": "wrap_up",
+      "label": "Wrap-up & Ripple Task",
+      "slides": [14, 15, 16, 17]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to the Children's Nagarika Club!",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Play welcome music."
+    },
+    {
+      "n": 2,
+      "kind": "group_activity_timer",
+      "title": "ROC Stories — Read",
+      "brief": "Let us start the session by reading some interesting stories! Read the stories in your groups. You have 3 minutes.",
+      "timer_seconds": 180,
+      "reminder_at": 60,
+      "tip": "Distribute Annexure 1 to students (one copy per group).",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "image": "/sessions/assets/s5_annexure1_roc_stories.jpeg"
+    },
+    {
+      "n": 3,
+      "kind": "static",
+      "title": "ROC Stories — Discussion",
+      "body_layout": "numbered",
+      "body": [
+        "What did you find common in all these stories?",
+        "What did the children in these stories do?",
+        "Whose job is it to provide these facilities and needs?",
+        "Why did Gurunath or Nazia, Maria or Arundhati need to bother about all this?",
+        "What would have happened if everyone had kept quiet and done nothing to solve the problems?"
+      ],
+      "tip": "Each group should share."
+    },
+    {
+      "n": 4,
+      "kind": "mc_narration",
+      "title": "ROC Stories — MC Says",
+      "tip": "Play MC video.",
+      "video": "/sessions/assets/s5_mc_roc_stories.kn.mp4",
+      "kn_script": [
+        "These stories are not made up — they are based on real incidents that took place in various cities across the country, and all the students in these stories were members of the Children's Constitution Club. Isn't that amazing? Even teenagers can be active citizens!",
+        "When we ask the government for facilities or needs, we are asking for our Rights — meaning we are making the government work for us.",
+        "While we have rights to many things, solving problems is not just the government's job. We must care about our surroundings and take action! That becomes our Responsibility.",
+        "So when we ask for our rights, we are fulfilling our Responsibilities."
+      ]
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "3 Levels of Government",
+      "body": [
+        "Today we will learn how to become active citizens, just like Nazia, Maria, Gurunath and Arundhati.",
+        "Who is the Prime Minister of India?",
+        "Who is the Chief Minister of our state?"
+      ],
+      "tip": "Write on the board. Get answers from students."
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "Active Citizens — Visualization",
+      "body": [
+        "We will now do a visualization exercise. Everyone, close your eyes!",
+        "Imagine you are at home. Think about the taps in your house. Are you getting enough water? Are the lights and fans working — is there electricity?",
+        "Now you are stepping out of the house onto the street. How does the road look? What is the condition of the roads? Are there trees around? Is there garbage or has everything been cleaned?",
+        "Next, you are going to school. Is there a traffic police constable to help cross the road? Is there a zebra crossing? What is the condition inside the school? Are there enough clean toilets?",
+        "Now think about the entire city! Think about the roads you travel on — are there footpaths? How is the traffic and are there potholes on the roads?",
+        "Now open your eyes."
+      ],
+      "tip": "PPT note: MC to say this. Audio with sound effects needed between each point (tap water sounds, birdsong, vehicle sounds, horn sounds)."
+    },
+    {
+      "n": 7,
+      "kind": "group_activity_timer",
+      "title": "Active Citizens — Group Work",
+      "brief": "Each group, write down all the problems you thought of! You have 2 minutes to list the problems.",
+      "timer_seconds": 120,
+      "reminder_at": 60,
+      "tip": "2 minute timer.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Board Work — Example",
+      "body": [
+        "Let's list some problems on the board — try not to repeat a problem that's already been written."
+      ],
+      "image": "/sessions/assets/s5_local_govt_blackboard.png",
+      "tip": "List problems from groups on the board."
+    },
+    {
+      "n": 9,
+      "kind": "static",
+      "title": "Local Government",
+      "body": [
+        "So who solves our problems? Does the Prime Minister solve this problem?",
+        "Does the Chief Minister solve this problem?",
+        "Then who is responsible for fixing all these problems?",
+        "Electricity Department | Municipal Corporation | Water Board | Traffic Police | Panchayat",
+        "What are all these collectively called?",
+        "Local Government — the government closest to our daily lives."
+      ],
+      "image": "/sessions/assets/s5_local_govt_blackboard.png",
+      "tip": "Elicit answers from students — electricity dept, municipality, panchayat, water board, traffic police, etc."
+    },
+    {
+      "n": 10,
+      "kind": "static",
+      "title": "3 Levels of Government — Detail",
+      "body": [
+        "Central Government: Prime Minister → MP (Member of Parliament)",
+        "State Government: Chief Minister → MLA (Member of Legislative Assembly)",
+        "Local Government: Councillor / Corporator",
+        "Discuss: Who is your area's MP or MLA? Who is your area's Councillor/Corporator? What is the role of local government in solving our daily problems?"
+      ],
+      "tip": "Key message: Our local government is closest to our daily problems. It's important to know who represents our voice at the local level."
+    },
+    {
+      "n": 11,
+      "kind": "static",
+      "title": "Helpline Numbers",
+      "body": [
+        "Helpline numbers — one sheet for every student.",
+        "This is very important because it gives you the power to bring about change.",
+        "Keep it safe at home.",
+        "Paste it on your notice board, wall, or fridge at home where everyone can see it."
+      ],
+      "tip": "Distribute helpline sheets.",
+      "image": "/sessions/assets/s5_helpline_numbers.jpeg",
+      "image_layout": "side"
+    },
+    {
+      "n": 12,
+      "kind": "static",
+      "title": "Helpline Numbers — Quiz",
+      "body_layout": "numbered",
+      "body": [
+        "Which organization do you call if a street light is not working?",
+        "What is the women's helpline number?",
+        "What is the name and number of the organization that supplies water?",
+        "What number do you call for an ambulance?",
+        "If a stray dog is injured, who do you call?",
+        "Who do we call during a power outage?",
+        "What is 1098 used for?",
+        "Which organization is responsible for garbage disposal?"
+      ],
+      "tip": "Use the helpline sheet to give correct answers."
+    },
+    {
+      "n": 13,
+      "kind": "static",
+      "title": "Next Activity — Choose One",
+      "body": [
+        "Next activity — choose the one that suits you best."
+      ],
+      "image": "/sessions/assets/s5_action_options_card.png",
+      "tip": "Pick one of 4 options: 1) Make a helpline call 2) Listen to a pre-recorded call 3) Write a complaint letter 4) Write complaint postcards/mass letters."
+    },
+    {
+      "n": 14,
+      "kind": "static",
+      "title": "Nature & Animal Rights",
+      "body": [
+        "[Video pending — MC narration to be recorded]",
+        "Earlier in the active citizens' stories, we saw that we need to raise our voice and advocate for rights. But are these rights only for humans?",
+        "Yes, you're right. Trees, animals, nature, birds also have rights. Unlike humans, they cannot raise their voice for their own rights. Therefore, it is our responsibility to speak up on their behalf and protect them."
+      ],
+      "tip": "PPT note: MC to say this. Pause 2 seconds after the question for students to respond."
+    },
+    {
+      "n": 15,
+      "kind": "static",
+      "title": "Ripple Task",
+      "body": [
+        "Quiz your parents about helpline numbers and find out how many they know!",
+        "Ask your parents, and only with their help and consent, call to file your complaint. Remember, keeping parents informed is also our responsibility."
+      ],
+      "tip": "Highlight and emphasize the ripple task."
+    },
+    {
+      "n": 16,
+      "kind": "static",
+      "title": "Change Champion Report",
+      "body": [
+        "Fill out this form reporting a problem you tried to solve or solved, and put it in the Change Champion Box."
+      ],
+      "image": "/sessions/assets/s5_change_champion_report.jpeg",
+      "image_layout": "side",
+      "tip": "Distribute a copy to each student."
+    },
+    {
+      "n": 17,
+      "kind": "mc_narration",
+      "title": "Wrap-up",
+      "tip": "Play MC video. Say see you next time.",
+      "video": "/sessions/assets/s5_mc_wrapup.kn.mp4",
+      "kn_script": [
+        "Remember that nobody will be checking what you are doing or how you do the activity! So let us do all activities honestly and be true to ourselves!",
+        "All the best, see you next time!"
+      ]
+    }
+  ]
+}

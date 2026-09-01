@@ -155,15 +155,15 @@
     },
     {
       "n": 9,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Child Rights & the UN Convention",
-      "body": [
-        "[Video pending — MC narration to be recorded]",
+      "video": "/sessions/assets/s4_mc_child_rights.kn.mp4",
+      "kn_script": [
         "We are now going to share the work we did in our groups. But before that, can some of you tell me what you understand by the term 'Child Rights'?",
         "Every child from birth until 18 years of age is guaranteed child rights. These rights protect children and help them receive nutritious food, good healthcare, rest, and education.",
         "Look at the board! These rights can be divided into four major categories: Survival, Protection, Development, and Participation."
       ],
-      "tip": "Pause 10 seconds for responses."
+      "tip": "Play MC video. Pause 10 seconds for responses."
     },
     {
       "n": 10,
