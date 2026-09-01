@@ -79,17 +79,17 @@
     },
     {
       "n": 3,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Change Stories",
-      "body": [
-        "[Video pending — MC narration to be recorded]",
+      "video": "/sessions/assets/s4_mc_change_stories.kn.mp4",
+      "kn_script": [
         "Hey CMCA Champions! Do you have a story of change to share? Maybe you helped someone, solved a problem, showed kindness, or took a small step to make things better.",
         "If you do, write your story on a slip of paper and drop it into the Change Champion Box!",
         "And if you don't have a story yet, that's okay too! You can always create a change, notice the difference it makes, and then share your story with us later.",
         "Remember, every big change starts with one small action!",
         "So go out there, create some ripples, and don't forget to tell us all about them!"
       ],
-      "tip": "If students have stories in their hands, ask them to drop their stories in the CC box."
+      "tip": "Play MC video. If students have stories in their hands, ask them to drop their stories in the CC box."
     },
     {
       "n": 4,
