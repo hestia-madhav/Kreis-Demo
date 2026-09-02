@@ -1,7 +1,7 @@
 {
   "id": "kreis-session-1",
   "_language": "en",
-  "_revision": "2026-06-16-akg-savitha",
+  "_revision": "2026-09-02-sync-from-dom",
   "title": "Session 1: Getting Started",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -126,7 +126,7 @@
       "kind": "mc_narration",
       "title": "Master Change introduces himself",
       "video": "/sessions/assets/mc_intro.kn.mp4",
-      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Constitution Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Children's Constitution Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Constitution Club — the CC Club!",
+      "transcript": "Hello little citizens! I am Master Change. I am here to help your teacher and you. Welcome to your Children's Children's Constitution Club! This year, as a Change Champion, I am also a member of your Club. CMCA — Children's Movement for Civic Awareness — helps children become thinking, questioning citizens who work for society. I will be with you and your teacher as a guide. Along with CMCA, there are partner organisations helping bring the Children's Children's Constitution Club to you. Can you all clap for CMCA, the partner organisations, and me? Thank you for your warm welcome! Let's begin our journey as members of our Children's Children's Constitution Club — the CC Club!",
       "tip": "Play the full MC video.",
       "images": [
         {
@@ -154,12 +154,14 @@
     {
       "n": 4,
       "kind": "static",
-      "title": "One Two — Eyes on You",
+      "title": "Calmers — Let's settle down",
       "body": [
-        "Teacher: \"One, two — eyes on me!\"",
-        "Children whisper: \"Eyes on you.\""
+        "We know you're excited about the Club! Let's learn calmers to listen quietly.",
+        "Calmer 1: \"One, two — eyes on me!\" → \"Eyes on you.\"",
+        "Calmer 2: \"Ondu eradu\" → \"Board kade nodu\"",
+        "Calmer 3: \"Hai\" → \"Hello\""
       ],
-      "tip": "Use this calmer whenever you need to settle the class.",
+      "tip": "Practice all three calmers. Use them throughout the session to settle the class.",
       "audio": "/sessions/assets/vo_eyes_on_you.kn.wav"
     },
     {
@@ -370,7 +372,7 @@
       "kind": "mc_narration",
       "title": "Dr. B. R. Ambedkar and the Constituent Assembly",
       "video": "/sessions/assets/mc_who_inspires.kn.mp4",
-      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Constitution Club's learning journey by all of us together reading the Preamble.",
+      "transcript": "We draw inspiration from the vision our Constitution holds for India — it guides us and motivates us. In honour of the Constitution, Dr. B. R. Ambedkar, and the members of the Constituent Assembly, we will end this session of the Children's Constitution Club's learning journey by all of us together reading the Preamble.",
       "tip": "Play the video. Pause for guesses on who inspires us."
     },
     {
@@ -431,7 +433,7 @@
       "video": "/sessions/assets/asfiya_story.mp4",
       "duration_seconds": 63,
       "tip": "Play uninterrupted. After it ends, get children's reactions.",
-      "transcript": "Asfiya was a member of the Children's Constitution Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱"
+      "transcript": "Asfiya was a member of the Children's Children's Constitution Club. While studying in 8th grade, she and her friends brought a positive change at school by replacing paper cups with steel tumblers. Beyond school, in her community, she responded to civic problems — helping injured animals, planting trees, and supporting those in need. Even when some people discouraged her, she continued her efforts to do good for society. Today, she remains active in service work and dreams of becoming a doctor to help even more people. Asfiya's story shows us that even small efforts can lead to big change. 🌱"
     },
     {
       "n": 26,
@@ -446,7 +448,7 @@
       "kind": "title",
       "title": "Children's Constitution Club",
       "thank_you": true,
-      "closing_line": "Today our Constitution Club journey has had a great start. See you again in the next session.",
+      "closing_line": "Today our Children's Constitution Club journey has had a great start. See you again in the next session.",
       "centered": true,
       "image": "/sessions/assets/kreis_seal.png",
       "audio": "/sessions/assets/welcome_music.mp3",
