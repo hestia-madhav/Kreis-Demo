@@ -1,7 +1,7 @@
 {
   "id": "kreis-session-2",
   "_language": "en",
-  "_revision": "2026-08-27-sp2-corrections",
+  "_revision": "2026-09-02-sync-from-dom",
   "title": "Session 2: Naming of Club and Launch Campaign",
   "programme": "KREIS",
   "duration_estimate_minutes": 60,
@@ -17,25 +17,25 @@
     },
     {
       "id": "name_club",
-      "label": "Name your Club",
+      "label": "Name your club",
       "slides": [
         4,
         5,
-        6
-      ]
-    },
-    {
-      "id": "active_citizens",
-      "label": "Active Citizens",
-      "slides": [
+        6,
         7
       ]
     },
     {
-      "id": "committee",
-      "label": "Committee Formation",
+      "id": "active_citizens",
+      "label": "Active citizens",
       "slides": [
-        8,
+        8
+      ]
+    },
+    {
+      "id": "committee",
+      "label": "Committee formation",
+      "slides": [
         9,
         10,
         11,
@@ -43,19 +43,17 @@
         13,
         14,
         15,
-        16
+        16,
+        17
       ]
     },
     {
       "id": "launch",
-      "label": "Launch Campaign",
+      "label": "Launch campaign",
       "slides": [
-        17,
         18,
         19,
-        20,
-        21,
-        22
+        20
       ]
     }
   ],
@@ -66,26 +64,27 @@
       "title": "Welcome to the Children's Constitution Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
-      "tip": "Welcome music plays. Make sure all children are seated."
+      "tip": "Play welcome music. Make sure all children are seated."
     },
     {
       "n": 2,
       "kind": "static",
       "title": "Club Naming & Launch Campaign",
       "centered": true,
-      "tip": "Introduce today's session title."
+      "tip": "Introduce today's session title. Display title in center of screen."
     },
     {
       "n": 3,
       "kind": "static",
       "title": "Welcome to another session!",
       "body": [
-        "Quickly check that everyone is seated in their groups.",
-        "Today, let's give our club a name — come on…"
+        "Quick check — is everyone sitting in their groups?",
+        "Today let's give our club a name…"
       ],
+      "bullets_large": true,
       "image": "/sessions/assets/s2_kids_in_groups.jpg",
       "image_layout": "side",
-      "tip": "Re-check group formation. Make sure everyone is in their group."
+      "tip": "Re-check group formation. Confirm everyone is in their group."
     },
     {
       "n": 4,
@@ -93,76 +92,93 @@
       "bullets_large": true,
       "title": "Name your Club!",
       "body": [
-        "Each group should think of and suggest a name for their club.",
-        "The name you pick should be impactful and reflect citizenship!",
-        "It should inspire all of you equally."
+        "What name would you like to give your club?",
+        "Think about the club's purpose, think creatively about active citizenship, and suggest inspiring, effective names."
       ],
-      "image": "/sessions/assets/s2_blackboard_with_names.jpg",
-      "tip": "Write student suggestions on the blackboard. Suggest they can draw inspiration from famous personalities."
+      "tip": "Write students' suggestions on the blackboard."
     },
     {
       "n": 5,
       "kind": "static",
-      "title": "What is your Club name?",
+      "title": "What's your club name?",
       "body": [
-        "One person, one name, one vote only.",
+        "One person, one name, one vote.",
         "Choose wisely. Be fair.",
-        "The name with the most votes will be chosen as your club name!"
+        "The name with the most votes becomes your club name!"
       ],
       "image": "/sessions/assets/s2_kids_raising_hands.jpg",
       "image_layout": "side",
-      "tip": "Raise hands for each name and count. Write the results on the blackboard."
+      "tip": "Raise hands for each name and count. Write results on the board."
     },
     {
       "n": 6,
       "kind": "static",
-      "title": "And… your Club name is..?",
+      "title": "Time to vote!",
       "body": [
-        "______________ Children's Constitution Club….",
-        "Remember, you have the power to bring change!"
+        "Raise hands for each name and count the votes."
       ],
-      "audio": "/sessions/assets/drum_roll_applause.mp3",
-      "tip": "Drum roll and applause sound. Ask children to clap."
+      "image": "/sessions/assets/s2_naming_of_club.png",
+      "image_layout": "side",
+      "tip": "Conduct the vote. Each child gets only one vote."
     },
     {
       "n": 7,
       "kind": "static",
-      "title": "Become Active Citizens",
+      "title": "And… your club name is…?",
       "body": [
-        "Today, many children just like you are creating ripples of change as 'active citizens'!",
-        "But… don't forget, with power comes responsibility."
+        "______________ Children's Constitution Club….",
+        "Remember, the power to bring change lies within you!"
+      ],
+      "audio": "/sessions/assets/drum_roll_applause.mp3",
+      "tip": "Drum roll and applause. Ask children to clap."
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Be active citizens!",
+      "body": [
+        "You don't have to be grown up to be an active citizen! Even as children, you can be active citizens!",
+        "In previous years, hundreds of club children have become Change Champions and done amazing Ripples of Change.",
+        "But with power comes responsibility."
       ],
       "image": "/sessions/assets/s2_age_diversity_change_makers.jpg",
       "image_layout": "side",
       "tip": "Show the image of change-makers of all ages."
     },
     {
-      "n": 8,
-      "kind": "mc_narration",
-      "title": "Master Change appears",
-      "video": "/sessions/assets/s2_mc_democracy.kn.mp4",
-      "image": "/sessions/assets/s2_democracy_levels.png",
-      "kn_script": [
-        "ಹಲೋ ಪುಟ್ಟ ಪೌರರೇ, ನಮಸ್ಕಾರ! ನಿಮ್ಮೊಂದಿಗೆ ಮತ್ತೊಂದು ಸೆಷನ್‌ಗಾಗಿ ನಾನು ಮತ್ತೆ ಬಂದಿದ್ದೇನೆ!",
-        "ಈಗ ನೀವು ನಿಮ್ಮ ಗುಂಪಿನ ಹೆಸರನ್ನು ಆಯ್ಕೆ ಮಾಡಿದ್ದೀರಿ, ಆದರೆ ಮಾಡಬೇಕಾದ ಇನ್ನೊಂದು ಕೆಲಸ ಬಾಕಿ ಇದೆ.",
-        "ನಮ್ಮ ದೇಶದಲ್ಲಿ ಸಂಸತ್ತು ಇರುವಂತೆ ಅಥವಾ ನಿಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಶಾಲಾ ಮಂತ್ರಿಮಂಡಲ ಇರುವಂತೆ, ನಮ್ಮದೇ ಆದ ಒಂದು ಸಮಿತಿಯನ್ನು ರಚಿಸಬೇಕು.",
-        "ಭಾರತದಲ್ಲಿ ನಾವು ನಮ್ಮ ನಾಯಕರನ್ನು ಹೇಗೆ ಆರಿಸುತ್ತೇವೆ?",
-        "ಹೌದು, ನಾವು ವಿವಿಧ ಹಂತಗಳಲ್ಲಿ ಚುನಾವಣೆಗಳನ್ನು ನಡೆಸುತ್ತೇವೆ — ಗ್ರಾಮ ಪಂಚಾಯಿತಿ, ರಾಜ್ಯ, ಕೇಂದ್ರ."
+      "n": 9,
+      "kind": "static",
+      "text_align": "left",
+      "title": "Committee formation",
+      "body": [
+        "Let's now select our class leader and the core committee for the club.",
+        "Today we will see democracy in action!"
       ],
-      "en_script": [
-        "Hello little citizens! I'm back for another session with you!",
-        "Now you've picked your group name, but there's one more task to do.",
-        "Just like our country has Parliament, or your school has a school cabinet, we need to form our own committee.",
-        "How do we choose our leaders in India?",
-        "Yes — we hold elections at different levels: Gram Panchayat, State, Centre."
-      ],
-      "transcript": "Hello little citizens! Master Change is back for another session. Now that you've picked your club name, one more task remains — form a committee, like Parliament or your school cabinet. How do we choose our leaders in India? Yes — through elections at different levels: Gram Panchayat, State, Centre.",
-      "tip": "Watch the video. The democracy levels graphic appears step by step."
+      "tip": "Introduce the process of forming a committee through democracy."
     },
     {
-      "n": 9,
+      "n": 10,
+      "kind": "static",
+      "title": "India's election process",
+      "text_align": "left",
+      "body": [
+        "Do you know how we choose our leaders in India?",
+        "Do you know the different levels of government where elections are held?"
+      ],
+      "image": "/sessions/assets/s2_democracy_levels_cropped.png",
+      "image_layout": "side",
+      "tip": "Give children time to guess. Explain Gram Panchayat, State, Centre levels."
+    },
+    {
+      "n": 11,
+      "kind": "static",
+      "centered": true,
+      "title": "What qualities should an ideal representative have?",
+      "tip": "Give children time to answer. Then proceed to the video questions."
+    },
+    {
+      "n": 12,
       "kind": "video_question_series",
-      "title": "Qualities of an ideal representative",
       "items": [
         {
           "video": "/sessions/assets/s2_qualities_q1.kn.mp4",
@@ -182,115 +198,71 @@
         }
       ],
       "kn_script": [
-        "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು? ಅವರಿಗೆ ಯಾವ ರೀತಿಯ ಸಾಮರ್ಥ್ಯಗಳಿರಬೇಕು?",
-        "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ಹಾಗೂ ಆ ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಈ ಕೆಲಸವನ್ನು ಉತ್ತಮವಾಗಿ ಮಾಡಬಲ್ಲರು ಎಂದು ನಿಮಗೆ ಅನಿಸಿದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?",
+        "ಚುನಾವಣೆಗೆ ಹೋಗುವ ಮೊದಲು, ಒಬ್ಬ ಆದರ್ಶ ಪ್ರತಿನಿಧಿಗೆ ಇರಬೇಕಾದ ಗುಣಗಳೇನು?",
+        "ನಿಮ್ಮ ಸ್ನೇಹಿತ ಮತ್ತು ಇನ್ನೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿ ಅಭ್ಯರ್ಥಿಗಳಾಗಿದ್ದರೆ, ನೀವು ಯಾರಿಗೆ ಮತ ಹಾಕುತ್ತೀರಿ?",
         "ಆ ಕೆಲಸವನ್ನು ಮಾಡುವವರು ಹುಡುಗ ಅಥವಾ ಹುಡುಗಿ ಎಂಬುದು ಮುಖ್ಯವಾಗುತ್ತದೆಯೇ?",
         "ನಿಮ್ಮ ಸ್ನೇಹಿತರೇ ನಿಮಗೆ ಮತ ಹಾಕದಿದ್ದರೆ ನಿಮಗೆ ಹೇಗನ್ನಿಸುತ್ತದೆ?",
-        "ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ? ಗೆದ್ದವರ ಬಗ್ಗೆ ನಿಮ್ಮ ನಿಲುವು ಹೇಗಿರುತ್ತದೆ?"
-      ],
-      "en_script": [
-        "Before we go to the election, what qualities should an ideal representative have? What kind of abilities should they possess?",
-        "If your friend and another student are both candidates, and you feel the other student can do the job better, who do you vote for?",
-        "Does it matter if the person doing the job is a boy or a girl?",
-        "How would you feel if your own friends didn't vote for you?",
-        "What if you stood for election and lost? How would you view the winner?"
+        "ಒಂದು ವೇಳೆ ನೀವು ಚುನಾವಣೆಗೆ ನಿಂತು ಸೋತರೆ?"
       ],
       "transcript": "Before we vote — what qualities should an ideal representative have? If your friend and another student are candidates, and the other student is better at the job, who do you vote for? Does it matter if they are a boy or a girl? How would you feel if your friends did not vote for you? What if you ran and lost — how would you view the winner?",
-      "tip": "Allow discussion time after each of the 4 questions. Press Next Question to advance."
-    },
-    {
-      "n": 10,
-      "kind": "static",
-      "text_align": "left",
-      "title": "Come, let's prepare our committee!",
-      "body": [
-        "Steps to follow:",
-        "Your first step is to select one person from your group to be part of the club's Core Committee.",
-        "You have 2 minutes!"
-      ],
-      "tip": "2-minute timer needed. Reminder sound after 1 minute. (Timer widget still under construction — keep track of time.)"
-    },
-    {
-      "n": 11,
-      "kind": "static",
-      "title": "Selected members, come forward",
-      "body": [
-        "Well done! Now all selected members, come to the front of the class.",
-        "Who would like to stand as Club President? Come forward.",
-        "You have time to tell us why the club should choose you."
-      ],
-      "image": "/sessions/assets/s2_candidates_in_front.jpg",
-      "tip": "Give each candidate 30 seconds to speak."
-    },
-    {
-      "n": 12,
-      "kind": "static",
-      "title": "Club Structure",
-      "body": [
-        "Club President",
-        "Core Committee",
-        "CMCA Groups"
-      ],
-      "image": "/sessions/assets/reference/s2_image4.png",
-      "tip": "Introduce the club structure — President, Core Committee, CMCA Groups."
+      "tip": "Allow discussion time after each question. Press Next Question to advance."
     },
     {
       "n": 13,
       "kind": "static",
-      "title": "Assertive Action",
+      "text_align": "left",
+      "title": "Let's prepare our committee!",
       "body": [
-        "Do you think this is right?",
-        "Think about it if your class were in the same situation!"
+        "Steps to follow:",
+        "Your first step is to choose one person from your group to be part of the Core Committee.",
+        "You have 2 minutes!"
       ],
-      "image": "/sessions/assets/s2_assertive_action.jpg",
-      "tip": "Give children time to respond."
+      "tip": "2 minute timer needed. Reminder sound at 1 minute."
     },
     {
       "n": 14,
       "kind": "static",
-      "title": "Core Committee",
+      "title": "Elected members come forward",
       "body": [
-        "Club President",
-        "CMCA Groups",
-        "One girl and one boy on the Core Committee."
+        "Well done! All elected members, come to the front of the class.",
+        "Who would like to stand as Club President? Come forward.",
+        "You have time to tell us why the Club should elect you."
       ],
-      "image": "/sessions/assets/reference/s2_image5.png",
-      "tip": "Explain the importance of gender equality in the committee."
+      "image": "/sessions/assets/s2_candidates_election.jpg",
+      "tip": "Give each candidate 30 seconds to speak."
     },
     {
       "n": 15,
       "kind": "static",
-      "title": "Time to vote!",
+      "title": "Affirmative Action",
       "body": [
-        "Who will be our Club President?",
-        "You have 1 vote."
+        "If one gender has very few or no representatives:",
+        "Has the under-represented group received justice?",
+        "How can their voice or opinions be heard?",
+        "How can we ensure boys and girls both get a fair chance?"
       ],
-      "tip": "Ask selected children to turn around and the remaining children to close their eyes. Then count the votes for each candidate."
+      "tip": "Introduce Reservation or Affirmative Action. Explain the importance of gender equality in the committee."
     },
     {
       "n": 16,
       "kind": "static",
-      "title": "Congratulations!",
+      "title": "Let's vote!",
       "body": [
-        "Congratulations to our President and Core Committee!",
-        "Now it's time for all of us to join hands and work together!"
+        "Who will be our club president?",
+        "You have 1 vote."
       ],
-      "audio": "/sessions/assets/applause_short.mp3",
-      "tip": "If it gets noisy, use the calming techniques (calmers) from Session 1."
+      "tip": "Have candidates stand at the back. Ask remaining children to close their eyes. Count votes for each candidate."
     },
     {
       "n": 17,
       "kind": "static",
-      "title": "What is this? — A Campaign!",
+      "title": "Congratulations!",
       "body": [
-        "What you're looking at is a 'Campaign'! A campaign is an organised effort to reach a specific goal or spread a message.",
-        "You make a smart plan, gather your resources, and strive to win a prize or bring about a big change.",
-        "Come, let's spread this excitement everywhere!",
-        "We are going to run a CMCA Club Launch Campaign! You can do this during your school assembly."
+        "Congratulations to our president and core committee!",
+        "Now it's time for all of us to work together!"
       ],
-      "image": "/sessions/assets/s2_campaign_visual.jpg",
-      "audio": "/sessions/assets/kids_cheer.mp3",
-      "tip": "Energetic audio. Get children excited about the campaign."
+      "audio": "/sessions/assets/applause_short.mp3",
+      "tip": "If it gets noisy, use the calmers from Session 1."
     },
     {
       "n": 18,
@@ -310,70 +282,25 @@
         }
       ],
       "image_layout": "stack",
-      "tip": "Show all three examples. Ask children to discuss their preference."
+      "tip": "Show campaign examples. Introduce the club launch campaign."
     },
     {
       "n": 19,
       "kind": "static",
-      "title": "CMCA Club Launch",
+      "title": "Committee's responsibility",
       "body": [
-        "You have two options!"
+        "Give the responsibility of the launch campaign's success to the club committee."
       ],
-      "images": [
-        {
-          "src": "/sessions/assets/s2_launch_option_1.jpg",
-          "alt": "launch option 1"
-        },
-        {
-          "src": "/sessions/assets/s2_launch_option_2.jpg",
-          "alt": "launch option 2"
-        }
-      ],
-      "image_layout": "stack",
-      "tip": "Let groups choose one of the two options."
+      "tip": "Distribute annexures to groups and encourage them to take the lead on the launch."
     },
     {
       "n": 20,
-      "kind": "static",
-      "title": "Responsibility to the Club Committee",
-      "body": [
-        "Hand over the responsibility for the success of the launch campaign to the Club Committee, and seek as much help as possible from your teacher-coordinator.",
-        "You will be running a campaign about the importance of our country's diverse culture."
-      ],
-      "image": "/sessions/assets/s2_hands_working_together.jpg",
-      "image_layout": "side",
-      "tip": "Emphasise the importance of everyone working together."
-    },
-    {
-      "n": 21,
-      "kind": "static",
-      "title": "Handouts",
-      "body": [
-        "You will receive some printed handouts to help with this process!",
-        "Each group will get one set of handouts.",
-        "Sit together and discuss how to best tell your school about our club."
-      ],
-      "tip": "Distribute the annexures to groups and encourage them to take the lead on the launch."
-    },
-    {
-      "n": 22,
-      "kind": "mc_narration",
-      "title": "Master Change farewell",
-      "video": "/sessions/assets/s2_mc_farewell.kn.mp4",
-      "kn_script": [
-        "ಹೇ ಸ್ನೇಹಿತರೇ, ನಿಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಇಡೀ ಶಾಲೆಗೆ ತಿಳಿಸಲು ನೀವೆಲ್ಲರೂ ಸಿದ್ಧರಾಗುತ್ತಿರುವುದನ್ನು ನಾನು ನೋಡುತ್ತಿದ್ದೇನೆ!",
-        "ಖುಷಿಯಾಗಿರಿ, ಚೆನ್ನಾಗಿ ಯೋಜನೆ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮೆಲ್ಲರಿಗೂ ಶುಭವಾಗಲಿ!",
-        "ಈ ಕ್ಲಬ್ ಉದ್ಘಾಟನೆಯನ್ನು ನೋಡಲು ನಾನು ಈಗಲೇ ಕಾಯುತ್ತಿದ್ದೇನೆ.",
-        "ಬೈ ಬೈಈಈಈಈಈಈಈಈ! (ಕೈ ಬೀಸುತ್ತಾ)"
-      ],
-      "en_script": [
-        "Hey friends, I can see you all getting ready to tell the whole school about your club!",
-        "Be happy, plan well, and best of luck to you all!",
-        "I'm already waiting to see this club launch.",
-        "Bye byeeee! (waving)"
-      ],
-      "transcript": "Hey friends! I can see you all getting ready to tell the whole school about your club! Be happy, plan well, and best of luck to you all. I'm already waiting to see this club launch. Bye byeeee!",
-      "tip": "MC says farewell. End of session."
+      "kind": "title",
+      "title": "Thank You",
+      "thank_you": true,
+      "centered": true,
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Thank the children. End of session."
     }
   ]
 }

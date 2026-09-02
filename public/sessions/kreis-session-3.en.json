@@ -1,56 +1,59 @@
 {
   "id": "kreis-session-3",
   "_language": "en",
-  "_revision": "2026-08-27-sp2-corrections",
+  "_revision": "2026-09-02-sync-from-dom",
   "title": "Session 3: Personal Integrity",
   "programme": "KREIS",
-  "duration_estimate_minutes": 60,
+  "duration_estimate_minutes": 45,
   "sections": [
     {
       "id": "welcome",
-      "label": "Welcome",
+      "label": "Welcome & Change Champion",
       "slides": [
-        1
-      ]
-    },
-    {
-      "id": "hospital_stories",
-      "label": "Hospital Stories",
-      "slides": [
+        1,
         2
       ]
     },
     {
-      "id": "group_work",
-      "label": "Group Work",
+      "id": "hospital_stories",
+      "label": "Hospital stories & discussion",
       "slides": [
         3,
         4,
-        5,
+        5
+      ]
+    },
+    {
+      "id": "group_work",
+      "label": "Group work & sharing",
+      "slides": [
         6,
         7,
         8,
-        9
+        9,
+        10,
+        11
       ]
     },
     {
-      "id": "integrity",
-      "label": "Choices & Integrity",
+      "id": "values_choices",
+      "label": "Values & choices",
       "slides": [
-        10,
-        11,
         12,
         13,
-        14
+        14,
+        15,
+        16
       ]
     },
     {
-      "id": "reflect_close",
-      "label": "Reflection & Closing",
+      "id": "reflection_closing",
+      "label": "Reflection & closing",
       "slides": [
-        15,
-        16,
-        17
+        17,
+        18,
+        19,
+        20
       ]
     }
   ],
@@ -58,54 +61,62 @@
     {
       "n": 1,
       "kind": "static",
+      "title": "Welcome to the Children's Constitution Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "image": "/sessions/assets/kreis_seal.png",
-      "title": "Welcome to the Children's Constitution Club!",
-      "tip": "Welcome music. Make sure everyone is seated in their groups."
+      "tip": "Play welcome music. Make sure everyone is seated in their groups."
     },
     {
       "n": 2,
       "kind": "static",
-      "bullets_large": true,
-      "images": [
-        {
-          "src": "/sessions/assets/s3_hospital_story_1.jpg",
-          "alt": "hospital story 1 — Chennai"
-        },
-        {
-          "src": "/sessions/assets/s3_hospital_story_2.jpg",
-          "alt": "hospital story 2 — Hyderabad"
-        }
-      ],
-      "image_layout": "stack",
-      "title": "Hospital Stories",
+      "title": "Change Champion Zone",
       "body": [
-        "1) January 2019 — Times of India, Chennai: Even though treatment at government maternity hospitals is free, the staff there demand a minimum bribe of Rs 3,500 to show the baby to the mother.",
-        "2) March 17, 2017 — Hindustan Times, Hyderabad: A patient's wife came to the hospital for help because they couldn't afford to pay a bribe for a wheelchair.",
-        "S. Raju, in his 40s, was being treated for burn injuries from an electrical accident. Since the attendants demanded Rs 100–200 for a wheelchair, his wife sought help."
+        "A box to capture your stories of change"
       ],
-      "tip": "Two news-based stories. Show the images below."
+      "image": "/sessions/assets/change_champion_box.png",
+      "tip": "Distribute Making Change Champion Box Instruction Annexure"
     },
     {
       "n": 3,
       "kind": "static",
-      "image": "/sessions/assets/s3_group_reading.jpg",
-      "image_layout": "side",
-      "title": "Group Work",
+      "text_align": "left",
+      "title": "Hospital Stories",
       "body": [
-        "The teacher distributes sheets with short stories.",
-        "Read them in your groups.",
-        "While reading, list the following for each story:",
-        "One — the value or quality that the story reflects and that every good person should follow.",
-        "Two — the specific action or behaviour that demonstrates that value."
+        "January 2019: Times of India, Chennai — Families of women who gave birth at a government hospital with free healthcare filed complaints today. They said they had to pay at least ₹3,500 in bribes to ward attendants, helpers, and other staff. The amount was even higher if a boy was born.",
+        "March 17, 2017: Hindustan Times, Hyderabad — Unable to pay a bribe for a wheelchair at the hospital, a patient used his son's toy tricycle. Since hospital attendants were demanding ₹100–200 for a wheelchair, the patient's wife started bringing her son's tricycle to take her husband inside during visits. 40-year-old Raju suffered burn injuries from an electric shock last August and has been visiting the hospital regularly for treatment. His wife Santoshi said that because she could not afford to give 'tips' to wardboys, they refused to provide a wheelchair — so they had to use the tricycle to get around the hospital."
       ],
-      "tip": "Distribute one sheet of Annexure 3 to each group.",
+      "tip": "Two news-based stories. Show images below.",
       "body_layout": "columns"
     },
     {
       "n": 4,
+      "kind": "static",
+      "text_align": "left",
+      "bullets_large": true,
+      "title": "Discussion",
+      "body": [
+        "Why do such things happen? How does this make you feel?",
+        "Who do you think is responsible for this?",
+        "Imagine for a moment how a person would feel when they are given a toy tricycle instead of a wheelchair."
+      ]
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "Group Work",
+      "body": [
+        "Distribute sheets with stories or scenarios",
+        "One — list the value or quality shown by the story, something every good person should adopt",
+        "Two — an action or behaviour that demonstrates that specific value"
+      ],
+      "image": "/sessions/assets/s3_group_reading.jpg",
+      "image_layout": "side",
+      "tip": "Distribute Annexure 3 — one sheet per group."
+    },
+    {
+      "n": 6,
       "kind": "video_question_series",
-      "title": "Example — Master Change says",
+      "title": "Example — Master Change explains",
       "items": [
         {
           "video": "/sessions/assets/s3_traffic_q1.kn.mp4",
@@ -120,198 +131,189 @@
       "kn_script": [
         "ನಾನು ಯಾವಾಗಲೂ ಮನೆಯಿಂದ ಶಾಲೆಗೆ ಹೊರಡುವಾಗ ತಡವಾಗುತ್ತದೆ. ಸಮಯಕ್ಕೆ ಸರಿಯಾಗಿ ತಲುಪಲು, ನಾನು ಅನೇಕ ಬಾರಿ ಟ್ರಾಫಿಕ್ ಸಿಗ್ನಲ್‌ಗಳನ್ನು ಮೀರುತ್ತೇನೆ.",
         "ಇಲ್ಲಿ ಒಬ್ಬ ಉತ್ತಮ ಮನುಷ್ಯನಾಗಿ ನಾನು ಹೊಂದಿರಬೇಕಾದ ಆದರೆ ತೋರುತ್ತಿರದ 'ಮೌಲ್ಯ' ಯಾವುದು?",
-        "ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾವುದು?"
+        "ತುಂಬಾ ಒಳ್ಳೆಯದು! ಈಗ, ಈ ಕಥೆಯಲ್ಲಿ ಆ ಮೌಲ್ಯವನ್ನು ತೋರಿಸುವ ಸಕಾರಾತ್ಮಕ ಕ್ರಮ ಯಾಮುದು?"
       ],
       "en_script": [
         "I always get late leaving home for school. To reach on time, I sometimes break traffic signals.",
         "As a good person, which value should I have but am not showing here?",
         "Very good! Now, what positive action in this story would demonstrate that value?"
       ],
-      "tip": "2 questions. After each clip, ask children for their answers, then press Next Question."
-    },
-    {
-      "n": 5,
-      "kind": "static",
-      "audio": "/sessions/assets/timer_7min_ping.mp3",
-      "title": "Do Group Work",
-      "body": [
-        "Distribute sheets to the groups.",
-        "7-minute timer starts. A warning buzzer will sound when 2 minutes remain."
-      ],
-      "tip": "Distribute Annexure 3 sheets. One different sheet per group. 7-minute timer (keep track of time)."
-    },
-    {
-      "n": 6,
-      "kind": "static",
-      "title": "Wrap Up Group Work",
-      "body": [
-        "Thank you! You all did very well in your groups!",
-        "It's okay if you didn't finish. When we share with each other, all stories/scenarios will be discussed.",
-        "Quickly pick two stories/scenarios that you'd like to share with the whole class."
-      ],
-      "tip": "1-minute timer. Each group must pick two stories."
+      "tip": "Teacher clicks 'Next Question' after class discussion for each question. 2 questions total."
     },
     {
       "n": 7,
       "kind": "static",
-      "title": "Share Stories",
+      "title": "Do the group work",
       "body": [
-        "Turn by turn, one person from your group please read out one of your chosen stories to the class.",
-        "Do not repeat stories/scenarios."
+        "Distribute the sheets to your groups.",
+        "7-minute timer starts. A warning buzzer will sound when 2 minutes remain."
       ],
-      "tip": "Go to each group and ask them to share one story. Maintain discipline."
+      "audio": "/sessions/assets/timer_7min_ping.mp3",
+      "tip": "Distribute Annexure 3 sheets. Each group gets a different sheet. 7-minute timer (use a watch if widget not available)."
     },
     {
       "n": 8,
       "kind": "static",
-      "title": "Write on the Board — Group Summary",
+      "title": "Wrap up the group work",
       "body": [
-        "One member from each group, come to the board and write 2 action statements from your list.",
+        "Thank you! You all did great work in your groups!",
+        "It's okay if you didn't finish — when we share with each other, all the stories and scenarios will be discussed.",
+        "Quickly pick two stories or scenarios that you would like to share with the whole class."
+      ],
+      "tip": "1-minute timer. Each group should choose two stories."
+    },
+    {
+      "n": 9,
+      "kind": "static",
+      "title": "Share stories",
+      "body": [
+        "One by one, one person from your group, please read one of your chosen stories to the class.",
+        "Do not repeat stories or scenarios."
+      ],
+      "tip": "Go to each group and ask them to share one story. Maintain discipline."
+    },
+    {
+      "n": 10,
+      "kind": "static",
+      "title": "Write on the board — Group summary",
+      "body": [
+        "One member from each group, come to the board and write two action statements from your list.",
         "You have only 1 minute, so be quick!",
         "Come to any part of the board and write in big letters so everyone can read."
       ],
       "tip": "1-minute timer. Make sure everyone has chalk."
     },
     {
-      "n": 9,
+      "n": 11,
       "kind": "static",
-      "audio": "/sessions/assets/timer_2min_ping.mp3",
-      "title": "Let's Reflect — 2 Minutes of Silence",
+      "title": "Let's reflect — 2 minutes of silence",
       "body": [
-        "Let us all quietly think for a moment about what emerged from your group discussions and what is written on the board.",
+        "Let us all silently reflect for a moment on what came out of your group discussions and what is written on the board.",
         "You have 2 minutes to think and reflect."
       ],
-      "tip": "When children start thinking, encourage them to connect the values to the hospital stories from the beginning of the session."
-    },
-    {
-      "n": 10,
-      "kind": "video",
-      "loop": false,
-      "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
-      "image": "/sessions/assets/reference/s3_image2.png",
-      "title": "Rs 150 — What Would You Do?",
-      "intro_text": "A shopkeeper accidentally gives you Rs 150 extra change — what would you do?",
-      "body": [
-        "What do we call this act of making a decision?",
-        "It starts with the letter 'Ch'..."
-      ],
-      "post_video_text": "Choice — CHOICE",
-      "reveal_on_click": true,
-      "tip": "Give children time to answer. After the video, press REVEAL to show 'Choice'."
-    },
-    {
-      "n": 11,
-      "kind": "mc_narration",
-      "video": "/sessions/assets/s3_mc_hospital_reflection.kn.mp4",
-      "transcript": "Friends, in the hospital stories you read — what choice did poor people have? Sometimes poor people have very few choices. Poor people pay bribes out of compulsion.",
-      "title": "Think About the Hospital Stories",
-      "kn_script": [
-        "ಸ್ನೇಹಿತರೇ, ಆರಂಭದಲ್ಲಿ ನೀವು ಓದಿದ ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಬಡ ಜನರಿಗೆ ಯಾವ ಆಯ್ಕೆ ಇತ್ತು? ಅವರು ಲಂಚ ನೀಡದಿದ್ದರೆ ತೊಂದರೆ ಅನುಭವಿಸಬೇಕಿತ್ತು.",
-        "ಬಡ ಜನರಿಗೆ ಕೆಲವೊಮ್ಮೆ ಅತಿ ಕಡಿಮೆ ಆಯ್ಕೆಗಳಿರುತ್ತವೆ. ಬಡವರು ಲಂಚ ಕೊಡುವುದು ಬಲವಂತದಿಂದ."
-      ],
-      "en_script": [
-        "Friends, in the hospital stories you read at the beginning — what choice did poor people have? If they didn't pay the bribe, they had to suffer.",
-        "Sometimes poor people have very few choices. Poor people pay bribes out of compulsion."
-      ],
-      "tip": "MC draws children's attention to the hospital stories. Give time for discussion."
+      "audio": "/sessions/assets/timer_2min_ping.mp3",
+      "tip": "As children start reflecting, encourage them to connect the values to the hospital story from the start of the session."
     },
     {
       "n": 12,
-      "kind": "mc_narration",
-      "video": "/sessions/assets/s3_mc_staff_choices.kn.mp4",
-      "transcript": "In the hospital stories — what do you say about the choices the staff made? They could have chosen not to take bribes from the poor — but they didn't.",
-      "title": "What About the Hospital Staff's Choices?",
-      "kn_script": [
-        "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿ ಮಾಡಿದ ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಏನು ಹೇಳುತ್ತೀರಿ?",
-        "ಅವರು ಬಡವರಿಂದ ಲಂಚ ತೆಗೆದುಕೊಳ್ಳದಿರುವ ಆಯ್ಕೆಯನ್ನು ಮಾಡಬಹುದಿತ್ತು — ಆದರೆ ಮಾಡಲಿಲ್ಲ."
+      "kind": "video",
+      "loop": false,
+      "title": "₹150 — What would you do?",
+      "video": "/sessions/assets/s3_shopkeeper_scenario.mp4",
+      "intro_text": "A shopkeeper mistakenly gives you ₹150 extra change. What would you do?",
+      "body": [
+        "What do we call this act of making a decision?",
+        "It starts with the letter C…"
       ],
-      "en_script": [
-        "In the hospital stories, what do you say about the choices the hospital staff made?",
-        "They could have chosen not to take bribes from the poor — but they didn't."
-      ],
-      "tip": "Ask groups to discuss."
+      "post_video_text": "CHOICE",
+      "reveal_on_click": true,
+      "image": "/sessions/assets/reference/s3_image2.png",
+      "tip": "Give children time to answer. After the video, click REVEAL to show CHOICE.",
+      "_bug": "Audio is not working in the Video pls fix it"
     },
     {
       "n": 13,
-      "kind": "click_reveal",
-      "title": "What quality is missing behind the choice?",
-      "body": [
-        "What quality is missing behind the hospital staff's choice?"
+      "kind": "mc_narration",
+      "title": "Reflect on the hospital stories",
+      "video": "/sessions/assets/s3_mc_hospital_reflection.kn.mp4",
+      "kn_script": [
+        "ಆರಂಭದಲ್ಲಿ ನಾನು ಓದಿದ ಆಸ್ಪತ್ರೆಯ ಕಥೆಯಲ್ಲಿ, ಬಡಜನರಿಗೆ ಯಾವ ಆಯ್ಕೆಗಳು ಇತ್ತು? ಅವರು ಒಂದುವೇಳೆ ಲಂಚವನ್ನು ಕೋಡದೇ ಇದ್ದರೆ, ಖಾಯಿಲೆಯಾಗಿರುವ ಅವರ ಪ್ರೀತಿಪಾತ್ರರಿಗೆ ಏನಾಗುತ್ತದೆ?",
+        "[4 ಸೆಕೆಂಡ್ ವಿರಾಮ]",
+        "ಆಸ್ಪತ್ರೆಯ ಕಥೆಗಳಲ್ಲಿ, ಆಸ್ಪತ್ರೆಯ ಸಿಬ್ಬಂದಿ ಮಾಡಿದಂತಹ ಆಯ್ಕೆ ಏನಾಗಿತ್ತು?"
       ],
-      "prompts": [
-        "Integrity — INTEGRITY"
+      "en_script": [
+        "In the hospital stories I read at the beginning, what choices did the poor people have? If they didn't pay the bribe, what would happen to their sick loved ones?",
+        "[4-second pause]",
+        "In the hospital stories, what choice did the hospital staff make?"
       ],
-      "footer": "Our personal integrity can change thousands of situations like the ones you read about in the stories.",
-      "tip": "After children answer, tap REVEAL (or press R) to show 'INTEGRITY'."
+      "transcript": "Friends, in the hospital stories you read — what choice did poor people have? Sometimes poor people have very few choices. Poor people pay bribes out of compulsion.",
+      "tip": "MC draws children's attention back to the hospital stories. Allow time for discussion.",
+      "_video_needed": "Video needs re-recording with new combined script (old slides 11+12 merged)"
     },
     {
       "n": 14,
-      "kind": "mc_narration",
-      "video": "/sessions/assets/s3_mc_daily_choices.kn.mp4",
-      "transcript": "MC talks about daily choices at school — spoiled Change Champion Box, copying from ChatGPT, helping absent friends, admitting a broken window. Ends with 'your daily choices make you a real change champion'.",
-      "title": "Everyday Choices",
-      "kn_script": [
-        "ಈಗ ನಾವು ಶಾಲೆಯಲ್ಲಿಯೇ ಮಾಡುವ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ.",
-        "ಕೆಲವು ಮಕ್ಕಳು ಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುತ್ತಿದ್ದಾರೆ ಮತ್ತು Change Champion Box ಅನ್ನು ಹಾಳು ಮಾಡುತ್ತಿದ್ದಾರೆ.",
-        "ನಾವು ನಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್ ಕೆಲಸವನ್ನು ಗೂಗಲ್ ಅಥವಾ ChatGPT ನಿಂದ ಕಾಪಿ ಮಾಡಿದರೆ ಮತ್ತು ನಾವೇ ಅದನ್ನು ಮಾಡದಿದ್ದರೆ ಏನಾಗುತ್ತದೆ?",
-        "ನಿಮ್ಮ ಸ್ನೇಹಿತರೊಬ್ಬರು ಗೈರುಹಾಜರಾಗಿದ್ದರು ಮತ್ತು ಮರುದಿನ ನೀವು ಅವರಿಗೆ ಪಾಠದಲ್ಲಿ ಸಹಾಯ ಮಾಡುತ್ತೀರಿ.",
-        "ಕೆಲವು ಮಕ್ಕಳು ಆಟವಾಡುವಾಗ ಕಿಟಕಿಯ ಗಾಜನ್ನು ಒಡೆದರು ಮತ್ತು ಅವರು ಅದನ್ನು ಶಿಕ್ಷಕರಿಗೆ ಒಪ್ಪಿಕೊಳ್ಳುತ್ತಾರೆ.",
-        "ನಿಮ್ಮ ದೈನಂದಿನ ಆಯ್ಕೆಗಳು ನಿಮ್ಮನ್ನು ನಿಜವಾದ ಬದಲಾವಣೆಯ ಶಕ್ತಿಯನ್ನಾಗಿ ಮಾಡುತ್ತವೆ."
+      "kind": "click_reveal",
+      "title": "What value do we build through the choices we make?",
+      "prompts": [
+        "Integrity — INTEGRITY"
       ],
-      "en_script": [
-        "Now let's talk about some choices we make right here at school.",
-        "Some children are putting in blank chits and spoiling the Change Champion Box.",
-        "What happens if we copy our project work from Google or ChatGPT and don't do it ourselves?",
-        "Your friend was absent and the next day you help them with the lesson.",
-        "Some children broke a window pane while playing, and they admit it to the teacher.",
-        "Your daily choices make you a real change champion."
-      ],
-      "tip": "Give children time to respond after each scenario."
+      "tip": "After children answer, tap REVEAL (or press R). Show 'INTEGRITY'."
     },
     {
       "n": 15,
-      "kind": "static",
-      "image": "/sessions/assets/s3_coin_two_sides.jpg",
-      "title": "Two Sides of a Coin (Optional)",
-      "body": [
-        "Every coin has two sides.",
-        "In life too, every matter has more than one perspective."
+      "kind": "mc_narration",
+      "title": "Everyday choices",
+      "video": "/sessions/assets/s3_mc_daily_choices.kn.mp4",
+      "kn_script": [
+        "ಬನ್ನಿ, ಈಗ ನಾವು ನಮ್ಮ ಶಾಲೆಯಲ್ಲಿ ಮಾಡಬಹುದಾದ ಕೆಲವು ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಮಾತನಾಡೋಣ",
+        "ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯಲ್ಲಿ ಆಗದೇ ಇರುವಂತಹ ಕಥೆಯನ್ನು ಬರೆದು ಹಾಕಿದರೆ ಏನಾಗುತ್ತದೆ?",
+        "ನಾವು ಸುಳ್ಳನ್ನು ಬರೆದು ಹಾಕಿದರೆ ನಾವು ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಆಗುತ್ತೇವೆಯೇ?",
+        "ಖಾಲಿ ಚೀಟಿಗಳನ್ನು ಹಾಕುವುದು ಅಥವಾ ಬದಲಾವಣೆಯ ಚಾಂಪಿಯನ್ ಪೆಟ್ಟಿಗೆಯನ್ನು ಹಾಳು ಮಾಡುವುದು - ಇವೆಲ್ಲವೂ ನಮ್ಮ ಬಗ್ಗೆ, ನಮ್ಮ ತರಗತಿ, ನಮ್ಮ ಕ್ಲಬ್ ಬಗ್ಗೆ ಏನನ್ನು ಹೇಳುತ್ತವೆ?",
+        "ನಾವು ನಮ್ಮ ಯೋಜನಾ ಕಾರ್ಯವನ್ನು ಗೂಗಲ್ ನಿಂದ ಅಥವಾ ಚಾಟ್ ಜಿಪಿಟಿ ಬಳಸಿ ನಕಲು ಮಾಡಿದರೆ, ಸ್ವತಃ ನಾವೇ ಮಾಡದೇ ಇದ್ದರೆ ಏನಾಗುತ್ತದೆ?",
+        "ನಾವು ನಿಜವಾಗಿಯೂ ಮಾಡದೇ ಇರುವ ಸಂಗತಿಯನ್ನು ಪ್ರಸ್ತುತ ಪಡಿಸಬೇಕಾದಾಗ ನಮಗೆ ಹೇಗೆನಿಸುತ್ತದೆ?"
       ],
-      "tip": "Show only if time permits. Optional."
+      "en_script": [
+        "Come, let us now talk about some choices we can make at our school.",
+        "What happens if we write a story in the Change Champion Box about something that didn't actually happen?",
+        "If we write lies, do we become Change Champions?",
+        "Putting in blank slips or spoiling the Change Champion Box — what does all this say about us, our class, our club?",
+        "What happens if we copy our project work from Google or ChatGPT instead of doing it ourselves?",
+        "How do we feel when we have to present something we didn't actually do?"
+      ],
+      "transcript": "MC talks about daily choices at school — spoiled Change Champion Box, copying from ChatGPT, helping absent friends, admitting a broken window. Ends with 'your daily choices make you a real change champion'.",
+      "tip": "Give children time to respond after each scenario.",
+      "_video_needed": "Video needs re-recording with new script about school choices and Change Champion Box integrity"
     },
     {
       "n": 16,
       "kind": "static",
-      "image": "/sessions/assets/s3_start_stop_continue.jpg",
-      "title": "Start — Stop — Continue",
+      "title": "Think about it",
       "body": [
-        "Based on what you learned today:",
-        "What is one new thing you want to start doing in your life?",
-        "What is one thing you want to stop doing?",
-        "What is something you're already doing that you want to continue?"
-      ],
-      "tip": "Give each child time to share one answer."
+        "Through every small choice, what kind of person are we becoming?"
+      ]
     },
     {
       "n": 17,
-      "kind": "mc_narration",
-      "video": "/sessions/assets/s3_mc_change_champion_box.kn.mp4",
-      "transcript": "Wow! Our CMCA Club is learning so many new things. Time to collect all the positive changes in our lives. Let me introduce something exciting — the Change Champion Box! It's a box that collects your change stories.",
-      "title": "Change Champion Box — Introduction",
-      "kn_script": [
-        "ವಾಹ್! ನಮ್ಮ CMCA ಕ್ಲಬ್‌ನಲ್ಲಿ ನಾವು ಎಷ್ಟು ಹೊಸ ವಿಷಯಗಳನ್ನು ಕಲಿಯುತ್ತಿದ್ದೇವೆ ಮತ್ತು ಅದ್ಭುತವಾದ ಚಟುವಟಿಕೆಗಳನ್ನು ಮಾಡುತ್ತಿದ್ದೇವೆ.",
-        "ಈಗ, ನಮ್ಮ ಜೀವನದಲ್ಲಿ ನಡೆಯುತ್ತಿರುವ ಎಲ್ಲಾ ಸಕಾರಾತ್ಮಕ ಬದಲಾವಣೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಸಮಯ ಬಂದಿದೆ!",
-        "ನಾನು ನಿಮಗೆ ಒಂದು ಆಕರ್ಷಕ ವಿಷಯವನ್ನು ಪರಿಚಯಿಸುತ್ತೇನೆ — ಅದೇ Change Champion Box! 🎉",
-        "ಇದು ನಿಮ್ಮ ಬದಲಾವಣೆಯ ಕಥೆಗಳನ್ನು ಸಂಗ್ರಹಿಸುವ ಪೆಟ್ಟಿಗೆ."
+      "kind": "static",
+      "title": "Two sides of a coin",
+      "body": [
+        "Every coin has two sides. In life too, every issue has more than one perspective.",
+        "Draw a picture of both sides of a coin.",
+        "Side A: Something they value — something every good person should adopt (e.g. honesty, friendship, fun)",
+        "Side B: A challenge or the opposite idea (e.g. dishonesty, conflict, boredom)"
       ],
-      "en_script": [
-        "Wow! We're learning so many new things and doing amazing activities in our CMCA Club.",
-        "Now, it's time to collect all the positive changes happening in our lives!",
-        "Let me introduce you to something exciting — the Change Champion Box!",
-        "It's a box that collects your change stories."
+      "image": "/sessions/assets/s3_coin_two_sides.jpg",
+      "tip": "Show only if time permits. Optional."
+    },
+    {
+      "n": 18,
+      "kind": "static",
+      "text_align": "left",
+      "bullets_large": true,
+      "title": "Two sides of a coin — Reflect",
+      "body": [
+        "What happens if we only look at one side of the coin?",
+        "How does looking at both sides within ourselves help us make fair choices?"
+      ]
+    },
+    {
+      "n": 19,
+      "kind": "static",
+      "title": "Start — Stop — Continue",
+      "body": [
+        "Based on what you learned today:",
+        "What is one new thing you want to START doing in your life?",
+        "What is one thing you want to STOP doing?",
+        "What is something you are already doing that you want to CONTINUE?"
       ],
-      "tip": "Check if the change_champion_rules.mp4 video from Session 1 can be reused. If not, a new video is needed.",
-      "_content_needed": "Ashwini feedback 16-Jul: add box creation details and rules for the Change Champion Box — e.g. how to make the box, what chits to write, when to open it, rules for participation. Content not yet provided — awaiting from CMCA team."
+      "image": "/sessions/assets/s3_start_stop_continue.jpg",
+      "tip": "Give each child time to share one answer."
+    },
+    {
+      "n": 20,
+      "kind": "title",
+      "title": "Thank you!",
+      "tip": "Thank the children. End of session."
     }
   ]
 }
