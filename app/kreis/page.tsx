@@ -152,6 +152,29 @@ const SESSIONS: SessionEntry[] = [
       "🔴 Annexure 3 (4Ws handout)",
     ],
   },
+  {
+    id: "kreis-session-7",
+    number: 7,
+    title: {
+      en: "Diversity & Composite Culture - 1",
+      kn: "ವೈವಿಧ್ಯತೆ ಮತ್ತು ಸಮ್ಮಿಶ್ರ ಸಂಸ್ಕೃತಿ - 1",
+    },
+    subtitle: {
+      en: "Diversity in classroom · Leaf drawing · State information cards · Quiz with dance moves · Social diversity concept",
+      kn: "ತರಗತಿಯಲ್ಲಿ ವೈವಿಧ್ಯತೆ · ಎಲೆ ಚಿತ್ರ · ರಾಜ್ಯ ಮಾಹಿತಿ ಕಾರ್ಡ್‌ಗಳು · ನೃತ್ಯ ಹೆಜ್ಜೆಗಳೊಂದಿಗೆ ರಸಪ್ರಶ್ನೆ · ಸಾಮಾಜಿಕ ವೈವಿಧ್ಯತೆ ಪರಿಕಲ್ಪನೆ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Source PPT extracted",
+      "✅ Player JSON (kn + en)",
+      "✅ Quiz images (12 images from PPT)",
+      "🔴 MC video: mid-quiz interruption",
+      "🔴 MC video: social diversity explanation",
+      "🔴 Annexure 1 (State Information Cards)",
+      "🔴 Annexure 2 (worksheet)",
+    ],
+  },
 ];
 
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {

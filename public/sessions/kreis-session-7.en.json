@@ -1,0 +1,364 @@
+{
+  "id": "kreis-session-7",
+  "_language": "en",
+  "_revision": "2026-09-02-initial",
+  "title": "Session 7: Diversity & Composite Culture - 1",
+  "programme": "KREIS",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "opening",
+      "label": "Opening",
+      "slides": [
+        1
+      ]
+    },
+    {
+      "id": "diversity_classroom",
+      "label": "Diversity in Classroom",
+      "slides": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "diversity_india",
+      "label": "Diversity in India",
+      "slides": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "quiz",
+      "label": "Quiz on Diversity",
+      "slides": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "social_diversity",
+      "label": "Social Diversity",
+      "slides": [
+        18,
+        19
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to the Children's Constitution Club!",
+      "subtitle": "KREIS × CMCA",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Play welcome music. Confirm everyone is seated in groups."
+    },
+    {
+      "n": 2,
+      "kind": "static",
+      "title": "Diversity in the Classroom",
+      "body": [
+        "Look at your classmates around you and find something you have in common with one of them.",
+        "Now look around and find something that makes you different from your classmate.",
+        "Just like we have things in common and things that make us unique, so does the whole country!"
+      ],
+      "tip": "Give children 1 minute to observe. Ask 2–3 children to share what they found in common and what was different."
+    },
+    {
+      "n": 3,
+      "kind": "group_activity_timer",
+      "title": "Creative Expression (Optional) — Leaf Drawing",
+      "brief": "Look at the shapes, textures, colour, and imperfections on the leaf. In your notebooks, draw the leaf from your observation — crayons, colour pencils, or simple line drawings — your choice! Capture as many details as you can in your own style.",
+      "timer_seconds": 600,
+      "reminder_at": 180,
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "image": "/sessions/assets/s7_leaf.jpg",
+      "image_layout": "side",
+      "tip": "This activity is optional. Distribute one leaf per child (or per pair). Start the 10-minute timer. Walk around and encourage creative observation."
+    },
+    {
+      "n": 4,
+      "kind": "static",
+      "title": "Diversity in India — Group Activity",
+      "body": [
+        "We will now explore India's diversity through our many states! Make sure you are all seated in your groups.",
+        "Teacher to distribute State Information Cards (Annexure 1) to groups:",
+        "Group 1: Rajasthan, Kerala",
+        "Group 2: Assam, Maharashtra",
+        "Group 3: Tamil Nadu, Manipur",
+        "Group 4: Odisha, Punjab",
+        "Group 5: Karnataka, Kashmir"
+      ],
+      "callout": "Distribute Annexure 1 (State Information Cards) to each group AND Annexure 2 to all groups.",
+      "tip": "Hand out the State Information Cards before moving to the next slide. Explain/remind students about the school profile in case they don't remember."
+    },
+    {
+      "n": 5,
+      "kind": "group_activity_timer",
+      "title": "Explore the States!",
+      "brief": "Look at the Information Card and discuss what's special about the states! Identify the states in the map. Note down 2 or more interesting things about each state — draw something or write down fun facts you know about the language.",
+      "timer_seconds": 420,
+      "reminder_at": 180,
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "image": "/sessions/assets/s7_india_map_landmarks.png",
+      "image_layout": "side",
+      "tip": "7-minute timer. Walk around groups and help them find their states on the map. Encourage them to note interesting facts."
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "Quiz Time!",
+      "body": [
+        "We will now have a fun quiz!",
+        "Each correct answer will give a group 100 points!",
+        "Along with the answer, we will also be dancing!",
+        "Are you ready? Let's go!"
+      ],
+      "bullets_large": true,
+      "image": "/sessions/assets/s7_dancing.gif",
+      "image_layout": "side",
+      "tip": "Build excitement! Keep score on the board for each group."
+    },
+    {
+      "n": 7,
+      "kind": "click_reveal",
+      "title": "Quiz Question 1",
+      "items": [
+        {
+          "label": "Which dance form involves dramatic storytelling with colourful costumes and intricate gestures, and is performed in Kerala?",
+          "detail": "Kathakali Dance! 💃 Dance Move: Strike a \"Kathakali Pose\" with strong hand gestures and dramatic expressions!",
+          "color": "#2E6B4F"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_kathakali.png",
+          "alt": "Kathakali dancer",
+          "caption": "Kathakali — Kerala"
+        }
+      ],
+      "tip": "Read the question aloud. Let groups discuss for 10 seconds. Click to reveal the answer. Do the dance move together! Optionally play a short Kathakali dance video."
+    },
+    {
+      "n": 8,
+      "kind": "click_reveal",
+      "title": "Quiz Question 2",
+      "items": [
+        {
+          "label": "This famous landmark, known for its grand architecture, is located in Rajasthan and is a UNESCO World Heritage site. It also served as a royal palace. What is it?",
+          "detail": "Amber Fort! 🏰 Dance Move: Perform a \"Ghoomar Spin\" to celebrate the regal grandeur of Rajasthan!",
+          "color": "#C07D1C"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_ghoomar.png",
+          "alt": "Ghoomar dancers in Rajasthan",
+          "caption": "Ghoomar — Rajasthan"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the Ghoomar Spin together! Optionally play a short Ghoomar dance video."
+    },
+    {
+      "n": 9,
+      "kind": "click_reveal",
+      "title": "Quiz Question 3",
+      "items": [
+        {
+          "label": "What is the traditional clothing worn by women in Assam, which is known for its silk weaving tradition?",
+          "detail": "Muga Silk Sarees! 🧵 Dance Move: Perform the \"Bihu Step\" — an energetic foot tap from Assam's famous dance!",
+          "color": "#8B4E8B"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_bihu_dance.png",
+          "alt": "Bihu dance performance",
+          "caption": "Bihu Dance — Assam"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the Bihu Step together! Optionally play a short Bihu dance video."
+    },
+    {
+      "n": 10,
+      "kind": "click_reveal",
+      "title": "Quiz Question 4",
+      "items": [
+        {
+          "label": "This South Indian state is famous for its crispy, golden-brown dosa, a popular dish often enjoyed with chutney and sambar. Can you name the state?",
+          "detail": "Karnataka / Tamil Nadu! 🥘 Dance Move: Perform a graceful \"Bharatanatyam Mudra\" to celebrate the food!",
+          "color": "#B85042"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_bharatanatyam.png",
+          "alt": "Bharatanatyam facial expressions",
+          "caption": "Bharatanatyam — South India"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the Bharatanatyam Mudra together! Optionally play a short Bharatanatyam video."
+    },
+    {
+      "n": 11,
+      "kind": "click_reveal",
+      "title": "Quiz Question 5",
+      "items": [
+        {
+          "label": "Which state is famous for its tea plantations, rich cultural traditions, and the festival Bihu?",
+          "detail": "Assam! 🍵 Dance Move: Tap your feet in the \"Bihu Step\" to the rhythm of the festival!",
+          "color": "#2E6B4F"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_bihu_dance.png",
+          "alt": "Bihu dance performance",
+          "caption": "Bihu Dance — Assam"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the Bihu Step again!"
+    },
+    {
+      "n": 12,
+      "kind": "mc_narration",
+      "title": "Master Change Drops In!",
+      "video": "/sessions/assets/s7_mc_mid_quiz.kn.mp4",
+      "transcript": "Hello everyone! Sorry for the interruption! Are you all enjoying the quiz? I just wanted to say hi! Isn't it amazing how diverse our country is? What do you enjoy the most about our country's diversity — the food, clothing, dance, cultures or the beautiful landscapes? Just something to think about! Alright carry on with the quiz now! See you soon!",
+      "tip": "Play the MC video. Let children respond briefly to the question about what they enjoy most about India's diversity. Then continue the quiz."
+    },
+    {
+      "n": 13,
+      "kind": "click_reveal",
+      "title": "Quiz Question 6",
+      "items": [
+        {
+          "label": "Which landmark in Kashmir is famous for its scenic beauty and boat rides?",
+          "detail": "Dal Lake! 🚣 Dance Move: Perform a graceful hand gesture to imitate the serene movements of a boat on the lake.",
+          "color": "#1E6091"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_dal_lake.png",
+          "alt": "Dal Lake, Srinagar",
+          "caption": "Dal Lake — Kashmir"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the boat gesture together!"
+    },
+    {
+      "n": 14,
+      "kind": "click_reveal",
+      "title": "Quiz Question 7",
+      "items": [
+        {
+          "label": "The famous Gateway of India, a historical monument, is located in which state that also celebrates festivals like Ganesh Chaturthi and Makar Sankranti?",
+          "detail": "Maharashtra! 💃 Dance Move: Perform a \"Lavani Step,\" full of energy and rhythm from Maharashtra's famous dance!",
+          "color": "#C25B28"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_gateway_of_india.jpg",
+          "alt": "Gateway of India",
+          "caption": "Gateway of India — Maharashtra"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the Lavani Step together! Optionally play a short Lavani dance video."
+    },
+    {
+      "n": 15,
+      "kind": "click_reveal",
+      "title": "Quiz Question 8",
+      "items": [
+        {
+          "label": "This dish, made of maize and mustard greens, is a traditional food enjoyed in Punjab, especially in the winter. What is it called?",
+          "detail": "Sarson da Saag and Makki di Roti! 🌾 Dance Move: Do the \"Bhangra Jump\" to celebrate Punjab's harvest traditions!",
+          "color": "#C07D1C"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_bhangra.png",
+          "alt": "Bhangra dance",
+          "caption": "Bhangra — Punjab"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the Bhangra Jump together! Optionally play a short Bhangra video."
+    },
+    {
+      "n": 16,
+      "kind": "click_reveal",
+      "title": "Quiz Question 9",
+      "items": [
+        {
+          "label": "Which state is known for its ancient temples, including the Jagannath Temple, and celebrates the Rath Yatra festival with grand processions?",
+          "detail": "Odisha! 🛕 Dance Move: Strike an elegant \"Odissi Pose\" to honour the classical dance from Odisha!",
+          "color": "#8B4E8B"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_odissi.png",
+          "alt": "Odissi dance",
+          "caption": "Odissi — Odisha"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the Odissi Pose together! Optionally play a short Odissi video."
+    },
+    {
+      "n": 17,
+      "kind": "click_reveal",
+      "title": "Quiz Question 10",
+      "items": [
+        {
+          "label": "This state is famous for its Mysore Palace, rich history, and the festival of Dussehra. What is this state?",
+          "detail": "Karnataka! 🎭 Dance Move: Perform the \"Yakshagana Step,\" a bold, dramatic movement from Karnataka's traditional dance!",
+          "color": "#2E6B4F"
+        }
+      ],
+      "images": [
+        {
+          "src": "/sessions/assets/s7_yakshagana.png",
+          "alt": "Yakshagana dance",
+          "caption": "Yakshagana — Karnataka"
+        }
+      ],
+      "tip": "Read the question. Click to reveal. Do the Yakshagana Step together! Optionally play a short Yakshagana video."
+    },
+    {
+      "n": 18,
+      "kind": "reflect_share",
+      "title": "Discuss the Quiz",
+      "prompt": "Let's talk about what we learned!",
+      "body": [
+        "What was the most fun part of today's quiz and dance?",
+        "What did you learn about the states today that you didn't know before?",
+        "Did any of the dance steps remind you of your own culture or family traditions?"
+      ],
+      "tip": "Get responses from 3–4 children. Encourage answers from different groups. Celebrate all responses."
+    },
+    {
+      "n": 19,
+      "kind": "mc_narration",
+      "title": "What is Social Diversity?",
+      "video": "/sessions/assets/s7_mc_social_diversity.kn.mp4",
+      "transcript": "You all did an amazing job dancing, guessing, and sharing what makes each state so special! What we explored today is called social diversity. Social diversity refers to the variety of cultures, languages, traditions, and lifestyles that exist in a society. Just as we saw today, India is home to many different states, each with its own unique identity. These differences make our country vibrant and rich. Celebrating these differences makes us grow together!",
+      "tip": "Play the MC video. After the video, reinforce: 'Social diversity means the beautiful variety of cultures, languages, and traditions in our society.' Thank the children and close the session."
+    }
+  ]
+}
