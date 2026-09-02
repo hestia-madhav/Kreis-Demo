@@ -22,7 +22,7 @@ const SESSIONS: SessionEntry[] = [
     number: 1,
     title: {
       en: "Getting Started",
-      kn: "ಪ್ರಾರಂಭ (Getting Started)",
+      kn: "ಪ್ರಾರಂಭ",
     },
     subtitle: {
       en: "Introductions · Calmers · Group formation · Constitution connect · Club rules",
@@ -36,7 +36,7 @@ const SESSIONS: SessionEntry[] = [
     number: 2,
     title: {
       en: "Naming of Club and Launch Campaign",
-      kn: "ಕ್ಲಬ್ ನ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ (Naming of Club and Launch Campaign)",
+      kn: "ಕ್ಲಬ್ ನ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
     },
     subtitle: {
       en: "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
@@ -63,7 +63,7 @@ const SESSIONS: SessionEntry[] = [
     number: 3,
     title: {
       en: "Personal Integrity",
-      kn: "ವೈಯುಕ್ತಿಕ ನೈತಿಕತೆ (Personal Integrity)",
+      kn: "ವೈಯುಕ್ತಿಕ ನೈತಿಕತೆ",
     },
     subtitle: {
       en: "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
@@ -91,7 +91,7 @@ const SESSIONS: SessionEntry[] = [
     number: 4,
     title: {
       en: "Child Rights",
-      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು (Child Rights)",
+      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು",
     },
     subtitle: {
       en: "Change Champion Box · Ajay's story · Child rights (4 categories) · ChildLine 1098 · Reflection · MGS introduction",
@@ -112,7 +112,7 @@ const SESSIONS: SessionEntry[] = [
     number: 5,
     title: {
       en: "Local Government",
-      kn: "ಸ್ಥಳೀಯ ಸರ್ಕಾರ (Local Government)",
+      kn: "ಸ್ಥಳೀಯ ಸರ್ಕಾರ",
     },
     subtitle: {
       en: "ROC stories · 3-tier government · Visualization exercise · Local government · Helpline quiz · Complaint letters / postcards · Ripple tasks",
@@ -134,7 +134,7 @@ const SESSIONS: SessionEntry[] = [
     number: 6,
     title: {
       en: "Cultivating Critical Thinking",
-      kn: "ವಿಮರ್ಶಾತ್ಮಕಆಲೋಚನೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುವುದು + ಬದಲಾವಣೆಗಾಗಿ ಜೊತೆಯಾಗೋಣ (Cultivating Critical Thinking + Together For Change)",
+      kn: "ವಿಮರ್ಶಾತ್ಮಕಆಲೋಚನೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುವುದು + ಬದಲಾವಣೆಗಾಗಿ ಜೊತೆಯಾಗೋಣ",
     },
     subtitle: {
       en: "Roleplay (5 student roles) · Scientific temper · 4Ws framework · UPI ban fact-check exercise · AI fake news · Fundamental Duty connection · Ripple task",

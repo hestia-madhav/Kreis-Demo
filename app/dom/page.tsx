@@ -22,7 +22,7 @@ const SESSIONS: SessionEntry[] = [
     number: 1,
     title: {
       en: "Getting Started",
-      kn: "ಪ್ರಾರಂಭ (Getting Started)",
+      kn: "ಪ್ರಾರಂಭ",
     },
     subtitle: {
       en: "Introductions · Calmers · Group formation · Nagarika connect · Club rules",
@@ -45,7 +45,7 @@ const SESSIONS: SessionEntry[] = [
     number: 2,
     title: {
       en: "Naming of Club and Launch Campaign",
-      kn: "ಕ್ಲಬ್ ನ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ (Naming of Club and Launch Campaign)",
+      kn: "ಕ್ಲಬ್ ನ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
     },
     subtitle: {
       en: "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
@@ -65,7 +65,7 @@ const SESSIONS: SessionEntry[] = [
     number: 3,
     title: {
       en: "Personal Integrity",
-      kn: "ವೈಯುಕ್ತಿಕ ನೈತಿಕತೆ (Personal Integrity)",
+      kn: "ವೈಯುಕ್ತಿಕ ನೈತಿಕತೆ",
     },
     subtitle: {
       en: "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
@@ -84,7 +84,7 @@ const SESSIONS: SessionEntry[] = [
     number: 4,
     title: {
       en: "Child Rights",
-      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು (Child Rights)",
+      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು",
     },
     subtitle: {
       en: "Ajay's story · Picture-cue activity · Four categories of child rights · Protection message · Reflection",
