@@ -21,8 +21,8 @@ const SESSIONS: SessionEntry[] = [
     id: "dom-session-1",
     number: 1,
     title: {
-      en: "Welcome to the Children's Nagarika Club",
-      kn: "ನಾಗರಿಕ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
+      en: "Getting Started",
+      kn: "ಪ್ರಾರಂಭ (Getting Started)",
     },
     subtitle: {
       en: "Introductions · Calmers · Group formation · Nagarika connect · Club rules",
@@ -44,8 +44,8 @@ const SESSIONS: SessionEntry[] = [
     id: "dom-session-2",
     number: 2,
     title: {
-      en: "Naming of Club & Launch Campaign",
-      kn: "ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡುವುದು ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+      en: "Naming of Club and Launch Campaign",
+      kn: "ಕ್ಲಬ್ ನ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ (Naming of Club and Launch Campaign)",
     },
     subtitle: {
       en: "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
@@ -64,8 +64,8 @@ const SESSIONS: SessionEntry[] = [
     id: "dom-session-3",
     number: 3,
     title: {
-      en: "Choices, Integrity & the Change Champion Box",
-      kn: "ಆಯ್ಕೆಗಳು, ಪ್ರಾಮಾಣಿಕತೆ ಮತ್ತು ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್",
+      en: "Personal Integrity",
+      kn: "ವೈಯುಕ್ತಿಕ ನೈತಿಕತೆ (Personal Integrity)",
     },
     subtitle: {
       en: "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
@@ -83,8 +83,8 @@ const SESSIONS: SessionEntry[] = [
     id: "dom-session-4",
     number: 4,
     title: {
-      en: "Child Rights & Responsibilities",
-      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು & ಜವಾಬ್ದಾರಿಗಳು",
+      en: "Child Rights",
+      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು (Child Rights)",
     },
     subtitle: {
       en: "Ajay's story · Picture-cue activity · Four categories of child rights · Protection message · Reflection",

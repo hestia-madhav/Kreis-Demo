@@ -21,8 +21,8 @@ const SESSIONS: SessionEntry[] = [
     id: "kreis-session-1",
     number: 1,
     title: {
-      en: "Welcome to the Children's Constitution Club",
-      kn: "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್‌ಗೆ ಸುಸ್ವಾಗತ!",
+      en: "Getting Started",
+      kn: "ಪ್ರಾರಂಭ (Getting Started)",
     },
     subtitle: {
       en: "Introductions · Calmers · Group formation · Constitution connect · Club rules",
@@ -35,8 +35,8 @@ const SESSIONS: SessionEntry[] = [
     id: "kreis-session-2",
     number: 2,
     title: {
-      en: "Naming of Club & Launch Campaign",
-      kn: "ಕ್ಲಬ್‌ಗೆ ಹೆಸರಿಡುವುದು ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ",
+      en: "Naming of Club and Launch Campaign",
+      kn: "ಕ್ಲಬ್ ನ ನಾಮಕರಣ ಮತ್ತು ಉದ್ಘಾಟನಾ ಅಭಿಯಾನ (Naming of Club and Launch Campaign)",
     },
     subtitle: {
       en: "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
@@ -62,8 +62,8 @@ const SESSIONS: SessionEntry[] = [
     id: "kreis-session-3",
     number: 3,
     title: {
-      en: "Choices, Integrity & the Change Champion Box",
-      kn: "ಆಯ್ಕೆಗಳು, ಪ್ರಾಮಾಣಿಕತೆ ಮತ್ತು ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್",
+      en: "Personal Integrity",
+      kn: "ವೈಯುಕ್ತಿಕ ನೈತಿಕತೆ (Personal Integrity)",
     },
     subtitle: {
       en: "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
@@ -90,8 +90,8 @@ const SESSIONS: SessionEntry[] = [
     id: "kreis-session-4",
     number: 4,
     title: {
-      en: "Child Rights, Responsibilities & Makkala Grama Sabha",
-      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು, ಜವಾಬ್ದಾರಿಗಳು ಮತ್ತು ಮಕ್ಕಳ ಗ್ರಾಮ ಸಭೆ",
+      en: "Child Rights",
+      kn: "ಮಕ್ಕಳ ಹಕ್ಕುಗಳು (Child Rights)",
     },
     subtitle: {
       en: "Change Champion Box · Ajay's story · Child rights (4 categories) · ChildLine 1098 · Reflection · MGS introduction",
@@ -111,8 +111,8 @@ const SESSIONS: SessionEntry[] = [
     id: "kreis-session-5",
     number: 5,
     title: {
-      en: "Active Citizens & Helpline Numbers",
-      kn: "ಸಕ್ರಿಯ ನಾಗರಿಕರು ಮತ್ತು ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು",
+      en: "Local Government",
+      kn: "ಸ್ಥಳೀಯ ಸರ್ಕಾರ (Local Government)",
     },
     subtitle: {
       en: "ROC stories · 3-tier government · Visualization exercise · Local government · Helpline quiz · Complaint letters / postcards · Ripple tasks",
@@ -133,8 +133,8 @@ const SESSIONS: SessionEntry[] = [
     id: "kreis-session-6",
     number: 6,
     title: {
-      en: "Fake News, Scientific Temper & the 4Ws Test",
-      kn: "ಸುಳ್ಳು ಸುದ್ದಿ, ವೈಜ್ಞಾನಿಕ ಮನೋಭಾವ ಮತ್ತು 4Ws ಪರೀಕ್ಷೆ",
+      en: "Cultivating Critical Thinking",
+      kn: "ವಿಮರ್ಶಾತ್ಮಕಆಲೋಚನೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುವುದು + ಬದಲಾವಣೆಗಾಗಿ ಜೊತೆಯಾಗೋಣ (Cultivating Critical Thinking + Together For Change)",
     },
     subtitle: {
       en: "Roleplay (5 student roles) · Scientific temper · 4Ws framework · UPI ban fact-check exercise · AI fake news · Fundamental Duty connection · Ripple task",
