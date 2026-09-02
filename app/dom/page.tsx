@@ -103,6 +103,27 @@ const SESSIONS: SessionEntry[] = [
       "🔴 MC video: Protection/POCSO message narration",
     ],
   },
+  {
+    id: "dom-session-5",
+    number: 5,
+    title: {
+      en: "Local Government",
+      kn: "ಸ್ಥಳೀಯ ಸರ್ಕಾರ",
+    },
+    subtitle: {
+      en: "ROC stories · 3-tier government · Visualization exercise · Local government · Helpline quiz · Complaint letters / postcards · Ripple tasks",
+      kn: "ROC ಕಥೆಗಳು · 3-ಹಂತದ ಸರ್ಕಾರ · ಕಲ್ಪನೆ ಅಭ್ಯಾಸ · ಸ್ಥಳೀಯ ಸರ್ಕಾರ · ಸಹಾಯವಾಣಿ ರಸಪ್ರಶ್ನೆ · ದೂರು ಪತ್ರಗಳು · ತರಂಗ ಕಾರ್ಯಗಳು",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Player JSON built (en + kn)",
+      "🔴 MC video production",
+      "🔴 Visualization audio with sound effects",
+      "🔴 Helpline sheet design",
+      "🔴 Sample complaint letter template",
+    ],
+  },
 ];
 
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {
