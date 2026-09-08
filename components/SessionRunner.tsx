@@ -2318,7 +2318,7 @@ const styles = `
     max-height: 32vh;
   }
   .sr-static-text { min-width: 0; }
-  .sr-static-image { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.05); }
+  .sr-static-image { }
   .sr-static-image img { width: 100%; height: auto; display: block; border-radius: 8px; }
   /* Multi-image strip for slides like 7 (Form Groups reference photos)
      and 8 (KSRTC + KREIS inspiration logos). Auto-flows in a row. */
@@ -2331,7 +2331,7 @@ const styles = `
     margin: 0 auto;
     max-width: 1000px;
   }
-  .sr-image-card { margin: 0; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 10px; box-shadow: 0 2px 8px rgba(0,0,0,.05); display: flex; flex-direction: column; gap: 8px; transition: transform .2s ease, box-shadow .2s ease; }
+  .sr-image-card { margin: 0; display: flex; flex-direction: column; gap: 8px; }
   .sr-image-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.1); }
   .sr-image-card img { width: 100%; height: 400px; object-fit: contain; display: block; }
   .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
