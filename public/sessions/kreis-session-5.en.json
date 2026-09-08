@@ -114,7 +114,7 @@
     },
     {
       "n": 6,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Active Citizens — Visualization",
       "body": [
         "We will now do a visualization exercise. Everyone, close your eyes!",
@@ -124,7 +124,8 @@
         "Now think about the entire city! Think about the roads you travel on — are there footpaths? How is the traffic and are there potholes on the roads?",
         "Now open your eyes."
       ],
-      "tip": "PPT note: MC to say this. Audio with sound effects needed between each point (tap water sounds, birdsong, vehicle sounds, horn sounds)."
+      "tip": "PPT note: MC to say this. Audio with sound effects needed between each point (tap water sounds, birdsong, vehicle sounds, horn sounds).",
+      "video": "/sessions/assets/s5_mc_visualization.kn.mp4"
     },
     {
       "n": 7,
@@ -216,14 +217,14 @@
     },
     {
       "n": 14,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Nature & Animal Rights",
       "body": [
-        "[Video pending — MC narration to be recorded]",
         "Earlier in the active citizens' stories, we saw that we need to raise our voice and advocate for rights. But are these rights only for humans?",
         "Yes, you're right. Trees, animals, nature, birds also have rights. Unlike humans, they cannot raise their voice for their own rights. Therefore, it is our responsibility to speak up on their behalf and protect them."
       ],
-      "tip": "PPT note: MC to say this. Pause 2 seconds after the question for students to respond."
+      "tip": "PPT note: MC to say this. Pause 2 seconds after the question for students to respond.",
+      "video": "/sessions/assets/s5_mc_nature_rights.kn.mp4"
     },
     {
       "n": 15,
