@@ -72,7 +72,13 @@
       "reminder_at": 60,
       "tip": "ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅನುಬಂಧ 1 ವಿತರಿಸಿ (ಪ್ರತಿ ಗುಂಪಿಗೆ ಒಂದು ಪ್ರತಿ).",
       "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
-      "image": "/sessions/assets/s5_annexure1_roc_stories.jpeg"
+      "image": "/sessions/assets/s5_annexure1_roc_stories.jpeg",
+      "images": [
+        {
+          "src": "/sessions/assets/s5_roc_stories_sheet.png",
+          "alt": "ROC Stories — Annexure 1"
+        }
+      ]
     },
     {
       "n": 3,
@@ -145,7 +151,13 @@
         "ಕೆಲವು ಸಮಸ್ಯೆಗಳನ್ನು ಬೋರ್ಡಿನ ಮೇಲೆ ಪಟ್ಟಿ ಮಾಡೋಣ — ಈಗಾಗಲೇ ಬರೆದಿರುವ ಸಮಸ್ಯೆಯನ್ನು ಆದಷ್ಟೂ ಪುನಃ ಹೇಳುವುದು ಬೇಡ."
       ],
       "image": "/sessions/assets/s5_local_govt_blackboard.png",
-      "tip": "ಗುಂಪುಗಳಿಂದ ಸಮಸ್ಯೆಗಳನ್ನು ಬೋರ್ಡ್ ಮೇಲೆ ಪಟ್ಟಿ ಮಾಡಿ."
+      "tip": "ಗುಂಪುಗಳಿಂದ ಸಮಸ್ಯೆಗಳನ್ನು ಬೋರ್ಡ್ ಮೇಲೆ ಪಟ್ಟಿ ಮಾಡಿ.",
+      "images": [
+        {
+          "src": "/sessions/assets/s5_local_govt_blackboard.png",
+          "alt": "Board Work — Example: Problems list"
+        }
+      ]
     },
     {
       "n": 9,
@@ -160,7 +172,13 @@
         "ಸ್ಥಳೀಯ ಸರ್ಕಾರ (Local Government) — ನಮ್ಮ ದೈನಂದಿನ ಜೀವನಕ್ಕೆ ಅತ್ಯಂತ ಹತ್ತಿರವಿರುವ ಸರ್ಕಾರ."
       ],
       "image": "/sessions/assets/s5_local_govt_blackboard.png",
-      "tip": "ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ ವಿದ್ಯುತ್ ಇಲಾಖೆ, ನಗರಸಭೆ, ಪಂಚಾಯತ್, ಜಲ ಮಂಡಳಿ, ಸಂಚಾರ ಪೊಲೀಸ್ ಇತ್ಯಾದಿ ಉತ್ತರಗಳನ್ನು ಪಡೆಯಬೇಕು."
+      "tip": "ವಿದ್ಯಾರ್ಥಿಗಳಿಂದ ವಿದ್ಯುತ್ ಇಲಾಖೆ, ನಗರಸಭೆ, ಪಂಚಾಯತ್, ಜಲ ಮಂಡಳಿ, ಸಂಚಾರ ಪೊಲೀಸ್ ಇತ್ಯಾದಿ ಉತ್ತರಗಳನ್ನು ಪಡೆಯಬೇಕು.",
+      "images": [
+        {
+          "src": "/sessions/assets/s5_local_govt_blackboard.png",
+          "alt": "Local Government departments"
+        }
+      ]
     },
     {
       "n": 10,
@@ -186,7 +204,13 @@
       ],
       "tip": "ಸಹಾಯವಾಣಿ ಹಾಳೆಗಳನ್ನು ವಿತರಿಸಿ.",
       "image": "/sessions/assets/s5_helpline_numbers.jpeg",
-      "image_layout": "side"
+      "image_layout": "side",
+      "images": [
+        {
+          "src": "/sessions/assets/s5_helpline_numbers_card.png",
+          "alt": "Helpline Numbers card"
+        }
+      ]
     },
     {
       "n": 12,
@@ -213,7 +237,13 @@
         "ಮುಂದಿನ ಚಟುವಟಿಕೆ — ನಿಮಗೆ ಸೂಕ್ತವಾದುದನ್ನು ಆಯ್ಕೆ ಮಾಡಿ."
       ],
       "image": "/sessions/assets/s5_action_options_card.png",
-      "tip": "4 ಆಯ್ಕೆಗಳಲ್ಲಿ ಒಂದನ್ನು ಆರಿಸಿ: 1) ಸಹಾಯವಾಣಿಗೆ ಕರೆ 2) ರೆಕಾರ್ಡ್ ಮಾಡಿದ ಕರೆ ಆಲಿಸಿ 3) ದೂರಿನ ಪತ್ರ ಬರೆಯಿರಿ 4) ಸಾಮೂಹಿಕ ಪತ್ರಗಳು/ಪೋಸ್ಟ್‌ಕಾರ್ಡ್‌ಗಳು."
+      "tip": "4 ಆಯ್ಕೆಗಳಲ್ಲಿ ಒಂದನ್ನು ಆರಿಸಿ: 1) ಸಹಾಯವಾಣಿಗೆ ಕರೆ 2) ರೆಕಾರ್ಡ್ ಮಾಡಿದ ಕರೆ ಆಲಿಸಿ 3) ದೂರಿನ ಪತ್ರ ಬರೆಯಿರಿ 4) ಸಾಮೂಹಿಕ ಪತ್ರಗಳು/ಪೋಸ್ಟ್‌ಕಾರ್ಡ್‌ಗಳು.",
+      "images": [
+        {
+          "src": "/sessions/assets/s5_action_options_card.png",
+          "alt": "Activity options card"
+        }
+      ]
     },
     {
       "n": 14,
@@ -245,7 +275,13 @@
       ],
       "image": "/sessions/assets/s5_change_champion_report.jpeg",
       "image_layout": "side",
-      "tip": "ನಮೂನೆಯನ್ನು ಪ್ರತಿಯೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿಗೂ ವಿತರಿಸಿ."
+      "tip": "ನಮೂನೆಯನ್ನು ಪ್ರತಿಯೊಬ್ಬ ವಿದ್ಯಾರ್ಥಿಗೂ ವಿತರಿಸಿ.",
+      "images": [
+        {
+          "src": "/sessions/assets/s5_change_champion_report_form.png",
+          "alt": "Change Champion Report form"
+        }
+      ]
     },
     {
       "n": 17,
