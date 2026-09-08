@@ -72,13 +72,7 @@
       "reminder_at": 60,
       "tip": "Distribute Annexure 1 to students (one copy per group).",
       "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
-      "image": "/sessions/assets/s5_annexure1_roc_stories.jpeg",
-      "images": [
-        {
-          "src": "/sessions/assets/s5_roc_stories_sheet.png",
-          "alt": "ROC Stories — Annexure 1"
-        }
-      ]
+      "image": "/sessions/assets/s5_roc_stories_sheet.png"
     },
     {
       "n": 3,
@@ -150,14 +144,8 @@
       "body": [
         "Let's list some problems on the board — try not to repeat a problem that's already been written."
       ],
-      "image": "/sessions/assets/s5_local_govt_blackboard.png",
       "tip": "List problems from groups on the board.",
-      "images": [
-        {
-          "src": "/sessions/assets/s5_local_govt_blackboard.png",
-          "alt": "Board Work — Example: Problems list"
-        }
-      ]
+      "image": "/sessions/assets/s5_local_govt_blackboard.png"
     },
     {
       "n": 9,
@@ -171,14 +159,8 @@
         "What are all these collectively called?",
         "Local Government — the government closest to our daily lives."
       ],
-      "image": "/sessions/assets/s5_local_govt_blackboard.png",
       "tip": "Elicit answers from students — electricity dept, municipality, panchayat, water board, traffic police, etc.",
-      "images": [
-        {
-          "src": "/sessions/assets/s5_local_govt_blackboard.png",
-          "alt": "Local Government departments"
-        }
-      ]
+      "image": "/sessions/assets/s5_local_govt_blackboard.png"
     },
     {
       "n": 10,
@@ -203,14 +185,8 @@
         "Paste it on your notice board, wall, or fridge at home where everyone can see it."
       ],
       "tip": "Distribute helpline sheets.",
-      "image": "/sessions/assets/s5_helpline_numbers.jpeg",
       "image_layout": "side",
-      "images": [
-        {
-          "src": "/sessions/assets/s5_helpline_numbers_card.png",
-          "alt": "Helpline Numbers card"
-        }
-      ]
+      "image": "/sessions/assets/s5_helpline_numbers_card.png"
     },
     {
       "n": 12,
@@ -236,14 +212,8 @@
       "body": [
         "Next activity — choose the one that suits you best."
       ],
-      "image": "/sessions/assets/s5_action_options_card.png",
       "tip": "Pick one of 4 options: 1) Make a helpline call 2) Listen to a pre-recorded call 3) Write a complaint letter 4) Write complaint postcards/mass letters.",
-      "images": [
-        {
-          "src": "/sessions/assets/s5_action_options_card.png",
-          "alt": "Activity options card"
-        }
-      ]
+      "image": "/sessions/assets/s5_action_options_card.png"
     },
     {
       "n": 14,
@@ -273,15 +243,9 @@
       "body": [
         "Fill out this form reporting a problem you tried to solve or solved, and put it in the Change Champion Box."
       ],
-      "image": "/sessions/assets/s5_change_champion_report.jpeg",
       "image_layout": "side",
       "tip": "Distribute a copy to each student.",
-      "images": [
-        {
-          "src": "/sessions/assets/s5_change_champion_report_form.png",
-          "alt": "Change Champion Report form"
-        }
-      ]
+      "image": "/sessions/assets/s5_change_champion_report_form.png"
     },
     {
       "n": 17,
