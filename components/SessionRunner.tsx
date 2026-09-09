@@ -2319,7 +2319,7 @@ const styles = `
   }
   .sr-static-text { min-width: 0; }
   .sr-static-image { }
-  .sr-static-image img { width: 100%; height: auto; display: block; border-radius: 8px; }
+  .sr-static-image img { width: 100%; height: auto; display: block; }
   /* Multi-image strip for slides like 7 (Form Groups reference photos)
      and 8 (KSRTC + KREIS inspiration logos). Auto-flows in a row. */
   /* Logo / reference image strip — centered grid that doesn't sprawl when
@@ -2332,7 +2332,7 @@ const styles = `
     max-width: 1000px;
   }
   .sr-image-card { margin: 0; display: flex; flex-direction: column; gap: 8px; }
-  .sr-image-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,.1); }
+  .sr-image-card:hover { }
   .sr-image-card img { width: 100%; height: 400px; object-fit: contain; display: block; }
   .sr-image-card figcaption { font-size: 12px; font-weight: 700; color: ${ORANGE_INK}; text-align: center; text-transform: uppercase; letter-spacing: .04em; }
   /* Brief panel on timer slides also supports companion logos beneath
