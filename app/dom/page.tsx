@@ -124,6 +124,49 @@ const SESSIONS: SessionEntry[] = [
       "🔴 Sample complaint letter template",
     ],
   },
+  {
+    id: "dom-session-6",
+    number: 6,
+    title: {
+      en: "Cultivating Critical Thinking",
+      kn: "ವಿಮರ್ಶಾತ್ಮಕ ಆಲೋಚನೆಯನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸುವುದು",
+    },
+    subtitle: {
+      en: "Roleplay (5 student roles) · Scientific temper · 4Ws framework · UPI ban fact-check exercise · AI fake news · Fundamental Duty connection · Ripple task",
+      kn: "ಪಾತ್ರಾಭಿನಯ (5 ವಿದ್ಯಾರ್ಥಿ ಪಾತ್ರಗಳು) · ವೈಜ್ಞಾನಿಕ ಮನೋಭಾವ · 4Ws ಚೌಕಟ್ಟು · UPI ನಿಷೇಧ ಸತ್ಯಶೋಧನೆ · AI ಸುಳ್ಳು ಸುದ್ದಿ · ಮೂಲಭೂತ ಕರ್ತವ್ಯ · ತರಂಗ ಕಾರ್ಯ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Player JSON (en + kn)",
+      "🔴 MC video production (3 parts)",
+      "🔴 Annexure 1 (roleplay slips)",
+      "🔴 AI-generated fake news example image",
+      "🔴 Annexure 3 (4Ws handout)",
+    ],
+  },
+  {
+    id: "dom-session-7",
+    number: 7,
+    title: {
+      en: "Diversity & Composite Culture - 1",
+      kn: "ವೈವಿಧ್ಯತೆ ಮತ್ತು ಸಮ್ಮಿಶ್ರ ಸಂಸ್ಕೃತಿ - 1",
+    },
+    subtitle: {
+      en: "Diversity in classroom · Leaf drawing · State information cards · Quiz with dance moves · Social diversity concept",
+      kn: "ತರಗತಿಯಲ್ಲಿ ವೈವಿಧ್ಯತೆ · ಎಲೆ ಚಿತ್ರ · ರಾಜ್ಯ ಮಾಹಿತಿ ಕಾರ್ಡ್‌ಗಳು · ನೃತ್ಯ ಹೆಜ್ಜೆಗಳೊಂದಿಗೆ ರಸಪ್ರಶ್ನೆ · ಸಾಮಾಜಿಕ ವೈವಿಧ್ಯತೆ ಪರಿಕಲ್ಪನೆ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Player JSON (en + kn)",
+      "✅ Quiz images (12 images from PPT)",
+      "🔴 MC video: mid-quiz interruption",
+      "🔴 MC video: social diversity explanation",
+      "🔴 Annexure 1 (State Information Cards)",
+      "🔴 Annexure 2 (worksheet)",
+    ],
+  },
 ];
 
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {
