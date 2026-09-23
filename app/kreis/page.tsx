@@ -175,6 +175,44 @@ const SESSIONS: SessionEntry[] = [
       "🔴 Annexure 2 (worksheet)",
     ],
   },
+  {
+    id: "kreis-session-8",
+    number: 8,
+    title: {
+      en: "Diversity & Composite Culture - 2",
+      kn: "ವೈವಿಧ್ಯತೆ ಮತ್ತು ಸಮ್ಮಿಶ್ರ ಸಂಸ್ಕೃತಿ - 2",
+    },
+    subtitle: {
+      en: "Continuation of diversity theme · Composite culture exploration · Group activities",
+      kn: "ವೈವಿಧ್ಯತೆ ವಿಷಯದ ಮುಂದುವರಿಕೆ · ಸಮ್ಮಿಶ್ರ ಸಂಸ್ಕೃತಿ ಅನ್ವೇಷಣೆ · ಗುಂಪು ಚಟುವಟಿಕೆಗಳು",
+    },
+    status: "draft",
+    durationMin: 60,
+  },
+  {
+    id: "kreis-session-9",
+    number: 9,
+    title: {
+      en: "Dignity of Labour & Equality",
+      kn: "ಶ್ರಮದ ಘನತೆ ಮತ್ತು ಸಮಾನತೆ",
+    },
+    subtitle: {
+      en: "Job riddles · Preamble cards · Stories of Grace Banu, Jaganthan & Murugamma · Start-Stop-Continue · Empathy & Equality project",
+      kn: "ಕೆಲಸದ ಒಗಟುಗಳು · ಪ್ರಸ್ತಾವನೆ ಕಾರ್ಡ್‌ಗಳು · ಗ್ರೇಸ್ ಬಾನು, ಜಗಂತನ್ ಮತ್ತು ಮುರುಗಮ್ಮ ಕಥೆಗಳು · ಆರಂಭಿಸಿ-ನಿಲ್ಲಿಸಿ-ಮುಂದುವರಿಸಿ · ಸಹಾನುಭೂತಿ ಮತ್ತು ಸಮಾನತೆ ಯೋಜನೆ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Source PPT (V1 with Savitha's inputs)",
+      "✅ Player JSON (kn + en)",
+      "🔴 MC video: riddle reflection",
+      "🔴 MC video: Start-Stop-Continue intro",
+      "🔴 Story images (Grace Banu, Jaganthan, Murugamma)",
+      "🔴 Riddle images (6 jobs)",
+      "🔴 Preamble cards image",
+      "🔴 Together for Change project card image",
+    ],
+  },
 ];
 
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {

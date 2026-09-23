@@ -1,0 +1,316 @@
+{
+  "id": "kreis-session-9",
+  "_language": "en",
+  "_revision": "2026-09-23-v1-savitha-inputs",
+  "title": "Session 9: Dignity of Labour & Equality",
+  "programme": "KREIS",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "slides": [1]
+    },
+    {
+      "id": "introduction",
+      "label": "Introduction",
+      "slides": [2]
+    },
+    {
+      "id": "riddle_activity",
+      "label": "Riddle Activity",
+      "slides": [3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    {
+      "id": "preamble_cards",
+      "label": "Preamble Cards",
+      "slides": [11]
+    },
+    {
+      "id": "story_time",
+      "label": "Story Time & Discussion",
+      "slides": [12, 13, 14, 15, 16, 17]
+    },
+    {
+      "id": "reflection_circle",
+      "label": "Reflection Circle — Start, Stop, Continue",
+      "slides": [18, 19, 20]
+    },
+    {
+      "id": "constitution_closing",
+      "label": "Constitution Connect & Closing",
+      "slides": [21, 22]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to the Children's Constitution Club!",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Play welcome music. Display KREIS + CMCA logos."
+    },
+    {
+      "n": 2,
+      "kind": "reflect_share",
+      "title": "What Do You Want to Be?",
+      "body": [
+        "What do you want to be or become when you grow up?",
+        "What made you choose that career path?"
+      ],
+      "questions": [
+        "What do you want to be or become when you grow up?",
+        "What made you choose that career path?"
+      ],
+      "tip": "Elicit a few responses from students. This is a warm-up to introduce the theme of jobs and dignity of labour."
+    },
+    {
+      "n": 3,
+      "kind": "static",
+      "title": "Riddle Activity",
+      "body": [
+        "Today we will do a fun activity!",
+        "We need 6 volunteers who can be dramatic and read out loudly. Who would like to do it?",
+        "Once we have volunteers, the teacher will hand over one slip to each student from Annexure 1.",
+        "The class guesses the job — write it on the board after each correct guess."
+      ],
+      "tip": "Hand over one riddle slip to each of the 6 student volunteers from Annexure 1. Class guesses the job; write it on the board after each correct guess."
+    },
+    {
+      "n": 4,
+      "kind": "static",
+      "title": "Riddle 1",
+      "body": [
+        "\"I move up and down, but I never walk on my own. I take people high and low, yet I never feel alone. Without me, you might be stuck or delayed. Who am I?\"",
+        "Answer: Lift Operator"
+      ],
+      "image": "/sessions/assets/s9_riddle_lift_operator.jpg",
+      "tip": "Let the volunteer read dramatically. Class guesses before revealing the answer."
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "Riddle 2",
+      "body": [
+        "\"I rarely sleep at night, yet I am always awake. I comfort the sick and help them heal. Sometimes my hands are tired, but my heart is real. I am not the doctor, but I help save lives too. Who am I?\"",
+        "Answer: Nurse"
+      ],
+      "image": "/sessions/assets/s9_riddle_nurse.jpg",
+      "tip": "Let the volunteer read dramatically. Class guesses before revealing."
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "Riddle 3",
+      "body": [
+        "\"I work from sunrise to sunset, hands in the soil. I grow the food that fills your plate and boils. Without me, there is nothing to eat. Yet my work is quiet, humble, and sweet. Who am I?\"",
+        "Answer: Farmer"
+      ],
+      "image": "/sessions/assets/s9_riddle_farmer.jpg",
+      "tip": "Let the volunteer read dramatically. Class guesses before revealing."
+    },
+    {
+      "n": 7,
+      "kind": "static",
+      "title": "Riddle 4",
+      "body": [
+        "\"I clean what others leave behind. What I touch, others avoid to find. I keep the streets and buildings neat. Without me, life is far from sweet. Who am I?\"",
+        "Answer: Sanitary Worker"
+      ],
+      "image": "/sessions/assets/s9_riddle_sanitary_worker.jpg",
+      "tip": "Let the volunteer read dramatically. Class guesses before revealing."
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Riddle 5",
+      "body": [
+        "\"I open minds and help you learn. I ask questions, and answers you earn. I'm not in a hospital or driving a train, yet I shape the future, again and again. Who am I?\"",
+        "Answer: Teacher"
+      ],
+      "image": "/sessions/assets/s9_riddle_teacher.jpg",
+      "tip": "Let the volunteer read dramatically. Class guesses before revealing."
+    },
+    {
+      "n": 9,
+      "kind": "static",
+      "title": "Riddle 6",
+      "body": [
+        "\"My job may look simple, but it isn't at all. I must be on time whenever there is a call. For people at home or fields that need care, I send water flowing everywhere. Who am I?\"",
+        "Answer: Water Supply Worker / Waterman"
+      ],
+      "image": "/sessions/assets/s9_riddle_waterman.jpg",
+      "tip": "Let the volunteer read dramatically. Class guesses before revealing."
+    },
+    {
+      "n": 10,
+      "kind": "static",
+      "title": "Riddle Reflection",
+      "body": [
+        "Hello friends! Looks like you all enjoyed the riddles. Now let's take a moment to think together.",
+        "Can you remember some of the people whose jobs we guessed earlier? Raise your hand and share one name. What do they do?",
+        "Now imagine, what would happen if these people didn't do their jobs? If sanitary workers didn't clean our streets or hospitals, what would life look like?",
+        "Here's another thought — why do you think some jobs are paid more and some less? Are low-paying jobs always easier? Or is all work difficult in its own way?",
+        "Do we treat farmers, sanitary workers, or lift operators the same way we treat teachers, engineers, or doctors? What makes a job \"respectful\"?",
+        "If you were asked to do just the most important job to keep our society going, what would it be? It's not an easy choice, is it?",
+        "That's the whole point — every single job, no matter how small or invisible, is needed for society to work.",
+        "And every person doing any job deserves respect. That is the Dignity of Labour."
+      ],
+      "tip": "MC appears and leads this discussion. Pause for responses after each question. Let students arrive at the idea of dignity of labour themselves."
+    },
+    {
+      "n": 11,
+      "kind": "static",
+      "title": "Preamble Cards",
+      "body": [
+        "Which Constitutional value best connects to you today as part of the activities and discussions we have had?",
+        "Justice — Social, economic and political",
+        "Liberty — Of thought, expression, belief, faith and worship",
+        "Equality — Of status and opportunity",
+        "Fraternity — Assuring the dignity of the individual and the unity and integrity of the nation"
+      ],
+      "image": "/sessions/assets/s9_preamble_cards.jpg",
+      "tip": "Show all four Preamble value cards. Accept all responses — there is no wrong answer."
+    },
+    {
+      "n": 12,
+      "kind": "static",
+      "title": "Story Time — Grace Banu",
+      "body": [
+        "Grace Banu is an Indian software engineer who is a Dalit and transgender activist.",
+        "Transgender people have a physical identity (physical body) that is different from their personal identity and expression — what they feel and know inside that they are.",
+        "She is the first transgender person to be admitted to an engineering college in the state of Tamil Nadu. Banu struggled financially to remain in college, in part because she was not receiving any support from her family at that time. Responding to a call for help, a local businessman launched an online campaign raising funds for her to complete the course. Her adopted daughter Tharika Banu is also the first to attend secondary education as a transgender person in India.",
+        "In 2014, Banu said, \"there was a rule that trans persons cannot study professional courses.\" She wanted to challenge that and applied for the course. After completing her degree, she went on to do her Masters and has worked in the technology sector.",
+        "Grace Banu continues to advocate for the rights and dignity of transgender people in India."
+      ],
+      "image": "/sessions/assets/s9_grace_banu.jpg",
+      "tip": "Use Annexure 2: Discussion Slips. Read or narrate the story. Use any of the three stories for the session."
+    },
+    {
+      "n": 13,
+      "kind": "reflect_share",
+      "title": "Discussion — Grace Banu",
+      "body": [
+        "Transgender people are born with the physical body of one gender and a mental identity which does not fit in with their physical body. This is not their fault or any mistake and is how they feel about themselves. This is as normal as being a boy or a girl!"
+      ],
+      "questions": [
+        "What Rights are denied to Transgender people? (education, employment, equality, healthcare, identity etc.)",
+        "What are our responsibilities? (treat them as equals and with respect)",
+        "And yet, why do you think people treat them badly?"
+      ],
+      "tip": "Facilitate an open, respectful discussion. Emphasise that transgender identity is natural and deserving of dignity."
+    },
+    {
+      "n": 14,
+      "kind": "static",
+      "title": "Story Time — Jaganthan",
+      "body": [
+        "My name is Jaganthan. I am a little over 60 years old. I am from Tamil Nadu and have been working outside Richmond Park, Bengaluru for over 30 years.",
+        "We had limited opportunities back in our village and did not consider the option to go to school. Moreover, we had to start doing odd jobs from a very young age as our parents could not afford to give us all that much. Now, I stay with my sister; we both work at Richmond Park. She has a cart for fruits while I have a cart that carries vegetables.",
+        "I like my job, many people who have seen me for years have continued to buy the vegetables from me and we share a long standing relationship. It is a tough job as I have to ensure that the sales are good and also that the vegetables and fruits are fresh as they do not last long. I cannot afford to grow my business as I cannot leave my cart."
+      ],
+      "image": "/sessions/assets/s9_jaganthan.jpg",
+      "tip": "Read or narrate Jaganthan's story with emotion."
+    },
+    {
+      "n": 15,
+      "kind": "reflect_share",
+      "title": "Discussion — Jaganthan",
+      "questions": [
+        "What Rights does Jaganthan enjoy? (Right to Movement/migration, Right to Livelihood, Right to Work etc.)",
+        "Jaganthan works very hard every day. He is 60, he stands all day in front of his cart, earns a daily wage and yet remains happy and content. Why do you think this is so? (Dignity of labour, people treat him with respect, has good relations with customers, they respect him and his job)"
+      ],
+      "tip": "Guide students to recognise Jaganthan's rights and the dignity in his work."
+    },
+    {
+      "n": 16,
+      "kind": "static",
+      "title": "Story Time — Murugamma",
+      "body": [
+        "Ms. Murugamma is a sanitary waste worker in our city of Hosur. She reports to duty at 6 am every morning with her pushcart and collects waste from around 120 homes each day. She ends her shift at 2 pm usually.",
+        "Her job is a difficult one, pushing the cart from home to home, whether it is hot or raining. She wishes that people would separate their waste at home and she keeps requesting people to do so. But often, people are rude to her and say that it is not their job to separate their household waste and that it is her job.",
+        "Many people who work in night shifts are asleep when she comes to collect the waste. They just throw their waste on the roads on their way to work and don't bother to keep it in a place where she can collect it. When she tells them that this is wrong, they shout and refuse to change their ways.",
+        "Trying to separate waste like soiled baby diapers and sanitary pads from wet food waste makes her feel very sick. Sometimes people are nice to her and give her soap and water to wash her hands, and some water to drink."
+      ],
+      "image": "/sessions/assets/s9_murugamma.jpg",
+      "tip": "Read or narrate Murugamma's story. Emphasise the difficulty and importance of her work."
+    },
+    {
+      "n": 17,
+      "kind": "reflect_share",
+      "title": "Discussion — Murugamma",
+      "questions": [
+        "What Rights are important for Ms. Murugamma to have? (Right to Work, Right to Health and Safety, Right to Dignity, Right to Respect)",
+        "How would life in the city be affected if her work was not done? (Sanitation issues, health hazards, environmental problems)",
+        "What can we do as individuals and as a society to show respect and support people like Ms. Murugamma? (Separate waste, say thank you, treat with respect, follow rules)"
+      ],
+      "tip": "Encourage students to think about the impact of sanitary workers and how we can show respect."
+    },
+    {
+      "n": 18,
+      "kind": "static",
+      "title": "Reflection Circle — Start, Stop, Continue",
+      "body": [
+        "Alright friends, let's slow down for a moment. We've done activities, heard stories of Murugamma, Jaganath, and Grace Banu, and talked about many jobs. Now it's time to reflect.",
+        "Take out your notebook or a slip of paper. I want you to write down three things — be honest and specific.",
+        "First, Start: Something new you will begin doing to show respect and equality to all people, no matter their work, gender, or caste.",
+        "Second, Stop: Something you currently do or see others do that you will stop because it is unfair, disrespectful, or biased.",
+        "Third, Continue: Something you already do that supports fairness, empathy, or equality, which you want to keep doing.",
+        "You'll have 3–4 minutes to write one point for each category. Take your time, think carefully, and make sure you write all three: Start, Stop, Continue."
+      ],
+      "tip": "MC appears and says this. Distribute paper/slips if students don't have notebooks."
+    },
+    {
+      "n": 19,
+      "kind": "group_activity_timer",
+      "title": "Reflection Circle — Writing Time",
+      "brief": "Write one point for each:\n\nStart: Something new you will begin doing to show respect and equality to all people, no matter their work, gender, or caste.\n\nStop: Something you currently do or see others do that you will stop because it is unfair, disrespectful, or biased.\n\nContinue: Something you already do that supports fairness, empathy, or equality, which you want to keep doing.",
+      "timer_seconds": 240,
+      "reminder_at": 60,
+      "tip": "4 minute timer. Walk around and encourage students who are struggling.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
+    },
+    {
+      "n": 20,
+      "kind": "reflect_share",
+      "title": "Group Sharing: Commit to Equality",
+      "body": [
+        "This action is your commitment to practice equality and respect in daily life.",
+        "Now think about your initial dream job.",
+        "Your future begins with today's actions — respect, fairness, and equality shape who you become."
+      ],
+      "questions": [
+        "Share what you wrote with your group.",
+        "Explain briefly why your point matters or how it helps others."
+      ],
+      "tip": "Encourage quiet students to share. This is a safe space."
+    },
+    {
+      "n": 21,
+      "kind": "static",
+      "title": "Constitution Connect Question",
+      "body": [
+        "How can the values of equality and justice in the Constitution's Preamble be applied in daily life? Can you guess the correct option?",
+        "A. By treating everyone with respect, starting with your family and friends",
+        "B. By being mindful of how you and those around you behave towards one another",
+        "C. By speaking out against discrimination and standing up for others' rights",
+        "Answer: All options are correct! This was a trick question!"
+      ],
+      "tip": "Let students guess before revealing that all options are correct."
+    },
+    {
+      "n": 22,
+      "kind": "static",
+      "title": "Together for Change Project",
+      "body": [
+        "Teacher to distribute Empathy & Equality project card to each group.",
+        "You have 3 weeks to complete the activities given in the project card.",
+        "Please follow the instructions provided in the project cards thoroughly in your groups.",
+        "Consult the teacher if you have doubts!"
+      ],
+      "image": "/sessions/assets/s9_together_for_change.jpg",
+      "tip": "Distribute the 'Empathy & Equality' project cards to each group."
+    }
+  ]
+}
