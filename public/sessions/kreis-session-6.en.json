@@ -155,8 +155,8 @@
       "tip": "Play MC video. Wait for students to guess.",
       "video": "/sessions/assets/s6_mc_scientific_temper_p1.kn.mp4",
       "kn_script": [
-        "When we ask questions, verify facts, and think before believing or sharing something — we are using a very important skill.",
-        "Can you guess what that skill is called?"
+        "ನಾವು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳುವಾಗ, ಸತ್ಯವನ್ನು ಪರಿಶೀಲಿಸುವಾಗ, ಮತ್ತು ಯಾವುದನ್ನಾದರೂ ನಂಬುವ ಅಥವಾ ಹಂಚಿಕೊಳ್ಳುವ ಮುನ್ನ ಯೋಚಿಸುವಾಗ, ನಾವು ಒಂದು ಮುಖ್ಯವಾದ ಕೌಶಲ್ಯವನ್ನು ಬಳಸುತ್ತೇವೆ.",
+        "ಅದು ಯಾವ ಕೌಶಲ್ಯ ಎಂದು ನೀವು ಊಹಿಸಬಲ್ಲಿರಾ?"
       ]
     },
     {
@@ -296,10 +296,10 @@
       "tip": "Play MC video.",
       "video": "/sessions/assets/s6_mc_fundamental_duty.kn.mp4",
       "kn_script": [
-        "Our Constitution guarantees us rights. There is a Fundamental Duty in the Indian Constitution about verifying the truth of what we read, hear, and speak, and thinking critically.",
-        "Can you guess what this Fundamental Duty actually says?",
-        "Yes! It is: to develop scientific temper, humanism, and the spirit of inquiry and reform.",
-        "Did you know that applying the 4Ws test is part of our Fundamental Duty?"
+        "ನಮ್ಮ ಸಂವಿಧಾನವು ನಮಗೆ ಹಕ್ಕುಗಳನ್ನು ಖಾತರಿಪಡಿಸುತ್ತದೆ. ನಾವು ಓದುವ, ಕೇಳುವ ಮತ್ತು ಮಾತನಾಡುವ ವಿಷಯಗಳ ಸತ್ಯವನ್ನು ಪರಿಶೀಲಿಸುವ ಮತ್ತು ವಿಮರ್ಶಾತ್ಮಕವಾಗಿ ಯೋಚಿಸುವ ಬಗ್ಗೆ ಭಾರತೀಯ ಸಂವಿಧಾನದಲ್ಲಿ ಒಂದು ಮೂಲಭೂತ ಕರ್ತವ್ಯವಿದೆ.",
+        "ಈ ಮೂಲಭೂತ ಕರ್ತವ್ಯ ನಿಜವಾಗಿ ಏನು ಹೇಳುತ್ತದೆ ಎಂದು ನೀವು ಊಹಿಸಬಲ್ಲಿರಾ?",
+        "ಹೌದು! ಅದು: ವೈಜ್ಞಾನಿಕ ಮನೋಭಾವ, ಮಾನವೀಯತೆ ಹಾಗೂ ವಿಚಾರಣೆ ಮತ್ತು ಸುಧಾರಣೆಯ ಮನೋಭಾವವನ್ನು ಬೆಳೆಸುವುದು.",
+        "4Ws ಪರೀಕ್ಷೆಯನ್ನು ಅನ್ವಯಿಸುವುದು ನಮ್ಮ ಮೂಲಭೂತ ಕರ್ತವ್ಯದ ಭಾಗ ಎಂದು ನಿಮಗೆ ಗೊತ್ತಿತ್ತಾ?"
       ]
     },
     {
@@ -315,6 +315,8 @@
         "🌊 This is your \"Ripple of Change\"! Write your experience and put it in the Change Champion Box.",
         "📄 Use the handout: The handout provided will help you verify information, data, and news."
       ],
+      "image": "/sessions/assets/s6_4ws_handout.jpeg",
+      "image_layout": "side",
       "tip": "Distribute Annexure 3 (4Ws handout) to all students."
     },
     {

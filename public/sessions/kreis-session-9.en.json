@@ -145,18 +145,20 @@
     },
     {
       "n": 10,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Riddle Reflection",
-      "body": [
-        "Hello friends! Looks like you all enjoyed the riddles. Now let's take a moment to think together.",
-        "Can you remember some of the people whose jobs we guessed earlier? Raise your hand and share one name. What do they do?",
-        "Now imagine, what would happen if these people didn't do their jobs? If sanitary workers didn't clean our streets or hospitals, what would life look like?",
-        "Here's another thought — why do you think some jobs are paid more and some less? Are low-paying jobs always easier? Or is all work difficult in its own way?",
-        "Do we treat farmers, sanitary workers, or lift operators the same way we treat teachers, engineers, or doctors? What makes a job \"respectful\"?",
-        "If you were asked to do just the most important job to keep our society going, what would it be? It's not an easy choice, is it?",
-        "That's the whole point — every single job, no matter how small or invisible, is needed for society to work.",
-        "And every person doing any job deserves respect. That is the Dignity of Labour."
+      "video": "/sessions/assets/s9_mc_riddle_reflection.kn.mp4",
+      "kn_script": [
+        "ಹಲೋ ಗೆಳೆಯರೇ! ನೀವೆಲ್ಲರೂ ಒಗಟುಗಳನ್ನು ಆನಂದಿಸಿದಂತಿದೆ. ಈಗ ಒಂದು ಕ್ಷಣ ಒಟ್ಟಿಗೆ ಯೋಚಿಸೋಣ.",
+        "ನಾವು ಮೊದಲು ಊಹಿಸಿದ ಕೆಲವು ಜನರ ಕೆಲಸಗಳನ್ನು ನೆನಪಿಸಿಕೊಳ್ಳಬಲ್ಲಿರಾ? ಕೈ ಎತ್ತಿ ಒಂದು ಹೆಸರು ಹಂಚಿಕೊಳ್ಳಿ. ಅವರು ಏನು ಮಾಡುತ್ತಾರೆ?",
+        "ಈಗ ಊಹಿಸಿ, ಈ ಜನರು ತಮ್ಮ ಕೆಲಸ ಮಾಡದಿದ್ದರೆ ಏನಾಗುತ್ತಿತ್ತು? ಸ್ವಚ್ಛತಾ ಕಾರ್ಮಿಕರು ನಮ್ಮ ಬೀದಿಗಳನ್ನು ಅಥವಾ ಆಸ್ಪತ್ರೆಗಳನ್ನು ಸ್ವಚ್ಛ ಮಾಡದಿದ್ದರೆ, ಜೀವನ ಹೇಗಿರುತ್ತಿತ್ತು?",
+        "ಇನ್ನೊಂದು ಯೋಚನೆ — ಕೆಲವು ಕೆಲಸಗಳಿಗೆ ಹೆಚ್ಚು ಸಂಬಳ ಮತ್ತು ಕೆಲವಕ್ಕೆ ಕಡಿಮೆ ಸಂಬಳ ಏಕೆ ಎಂದು ನೀವು ಯೋಚಿಸುತ್ತೀರಾ? ಕಡಿಮೆ ಸಂಬಳದ ಕೆಲಸಗಳು ಯಾವಾಗಲೂ ಸುಲಭವೇ? ಅಥವಾ ಎಲ್ಲಾ ಕೆಲಸಗಳು ತಮ್ಮದೇ ರೀತಿಯಲ್ಲಿ ಕಷ್ಟಕರವೇ?",
+        "ನಾವು ರೈತರು, ಸ್ವಚ್ಛತಾ ಕಾರ್ಮಿಕರು, ಅಥವಾ ಲಿಫ್ಟ್ ಆಪರೇಟರ್‌ಗಳನ್ನು ಶಿಕ್ಷಕರು, ಇಂಜಿನಿಯರ್‌ಗಳು, ಅಥವಾ ವೈದ್ಯರನ್ನು ನಡೆಸಿಕೊಳ್ಳುವಂತೆಯೇ ನಡೆಸಿಕೊಳ್ಳುತ್ತೇವೆಯೇ? ಒಂದು ಕೆಲಸವನ್ನು \"ಗೌರವಾನ್ವಿತ\" ಮಾಡುವುದು ಏನು?",
+        "ನಮ್ಮ ಸಮಾಜವನ್ನು ನಡೆಸಲು ಅತ್ಯಂತ ಮಹತ್ವದ ಕೆಲಸವನ್ನು ಮಾಡಲು ನಿಮ್ಮನ್ನು ಕೇಳಿದರೆ, ಅದು ಯಾವುದು? ಅದು ಸುಲಭ ಆಯ್ಕೆ ಅಲ್ಲ, ಅಲ್ಲವೇ?",
+        "ಅದೇ ಮುಖ್ಯ ವಿಷಯ — ಪ್ರತಿಯೊಂದು ಕೆಲಸ, ಅದು ಎಷ್ಟೇ ಸಣ್ಣ ಅಥವಾ ಅಗೋಚರವಾಗಿದ್ದರೂ, ಸಮಾಜ ಕಾರ್ಯನಿರ್ವಹಿಸಲು ಅಗತ್ಯ.",
+        "ಮತ್ತು ಯಾವುದೇ ಕೆಲಸ ಮಾಡುವ ಪ್ರತಿಯೊಬ್ಬ ವ್ಯಕ್ತಿ ಗೌರವಕ್ಕೆ ಅರ್ಹ. ಅದೇ ಶ್ರಮದ ಘನತೆ."
       ],
+      "transcript": "Hello friends! Looks like you all enjoyed the riddles. Now let's take a moment to think together. Can you remember some of the people whose jobs we guessed earlier? Now imagine, what would happen if these people didn't do their jobs? Why do you think some jobs are paid more and some less? Do we treat farmers, sanitary workers, or lift operators the same way we treat teachers, engineers, or doctors? Every single job, no matter how small or invisible, is needed for society to work. And every person doing any job deserves respect. That is the Dignity of Labour.",
       "tip": "MC appears and leads this discussion. Pause for responses after each question. Let students arrive at the idea of dignity of labour themselves."
     },
     {
@@ -249,16 +251,18 @@
     },
     {
       "n": 18,
-      "kind": "static",
+      "kind": "mc_narration",
       "title": "Reflection Circle — Start, Stop, Continue",
-      "body": [
-        "Alright friends, let's slow down for a moment. We've done activities, heard stories of Murugamma, Jaganath, and Grace Banu, and talked about many jobs. Now it's time to reflect.",
-        "Take out your notebook or a slip of paper. I want you to write down three things — be honest and specific.",
-        "First, Start: Something new you will begin doing to show respect and equality to all people, no matter their work, gender, or caste.",
-        "Second, Stop: Something you currently do or see others do that you will stop because it is unfair, disrespectful, or biased.",
-        "Third, Continue: Something you already do that supports fairness, empathy, or equality, which you want to keep doing.",
-        "You'll have 3–4 minutes to write one point for each category. Take your time, think carefully, and make sure you write all three: Start, Stop, Continue."
+      "video": "/sessions/assets/s9_mc_start_stop_continue.kn.mp4",
+      "kn_script": [
+        "ಸರಿ ಗೆಳೆಯರೇ, ಒಂದು ಕ್ಷಣ ನಿಧಾನವಾಗೋಣ. ನಾವು ಚಟುವಟಿಕೆಗಳನ್ನು ಮಾಡಿದ್ದೇವೆ, ಮುರುಗಮ್ಮ, ಜಗನಾಥ್, ಮತ್ತು ಗ್ರೇಸ್ ಬಾನು ಅವರ ಕಥೆಗಳನ್ನು ಕೇಳಿದ್ದೇವೆ, ಮತ್ತು ಅನೇಕ ಕೆಲಸಗಳ ಬಗ್ಗೆ ಮಾತನಾಡಿದ್ದೇವೆ. ಈಗ ಪ್ರತಿಬಿಂಬಿಸುವ ಸಮಯ.",
+        "ನಿಮ್ಮ ನೋಟ್‌ಬುಕ್ ಅಥವಾ ಕಾಗದದ ಚೀಟಿ ತೆಗೆಯಿರಿ. ನಾನು ನಿಮಗೆ ಮೂರು ವಿಷಯಗಳನ್ನು ಬರೆಯಲು ಹೇಳುತ್ತೇನೆ — ಪ್ರಾಮಾಣಿಕ ಮತ್ತು ನಿರ್ದಿಷ್ಟವಾಗಿರಿ.",
+        "ಮೊದಲನೆಯದು, ಆರಂಭಿಸಿ: ಎಲ್ಲಾ ಜನರಿಗೆ ಗೌರವ ಮತ್ತು ಸಮಾನತೆ ತೋರಿಸಲು ನೀವು ಹೊಸದಾಗಿ ಪ್ರಾರಂಭಿಸುವ ಏನಾದರೂ, ಅವರ ಕೆಲಸ, ಲಿಂಗ, ಅಥವಾ ಜಾತಿ ಏನೇ ಇರಲಿ.",
+        "ಎರಡನೆಯದು, ನಿಲ್ಲಿಸಿ: ನೀವು ಪ್ರಸ್ತುತ ಮಾಡುವ ಅಥವಾ ಇತರರು ಮಾಡುವುದನ್ನು ನೋಡುವ ಏನಾದರೂ ಅನ್ಯಾಯ, ಅಗೌರವ, ಅಥವಾ ಪಕ್ಷಪಾತವಾಗಿರುವ ಕಾರಣ ನಿಲ್ಲಿಸುವಿರಿ.",
+        "ಮೂರನೆಯದು, ಮುಂದುವರಿಸಿ: ನ್ಯಾಯ, ಸಹಾನುಭೂತಿ, ಅಥವಾ ಸಮಾನತೆಯನ್ನು ಬೆಂಬಲಿಸುವ ನೀವು ಈಗಾಗಲೇ ಮಾಡುವ ಏನಾದರೂ, ಮುಂದುವರಿಸಲು ಬಯಸುವಿರಿ.",
+        "ನಿಮಗೆ ಪ್ರತಿ ವರ್ಗಕ್ಕೆ ಒಂದು ಅಂಶ ಬರೆಯಲು 3-4 ನಿಮಿಷ ಸಿಗುತ್ತದೆ. ನಿಮ್ಮ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಿ, ಎಚ್ಚರಿಕೆಯಿಂದ ಯೋಚಿಸಿ, ಮತ್ತು ಮೂರನ್ನೂ ಬರೆಯಿರಿ: ಆರಂಭಿಸಿ, ನಿಲ್ಲಿಸಿ, ಮುಂದುವರಿಸಿ."
       ],
+      "transcript": "Alright friends, let's slow down for a moment. We've done activities, heard stories of Murugamma, Jaganath, and Grace Banu, and talked about many jobs. Now it's time to reflect. Take out your notebook or a slip of paper. Write down three things: Start — something new you will begin doing to show respect and equality. Stop — something unfair you will stop doing. Continue — something you already do that supports fairness. You'll have 3-4 minutes.",
       "tip": "MC appears and says this. Distribute paper/slips if students don't have notebooks."
     },
     {

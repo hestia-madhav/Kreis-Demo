@@ -145,11 +145,13 @@ const SESSIONS: SessionEntry[] = [
     progress: [
       "✅ Source deck (Irfan Kannada V1)",
       "✅ Player JSON (kn + en)",
-      "🔴 MC video production (3 parts)",
-      "🔴 Annexure 1 (roleplay slips)",
-      "🔴 AI-generated fake news example image",
-      "🔴 Preamble image (Kannada)",
-      "🔴 Annexure 3 (4Ws handout)",
+      "✅ MC videos (3 parts — all exist)",
+      "✅ Annexure 1 (roleplay slips)",
+      "✅ AI-generated fake news example image",
+      "✅ Preamble images (4 cards)",
+      "🟡 Annexure 3 (4Ws handout) — image exists, not referenced in JSON",
+      "🟡 Slide 20 quiz should use mcq kind",
+      "🟡 kn_script bug fixed — was English, now Kannada",
     ],
   },
   {
