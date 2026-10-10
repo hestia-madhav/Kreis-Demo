@@ -213,6 +213,26 @@ const SESSIONS: SessionEntry[] = [
     ],
   },
   {
+    id: "dom-session-10",
+    number: 10,
+    title: {
+      en: "Gender Equality",
+      kn: "ಲಿಂಗ ಸಮಾನತೆ",
+    },
+    subtitle: {
+      en: "Freeze Frame scenes · Gender role reflection · Ripple of Change story · Sticky Figures activity · Gender Survey take-home",
+      kn: "ಫ್ರೀಜ್ ಫ್ರೇಮ್ ದೃಶ್ಯಗಳು · ಲಿಂಗ ಪಾತ್ರ ಚಿಂತನೆ · ಬದಲಾವಣೆಯ ಅಲೆ ಕಥೆ · ಸ್ಟಿಕಿ ಫಿಗರ್ಸ್ ಚಟುವಟಿಕೆ · ಲಿಂಗ ಸಮೀಕ್ಷೆ ಮನೆಕೆಲಸ",
+    },
+    status: "live",
+    durationMin: 60,
+    progress: [
+      "✅ Player JSON (en + kn)",
+      "✅ Sticky figures images (shared from KREIS S10)",
+      "✅ Gender survey sheet image",
+      "🔴 MC video: sticky figures conclusion narration",
+    ],
+  },
+  {
     id: "dom-session-11",
     number: 11,
     title: {

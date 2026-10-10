@@ -1,0 +1,315 @@
+{
+  "id": "kreis-session-10",
+  "_language": "en",
+  "_revision": "2026-10-10-v1-from-ppt",
+  "title": "Children's Constitution Club — Session 10: Gender Equality",
+  "programme": "KREIS",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "slides": [1]
+    },
+    {
+      "id": "warmup",
+      "label": "Warm-Up: Movement & Freeze",
+      "slides": [2]
+    },
+    {
+      "id": "freeze_frame",
+      "label": "Freeze Frame",
+      "slides": [3, 4, 5, 6, 7, 8]
+    },
+    {
+      "id": "reflection",
+      "label": "Reflection",
+      "slides": [9, 10, 11]
+    },
+    {
+      "id": "ripple_of_change",
+      "label": "Ripple of Change Story",
+      "slides": [12, 13]
+    },
+    {
+      "id": "sticky_figures",
+      "label": "Sticky Figures",
+      "slides": [14, 15, 16, 17, 18, 19, 20, 21]
+    },
+    {
+      "id": "gender_survey",
+      "label": "Gender Survey & Closing",
+      "slides": [22]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to the Children's Constitution Club!",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Play welcome music."
+    },
+    {
+      "n": 2,
+      "kind": "group_activity_timer",
+      "title": "Warm-Up Exercise: Movement & Freeze",
+      "brief": "Walk around the room, move safely and keep enough space.\n\nFreeze like statues when I say freeze. Notice your breath and body while frozen.",
+      "timer_seconds": 120,
+      "reminder_at": 60,
+      "tip": "Allow students to move and freeze a few times. Keep activity short, ensure it doesn't exceed more than 2 minutes.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
+    },
+    {
+      "n": 3,
+      "kind": "static",
+      "title": "What is Freeze Frame?",
+      "body": [
+        "Freeze frame allows you to form a theme based on a real-life situation.",
+        "There will be no sound or props used in the act."
+      ],
+      "tip": "Explain the concept of freeze frame clearly before giving rules."
+    },
+    {
+      "n": 4,
+      "kind": "static",
+      "title": "Freeze Frame — Rules",
+      "body": [
+        "Everyone has to participate in the activity.",
+        "Decide who will play each part in the freeze image. It can be non-human, non-living things in the freeze frames.",
+        "Freeze in place like statues once roles are assigned.",
+        "Use facial expressions, gestures, and posture to show emotions and actions.",
+        "Communicate without speaking — only use visual cues.",
+        "Time is short, so look to me for timelines and stick to them."
+      ]
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "Freeze Frame — Scenarios",
+      "body": [
+        "Assign some of the following scenarios to each group:",
+        "Caring for a baby",
+        "Cooking a Meal",
+        "Changing a flat tyre",
+        "Doing laundry",
+        "Making mid-day meal",
+        "Bike riders on the road"
+      ],
+      "tip": "Distribute scenarios evenly across groups. Each group gets one or two scenarios."
+    },
+    {
+      "n": 6,
+      "kind": "group_activity_timer",
+      "title": "Freeze Frame — Preparation",
+      "brief": "2 minutes to prepare for the freeze frame.",
+      "timer_seconds": 120,
+      "reminder_at": 60,
+      "tip": "Assist groups who have doubts or any clarifications. Give the last-minute reminder.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
+    },
+    {
+      "n": 7,
+      "kind": "static",
+      "title": "Freeze Frame — Instructions for Scenes",
+      "body": [
+        "While other groups are presenting, the audience will also freeze and observe.",
+        "Please do not change or alter your freeze frame based on another group, as this may create confusion within your own group. Stick to the plan your group has prepared.",
+        "Hold your SCENE for at least a minute."
+      ],
+      "tip": "Ensure groups present one by one. Audience freezes and watches silently."
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Present the Scenes",
+      "body": [
+        "Each group presents their freeze frame now!",
+        "Audience, freeze and observe carefully."
+      ],
+      "tip": "Allow each group 1-2 minutes to present. Maintain silence during presentations."
+    },
+    {
+      "n": 9,
+      "kind": "reflect_share",
+      "title": "Reflection",
+      "body": [
+        "Ask the following questions:"
+      ],
+      "questions": [
+        "What roles or activities did you observe in these images? (Caring for a baby, cooking a meal, changing a flat tire, doing laundry, making school lunch, bike riders on the road)",
+        "Do you notice anything about who is doing what in these frames?",
+        "Did you have fixed ideas about what girls and boys are good at when assigning roles?"
+      ],
+      "tip": "Let students share observations. Guide them to notice gender patterns in role assignments."
+    },
+    {
+      "n": 10,
+      "kind": "static",
+      "title": "Reflection — Deeper Questions",
+      "body": [
+        "Who was holding a baby? Who was cooking the meal, changing the tire, doing laundry, riding the bike, making lunch?",
+        "Imagine you're at a bus stop with your family. If you observe a family with the baby and baby is continuously crying, who do you think might care for a baby?",
+        "Who comes to mind as a bike rider, changing tyre — a boy or a girl?",
+        "Why we might associate certain roles with girls and some with boys? Elicit responses.",
+        "Did any group members feel restricted or uncomfortable with their role? Why or why not?",
+        "What have you learned from this activity?"
+      ],
+      "tip": "Encourage honest reflection. No right or wrong answers — let students think critically about gender assumptions."
+    },
+    {
+      "n": 11,
+      "kind": "static",
+      "title": "Key Takeaway",
+      "body": [
+        "Works have to be decided or given based on abilities, not on Gender."
+      ],
+      "tip": "Emphasize this message clearly. Let it sink in."
+    },
+    {
+      "n": 12,
+      "kind": "static",
+      "title": "Ripple of Change Story",
+      "body": [
+        "Ask a student to read the following passage:",
+        "\"During lunch break and after school hours, lots of boys used to stand around the school — teasing us and other girls from our school. We were scared of these eve teasers and went out with great difficulty. While doing the Civic Club Street Survey activity, we discussed this problem with our Principal, Teachers and our Civic Club Educator. Finding the courage, we called up the Hoysala Police Patrol and lodged a complaint. As a result, a Hoysala Police van comes near our school thrice a day. Seeing the police van, the eve teasers have stopped coming near our school area. We are relieved now that we can safely reach home.\""
+      ],
+      "tip": "Select a confident reader. Let the class listen carefully."
+    },
+    {
+      "n": 13,
+      "kind": "click_reveal",
+      "title": "Ripple of Change — Discussion",
+      "items": [
+        {
+          "label": "What did you feel?",
+          "detail": "What did you feel after hearing the story? Elicit 2-3 responses from the students.",
+          "color": "#F39C1F"
+        },
+        {
+          "label": "Important message",
+          "detail": "Eve-teasing or any kind of mental or physical violence towards any gender is against the law and punishable.",
+          "color": "#C2185B"
+        }
+      ],
+      "tip": "Reveal each point. Let students express their feelings first, then share the legal message."
+    },
+    {
+      "n": 14,
+      "kind": "static",
+      "title": "Sticky Figures",
+      "body": [
+        "Look at the board — we have equal numbers of girl figures and boy figures.",
+        "Now I'm going to read some real facts about what happens to girls and women in India.",
+        "After each statement, we will remove some girl figures from the board."
+      ],
+      "image": "/sessions/assets/s10_sticky_figures_full.png",
+      "tip": "Display the sticky figures image. Start with equal numbers of girls and boys."
+    },
+    {
+      "n": 15,
+      "kind": "static",
+      "title": "Statement 1: Female Foeticide",
+      "body": [
+        "Female Foeticide — the killing of a female in the womb outside of legal methods.",
+        "The UNFPA 2020 report shows that between 2015 and 2020, India lost an average of about 5.9 lakh female children to pre-natal sex selection (missing females at birth) every year.",
+        "(Source: United Nations Population Fund (UNFPA) report 2020 themed 'Against My Will — Defying the practices that harm women and girls and undermine equality')",
+        "Why does this happen?"
+      ],
+      "image": "/sessions/assets/s10_sticky_figures_stmt1.png",
+      "tip": "Remove some girl figures from the board after reading this statement. Discuss why this happens."
+    },
+    {
+      "n": 16,
+      "kind": "static",
+      "title": "Statement 2: Malnourishment & Infant Mortality",
+      "body": [
+        "As per the Sample Registration System (SRS) Bulletin of Registrar General of India (RGI), the Infant Mortality Rate (IMR) is 30 per 1,000 live births in 2019 at National Level.",
+        "(Source: Ministry of Health and Family Welfare (2022))",
+        "In our country, girls and boys are dying before the age of 5, but again, more girls die. Why do you think more girls die?"
+      ],
+      "image": "/sessions/assets/s10_sticky_figures_stmt2.png",
+      "tip": "Remove more girl figures. Guide discussion on gender-based neglect in nutrition and healthcare."
+    },
+    {
+      "n": 17,
+      "kind": "static",
+      "title": "Statement 3: School Dropouts",
+      "body": [
+        "In upper primary classes, the dropout rate for boys was 2.7%, less than that for girls at 3.3%.",
+        "(Source: Unified District Information System for Education Plus (UDISE+) Flash Statistics 2022-23)",
+        "Both girls and boys are dropping out, but can you say why girls drop out? Why is that?"
+      ],
+      "image": "/sessions/assets/s10_sticky_figures_stmt3.png",
+      "tip": "Remove more girl figures. Discuss reasons for higher dropout among girls."
+    },
+    {
+      "n": 18,
+      "kind": "static",
+      "title": "Statement 4: Women in Workforce / Employment",
+      "body": [
+        "For India, the labour force participation rate for women is 37.0%, compared to 78.8% for men.",
+        "(Source: Periodic Labour Force Survey (PLFS) 2022–23, Ministry of Statistics and Programme Implementation; ILO modelled estimates, 2023)",
+        "Why do you feel women are not able to continue to work like men can?",
+        "If men helped at home — doing half the work and caring for children equally, can it be easier for women to continue working?"
+      ],
+      "image": "/sessions/assets/s10_sticky_figures_stmt4.png",
+      "tip": "Remove more girl figures. Connect workforce participation to shared domestic responsibilities."
+    },
+    {
+      "n": 19,
+      "kind": "static",
+      "title": "Statement 5: Crime Against Women",
+      "body": [
+        "Over 70 per cent women in 11 states and one union territory never sought help or told anyone about the violence experienced by them, the latest National Family Health Survey (NFHS) found.",
+        "(Source: National Family Health Survey (NFHS) – 5)",
+        "What are the crimes specifically against women / girls that they face because they are women?"
+      ],
+      "image": "/sessions/assets/s10_sticky_figures_stmt5.png",
+      "tip": "Remove more girl figures — only one should remain. Discuss gender-based violence and silence."
+    },
+    {
+      "n": 20,
+      "kind": "reflect_share",
+      "title": "Sticky Figures — Conclusion",
+      "body": [
+        "Look at the board now."
+      ],
+      "questions": [
+        "How did you feel as we kept reading each statement and the disappearance of sticky figures?",
+        "What Rights were taken away from them?",
+        "How did this one woman make it? What do you think it took for her to still remain standing?"
+      ],
+      "image": "/sessions/assets/s10_sticky_figures_final.png",
+      "tip": "Only one girl figure should remain on the board. Let students reflect on the journey from equal to nearly erased."
+    },
+    {
+      "n": 21,
+      "kind": "mc_narration",
+      "title": "MC Conclusion — Every Girl Deserves to Shine",
+      "video": "/sessions/assets/s10_mc_sticky_figures_conclusion.kn.mp4",
+      "kn_script": [
+        "ನಾವು ಬೋರ್ಡ್‌ನಿಂದ ಪ್ರತಿ ಹುಡುಗಿಯನ್ನು ಅಳಿಸಿದಂತೆ, ಹಕ್ಕುಗಳು ಎಷ್ಟು ಬೇಗ ಕಣ್ಮರೆಯಾಗಬಹುದು ಎಂಬುದನ್ನು ನಾವು ನೋಡಿದೆವು — ಹುಟ್ಟುವ ಹಕ್ಕು, ಕಲಿಯುವ ಹಕ್ಕು, ಕೆಲಸ ಮಾಡುವ ಹಕ್ಕು, ಘನತೆಯಿಂದ ಬದುಕುವ ಹಕ್ಕು.",
+        "ಆದರೆ ಇನ್ನೂ ನಿಂತಿರುವ ಒಂದು ಚಿತ್ರವನ್ನು ಗಮನಿಸಿ. ಧೈರ್ಯ, ನಿರ್ಧಾರ, ಮತ್ತು ಕುಟುಂಬ, ಸ್ನೇಹಿತರು, ಶಿಕ್ಷಕರು ಮತ್ತು ಸಮಾಜದ ಬೆಂಬಲದಿಂದ, ಹುಡುಗಿಯರು ತಮ್ಮ ಹಕ್ಕುಗಳನ್ನು ಹಿಡಿದಿಟ್ಟುಕೊಂಡು ಮುಂದೆ ಹೋಗಬಹುದು ಎಂದು ಅವಳು ನಮಗೆ ನೆನಪಿಸುತ್ತಾಳೆ.",
+        "ಈ ಚಟುವಟಿಕೆ ನಮಗೆ ತೋರಿಸುತ್ತದೆ — ಪ್ರತಿ ಬಾರಿ ನಾವು ಹುಡುಗಿಯ ಹಕ್ಕುಗಳನ್ನು ರಕ್ಷಿಸಿ ನಿಲ್ಲುವಾಗ, ಅವಳು ಬೋರ್ಡ್ ಮೇಲೆ ಉಳಿಯಲು ಸಹಾಯ ಮಾಡುತ್ತೇವೆ — ಗೋಚರ, ಬಲಿಷ್ಠ ಮತ್ತು ಸಮಾನ.",
+        "ಇದನ್ನು ಮುಂದೆ ಕೊಂಡೊಯ್ಯೋಣ: ಒಟ್ಟಿಗೆ, ಯಾವ ಹುಡುಗಿಯೂ ಅಳಿಸಲ್ಪಡದಿರುವಂತೆ ಮತ್ತು ಪ್ರತಿ ಹುಡುಗಿಗೆ ಹೊಳೆಯಲು ಅವಕಾಶ ಸಿಗುವಂತೆ ನಾವು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬಹುದು."
+      ],
+      "transcript": "As we erased each girl from the board, we saw how quickly Rights can disappear — the Right to be born, to learn, to work, to live with dignity. But notice the one figure still standing. She reminds us that with courage, determination, and support from family, friends, teachers, and society, girls can hold on to their Rights and go forward. This activity shows us that every time we protect and stand up for a girl's Rights, we help her remain on the board — visible, strong, and equal. Let's carry this forward: together, we can make sure no girl is erased, and every girl gets the chance to shine.",
+      "tip": "Play MC video. Let the message resonate with students."
+    },
+    {
+      "n": 22,
+      "kind": "static",
+      "title": "Gender Survey — Take Home Activity",
+      "body": [
+        "When you go home, conduct the survey by asking a few simple questions to your parents and family members.",
+        "The instructions for conducting the survey are given on the activity sheet.",
+        "Distribute the Gender Survey activity sheet."
+      ],
+      "image": "/sessions/assets/s10_gender_survey_sheet.png",
+      "image_layout": "side",
+      "tip": "Distribute the Gender Survey activity sheet to all students. Make sure they understand the 5 survey questions."
+    }
+  ]
+}
