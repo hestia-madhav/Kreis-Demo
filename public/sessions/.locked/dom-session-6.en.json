@@ -1,0 +1,420 @@
+{
+  "id": "dom-session-6",
+  "_language": "en",
+  "_revision": "2026-10-10-ashwini-edits",
+  "title": "Children's Nagarika Club — Session 6: Cultivating Critical Thinking + Together for Change",
+  "programme": "DOM",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "slides": [
+        1
+      ]
+    },
+    {
+      "id": "roleplay_setup",
+      "label": "Roleplay — Setup",
+      "slides": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "roleplay_performance",
+      "label": "Roleplay — Performance & Discussion",
+      "slides": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "id": "scientific_temper_4ws",
+      "label": "Scientific Temper & 4Ws",
+      "slides": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "id": "fake_news_exercise",
+      "label": "Fake News Analysis",
+      "slides": [
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "id": "ai_wrapup",
+      "label": "AI, Constitution & Ripple Task",
+      "slides": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to the Children's Nagarika Club!",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Play welcome music."
+    },
+    {
+      "n": 2,
+      "kind": "static",
+      "title": "Roleplay Activity",
+      "body": [
+        "Do you or your family follow the news?",
+        "Where do they get their news from — TV, newspapers, WhatsApp, or YouTube?",
+        "Let's learn through a roleplay how people tell the same news differently on different platforms like TV, community meetings, email, WhatsApp, etc.",
+        "We need 5 students for the roleplay!",
+        "Those who are interested in acting",
+        "Those who can read clearly so everyone can hear"
+      ],
+      "tip": "Select 5 students who are interested in acting and can read clearly."
+    },
+    {
+      "n": 3,
+      "kind": "static",
+      "title": "Roleplay — Assign Roles & The Public",
+      "body": [
+        "Cut the sheet and give one slip to each of the 5 students",
+        "Student 1: Narrator",
+        "Student 2: TV Journalist",
+        "Student 3: Local Leader",
+        "Student 4: Residents' Welfare Association & Parents",
+        "Student 5: Social Media & WhatsApp Champions",
+        "I need 3 students to play the role of the \"Public\". You 3 will need to step outside the classroom and I'll call you when it's your turn."
+      ],
+      "tip": "Give each volunteer their slip from Annexure 1. Select 3 public volunteers and send them outside the classroom.",
+      "image": "/sessions/assets/s6_roleplay_character_slips.jpeg",
+      "image_layout": "side"
+    },
+    {
+      "n": 4,
+      "kind": "group_activity_timer",
+      "title": "Roleplay — Preparation",
+      "brief": "The five volunteers should read their slips 2-3 times to prepare. Get ready to read a bit dramatically!",
+      "timer_seconds": 60,
+      "reminder_at": 30,
+      "tip": "1 minute preparation time.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "Roleplay — Reading Time!",
+      "body": [
+        "Are the five volunteers ready to read?",
+        "Let's start in order from Student 1 to Student 4."
+      ],
+      "tip": "Students 1-4 read in order. Student 5 must NOT read yet."
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "Invite the Public + WhatsApp Champions 5",
+      "body": [
+        "Now let's invite the public back into the classroom! Welcome back!",
+        "Now WhatsApp Champions 5 will read the last slip, and the public must listen carefully."
+      ],
+      "tip": "Call the 3 public volunteers back into the classroom."
+    },
+    {
+      "n": 7,
+      "kind": "reflect_share",
+      "title": "Questions for the Public",
+      "body": [
+        "The public must answer: From the WhatsApp message you just heard, what did you understand?"
+      ],
+      "questions": [
+        "What do you think happened?",
+        "How did you feel when you heard this?",
+        "When you hear such information, what advice would you give to your loved ones?"
+      ],
+      "tip": "Only the students playing the 'public' role should answer."
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "The Narrator Reads Again",
+      "body": [
+        "Now let's call the narrator back! Narrator, can you read your slip once more — this time for the public?",
+        "Did you understand what the narrator said? Was it different from what Student 5 (Social Media / WhatsApp Champion) read?"
+      ],
+      "tip": "Ask the public: did you notice the difference between the narrator's and Student 5's versions?"
+    },
+    {
+      "n": 9,
+      "kind": "static",
+      "title": "Class Discussion",
+      "body": [
+        "What happened in this example?",
+        "Why did the real news change depending on who was telling it?",
+        "What are the consequences of spreading fake news or misinformation?",
+        "Now that you have heard all versions of one piece of news — how did you finally determine what was true?",
+        "Did you believe everything at once?",
+        "Did you stop and think?",
+        "Did you ask questions or compare what different people said?"
+      ],
+      "tip": "Ask questions one after the other. If heated debate arises: 'Many people feel this way, but let's calmly hear other views too.' Let students reach conclusions themselves."
+    },
+    {
+      "n": 10,
+      "kind": "mc_narration",
+      "title": "Roleplay — Scientific Temper",
+      "tip": "Play MC video Part 1. Wait 5 seconds for answer.",
+      "video": "/sessions/assets/s6_mc_scientific_temper_p1.kn.mp4",
+      "kn_script": [
+        "When we ask questions, verify the truth, and think before believing or sharing something, we are using an important skill.",
+        "Can you guess what that skill is called?"
+      ]
+    },
+    {
+      "n": 11,
+      "kind": "click_reveal",
+      "title": "Scientific Temper",
+      "items": [
+        {
+          "label": "Answer: Scientific Temper!",
+          "detail": "Scientific Temper = Thinking like a detective!",
+          "color": "#F39C1F"
+        },
+        {
+          "label": "Asking for evidence",
+          "detail": "Asking for and verifying evidence.",
+          "color": "#C2185B"
+        },
+        {
+          "label": "Thinking calmly",
+          "detail": "Not being swayed by emotions alone.",
+          "color": "#6A2C91"
+        },
+        {
+          "label": "Being open to verifying truth",
+          "detail": "Not deciding based on feelings alone.",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "Becoming alert citizens",
+          "detail": "This protects us from fake news and misinformation, helping us become alert, aware and informed citizens.",
+          "color": "#1E3A6E"
+        }
+      ],
+      "tip": "Let students guess first, then click to reveal each point."
+    },
+    {
+      "n": 12,
+      "kind": "click_reveal",
+      "title": "4W Test",
+      "items": [
+        {
+          "label": "① WHO? — Who is saying this?",
+          "detail": "Who is telling this? News channels, officials, others?",
+          "color": "#C2185B"
+        },
+        {
+          "label": "② WHERE? — Where can I cross-check?",
+          "detail": "Where can I verify this information? Internet, various news channels, newspapers, government websites.",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "③ WHAT DO I THINK? — What's my perspective?",
+          "detail": "What have I always felt about this topic? Am I accepting this report because of a personal bias?",
+          "color": "#6A2C91"
+        },
+        {
+          "label": "④ WILL I CHANGE? — Am I willing to change?",
+          "detail": "Based on new evidence, am I ready to change my previously held perspective?",
+          "color": "#1E3A6E"
+        }
+      ],
+      "tip": "Before believing or sharing any information — ask the 4Ws! Click to reveal each one sequentially."
+    },
+    {
+      "n": 13,
+      "kind": "static",
+      "title": "What are the 4Ws?",
+      "body": [
+        "The 4Ws is a simple and useful tool to help you determine whether the news or information you receive is true or false!",
+        "Stop once — ask yourself 4 questions:",
+        "WHO? — Who is saying this?",
+        "WHERE? — Where can I cross-check this information?",
+        "WHAT DO I THINK? — What is my perspective on this?",
+        "WILL I CHANGE? — If I find new evidence, will I change my perspective?",
+        "Use the 4Ws — think and verify before believing information!",
+        "Now let's see another example!"
+      ],
+      "tip": "Write 4Ws on the board: WHO, WHERE, WHAT DO I THINK, WILL I CHANGE."
+    },
+    {
+      "n": 14,
+      "kind": "static",
+      "title": "Social Media Post",
+      "body": [
+        "Imagine… You saw this post this morning.",
+        "BREAKING NEWS: Government announces nationwide ban on online transactions!",
+        "In a shocking move, the Indian government has reportedly decided to ban all types of online payments from next month, citing rising cybersecurity threats. According to a leaked government notification circulating on social media, popular platforms such as UPI, net banking, and digital wallets will be completely shut down in phases to protect citizens from increasing cyber fraud. The directive has warned businesses and individuals to prepare for cash-based transactions, causing widespread concern among digital economy stakeholders.",
+        "Financial experts fear the sudden decision could cripple businesses that depend on digital payments, while citizens are rushing to ATMs and banks to withdraw money. Several e-commerce websites have reportedly started revising their payment systems, while fintech companies are struggling to get clarity from government sources."
+      ],
+      "tip": "Ask a volunteer to read the post aloud."
+    },
+    {
+      "n": 15,
+      "kind": "static",
+      "title": "Influencer Sharing",
+      "body": [
+        "This news is being widely shared by Social Media Influencers, WhatsApp Forwards, Twitter/X and Facebook.",
+        "Another thing…",
+        "Your favourite Influencer whom you always follow has also shared this.",
+        "What would you do?"
+      ],
+      "tip": "Give students time to think. Discuss trust in influencers."
+    },
+    {
+      "n": 16,
+      "kind": "static",
+      "title": "4Ws Test — WHO & WHERE",
+      "tip": "Reveal each answer on click.",
+      "body": [
+        "Let's use the 4Ws test!",
+        "WHO — Who spread this news? Social media, influencers. But who are these social media influencers? What reason is there to trust them? Are they reliable just because they have likes and followers? → Not necessarily!",
+        "WHERE — Where can we cross-check this information? Which sources are more reliable? → Other newspapers, independent sources, RBI and government websites, answers given in Parliament. Find out what the experts are saying!"
+      ]
+    },
+    {
+      "n": 17,
+      "kind": "static",
+      "title": "4Ws Test — WHAT DO I THINK & WILL I CHANGE",
+      "tip": "Reveal each answer on click.",
+      "body": [
+        "The remaining part of the 4Ws test:",
+        "WHAT DO I THINK — What are my current opinions about this social media post? If the influencer who shared this post is someone you like, what happens? Does it change your reaction? → It's important to notice our current opinions and preferences about information that comes to us on social media, because this can shape our positions.",
+        "WILL I CHANGE — Am I willing to change my old opinions based on new evidence? If someone shows you a reliable source proving it is wrong, would you change your decision? → We must be ready to change our decisions based on evidence!"
+      ]
+    },
+    {
+      "n": 18,
+      "kind": "static",
+      "title": "AI and Fake News",
+      "body": [
+        "It is very important to always stop and check before believing or sharing anything.",
+        "AI (Artificial Intelligence) can also create images, videos, and news that deceive people! This creates even more fake news and spreads misinformation."
+      ],
+      "tip": "Show AI-generated fake news example image.",
+      "image": "/sessions/assets/s6_ai_fake_news_example.jpeg",
+      "image_layout": "side"
+    },
+    {
+      "n": 19,
+      "kind": "static",
+      "title": "Constitution and Scientific Temper",
+      "body": [
+        "Which constitutional value from the Preamble best fits the activities and discussions we did today?",
+        "Share with your teacher."
+      ],
+      "tip": "Show Preamble image. Accept all responses.",
+      "image": "/sessions/assets/preamble_en.png",
+      "image_layout": "side"
+    },
+    {
+      "n": 20,
+      "kind": "click_reveal",
+      "title": "Constitution Connection Question",
+      "items": [
+        {
+          "label": "Think and answer!",
+          "detail": "According to Article 51A of the Indian Constitution, which quality is it every Indian citizen's duty to cultivate?",
+          "color": "#F39C1F"
+        },
+        {
+          "label": "A. Secularism",
+          "detail": "",
+          "color": "#6A2C91"
+        },
+        {
+          "label": "B. Democratic values",
+          "detail": "",
+          "color": "#6A2C91"
+        },
+        {
+          "label": "C. Scientific Temper ✅",
+          "detail": "Correct answer! Article 51A(h): It is the fundamental duty of every citizen to develop scientific temper, humanism, and the spirit of inquiry and reform.",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "D. Civic responsibility",
+          "detail": "",
+          "color": "#6A2C91"
+        }
+      ],
+      "tip": "Let students guess first, then reveal the correct answer."
+    },
+    {
+      "n": 21,
+      "kind": "mc_narration",
+      "title": "Fundamental Duty",
+      "tip": "Play MC video.",
+      "video": "/sessions/assets/s6_mc_fundamental_duty.kn.mp4",
+      "kn_script": [
+        "Our Constitution guarantees us rights. There is a Fundamental Duty in the Indian Constitution about verifying the truth of what we read, hear, and speak, and thinking critically.",
+        "Can you guess what this Fundamental Duty actually says?",
+        "Yes! It is: to develop scientific temper, humanism, and the spirit of inquiry and reform.",
+        "Did you know that applying the 4Ws test is part of our Fundamental Duty?"
+      ]
+    },
+    {
+      "n": 22,
+      "kind": "static",
+      "title": "Your 4W Challenge",
+      "body": [
+        "After going home…",
+        "With your parents' permission, pick any Forwarded Message / Online News on their mobile.",
+        "Verify it using the 4W test!",
+        "What to do next?",
+        "Discuss with your parents and share the experience of one Forwarded Message / Online News you verified in the next meeting.",
+        "This is your \"Ripple of Change\"! Write your experience and put it in the Change Champion Box.",
+        "Use the handout: The handout provided will help you verify information, data, and news."
+      ],
+      "tip": "Teachers must distribute Annexure 3 (4Ws handout) to all students.",
+      "image": "/sessions/assets/s6_4ws_handout.jpeg",
+      "image_layout": "side"
+    },
+    {
+      "n": 23,
+      "kind": "static",
+      "title": "Together for Change!",
+      "body": [
+        "We are now part of a new journey…",
+        "Let's learn from each other",
+        "Let's use each other's strengths and talents",
+        "Let's think critically",
+        "Let's bring change together",
+        "Look at your Project Card!",
+        "Each group will receive a Project Card.",
+        "1. Read — Read the instructions on your Project Card completely.",
+        "2. Work together — Do the activities given in the card as a group.",
+        "3. Use your time — Work on the project activities during your free time.",
+        "4. Complete in 3 weeks — Finish all the activities given.",
+        "5. Have doubts? — Contact your mentors."
+      ],
+      "tip": "Distribute Project Cards to each group."
+    }
+  ]
+}
