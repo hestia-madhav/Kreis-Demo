@@ -11,6 +11,9 @@ jobs:
     permissions:
       contents: read
       deployments: write
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNTID }}
     steps:
       - uses: actions/checkout@v4
 
@@ -23,12 +26,11 @@ jobs:
 
       - run: npm run build
 
+      - name: Debug secrets presence
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then echo "::error::CLOUDFLARE_API_TOKEN is empty — check secret name CLOUDFLARE_API"; exit 1; fi
+          if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then echo "::error::CLOUDFLARE_ACCOUNT_ID is empty — check secret name CLOUDFLARE_ACCOUNTID"; exit 1; fi
+          echo "Both secrets are set"
+
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNTID }}
-          command: pages deploy out --project-name=kreis-demo
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNTID }}
+        run: npx wrangler@3 pages deploy out --project-name=kreis-demo
