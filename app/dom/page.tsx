@@ -28,7 +28,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Introductions · Calmers · Group formation · Nagarika connect · Club rules",
       kn: "ಪರಿಚಯ · ಶಾಂತಗೊಳಿಸುವಿಕೆ · ಗುಂಪು ರಚನೆ · ನಾಗರಿಕ ಸಂಪರ್ಕ · ಕ್ಲಬ್ ನಿಯಮಗಳು",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Source deck (English draft from CMCA)",
@@ -51,7 +51,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Pick a club name · Form the core committee · Elect a president · Plan the school-assembly launch",
       kn: "ಕ್ಲಬ್ ಹೆಸರು ಆಯ್ಕೆ · ಕೋರ್ ಸಮಿತಿ ರಚನೆ · ಅಧ್ಯಕ್ಷರ ಚುನಾವಣೆ · ಶಾಲಾ ಸಭೆ ಉದ್ಘಾಟನೆ ಯೋಜನೆ",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Source deck (English draft from CMCA)",
@@ -71,7 +71,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Hospital stories · Group values exercise · Reflect on choices · Introduce integrity · Build the Change Champion Box",
       kn: "ಆಸ್ಪತ್ರೆ ಕಥೆಗಳು · ಗುಂಪು ಮೌಲ್ಯ ಅಭ್ಯಾಸ · ಆಯ್ಕೆಗಳ ಬಗ್ಗೆ ಚಿಂತನೆ · ಪ್ರಾಮಾಣಿಕತೆ ಪರಿಚಯ · ಚೇಂಜ್ ಚಾಂಪಿಯನ್ ಬಾಕ್ಸ್ ನಿರ್ಮಾಣ",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Source deck (English draft from CMCA)",
@@ -90,7 +90,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Ajay's story · Picture-cue activity · Four categories of child rights · Protection message · Reflection",
       kn: "ಅಜಯ್ ಕಥೆ · ಚಿತ್ರ-ಸೂಚನೆ ಚಟುವಟಿಕೆ · ಮಕ್ಕಳ ಹಕ್ಕುಗಳ ನಾಲ್ಕು ವಿಭಾಗಗಳು · ರಕ್ಷಣೆ ಸಂದೇಶ · ಪ್ರತಿಫಲನ",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Source deck V2 (11th August from Ashwini)",
@@ -114,7 +114,7 @@ const SESSIONS: SessionEntry[] = [
       en: "ROC stories · 3-tier government · Visualization exercise · Local government · Helpline quiz · Complaint letters / postcards · Ripple tasks",
       kn: "ROC ಕಥೆಗಳು · 3-ಹಂತದ ಸರ್ಕಾರ · ಕಲ್ಪನೆ ಅಭ್ಯಾಸ · ಸ್ಥಳೀಯ ಸರ್ಕಾರ · ಸಹಾಯವಾಣಿ ರಸಪ್ರಶ್ನೆ · ದೂರು ಪತ್ರಗಳು · ತರಂಗ ಕಾರ್ಯಗಳು",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Player JSON built (en + kn)",
@@ -135,7 +135,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Roleplay (5 student roles) · Scientific temper · 4Ws framework · UPI ban fact-check exercise · AI fake news · Fundamental Duty connection · Ripple task",
       kn: "ಪಾತ್ರಾಭಿನಯ (5 ವಿದ್ಯಾರ್ಥಿ ಪಾತ್ರಗಳು) · ವೈಜ್ಞಾನಿಕ ಮನೋಭಾವ · 4Ws ಚೌಕಟ್ಟು · UPI ನಿಷೇಧ ಸತ್ಯಶೋಧನೆ · AI ಸುಳ್ಳು ಸುದ್ದಿ · ಮೂಲಭೂತ ಕರ್ತವ್ಯ · ತರಂಗ ಕಾರ್ಯ",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Player JSON (en + kn)",
@@ -156,7 +156,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Diversity in classroom · Leaf drawing · State information cards · Quiz with dance moves · Social diversity concept",
       kn: "ತರಗತಿಯಲ್ಲಿ ವೈವಿಧ್ಯತೆ · ಎಲೆ ಚಿತ್ರ · ರಾಜ್ಯ ಮಾಹಿತಿ ಕಾರ್ಡ್‌ಗಳು · ನೃತ್ಯ ಹೆಜ್ಜೆಗಳೊಂದಿಗೆ ರಸಪ್ರಶ್ನೆ · ಸಾಮಾಜಿಕ ವೈವಿಧ್ಯತೆ ಪರಿಕಲ್ಪನೆ",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Player JSON (en + kn)",
@@ -178,7 +178,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Cherishing diversity · Desi-Videsi game · Composite culture · Fundamental Duty · Preamble cards · Reflection circle · Together for Change",
       kn: "ವೈವಿಧ್ಯತೆಯನ್ನು ಪ್ರೀತಿಸುವುದು · ದೇಸಿ-ವಿದೇಶಿ ಆಟ · ಸಂಯುಕ್ತ ಸಂಸ್ಕೃತಿ · ಮೂಲಭೂತ ಕರ್ತವ್ಯ · ಪ್ರಸ್ತಾವನೆ ಕಾರ್ಡ್‌ಗಳು · ಪ್ರತಿಬಿಂಬ ವೃತ್ತ · ಬದಲಾವಣೆಗಾಗಿ ಒಟ್ಟಾಗಿ",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Player JSON (en + kn)",
@@ -201,7 +201,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Job riddles · Preamble cards · Stories of Grace Banu, Jaganthan & Murugamma · Start-Stop-Continue · Empathy & Equality project",
       kn: "ಕೆಲಸದ ಒಗಟುಗಳು · ಪ್ರಸ್ತಾವನೆ ಕಾರ್ಡ್‌ಗಳು · ಗ್ರೇಸ್ ಬಾನು, ಜಗಂತನ್ ಮತ್ತು ಮುರುಗಮ್ಮ ಕಥೆಗಳು · ಆರಂಭಿಸಿ-ನಿಲ್ಲಿಸಿ-ಮುಂದುವರಿಸಿ · ಸಹಾನುಭೂತಿ ಮತ್ತು ಸಮಾನತೆ ಯೋಜನೆ",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Player JSON (en + kn)",
@@ -223,7 +223,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Nature quiz · Group activity on environmental issues · What can you do? · Tree of change · MC introduction & group work videos",
       kn: "ಪ್ರಕೃತಿ ರಸಪ್ರಶ್ನೆ · ಪರಿಸರ ಸಮಸ್ಯೆಗಳ ಗುಂಪು ಚಟುವಟಿಕೆ · ನೀವು ಏನು ಮಾಡಬಹುದು? · ಬದಲಾವಣೆಯ ಮರ · MC ಪರಿಚಯ & ಗುಂಪು ಕೆಲಸ ವೀಡಿಯೊಗಳು",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Player JSON (en + kn)",
@@ -242,7 +242,7 @@ const SESSIONS: SessionEntry[] = [
       en: "Club charts · Recollect quiz · Recap of all sessions · TFC presentations · Pledge · Farewell",
       kn: "ಕ್ಲಬ್ ಚಾರ್ಟ್‌ಗಳು · ನೆನಪಿನ ರಸಪ್ರಶ್ನೆ · ಎಲ್ಲಾ ಅವಧಿಗಳ ಮರುಸ್ಮರಣೆ · TFC ಪ್ರಸ್ತುತಿಗಳು · ಪ್ರತಿಜ್ಞೆ · ವಿದಾಯ",
     },
-    status: "in_progress",
+    status: "live",
     durationMin: 60,
     progress: [
       "✅ Player JSON (en + kn)",
