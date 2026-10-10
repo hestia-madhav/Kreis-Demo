@@ -31,7 +31,7 @@ const PROGRAMMES: Programme[] = [
       kn: "ಕರ್ನಾಟಕ ವಸತಿ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆಗಳ ಸಂಘ — ಕರ್ನಾಟಕಾದ್ಯಂತ 484 ವಸತಿ ಶಾಲೆಗಳು",
     },
     href: "/kreis",
-    sessions: { en: "9 sessions", kn: "9 ಅವಧಿಗಳು" },
+    sessions: { en: "11 sessions", kn: "11 ಅವಧಿಗಳು" },
     status: "Live for pilot",
   },
   {
@@ -48,7 +48,7 @@ const PROGRAMMES: Programme[] = [
       kn: "ಅಲ್ಪಸಂಖ್ಯಾತರ ಇಲಾಖೆ ಶಾಲೆಗಳು — ಕರ್ನಾಟಕ, ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ಒಡಿಶಾದಲ್ಲಿ 350+ ಶಾಲೆಗಳು",
     },
     href: "/dom",
-    sessions: { en: "7 sessions", kn: "7 ಅವಧಿಗಳು" },
+    sessions: { en: "11 sessions", kn: "11 ಅವಧಿಗಳು" },
     status: "In progress",
   },
 ];

@@ -1,0 +1,371 @@
+{
+  "id": "kreis-session-11",
+  "_language": "en",
+  "_revision": "2026-10-09-ppt-v1-initial",
+  "title": "Session 11: Harmony with Nature",
+  "programme": "KREIS",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "slides": [1, 2]
+    },
+    {
+      "id": "introduction_quiz",
+      "label": "Introduction & Quiz",
+      "slides": [3, 4, 5, 6]
+    },
+    {
+      "id": "what_can_you_do",
+      "label": "What Can You Do?",
+      "slides": [7]
+    },
+    {
+      "id": "group_work",
+      "label": "Group Work",
+      "slides": [8, 9]
+    },
+    {
+      "id": "group_discussion",
+      "label": "Group Discussion",
+      "slides": [10, 11, 12, 13, 14, 15, 16, 17]
+    },
+    {
+      "id": "street_pet_animals",
+      "label": "Street & Pet Animals",
+      "slides": [18, 19]
+    },
+    {
+      "id": "reflection_wrapup",
+      "label": "Reflection & Wrap-up",
+      "slides": [20, 21, 22]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "KREIS - Session 11: Harmony with Nature",
+      "centered": true,
+      "tip": "Display title slide. Welcome students."
+    },
+    {
+      "n": 2,
+      "kind": "static",
+      "title": "Welcome to the Children's Constitution Club!",
+      "body": [
+        "Full-screen graphic: KREIS logo, CMCA logo + upbeat welcome music."
+      ],
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "tip": "Play welcome music. Confirm everyone is seated in groups."
+    },
+    {
+      "n": 3,
+      "kind": "mc_narration",
+      "title": "Introduction",
+      "video": "/sessions/assets/s11_mc_introduction.kn.mp4",
+      "kn_script": [
+        "Hey and Welcome back to another session in CMCA!",
+        "Can you quickly check to see if you are all sitting in your groups?",
+        "Let us start with a quick quiz! Raise your hands if you know the answer."
+      ],
+      "tip": "Play MC video. Students settle into groups."
+    },
+    {
+      "n": 4,
+      "kind": "click_reveal",
+      "title": "Quiz!",
+      "items": [
+        {
+          "label": "In the 2026 Environment Performance Index, out of 177 countries, India ranks ___?",
+          "detail": "176. Top Country: Estonia ranks 1st with a score of 74.79. Top Performers: Luxembourg, UK, Finland, and the Netherlands follow close behind. Lowest: Laos ranks 177th.",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "___ of urban sewage flowing into Indian rivers is untreated.",
+          "detail": "72% (Source: Central Pollution Control Board)",
+          "color": "#1E3A6E"
+        }
+      ],
+      "tip": "Display each question. Click to reveal answer. Keep this quick and move on!"
+    },
+    {
+      "n": 5,
+      "kind": "click_reveal",
+      "title": "Quiz!",
+      "items": [
+        {
+          "label": "Of the 10 most polluted cities in the world, ___ are Indian cities.",
+          "detail": "6 (Source: WHO)",
+          "color": "#C2185B"
+        },
+        {
+          "label": "Apart from the tiger, name 2 other animals in danger of becoming extinct in India.",
+          "detail": "Ganges Dolphin, Indian Rhinoceros, Indian Bustard, Gharial (a crocodile)",
+          "color": "#6A2C91"
+        }
+      ],
+      "image": "/sessions/assets/s11_endangered_animals.png",
+      "tip": "Display each question. Click to reveal answer with images of endangered animals."
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "Quiz — Endangered Animals",
+      "body": [
+        "Images of the endangered animals: Ganges Dolphin, Indian Rhinoceros, Indian Bustard, Gharial"
+      ],
+      "image": "/sessions/assets/s11_endangered_animals_display.png",
+      "tip": "Display images alongside the answers from the previous slide."
+    },
+    {
+      "n": 7,
+      "kind": "click_reveal",
+      "title": "What Can You Do?",
+      "items": [
+        {
+          "label": "Can you share specific actions or steps we can take to solve these issues?",
+          "detail": "3R's (Reduce, Reuse, Recycle), less usage of plastic, carpooling, use of public vehicles, waste segregation, planting trees",
+          "color": "#2E8B4F"
+        }
+      ],
+      "tip": "Ask students for their ideas first, then tap to reveal examples."
+    },
+    {
+      "n": 8,
+      "kind": "mc_narration",
+      "title": "Group Work",
+      "video": "/sessions/assets/s11_mc_group_work.kn.mp4",
+      "kn_script": [
+        "There is a LOT MORE we can do. There is more power in each of our hands than you think.",
+        "Your teacher will give each group a picture handout with pictures and a question slip.",
+        "The pictures are of familiar sights you see around you often, almost everyday.",
+        "The question slip contains 2 questions that you must answer for EACH picture in your picture sheet. You don't need to go in order, pick pictures and answer the questions.",
+        "Note the points down as you discuss so you can share them later.",
+        "Make sure everyone has an opportunity to share and speak.",
+        "You have 10 minutes. After 5 minutes, I will give you a reminder.",
+        "I request one member from each group to pick up your material from your teacher.",
+        "Remember! You have 10 minutes and time is sacred!"
+      ],
+      "tip": "Give instructions first, then hand over materials. Keep materials in sets for groups to save time."
+    },
+    {
+      "n": 9,
+      "kind": "group_activity_timer",
+      "title": "Group Work — Picture Discussion",
+      "brief": "You have 2 questions to answer for each picture: WHY IS IT IMPORTANT TO US? and WHAT MUST I DO? Discuss as a group and note down your points.",
+      "timer_seconds": 600,
+      "reminder_at": 300,
+      "tip": "Hand one sheet of Annexure 1 (picture handout) and Annexure 2 (question slip) to each group.",
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3"
+    },
+    {
+      "n": 10,
+      "kind": "static",
+      "title": "Group Discussion",
+      "body": [
+        "One member from each group will now share their discussion on the image displayed on the screen."
+      ],
+      "tip": "Introduce the group discussion format. Each image will be shown one by one, with answers revealed on click."
+    },
+    {
+      "n": 11,
+      "kind": "click_reveal",
+      "title": "Anthills",
+      "items": [
+        {
+          "label": "WHY IS IT IMPORTANT TO US?",
+          "detail": "Anthills are typically termite hills. When we see a termite hill it is good news! It means that the ecosystem is healthy and is a sign that groundwater levels are healthy, and that soil quality is good. That is probably why we worship the termite hill. Ants and termites dig and loosen soil, allowing for water to be stored and for soil to stay rich in nutrients.",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "WHAT MUST WE DO?",
+          "detail": "Do not destroy ant hills and ant holes. Be gentle with ants, keep an eye out for them when we walk, and let them live their lives in harmony with us.",
+          "color": "#1E3A6E"
+        }
+      ],
+      "image": "/sessions/assets/s11_anthills.png",
+      "image_layout": "side",
+      "tip": "Let the group that discussed this image share first, then reveal the answers."
+    },
+    {
+      "n": 12,
+      "kind": "click_reveal",
+      "title": "Bee Hive / Wasp Hive",
+      "items": [
+        {
+          "label": "WHY IS IT IMPORTANT TO US?",
+          "detail": "Bees pollinate on a huge commercial scale. About one third of what we eat is pollinated by bees, directly or indirectly. They travel long distances, cross-pollinate and strengthen genes of foods. Most fruit and vegetables we grow or buy are made possible because of bee pollination. Bees, butterflies, bats and wasps are all responsible for food on our plates.",
+          "color": "#F9A825"
+        },
+        {
+          "label": "WHAT MUST WE DO?",
+          "detail": "If a hive is in a place which is safe for people, then let it be. They won't harm generally. When we see that a hive is coming up in a place that could cause harm to us, then act when it is still a small hive. You can gently create some smoke near them, and they will understand that this is not a safe place and move on.",
+          "color": "#1E3A6E"
+        }
+      ],
+      "image": "/sessions/assets/s11_bee_hive.png",
+      "image_layout": "side",
+      "tip": "Let the group that discussed this image share first, then reveal the answers."
+    },
+    {
+      "n": 13,
+      "kind": "click_reveal",
+      "title": "Parakeet (Birds)",
+      "items": [
+        {
+          "label": "WHY IS IT IMPORTANT TO US?",
+          "detail": "Birds need insects and green cover to live. They could also do with bird baths and water bowls and love it when we keep and refill water for them in a quiet corner of our verandah or garden, in a quiet street corner close to home. Feed them with bird-food, rice or grains.",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "WHAT MUST WE DO?",
+          "detail": "Birds get hurt often — kite strings and wires hurt them. If you see a hurt bird, place a soft cloth over it, pick it up gently and keep it in a small cardboard box with holes for air. Call the local rescue NGO immediately. The rescue numbers are there in your helpline sheet given earlier.",
+          "color": "#C2185B"
+        }
+      ],
+      "image": "/sessions/assets/s11_parakeet.png",
+      "image_layout": "side",
+      "tip": "Let the group that discussed this image share first, then reveal the answers."
+    },
+    {
+      "n": 14,
+      "kind": "click_reveal",
+      "title": "Snake (Rat Snake)",
+      "items": [
+        {
+          "label": "WHY IS IT IMPORTANT TO US?",
+          "detail": "Snakes eat rats and are known as Farmers' Friends.",
+          "color": "#6A2C91"
+        },
+        {
+          "label": "WHAT MUST WE DO?",
+          "detail": "Snakes lose their homes and habitat because of human development. Very few snakes are poisonous. Most snakes we see around us are water, rat or garden snakes. The snake is as scared as you! So, it will try and find a hiding place. Once it has, call the local snake-rescue NGO or person and do not kill or harm the snake. The rescue numbers are there in your helpline sheet given earlier.",
+          "color": "#1E3A6E"
+        }
+      ],
+      "image": "/sessions/assets/s11_rat_snake.png",
+      "image_layout": "side",
+      "tip": "Let the group that discussed this image share first, then reveal the answers."
+    },
+    {
+      "n": 15,
+      "kind": "click_reveal",
+      "title": "House Lizard (Gecko)",
+      "items": [
+        {
+          "label": "WHY IS IT IMPORTANT TO US?",
+          "detail": "House lizards in India are not poisonous at all. They eat pests like cockroaches and mosquitoes, and in a way help humans. Did you know? The house lizard is not poisonous. It also does not make food or milk poisonous. It is one of the many false beliefs we have. But certainly, we cannot have lizards fall in food. Bacteria found in any dead creature will make us sick, so cover food dishes and stay safe.",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "WHAT MUST WE DO?",
+          "detail": "Do not kill them. Be gentle with them and let them live their lives in harmony with us.",
+          "color": "#1E3A6E"
+        }
+      ],
+      "image": "/sessions/assets/s11_house_lizard.png",
+      "image_layout": "side",
+      "tip": "Let the group that discussed this image share first, then reveal the answers."
+    },
+    {
+      "n": 16,
+      "kind": "click_reveal",
+      "title": "All Kinds of Bugs and Insects",
+      "items": [
+        {
+          "label": "WHY IS IT IMPORTANT TO US?",
+          "detail": "These are good bugs mostly and keep soil healthy and are great food for birds.",
+          "color": "#F9A825"
+        },
+        {
+          "label": "WHAT MUST WE DO?",
+          "detail": "Do not kill them. Be gentle with them and let them live their lives in harmony with us. Keep some garden space in your home or apartment complex, allow for mud and leaves and wild grass to grow rather than tiling or tarring everything. Keep some pots in your verandah and give them a home. If you have a space challenge, then work with your school to do this!",
+          "color": "#1E3A6E"
+        }
+      ],
+      "image": "/sessions/assets/s11_bugs_insects.png",
+      "image_layout": "side",
+      "tip": "Let the group that discussed this image share first, then reveal the answers."
+    },
+    {
+      "n": 17,
+      "kind": "click_reveal",
+      "title": "Leaf Litter (Dead Leaves)",
+      "items": [
+        {
+          "label": "WHY IS IT IMPORTANT TO US?",
+          "detail": "This is not waste at all. Sweep it up, share some with the tree which has shed its leaves by keeping some leaves around the tree and compost the rest.",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "WHAT MUST WE DO?",
+          "detail": "Allow for mud and leaves and wild grass to grow rather than tiling or tarring everything. Trees need mud around their trunks to grow well and stay healthy.",
+          "color": "#1E3A6E"
+        }
+      ],
+      "image": "/sessions/assets/s11_leaf_litter.png",
+      "image_layout": "side",
+      "tip": "Let the group that discussed this image share first, then reveal the answers."
+    },
+    {
+      "n": 18,
+      "kind": "click_reveal",
+      "title": "Street and Pet Animals",
+      "items": [
+        {
+          "label": "We have missed some other animals we see around us in our streets daily. Any guesses?",
+          "detail": "Dogs, cows, cats — animals we see in our streets and neighbourhoods every day.",
+          "color": "#C2185B"
+        }
+      ],
+      "image": "/sessions/assets/s11_street_animals.png",
+      "tip": "Images pop up one by one. Ask students to guess before revealing."
+    },
+    {
+      "n": 19,
+      "kind": "static",
+      "title": "Street and Pet Animals — Laws",
+      "body": [
+        "Two students who read well, to read aloud in turns the laws that protect animals in India."
+      ],
+      "tip": "Use Annexure 3 to read out the laws that protect animals in India."
+    },
+    {
+      "n": 20,
+      "kind": "reflect_share",
+      "title": "Reflection",
+      "questions": [
+        "Share what you have learnt today from the picture-sheet and discussions.",
+        "Recall any laws that protect our street animals and pets.",
+        "Our Constitution expects this of us as a Fundamental Duty: To live in harmony with nature and show compassion to all living creatures."
+      ],
+      "tip": "Keep an eye on time as you have 5 minutes to wrap up!"
+    },
+    {
+      "n": 21,
+      "kind": "static",
+      "title": "Start, Stop, Continue",
+      "body_layout": "numbered",
+      "body": [
+        "What's one new thing you want to start doing in your life?",
+        "What's one thing you want to stop doing?",
+        "What's one thing you want to keep doing or continue doing?"
+      ],
+      "image": "/sessions/assets/s11_start_stop_continue.png",
+      "tip": "Encourage different children to share their thoughts for each question!"
+    },
+    {
+      "n": 22,
+      "kind": "static",
+      "title": "Ripple Tasks",
+      "body": [
+        "Observe ants! Have you seen what they are doing, where they are going?",
+        "Keep water outside your home for birds and street dogs."
+      ],
+      "image": "/sessions/assets/s11_ripple_tasks.png",
+      "tip": "Assign ripple tasks as take-home activities."
+    }
+  ]
+}

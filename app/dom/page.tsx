@@ -167,6 +167,90 @@ const SESSIONS: SessionEntry[] = [
       "🔴 Annexure 2 (worksheet)",
     ],
   },
+  {
+    id: "dom-session-8",
+    number: 8,
+    title: {
+      en: "Diversity & Composite Culture - 2",
+      kn: "ವೈವಿಧ್ಯತೆ ಮತ್ತು ಸಂಯುಕ್ತ ಸಂಸ್ಕೃತಿ - 2",
+    },
+    subtitle: {
+      en: "Cherishing diversity · Desi-Videsi game · Composite culture · Fundamental Duty · Preamble cards · Reflection circle · Together for Change",
+      kn: "ವೈವಿಧ್ಯತೆಯನ್ನು ಪ್ರೀತಿಸುವುದು · ದೇಸಿ-ವಿದೇಶಿ ಆಟ · ಸಂಯುಕ್ತ ಸಂಸ್ಕೃತಿ · ಮೂಲಭೂತ ಕರ್ತವ್ಯ · ಪ್ರಸ್ತಾವನೆ ಕಾರ್ಡ್‌ಗಳು · ಪ್ರತಿಬಿಂಬ ವೃತ್ತ · ಬದಲಾವಣೆಗಾಗಿ ಒಟ್ಟಾಗಿ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Player JSON (en + kn)",
+      "✅ Quiz images (7 Desi-Videsi items)",
+      "✅ State example images (4)",
+      "✅ Composite culture images",
+      "✅ Preamble cards (4 images)",
+      "🔴 MC video: cherishing diversity",
+      "🔴 MC video: reflection on acceptance",
+    ],
+  },
+  {
+    id: "dom-session-9",
+    number: 9,
+    title: {
+      en: "Dignity of Labour & Equality",
+      kn: "ಶ್ರಮದ ಘನತೆ ಮತ್ತು ಸಮಾನತೆ",
+    },
+    subtitle: {
+      en: "Job riddles · Preamble cards · Stories of Grace Banu, Jaganthan & Murugamma · Start-Stop-Continue · Empathy & Equality project",
+      kn: "ಕೆಲಸದ ಒಗಟುಗಳು · ಪ್ರಸ್ತಾವನೆ ಕಾರ್ಡ್‌ಗಳು · ಗ್ರೇಸ್ ಬಾನು, ಜಗಂತನ್ ಮತ್ತು ಮುರುಗಮ್ಮ ಕಥೆಗಳು · ಆರಂಭಿಸಿ-ನಿಲ್ಲಿಸಿ-ಮುಂದುವರಿಸಿ · ಸಹಾನುಭೂತಿ ಮತ್ತು ಸಮಾನತೆ ಯೋಜನೆ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Player JSON (en + kn)",
+      "🔴 MC video: riddle reflection",
+      "🔴 MC video: Start-Stop-Continue intro",
+      "✅ Story images (Grace Banu, Jaganthan, Murugamma)",
+      "✅ Riddle images (6 jobs)",
+      "✅ Preamble cards image",
+    ],
+  },
+  {
+    id: "dom-session-11",
+    number: 11,
+    title: {
+      en: "Harmony with Nature",
+      kn: "ಪ್ರಕೃತಿಯೊಂದಿಗೆ ಸಾಮರಸ್ಯ",
+    },
+    subtitle: {
+      en: "Nature quiz · Group activity on environmental issues · What can you do? · Tree of change · MC introduction & group work videos",
+      kn: "ಪ್ರಕೃತಿ ರಸಪ್ರಶ್ನೆ · ಪರಿಸರ ಸಮಸ್ಯೆಗಳ ಗುಂಪು ಚಟುವಟಿಕೆ · ನೀವು ಏನು ಮಾಡಬಹುದು? · ಬದಲಾವಣೆಯ ಮರ · MC ಪರಿಚಯ & ಗುಂಪು ಕೆಲಸ ವೀಡಿಯೊಗಳು",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Player JSON (en + kn)",
+      "✅ MC video: introduction",
+      "✅ MC video: group work",
+    ],
+  },
+  {
+    id: "dom-session-12",
+    number: 12,
+    title: {
+      en: "Conclusion & TFC Presentation",
+      kn: "ಉಪಸಂಹಾರ & TFC ಪ್ರಸ್ತುತಿ",
+    },
+    subtitle: {
+      en: "Club charts · Recollect quiz · Recap of all sessions · TFC presentations · Pledge · Farewell",
+      kn: "ಕ್ಲಬ್ ಚಾರ್ಟ್‌ಗಳು · ನೆನಪಿನ ರಸಪ್ರಶ್ನೆ · ಎಲ್ಲಾ ಅವಧಿಗಳ ಮರುಸ್ಮರಣೆ · TFC ಪ್ರಸ್ತುತಿಗಳು · ಪ್ರತಿಜ್ಞೆ · ವಿದಾಯ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Player JSON (en + kn)",
+      "🔴 MC video: year recap",
+      "🔴 MC video: pledge intro",
+      "🔴 MC video: farewell",
+    ],
+  },
 ];
 
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {

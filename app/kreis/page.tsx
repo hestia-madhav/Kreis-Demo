@@ -227,6 +227,47 @@ const SESSIONS: SessionEntry[] = [
       "✅ Together for Change project card image",
     ],
   },
+  {
+    id: "kreis-session-11",
+    number: 11,
+    title: {
+      en: "Harmony with Nature",
+      kn: "ಪ್ರಕೃತಿಯೊಂದಿಗೆ ಸಾಮರಸ್ಯ",
+    },
+    subtitle: {
+      en: "Nature quiz · Group activity on environmental issues · What can you do? · Tree of change · MC introduction & group work videos",
+      kn: "ಪ್ರಕೃತಿ ರಸಪ್ರಶ್ನೆ · ಪರಿಸರ ಸಮಸ್ಯೆಗಳ ಗುಂಪು ಚಟುವಟಿಕೆ · ನೀವು ಏನು ಮಾಡಬಹುದು? · ಬದಲಾವಣೆಯ ಮರ · MC ಪರಿಚಯ & ಗುಂಪು ಕೆಲಸ ವೀಡಿಯೊಗಳು",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Source PPT extracted",
+      "✅ Player JSON (kn + en)",
+      "✅ MC video: introduction",
+      "✅ MC video: group work",
+    ],
+  },
+  {
+    id: "kreis-session-12",
+    number: 12,
+    title: {
+      en: "Conclusion & TFC Presentation",
+      kn: "ಉಪಸಂಹಾರ & TFC ಪ್ರಸ್ತುತಿ",
+    },
+    subtitle: {
+      en: "Club charts · Recollect quiz · Recap of all sessions · TFC presentations · Pledge · Farewell",
+      kn: "ಕ್ಲಬ್ ಚಾರ್ಟ್‌ಗಳು · ನೆನಪಿನ ರಸಪ್ರಶ್ನೆ · ಎಲ್ಲಾ ಅವಧಿಗಳ ಮರುಸ್ಮರಣೆ · TFC ಪ್ರಸ್ತುತಿಗಳು · ಪ್ರತಿಜ್ಞೆ · ವಿದಾಯ",
+    },
+    status: "in_progress",
+    durationMin: 60,
+    progress: [
+      "✅ Source PPT extracted",
+      "✅ Player JSON (kn + en)",
+      "🔴 MC video: year recap",
+      "🔴 MC video: pledge intro",
+      "🔴 MC video: farewell",
+    ],
+  },
 ];
 
 const STATUS_PILL: Record<Status, { label: string; bg: string; fg: string }> = {

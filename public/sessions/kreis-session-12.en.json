@@ -1,0 +1,207 @@
+{
+  "id": "kreis-session-12",
+  "_language": "en",
+  "_revision": "2026-10-09-ppt-v1-initial",
+  "title": "Session 12: Conclusion & TFC Presentation",
+  "programme": "KREIS",
+  "duration_estimate_minutes": 60,
+  "sections": [
+    {
+      "id": "welcome",
+      "label": "Welcome",
+      "slides": [1]
+    },
+    {
+      "id": "club_charts",
+      "label": "Club Charts",
+      "slides": [2]
+    },
+    {
+      "id": "recollect_quiz",
+      "label": "Recollect & Quiz",
+      "slides": [3, 4]
+    },
+    {
+      "id": "active_citizens",
+      "label": "Active Citizens & Activities",
+      "slides": [5, 6]
+    },
+    {
+      "id": "tfc_presentations",
+      "label": "TFC Presentations",
+      "slides": [7, 8]
+    },
+    {
+      "id": "class_pledge",
+      "label": "Class Pledge Activity",
+      "slides": [9, 10, 11]
+    },
+    {
+      "id": "reflection_conclusion",
+      "label": "Reflection & Conclusion",
+      "slides": [12]
+    }
+  ],
+  "slides": [
+    {
+      "n": 1,
+      "kind": "title",
+      "title": "Welcome to the Children's Constitution Club!",
+      "audio": "/sessions/assets/welcome_music.mp3",
+      "centered": true,
+      "tip": "Play welcome music. Confirm everyone is seated in groups."
+    },
+    {
+      "n": 2,
+      "kind": "static",
+      "title": "Club Charts",
+      "body": [
+        "Children, remember to complete your three charts:",
+        "Stories of Active Citizens",
+        "I Pledge",
+        "My Change Stories!"
+      ],
+      "image": "/sessions/assets/s12_club_charts.png",
+      "tip": "Remind students about their charts."
+    },
+    {
+      "n": 3,
+      "kind": "mc_narration",
+      "title": "Year Gone By for Our School Club",
+      "video": "/sessions/assets/s12_mc_year_recap.kn.mp4",
+      "kn_script": [
+        "Hey, everyone! Do you remember how we started our Children's Constitution Club?",
+        "Of course you do! One of the very first things we did was… a quiz!",
+        "Hmm… I wonder how much you still remember. Did all that learning stay in your brains, or did some of it go on a holiday?",
+        "Well, there's only one way to find out! As we come to the end of our year together, let's travel all the way back to the beginning and take the quiz once again!",
+        "Ready? Remember our club rule — raise your hand if you know the answer, wait for your turn, and let everyone get a chance!",
+        "Alright, Champions… let's see what you remember!"
+      ],
+      "tip": "Play MC video. Build excitement for the recap quiz."
+    },
+    {
+      "n": 4,
+      "kind": "click_reveal",
+      "title": "Let's Refresh the Learnings Through a Quiz!",
+      "items": [
+        {
+          "label": "What is 1098?",
+          "detail": "ChildLine",
+          "color": "#C2185B"
+        },
+        {
+          "label": "What does the girl stick figure symbol tell you in Children's Constitution Club?",
+          "detail": "Gender Equality",
+          "color": "#6A2C91"
+        },
+        {
+          "label": "What changes have you noticed in your life after the CLUB learning journey?",
+          "detail": "(Open discussion — students share their personal changes)",
+          "color": "#2E8B4F"
+        },
+        {
+          "label": "What's one thing you've stopped doing since you started learning from CLUB?"
+        }
+      ],
+      "tip": "Display each question, let students answer, then reveal. Keep pace lively."
+    },
+    {
+      "n": 5,
+      "kind": "static",
+      "title": "Active Citizens Chart",
+      "body": [
+        "Put up the charts.",
+        "Cut the Active Citizens stories from Annexure 2 and paste as you see in the image.",
+        "Read the stories aloud."
+      ],
+      "image": "/sessions/assets/s12_active_citizens_chart.png",
+      "tip": "Help students set up the Active Citizens chart with stories from Annexure 2."
+    },
+    {
+      "n": 6,
+      "kind": "static",
+      "title": "Three Exciting Activities",
+      "body": [
+        "The class will now do three exciting activities to wrap up our CLUB journey."
+      ],
+      "image": "/sessions/assets/s12_three_activities.png",
+      "tip": "Introduce the three wrap-up activities."
+    },
+    {
+      "n": 7,
+      "kind": "static",
+      "title": "Together for Change — Project Presentations",
+      "body_layout": "numbered",
+      "body": [
+        "Present group by group. Each group will get 3 minutes to present.",
+        "Listen quietly while another group is presenting.",
+        "Make sure everyone in your group gets a chance to participate."
+      ],
+      "tip": "Manage time strictly — 3 minutes per group."
+    },
+    {
+      "n": 8,
+      "kind": "static",
+      "title": "Group Questions",
+      "body_layout": "numbered",
+      "body": [
+        "What motivated your group to work on this particular topic?",
+        "Share some of the key actions or initiatives your group took to address the Challenge Statement.",
+        "What were some of the activities or things that you could have done better, and how would you do them differently next time?",
+        "What did you learn from working on this project? Did it change your perspective or enhance your understanding of the topic? How?",
+        "How can you apply the knowledge and skills acquired during this project in your daily life?",
+        "Can you think of any future initiatives or actions that can be taken to further address the topic?"
+      ],
+      "tip": "Each group answers these questions after their presentation."
+    },
+    {
+      "n": 9,
+      "kind": "mc_narration",
+      "title": "Class Pledge Activity",
+      "video": "/sessions/assets/s12_mc_pledge_intro.kn.mp4",
+      "kn_script": [
+        "Hello, Change Champions!",
+        "Do you remember the stories of children like Arundathi, Gurunath, Naziya and Mariya, who made a difference?",
+        "Change doesn't always have to be BIG. Even small actions, like thanking school staff, helping others or caring for animals, can make a difference.",
+        "Think about your CLUB journey. What change did YOU make?",
+        "Every small action creates a ripple of change. You are all Bright Sparks! Keep your spark alive and continue making a difference!"
+      ],
+      "tip": "Play MC video. Build emotional connection to their CLUB journey."
+    },
+    {
+      "n": 10,
+      "kind": "group_activity_timer",
+      "title": "Class Pledge Activity — Write Your Pledge",
+      "brief": "You will get a slip. On it, write ONE thing that means the most to you: A pledge — something you will do or change, OR how our School Club changed you, OR something you will never forget about your Club journey, OR how the Club helped you.",
+      "timer_seconds": 300,
+      "reminder_at": 60,
+      "tip": "Distribute slips. Encourage students to reflect deeply before writing."
+    },
+    {
+      "n": 11,
+      "kind": "static",
+      "title": "Chart Display",
+      "body": [
+        "Stick your notes on the chart paper as you finish.",
+        "The chart papers will be presented to the Principal.",
+        "The charts are to be displayed on the notice board."
+      ],
+      "tip": "Help students stick their pledges on the chart paper."
+    },
+    {
+      "n": 12,
+      "kind": "mc_narration",
+      "title": "Reflection & Conclusion",
+      "video": "/sessions/assets/s12_mc_farewell.kn.mp4",
+      "kn_script": [
+        "Wow, Children… can you believe this is our last CLUB session? It feels like just yesterday we were beginning this journey together!",
+        "I want to say a big thank you to each one of you for your energy, ideas, teamwork, and wonderful participation throughout the year.",
+        "Before we say goodbye, take a moment to share your favourite CLUB memories, the changes you helped create, and what you learnt along the way.",
+        "You can also share your pledges with your friends and encourage each other to keep those promises alive.",
+        "Remember, our CLUB sessions may be ending, but your journey doesn't end here. Keep your spark alive, keep caring, keep speaking up, and keep creating ripples of change wherever you go.",
+        "I'm so proud of every one of you. Goodbye, my Bright Sparks! Keep shining, keep making a difference, and I hope we meet again someday!"
+      ],
+      "tip": "Play farewell MC video. Allow students time to share memories."
+    }
+  ]
+}
