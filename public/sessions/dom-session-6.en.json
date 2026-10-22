@@ -1,52 +1,82 @@
 {
   "id": "dom-session-6",
   "_language": "en",
-  "_revision": "2026-09-11-s6-correction-ppt-dom",
+  "_revision": "2026-09-11-s6-correction-ppt",
   "title": "Session 6: Cultivating Critical Thinking",
-  "programme": "DoM",
+  "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
     {
       "id": "welcome",
       "label": "Welcome",
-      "slides": [1]
+      "slides": [
+        1
+      ]
     },
     {
       "id": "roleplay_setup",
       "label": "Roleplay — Setup",
-      "slides": [2, 3, 4]
+      "slides": [
+        2,
+        3,
+        4
+      ]
     },
     {
       "id": "roleplay_performance",
       "label": "Roleplay — Performance & Discussion",
-      "slides": [5, 6, 7, 8, 9]
+      "slides": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
     },
     {
       "id": "scientific_temper",
       "label": "Scientific Temper",
-      "slides": [10, 11]
+      "slides": [
+        10,
+        11
+      ]
     },
     {
       "id": "4w_test",
       "label": "4W Test",
-      "slides": [12, 13]
+      "slides": [
+        12,
+        13
+      ]
     },
     {
       "id": "fake_news_exercise",
       "label": "Fake News Analysis",
-      "slides": [14, 15, 16, 17, 18]
+      "slides": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
     },
     {
       "id": "constitution_wrapup",
       "label": "Constitution, Ripple Task & Closing",
-      "slides": [19, 20, 21, 22, 23]
+      "slides": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
     }
   ],
   "slides": [
     {
       "n": 1,
       "kind": "title",
-      "title": "Welcome to the Children's Constitution Club!",
+      "title": "Welcome to the Children's Nagarika Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
       "tip": "Play welcome music."
@@ -155,8 +185,8 @@
       "tip": "Play MC video. Wait for students to guess.",
       "video": "/sessions/assets/s6_mc_scientific_temper_p1.kn.mp4",
       "kn_script": [
-        "When we ask questions, verify facts, and think before believing or sharing something — we are using a very important skill.",
-        "Can you guess what that skill is called?"
+        "ನಾವು ಪ್ರಶ್ನೆಗಳನ್ನು ಕೇಳುವಾಗ, ಸತ್ಯವನ್ನು ಪರಿಶೀಲಿಸುವಾಗ, ಮತ್ತು ಯಾವುದನ್ನಾದರೂ ನಂಬುವ ಅಥವಾ ಹಂಚಿಕೊಳ್ಳುವ ಮುನ್ನ ಯೋಚಿಸುವಾಗ, ನಾವು ಒಂದು ಮುಖ್ಯವಾದ ಕೌಶಲ್ಯವನ್ನು ಬಳಸುತ್ತೇವೆ.",
+        "ಅದು ಯಾವ ಕೌಶಲ್ಯ ಎಂದು ನೀವು ಊಹಿಸಬಲ್ಲಿರಾ?"
       ]
     },
     {
@@ -265,7 +295,7 @@
     {
       "n": 19,
       "kind": "static",
-      "title": "Constitution Connection",
+      "title": "Civic Connection",
       "body": [
         "Which constitutional value from the Preamble best fits the activities and discussions we did today?"
       ],
@@ -275,7 +305,7 @@
     {
       "n": 20,
       "kind": "static",
-      "title": "Constitution Connection — Quiz",
+      "title": "Civic Connection — Quiz",
       "body": [
         "Think and answer!",
         "According to Article 51A of the Indian Constitution, which quality is it a citizen's duty to develop?",
@@ -296,10 +326,10 @@
       "tip": "Play MC video.",
       "video": "/sessions/assets/s6_mc_fundamental_duty.kn.mp4",
       "kn_script": [
-        "Our Constitution guarantees us rights. There is a Fundamental Duty in the Indian Constitution about verifying the truth of what we read, hear, and speak, and thinking critically.",
-        "Can you guess what this Fundamental Duty actually says?",
-        "Yes! It is: to develop scientific temper, humanism, and the spirit of inquiry and reform.",
-        "Did you know that applying the 4Ws test is part of our Fundamental Duty?"
+        "ನಮ್ಮ ಸಂವಿಧಾನವು ನಮಗೆ ಹಕ್ಕುಗಳನ್ನು ಖಾತರಿಪಡಿಸುತ್ತದೆ. ನಾವು ಓದುವ, ಕೇಳುವ ಮತ್ತು ಮಾತನಾಡುವ ವಿಷಯಗಳ ಸತ್ಯವನ್ನು ಪರಿಶೀಲಿಸುವ ಮತ್ತು ವಿಮರ್ಶಾತ್ಮಕವಾಗಿ ಯೋಚಿಸುವ ಬಗ್ಗೆ ಭಾರತೀಯ ಸಂವಿಧಾನದಲ್ಲಿ ಒಂದು ಮೂಲಭೂತ ಕರ್ತವ್ಯವಿದೆ.",
+        "ಈ ಮೂಲಭೂತ ಕರ್ತವ್ಯ ನಿಜವಾಗಿ ಏನು ಹೇಳುತ್ತದೆ ಎಂದು ನೀವು ಊಹಿಸಬಲ್ಲಿರಾ?",
+        "ಹೌದು! ಅದು: ವೈಜ್ಞಾನಿಕ ಮನೋಭಾವ, ಮಾನವೀಯತೆ ಹಾಗೂ ವಿಚಾರಣೆ ಮತ್ತು ಸುಧಾರಣೆಯ ಮನೋಭಾವವನ್ನು ಬೆಳೆಸುವುದು.",
+        "4Ws ಪರೀಕ್ಷೆಯನ್ನು ಅನ್ವಯಿಸುವುದು ನಮ್ಮ ಮೂಲಭೂತ ಕರ್ತವ್ಯದ ಭಾಗ ಎಂದು ನಿಮಗೆ ಗೊತ್ತಿತ್ತಾ?"
       ]
     },
     {
@@ -315,6 +345,8 @@
         "🌊 This is your \"Ripple of Change\"! Write your experience and put it in the Change Champion Box.",
         "📄 Use the handout: The handout provided will help you verify information, data, and news."
       ],
+      "image": "/sessions/assets/s6_4ws_handout.jpeg",
+      "image_layout": "side",
       "tip": "Distribute Annexure 3 (4Ws handout) to all students."
     },
     {

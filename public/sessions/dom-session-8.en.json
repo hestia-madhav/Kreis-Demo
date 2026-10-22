@@ -1,52 +1,46 @@
 {
   "id": "dom-session-8",
   "_language": "en",
-  "_revision": "2026-10-09-ppt-v1-initial",
-  "title": "Session 8: Diversity & Composite Culture (Part 2)",
+  "_revision": "2026-09-30-initial",
+  "title": "Session 8: Diversity & Composite Culture - 2",
   "programme": "DOM",
   "duration_estimate_minutes": 60,
   "sections": [
     {
-      "id": "welcome",
-      "label": "Welcome",
+      "id": "opening",
+      "label": "Opening",
       "slides": [
         1
       ]
     },
     {
-      "id": "introduction",
-      "label": "Introduction",
+      "id": "cherishing_diversity",
+      "label": "Cherishing Our Diversity",
       "slides": [
         2,
-        3
+        3,
+        4
       ]
     },
     {
-      "id": "composite_culture_intro",
-      "label": "Composite Culture Introduction",
+      "id": "desi_videsi",
+      "label": "Desi-Videsi Game",
       "slides": [
-        4,
-        5
-      ]
-    },
-    {
-      "id": "desi_videsi_quiz",
-      "label": "Desi or Videsi Quiz",
-      "slides": [
+        5,
         6,
         7,
         8,
         9,
         10,
         11,
-        12
+        12,
+        13
       ]
     },
     {
-      "id": "composite_culture_discussion",
-      "label": "Composite Culture Discussion",
+      "id": "composite_culture",
+      "label": "Composite Culture",
       "slides": [
-        13,
         14,
         15,
         16
@@ -56,17 +50,41 @@
       "id": "reflection",
       "label": "Reflection",
       "slides": [
-        17,
-        18,
+        17
+      ]
+    },
+    {
+      "id": "preamble_cards",
+      "label": "Preamble Cards",
+      "slides": [
+        18
+      ]
+    },
+    {
+      "id": "reflection_circle",
+      "label": "Reflection Circle",
+      "slides": [
         19
       ]
     },
     {
-      "id": "constitution_connect",
-      "label": "Constitution Connect",
+      "id": "ripple_task",
+      "label": "Ripple Task",
       "slides": [
-        20,
-        21,
+        20
+      ]
+    },
+    {
+      "id": "constitution_connect",
+      "label": "Civic Connect",
+      "slides": [
+        21
+      ]
+    },
+    {
+      "id": "together_for_change",
+      "label": "Together for Change",
+      "slides": [
         22
       ]
     }
@@ -75,7 +93,8 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "Welcome to the Nagarika Club!",
+      "title": "Welcome to the Children's Nagarika Club!",
+      "subtitle": "Diversity & Composite Culture - 2",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
       "tip": "Play welcome music. Confirm everyone is seated in groups."
@@ -83,271 +102,367 @@
     {
       "n": 2,
       "kind": "mc_narration",
-      "title": "Introduction",
+      "title": "Cherishing Our Diversity",
       "video": "/sessions/assets/s8_mc_cherishing_diversity.kn.mp4",
+      "transcript": "Hello everyone! Today I have a question to ask you all. Before that I would like all of you to close your eyes. Don't answer aloud and don't share. My question is: When I say the words \"Our culture\", what pictures come to your mind? Think about it for 20 seconds.",
       "kn_script": [
-        "Hello everyone! Welcome back to the Nagarika Club!",
-        "Last session, we explored the amazing diversity of India through our quiz on states, dances, food and landmarks.",
-        "Today, let's think about something interesting — what does culture mean to you?",
-        "When I say the word 'culture', what comes to your mind? Is it food? Festivals? Clothes? Language? Music?",
-        "Let's hear from a few of you!"
+        "ಎಲ್ಲರಿಗೂ ನಮಸ್ಕಾರ! ಇಂದು ನಾನು ನಿಮಗೆಲ್ಲರಿಗೂ ಒಂದು ಪ್ರಶ್ನೆ ಕೇಳಬೇಕು. ಅದಕ್ಕೂ ಮೊದಲು ನೀವೆಲ್ಲರೂ ಕಣ್ಣು ಮುಚ್ಚಿ.",
+        "ಜೋರಾಗಿ ಉತ್ತರ ಹೇಳಬೇಡಿ ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬೇಡಿ.",
+        "ನನ್ನ ಪ್ರಶ್ನೆ ಇದು: ನಾನು \"ನಮ್ಮ ಸಂಸ್ಕೃತಿ\" ಎಂಬ ಪದಗಳನ್ನು ಹೇಳಿದಾಗ, ನಿಮ್ಮ ಮನಸ್ಸಿನಲ್ಲಿ ಯಾವ ಚಿತ್ರಗಳು ಬರುತ್ತವೆ?",
+        "20 ಸೆಕೆಂಡುಗಳ ಕಾಲ ಯೋಚಿಸಿ."
       ],
-      "tip": "Play MC video. Let 3-4 students share what culture means to them."
+      "tip": "Play the MC video. After the video, give students 20 seconds of silence to think. Then ask 2-3 children to share what images came to mind."
     },
     {
       "n": 3,
-      "kind": "static",
-      "title": "Recall — Last Session",
-      "body": [
-        "In the last session, we explored India's diversity through a fun quiz on states, dances, food and landmarks.",
-        "Today we will explore how our cultures mix and create something new and beautiful!"
-      ],
-      "tip": "Quick recap of Session 7. Keep this brief — move to new content."
+      "kind": "group_activity_timer",
+      "title": "Composite Culture Picture Activity",
+      "brief": "Look at the Composite Culture picture sheet distributed to your group. Pick 3 pictures that you think best describe Our Culture and write down in your notebook why you chose them.",
+      "timer_seconds": 240,
+      "reminder_at": 60,
+      "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
+      "image": "/sessions/assets/s8_composite_culture_sheet.png",
+      "image_layout": "side",
+      "tip": "Distribute Composite Culture picture sheet (1 per group). Start the 4-minute timer. Walk around and encourage discussion."
     },
     {
       "n": 4,
       "kind": "static",
-      "title": "What is Composite Culture?",
+      "title": "Discuss — India's Diversity",
       "body": [
-        "Composite Culture means a culture that is made up of many different influences blended together.",
-        "India's composite culture comes from centuries of different communities, religions, and traditions living together and sharing their customs.",
-        "Our food, music, clothing, festivals, and even our languages show this beautiful mixing!"
+        "What are some Indian states you know? What makes them unique?",
+        "How does this diversity contribute to our culture? Discuss!"
       ],
-      "image": "/sessions/assets/s8_composite_culture.png",
-      "tip": "Explain composite culture with everyday examples students can relate to."
+      "callout": "Examples:",
+      "images": [
+        {
+          "src": "/sessions/assets/s8_kathakali_kerala.png",
+          "alt": "Kathakali dance",
+          "caption": "Kathakali in Kerala"
+        },
+        {
+          "src": "/sessions/assets/s8_ranthambore_rajasthan.png",
+          "alt": "Ranthambore Fort",
+          "caption": "Ranthambore Fort in Rajasthan"
+        },
+        {
+          "src": "/sessions/assets/s8_pattachitra_odisha.png",
+          "alt": "Pattachitra art",
+          "caption": "Pattachitra art in Odisha"
+        },
+        {
+          "src": "/sessions/assets/s8_food_punjab.png",
+          "alt": "Punjabi food",
+          "caption": "Food in Punjab"
+        }
+      ],
+      "tip": "Kerala is known for Kathakali, Rajasthan for forts and folk music, Odisha for Pattachitra paintings, Punjab for Bhangra and cuisine. Get responses from 3-4 groups."
     },
     {
       "n": 5,
       "kind": "static",
-      "title": "Examples of Composite Culture",
+      "title": "Desi-Videsi Game!",
       "body": [
-        "Biryani — a dish with Persian and Indian origins, now loved across all of India!",
-        "Bollywood songs — blend Hindi, Urdu, Punjabi, and even English words.",
-        "Clothing like the Salwar Kameez — worn across religions and regions.",
-        "Festivals — Diwali, Eid, Christmas, Pongal — celebrated together in many neighbourhoods."
+        "We will now have a fun game!",
+        "You will see pictures of different daily items/food products and you have to guess if it's:",
+        "DESI — invented in or originally from India",
+        "or VIDESI — from a country other than India!",
+        "Ready?"
       ],
-      "image": "/sessions/assets/s8_composite_examples.png",
-      "tip": "Ask students: 'Can you think of more examples from your own life?'"
+      "bullets_large": true,
+      "tip": "Build excitement! Explain the rules clearly before starting."
     },
     {
       "n": 6,
-      "kind": "static",
-      "title": "Desi or Videsi? — Quiz Time!",
-      "body": [
-        "We will now play a fun game called 'Desi or Videsi?'",
-        "I will show you something — food, clothing, sport, or an item.",
-        "You have to guess: Is it originally from India (Desi) or did it come from outside (Videsi)?",
-        "Ready? Let's find out!"
+      "kind": "click_reveal",
+      "title": "Desi-Videsi: Tea",
+      "items": [
+        {
+          "label": "TEA — Desi or Videsi?",
+          "detail": "VIDESI! It's from China! Tea was brought to India by the British in the 19th century.",
+          "color": "#2E6B4F"
+        }
       ],
-      "image": "/sessions/assets/s8_desi_videsi_title.png",
-      "tip": "Build excitement for the quiz. Explain the Desi vs Videsi concept clearly."
+      "images": [
+        {
+          "src": "/sessions/assets/s8_quiz_tea.jpg",
+          "alt": "Tea",
+          "caption": "Tea"
+        }
+      ],
+      "tip": "Let groups shout out their guess. Click to reveal the answer."
     },
     {
       "n": 7,
       "kind": "click_reveal",
-      "title": "Desi or Videsi? — Question 1",
+      "title": "Desi-Videsi: Pepper",
       "items": [
         {
-          "label": "Samosa — Desi or Videsi?",
-          "detail": "Videsi! The samosa originated in the Middle East (called 'sambosa'). It came to India through Central Asian traders and merchants.",
-          "color": "#C2185B"
+          "label": "PEPPER — Desi or Videsi?",
+          "detail": "DESI! It's from India! India has been called the 'Land of Spices' and pepper is native to Kerala.",
+          "color": "#C07D1C"
         }
       ],
-      "image": "/sessions/assets/s8_quiz_samosa.png",
-      "tip": "Let students vote by raising hands before revealing the answer."
+      "images": [
+        {
+          "src": "/sessions/assets/s8_quiz_pepper.jpg",
+          "alt": "Pepper",
+          "caption": "Pepper"
+        }
+      ],
+      "tip": "Let groups shout out their guess. Click to reveal the answer."
     },
     {
       "n": 8,
       "kind": "click_reveal",
-      "title": "Desi or Videsi? — Question 2",
+      "title": "Desi-Videsi: Tomato",
       "items": [
         {
-          "label": "Chess — Desi or Videsi?",
-          "detail": "Desi! Chess originated in India as 'Chaturanga' during the Gupta Empire (around 6th century). It spread to Persia and then to the world.",
-          "color": "#2E8B4F"
+          "label": "TOMATO — Desi or Videsi?",
+          "detail": "VIDESI! It's from Mexico! Tomatoes were brought to India by the Portuguese.",
+          "color": "#B85042"
         }
       ],
-      "image": "/sessions/assets/s8_quiz_chess.png",
-      "tip": "Most students will be surprised! Chess is one of India's great gifts to the world."
+      "images": [
+        {
+          "src": "/sessions/assets/s8_quiz_tomato.jpg",
+          "alt": "Tomato",
+          "caption": "Tomato"
+        }
+      ],
+      "tip": "Let groups shout out their guess. Click to reveal the answer."
     },
     {
       "n": 9,
       "kind": "click_reveal",
-      "title": "Desi or Videsi? — Question 3",
+      "title": "Desi-Videsi: Paper",
       "items": [
         {
-          "label": "Jalebi — Desi or Videsi?",
-          "detail": "Videsi! Jalebi came from the Middle East (called 'Zulabiya'). It was brought to India by Turkish and Persian traders.",
-          "color": "#6A2C91"
+          "label": "PAPER — Desi or Videsi?",
+          "detail": "VIDESI! It's from China! Paper was invented in China around 100 BC.",
+          "color": "#8B4E8B"
         }
       ],
-      "image": "/sessions/assets/s8_quiz_jalebi.png",
-      "tip": "Another surprise for students!"
+      "images": [
+        {
+          "src": "/sessions/assets/s8_quiz_paper.jpg",
+          "alt": "Paper",
+          "caption": "Paper"
+        }
+      ],
+      "tip": "Let groups shout out their guess. Click to reveal the answer."
     },
     {
       "n": 10,
       "kind": "click_reveal",
-      "title": "Desi or Videsi? — Question 4",
+      "title": "Desi-Videsi: Potato",
       "items": [
         {
-          "label": "Yoga — Desi or Videsi?",
-          "detail": "Desi! Yoga is an ancient Indian practice with roots going back over 5,000 years. It is now practiced worldwide!",
-          "color": "#1E3A6E"
+          "label": "POTATO — Desi or Videsi?",
+          "detail": "VIDESI! It's from Peru! Potatoes came to India through Portuguese traders.",
+          "color": "#C25B28"
         }
       ],
-      "image": "/sessions/assets/s8_quiz_yoga.png",
-      "tip": "Celebrate India's contribution to global wellness."
+      "images": [
+        {
+          "src": "/sessions/assets/s8_quiz_potato.jpg",
+          "alt": "Potato",
+          "caption": "Potato"
+        }
+      ],
+      "tip": "Let groups shout out their guess. Click to reveal the answer."
     },
     {
       "n": 11,
       "kind": "click_reveal",
-      "title": "Desi or Videsi? — Question 5",
+      "title": "Desi-Videsi: Carrot",
       "items": [
         {
-          "label": "Tea (Chai) — Desi or Videsi?",
-          "detail": "Videsi! Tea originally came from China. The British introduced large-scale tea cultivation in India (Assam, Darjeeling). But chai as we know it — with milk, sugar, and spices — that's our Desi twist!",
-          "color": "#F9A825"
+          "label": "CARROT — Desi or Videsi?",
+          "detail": "VIDESI! It's from Persia! Carrots spread to India through Persian trade routes.",
+          "color": "#1E6091"
         }
       ],
-      "image": "/sessions/assets/s8_quiz_tea.png",
-      "tip": "Great example of composite culture — foreign origin, Indian innovation!"
+      "images": [
+        {
+          "src": "/sessions/assets/s8_quiz_carrot.jpg",
+          "alt": "Carrot",
+          "caption": "Carrot"
+        }
+      ],
+      "tip": "Let groups shout out their guess. Click to reveal the answer."
     },
     {
       "n": 12,
       "kind": "click_reveal",
-      "title": "Desi or Videsi? — Question 6",
+      "title": "Desi-Videsi: Coffee",
       "items": [
         {
-          "label": "Zero (the number) — Desi or Videsi?",
-          "detail": "Desi! The concept of zero as a number was developed in India by the mathematician Aryabhata. It revolutionised mathematics worldwide!",
-          "color": "#C2185B"
+          "label": "COFFEE — Desi or Videsi?",
+          "detail": "VIDESI! It's from Ethiopia! Coffee was brought to India by Baba Budan from Yemen in the 17th century.",
+          "color": "#6B4226"
         }
       ],
-      "image": "/sessions/assets/s8_quiz_zero.png",
-      "tip": "India's contribution to world knowledge. Celebrate this with students!"
+      "images": [
+        {
+          "src": "/sessions/assets/s8_quiz_coffee.jpg",
+          "alt": "Coffee",
+          "caption": "Coffee"
+        }
+      ],
+      "tip": "Let groups shout out their guess. Click to reveal the answer."
     },
     {
       "n": 13,
-      "kind": "static",
-      "title": "What Did We Learn?",
+      "kind": "reflect_share",
+      "title": "Discuss the Desi-Videsi Results",
+      "prompt": "Let's reflect on what we just discovered!",
       "body": [
-        "Many things we think of as 'Indian' actually came from other cultures — and many Indian innovations went out to the world!",
-        "This is the beauty of composite culture — sharing, mixing, and creating something new together.",
-        "No culture is 'pure' — all cultures grow by learning from each other."
+        "How do you feel about what we just found out?",
+        "These give you an important clue about India's culture. Can you guess what it is?"
       ],
-      "tip": "Reinforce the key learning: cultures are always mixing and evolving."
+      "tip": "Guide students toward realizing that many everyday items came from outside India — our culture borrows and adapts from many places."
     },
     {
       "n": 14,
       "kind": "static",
-      "title": "Composite Culture in Your Life",
+      "title": "Composite Culture",
       "body": [
-        "Think about your own daily life:",
-        "The clothes you wear — who influenced them?",
-        "The food you eat — where did the recipes come from?",
-        "The words you use — how many languages do you mix?",
-        "The festivals you celebrate — do you celebrate festivals from other communities too?"
+        "Our culture is known as a 'Composite Culture'.",
+        "What is 'Composite'?",
+        "Our Composite Culture is diverse, different and mixed; and has come from the many parts of India and outside India."
       ],
-      "tip": "Make it personal. Ask individual students to share examples from their own lives."
+      "tip": "Explain: 'Composite' means made of many parts. Our culture is a mix of Indian and foreign influences that we have adopted and made our own."
     },
     {
       "n": 15,
       "kind": "static",
-      "title": "Why Does Composite Culture Matter?",
+      "title": "Composite Culture — Examples",
       "body": [
-        "It teaches us that no one culture has all the answers.",
-        "It shows us that sharing makes everyone richer.",
-        "It reminds us that India's strength comes from its diversity.",
-        "It helps us respect and appreciate people who are different from us."
+        "Tomatoes — from Mexico, brought to India by the Portuguese!",
+        "Cricket — brought to India by the British who ruled over us for many years!",
+        "Are tomatoes and cricket part of our culture? Absolutely! We adopted them and made them uniquely ours."
       ],
-      "image": "/sessions/assets/s8_why_composite_matters.png",
-      "tip": "Connect this to constitutional values — unity in diversity."
+      "images": [
+        {
+          "src": "/sessions/assets/s8_tomato_mexico.jpg",
+          "alt": "Tomatoes",
+          "caption": "From Mexico, brought by the Portuguese!"
+        },
+        {
+          "src": "/sessions/assets/s8_cricket_british.jpg",
+          "alt": "Cricket",
+          "caption": "Brought by the British!"
+        }
+      ],
+      "tip": "Emphasize: we borrow things from other cultures and make them our own — that's what composite culture means."
     },
     {
       "n": 16,
       "kind": "static",
-      "title": "Group Discussion",
-      "body_layout": "numbered",
+      "title": "Composite Culture — Fundamental Duty",
       "body": [
-        "Share one example of composite culture from your family or neighbourhood.",
-        "Why do you think it is important to learn about and respect other cultures?",
-        "How can we celebrate diversity in our school?"
+        "We lend and borrow, adapt and change to make it something unique.",
+        "This is a Fundamental Duty in the Indian Constitution.",
+        "Can anyone guess what that Fundamental Duty says?",
+        "We must respect and preserve the rich cultural heritage of the country, which is a composite of various cultures, religions and traditions."
       ],
-      "tip": "Give groups 3-4 minutes to discuss, then share with the class."
+      "callout": "Fundamental Duty: To value and preserve the rich heritage of our composite culture.",
+      "tip": "Ask students to guess before revealing. This is Article 51A(f) of the Indian Constitution."
     },
     {
       "n": 17,
       "kind": "mc_narration",
       "title": "Reflection",
       "video": "/sessions/assets/s8_mc_reflection.kn.mp4",
+      "transcript": "Can we accept people, practices and different ways of life the same way? What do you feel? Have you accepted all your classmates even though they are different from you in habits, customs, practices?",
       "kn_script": [
-        "Wasn't that amazing? We discovered so many surprising things today!",
-        "Who knew that our favourite samosa and jalebi came from faraway lands?",
-        "And who knew that chess and yoga — two things the whole world loves — started right here in India?",
-        "This is what makes our culture so special — we welcome, we share, we grow together.",
-        "Remember: respecting other cultures doesn't make your culture less — it makes all of us more!"
+        "ನಾವು ಜನರನ್ನು, ಆಚರಣೆಗಳನ್ನು ಮತ್ತು ವಿಭಿನ್ನ ಜೀವನ ವಿಧಾನಗಳನ್ನು ಅದೇ ರೀತಿಯಲ್ಲಿ ಸ್ವೀಕರಿಸಬಹುದೇ?",
+        "ನಿಮಗೆ ಏನನಿಸುತ್ತದೆ?",
+        "ನಿಮ್ಮ ಸಹಪಾಠಿಗಳು ಅಭ್ಯಾಸಗಳು, ಪದ್ಧತಿಗಳು, ಆಚರಣೆಗಳಲ್ಲಿ ನಿಮ್ಮಿಂದ ಭಿನ್ನರಾಗಿದ್ದರೂ ನೀವು ಅವರೆಲ್ಲರನ್ನೂ ಸ್ವೀಕರಿಸಿದ್ದೀರಾ?"
       ],
-      "tip": "Play MC video. Let the message sink in — this is the emotional takeaway."
+      "tip": "Play the MC video. Let children think and share. This is a moment for honest self-reflection — don't rush it."
     },
     {
       "n": 18,
-      "kind": "reflect_share",
-      "title": "Start, Stop, Continue",
-      "questions": [
-        "What's one new thing you want to START doing to appreciate other cultures?",
-        "What's one thing you want to STOP doing that shows disrespect to any culture?",
-        "What's one thing you want to CONTINUE doing that celebrates diversity?"
+      "kind": "static",
+      "title": "Preamble Cards — Civic Connection",
+      "body": [
+        "Which Constitutional value best connects to you today as part of the activities and discussions we have had?"
       ],
-      "image": "/sessions/assets/s8_start_stop_continue.png",
-      "tip": "Encourage different children to share their thoughts for each question."
+      "images": [
+        {
+          "src": "/sessions/assets/s8_preamble_1.png",
+          "alt": "Preamble card 1",
+          "caption": ""
+        },
+        {
+          "src": "/sessions/assets/s8_preamble_2.png",
+          "alt": "Preamble card 2",
+          "caption": ""
+        },
+        {
+          "src": "/sessions/assets/s8_preamble_3.png",
+          "alt": "Preamble card 3",
+          "caption": ""
+        },
+        {
+          "src": "/sessions/assets/s8_preamble_4.png",
+          "alt": "Preamble card 4",
+          "caption": ""
+        }
+      ],
+      "tip": "Show the preamble value cards. Ask each group to pick the value that resonated most with today's session and explain why."
     },
     {
       "n": 19,
-      "kind": "static",
-      "title": "Ripple Tasks",
+      "kind": "reflect_share",
+      "title": "Reflection Circle",
+      "prompt": "Form a 'Reflection Circle' in your groups by putting your hands on top of each other.",
       "body": [
-        "Ask your parents or grandparents about a food, word, or tradition in your family that came from another culture.",
-        "Learn to say 'Hello' and 'Thank You' in two languages you don't speak."
+        "What kind of beliefs and ideas did you come to this session with?",
+        "How has your thinking or belief system changed after the session?",
+        "What surprised you in the session and made you change your stand?"
       ],
-      "image": "/sessions/assets/s8_ripple_tasks.png",
-      "tip": "Assign ripple tasks as take-home activities."
+      "tip": "Each group forms a circle with hands stacked. Go around the circle — each child answers one question. Ensure every child gets a turn."
     },
     {
       "n": 20,
       "kind": "static",
-      "title": "Constitution Connect",
+      "title": "Ripple Task",
       "body": [
-        "The Preamble of the Indian Constitution talks about FRATERNITY — a sense of brotherhood and sisterhood among all people.",
-        "Composite culture is fraternity in action — when we share, learn from, and celebrate each other's cultures, we build brotherhood."
+        "Conduct a Desi-Videsi quiz for your parents and siblings!",
+        "Look at everyday items and think about how they contribute to composite culture!"
       ],
-      "tip": "Connect today's learning to the Constitution."
+      "callout": "Take the quiz home! Test your family on what's Desi and what's Videsi.",
+      "tip": "Encourage students to quiz at least 3 family members and report back next session."
     },
     {
       "n": 21,
       "kind": "mcq",
-      "title": "Constitution Connect Question",
-      "question": "How can the values of equality and justice in the Constitution's Preamble be applied in daily life? Can you guess the correct option?",
+      "title": "Civic Connect — Quiz",
+      "question": "Which Fundamental Duty emphasizes the importance of preserving India's diverse cultural heritage?",
       "options": [
-        "By treating everyone with respect, starting with your family and friends",
-        "By being mindful of how you and those around you behave towards one another",
-        "By speaking out against discrimination and standing up for others' rights",
-        "All of the above"
+        "Promote harmony and the spirit of common brotherhood",
+        "Protect public property",
+        "Safeguard the environment",
+        "Develop scientific temper"
       ],
-      "answer": 3,
-      "tip": "This is a trick question — all options are correct! Reveal with excitement."
+      "correct": 0,
+      "tip": "Let groups discuss for 30 seconds before answering. The correct answer is (a) — Article 51A(e) promotes harmony and brotherhood among all people of India."
     },
     {
       "n": 22,
       "kind": "static",
       "title": "Together for Change Project",
       "body": [
-        "Teacher to distribute the 'Diversity & Composite Culture' project card to each group.",
         "You have 3 weeks to complete the activities given in the project card.",
         "Please follow the instructions provided in the project cards thoroughly in your groups.",
         "Consult the teacher if you have doubts!"
       ],
-      "image": "/sessions/assets/s8_tfc_project.png",
-      "tip": "Distribute project cards. Explain the timeline and expectations clearly."
+      "callout": "Distribute Together for Change cards on Diversity and Composite Culture to each group.",
+      "image": "/sessions/assets/s8_together_for_change_card.png",
+      "tip": "Distribute Together for Change project cards. Explain the 3-week timeline. Each group works together on their project."
     }
   ]
 }

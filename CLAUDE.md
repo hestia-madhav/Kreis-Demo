@@ -42,8 +42,21 @@ kreis-demo/
 | KREIS | `kreis` | Children's Constitution Club | ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್ | 6 (S1–S6) | `#F39C1F` (orange) |
 | DOM | `dom` | Children's Civic Club | ಪೌರ ಕ್ಲಬ್ | 3 (S1–S3) | `#0EA5E9` (blue) |
 
-DOM sessions are structurally based on KREIS sessions with naming/branding
-changes + corrections from CMCA's 16th July 2026 PPT inputs.
+**KREIS and DOM are mirrors of the same source PPT.** The ONLY differences
+between a KREIS session and its DOM counterpart are:
+
+1. `id`: `kreis-session-N` → `dom-session-N`
+2. `programme`: `"KREIS"` → `"DOM"`
+3. Club name in titles/body: "Children's Constitution Club" → "Children's Nagarika Club" (EN), "ಮಕ್ಕಳ ಸಂವಿಧಾನ ಕ್ಲಬ್" → "ಮಕ್ಕಳ ನಾಗರಿಕ ಕ್ಲಬ್" (KN)
+4. Programme-specific branding text (e.g. "Constitution Connect" → "Civic Connect")
+
+**Everything else is identical:** slides, images, videos, quizzes, quiz items,
+audio, asset references, slide order, section structure. DOM must reference
+the exact same asset files as KREIS. Never create DOM-specific assets or
+alter quiz content, activity content, or any substantive material.
+
+**The source PPT is the single source of truth.** Both KREIS and DOM JSONs
+must faithfully reflect the PPT content. Never invent content.
 
 ---
 
