@@ -65,7 +65,7 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "Welcome to the Nagarika Club!",
+      "title": "Welcome to the Children's Nagarika Club!",
       "audio": "/sessions/assets/welcome_music.mp3",
       "centered": true,
       "tip": "Play welcome music. Confirm everyone is seated in groups."
@@ -89,7 +89,7 @@
       "title": "Year Gone By for Our School Club",
       "video": "/sessions/assets/s12_mc_year_recap.kn.mp4",
       "kn_script": [
-        "Hey, everyone! Do you remember how we started our Nagarika Club?",
+        "Hey, everyone! Do you remember how we started our Children's Nagarika Club?",
         "Of course you do! One of the very first things we did was… a quiz!",
         "Hmm… I wonder how much you still remember. Did all that learning stay in your brains, or did some of it go on a holiday?",
         "Well, there's only one way to find out! As we come to the end of our year together, let's travel all the way back to the beginning and take the quiz once again!",
@@ -109,7 +109,7 @@
           "color": "#C2185B"
         },
         {
-          "label": "What does the girl stick figure symbol tell you in Nagarika Club?",
+          "label": "What does the girl stick figure symbol tell you in Children's Nagarika Club?",
           "detail": "Gender Equality",
           "color": "#6A2C91"
         },
