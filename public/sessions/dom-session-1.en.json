@@ -187,7 +187,7 @@
       "n": 7,
       "kind": "group_activity_timer",
       "title": "Let's get creative!",
-      "brief": "Name your group, make a group logo. For example: look at the KSRTC and KREIS logos.",
+      "brief": "Name your group, make a group logo. For example: look at the KSRTC and DOM logos.",
       "timer_seconds": 480,
       "reminder_at": 120,
       "reminder_chime": "/sessions/assets/timer_2min_warning.mp3",
@@ -199,9 +199,9 @@
           "caption": "KSRTC"
         },
         {
-          "src": "/sessions/assets/kreis_logo.png",
-          "alt": "KREIS",
-          "caption": "KREIS"
+          "src": "/sessions/assets/dom_seal.jpeg",
+          "alt": "DOM",
+          "caption": "DOM"
         },
         {
           "src": "/sessions/assets/partner_karnataka_govt.jpeg",

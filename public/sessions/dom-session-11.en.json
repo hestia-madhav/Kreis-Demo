@@ -75,7 +75,7 @@
     {
       "n": 1,
       "kind": "title",
-      "title": "KREIS - Session 11: Harmony with Nature",
+      "title": "DOM - Session 11: Harmony with Nature",
       "centered": true,
       "tip": "Display title slide. Welcome students."
     },
@@ -84,7 +84,7 @@
       "kind": "static",
       "title": "Welcome to the Children's Nagarika Club!",
       "body": [
-        "Full-screen graphic: KREIS logo, CMCA logo + upbeat welcome music."
+        "Full-screen graphic: DOM logo, CMCA logo + upbeat welcome music."
       ],
       "audio": "/sessions/assets/welcome_music.mp3",
       "tip": "Play welcome music. Confirm everyone is seated in groups."
